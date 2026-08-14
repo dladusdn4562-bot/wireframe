@@ -1,0 +1,43 @@
+{
+  "client_id": "가상클라이언트_91",
+  "client_name": "스밈_바디럽형_브랜드소개마스터",
+  "total_sections": 5,
+  "storyboard_version": "1.0_Bodyluv_Brand_Story_Dedicated",
+  "brand_story_sections": [
+    {
+      "section_id": "SUB-STORY-01",
+      "name": "브랜드 소개 서브 헤더 & 일상 공감 질문 인트로",
+      "tier": "StoryHeader",
+      "type": "DailyEmpathyIntro",
+      "question": "왜 자세 무너짐은 늘 아프고 참아야 할까?"
+    },
+    {
+      "section_id": "SUB-STORY-02",
+      "name": "Chapter 01. The Origin - 부품 엔지니어 팀의 집념과 원천 기술",
+      "tier": "StoryChapter",
+      "visual_asset": "VIS-01_NanoMicroscope_Scan_450x",
+      "story_topic": "Hardware_Engineer_Pain_and_450_Trials"
+    },
+    {
+      "section_id": "SUB-STORY-03",
+      "name": "Chapter 02. The Philosophy - Effortless Wellness & 인체공학 지렛대",
+      "tier": "StoryChapter",
+      "visual_asset": "VIS-02_LeverErgonomics_Blueprint",
+      "story_topic": "No_Forced_Compression_and_Tension_Memory"
+    },
+    {
+      "section_id": "SUB-STORY-04",
+      "name": "Chapter 03. The Vision - 300인 임상 검증 & 친환경 글로벌 도약",
+      "tier": "StoryChapter",
+      "visual_asset": "VIS-03_ClinicalProof_300Experts",
+      "story_topic": "Doctor_Verification_and_Eco_Friendly_Fiber"
+    },
+    {
+      "section_id": "SUB-STORY-05",
+      "name": "Our Story 하단 시그니처 3대 대표작 3D 체험 전환 배너",
+      "tier": "StoryCTA",
+      "type": "ExperienceReturnBanner",
+      "target_anchor": "#sec-featured"
+    }
+  ]
+}

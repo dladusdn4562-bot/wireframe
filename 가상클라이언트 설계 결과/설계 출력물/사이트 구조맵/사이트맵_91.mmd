@@ -1,0 +1,47 @@
+graph TD
+    %% [SEUMIM Total IA System - Bodyluv Brand Story Hybrid Model]
+    ROOT["SEUMIM 플랫폼 (Root IA)"]
+
+    subgraph P1["[PAGE-01] 메인 랜딩페이지 (SCR-01)"]
+        GNB["SEC-01: GNB (라인아트 찜/장바구니)"]
+        M1["SEC-02: Hero 매니페스토 & 4대 자부심 지표 바"]
+        M2["SEC-03~05: 3대 대표작 Top 3 지그재그 조명"]
+        M3["SEC-06: 300+ 전문가 & 실착자 임상 후기 (Social Proof)"]
+        M4["SEC-07: 28개 전 상품 컬렉션 이동 배너"]
+        M5["SEC-08: 스마트 체형 맞춤 1초 사이즈 파인더 미니"]
+        M6["SEC-09: AI 실시간 자세 HUD & 전국 센터 1:1 예약"]
+        M7["SEC-10: FAQ 아코디언 & Sticky 30일 무료 시착 바"]
+        M8["SEC-11: 글로벌 푸터 (CS 센터 & 보증 정책)"]
+
+        GNB --> M1 --> M2 --> M3 --> M4 --> M5 --> M6 --> M7 --> M8
+    end
+
+    subgraph P2["[PAGE-02] 상품 카테고리 서브페이지 (SCR-02)"]
+        S_NAV["SUB-SHOP-01: 4대 카테고리 탭 필터 (28종)"]
+        S_FINDER["SUB-SHOP-02: 스마트 사이즈 파인더 마스터 바"]
+        S_GRID["SUB-SHOP-03: 28개 전 상품 4x7 그리드 카탈로그"]
+        S_MODAL["SUB-SHOP-04: [🔍 퀵뷰 모달] 0.1mm 실측표 & 0원 시착"]
+
+        S_NAV --> S_FINDER --> S_GRID --> S_MODAL
+    end
+
+    subgraph P3["[PAGE-03] 바디럽형 브랜드 소개 서브페이지 (SCR-03)"]
+        ST_HDR["SUB-STORY-01: 브랜드 서브 헤더 & 일상 공감 인트로"]
+        ST_CH1["SUB-STORY-02: [Ch 1 The Origin] 부품 엔지니어 팀 집념 (VIS-01)"]
+        ST_CH2["SUB-STORY-03: [Ch 2 The Philosophy] 지렛대 탄성 공학 (VIS-02)"]
+        ST_CH3["SUB-STORY-04: [Ch 3 The Vision] 300인 임상 검증 갤러리 (VIS-03)"]
+        ST_CTA["SUB-STORY-05: 3대 대표작 3D 체험 전환 배너"]
+
+        ST_HDR --> ST_CH1 --> ST_CH2 --> ST_CH3 --> ST_CTA
+    end
+
+    ROOT --> P1
+    ROOT --> P2
+    ROOT --> P3
+
+    %% 핵심 전환 플로우
+    ST_CTA -.->|3D 체험하러 가기| M2
+    M4 -.->|28개 상품 보러가기| S_NAV
+    M5 -.->|키/몸무게 동기화| S_FINDER
+    S_MODAL -.->|30일 무료 시착| CONV["[30일 무료 시착 신청 (0원 결제)]"]
+    M7 -.->|Sticky Bar 클릭| CONV

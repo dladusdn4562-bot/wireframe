@@ -1,0 +1,92 @@
+{
+  "client_id": "가상클라이언트_91",
+  "client_name": "스밈_바디럽형_브랜드소개마스터",
+  "total_screens": 8,
+  "pages": {
+    "PAGE-01": "메인 랜딩페이지 (Main Landing)",
+    "PAGE-02": "28개 전 상품 카탈로그 서브페이지 (Shop All)",
+    "PAGE-03": "바디럽형 브랜드 소개 서브페이지 (Our Story)"
+  },
+  "screens": [
+    {
+      "id": "SCR-01",
+      "name": "메인 랜딩페이지",
+      "page": "PAGE-01",
+      "type": "LandingPage",
+      "components": [
+        "GNB_Header_LineArt_Icons",
+        "SEC_01_Hero_Manifesto_Pride_Metrics",
+        "SEC_03_Top1_NeckShoulder",
+        "SEC_04_Top2_SpineVest",
+        "SEC_05_Top3_PelvicBelt",
+        "SEC_06_Social_Proof_300Reviews",
+        "SEC_07_Explore_Catalog_Banner",
+        "SEC_08_Smart_Fit_Finder_Mini",
+        "SEC_09_AI_HUD_Wellness_Center",
+        "SEC_10_FAQ_Accordion",
+        "SEC_11_Global_Footer",
+        "SEC_12_Sticky_Bottom_Trial_Bar"
+      ]
+    },
+    {
+      "id": "SCR-02",
+      "name": "28개 전 상품 카탈로그 서브페이지",
+      "page": "PAGE-02",
+      "type": "CatalogPage",
+      "components": [
+        "SUB_SHOP_01_Category_Tabs_28",
+        "SUB_SHOP_02_Fit_Finder_Master_Bar",
+        "SUB_SHOP_03_Products_Grid_4x7",
+        "SUB_SHOP_04_Quick_View_Modal_Trigger"
+      ]
+    },
+    {
+      "id": "SCR-03",
+      "name": "바디럽형 브랜드 소개 서브페이지 (Our Story)",
+      "page": "PAGE-03",
+      "type": "BodyluvStoryPage",
+      "components": [
+        "SUB_STORY_01_Daily_Empathy_Intro",
+        "SUB_STORY_02_Chapter1_The_Origin_VIS01",
+        "SUB_STORY_03_Chapter2_The_Philosophy_VIS02",
+        "SUB_STORY_04_Chapter3_The_Vision_VIS03",
+        "SUB_STORY_05_Experience_Return_CTA"
+      ]
+    },
+    {
+      "id": "SCR-04",
+      "name": "30일 무료 시착 1초 퀵 체크아웃 모달",
+      "page": "Common",
+      "type": "BottomSheetModal",
+      "features": ["Product_Summary", "Address_Input", "Phone_Input", "0KRW_Trial_Submit"]
+    },
+    {
+      "id": "SCR-05",
+      "name": "나의 찜한 상품 목록 모달",
+      "page": "Common",
+      "type": "LayerModal",
+      "features": ["Wishlist_Grid", "Add_To_Trial", "Browse_All_Link"]
+    },
+    {
+      "id": "SCR-06",
+      "name": "30일 무료 시착 장바구니 모달",
+      "page": "Common",
+      "type": "LayerModal",
+      "features": ["Cart_Items_List", "0KRW_Summary", "Submit_Trial_Button"]
+    },
+    {
+      "id": "SCR-07",
+      "name": "1초 스마트 사이즈 가이드 모달",
+      "page": "Common",
+      "type": "LayerModal",
+      "features": ["0.1mm_Spec_Table", "Exchange_Guaranty", "Recommended_Size_Select"]
+    },
+    {
+      "id": "SCR-08",
+      "name": "상품 3D 단면 분해 퀵뷰 모달",
+      "page": "Common",
+      "type": "LayerModal",
+      "features": ["3D_Exploded_View", "Magnifier_Canvas", "0.1mm_Measurements", "Trial_Button"]
+    }
+  ]
+}
