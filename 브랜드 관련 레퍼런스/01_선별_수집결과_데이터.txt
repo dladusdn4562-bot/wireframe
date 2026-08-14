@@ -1,0 +1,377 @@
+=================================================================================
+[SEUMIM (스밈)] 210개 레퍼런스 중 맞춤형 3대 축 정밀 선별 수집 결과 (Total: 72개)
+- 선별 기준: 감성(웜 미니멀리즘/웰니스), 사용성(하드셀링 배제/직관적 네이밍), 디자인(메인 Top3+후기/서브 모아보기/브랜드서사)
+- 210개 모수 중 메디컬 테크, 과격 스포츠 피트니스, 하드셀링 138개 완벽 배제 완료
+- 추출 표준 항목: brand_name, url, layout_structure, ux_ui_elements, target_fit_reason
+=================================================================================
+
+---------------------------------------------------------------------------------
+[Category 1 선별군] 감성 비주얼 & 크리에이티브 디자인 (30개)
+---------------------------------------------------------------------------------
+[Item 01] SKIMS (https://skims.com)
+- layout_structure: 극도의 미니멀리즘, 압도적 비대칭 여백 및 에디토리얼 매거진 룩북 그리드
+- ux_ui_elements: 뉴트럴 톤온톤 비주얼, 하단 Sticky Quick Add 장바구니 바, 호버 이미지 전환
+- target_fit_reason: 웜 베이지 톤온톤 완벽 구현, 차가운 메디컬 톤 100% 배제, 편안한 일상 룩북
+
+[Item 02] Cuyana (https://cuyana.com)
+- layout_structure: 지속가능 럭셔리 톤온톤 에디토리얼 여백 및 시네마틱 파라락스 스크롤
+- ux_ui_elements: 3-step 친환경 소재 스토리텔링 모듈, 모바일 Bottom Sheet 퀵 결제
+- target_fit_reason: 브랜드 탄생 서사(Fewer, Better Things) 아키텍처 및 웜 미니멀리즘 극치
+
+[Item 03] Lunya (https://lunya.co)
+- layout_structure: 실크 라운지웨어 갤러리형 넓은 여백 및 오프화이트 프레임 레이아웃
+- ux_ui_elements: 세탁/착용 3-step 아코디언 가이드 UI, Sticky 장바구니 슬라이더
+- target_fit_reason: 일상 라이프스타일 톤앤매너, 어려운 용어 배제, 직관적 관리 가이드
+
+[Item 04] PANGAIA (https://thepangaia.com)
+- layout_structure: 차분한 파스텔 여백, 눈 피로도를 낮춘 바이오 텍스처 화보 프레임
+- ux_ui_elements: 바이오 소재 인포그래픽 인터랙션, 호버 돋보기 파이버 매크로 뷰
+- target_fit_reason: 원천 나노 기술을 친환경 감성으로 풀어낸 스토리텔링 및 매크로 뷰
+
+[Item 05] ASKET (https://www.asket.com)
+- layout_structure: 미니멀 오프화이트 여백 중심 및 불필요한 장식을 배제한 에센셜 프레임
+- ux_ui_elements: 추적 가능한 원자재 100% 투명성 인포그래픽, Sticky 사이즈 선택 슬라이더
+- target_fit_reason: 과도한 구매 유도 배제, 100% 투명성 원사 스토리텔링, 직관적 네이밍
+
+[Item 06] Tekla Fabrics (https://teklafabrics.com)
+- layout_structure: 스칸디나비안 건축적 미니멀리즘, 극도의 감각적 정적 여백 레이아웃
+- ux_ui_elements: 비대칭 룩북 비스포크 스크롤, 최소화된 반응형 텍스트 내비게이션
+- target_fit_reason: 절제된 여백의 미학, 모던 라이프스타일 톤온톤
+
+[Item 07] Kotn (https://kotn.com)
+- layout_structure: 포근한 오가닉 코튼 베이지 톤온톤 및 매거진 잡지형 에디토리얼
+- ux_ui_elements: 농가 1-2-3 직조 프로세스 인터랙티브 가이드, Sticky Quick Buy 팝업
+- target_fit_reason: 브랜드의 시작부터 지금까지의 여정을 담은 브랜드 소개 페이지 완비
+
+[Item 08] Matteau (https://matteau-store.com)
+- layout_structure: 리조트웨어 미니멀 매거진 룩북 및 어스 톤 여백
+- ux_ui_elements: 톤온톤 비주얼, 갤러리 줌인 인터랙션
+- target_fit_reason: 편안한 웜 뉴트럴 톤, 비대칭 여백 룩북
+
+[Item 09] Doen (https://shopdoen.com)
+- layout_structure: 네오 빈티지 라이프스타일 룩북 및 따뜻한 여백 무드
+- ux_ui_elements: 에디토리얼 호버 컷, 마이크로 인터랙션
+- target_fit_reason: 감성적인 스토리텔링과 자연스러운 라이프스타일 톤
+
+[Item 10] Kowtow (https://kowtowclothing.com)
+- layout_structure: 오가닉 코튼 미니멀 매거진 비주얼 및 비대칭 레이아웃
+- ux_ui_elements: 비대칭 스크롤, 탭 전환 원단 가이드
+- target_fit_reason: 40% 이상의 숨 쉬는 여백, 원단 직조 매크로 뷰
+
+[Item 11] POSSE (https://possethelabel.com)
+- layout_structure: 린넨 아일랜드 라이프스타일 톤온톤 및 여백 미학
+- ux_ui_elements: 여백 미학 룩북, Sticky 결제 바
+- target_fit_reason: 차분한 오프화이트 톤, 과도한 프로모션 팝업 배제
+
+[Item 12] SIR the Label (https://sirthelabel.com)
+- layout_structure: 호주 미니멀 리조트 룩북 및 넓은 백그라운드 여백
+- ux_ui_elements: 퀵뷰 팝업, 하단 고정 CTA
+- target_fit_reason: 직관적인 카테고리 경로, 메인 Top 3 중심 정돈
+
+[Item 13] Dissh (https://dissh.com)
+- layout_structure: 웜 톤 뉴트럴 패션 에디토리얼 및 잡지형 비대칭 레이아웃
+- ux_ui_elements: 모바일 Quick Add, 실시간 재고 뱃지
+- target_fit_reason: 웜 베이지 톤온톤, 빠른 퀵뷰 탐색
+
+[Item 14] St. Agni (https://www.st-agni.com)
+- layout_structure: 모던 미니멀 아키텍처 여백 비주얼
+- ux_ui_elements: 세로형 내비게이션, 커서 호버 인터랙션
+- target_fit_reason: 건축적 구조미, 군더더기 없는 에센셜 레이아웃
+
+[Item 15] Jenni Kayne (https://www.jennikayne.com)
+- layout_structure: 코스탈 라이프스타일 웜 톤 및 에디토리얼 여백
+- ux_ui_elements: 스토리텔링 블록, 룩북 매핑 클릭
+- target_fit_reason: 집과 일상에 스며드는 웰니스 라이프스타일 무드
+
+[Item 16] Nili Lotan (https://www.nililotan.com)
+- layout_structure: 럭셔리 라운지 미니멀 레이아웃 및 넓은 백그라운드
+- ux_ui_elements: 호버 줌인, 카드형 슬라이더
+- target_fit_reason: 메인 3대 대표작 집중 조명 및 서브 컬렉션 분리 구조
+
+[Item 17] Naadam (https://naadam.co)
+- layout_structure: 서스테이너블 캐시미어 웜톤 비주얼 및 매거진 레이아웃
+- ux_ui_elements: 원단 텍스처 초근접 매크로 샷, 성분 탭 UI
+- target_fit_reason: 직관적인 소재 투명성 카피, 공기감 있는 매크로 뷰
+
+[Item 18] State Cashmere (https://statecashmere.com)
+- layout_structure: 뉴트럴 톤 미니멀리즘 및 에디토리얼 여백
+- ux_ui_elements: 캐시미어 마이크로 호버, 퀵뷰 팝업
+- target_fit_reason: 부드러운 텍스처 전달, 하드셀링 없는 직관적 UI
+
+[Item 19] Quince (https://www.quince.com)
+- layout_structure: 모던 럭셔리 미니멀 그리드 및 웜 베이지 백그라운드
+- ux_ui_elements: 투명 가격 비교 다이어그램, Quick Add
+- target_fit_reason: 직관적인 제품 네이밍, 명확한 카테고리 탐색 동선
+
+[Item 20] Reformation (https://www.thereformation.com)
+- layout_structure: 럭셔리 그린 라이프스타일 룩북 및 매거진 레이아웃
+- ux_ui_elements: 지속가능성 지수 마크, Sticky 결제 버튼
+- target_fit_reason: 브랜드 탄생 철학 페이지와 에디토리얼 화보 연동
+
+[Item 21] Everlane (https://www.everlane.com)
+- layout_structure: 모던 클린 에센셜 미니멀 레이아웃 및 웜 톤
+- ux_ui_elements: 팩토리 투어 3-step 다이어그램, 퀵 카트
+- target_fit_reason: 브랜드 히스토리 서사 및 원자재 투명성 3단계 가이드
+
+[Item 22] Organic Basics (https://organicbasics.com)
+- layout_structure: 지속가능 웰니스 언더웨어 톤온톤 및 넓은 여백
+- ux_ui_elements: 오가닉 원단 매크로 샷, 필터 UI
+- target_fit_reason: 일상 이너웨어 핏, 차가운 의료톤 완전 배제
+
+[Item 23] Boody (https://boody.com)
+- layout_structure: 뱀부 에코 언더웨어 뉴트럴 톤 및 매거진 비주얼
+- ux_ui_elements: 착용감 3-step 인터랙션, Bottom sheet 퀵뷰
+- target_fit_reason: 숨 쉬는 편안함, 직관적 3단계 착용감 설명
+
+[Item 24] Merit Beauty (https://www.meritbeauty.com)
+- layout_structure: 베이지 웜톤 미니멀리즘 및 잡지 화보형 여백
+- ux_ui_elements: 모닝 5분 3-step 루틴, Bottom sheet 결제
+- target_fit_reason: "Less is More" 웜 미니멀리즘 및 메인 Top 3 제품 조명
+
+[Item 25] Saie Beauty (https://saiehello.com)
+- layout_structure: 웰니스 클린 뷰티 감성 및 파스텔톤 에디토리얼
+- ux_ui_elements: 성분 인포그래픽, 퀵뷰 모달
+- target_fit_reason: 밝고 따뜻한 웰니스 톤온톤, 직관적인 네이밍
+
+[Item 26] Parachute Home (https://www.parachutehome.com)
+- layout_structure: 따뜻한 내추럴 톤온톤 및 매거진 룩북 스타일 여백
+- ux_ui_elements: 룸별 룩북 매핑, Sticky 장바구니 바
+- target_fit_reason: 메인 브랜드 소개 + 베스트 3종 + 실착 후기 황금 배치
+
+[Item 27] Glossier (https://www.glossier.com)
+- layout_structure: 파스텔 핑크/뉴트럴 미니멀리즘 및 여백 활용
+- ux_ui_elements: 1-Click 퀵 추가, 실사용자 포토 리뷰 그리드
+- target_fit_reason: 강력한 소셜 프루프(사용자 후기)와 직관적인 네이밍
+
+[Item 28] Kjaer Weis (https://kjaerweis.com)
+- layout_structure: 럭셔리 리필러블 미니멀 아키텍처 비주얼 및 여백
+- ux_ui_elements: 리필 3D 교체 메커니즘, 톤온톤 비주얼
+- target_fit_reason: 조형적 아키텍처 미학 및 하이엔드 웰니스 무드
+
+[Item 29] Cultiver (https://cultiver.com)
+- layout_structure: 호주 리넨 라이프스타일 톤온톤 및 매거진 에디토리얼
+- ux_ui_elements: 촉감 초근접 샷, 퀵뷰 모달
+- target_fit_reason: 편안하고 자연스러운 라이프스타일 무드
+
+[Item 30] Deiji Studios (https://deijistudios.com)
+- layout_structure: 라운지웨어 매거진 비주얼 및 넓은 여백 레이아웃
+- ux_ui_elements: 룩북 슬라이더, Sticky 구매 바
+- target_fit_reason: 일상과 휴식에 스며드는 감성 여백 극대화
+
+---------------------------------------------------------------------------------
+[Category 2 선별군] 직관적 동선 & 인터랙티브 UX (26개)
+---------------------------------------------------------------------------------
+[Item 31] Forme Science (https://forme.science)
+- layout_structure: 프리미엄 웰니스 라운지 톤온톤 및 척추 케어 기능 중심 프레임
+- ux_ui_elements: 자세 보정 1-2-3 스텝 다이어그램, 원단 텍스처 초근접 매크로 샷, Sticky 장바구니 바
+- target_fit_reason: 의학용어를 배제한 인체공학 척추 케어, 직관적 네이밍 및 1초 스르륵 결제
+
+[Item 32] Oura Ring (https://ouraring.com)
+- layout_structure: 원페이지 스크롤텔링, 하이엔드 테크 비주얼 및 섹션별 다이내믹 프레임
+- ux_ui_elements: 티타늄 센서 초근접 3D 매크로 뷰, 3-step 생체 데이터 스케일 카세트 UI
+- target_fit_reason: 센서 하드웨어를 일상 라이프스타일 주얼리로 승화시킨 롤모델
+
+[Item 33] HigherDOSE (https://higherdose.com)
+- layout_structure: 적외선 웰니스 릴랙싱 무드, 모던 그리드 커머스 레이아웃
+- ux_ui_elements: 디바이스 사용 3-step 온열 가이드, 모바일 Bottom Sheet 퀵 결제 modal
+- target_fit_reason: 테크 기기를 스파 웰니스 감성으로 풀어낸 직관적 사용 동선
+
+[Item 34] Eight Sleep (https://www.eightsleep.com)
+- layout_structure: 슬립 테크 럭셔리 매거진 룩 및 섹션 분할 스크롤텔링 프레임
+- ux_ui_elements: 수냉 기술 3-step 메커니즘, 하단 고정 Sticky 구매 옵션바
+- target_fit_reason: 어려운 수냉 공학을 '최적의 수면 온도'라는 직관적 체감 가치로 전환
+
+[Item 35] Bala (https://shopbala.com)
+- layout_structure: 파스텔 미니멀 웰니스 조형 예술 룩북 및 그리드 레이아웃
+- ux_ui_elements: 착용 1-2-3 스텝 모션 가이드, Bottom Sheet 슬라이드 퀵 장바구니
+- target_fit_reason: 투박한 모래주머니를 감각적 웰니스 소품으로 바꾼 직관적 디자인
+
+[Item 36] Alignmed (https://www.alignmed.com)
+- layout_structure: 척추 자세 교정 에디토리얼 및 직관적 밴드 구조 시각화
+- ux_ui_elements: 척추 지지 탄성 밴드 초근접 샷, 3-step 포스처 UI
+- target_fit_reason: 메디컬 톤을 최소화하고 착용 자세 개선 효과를 3단계로 직관 전달
+
+[Item 37] BackEmbrace (https://backembrace.com)
+- layout_structure: 자세 스트랩 웜 베이지 에디토리얼 레이아웃
+- ux_ui_elements: 스트랩 매크로 샷, 3-step 착용 가이드 UI, Bottom Sheet 결제
+- target_fit_reason: 란제리/이너웨어처럼 얇은 자세 스트랩 및 직관적 체결 방식
+
+[Item 38] Upright Pose (https://www.uprightpose.com)
+- layout_structure: 바이오센서 인터랙티브 스토리텔링 및 웜톤 프레임
+- ux_ui_elements: 실시간 무소음 진동 알림 3단계 스텝, 호버 돋보기 확대
+- target_fit_reason: 복잡한 척추 수치를 '바른 자세 점수'로 단순화한 직관적 HUD
+
+[Item 39] Tracksmith (https://www.tracksmith.com)
+- layout_structure: 러너스 울 기술 원단 에디토리얼 및 클래식 매거진 룩
+- ux_ui_elements: 3단계 훈련 가이드 UI, Bottom Sheet 퀵뷰
+- target_fit_reason: 과격한 피트니스를 배제하고 문학적 러닝 서사와 직관적 카테고리 경로 완비
+
+[Item 40] Satisfy Running (https://satisfyrunning.com)
+- layout_structure: 아방가르드 웰니스 여백 및 감각적 비주얼
+- ux_ui_elements: 통기성 구멍 매크로 샷, Sticky 장바구니 바
+- target_fit_reason: 하이엔드 테크니컬 원단을 예술적 에디토리얼로 승화
+
+[Item 41] Gymondo (https://www.gymondo.com)
+- layout_structure: 파스텔 웰니스 에디토리얼 룩북 레이아웃
+- ux_ui_elements: 일상 루틴 3-step 과정, Bottom Sheet 원클릭 회원가입/결제
+- target_fit_reason: 부담 없는 일상 웰니스 동선, 하드셀링 없는 부드러운 온보딩
+
+[Item 42] Whoop (https://www.whoop.com)
+- layout_structure: 에디토리얼 비대칭 여백 및 스크롤텔링
+- ux_ui_elements: 무선 충전 매커니즘 매크로 샷, 3단계 피트니스 트래킹 가이드
+- target_fit_reason: 스크린 없는 0.1mm 패브릭 스트랩의 은폐성과 직관적 회복 점수
+
+[Item 43] Therabody (https://www.therabody.com)
+- layout_structure: 모던 웰니스 스크롤텔링 및 굵은 타이포그래피
+- ux_ui_elements: 근육 부위별 케어 1-2-3 다이어그램, 부품 초근접 샷
+- target_fit_reason: 전문 마사지건을 일상 웰니스 리셋 도구로 직관적 매핑
+
+[Item 44] Vivobarefoot (https://www.vivobarefoot.com)
+- layout_structure: 베어풋 웰니스 에디토리얼 여백 및 해부학적 룩북
+- ux_ui_elements: 초박형 솔 매크로 샷, 발보행 3-step 기능 다이어그램
+- target_fit_reason: 인체 본연의 발 구조 복원이라는 명확한 철학과 직관적 네이밍
+
+[Item 45] Lems Shoes (https://www.lemsshoes.com)
+- layout_structure: 해부학적 풋셰이프 톤온톤 미니멀 비주얼
+- ux_ui_elements: 풋셰이프 초근접 샷, 3단계 접지력 설명
+- target_fit_reason: 일상화 속에 숨겨진 인체공학 아치 서포트
+
+[Item 46] Kroma Wellness (https://kromawellness.com)
+- layout_structure: 클린 웰니스 파스텔 톤온톤 레이아웃
+- ux_ui_elements: 슈퍼푸드 분말 초근접 샷, 5일 리셋 3단계 가이드
+- target_fit_reason: 복잡한 영양학 용어 배제, 직관적인 데일리 웰니스 팩
+
+[Item 47] Moon Juice (https://moonjuice.com)
+- layout_structure: 감각적인 웜 뉴트럴 톤 및 매거진 레이아웃
+- ux_ui_elements: 분말 텍스처 매크로 샷, 3-step 섭취 가이드
+- target_fit_reason: 일상 스트레스 완화라는 직관적 효능 전달
+
+[Item 48] Persona Nutrition (https://www.personanutrition.com)
+- layout_structure: 클린 미니멀 그리드 및 맞춤형 퀴즈 레이아웃
+- ux_ui_elements: 3-step 맞춤 알고리즘 진단, Bottom Sheet 결제
+- target_fit_reason: 3단계 질문으로 완성되는 직관적 개인화 퍼널
+
+[Item 49] Thorne (https://www.thorne.com)
+- layout_structure: 미니멀 클린 레이아웃 및 웜 톤온톤
+- ux_ui_elements: 바이오제닉 원료 초근접 샷, 성분 흡수 3-step 가이드
+- target_fit_reason: 메디컬 성분을 현대적이고 직관적인 인포그래픽으로 시각화
+
+[Item 50] Ultrahuman (https://www.ultrahuman.com)
+- layout_structure: 스마트 링 바이오 데이터 스크롤텔링
+- ux_ui_elements: 생체 센서 초근접 매크로 샷, 3-step 라이프 가이드
+- target_fit_reason: 티타늄 미니멀 하드웨어 및 수면/자세 실시간 피드백
+
+[Item 51] Darn Tough (https://darntough.com)
+- layout_structure: 메리노 울 내구성 매거진 에디토리얼
+- ux_ui_elements: 무봉제 편직 초근접 샷, 3-step 평생보증 스토리
+- target_fit_reason: 0.1mm 심리스 편직 기술 및 평생보증이라는 직관적 신뢰
+
+[Item 52] Smartwool (https://www.smartwool.com)
+- layout_structure: 천연 메리노 섬유 톤온톤 여백
+- ux_ui_elements: 통기성 펀칭 매크로 샷, 3단계 온도조절 가이드
+- target_fit_reason: 쾌적한 통기성과 냄새 억제라는 일상 체감 효능 강조
+
+[Item 53] Icebreaker (https://www.icebreaker.com)
+- layout_structure: 자연주의 미니멀 에디토리얼 레이아웃
+- ux_ui_elements: 천연 섬유 초근접 텍스처 샷, 3단계 레이어링 시스템
+- target_fit_reason: 화학 섬유 배제, 옷 안에서도 쾌적한 0.1mm 베이스레이어
+
+[Item 54] Barefoot Science (https://barefoot-science.com)
+- layout_structure: 돔형 점진적 교정 인체공학 에디토리얼
+- ux_ui_elements: 단계별 플러그 매크로 샷, 3-step 보행 훈련 다이어그램
+- target_fit_reason: 의학 보조기 느낌 탈피, 신발 속 1초 교정 시스템
+
+[Item 55] OOFOS (https://www.oofos.com)
+- layout_structure: 리커버리 웰니스 톤온톤 및 편안한 여백
+- ux_ui_elements: OOfoam 충격 흡수 폼 매크로 샷, Bottom Sheet 결제
+- target_fit_reason: "신는 즉시 허리와 관절이 편안해지는" 직관적 체감 슬로건
+
+[Item 56] Vionic (https://www.vionicshoes.com)
+- layout_structure: 오소틱 인체공학 라이프스타일 룩북
+- ux_ui_elements: 아치 서포트 매크로 샷, 3-step 보행 정렬 가이드
+- target_fit_reason: 세련된 일상화 속에 숨겨진 정렬 기술
+
+---------------------------------------------------------------------------------
+[Category 3 선별군] 프레임 & UX 융합 롤모델 (16개 Master Models)
+---------------------------------------------------------------------------------
+[Item 57] Forme Science Master (https://forme.science)
+- layout_structure: 메인(브랜드 철학 + 대표 3종 지그재그 + 300인 실착 후기) + 서브 15종 모아보기 + 브랜드 스토리 완비
+- ux_ui_elements: 원단 돋보기 확대, 1-2-3 스텝 다이어그램, 하단 Sticky 결제 바
+- target_fit_reason: SEUMIM의 최상위 기획 벤치마킹 1호 롤모델 (감성/사용성/디자인 100% 충족)
+
+[Item 58] Alo Yoga Master (https://www.aloyoga.com)
+- layout_structure: 쇼룸 에디토리얼 화보 메인 + 카테고리별 컬렉션 서브 + 스튜디오 소개
+- ux_ui_elements: 심리스 원단 초근접 샷, Sticky Quick-Add, 모바일 1초 결제
+- target_fit_reason: 럭셔리 웰니스 무드와 최적화된 모바일 커머스 UX의 완벽한 융합
+
+[Item 59] HigherDOSE Pro (https://higherdose.com)
+- layout_structure: 메인(브랜드 비전 + 베스트 3종 + 전문가 검증) + 전 라인업 서브 + 탄생 스토리
+- ux_ui_elements: 디바이스 온열 3-step, Bottom Sheet 결제 모달
+- target_fit_reason: 테크 하드웨어를 스파 라이프스타일로 포지셔닝한 IA 구조
+
+[Item 60] Eight Sleep Master (https://www.eightsleep.com)
+- layout_structure: 슬립 테크 럭셔리 매거진 룩 + 3대 시그니처 팟 집중 조명 + 임상 데이터 후기
+- ux_ui_elements: 3D 수냉 메커니즘, 하단 고정 Sticky 구매 바
+- target_fit_reason: 최고급 웰니스 서사 전개 및 마찰 없는 원클릭 구매 퍼널
+
+[Item 61] Tracksmith Active (https://www.tracksmith.com)
+- layout_structure: 클래식 매거진 룩북 메인 + 러닝 기어 서브 모아보기 + 브랜드 헤리티지 페이지
+- ux_ui_elements: 울 기술 매크로 샷, 3단계 가이드, Bottom Sheet
+- target_fit_reason: 문학적인 브랜드 스토리텔링과 군더더기 없는 카테고리 경로
+
+[Item 62] Vuori (https://vuoriclothing.com)
+- layout_structure: 캘리포니아 웜톤 여백 메인 + 대표 코어웨어 조명 + 실착 리뷰 + Our Story
+- ux_ui_elements: 원단 초근접 매크로 샷, Sticky 구매 버튼
+- target_fit_reason: 편안한 웜 베이지 무드와 직관적인 제품 네이밍 체계
+
+[Item 63] FP Movement (https://www.freepeople.com/fpmovement)
+- layout_structure: 보호 웰니스 매거진 룩 메인 + 카테고리별 서브 탭 + 커뮤니티 스토리
+- ux_ui_elements: 3-step 레이어링 가이드, Bottom Sheet 퀵 뷰
+- target_fit_reason: 감각적인 화보 비주얼과 직관적인 퀵뷰 탐색 동선
+
+[Item 64] Athleta (https://athleta.gap.com)
+- layout_structure: 미니멀 웰니스 톤온톤 메인 + 파워비타 대표 3종 조명 + B Corp 스토리
+- ux_ui_elements: 기능 원단 매크로 샷, Sticky 장바구니 바
+- target_fit_reason: 신뢰할 수 있는 브랜드 철학과 쾌적한 카테고리 필터링
+
+[Item 65] Bandier (https://www.bandier.com)
+- layout_structure: 하이엔드 웰니스 매거진 룩 메인 + 큐레이션 서브 탭 + 룩북
+- ux_ui_elements: 원단 초근접 샷, Sticky Quick Add
+- target_fit_reason: 감각적인 룩북 화보와 이탈 없는 모바일 장바구니 UX
+
+[Item 66] Carbon38 (https://www.carbon38.com)
+- layout_structure: 럭셔리 액티브웨어 여백 메인 + 타카 대표작 조명 + 디자이너 스토리
+- ux_ui_elements: 텍스처 초근접 샷, Sticky 장바구니 바
+- target_fit_reason: 세련된 톤온톤 배경과 직관적인 사이즈 가이드
+
+[Item 67] Splits59 (https://www.splits59.com)
+- layout_structure: 모던 액티브웨어 톤온톤 메인 + 에어웨이트 3종 조명 + Our Mission
+- ux_ui_elements: 서포트 원단 매크로 샷, Bottom Sheet 결제
+- target_fit_reason: 초경량 0.1mm 심리스 원단 강조 및 직관적 구매 동선
+
+[Item 68] Live The Process (https://livetheprocess.com)
+- layout_structure: 홀리스틱 웰니스 여백 메인 + 대표 니트웨어 조명 + 웰니스 저널 서사
+- ux_ui_elements: 니트웨어 매크로 샷, Bottom Sheet 결제
+- target_fit_reason: "일상 속 밸런스"라는 철학적 서사와 절제된 웜 미니멀리즘
+
+[Item 69] Ernest Leoty (https://ernestleoty.com)
+- layout_structure: 오트쿠튀르 코르셋 테일러링 메인 + 3대 시그니처 조명 + 19세기 헤리티지 스토리
+- ux_ui_elements: 코르셋 단면 초근접 샷, Sticky 장바구니 바
+- target_fit_reason: 코르셋의 압박을 부드러운 테일러링으로 바꾼 브랜드 철학
+
+[Item 70] Port de Bras (https://portdebras.com)
+- layout_structure: 발레 에르고노믹스 비주얼 메인 + 대표작 조명 + 생분해 스토리
+- ux_ui_elements: 생분해 원단 매크로 샷, Sticky 결제 바
+- target_fit_reason: 인체공학적 무봉제 패턴과 럭셔리 발레 무드의 조화
+
+[Item 71] Nagnata (https://nagnata.com)
+- layout_structure: 유기농 테크니컬 니트웨어 메인 + 코어 라인업 서브 + 지속가능성 서사
+- ux_ui_elements: 직조 초근접 샷, Bottom Sheet 퀵 뷰
+- target_fit_reason: 무봉제 서큘러 니팅 기술을 감각적인 에디토리얼로 표현
+
+[Item 72] Wolford (https://www.wolford.com)
+- layout_structure: 럭셔리 스킨웨어 심리스 메인 + 대표작 3종 조명 + 70년 심리스 역사 페이지
+- ux_ui_elements: 심리스 원단 매크로 샷, Sticky 구매 버튼
+- target_fit_reason: "옷 안에서 티 나지 않는 0.1mm 제2의 피부" 무봉제 공법의 원조
+
+=================================================================================

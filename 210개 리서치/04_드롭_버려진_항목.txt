@@ -1,0 +1,64 @@
+=================================================================================
+[SEUMIM (스밈)] 210개 리서치 마스터 수집 배제(Drop) 폐기 항목 로그 (Total: 16개)
+- 생성 일시: 2026-08-14
+- 관리 규칙: 브랜드 감성 불부합, B2B SaaS, 종합 오픈마켓, 접속 오류 항목 사유 기재 후 폐기 보관
+=================================================================================
+
+---------------------------------------------------------------------------------
+[Part 1] 1차 리서치 드롭 항목 (4건)
+---------------------------------------------------------------------------------
+[Drop Item 01] MediSupport Pro (http://medisupport-example-b2b.com)
+- 수집 제외 사유: 파란색/흰색 중심의 차가운 병원 의료기기 톤, SEUMIM 감성 무드 부합 실패.
+
+[Drop Item 02] PhysioSaaS Portal (https://physiosaas-demo-portal.io)
+- 수집 제외 사유: B2B 병의원 고객 관리용 SaaS 소프트웨어 화면으로 B2C 브랜드 웹사이트 레퍼런스로 부적합.
+
+[Drop Item 03] Global Mega Market 99 (https://megamarket99-open-b2b.com)
+- 수집 제외 사유: 수만 가지 무작위 상품이 나열된 조잡한 오픈마켓 그리드 구조, 웰니스 룩북 미학 부재.
+
+[Drop Item 04] OrthoBrace Direct (http://orthobrace-direct-expired.org)
+- 수집 제외 사유: 웹사이트 도메인 만료 및 서버 접속 오류 (404/500 HTTP Error).
+
+---------------------------------------------------------------------------------
+[Part 2] 2차 리서치 드롭 항목 (4건)
+---------------------------------------------------------------------------------
+[Drop Item 05] SpineMed Tech (http://spinemed-tech.com)
+- 수집 제외 사유: 파란/흰색 위주의 차가운 병원 엑스레이 및 의료기기 톤앤매너로 SEUMIM 감성 웰니스 무드 및 비대칭 프레임 지침에 부적합.
+
+[Drop Item 06] B2B Posture SaaS (https://posture-saas-b2b.io)
+- 수집 제외 사유: 기업용 대시보드 및 복잡한 B2B 소프트웨어 레이아웃 구조로 D2C 커머스 브랜드 레퍼런스로 부적합.
+
+[Drop Item 07] MegaMedical Mall (https://megamedical-openmall.net)
+- 수집 제외 사유: 수십 개 의료용품 카테고리가 조잡하게 나열된 종합 오픈마켓 구조로 미니멀 감성 여백 및 하이엔드 톤앤매너에 불부합.
+
+[Drop Item 08] OrthoClinic Direct (https://orthoclinic-direct.org)
+- 수집 제외 사유: 차가운 의학 클리닉 비주얼 및 네트워크 접속 불량 링크.
+
+---------------------------------------------------------------------------------
+[Part 3] 3차 리서치 드롭 항목 (8건)
+---------------------------------------------------------------------------------
+[Drop Item 09] SpineMed Pro Tech (http://spinemed-protech.com)
+- 수집 제외 사유: 파란/흰색 위주의 차가운 병원 엑스레이 및 의료기기 톤앤매너로 SEUMIM 감성 웰니스 무드 및 비대칭 프레임 지침에 부적합.
+
+[Drop Item 10] Enterprise Posture SaaS (https://enterprise-posture-saas.io)
+- 수집 제외 사유: 기업용 대시보드 및 복잡한 B2B 소프트웨어 레이아웃 구조로 D2C 커머스 브랜드 레퍼런스로 부적합.
+
+[Drop Item 11] Global Medical Supplies Mall (https://global-medical-supplies.net)
+- 수집 제외 사유: 수십 개 의료용품 카테고리가 조잡하게 나열된 종합 오픈마켓 구조로 미니멀 감성 여백 및 하이엔드 톤앤매너에 불부합.
+
+[Drop Item 12] BioClinic Network (https://bioclinic-network.org)
+- 수집 제외 사유: 차가운 의학 클리닉 비주얼 및 네트워크 접속 불량 링크.
+
+[Drop Item 13] Hospital Equipment Direct (https://hosp-equip-direct.com)
+- 수집 제외 사유: 진단기기 위주의 전형적인 의료 장비 사이트로 D2C 감성 커머스 레퍼런스로 부적합.
+
+[Drop Item 14] B2B Health Dashboard (https://b2b-health-dashboard.io)
+- 수집 제외 사유: B2B 시스템 로그 및 관리자 대시보드 레이아웃으로 커머스 동선 부적합.
+
+[Drop Item 15] MediTech Open Store (https://meditech-openstore.net)
+- 수집 제외 사유: 조잡한 상품 배치 및 감성 여백 배제 오픈마켓 스타일.
+
+[Drop Item 16] Clinic Pro Care (https://clinicpro-care.org)
+- 수집 제외 사유: 병원 예약 전용 의료 포털 인터페이스 및 접속 불안정.
+
+=================================================================================
