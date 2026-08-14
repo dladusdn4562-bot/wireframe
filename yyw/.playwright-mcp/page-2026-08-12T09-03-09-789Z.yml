@@ -1,0 +1,177 @@
+- generic [ref=f14e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f14e15]:
+      - generic [ref=f14e17]:
+        - generic [ref=f14e18]:
+          - combobox "검색" [ref=f14e20]: minimalist geometric four leaf clover logo symbol black white vector
+          - generic [ref=f14e21]:
+            - button "검색 입력 삭제" [ref=f14e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f14e30]:
+              - button "Pinterest 렌즈" [ref=f14e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f14e38] [cursor=pointer]:
+          - generic [ref=f14e40]:
+            - generic [ref=f14e41]: 모든 핀
+            - img "드롭다운" [ref=f14e43]
+      - link "내 프로필" [ref=f14e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f14e56]:
+          - generic [ref=f14e57]: 임
+      - button "계정" [ref=f14e61] [cursor=pointer]
+  - navigation [ref=f14e66]:
+    - generic [ref=f14e68]:
+      - generic [ref=f14e69]:
+        - generic "홈" [ref=f14e73]:
+          - link "홈" [ref=f14e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f14e81]:
+          - link "홈" [ref=f14e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f14e89]:
+          - link "내 보드" [ref=f14e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f14e97]:
+          - button "만들기" [ref=f14e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f14e114]:
+        - button "설정 및 지원" [ref=f14e115] [cursor=pointer]
+  - main [ref=f14e120]:
+    - generic [ref=f14e122]:
+      - heading "검색 결과 페이지" [level=1] [ref=f14e124]
+      - region "필터 및 세분화 검색" [ref=f14e128]:
+        - button "필터 표시" [ref=f14e137] [cursor=pointer]
+      - generic [ref=f14e148]:
+        - generic [ref=f14e149]: minimalist geometric four leaf clover logo symbol black white vector 검색 결과를 추가로 불러오는 중
+        - list [ref=f14e154]:
+          - listitem [ref=f14e155]:
+            - button [ref=f14e157] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e159]:
+                - generic [ref=f14e161]:
+                  - link "trébol silueta. flor diagrama con pétalos floral tarta gráfico dividido en 4 4 igual segmentos en hoja formas aislado en blanco antecedentes. modelo para datos presentación. gráfico ilustración 핀 페이지" [ref=f14e163]:
+                    - /url: /pin/60798663714364160/
+                    - 'img "포함된 이미지: trébol silueta. flor diagrama con pétalos floral tarta gráfico dividido en 4 4 igual segmentos en hoja formas aislado en blanco antecedentes. modelo para datos presentación. gráfico ilustración" [ref=f14e173]'
+                  - generic [ref=f14e178]:
+                    - heading [level=2] [ref=f14e184]:
+                      - link "trébol silueta. flor diagrama con pétalos floral tarta gráfico dividido en 4 4 igual segmentos en hoja formas aislado en blanco antecedentes. modelo para datos presentación. gráfico ilustración 핀 페이지" [ref=f14e186]:
+                        - /url: /pin/60798663714364160/
+                        - text: trébol silueta. flor diagrama con pétalos floral tarta gráfico dividido en 4 4 igual segmentos en hoja formas aislado en blanco antecedentes. modelo para datos presentación. gráfico ilustración
+                    - generic "추가 작업" [ref=f14e189]:
+                      - button "추가 작업" [ref=f14e190]
+          - listitem [ref=f14e195]:
+            - button [ref=f14e197] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e199]:
+                - generic [ref=f14e201]:
+                  - link "Clover symbol 핀 페이지" [ref=f14e203]:
+                    - /url: /pin/5277724558971259/
+                    - 'img "포함된 이미지: Clover symbol" [ref=f14e213]'
+                  - generic [ref=f14e218]:
+                    - heading [level=2] [ref=f14e224]:
+                      - link "Clover symbol 핀 페이지" [ref=f14e226]:
+                        - /url: /pin/5277724558971259/
+                        - text: Clover symbol
+                    - generic "추가 작업" [ref=f14e229]:
+                      - button "추가 작업" [ref=f14e230]
+          - listitem [ref=f14e235]:
+            - button [ref=f14e237] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e239]:
+                - generic [ref=f14e241]:
+                  - link "제목 없음 핀 페이지" [ref=f14e243]:
+                    - /url: /pin/353954851985462370/
+                    - img "포함된 이미지:" [ref=f14e253]
+                  - generic "추가 작업" [ref=f14e262]:
+                    - button "추가 작업" [ref=f14e263]
+          - listitem [ref=f14e268]:
+            - button [ref=f14e270] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e272]:
+                - generic [ref=f14e274]:
+                  - link "제목 없음 핀 페이지" [ref=f14e276]:
+                    - /url: /pin/41447259076694830/
+                    - img "포함된 이미지:" [ref=f14e286]
+                  - generic "추가 작업" [ref=f14e295]:
+                    - button "추가 작업" [ref=f14e296]
+          - listitem [ref=f14e301]:
+            - button [ref=f14e303] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e305]:
+                - generic [ref=f14e307]:
+                  - link "Simbolo di Harkel - Immagine | Myst Cyclopedia 핀 페이지" [ref=f14e309]:
+                    - /url: /pin/362610207479981527/
+                    - 'img "포함된 이미지: Simbolo di Harkel - Immagine | Myst Cyclopedia" [ref=f14e319]'
+                  - generic [ref=f14e324]:
+                    - heading [level=2] [ref=f14e330]:
+                      - link "Simbolo di Harkel - Immagine | Myst Cyclopedia 핀 페이지" [ref=f14e332]:
+                        - /url: /pin/362610207479981527/
+                        - text: Simbolo di Harkel - Immagine | Myst Cyclopedia
+                    - generic "추가 작업" [ref=f14e335]:
+                      - button "추가 작업" [ref=f14e336]
+          - listitem [ref=f14e341]:
+            - button [ref=f14e343] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e345]:
+                - generic [ref=f14e347]:
+                  - 'link "Abstract Logomark . For logo design enquiry DM or email at monogramdude@gmail.com . #CreativeWonders #clothing #abstractwork #monogramlogo #LogoArt #realestates #logoworld #CustomLogo #creator #logoexcellent #logounifact #DesignPerfection #abstractlogo #lettermark #graphix #logobranding #DesignRevolution #logobrainy #graphicscard #graphicoftheday #powerindustry #graphicstudio #graphiccontent #ModernLogo #graphictshirt #logotypedesign #MinimalistLogo 핀 페이지" [ref=f14e349]':
+                    - /url: /pin/111112315802578986/
+                    - img "포함된 이미지:" [ref=f14e359]
+                  - generic "추가 작업" [ref=f14e368]:
+                    - button "추가 작업" [ref=f14e369]
+          - listitem [ref=f14e374]:
+            - button [ref=f14e376] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e378]:
+                - generic [ref=f14e380]:
+                  - link "제목 없음 핀 페이지" [ref=f14e382]:
+                    - /url: /pin/456974693451358463/
+                    - img "포함된 이미지:" [ref=f14e392]
+                  - generic "추가 작업" [ref=f14e401]:
+                    - button "추가 작업" [ref=f14e402]
+          - listitem [ref=f14e407]:
+            - button [ref=f14e409] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e411]:
+                - generic [ref=f14e413]:
+                  - link "제목 없음 핀 페이지" [ref=f14e415]:
+                    - /url: /pin/20969954511756416/
+                    - img "포함된 이미지:" [ref=f14e425]
+                  - generic [ref=f14e430]:
+                    - link "Flaticon" [ref=f14e434]:
+                      - /url: /flaticon/
+                      - generic "Flaticon" [ref=f14e441]
+                    - generic "추가 작업" [ref=f14e444]:
+                      - button "추가 작업" [ref=f14e445]
+          - listitem [ref=f14e450]:
+            - button [ref=f14e452] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e454]:
+                - generic [ref=f14e456]:
+                  - link "제목 없음 핀 페이지" [ref=f14e458]:
+                    - /url: /pin/914862422031785/
+                    - img "포함된 이미지:" [ref=f14e468]
+                  - generic "추가 작업" [ref=f14e477]:
+                    - button "추가 작업" [ref=f14e478]
+          - listitem [ref=f14e483]:
+            - button [ref=f14e485] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e487]:
+                - generic [ref=f14e489]:
+                  - 'link "Recent Logosmarks Available for new projects! DM or email at monogramdude@gmail.com . #logos #marks #symbols #realestatelogo #lettermarks #logofolio #brandidentity #brandingprocess #logomark #typography #modernlogo #CustomLogo #creator #design #customlogodesign #designer #logo #logofolio2024 #logotypes #logotips #logoexperts #abstractlogo #logoplace #logoinspiration 핀 페이지" [ref=f14e491]':
+                    - /url: /pin/304978206038909807/
+                    - img "포함된 이미지:" [ref=f14e501]
+                  - generic "추가 작업" [ref=f14e510]:
+                    - button "추가 작업" [ref=f14e511]
+          - listitem [ref=f14e516]:
+            - button [ref=f14e518] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e520]:
+                - generic [ref=f14e522]:
+                  - link "Download Abstract Geometric flower icon for free 핀 페이지" [ref=f14e524]:
+                    - /url: /pin/186829084537876906/
+                    - 'img "포함된 이미지: Download Abstract Geometric flower icon for free" [ref=f14e534]'
+                  - generic [ref=f14e539]:
+                    - heading [level=2] [ref=f14e545]:
+                      - link "Download Abstract Geometric flower icon for free 핀 페이지" [ref=f14e547]:
+                        - /url: /pin/186829084537876906/
+                        - text: Download Abstract Geometric flower icon for free
+                    - generic "추가 작업" [ref=f14e550]:
+                      - button "추가 작업" [ref=f14e551]
+          - listitem [ref=f14e556]:
+            - button [ref=f14e558] [cursor=pointer]:
+              - group "핀 카드" [ref=f14e560]:
+                - generic [ref=f14e562]:
+                  - link "제목 없음 핀 페이지" [ref=f14e564]:
+                    - /url: /pin/48695239716552950/
+                    - img "포함된 이미지:" [ref=f14e574]
+                  - generic "추가 작업" [ref=f14e583]:
+                    - button "추가 작업" [ref=f14e584]

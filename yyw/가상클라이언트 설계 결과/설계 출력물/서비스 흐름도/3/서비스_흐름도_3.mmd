@@ -1,0 +1,29 @@
+flowchart TD
+    classDef step fill:#1E293B,stroke:#0284C7,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef action fill:#0284C7,stroke:#0369A1,stroke-width:1.5px,color:#FFFFFF;
+    classDef review fill:#38BDF8,stroke:#0284C7,stroke-width:1.5px,color:#0F172A;
+    classDef decision fill:#F59E0B,stroke:#D97706,stroke-width:1.5px,color:#0F172A;
+    classDef finish fill:#10B981,stroke:#059669,stroke-width:2px,color:#FFFFFF;
+    classDef exception fill:#EF4444,stroke:#B91C1C,stroke-width:1.5px,color:#FFFFFF;
+
+    START([시작: 다크모드 웹사이트 유입]):::step --> ST01["ST-01: 메인 다크모드 & 개발자 척추 통계 탐색"]:::action
+    ST01 --> DEC01{"어떤 정보를 먼저 확인할 것인가?"}:::decision
+
+    DEC01 -- "시차 필터링 테크" --> ST03["ST-03: 오알림 0건 필터링 로직 확인"]:::action
+    ST03 --> ST04["ST-04: 다크모드 대시보드 & 워치 링 UI 시연"]:::review
+    ST04 --> ST06["ST-06: AI 케어 3개월 무료 구독 신청"]:::action
+
+    DEC01 -- "스마트 척추 조끼 HW" --> ST02["ST-02: 전도성 센서 섬유 & 조끼 룩북 확인"]:::action
+    ST02 --> ST05["ST-05: 의류 기준(95/100/105) 사이즈 매칭"]:::action
+    ST05 --> ST06
+
+    DEC01 -- "데스크 10초 케어" --> ST07["ST-07: 10초 AI 루틴 & 잔디 히트맵 확인"]:::action
+    ST07 --> ST06
+
+    ST06 --> DEC02{"입력값 유효성 검증"}:::decision
+    DEC02 -- "오류" --> ST06E["ST-06E: 오류 필드 안내 및 재입력"]:::exception
+    ST06E --> ST06
+
+    DEC02 -- "정상 발급" --> ST06A["ST-06A: AI 라이선스 발급 & HW 예약 완료"]:::finish
+    ST06A --> ST08["ST-08: 마이페이지 실시간 자세 스트림 연동"]:::finish
+    ST08 --> END([종료: 실시간 자세 코칭 및 스마트 케어 시작]):::step

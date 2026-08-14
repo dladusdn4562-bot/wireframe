@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "SEUMIM(스밈) 오프라인 동행센터 O2O 화면 목록 (가상클라이언트 5: 최수진)",
+  "version": "2.0.0",
+  "totalScreens": 14,
+  "screens": [
+    {
+      "screenId": "SCR-01",
+      "sitemapId": "P-0.0",
+      "name": "0.0 O2O 메인 랜딩페이지",
+      "type": "PAGE",
+      "depth": 1,
+      "purpose": "직장인 다리 꼬기 통계 제시, 에어셀 테크 검증, 전국 32개 센터 검색 및 1회 무료 예약 유도",
+      "components": ["O2O Hero", "다리 꼬기 통계 78.4%", "에어셀 물리 차단 모식도", "32개 센터 지도 퀵 서치", "직장인 찐후기", "하단 전환 CTA"],
+      "interactions": [
+        {"element": "[1회 무료 체형 진단 예약] CTA", "action": "SCR-08 4단계 Wizard 모달 호출"},
+        {"element": "[지점 바로 검색]", "action": "SCR-05 전국 동행센터 지도 페이지로 이동"}
+      ]
+    },
+    {
+      "screenId": "SCR-02",
+      "sitemapId": "P-1.0",
+      "name": "1.0 골반 에어셀 벨트",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "마이크로 에어셀 원단 스펙 및 샌드베이지 슬랙스 착용감 검증",
+      "components": ["에어셀 원단 스펙 시트", "오피스 슬랙스 핏 룩북 화보", "사계절 메쉬 시험 성적서"],
+      "interactions": [
+        {"element": "[골반 사이즈 찾기]", "action": "SCR-03 골반 사이즈 모달 호출"}
+      ]
+    },
+    {
+      "screenId": "SCR-03",
+      "sitemapId": "P-1.3",
+      "name": "1.3 골반 둘레 정밀 사이즈 가이드 [모달]",
+      "type": "MODAL",
+      "depth": 3,
+      "purpose": "바지 인치(26~34) 기준 정밀 사이즈 추천으로 착용 실패 방지",
+      "components": ["바지 사이즈 칩", "신장/체중 계산기", "2개 사이즈 동시 발송 안내"],
+      "interactions": [
+        {"element": "[이 사이즈로 30일 시착]", "action": "30일 시착 폼 작성"}
+      ]
+    },
+    {
+      "screenId": "SCR-04",
+      "sitemapId": "P-2.0",
+      "name": "2.0 물리 차단 테크",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "0.5초 즉각 물리 차단 메커니즘 및 하체 혈류 개선 데이터 증명",
+      "components": ["에어셀 팽창 모식도", "골반 수평 8.4도 복원 임상 데이터", "하체 혈류 28% 개선 차트"],
+      "interactions": [
+        {"element": "[내 골반 수평 측정하기]", "action": "SCR-08 4단계 Wizard 모달 호출"}
+      ]
+    },
+    {
+      "screenId": "SCR-05",
+      "sitemapId": "P-3.0",
+      "name": "3.0 전국 동행센터 찾기",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "사용자 위치 기반 인접 제휴 센터 실시간 검색",
+      "components": ["카카오맵 연동 32개 센터 지도", "권역별 지점 필터(여의도/강남/판교)", "지점별 카드 리스트"],
+      "interactions": [
+        {"element": "[지점 선택 후 1회 무료 예약]", "action": "SCR-08 해당 지점 바인딩 후 Wizard 호출"}
+      ]
+    },
+    {
+      "screenId": "SCR-06",
+      "sitemapId": "P-3.2",
+      "name": "3.2 전문 교정 매니저 프로필",
+      "type": "PAGE",
+      "depth": 3,
+      "purpose": "센터별 전문 물리치료사/체형교정사 자격 검증을 통한 신뢰 확보",
+      "components": ["매니저 자격증 배지", "1:1 상담 예약 캘린더", "실제 상담자 후기"],
+      "interactions": [
+        {"element": "[이 매니저에게 예약]", "action": "SCR-08 매니저 지정 후 Wizard 호출"}
+      ]
+    },
+    {
+      "screenId": "SCR-07",
+      "sitemapId": "P-4.0",
+      "name": "4.0 1회 무료 진단 예약 안내",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "1회 무료 1:1 체형 진단 혜택 및 오프라인 방문 절차 안내",
+      "components": ["15분 정밀 체형 측정 프로세스", "100% 무료 혜택 공지", "예약 유의사항"],
+      "interactions": [
+        {"element": "[예약 Wizard 열기]", "action": "SCR-08 모달 오픈"}
+      ]
+    },
+    {
+      "screenId": "SCR-08",
+      "sitemapId": "P-4.2",
+      "name": "4.2 4단계 간편 예약 Wizard [모달]",
+      "type": "MODAL",
+      "depth": 3,
+      "purpose": "4단계 Step-by-Step 1-Click 간편 예약 접수",
+      "components": ["Step 1: 지점 선택", "Step 2: 퇴근 일시 선택", "Step 3: 예약자 정보 입력", "Step 4: 예약 확정"],
+      "interactions": [
+        {"element": "[1회 무료 예약 완료]", "action": "SCR-09 예약 완료 화면 이동 및 알림톡 발송"}
+      ]
+    },
+    {
+      "screenId": "SCR-09",
+      "sitemapId": "P-4.3",
+      "name": "4.3 예약 완료 및 방문 안내 [가정]",
+      "type": "PAGE",
+      "depth": 3,
+      "purpose": "고유 예약 번호 확인 및 방문 지도 안내",
+      "components": ["예약 확정 번호", "지점 방문 지도 및 주차 안내", "알림톡 발송 확인"],
+      "interactions": [
+        {"element": "[마이페이지에서 일정 확인]", "action": "SCR-12 마이페이지 이동"}
+      ]
+    },
+    {
+      "screenId": "SCR-10",
+      "sitemapId": "P-5.0",
+      "name": "5.0 골반 케어 가이드",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "데스크 10초 스트레칭 및 21일 챌린지 참여 유도",
+      "components": ["의자 10초 골반 리셋 가이드 영상", "21일 다리 꼬기 탈출 챌린지 폼", "직장인 FAQ"],
+      "interactions": [
+        {"element": "[챌린지 참여하고 무료 진단권 받기]", "action": "SCR-08 모달 호출"}
+      ]
+    },
+    {
+      "screenId": "SCR-11",
+      "sitemapId": "P-6.1",
+      "name": "6.1 간편 로그인 [가정]",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "카카오/네이버 SNS 1-Click 로그인 및 예약 내역 연동",
+      "components": ["카카오 1-Click 로그인", "네이버 로그인"],
+      "interactions": [
+        {"element": "[로그인 완료]", "action": "SCR-12 마이페이지로 리다이렉트"}
+      ]
+    },
+    {
+      "screenId": "SCR-12",
+      "sitemapId": "P-6.2",
+      "name": "6.2 마이페이지 예약 관리 [가정]",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "O2O 센터 예약 조회 및 1-Click 일정 변경/취소",
+      "components": ["방문 예약 일정 카드", "1-Click 날짜 변경 버튼", "체형 진단 리포트"],
+      "interactions": [
+        {"element": "[예약 일정 변경]", "action": "날짜 변경 모달 호출"}
+      ]
+    },
+    {
+      "screenId": "SCR-13",
+      "sitemapId": "P-9.1",
+      "name": "9.1 404 Not Found [가정]",
+      "type": "EXCEPT",
+      "depth": 2,
+      "purpose": "404 에러 안내 및 센터 지도 바로가기 제공",
+      "components": ["404 에러 메시지", "[전국 센터 찾기로 이동] CTA"],
+      "interactions": [
+        {"element": "[전국 센터 찾기]", "action": "SCR-05 이동"}
+      ]
+    },
+    {
+      "screenId": "SCR-14",
+      "sitemapId": "P-9.2",
+      "name": "9.2 시스템 점검 안내 [가정]",
+      "type": "EXCEPT",
+      "depth": 2,
+      "purpose": "정기 점검 시간 공지 및 O2O 예약 데이터 보존 안내",
+      "components": ["점검 시간 공지", "예약 데이터 보존 안내", "고객센터 채널"],
+      "interactions": [
+        {"element": "[새로고침]", "action": "서버 상태 재확인"}
+      ]
+    }
+  ]
+}

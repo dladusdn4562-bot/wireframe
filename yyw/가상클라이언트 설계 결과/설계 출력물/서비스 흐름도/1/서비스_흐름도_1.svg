@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 2220" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #F8FAFC; }
+      .main-title { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 26px; font-weight: 800; fill: #0F172A; }
+      .sub-title { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 14px; fill: #475569; font-weight: 500; }
+      .section-label { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 700; fill: #0F172A; }
+      .badge-text { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 11.5px; font-weight: 700; }
+      .node-text { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 13px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+      .node-subtext { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 11px; font-weight: 400; text-anchor: middle; dominant-baseline: central; fill: #64748B; }
+      .edge-label { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 11.5px; font-weight: 600; fill: #475569; text-anchor: middle; }
+      
+      /* 연결선 */
+      .line { stroke: #94A3B8; stroke-width: 2px; fill: none; }
+      .line-accent { stroke: #0284C7; stroke-width: 2.5px; fill: none; }
+      .line-dashed { stroke: #64748B; stroke-width: 2px; stroke-dasharray: 5,5; fill: none; }
+      .line-error { stroke: #EF4444; stroke-width: 2px; stroke-dasharray: 4,4; fill: none; }
+      .line-success { stroke: #10B981; stroke-width: 2px; fill: none; }
+      
+      /* 마커 */
+      .arrow { fill: #94A3B8; }
+      .arrow-accent { fill: #0284C7; }
+      .arrow-dashed { fill: #64748B; }
+      .arrow-error { fill: #EF4444; }
+      .arrow-success { fill: #10B981; }
+
+      /* 노드 스타일 */
+      .box-start-end { fill: #0F172A; stroke: #0284C7; stroke-width: 2px; }
+      .text-start-end { fill: #FFFFFF; font-size: 13.5px; font-weight: bold; }
+      
+      .box-screen { fill: #FFFFFF; stroke: #0284C7; stroke-width: 2px; rx: 8px; ry: 8px; filter: drop-shadow(0 2px 4px rgba(2,132,199,0.08)); }
+      .text-screen { fill: #0369A1; font-size: 13px; font-weight: bold; }
+      
+      .box-user { fill: #EEF2FF; stroke: #4F46E5; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-user { fill: #312E81; font-size: 12.5px; font-weight: 600; }
+      
+      .box-system { fill: #ECFDF5; stroke: #059669; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-system { fill: #065F46; font-size: 12.5px; font-weight: 600; }
+      
+      .box-decision { fill: #FEF9C3; stroke: #CA8A04; stroke-width: 1.8px; }
+      .text-decision { fill: #854D0E; font-size: 12px; font-weight: bold; }
+      
+      .box-modal { fill: #FFFBEB; stroke: #D97706; stroke-width: 2px; stroke-dasharray: 6,3; rx: 8px; ry: 8px; }
+      .text-modal { fill: #B45309; font-size: 13px; font-weight: bold; }
+      
+      .box-exception { fill: #FEF2F2; stroke: #EF4444; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-exception { fill: #991B1B; font-size: 12px; font-weight: 600; }
+      
+      .box-assumed { fill: #F1F5F9; stroke: #64748B; stroke-width: 1.5px; stroke-dasharray: 4,4; rx: 6px; ry: 6px; }
+      .text-assumed { fill: #334155; font-size: 12.5px; font-weight: 600; }
+
+      .col-container { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1.5px; rx: 12px; ry: 12px; }
+      .col-header { font-family: 'Pretendard', sans-serif; font-size: 15px; font-weight: bold; }
+      .legend-box { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1px; rx: 8px; ry: 8px; }
+    </style>
+
+    <!-- 화살표 마커 정의 -->
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow" />
+    </marker>
+    <marker id="arr-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-accent" />
+    </marker>
+    <marker id="arr-dashed" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-dashed" />
+    </marker>
+    <marker id="arr-error" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-error" />
+    </marker>
+    <marker id="arr-success" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-success" />
+    </marker>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- ========================================== -->
+  <!-- 1. 헤더 및 범례 영역 -->
+  <!-- ========================================== -->
+  <g transform="translate(50, 35)">
+    <text x="0" y="28" class="main-title">SEUMIM(스밈) 서비스 흐름도 (Service Flowchart)</text>
+    <text x="0" y="55" class="sub-title">가상클라이언트 1 (박서준 총괄: HW 판매 + AI SW 구독 + O2O 동행센터 3중 선순환 플랫폼)</text>
+    
+    <!-- 범례 (Legend) -->
+    <g transform="translate(730, 0)">
+      <rect width="850" height="65" class="legend-box" />
+      
+      <!-- 시작/종료 -->
+      <rect x="20" y="22" width="50" height="22" rx="11" class="box-start-end" />
+      <text x="80" y="37" font-size="12" fill="#334155" font-family="'Pretendard', sans-serif">시작/종료</text>
+      
+      <!-- 화면 -->
+      <rect x="145" y="20" width="30" height="24" class="box-screen" />
+      <text x="185" y="37" font-size="12" fill="#334155" font-family="'Pretendard', sans-serif">화면(Page)</text>
+      
+      <!-- 사용자 행동 -->
+      <rect x="265" y="22" width="28" height="22" class="box-user" />
+      <text x="302" y="37" font-size="12" fill="#334155" font-family="'Pretendard', sans-serif">사용자 행동</text>
+      
+      <!-- 시스템 처리 -->
+      <rect x="385" y="22" width="28" height="22" class="box-system" />
+      <text x="422" y="37" font-size="12" fill="#334155" font-family="'Pretendard', sans-serif">시스템 처리</text>
+      
+      <!-- 판단 분기 -->
+      <polygon points="505,33 517,21 529,33 517,45" class="box-decision" />
+      <text x="538" y="37" font-size="12" fill="#334155" font-family="'Pretendard', sans-serif">판단 분기</text>
+      
+      <!-- 모달 -->
+      <rect x="610" y="20" width="30" height="24" class="box-modal" />
+      <text x="650" y="37" font-size="12" fill="#334155" font-family="'Pretendard', sans-serif">모달/팝업</text>
+
+      <!-- 오류/예외 -->
+      <rect x="725" y="22" width="28" height="22" class="box-exception" />
+      <text x="762" y="37" font-size="12" fill="#334155" font-family="'Pretendard', sans-serif">오류/예외</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. 공통 진입 및 메인 랜딩 네비게이션 -->
+  <!-- ========================================== -->
+  <!-- 시작 노드 -->
+  <g transform="translate(715, 125)">
+    <rect width="250" height="46" rx="23" class="box-start-end" />
+    <text x="125" y="23" class="node-text text-start-end">● 시작: 사용자 웹사이트 접속</text>
+  </g>
+
+  <path d="M 840 171 L 840 205" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <!-- URL 유효성 검사 분기 다이아몬드 -->
+  <g transform="translate(840, 240)">
+    <polygon points="0,-32 120,0 0,32 -120,0" class="box-decision" />
+    <text x="0" y="0" class="node-text text-decision">URL 유효성 검사</text>
+  </g>
+
+  <!-- 정상 URL -->
+  <path d="M 840 272 L 840 325" class="line-accent" marker-end="url(#arr-accent)" />
+  <rect x="848" y="288" width="56" height="20" fill="#F8FAFC" rx="4" />
+  <text x="876" y="302" class="edge-label">정상 URL</text>
+
+  <!-- 404 예외 분기 -->
+  <path d="M 960 240 L 1400 240 L 1400 280" class="line-error" marker-end="url(#arr-error)" />
+  <rect x="1140" y="228" width="65" height="20" fill="#F8FAFC" rx="4" />
+  <text x="1172" y="242" class="edge-label" fill="#EF4444">잘못된 URL</text>
+  
+  <g transform="translate(1275, 280)">
+    <rect width="250" height="50" class="box-exception" />
+    <text x="125" y="25" class="node-text text-exception">9.1 404 Not Found [가정] (P-9.1)</text>
+  </g>
+  <path d="M 1275 305 L 1100 305 L 1100 350 L 990 350" class="line-dashed" marker-end="url(#arr-dashed)" />
+  <text x="1165" y="297" class="edge-label">메인 바로가기</text>
+
+  <!-- 0.0 메인 랜딩페이지 노드 -->
+  <g transform="translate(690, 325)">
+    <rect width="300" height="56" class="box-screen" stroke-width="2.5" />
+    <text x="150" y="28" class="node-text text-screen" font-size="15">0.0 메인 랜딩페이지 (P-0.0)</text>
+  </g>
+
+  <!-- GNB 분기선 -->
+  <path d="M 840 381 L 840 425" class="line" />
+  <path d="M 285 425 L 1395 425" class="line" />
+
+  <!-- Flow A, B, C 진입 화살표 -->
+  <path d="M 285 425 L 285 465" class="line-accent" marker-end="url(#arr-accent)" />
+  <path d="M 840 425 L 840 465" class="line-accent" marker-end="url(#arr-accent)" />
+  <path d="M 1395 425 L 1395 465" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <text x="285" y="445" class="edge-label" font-weight="bold">HW 사전예약 탐색</text>
+  <text x="840" y="445" class="edge-label" font-weight="bold">AI 데이터 케어 탐색</text>
+  <text x="1395" y="445" class="edge-label" font-weight="bold">O2O 제휴센터 검색</text>
+
+  <!-- ========================================================================= -->
+  <!-- 3. 핵심 3대 흐름 컨테이너 (Flow A / Flow B / Flow C) -->
+  <!-- ========================================================================= -->
+
+  <!-- =================================================== -->
+  <!-- COLUMN 1: Flow A (HW 30일 무료체험 & 사전예약) -->
+  <!-- =================================================== -->
+  <g transform="translate(45, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#F0F9FF" stroke="#E2E8F0" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#0284C7" text-anchor="middle">[Flow A] 시그니처 HW 30일 무료 체험 및 사전 신청</text>
+    
+    <!-- 1. 탐색: P-2.0 시그니처 HW -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">2.0 시그니처 HW (P-2.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: HW 라인업 탐색 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 3대 HW 라인업 룩북 탐색</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 분기: 사이즈 가이드 필요 여부 -->
+    <g transform="translate(240, 260)">
+      <polygon points="0,-30 110,0 0,30 -110,0" class="box-decision" />
+      <text x="0" y="0" class="node-text text-decision">사이즈 가이드 필요?</text>
+    </g>
+
+    <!-- 분기: 필요 (Yes) ➔ P-2.4 모달 -->
+    <path d="M 130 260 L 60 260 L 60 325 L 90 325" class="line" marker-end="url(#arr)" />
+    <text x="80" y="250" class="edge-label">가이드 필요</text>
+
+    <g transform="translate(90, 305)">
+      <rect width="300" height="46" class="box-modal" />
+      <text x="150" y="23" class="node-text text-modal">2.4 정밀 사이즈 가이드 [모달] (P-2.4)</text>
+    </g>
+
+    <path d="M 240 351 L 240 380" class="line" marker-end="url(#arr)" />
+
+    <g transform="translate(90, 380)">
+      <rect width="300" height="44" class="box-user" />
+      <text x="150" y="22" class="node-text text-user">사용자: 상의 95/100 규격 매칭 선택</text>
+    </g>
+
+    <!-- 분기: 불필요 (No) ➔ 바로 모달 신청 -->
+    <path d="M 350 260 L 415 260 L 415 460 L 390 460" class="line" marker-end="url(#arr)" />
+    <text x="390" y="250" class="edge-label">직접 선택</text>
+
+    <path d="M 240 424 L 240 455" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. 핵심 행동: 5.2 30일 무료체험 신청 모달 -->
+    <g transform="translate(75, 455)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">5.2 30일 무료 체험 사전 신청 [모달] (P-5.2)</text>
+    </g>
+
+    <path d="M 240 507 L 240 540" class="line" marker-end="url(#arr)" />
+
+    <!-- 5. 사용자 입력 -->
+    <g transform="translate(90, 540)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 신청자 정보 &amp; 배송지 입력</text>
+    </g>
+
+    <path d="M 240 586 L 240 625" class="line" marker-end="url(#arr)" />
+
+    <!-- 6. 유효성 검사 분기 -->
+    <g transform="translate(240, 660)">
+      <polygon points="0,-32 110,0 0,32 -110,0" class="box-decision" />
+      <text x="0" y="0" class="node-text text-decision">입력값 유효성 검증</text>
+    </g>
+
+    <!-- 검증 오류 루프 -->
+    <path d="M 130 660 L 60 660 L 60 720 L 90 720" class="line-error" marker-end="url(#arr-error)" />
+    <text x="80" y="650" class="edge-label" fill="#EF4444">입력 오류</text>
+
+    <g transform="translate(90, 700)">
+      <rect width="300" height="44" class="box-exception" />
+      <text x="150" y="22" class="node-text text-exception">시스템: 에러 필드 표시 &amp; 재입력 유도</text>
+    </g>
+    <path d="M 390 722 L 420 722 L 420 563 L 390 563" class="line-dashed" marker-end="url(#arr-dashed)" />
+
+    <!-- 검증 통과 ➔ 시스템 저장 -->
+    <path d="M 240 692 L 240 775" class="line-success" marker-end="url(#arr-success)" />
+    <text x="270" y="730" class="edge-label" fill="#059669">검증 성공</text>
+
+    <g transform="translate(90, 775)">
+      <rect width="300" height="50" class="box-system" />
+      <text x="150" y="25" class="node-text text-system">시스템: 30일 시착 신청 DB 저장 &amp; 접수</text>
+    </g>
+
+    <path d="M 240 825 L 240 870" class="line-success" marker-end="url(#arr-success)" />
+
+    <!-- 결과 확인 및 완료 노드 -->
+    <g transform="translate(80, 870)">
+      <rect width="320" height="50" rx="25" class="box-start-end" />
+      <text x="160" y="25" class="node-text text-start-end">◎ 완료: 30일 체험/사전예약 완료</text>
+    </g>
+
+    <path d="M 240 920 L 240 960 L 50 960 L 50 -100 L 645 -100" class="line-dashed" />
+    <text x="160" y="950" class="edge-label">메인페이지로 복귀</text>
+  </g>
+
+
+  <!-- =================================================== -->
+  <!-- COLUMN 2: Flow B (AI 데이터 케어 무료 구독) -->
+  <!-- =================================================== -->
+  <g transform="translate(600, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#EEF2FF" stroke="#E2E8F0" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#4F46E5" text-anchor="middle">[Flow B] AI 데이터 케어 3개월 무료 구독</text>
+    
+    <!-- 1. 탐색: P-3.0 AI 데이터 케어 -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">3.0 AI 데이터 케어 (P-3.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 대시보드 및 워치 UI 시연 -->
+    <g transform="translate(85, 145)">
+      <rect width="310" height="46" class="box-user" />
+      <text x="155" y="23" class="node-text text-user">사용자: 다크모드 대시보드 &amp; 워치 UI 시연</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 사용자: 3개월 무료 구독 클릭 -->
+    <g transform="translate(90, 225)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: "3개월 무료 구독 시작" 클릭</text>
+    </g>
+
+    <path d="M 240 271 L 240 310" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. 분기: 로그인 여부 확인 -->
+    <g transform="translate(240, 345)">
+      <polygon points="0,-32 110,0 0,32 -110,0" class="box-decision" />
+      <text x="0" y="0" class="node-text text-decision">로그인 상태 확인</text>
+    </g>
+
+    <!-- 분기: 비로그인 ➔ P-6.1 간편 로그인 -->
+    <path d="M 130 345 L 60 345 L 60 415 L 90 415" class="line" marker-end="url(#arr)" />
+    <text x="80" y="335" class="edge-label">비로그인</text>
+
+    <g transform="translate(90, 395)">
+      <rect width="300" height="48" class="box-assumed" />
+      <text x="150" y="24" class="node-text text-assumed">6.1 로그인 / 회원가입 [가정] (P-6.1)</text>
+    </g>
+
+    <path d="M 240 443 L 240 480" class="line" marker-end="url(#arr)" />
+
+    <g transform="translate(90, 480)">
+      <rect width="300" height="46" class="box-system" />
+      <text x="150" y="23" class="node-text text-system">시스템: 1-Click SNS 간편 인증 처리</text>
+    </g>
+
+    <path d="M 240 526 L 240 570" class="line-success" marker-end="url(#arr-success)" />
+
+    <!-- 분기: 로그인 상태 ➔ 바로 라이선스 활성화 -->
+    <path d="M 350 345 L 420 345 L 420 595 L 390 595" class="line-success" marker-end="url(#arr-success)" />
+    <text x="395" y="335" class="edge-label" fill="#059669">로그인 상태</text>
+
+    <!-- 5. 시스템: AI 구독 라이선스 부여 -->
+    <g transform="translate(80, 570)">
+      <rect width="320" height="50" class="box-system" stroke-width="2" />
+      <text x="160" y="25" class="node-text text-system">시스템: AI 케어 3개월 무료 라이선스 활성화</text>
+    </g>
+
+    <path d="M 240 620 L 240 670" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 6. 화면: P-6.2 마이페이지 대시보드 연동 -->
+    <g transform="translate(90, 670)">
+      <rect width="300" height="50" class="box-assumed" />
+      <text x="150" y="25" class="node-text text-assumed">6.2 마이페이지 [가정] (P-6.2)</text>
+    </g>
+
+    <path d="M 240 720 L 240 770" class="line-success" marker-end="url(#arr-success)" />
+
+    <!-- 7. 결과 확인 및 완료 노드 -->
+    <g transform="translate(80, 770)">
+      <rect width="320" height="50" rx="25" class="box-start-end" />
+      <text x="160" y="25" class="node-text text-start-end">◎ 완료: AI 데이터 케어 구독 완료</text>
+    </g>
+
+    <!-- 마이페이지 실시간 데이터 시연 안내 -->
+    <g transform="translate(60, 850)">
+      <rect width="360" height="85" fill="#F8FAFC" stroke="#CBD5E1" rx="8" />
+      <text x="180" y="25" class="node-text" font-size="12" fill="#0F172A" font-weight="bold">AI 케어 ➔ O2O 연계 루프</text>
+      <text x="180" y="48" class="node-subtext">앱 내 자세 점수 60점 미만 지속 시</text>
+      <text x="180" y="68" class="node-subtext" fill="#0284C7" font-weight="bold">➔ "오프라인 1회 무료 진단" 자동 추천 넛지</text>
+    </g>
+  </g>
+
+
+  <!-- =================================================== -->
+  <!-- COLUMN 3: Flow C (O2O 오프라인 동행센터 1회 무료 예약) -->
+  <!-- =================================================== -->
+  <g transform="translate(1155, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#ECFDF5" stroke="#E2E8F0" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#059669" text-anchor="middle">[Flow C] 오프라인 동행센터 1회 무료 진단 예약</text>
+    
+    <!-- 1. 탐색: P-4.0 오프라인 동행센터 -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">4.0 오프라인 동행센터 (P-4.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 위치 기반 지점 검색 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 위치 기반 지도 제휴 지점 검색</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 분기: 검색 결과 유무 -->
+    <g transform="translate(240, 260)">
+      <polygon points="0,-30 110,0 0,30 -110,0" class="box-decision" />
+      <text x="0" y="0" class="node-text text-decision">지점 검색 결과 존재?</text>
+    </g>
+
+    <!-- 분기: 검색 결과 없음 ➔ 대체 안내 -->
+    <path d="M 130 260 L 60 260 L 60 325 L 90 325" class="line-error" marker-end="url(#arr-error)" />
+    <text x="80" y="250" class="edge-label" fill="#EF4444">결과 없음</text>
+
+    <g transform="translate(90, 305)">
+      <rect width="300" height="46" class="box-exception" />
+      <text x="150" y="23" class="node-text text-exception">시스템: 인접 지점 추천 &amp; AI 케어 안내</text>
+    </g>
+    <path d="M 390 328 L 420 328 L 420 168 L 390 168" class="line-dashed" marker-end="url(#arr-dashed)" />
+    <text x="430" y="240" class="edge-label">재검색</text>
+
+    <!-- 분기: 지점 선택 ➔ 4단계 Wizard 모달 -->
+    <path d="M 240 290 L 240 380" class="line-success" marker-end="url(#arr-success)" />
+    <text x="275" y="340" class="edge-label" fill="#059669">지점 선택</text>
+
+    <!-- 4. 핵심 행동: P-4.2 4단계 예약 모달 -->
+    <g transform="translate(75, 380)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">4.2 1회 무료 체험 4단계 예약 [모달] (P-4.2)</text>
+    </g>
+
+    <path d="M 240 432 L 240 465" class="line" marker-end="url(#arr)" />
+
+    <!-- 5. 사용자: Wizard 4단계 정보 입력 -->
+    <g transform="translate(75, 465)">
+      <rect width="330" height="54" class="box-user" />
+      <text x="165" y="20" class="node-text text-user">사용자: 4단계 Wizard 정보 입력</text>
+      <text x="165" y="38" class="node-subtext">(지점확인 ➔ 날짜/시간 ➔ 인적사항 ➔ 확인)</text>
+    </g>
+
+    <path d="M 240 519 L 240 555" class="line" marker-end="url(#arr)" />
+
+    <!-- 6. Wizard 분기: 네비게이션 / 완료 -->
+    <g transform="translate(240, 590)">
+      <polygon points="0,-32 110,0 0,32 -110,0" class="box-decision" />
+      <text x="0" y="0" class="node-text text-decision">예약 정보 유효성 검사</text>
+    </g>
+
+    <!-- 이전 단계 이동 루프 -->
+    <path d="M 130 590 L 60 590 L 60 492 L 75 492" class="line-dashed" marker-end="url(#arr-dashed)" />
+    <text x="80" y="580" class="edge-label">이전 단계</text>
+
+    <!-- 예약 유효성 검증 성공 ➔ DB 확정 & SMS 발송 -->
+    <path d="M 240 622 L 240 670" class="line-success" marker-end="url(#arr-success)" />
+    <text x="270" y="645" class="edge-label" fill="#059669">검증 통과</text>
+
+    <g transform="translate(80, 670)">
+      <rect width="320" height="50" class="box-system" stroke-width="2" />
+      <text x="160" y="25" class="node-text text-system">시스템: 예약 확정 &amp; 알림톡/SMS 발송</text>
+    </g>
+
+    <path d="M 240 720 L 240 765" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 7. 결과 확인: P-4.3 예약 완료 안내 -->
+    <g transform="translate(90, 765)">
+      <rect width="300" height="50" class="box-assumed" />
+      <text x="150" y="25" class="node-text text-assumed">4.3 예약 완료 안내 [가정] (P-4.3)</text>
+    </g>
+
+    <path d="M 240 815 L 240 865" class="line-success" marker-end="url(#arr-success)" />
+
+    <!-- 8. 최종 완료 노드 -->
+    <g transform="translate(80, 865)">
+      <rect width="320" height="50" rx="25" class="box-start-end" />
+      <text x="160" y="25" class="node-text text-start-end">◎ 완료: 오프라인 1회 무료 진단 예약 확정</text>
+    </g>
+
+    <path d="M 240 915 L 240 960 L 90 960 L 90 1000" class="line-dashed" marker-end="url(#arr-dashed)" />
+    <text x="175" y="950" class="edge-label">마이페이지 예약조회 연동</text>
+
+    <g transform="translate(20, 1000)">
+      <rect width="440" height="50" class="box-assumed" />
+      <text x="220" y="25" class="node-text text-assumed">6.2 마이페이지 [가정] ➔ 예약 내역 확인 및 일정 변경</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 4. 하단 3중 선순환 모델 통합 인포그래픽 및 요약 -->
+  <!-- ========================================================================= -->
+  <g transform="translate(45, 1720)">
+    <rect width="1590" height="450" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" rx="12" />
+    <text x="40" y="45" font-family="'Pretendard', sans-serif" font-size="20" font-weight="bold" fill="#0F172A">스밈(SEUMIM) HW ✕ AI SW ✕ O2O 3중 선순환 서비스 아키텍처 요약</text>
+    
+    <!-- 3단 요약 카드 -->
+    <!-- 카드 1: HW 시착 & 데이터 수집 -->
+    <g transform="translate(40, 75)">
+      <rect width="480" height="330" fill="#F8FAFC" stroke="#E2E8F0" rx="10" />
+      <rect x="25" y="25" width="130" height="28" rx="6" fill="#0284C7" />
+      <text x="90" y="44" class="badge-text" fill="#FFFFFF" text-anchor="middle">1. 하드웨어 시착</text>
+      
+      <text x="25" y="85" font-family="'Pretendard', sans-serif" font-size="15" font-weight="bold" fill="#0F172A">0.1mm 시크릿 핏 &amp; 센서 데이터 축적</text>
+      <text x="25" y="120" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 3대 시그니처 HW (어깨 밴드 / 조끼 / 벨트)</text>
+      <text x="25" y="148" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 상의 95/100/105 의류 연계 정밀 매칭 가이드</text>
+      <text x="25" y="176" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 유연 전도성 섬유 센서로 실시간 체형 데이터 측정</text>
+      <text x="25" y="204" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 30일 시착 무료 반품 보장으로 진입 장벽 제로화</text>
+      
+      <rect x="25" y="245" width="430" height="55" fill="#E0F2FE" rx="6" />
+      <text x="40" y="270" font-family="'Pretendard', sans-serif" font-size="12.5" font-weight="bold" fill="#0369A1">➔ 다음 선순환 연결:</text>
+      <text x="40" y="290" font-family="'Pretendard', sans-serif" font-size="12" fill="#0369A1">HW 착용 데이터가 앱 대시보드로 자동 동기화</text>
+    </g>
+
+    <!-- 카드 2: AI 데이터 케어 구독 -->
+    <g transform="translate(555, 75)">
+      <rect width="480" height="330" fill="#F8FAFC" stroke="#E2E8F0" rx="10" />
+      <rect x="25" y="25" width="130" height="28" rx="6" fill="#4F46E5" />
+      <text x="90" y="44" class="badge-text" fill="#FFFFFF" text-anchor="middle">2. AI SW 구독</text>
+      
+      <text x="25" y="85" font-family="'Pretendard', sans-serif" font-size="15" font-weight="bold" fill="#0F172A">다크모드 대시보드 &amp; 10초 케어 루틴</text>
+      <text x="25" y="120" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 스마트워치 퀵-글랜스 링 UI로 1초 자세 점수 확인</text>
+      <text x="25" y="148" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 시차 필터링 알고리즘으로 오알림 진동 스트레스 차단</text>
+      <text x="25" y="176" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 업무 몰입 방해 없는 앉은 자리 10초 AI 스트레칭</text>
+      <text x="25" y="204" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 3개월 무료 체험 후 월간 케어 멤버십 전환 유도</text>
+      
+      <rect x="25" y="245" width="430" height="55" fill="#EEF2FF" rx="6" />
+      <text x="40" y="270" font-family="'Pretendard', sans-serif" font-size="12.5" font-weight="bold" fill="#312E81">➔ 다음 선순환 연결:</text>
+      <text x="40" y="290" font-family="'Pretendard', sans-serif" font-size="12" fill="#312E81">자세 불균형 지속 유저 대상 오프라인 1:1 진단 추천</text>
+    </g>
+
+    <!-- 카드 3: O2O 동행센터 예약 -->
+    <g transform="translate(1070, 75)">
+      <rect width="480" height="330" fill="#F8FAFC" stroke="#E2E8F0" rx="10" />
+      <rect x="25" y="25" width="130" height="28" rx="6" fill="#059669" />
+      <text x="90" y="44" class="badge-text" fill="#FFFFFF" text-anchor="middle">3. O2O 오프라인</text>
+      
+      <text x="25" y="85" font-family="'Pretendard', sans-serif" font-size="15" font-weight="bold" fill="#0F172A">전국 제휴 센터 1:1 정밀 체형 진단</text>
+      <text x="25" y="120" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 위치 기반 지도 API로 가까운 제휴 교정 센터 검색</text>
+      <text x="25" y="148" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 4단계 간편 Wizard 예약 폼으로 이탈률 최소화</text>
+      <text x="25" y="176" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 1회 무료 방문 시 앱 축적 데이터 기반 전문 코칭</text>
+      <text x="25" y="204" font-family="'Pretendard', sans-serif" font-size="13" fill="#334155">• 카카오톡/SMS 자동 알림톡으로 노쇼(No-Show) 방지</text>
+      
+      <rect x="25" y="245" width="430" height="55" fill="#ECFDF5" rx="6" />
+      <text x="40" y="270" font-family="'Pretendard', sans-serif" font-size="12.5" font-weight="bold" fill="#065F46">➔ 선순환 완성:</text>
+      <text x="40" y="290" font-family="'Pretendard', sans-serif" font-size="12" fill="#065F46">전문가 처방으로 맞춤형 추가 HW 및 케어 플랜 재구매</text>
+    </g>
+  </g>
+</svg>

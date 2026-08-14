@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "SEUMIM(스밈) 선박기관사 전용 서포터 화면 목록 (가상클라이언트 42: 라원석)",
+  "version": "2.0.0",
+  "totalScreens": 14,
+  "screens": [
+    {
+      "screenId": "SCR-01",
+      "sitemapId": "P-0.0",
+      "name": "0.0 메인 랜딩",
+      "type": "PAGE",
+      "depth": 1,
+      "purpose": "직업병 통계, 서포터 가치, 30일 무료체험 유도"
+    },
+    {
+      "screenId": "SCR-02",
+      "sitemapId": "P-1.0",
+      "name": "1.0 선박기관사 서포터",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "0.1mm 심리스 핏 및 선체 롤링 시 척추 밸런스 50% 유지 & 해수 염분 부식 방지 검증"
+    },
+    {
+      "screenId": "SCR-03",
+      "sitemapId": "P-1.3",
+      "name": "1.3 사이즈 가이드 [모달]",
+      "type": "MODAL",
+      "depth": 3,
+      "purpose": "신체 치수 기준 정밀 사이즈 매칭"
+    },
+    {
+      "screenId": "SCR-04",
+      "sitemapId": "P-2.0",
+      "name": "2.0 척추-관절 보호 테크",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "3D 하중 분산 성적서 및 공인 안전 인증서"
+    },
+    {
+      "screenId": "SCR-05",
+      "sitemapId": "P-3.0",
+      "name": "3.0 100인 후기",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "실제 종사자 실착 포토 리뷰 및 평점 4.96점"
+    },
+    {
+      "screenId": "SCR-06",
+      "sitemapId": "P-3.3",
+      "name": "3.3 단체 제휴 안내",
+      "type": "PAGE",
+      "depth": 3,
+      "purpose": "해운선사 및 해기사협회 단체 납품 제휴 및 견적 접수"
+    },
+    {
+      "screenId": "SCR-07",
+      "sitemapId": "P-4.0",
+      "name": "4.0 30일 무료체험 안내",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "30일 100% 무료 반품 안심 보증서 안내"
+    },
+    {
+      "screenId": "SCR-08",
+      "sitemapId": "P-4.2",
+      "name": "4.2 1-Click 신청 [모달]",
+      "type": "MODAL",
+      "depth": 3,
+      "purpose": "10초 간편 배송지 입력 접수"
+    },
+    {
+      "screenId": "SCR-09",
+      "sitemapId": "P-4.3",
+      "name": "4.3 주문 완료 안내 [가정]",
+      "type": "PAGE",
+      "depth": 3,
+      "purpose": "주문 번호 확인 및 배송 일정 안내"
+    },
+    {
+      "screenId": "SCR-10",
+      "sitemapId": "P-5.0",
+      "name": "5.0 10초 스트레칭",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "현장 10초 스트레칭 영상, 작업 팁, FAQ"
+    },
+    {
+      "screenId": "SCR-11",
+      "sitemapId": "P-6.1",
+      "name": "6.1 간편 로그인 [가정]",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "간편 연동 세션 연결"
+    },
+    {
+      "screenId": "SCR-12",
+      "sitemapId": "P-6.2",
+      "name": "6.2 마이페이지 [가정]",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "30일 무료 체험 배송 현황 및 1-Click 반품"
+    },
+    {
+      "screenId": "SCR-13",
+      "sitemapId": "P-9.1",
+      "name": "9.1 404 Not Found [가정]",
+      "type": "EXCEPT",
+      "depth": 2,
+      "purpose": "에러 안내 및 메인 바로가기"
+    },
+    {
+      "screenId": "SCR-14",
+      "sitemapId": "P-9.2",
+      "name": "9.2 시스템 점검 안내 [가정]",
+      "type": "EXCEPT",
+      "depth": 2,
+      "purpose": "점검 중 1:1 상담 채널 안내"
+    }
+  ]
+}

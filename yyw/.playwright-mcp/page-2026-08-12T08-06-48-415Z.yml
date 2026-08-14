@@ -1,0 +1,173 @@
+- generic [ref=e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=e15]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - combobox "검색" [ref=e20]: minimalist five circle rotation logo symbol black white
+          - generic [ref=e21]:
+            - button "검색 입력 삭제" [ref=e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=e30]:
+              - button "Pinterest 렌즈" [ref=e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=e38] [cursor=pointer]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: 모든 핀
+            - img "드롭다운" [ref=e43]
+      - link "내 프로필" [ref=e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=e56]:
+          - generic [ref=e57]: 임
+      - button "계정" [ref=e61] [cursor=pointer]
+  - navigation [ref=e66]:
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - generic "홈" [ref=e73]:
+          - link "홈" [ref=e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=e81]:
+          - link "홈" [ref=e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=e89]:
+          - link "내 보드" [ref=e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=e97]:
+          - button "만들기" [ref=e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=e114]:
+        - button "설정 및 지원" [ref=e115] [cursor=pointer]
+  - main [ref=e120]:
+    - generic [ref=e122]:
+      - heading "검색 결과 페이지" [level=1] [ref=e124]
+      - region "필터 및 세분화 검색" [ref=e128]:
+        - button "필터 표시" [ref=e137] [cursor=pointer]
+      - generic [ref=e148]:
+        - generic [ref=e149]: minimalist five circle rotation logo symbol black white 검색 결과를 추가로 표시
+        - list [ref=e154]:
+          - listitem [ref=e155]:
+            - button [ref=e157] [cursor=pointer]:
+              - group "핀 카드" [ref=e159]:
+                - generic [ref=e161]:
+                  - link "A professional logo 핀 페이지" [ref=e163]:
+                    - /url: /pin/1125968743532012/
+                    - 'img "포함된 이미지: A professional logo" [ref=e173]'
+                  - generic [ref=e178]:
+                    - heading [level=2] [ref=e184]:
+                      - link "A professional logo 핀 페이지" [ref=e186]:
+                        - /url: /pin/1125968743532012/
+                        - text: A professional logo
+                    - generic "추가 작업" [ref=e189]:
+                      - button "추가 작업" [ref=e190]
+          - listitem [ref=e195]:
+            - button [ref=e197] [cursor=pointer]:
+              - group "핀 카드" [ref=e199]:
+                - generic [ref=e201]:
+                  - link "제목 없음 핀 페이지" [ref=e203]:
+                    - /url: /pin/281543725279439/
+                    - img "포함된 이미지:" [ref=e213]
+                  - generic "추가 작업" [ref=e222]:
+                    - button "추가 작업" [ref=e223]
+          - listitem [ref=e228]:
+            - button [ref=e230] [cursor=pointer]:
+              - group "핀 카드" [ref=e232]:
+                - generic [ref=e234]:
+                  - link "제목 없음 핀 페이지" [ref=e236]:
+                    - /url: /pin/35465915812987365/
+                    - img "포함된 이미지:" [ref=e246]
+                  - generic "추가 작업" [ref=e255]:
+                    - button "추가 작업" [ref=e256]
+          - listitem [ref=e261]:
+            - button [ref=e263] [cursor=pointer]:
+              - group "핀 카드" [ref=e265]:
+                - generic [ref=e267]:
+                  - link "제목 없음 핀 페이지" [ref=e269]:
+                    - /url: /pin/2040762327615854/
+                    - img "포함된 이미지:" [ref=e279]
+                  - generic "추가 작업" [ref=e288]:
+                    - button "추가 작업" [ref=e289]
+          - listitem [ref=e294]:
+            - button [ref=e296] [cursor=pointer]:
+              - group "핀 카드" [ref=e298]:
+                - generic [ref=e300]:
+                  - link "제목 없음 핀 페이지" [ref=e302]:
+                    - /url: /pin/1125968743244530/
+                    - img "포함된 이미지:" [ref=e312]
+                  - generic "추가 작업" [ref=e321]:
+                    - button "추가 작업" [ref=e322]
+          - listitem [ref=e327]:
+            - button [ref=e329] [cursor=pointer]:
+              - group "핀 카드" [ref=e331]:
+                - generic [ref=e333]:
+                  - link "제목 없음 핀 페이지" [ref=e335]:
+                    - /url: /pin/18718154695455781/
+                    - img "포함된 이미지:" [ref=e345]
+                  - generic "추가 작업" [ref=e354]:
+                    - button "추가 작업" [ref=e355]
+          - listitem [ref=e360]:
+            - button [ref=e362] [cursor=pointer]:
+              - group "핀 카드" [ref=e364]:
+                - generic [ref=e366]:
+                  - link "Jané Concord Logo | SVG | Real Company | Alph 핀 페이지" [ref=e368]:
+                    - /url: /pin/265712446761350103/
+                    - 'img "포함된 내용: Logo design inspiration" [ref=e378]'
+                  - generic [ref=e383]:
+                    - heading [level=2] [ref=e389]:
+                      - link "Jané Concord Logo | SVG | Real Company | Alph 핀 페이지" [ref=e391]:
+                        - /url: /pin/265712446761350103/
+                        - text: Jané Concord Logo | SVG | Real Company | Alph
+                    - generic "추가 작업" [ref=e394]:
+                      - button "추가 작업" [ref=e395]
+          - listitem [ref=e400]:
+            - button [ref=e402] [cursor=pointer]:
+              - group "핀 카드" [ref=e404]:
+                - generic [ref=e406]:
+                  - link "제목 없음 핀 페이지" [ref=e408]:
+                    - /url: /pin/2040762327615877/
+                    - img "포함된 이미지:" [ref=e418]
+                  - generic "추가 작업" [ref=e427]:
+                    - button "추가 작업" [ref=e428]
+          - listitem [ref=e433]:
+            - button [ref=e435] [cursor=pointer]:
+              - group "핀 카드" [ref=e437]:
+                - generic [ref=e439]:
+                  - link "Motion Icon 핀 페이지" [ref=e441]:
+                    - /url: /pin/3096293491298620/
+                    - 'img "포함된 이미지: Motion Icon" [ref=e451]'
+                  - generic [ref=e456]:
+                    - heading [level=2] [ref=e462]:
+                      - link "Motion Icon 핀 페이지" [ref=e464]:
+                        - /url: /pin/3096293491298620/
+                        - text: Motion Icon
+                    - generic "추가 작업" [ref=e467]:
+                      - button "추가 작업" [ref=e468]
+          - listitem [ref=e473]:
+            - button [ref=e475] [cursor=pointer]:
+              - group "핀 카드" [ref=e477]:
+                - generic [ref=e479]:
+                  - link "111 핀 페이지" [ref=e481]:
+                    - /url: /pin/158681586867107992/
+                    - 'img "포함된 이미지: 111" [ref=e491]'
+                  - generic [ref=e496]:
+                    - heading [level=2] [ref=e502]:
+                      - link "111 핀 페이지" [ref=e504]:
+                        - /url: /pin/158681586867107992/
+                        - text: "111"
+                    - generic "추가 작업" [ref=e507]:
+                      - button "추가 작업" [ref=e508]
+          - listitem [ref=e513]:
+            - button [ref=e515] [cursor=pointer]:
+              - group "핀 카드" [ref=e517]:
+                - generic [ref=e519]:
+                  - link "제목 없음 핀 페이지" [ref=e521]:
+                    - /url: /pin/3166662233889090/
+                    - img "포함된 이미지:" [ref=e531]
+                  - generic "추가 작업" [ref=e540]:
+                    - button "추가 작업" [ref=e541]
+          - listitem [ref=e546]:
+            - button [ref=e548] [cursor=pointer]:
+              - group "핀 카드" [ref=e550]:
+                - generic [ref=e552]:
+                  - link "제목 없음 핀 페이지" [ref=e554]:
+                    - /url: /pin/4855512095464311/
+                    - img "포함된 이미지:" [ref=e564]
+                  - generic "추가 작업" [ref=e573]:
+                    - button "추가 작업" [ref=e574]

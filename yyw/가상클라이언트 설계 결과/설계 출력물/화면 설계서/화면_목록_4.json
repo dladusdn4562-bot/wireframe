@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "SEUMIM(스밈) 오피스룩 슬림핏 화면 설계 스키마 (가상클라이언트 4: 이주은)",
+  "version": "2.0.0",
+  "totalScreens": 14,
+  "screens": [
+    {
+      "id": "SCR-01",
+      "sitemapMapping": "P-0.0",
+      "name": "오피스룩 메인 랜딩페이지",
+      "depth": "1차",
+      "type": "PAGE",
+      "route": "/",
+      "purpose": "옷태 고민 공감, 0.1mm 심리스 핏, 승모근 32% 완화, 100인 릴스, 얼리버드 15% 예약 유도",
+      "components": [
+        "GNB (로고, 룩북, 승모근 핏, 릴스, 얼리버드 CTA)",
+        "Fashion Hero (0.1mm 시크릿 핏 슬로건, 룩북 화보, 얼리버드 15% CTA)",
+        "2030 여성 84.7% 승모근 고민 인포그래픽 카드",
+        "0.1mm 심리스 무봉제 비침 0% 슬라이더",
+        "솟은 승모근 32% 완화 3D 입체 패턴 다이어그램",
+        "직장인 100인의 출근 룩 릴스 쇼츠 플레이어",
+        "사계절 쿨링 메쉬 & 세탁기 통세척 가이드",
+        "하단 상의 사이즈 선택 및 얼리버드 15% 예약 CTA",
+        "FNB (Footer)"
+      ],
+      "interactions": [
+        "GNB 메뉴 클릭 시 서브페이지(SCR-02, 04, 06, 07, 10) 이동",
+        "비침 슬라이더 좌우 드래그 시 투명도 실시간 전환",
+        "릴스 쇼츠 클릭 시 세로형 비디오 재생",
+        "상의 사이즈 칩 선택 후 [얼리버드 15% 예약하기] 클릭 시 SCR-08 모달 호출"
+      ]
+    },
+    {
+      "id": "SCR-02",
+      "sitemapMapping": "P-1.0",
+      "name": "오피스 룩북",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/lookbook/office",
+      "purpose": "셔츠/블라우스/슬랙스 0.1mm 무봉제 심리스 라인 및 스타일링 화보 검증",
+      "components": ["GNB", "셔츠 핏 룩북", "블라우스 핏 룩북", "오피스 자켓 핏 룩북", "FNB"],
+      "interactions": ["화보 이미지 호버 시 줌 확대", "[비침 비교하기] 클릭 시 SCR-03 호출"]
+    },
+    {
+      "id": "SCR-03",
+      "sitemapMapping": "P-1.3",
+      "name": "0.1mm 비침 비교 [모달]",
+      "depth": "3차",
+      "type": "MODAL",
+      "route": "/modal/transparency-test",
+      "purpose": "화이트 셔츠 안 비침 0%를 사용자가 직접 슬라이더로 조작 검증",
+      "components": ["모달 컨테이너", "비침 비교 슬라이더 (2.4mm vs 0.1mm)", "사이즈 가이드 버튼"],
+      "interactions": ["슬라이더 드래그 인터랙션", "[사이즈 가이드] 클릭 시 SCR-05 전환"]
+    },
+    {
+      "id": "SCR-04",
+      "sitemapMapping": "P-2.0",
+      "name": "승모근 이너 핏",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/tech/trapezius-care",
+      "purpose": "솟은 승모근 32% 완화 3D 입체 패턴 및 와이드 암홀 구조공학 확인",
+      "components": ["GNB", "3D 입체 절개 패턴 모식도", "승모근 근전도 32% 완화 임상 데이터", "FNB"],
+      "interactions": ["3D 패턴 회전 뷰", "임상 그래프 토글"]
+    },
+    {
+      "id": "SCR-05",
+      "sitemapMapping": "P-2.3",
+      "name": "정밀 사이즈 가이드 [모달]",
+      "depth": "3차",
+      "type": "MODAL",
+      "route": "/modal/size-guide",
+      "purpose": "상의 치수(44/55/66/77) 기준 실측 체형 맞춤 추천으로 교환 방지",
+      "components": ["모달 컨테이너", "상의 치수 셀렉트 (44~77)", "체형 권장표", "예약 버튼"],
+      "interactions": ["사이즈 선택 시 권장 치수 하이라이트", "[이 사이즈로 예약] 클릭 시 SCR-08 전환"]
+    },
+    {
+      "id": "SCR-06",
+      "sitemapMapping": "P-3.0",
+      "name": "눈바디 릴스 후기",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/reviews/reels",
+      "purpose": "직장인 100인의 실제 출근 룩 릴스 쇼츠 시청을 통한 바이럴 신뢰 확보",
+      "components": ["GNB", "세로형 릴스 플레이어 6종", "W컨셉 포토 리뷰 갤러리", "FNB"],
+      "interactions": ["릴스 클릭 시 사운드/동영상 재생", "포토 팝업"]
+    },
+    {
+      "id": "SCR-07",
+      "sitemapMapping": "P-4.0",
+      "name": "얼리버드 혜택 안내",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/event/earlybird",
+      "purpose": "얼리버드 15% 할인 및 고급 세탁망 증정 혜택 전달",
+      "components": ["GNB", "얼리버드 혜택표", "30일 안심 무료 반품 약관", "[예약하기] CTA", "FNB"],
+      "interactions": ["[예약하기] 클릭 시 SCR-08 호출"]
+    },
+    {
+      "id": "SCR-08",
+      "sitemapMapping": "P-4.3",
+      "name": "얼리버드 예약 폼 [모달]",
+      "depth": "3차",
+      "type": "MODAL",
+      "route": "/modal/earlybird-order",
+      "purpose": "얼리버드 15% 할인가로 사전 예약 접수 완료",
+      "components": ["모달 헤더", "상의 사이즈 셀렉트", "컬러 셀렉트", "성함/연락처/배송지", "예약 완료 버튼"],
+      "interactions": ["유효성 검증 후 SCR-09 화면 호출"]
+    },
+    {
+      "id": "SCR-09",
+      "sitemapMapping": "P-4.4",
+      "name": "예약 완료 및 배송 안내 [가정]",
+      "depth": "3차",
+      "type": "PAGE",
+      "route": "/order/complete",
+      "purpose": "예약 번호 확인 및 세탁망 증정 확정 전달",
+      "components": ["GNB", "예약 완료 카드", "고유 예약번호", "세탁망 증정 배지", "FNB"],
+      "interactions": ["[메인 룩북으로 이동] 클릭 시 SCR-01 이동"]
+    },
+    {
+      "id": "SCR-10",
+      "sitemapMapping": "P-5.0",
+      "name": "패션 케어 가이드",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/care/fashion-guide",
+      "purpose": "사계절 쿨링 메쉬 소재 인증 및 세탁기 세탁법 안내",
+      "components": ["GNB", "쿨링 메쉬 성적서", "세탁기 세탁 가이드", "패션 FAQ 아코디언", "FNB"],
+      "interactions": ["FAQ 질문 클릭 시 아코디언 토글"]
+    },
+    {
+      "id": "SCR-11",
+      "sitemapMapping": "P-6.1",
+      "name": "SNS 간편 로그인 [가정]",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/auth/login",
+      "purpose": "카카오/네이버 SNS 1-Click 간편 로그인",
+      "components": ["SNS 로그인 박스", "카카오 1-Click", "네이버 로그인"],
+      "interactions": ["SNS 인증 후 SCR-12 이동"]
+    },
+    {
+      "id": "SCR-12",
+      "sitemapMapping": "P-6.2",
+      "name": "마이페이지 예약 관리 [가정]",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/mypage/order-status",
+      "purpose": "얼리버드 예약 내역 조회 및 안심 배송 조회",
+      "components": ["GNB", "얼리버드 예약 상태 카드", "세탁망 증정 현황", "1-Click 반품 신청 버튼", "FNB"],
+      "interactions": ["[1-Click 반품] 클릭 시 팝업 노출"]
+    },
+    {
+      "id": "SCR-13",
+      "sitemapMapping": "P-9.1",
+      "name": "404 Not Found [가정]",
+      "depth": "2차",
+      "type": "EXCEPT",
+      "route": "/error/404",
+      "purpose": "로즈 테마 친근한 404 에러 안내",
+      "components": ["404 에러 메시지", "룩북 바로가기 CTA 버튼"],
+      "interactions": ["[룩북으로 이동] 클릭 시 SCR-01 이동"]
+    },
+    {
+      "id": "SCR-14",
+      "sitemapMapping": "P-9.2",
+      "name": "시스템 점검 안내 [가정]",
+      "depth": "2차",
+      "type": "EXCEPT",
+      "route": "/system/maintenance",
+      "purpose": "정기 점검 시간 공지 및 얼리버드 혜택 안전 보존 안내",
+      "components": ["점검 시간 안내 박스", "고객센터 비상 채널", "얼리버드 혜택 보존 공지"],
+      "interactions": []
+    }
+  ]
+}

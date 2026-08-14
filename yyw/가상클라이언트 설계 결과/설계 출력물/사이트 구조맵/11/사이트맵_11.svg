@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGolfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEFCE8"/>
+      <stop offset="100%" stop-color="#F0FDF4"/>
+    </linearGradient>
+    <linearGradient id="rootGolfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532D"/>
+      <stop offset="100%" stop-color="#052E16"/>
+    </linearGradient>
+    <linearGradient id="nodeGolfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803D"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <filter id="shadowGolf" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feOffset dx="0" dy="4" result="offset"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1350" fill="url(#bgGolfGrad)"/>
+
+  <!-- Title Header -->
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="90" rx="16" fill="#14532D" filter="url(#shadowGolf)"/>
+    <text x="540" y="42" fill="#FEFCE8" font-family="'Pretendard', sans-serif" font-size="24" font-weight="900" text-anchor="middle">SEUMIM 시니어 파크골프 서포터 사이트 구조맵 (가상클라이언트 11: 배준호)</text>
+    <text x="540" y="70" fill="#BBF7D0" font-family="'Pretendard', sans-serif" font-size="14" font-weight="600" text-anchor="middle">3D 골반-요추 회전 벨트 &amp; 무릎 가드 &amp; 080 무료 전화 주문 IA</text>
+  </g>
+
+  <!-- Root Node -->
+  <g transform="translate(420, 180)">
+    <rect width="360" height="70" rx="12" fill="url(#rootGolfGrad)" stroke="#D97706" stroke-width="2" filter="url(#shadowGolf)"/>
+    <text x="180" y="34" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="16" font-weight="800" text-anchor="middle">0.0 큰 글씨 메인 랜딩 (P-0.0)</text>
+    <text x="180" y="54" fill="#FEF3C7" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">스윙 통계 &amp; 080 무료 전화 30일 체험</text>
+  </g>
+
+  <!-- Level 1 Nodes -->
+  <!-- 1.0 -->
+  <g transform="translate(60, 310)">
+    <rect width="200" height="60" rx="10" fill="url(#nodeGolfGrad)" filter="url(#shadowGolf)"/>
+    <text x="100" y="28" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">1.0 파크골프 서포터</text>
+    <text x="100" y="48" fill="#FEF3C7" font-family="'Pretendard', sans-serif" font-size="11" text-anchor="middle">(P-1.0) 비거리 15m 증가</text>
+  </g>
+  <!-- 2.0 -->
+  <g transform="translate(280, 310)">
+    <rect width="200" height="60" rx="10" fill="url(#nodeGolfGrad)" filter="url(#shadowGolf)"/>
+    <text x="100" y="28" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">2.0 척추-무릎 보호</text>
+    <text x="100" y="48" fill="#FEF3C7" font-family="'Pretendard', sans-serif" font-size="11" text-anchor="middle">(P-2.0) 무릎 충격 45% 흡수</text>
+  </g>
+  <!-- 3.0 -->
+  <g transform="translate(500, 310)">
+    <rect width="200" height="60" rx="10" fill="url(#nodeGolfGrad)" filter="url(#shadowGolf)"/>
+    <text x="100" y="28" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">3.0 동호회 100인 후기</text>
+    <text x="100" y="48" fill="#FEF3C7" font-family="'Pretendard', sans-serif" font-size="11" text-anchor="middle">(P-3.0) 평점 4.95점 갤러리</text>
+  </g>
+  <!-- 4.0 -->
+  <g transform="translate(720, 310)">
+    <rect width="200" height="60" rx="10" fill="url(#nodeGolfGrad)" filter="url(#shadowGolf)"/>
+    <text x="100" y="28" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">4.0 30일 필드 무료체험</text>
+    <text x="100" y="48" fill="#FEF3C7" font-family="'Pretendard', sans-serif" font-size="11" text-anchor="middle">(P-4.0) 100% 무료 반품</text>
+  </g>
+  <!-- 5.0 -->
+  <g transform="translate(940, 310)">
+    <rect width="200" height="60" rx="10" fill="url(#nodeGolfGrad)" filter="url(#shadowGolf)"/>
+    <text x="100" y="28" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">5.0 티박스 스트레칭</text>
+    <text x="100" y="48" fill="#FEF3C7" font-family="'Pretendard', sans-serif" font-size="11" text-anchor="middle">(P-5.0) 10초 관절 리셋</text>
+  </g>
+
+  <!-- Tree Connectors -->
+  <path d="M 600 250 L 600 280 M 160 280 L 1040 280 M 160 280 L 160 310 M 380 280 L 380 310 M 600 280 L 600 310 M 820 280 L 820 310 M 1040 280 L 1040 310" stroke="#14532D" stroke-width="2" fill="none"/>
+
+  <!-- Level 2 Children -->
+  <!-- 1.0 Children -->
+  <g transform="translate(60, 400)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">1.1 시크릿 벨트 (P-1.1)</text>
+  </g>
+  <g transform="translate(60, 450)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">1.2 비틀림 방지 40% (P-1.2)</text>
+  </g>
+  <g transform="translate(60, 500)">
+    <rect width="200" height="40" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#92400E" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" text-anchor="middle">1.3 허리둘레 가이드 [모달]</text>
+  </g>
+
+  <!-- 2.0 Children -->
+  <g transform="translate(280, 400)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2.1 무릎 충격 45% (P-2.1)</text>
+  </g>
+  <g transform="translate(280, 450)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2.2 카본 힌지 지지 (P-2.2)</text>
+  </g>
+  <g transform="translate(280, 500)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2.3 전문의 추천서 (P-2.3)</text>
+  </g>
+
+  <!-- 3.0 Children -->
+  <g transform="translate(500, 400)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3.1 필드 실착 리뷰 (P-3.1)</text>
+  </g>
+  <g transform="translate(500, 450)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3.2 비거리 증가 인터뷰 (P-3.2)</text>
+  </g>
+  <g transform="translate(500, 500)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3.3 동호회 단체 20% (P-3.3)</text>
+  </g>
+
+  <!-- 4.0 Children -->
+  <g transform="translate(720, 400)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">4.1 30일 무료 시타 (P-4.1)</text>
+  </g>
+  <g transform="translate(720, 450)">
+    <rect width="200" height="40" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#92400E" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" text-anchor="middle">4.2 080 전화 주문 [모달]</text>
+  </g>
+  <g transform="translate(720, 500)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">4.3 주문 완료 안내 (P-4.3)</text>
+  </g>
+
+  <!-- 5.0 Children -->
+  <g transform="translate(940, 400)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">5.1 10초 관절 리셋 (P-5.1)</text>
+  </g>
+  <g transform="translate(940, 450)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">5.2 회전 가동성 팁 (P-5.2)</text>
+  </g>
+  <g transform="translate(940, 500)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">5.3 080 전화 FAQ (P-5.3)</text>
+  </g>
+
+  <!-- Conversion Journeys Sub-Diagram -->
+  <g transform="translate(60, 620)">
+    <rect width="1080" height="670" rx="16" fill="#FFFFFF" stroke="#14532D" stroke-width="2" filter="url(#shadowGolf)"/>
+    <rect width="1080" height="50" rx="16" fill="#14532D"/>
+    <text x="540" y="32" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="18" font-weight="900" text-anchor="middle">📍 핵심 사용자 3대 전환 여정 (Key User Conversion Journeys)</text>
+
+    <!-- Journey 1 -->
+    <g transform="translate(40, 80)">
+      <rect width="1000" height="160" rx="12" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5"/>
+      <text x="30" y="36" fill="#14532D" font-family="'Pretendard', sans-serif" font-size="16" font-weight="800">[여정 1] 080 무료 전화 30일 필드 무료 체험 여정 (메인 전환)</text>
+      <text x="30" y="66" fill="#15803D" font-family="'Pretendard', sans-serif" font-size="13">타깃: 6070 파크골프 매니아 | 유입: 필드 포스터 및 지인 추천</text>
+      <g transform="translate(30, 90)">
+        <rect width="160" height="45" rx="8" fill="#14532D"/><text x="80" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">0.0 메인 랜딩</text>
+        <text x="175" y="28" fill="#22C55E" font-size="16">➔</text>
+        <rect x="195" width="160" height="45" rx="8" fill="#15803D"/><text x="275" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">1.0 파크골프 서포터</text>
+        <text x="370" y="28" fill="#22C55E" font-size="16">➔</text>
+        <rect x="390" width="160" height="45" rx="8" fill="#15803D"/><text x="470" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">2.0 무릎 충격 45%</text>
+        <text x="565" y="28" fill="#22C55E" font-size="16">➔</text>
+        <rect x="585" width="180" height="45" rx="8" fill="#D97706"/><text x="675" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">4.2 080 전화 모달</text>
+        <text x="780" y="28" fill="#22C55E" font-size="16">➔</text>
+        <rect x="800" width="140" height="45" rx="8" fill="#052E16"/><text x="870" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">4.3 댁으로 수령</text>
+      </g>
+    </g>
+
+    <!-- Journey 2 -->
+    <g transform="translate(40, 270)">
+      <rect width="1000" height="160" rx="12" fill="#FEFCE8" stroke="#EAB308" stroke-width="1.5"/>
+      <text x="30" y="36" fill="#854D0E" font-family="'Pretendard', sans-serif" font-size="16" font-weight="800">[여정 2] 허리둘레 사이즈 매칭 및 30일 무료 반품 주문 여정 (모바일 주문)</text>
+      <text x="30" y="66" fill="#A16207" font-family="'Pretendard', sans-serif" font-size="13">타깃: 스마트폰 능숙 시니어 | 유입: 시니어 골프 벨트 검색</text>
+      <g transform="translate(30, 90)">
+        <rect width="180" height="45" rx="8" fill="#854D0E"/><text x="90" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">3.0 동호회 후기</text>
+        <text x="195" y="28" fill="#CA8A04" font-size="16">➔</text>
+        <rect x="215" width="180" height="45" rx="8" fill="#CA8A04"/><text x="305" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">1.3 허리둘레 매칭</text>
+        <text x="410" y="28" fill="#CA8A04" font-size="16">➔</text>
+        <rect x="430" width="220" height="45" rx="8" fill="#EAB308"/><text x="540" y="28" fill="#000" font-size="12" font-weight="700" text-anchor="middle">30일 100% 무료 반품 보증</text>
+        <text x="665" y="28" fill="#CA8A04" font-size="16">➔</text>
+        <rect x="685" width="160" height="45" rx="8" fill="#15803D"/><text x="765" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">무료 시타 신청 완료</text>
+      </g>
+    </g>
+
+    <!-- Journey 3 -->
+    <g transform="translate(40, 460)">
+      <rect width="1000" height="160" rx="12" fill="#FEF2F2" stroke="#EF4444" stroke-width="1.5"/>
+      <text x="30" y="36" fill="#991B1B" font-family="'Pretendard', sans-serif" font-size="16" font-weight="800">[여정 3] 파크골프 동호회 10인 단체 제휴 여정 (B2B 단체)</text>
+      <text x="30" y="66" fill="#B91C1C" font-family="'Pretendard', sans-serif" font-size="13">타깃: 파크골프 클럽 총무/회장 | 유입: 동호회 단톡방</text>
+      <g transform="translate(30, 90)">
+        <rect width="180" height="45" rx="8" fill="#991B1B"/><text x="90" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">5.0 티박스 스트레칭</text>
+        <text x="195" y="28" fill="#EF4444" font-size="16">➔</text>
+        <rect x="215" width="200" height="45" rx="8" fill="#DC2626"/><text x="315" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">3.3 동호회 단체 20%</text>
+        <text x="430" y="28" fill="#EF4444" font-size="16">➔</text>
+        <rect x="450" width="240" height="45" rx="8" fill="#F87171"/><text x="570" y="28" fill="#000" font-size="12" font-weight="700" text-anchor="middle">동호회 10인 단체 신청</text>
+        <text x="705" y="28" fill="#EF4444" font-size="16">➔</text>
+        <rect x="725" width="160" height="45" rx="8" fill="#14532D"/><text x="805" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">단체 시타 키트 발송</text>
+      </g>
+    </g>
+  </g>
+</svg>

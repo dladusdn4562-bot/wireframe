@@ -1,0 +1,56 @@
+flowchart TD
+    classDef main fill:#1E293B,stroke:#F43F5E,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef depth1 fill:#F43F5E,stroke:#BE123C,stroke-width:2px,color:#FFFFFF;
+    classDef depth2 fill:#FFE4E6,stroke:#FB7185,stroke-width:1px,color:#1E293B;
+    classDef modal fill:#F59E0B,stroke:#D97706,stroke-width:1px,color:#0F172A;
+    classDef review fill:#EC4899,stroke:#DB2777,stroke-width:1.5px,color:#FFFFFF;
+    classDef assumed fill:#64748B,stroke:#475569,stroke-width:1px,color:#FFFFFF,stroke-dasharray: 5 5;
+
+    MAIN["0.0 오피스룩 메인 랜딩 (P-0.0)"]:::main
+
+    LOOK["1.0 오피스 룩북 (P-1.0)"]:::depth1
+    FIT["2.0 승모근 이너 핏 (P-2.0)"]:::depth1
+    REV["3.0 눈바디 릴스 후기 (P-3.0)"]:::review
+    OFFER["4.0 얼리버드 혜택 (P-4.0)"]:::depth1
+    CARE["5.0 패션 케어 가이드 (P-5.0)"]:::depth1
+    MYPAGE["6.0 회원 서비스 [가정] (P-6.0)"]:::assumed
+    EXCEPT["9.0 예외 페이지 [가정] (P-9.0)"]:::assumed
+
+    MAIN --> LOOK
+    MAIN --> FIT
+    MAIN --> REV
+    MAIN --> OFFER
+    MAIN --> CARE
+    MAIN -.-> MYPAGE
+    MAIN -.-> EXCEPT
+
+    LOOK --> L1["1.1 셔츠/블라우스 밀착 룩북"]:::depth2
+    LOOK --> L2["1.2 슬랙스/자켓 스타일링"]:::depth2
+    LOOK --> L3["1.3 0.1mm 비침 비교 화보 [모달]"]:::modal
+
+    FIT --> F1["2.1 승모근 솟음 32% 완화"]:::depth2
+    FIT --> F2["2.2 와이드 암홀 3D 패턴"]:::depth2
+    FIT --> F3["2.3 정밀 사이즈 가이드 [모달]"]:::modal
+
+    REV --> R1["3.1 100인 눈바디 릴스"]:::depth2
+    REV --> R2["3.2 W컨셉 4.9점 포토 후기"]:::depth2
+    REV --> R3["3.3 #스밈슬림핏 인스타 피드"]:::depth2
+
+    OFFER --> O1["4.1 얼리버드 15% 할인 안내"]:::depth2
+    OFFER --> O2["4.2 고급 세탁망 무료 증정"]:::depth2
+    OFFER --> O3["4.3 얼리버드 사전 예약 폼 [모달]"]:::modal
+    O3 --> O4["4.4 예약 완료 안내 [가정]"]:::assumed
+
+    CARE --> C1["5.1 쿨링 메쉬 인증서"]:::depth2
+    CARE --> C2["5.2 세탁 및 건조 가이드"]:::depth2
+    CARE --> C3["5.3 FAQ 아코디언"]:::depth2
+
+    MYPAGE -.-> M1["6.1 SNS 간편 로그인 [가정]"]:::assumed
+    MYPAGE -.-> M2["6.2 예약 내역 조회 [가정]"]:::assumed
+    EXCEPT -.-> E1["9.1 404 Not Found [가정]"]:::assumed
+    EXCEPT -.-> E2["9.2 시스템 점검 안내 [가정]"]:::assumed
+
+    L3 --> O3
+    F3 --> O3
+    R1 --> O3
+    O3 --> O4

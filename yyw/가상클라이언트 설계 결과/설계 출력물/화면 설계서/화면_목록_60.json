@@ -1,0 +1,16 @@
+[
+  { "id": "SCR-01", "sitemapId": "P-0.0", "name": "0.0 메인 랜딩페이지", "category": "1차 메인", "has15Products": true },
+  { "id": "SCR-02", "sitemapId": "P-1.0", "name": "1.0 브랜드 철학", "category": "2차 서브페이지" },
+  { "id": "SCR-03", "sitemapId": "P-2.0", "name": "2.0 비즈니스 컬렉션", "category": "2차 서브페이지", "productCount": 15 },
+  { "id": "SCR-04", "sitemapId": "P-2.4", "name": "2.4 맞춤 사이즈 가이드 [모달]", "category": "3차 팝업/모달" },
+  { "id": "SCR-05", "sitemapId": "P-3.0", "name": "3.0 AI 데이터 케어", "category": "2차 서브페이지" },
+  { "id": "SCR-06", "sitemapId": "P-4.0", "name": "4.0 VIP 동행센터", "category": "2차 서브페이지" },
+  { "id": "SCR-07", "sitemapId": "P-4.2", "name": "4.2 VIP 4단계 예약 [모달]", "category": "3차 팝업/모달" },
+  { "id": "SCR-08", "sitemapId": "P-4.3", "name": "4.3 예약 완료 안내", "category": "2차 서브페이지" },
+  { "id": "SCR-09", "sitemapId": "P-5.0", "name": "5.0 혜택 & 체험", "category": "2차 서브페이지" },
+  { "id": "SCR-10", "sitemapId": "P-5.2", "name": "5.2 30일 무료체험 신청 [모달]", "category": "3차 팝업/모달" },
+  { "id": "SCR-11", "sitemapId": "P-6.1", "name": "6.1 로그인 / 회원가입", "category": "회원 서비스" },
+  { "id": "SCR-12", "sitemapId": "P-6.2", "name": "6.2 마이페이지", "category": "회원 서비스" },
+  { "id": "SCR-13", "sitemapId": "P-9.1", "name": "9.1 404 Not Found", "category": "시스템 예외" },
+  { "id": "SCR-14", "sitemapId": "P-9.2", "name": "9.2 시스템 점검 안내", "category": "시스템 예외" }
+]

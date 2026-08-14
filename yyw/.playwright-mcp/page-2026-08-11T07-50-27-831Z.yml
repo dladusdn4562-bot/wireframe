@@ -1,0 +1,99 @@
+- generic [ref=f56e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f56e15]:
+      - generic [ref=f56e18]:
+        - generic:
+          - img "검색 아이콘"
+        - combobox "검색" [ref=f56e20]
+        - generic "이미지 업로드" [ref=f56e23]:
+          - button "Pinterest 렌즈" [ref=f56e24] [cursor=pointer]
+      - link "내 프로필" [ref=f56e33] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f56e40]:
+          - generic [ref=f56e41]: 임
+      - button "계정" [ref=f56e45] [cursor=pointer]
+  - navigation [ref=f56e50]:
+    - generic [ref=f56e52]:
+      - generic [ref=f56e53]:
+        - generic "홈" [ref=f56e57]:
+          - link "홈" [ref=f56e58] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f56e65]:
+          - link "홈" [ref=f56e66] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f56e73]:
+          - link "내 보드" [ref=f56e74] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f56e81]:
+          - button "만들기" [ref=f56e82] [cursor=pointer]
+        - generic "업데이트" [ref=f56e91]:
+          - button "업데이트" [ref=f56e92] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f56e105]:
+        - button "설정 및 지원" [ref=f56e106] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=f56e111]:
+    - generic [ref=f56e120]:
+      - button "뒤로" [ref=f56e122] [cursor=pointer]
+      - generic [ref=f56e131]:
+        - generic [ref=f56e132]: 관련 상품 결과를 불러오는 중
+        - list [ref=f56e137]:
+          - listitem [ref=f56e138]:
+            - group "Closeup content container" [ref=f56e145]:
+              - generic [ref=f56e150]:
+                - region "핀 이미지 및 탐색할 항목" [ref=f56e153]:
+                  - generic [ref=f56e157]:
+                    - generic [ref=f56e158]:
+                      - button "더 크게 보기" [ref=f56e160] [cursor=pointer]:
+                        - generic [ref=f56e162]:
+                          - generic: 더 크게 보기
+                          - img "더 크게 보기" [ref=f56e164]
+                      - button "이미지 검색" [ref=f56e169] [cursor=pointer]:
+                        - generic [ref=f56e171]:
+                          - generic: 이미지 검색
+                          - img "이미지 검색" [ref=f56e173]
+                    - button [disabled] [ref=f56e175]:
+                      - img "스토리 핀 이미지" [ref=f56e183]
+                - generic [ref=f56e184]:
+                  - generic [ref=f56e187]:
+                    - list [ref=f56e188]:
+                      - generic [ref=f56e189]:
+                        - listitem [ref=f56e191]:
+                          - generic "반응" [ref=f56e194]:
+                            - button "반응" [ref=f56e195] [cursor=pointer]
+                          - generic [ref=f56e200]: "0"
+                        - listitem [ref=f56e202]:
+                          - generic "댓글" [ref=f56e205]:
+                            - button "댓글" [ref=f56e206] [cursor=pointer]
+                        - listitem [ref=f56e212]:
+                          - generic "공유" [ref=f56e216]:
+                            - button "이 핀 공유" [ref=f56e219] [cursor=pointer]
+                        - listitem [ref=f56e225]:
+                          - generic "추가 작업" [ref=f56e230]:
+                            - button "추가 작업" [ref=f56e233] [cursor=pointer]
+                    - generic [ref=f56e243]:
+                      - 'button "저장할 보드 선택: ..." [ref=f56e246] [cursor=pointer]':
+                        - generic "..." [ref=f56e249]
+                      - button "저장" [ref=f56e255] [cursor=pointer]
+                      - tooltip "Popover" [ref=f56e261]:
+                        - generic [ref=f56e262]: 이 아이디어를 나중에도 볼 수 있도록 저장하세요.
+                  - generic [ref=f56e269]:
+                    - generic [ref=f56e278]:
+                      - link [ref=f56e280] [cursor=pointer]:
+                        - /url: /turtleten1001/
+                        - img "TurtleTen 아바타 링크" [ref=f56e287]
+                      - link [ref=f56e291] [cursor=pointer]:
+                        - /url: /turtleten1001/
+                        - heading "TurtleTen" [level=2] [ref=f56e292]
+                    - generic [ref=f56e295]:
+                      - heading "The Infinite Seed" [level=1] [ref=f56e304]
+                      - generic [ref=f56e308]:
+                        - heading "설명" [level=4] [ref=f56e309]
+                        - generic [ref=f56e310]: The small seeds that form the infinity symbol symbolize that all great potential always comes from something small.
+          - listitem [ref=f56e315]
+          - listitem [ref=f56e319]
+          - listitem [ref=f56e323]
+  - generic:
+    - contentinfo "꼬리말"

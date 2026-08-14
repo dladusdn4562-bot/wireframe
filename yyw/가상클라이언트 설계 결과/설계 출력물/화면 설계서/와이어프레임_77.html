@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM 플로리스트공간디렉터 Wireframe Studio (가상클라이언트 77: 플로리스트공간디렉터)</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; }
+    body { display: flex; height: 100vh; overflow: hidden; background: #0B0F19; color: #1E293B; }
+    #sidebar { width: 280px; background: #111827; border-right: 1px solid #1F2937; display: flex; flex-direction: column; }
+    .studio-header { padding: 16px; border-bottom: 1px solid #1F2937; color: #F9FAFB; }
+    .studio-title { font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 8px; color: #38BDF8; }
+    .studio-subtitle { font-size: 11px; color: #9CA3AF; margin-top: 4px; }
+    .pattern-badge { display: inline-block; padding: 2px 6px; background: rgba(56,189,248,0.2); color: #38BDF8; border-radius: 4px; font-size: 10px; margin-top: 4px; font-weight: 600; }
+    .search-box { padding: 10px 16px; border-bottom: 1px solid #1F2937; }
+    .search-input { width: 100%; padding: 8px 12px; background: #1F2937; border: 1px solid #374151; border-radius: 6px; color: #F9FAFB; font-size: 12px; outline: none; }
+    .screen-tree { flex: 1; overflow-y: auto; padding: 10px 8px; }
+    .tree-group-title { font-size: 10px; font-weight: 700; color: #6B7280; text-transform: uppercase; padding: 8px 8px 4px; letter-spacing: 0.5px; }
+    .screen-item { display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; border-radius: 6px; cursor: pointer; margin-bottom: 2px; color: #D1D5DB; font-size: 12px; transition: all 0.15s; }
+    .screen-item:hover { background: #1F2937; color: #FFF; }
+    .screen-item.active { background: #0284C7; color: #FFF; font-weight: 600; }
+    .badge { font-size: 9px; padding: 2px 5px; border-radius: 4px; font-weight: 600; background: #374151; color: #9CA3AF; }
+    .screen-item.active .badge { background: rgba(255,255,255,0.2); color: #FFF; }
+    #main-area { flex: 1; display: flex; flex-direction: column; background: #F1F5F9; overflow: hidden; }
+    #top-bar { height: 50px; background: #FFFFFF; border-bottom: 1px solid #E2E8F0; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; }
+    .screen-id-badge { background: #0284C7; color: #FFF; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; margin-right: 8px; }
+    .screen-name-title { font-size: 14px; font-weight: 700; color: #0F172A; }
+    .vp-btn { padding: 5px 10px; font-size: 11px; font-weight: 600; border: 1px solid #CBD5E1; background: #FFF; border-radius: 4px; cursor: pointer; }
+    .vp-btn.active { background: #0F172A; color: #FFF; border-color: #0F172A; }
+    #viewport-container { flex: 1; overflow: auto; padding: 24px; display: flex; justify-content: center; align-items: flex-start; }
+    #device-frame { background: #FFFFFF; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); width: 1280px; min-height: 900px; }
+    .wf-header { height: 64px; background: #0F172A; border-bottom: 2px solid #334155; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; color: #FFF; }
+    .wf-logo { font-size: 18px; font-weight: 800; color: #38BDF8; letter-spacing: -0.5px; }
+    .wf-nav { display: flex; gap: 20px; font-size: 13px; font-weight: 600; color: #CBD5E1; }
+    .wf-nav span:hover { color: #38BDF8; cursor: pointer; }
+    .wf-hero { padding: 60px 32px; background: #0F172A; color: #FFF; text-align: center; border-bottom: 1px solid #334155; }
+    .wf-badge { display: inline-block; padding: 4px 12px; background: #E0F2FE; color: #0F172A; font-size: 11px; font-weight: 700; border-radius: 20px; margin-bottom: 12px; }
+    .wf-h1 { font-size: 28px; font-weight: 800; margin-bottom: 12px; color: #F8FAFC; }
+    .wf-sub { font-size: 14px; color: #94A3B8; margin-bottom: 24px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5; }
+    .wf-cta-btn { padding: 12px 28px; background: #0284C7; color: #FFF; font-weight: 700; font-size: 13px; border: none; border-radius: 6px; cursor: pointer; }
+    .wf-section { padding: 40px 32px; border-bottom: 1px solid #E2E8F0; }
+    .wf-sec-title { font-size: 18px; font-weight: 800; color: #0F172A; margin-bottom: 6px; }
+    .wf-sec-desc { font-size: 12px; color: #64748B; margin-bottom: 24px; }
+    .wf-tabs { display: flex; gap: 8px; margin-bottom: 20px; overflow-x: auto; padding-bottom: 4px; }
+    .wf-tab-btn { padding: 7px 14px; font-size: 12px; font-weight: 600; border: 1px solid #CBD5E1; background: #FFF; border-radius: 4px; cursor: pointer; color: #475569; }
+    .wf-tab-btn.active { background: #0F172A; color: #FFF; border-color: #0F172A; }
+    .wf-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .wf-card { border: 1px solid #E2E8F0; border-radius: 8px; padding: 14px; background: #FFF; transition: all 0.2s; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+    .wf-card:hover { border-color: #0284C7; box-shadow: 0 8px 16px rgba(0,0,0,0.06); transform: translateY(-2px); }
+    .wf-img-box { height: 120px; background: #F8FAFC; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #94A3B8; border: 1px dashed #CBD5E1; margin-bottom: 10px; font-weight: 600; }
+    .wf-tag { font-size: 10px; color: #0284C7; font-weight: 700; margin-bottom: 4px; }
+    .wf-p-name { font-size: 12.5px; font-weight: 700; color: #0F172A; line-height: 1.35; margin-bottom: 6px; height: 34px; overflow: hidden; }
+    .wf-p-desc { font-size: 10.5px; color: #64748B; line-height: 1.3; margin-bottom: 10px; height: 28px; overflow: hidden; }
+    .wf-price-box { display: flex; align-items: baseline; gap: 6px; margin-bottom: 10px; }
+    .wf-price { font-size: 14px; font-weight: 800; color: #0F172A; }
+    .wf-origin { font-size: 11px; color: #94A3B8; text-decoration: line-through; }
+    .wf-disc { font-size: 11px; font-weight: 800; color: #EF4444; }
+    .wf-btn-box { display: flex; gap: 4px; }
+    .wf-btn-qv { flex: 1; padding: 6px 0; font-size: 11px; font-weight: 600; border: 1px solid #CBD5E1; background: #FFF; border-radius: 4px; cursor: pointer; color: #475569; }
+    .wf-btn-trial { flex: 1; padding: 6px 0; font-size: 11px; font-weight: 700; border: none; background: #0284C7; color: #FFF; border-radius: 4px; cursor: pointer; }
+    .wf-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; z-index: 9999; backdrop-filter: blur(4px); }
+    .wf-modal-card { width: 90%; max-width: 560px; background: #FFF; border: 2px solid #0F172A; border-radius: 8px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.3); }
+    .wf-modal-header { padding: 14px 18px; background: #F8FAFC; border-bottom: 1px solid #CBD5E1; display: flex; justify-content: space-between; align-items: center; }
+    .wf-modal-body { padding: 20px; max-height: 70vh; overflow-y: auto; }
+    .wf-modal-footer { padding: 12px 18px; background: #F8FAFC; border-top: 1px solid #CBD5E1; display: flex; justify-content: flex-end; gap: 8px; }
+    .hidden { display: none !important; }
+
+    /* Custom Archetype CSS */
+    
+          .atelier-mag { display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; background: #831843; border-radius: 12px; padding: 24px; color: #FCE7F3; margin-bottom: 24px; border: 2px solid #BE185D; }
+        
+  </style>
+</head>
+<body>
+
+  <aside id="sidebar">
+    <div class="studio-header">
+      <div class="studio-title"><span>📐</span> SEUMIM 플로리스트공간디렉터</div>
+      <div class="studio-subtitle">가상클라이언트 77 (플로리스트공간디렉터)</div>
+      <div class="pattern-badge">Botanical Plant Atelier & Floral Spiral Wrist Clinic</div>
+    </div>
+    <div class="search-box">
+      <input type="text" id="screenSearch" class="search-input" placeholder="화면 ID 또는 화면명 검색..." oninput="renderSidebarTree(this.value)">
+    </div>
+    <div class="screen-tree" id="screenTree"></div>
+  </aside>
+
+  <main id="main-area">
+    <header id="top-bar">
+      <div>
+        <span class="screen-id-badge" id="currentScreenId">SCR-01</span>
+        <span class="screen-name-title" id="currentScreenName">0.0 메인 랜딩페이지 (P-0.0)</span>
+      </div>
+      <div style="display: flex; gap: 8px;">
+        <button class="vp-btn active" onclick="setViewport('desktop')">🖥️ Desktop (1280px)</button>
+        <button class="vp-btn" onclick="setViewport('tablet')">📱 Tablet (768px)</button>
+        <button class="vp-btn" onclick="setViewport('mobile')">📲 Mobile (375px)</button>
+      </div>
+    </header>
+
+    <div id="viewport-container">
+      <div id="device-frame">
+        <div id="wf-content"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- QuickView Modal -->
+  <div id="qvModal" class="wf-modal hidden">
+    <div class="wf-modal-card">
+      <div class="wf-modal-header">
+        <div style="font-weight: 700; font-size: 14px;" id="qvTitle">상품 퀵뷰</div>
+        <button onclick="closeQvModal()" style="border:none; background:transparent; font-size:16px; cursor:pointer;">✕</button>
+      </div>
+      <div class="wf-modal-body" id="qvBody"></div>
+      <div class="wf-modal-footer">
+        <button class="wf-btn-qv" onclick="closeQvModal()" style="width: 80px;">닫기</button>
+        <button class="wf-btn-trial" onclick="openTrialModalFromQv()" style="width: 160px;">30일 무료 시착 신청</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const screens = [
+      { id: "SCR-01", sitemapId: "P-0.0", name: "0.0 메인 랜딩페이지", category: "1차 메인화면" },
+      { id: "SCR-02", sitemapId: "P-1.0", name: "1.0 브랜드 철학", category: "2차 서브페이지" },
+      { id: "SCR-03", sitemapId: "P-2.0", name: "2.0 전문 컬렉션", category: "2차 서브페이지" },
+      { id: "SCR-04", sitemapId: "P-2.4", name: "2.4 정밀 사이즈 가이드 [모달]", category: "3차 팝업/모달" },
+      { id: "SCR-05", sitemapId: "P-3.0", name: "3.0 AI 데이터 케어", category: "2차 서브페이지" },
+      { id: "SCR-06", sitemapId: "P-4.0", name: "4.0 웰니스 센터", category: "2차 서브페이지" },
+      { id: "SCR-07", sitemapId: "P-4.2", name: "4.2 4단계 예약 [모달]", category: "3차 팝업/모달" },
+      { id: "SCR-08", sitemapId: "P-4.3", name: "4.3 예약 완료 안내", category: "2차 서브페이지" },
+      { id: "SCR-09", sitemapId: "P-5.0", name: "5.0 혜택 & 체험", category: "2차 서브페이지" },
+      { id: "SCR-10", sitemapId: "P-5.2", name: "5.2 30일 무료체험 신청 [모달]", category: "3차 팝업/모달" },
+      { id: "SCR-11", sitemapId: "P-6.1", name: "6.1 로그인 / 회원가입", category: "회원 서비스" },
+      { id: "SCR-12", sitemapId: "P-6.2", name: "6.2 마이페이지", category: "회원 서비스" },
+      { id: "SCR-13", sitemapId: "P-9.1", name: "9.1 404 Not Found", category: "시스템 예외" },
+      { id: "SCR-14", sitemapId: "P-9.2", name: "9.2 시스템 점검 안내", category: "시스템 예외" }
+    ];
+
+    const productsData = [
+      {
+            "id": 1,
+            "cat": "signature",
+            "name": "SEUMIM Floral 0.1mm 시그니처 넥&숄더 밴드",
+            "price": 98000,
+            "origin": 139000,
+            "disc": "29%",
+            "badge": "BEST",
+            "tag": "#플로리스트공간디렉터 #거북목교정",
+            "rating": 4.8,
+            "reviews": 135,
+            "desc": "작업복 속 무봉제 은폐, 장시간 작업 시 경추 15도 지지"
+      },
+      {
+            "id": 2,
+            "cat": "signature",
+            "name": "SEUMIM Floral 3D 에어메쉬 척추 정렬 조끼",
+            "price": 149000,
+            "origin": 199000,
+            "disc": "25%",
+            "badge": "BEST",
+            "tag": "#척추정렬 #무소음",
+            "rating": 4.9,
+            "reviews": 150,
+            "desc": "작업 중 요추/흉추 지렛대 지지 구조 탑재"
+      },
+      {
+            "id": 3,
+            "cat": "signature",
+            "name": "SEUMIM Floral 골반 수평 밸런스 에어셀 벨트",
+            "price": 109000,
+            "origin": 159000,
+            "disc": "31%",
+            "badge": "BEST",
+            "tag": "#골반밸런스 #체압분산",
+            "rating": 4.8,
+            "reviews": 165,
+            "desc": "좌우 불균형 하중 물리 차단 및 천장관절 보호"
+      },
+      {
+            "id": 4,
+            "cat": "signature",
+            "name": "SEUMIM Floral 올인원 프로 마스터 슈트 세트",
+            "price": 239000,
+            "origin": 329000,
+            "disc": "27%",
+            "badge": "PRO",
+            "tag": "#올인원 #프로패키지",
+            "rating": 4.9,
+            "reviews": 180,
+            "desc": "넥+척추+골반 전신 통합 균형 서포트 프리미엄 키트"
+      },
+      {
+            "id": 5,
+            "cat": "care",
+            "name": "플로리스트공간디렉터 전용 관절 & 손목 에르고 밴드",
+            "price": 49000,
+            "origin": 69000,
+            "disc": "29%",
+            "badge": "NEW",
+            "tag": "#손목보호 #관절케어",
+            "rating": 4.8,
+            "reviews": 195,
+            "desc": "반복 작업 시 손목 수근관 신경 압박 차단"
+      },
+      {
+            "id": 6,
+            "cat": "care",
+            "name": "작업 체어 맞춤형 럼버 서포터 쿠션",
+            "price": 55000,
+            "origin": 79000,
+            "disc": "30%",
+            "badge": "HOT",
+            "tag": "#요추쿠션 #체압분산",
+            "rating": 4.9,
+            "reviews": 210,
+            "desc": "작업 좌석 요추 밀착 C커브 지지 메모리폼"
+      },
+      {
+            "id": 7,
+            "cat": "care",
+            "name": "기립 피로 완화 림프 순환 슬리브",
+            "price": 38000,
+            "origin": 55000,
+            "disc": "31%",
+            "badge": "NEW",
+            "tag": "#하지부종 #혈액순환",
+            "rating": 4.8,
+            "reviews": 225,
+            "desc": "장시간 작업 시 하체 혈류 개선 및 부종 완화"
+      },
+      {
+            "id": 8,
+            "cat": "care",
+            "name": "퇴근 후 10분 경추 C커브 릴렉서",
+            "price": 48000,
+            "origin": 69000,
+            "disc": "30%",
+            "badge": "HOT",
+            "tag": "#경추견인 #피로회복",
+            "rating": 4.9,
+            "reviews": 240,
+            "desc": "일자목/거북목 후두하근 이완 3D 폼"
+      },
+      {
+            "id": 9,
+            "cat": "sensor",
+            "name": "IoT 블루투스 모션 트래커 센서 팟",
+            "price": 45000,
+            "origin": 65000,
+            "disc": "31%",
+            "badge": "NEW",
+            "tag": "#스마트센서 #자세측정",
+            "rating": 4.8,
+            "reviews": 255,
+            "desc": "0.05도 작업 자세 각도 실시간 측정 & 앱 연동"
+      },
+      {
+            "id": 10,
+            "cat": "sensor",
+            "name": "무소음 AI 햅틱 진동 피드백 클립",
+            "price": 39000,
+            "origin": 59000,
+            "disc": "34%",
+            "badge": "TECH",
+            "tag": "#무소음햅틱 #자세알림",
+            "rating": 4.9,
+            "reviews": 270,
+            "desc": "작업 몰입 방해 없는 미세 촉각 진동 넛지"
+      },
+      {
+            "id": 11,
+            "cat": "sensor",
+            "name": "작업실 자세 밸런스 HUD 디스플레이 허브",
+            "price": 69000,
+            "origin": 99000,
+            "disc": "30%",
+            "badge": "TECH",
+            "tag": "#스마트HUD #자세점수",
+            "rating": 4.8,
+            "reviews": 285,
+            "desc": "작업 환경 벽면/데스크 위 실시간 자세 점수 디스플레이"
+      },
+      {
+            "id": 12,
+            "cat": "sensor",
+            "name": "3D 체압 매트릭스 스마트 센서 패드",
+            "price": 129000,
+            "origin": 179000,
+            "disc": "28%",
+            "badge": "TECH",
+            "tag": "#체압센서 #체압매트",
+            "rating": 4.9,
+            "reviews": 300,
+            "desc": "좌우 불균형 하중 실시간 3D 히트맵 분석"
+      },
+      {
+            "id": 13,
+            "cat": "acc",
+            "name": "대형 꽃다발 스파이럴 손목 중립 에르고 밴드",
+            "price": 25000,
+            "origin": 35000,
+            "disc": "29%",
+            "badge": "ACC",
+            "tag": "#플로리스트공간디렉터ACC #직업교정",
+            "rating": 4.8,
+            "reviews": 315,
+            "desc": "플로리스트공간디렉터의 직업적 작업 환경에 특화된 체형 교정 직접 보조 도구"
+      },
+      {
+            "id": 14,
+            "cat": "acc",
+            "name": "플랜테리어 기립 족저근막 아치 앵커 인솔",
+            "price": 22000,
+            "origin": 32000,
+            "disc": "31%",
+            "badge": "ACC",
+            "tag": "#플로리스트공간디렉터ACC #손목척추",
+            "rating": 4.9,
+            "reviews": 330,
+            "desc": "플로리스트공간디렉터의 반복 동작 시 관절과 척추 정렬을 물리적으로 보조"
+      },
+      {
+            "id": 15,
+            "cat": "acc",
+            "name": "수직 전지가위 검지/엄지 보호 스트랩",
+            "price": 19000,
+            "origin": 29000,
+            "disc": "34%",
+            "badge": "ACC",
+            "tag": "#플로리스트공간디렉터ACC #체압이완",
+            "rating": 4.8,
+            "reviews": 345,
+            "desc": "플로리스트공간디렉터의 작업 후 피로 부위를 즉각 이완하고 C커브를 복원하는 전용 도구"
+      }
+];
+
+    let currentScreen = "SCR-01";
+    let activeTab = "all";
+
+    function initStudio() {
+      renderSidebarTree();
+      navigateToScreen("SCR-01");
+    }
+
+    function renderSidebarTree(filterText = "") {
+      const tree = document.getElementById("screenTree");
+      tree.innerHTML = "";
+      const groups = {};
+      screens.forEach(s => {
+        if (!groups[s.category]) groups[s.category] = [];
+        if (!filterText || s.name.toLowerCase().includes(filterText.toLowerCase()) || s.id.toLowerCase().includes(filterText.toLowerCase())) {
+          groups[s.category].push(s);
+        }
+      });
+
+      for (const [cat, list] of Object.entries(groups)) {
+        if (list.length === 0) continue;
+        const grpTitle = document.createElement("div");
+        grpTitle.className = "tree-group-title";
+        grpTitle.innerText = cat;
+        tree.appendChild(grpTitle);
+
+        list.forEach(s => {
+          const item = document.createElement("div");
+          item.className = "screen-item" + (s.id === currentScreen ? " active" : "");
+          item.onclick = () => navigateToScreen(s.id);
+          item.innerHTML = `<span>${s.name}</span><span class="badge">${s.id}</span>`;
+          tree.appendChild(item);
+        });
+      }
+    }
+
+    function navigateToScreen(screenId) {
+      currentScreen = screenId;
+      const target = screens.find(s => s.id === screenId);
+      document.getElementById("currentScreenId").innerText = target.id;
+      document.getElementById("currentScreenName").innerText = `${target.name} (${target.sitemapId})`;
+      renderSidebarTree(document.getElementById("screenSearch").value);
+      renderScreenContent(target.id);
+    }
+
+    function renderScreenContent(screenId) {
+      const container = document.getElementById("wf-content");
+      if (screenId === "SCR-01") {
+        container.innerHTML = `
+          <div class="wf-header">
+            <div class="wf-logo">SEUMIM 플로리스트공간디렉터</div>
+            <div class="wf-nav">
+              <span onclick="navigateToScreen('SCR-02')">1.0 브랜드 철학</span>
+              <span onclick="navigateToScreen('SCR-03')">2.0 전문 컬렉션 (15종)</span>
+              <span onclick="navigateToScreen('SCR-05')">3.0 AI 데이터 케어</span>
+              <span onclick="navigateToScreen('SCR-06')">4.0 웰니스 센터</span>
+              <span onclick="navigateToScreen('SCR-09')">5.0 혜택 &amp; 체험</span>
+            </div>
+            <div>
+              <button class="wf-cta-btn" style="padding: 8px 16px; font-size: 11px;" onclick="navigateToScreen('SCR-10')">30일 무료 시착</button>
+            </div>
+          </div>
+
+          <div class="wf-hero">
+            <div class="wf-badge">Botanical Plant Atelier & Floral Spiral Wrist Clinic</div>
+            <div class="wf-h1">직업적 한계를 극복하는 완벽한 바디 밸런스</div>
+            <div class="wf-sub">플로리스트공간디렉터의 고강도 작업 환경에 최적화된 0.1mm 시크릿 에르고 코어웨어 &amp; 직업 맞춤 교정 솔루션</div>
+            <button class="wf-cta-btn" onclick="navigateToScreen('SCR-10')">30일 무료 시착 신청하기 ➔</button>
+          </div>
+
+          <div class="wf-section" style="background: #F8FAFC;">
+            <div class="wf-sec-title">★ 플로리스트공간디렉터 특화 인터랙티브 워크스페이스</div>
+            <div class="wf-sec-desc">해당 직업의 작업 환경과 신체 부하를 정밀 분석하는 전용 시뮬레이션 위젯입니다.</div>
+            
+          <div class="atelier-mag">
+            <div>
+              <div style="font-size:16px; font-weight:800; color:#F472B6; margin-bottom:6px;">💐 대형 부케 스파이럴 손목 클리닉</div>
+              <div style="font-size:12px; color:#FCE7F3; line-height:1.5;">수십 송이 꽃 줄기를 나선형으로 쥘 때 발생하는 엄지/검지 건초염과 손목 꺾임을 에르고 락 밴드가 물리적으로 지지합니다.</div>
+            </div>
+            <div style="background:#9D174D; padding:14px; border-radius:8px; text-align:center;">
+              <div style="font-size:11px;">손목 중립 각도 유지율</div>
+              <div style="font-size:22px; font-weight:800; color:#FFF; margin-top:4px;">98.2%</div>
+            </div>
+          </div>
+        
+          </div>
+
+          <div class="wf-section">
+            <div class="wf-sec-title">★ 메인 15개 브랜드 상품 전체 라인업 (4대 카테고리)</div>
+            <div class="wf-sec-desc">직업 연계 인체공학 교정 도구를 포함한 15개 상품을 즉시 필터링하여 탐색하세요.</div>
+            
+            <div class="wf-tabs">
+              <button class="wf-tab-btn ${activeTab === 'all' ? 'active' : ''}" onclick="filterProducts('all')">전체 컬렉션 (15)</button>
+              <button class="wf-tab-btn ${activeTab === 'signature' ? 'active' : ''}" onclick="filterProducts('signature')">시그니처 라인 (4)</button>
+              <button class="wf-tab-btn ${activeTab === 'care' ? 'active' : ''}" onclick="filterProducts('care')">전문 케어 라인 (4)</button>
+              <button class="wf-tab-btn ${activeTab === 'sensor' ? 'active' : ''}" onclick="filterProducts('sensor')">스마트 센서 라인 (4)</button>
+              <button class="wf-tab-btn ${activeTab === 'acc' ? 'active' : ''}" onclick="filterProducts('acc')">직업 맞춤 교정 ACC (3)</button>
+            </div>
+
+            <div class="wf-grid" id="productGrid"></div>
+          </div>
+        `;
+        renderProductCards();
+      } else {
+        container.innerHTML = `
+          <div style="padding: 60px; text-align: center;">
+            <div style="display:inline-block; padding: 6px 12px; background:#F1F5F9; border-radius:4px; font-size:12px; font-weight:700; color:#0284C7; margin-bottom:12px;">${screenId}</div>
+            <h2 style="font-size:22px; color:#0F172A; margin-bottom:12px;">${screens.find(s=>s.id===screenId).name}</h2>
+            <p style="font-size:13px; color:#64748B; max-width:500px; margin:0 auto 24px;">${role_name} 전용 컴포넌트와 특화 인터랙션이 탑재된 화면입니다.</p>
+            <button class="wf-cta-btn" onclick="navigateToScreen('SCR-01')">메인 랜딩페이지로 복귀</button>
+          </div>
+        `;
+      }
+    }
+
+    function filterProducts(cat) {
+      activeTab = cat;
+      const btns = document.querySelectorAll(".wf-tab-btn");
+      btns.forEach(b => b.classList.remove("active"));
+      event.target.classList.add("active");
+      renderProductCards();
+    }
+
+    function renderProductCards() {
+      const grid = document.getElementById("productGrid");
+      if (!grid) return;
+      grid.innerHTML = "";
+      const filtered = activeTab === "all" ? productsData : productsData.filter(p => p.cat === activeTab);
+      filtered.forEach(p => {
+        const card = document.createElement("div");
+        card.className = "wf-card";
+        card.innerHTML = `
+          <div>
+            <div class="wf-img-box">[IMG_${p.id < 10 ? '0' + p.id : p.id}] ${p.badge}</div>
+            <div class="wf-tag">${p.tag}</div>
+            <div class="wf-p-name">${p.name}</div>
+            <div class="wf-p-desc">${p.desc}</div>
+          </div>
+          <div>
+            <div class="wf-price-box">
+              <span class="wf-price">${p.price.toLocaleString()}원</span>
+              <span class="wf-origin">${p.origin.toLocaleString()}원</span>
+              <span class="wf-disc">${p.disc}</span>
+            </div>
+            <div class="wf-btn-box">
+              <button class="wf-btn-qv" onclick="openQvModal(${p.id})">🔍 퀵뷰</button>
+              <button class="wf-btn-trial" onclick="navigateToScreen('SCR-10')">30일 시착</button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openQvModal(pid) {
+      const p = productsData.find(item => item.id === pid);
+      if (!p) return;
+      document.getElementById("qvTitle").innerText = `[${p.badge}] ${p.name}`;
+      document.getElementById("qvBody").innerHTML = `
+        <div style="height:160px; background:#F8FAFC; border:1px dashed #CBD5E1; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#94A3B8; margin-bottom:14px; font-weight:700;">
+          [0.1mm 고화질 3D 실착 룩북 뷰어]
+        </div>
+        <div style="font-size:12px; color:#0284C7; font-weight:700; margin-bottom:4px;">${p.tag}</div>
+        <div style="font-size:16px; font-weight:800; color:#0F172A; margin-bottom:8px;">${p.name}</div>
+        <div style="font-size:12px; color:#475569; line-height:1.5; margin-bottom:14px;">${p.desc}</div>
+        <div style="background:#F8FAFC; padding:12px; border-radius:6px; margin-bottom:14px;">
+          <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px;">
+            <span style="color:#64748B;">정가</span>
+            <span style="text-decoration:line-through; color:#94A3B8;">${p.origin.toLocaleString()}원</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:14px; font-weight:800;">
+            <span style="color:#0F172A;">30일 무료체험 특가</span>
+            <span style="color:#0284C7;">${p.price.toLocaleString()}원 (${p.disc} 할인)</span>
+          </div>
+        </div>
+        <div style="font-size:12px; font-weight:700; margin-bottom:6px;">권장 사이즈 선택</div>
+        <div style="display:flex; gap:6px;">
+          <button style="flex:1; padding:6px; border:1px solid #0F172A; background:#0F172A; color:#FFF; border-radius:4px; font-size:11px; font-weight:700;">95 (Type 1)</button>
+          <button style="flex:1; padding:6px; border:1px solid #CBD5E1; background:#FFF; border-radius:4px; font-size:11px;">100 (Type 2)</button>
+          <button style="flex:1; padding:6px; border:1px solid #CBD5E1; background:#FFF; border-radius:4px; font-size:11px;">105 (Type 3)</button>
+        </div>
+      `;
+      document.getElementById("qvModal").classList.remove("hidden");
+    }
+
+    function closeQvModal() {
+      document.getElementById("qvModal").classList.add("hidden");
+    }
+
+    function openTrialModalFromQv() {
+      closeQvModal();
+      navigateToScreen("SCR-10");
+    }
+
+    function setViewport(mode) {
+      const frame = document.getElementById("device-frame");
+      const btns = document.querySelectorAll(".vp-btn");
+      btns.forEach(b => b.classList.remove("active"));
+      event.target.classList.add("active");
+      if (mode === 'desktop') frame.style.width = "1280px";
+      else if (mode === 'tablet') frame.style.width = "768px";
+      else if (mode === 'mobile') frame.style.width = "375px";
+    }
+
+    window.onload = initStudio;
+  </script>
+</body>
+</html>

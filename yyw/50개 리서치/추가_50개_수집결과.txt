@@ -1,0 +1,56 @@
+=============================================================================
+[SEUMIM] 웹사이트 레퍼런스 추가 50개 수집 Data (기존 20선 100% 중복 배제)
+=============================================================================
+* 총 수집 항목: 50개 브랜드 (기존 1차 20개와 100% 중복 없는 고유 수집본)
+* 추출 데이터 항목: brand_name, url, layout_structure, ux_ui_elements
+
+[Item 01] Matteau (https://matteau-store.com) - 레이아웃: 리조트웨어 미니멀 매거진 룩북 및 어스 톤 여백 / UX: 톤온톤 비주얼, 갤러리 줌인
+[Item 02] Doen (https://shopdoen.com) - 레이아웃: 네오 빈티지 라이프스타일 룩북 및 따뜻한 여백 / UX: 에디토리얼 호버 컷, 마이크로 애니메이션
+[Item 03] Kowtow (https://kowtowclothing.com) - 레이아웃: 오가닉 코튼 미니멀 매거진 비주얼 / UX: 비대칭 스크롤, 탭 전환 원단 가이드
+[Item 04] POSSE (https://possethelabel.com) - 레이아웃: 린넨 아일랜드 라이프스타일 톤온톤 / UX: 여백 미학 룩북, Sticky 결제 바
+[Item 05] SIR the Label (https://sirthelabel.com) - 레이아웃: 호주 미니멀 리조트 룩북 및 넓은 여백 / UX: 퀵뷰 팝업, 하단 고정 CTA
+[Item 06] Dissh (https://dissh.com) - 레이아웃: 웜 톤 뉴트럴 패션 에디토리얼 및 잡지형 비대칭 / UX: 모바일 Quick Add, 실시간 재고 뱃지
+[Item 07] Bec + Bridge (https://www.becandbridge.com) - 레이아웃: 모던 뉴트럴 에디토리얼 레이아웃 / UX: Swatch 선택기, 에디토리얼 호버
+[Item 08] St. Agni (https://www.st-agni.com) - 레이아웃: 모던 미니멀 아키텍처 여백 비주얼 / UX: 세로형 내비게이션, 커서 호버 인터랙션
+[Item 09] Anine Bing (https://www.aninebing.com) - 레이아웃: 스칸디-LA 미니멀 에디토리얼 레이아웃 / UX: 모노톤 비주얼, 하단 Sticky 결제 바
+[Item 10] Jenni Kayne (https://www.jennikayne.com) - 레이아웃: 코스탈 라이프스타일 웜 톤 여백 / UX: 스토리텔링 블록, 룩북 매핑 클릭
+[Item 11] Nili Lotan (https://www.nililotan.com) - 레이아웃: 럭셔리 라운지 미니멀 레이아웃 및 넓은 백그라운드 / UX: 호버 줌인, 카드형 슬라이더
+[Item 12] Naadam (https://naadam.co) - 레이아웃: 서스테이너블 캐시미어 웜톤 비주얼 / UX: 원단 텍스처 초근접 매크로 샷, 성분 탭 UI
+[Item 13] State Cashmere (https://statecashmere.com) - 레이아웃: 뉴트럴 톤 미니멀리즘 에디토리얼 / UX: 캐시미어 마이크로 호버, 퀵뷰 팝업
+[Item 14] Quince (https://www.quince.com) - 레이아웃: 모던 럭셔리 미니멀 그리드 및 웜 베이지 / UX: 투명 가격 비교 다이어그램, Quick Add
+[Item 15] Reformation (https://www.thereformation.com) - 레이아웃: 럭셔리 그린 라이프스타일 룩북 / UX: 지속가능성 지수 마크, Sticky 결제 버튼
+[Item 16] Frankie Shop (https://thefrankieshop.com) - 레이아웃: 파리/뉴욕 미니멀 오버사이즈 에디토리얼 / UX: 모놀리식 비주얼, 커서 효과
+[Item 17] Everlane (https://www.everlane.com) - 레이아웃: 모던 클린 에센셜 미니멀 레이아웃 / UX: 팩토리 투어 3-step 다이어그램, 퀵 카트
+[Item 18] Organic Basics (https://organicbasics.com) - 레이아웃: 지속가능 웰니스 언더웨어 톤온톤 / UX: 오가닉 원단 매크로 샷, 필터 UI
+[Item 19] Boody (https://boody.com) - 레이아웃: 뱀부 에코 언더웨어 뉴트럴 톤 / UX: 착용감 3-step 인터랙션, Bottom sheet 퀵뷰
+[Item 20] Parade (https://yourparade.com) - 레이아웃: 웰니스 파스텔 톤온톤 매거진 / UX: 파스텔 Swatch 선택기, 마키 롤링 텍스트
+[Item 21] Story mfg. (https://www.storymfg.com) - 레이아웃: 슬로우 패션 파스텔 내추럴 톤온톤 및 넓은 여백 화보 / UX: 텍스처 초근접, Sticky 카트
+[Item 22] Armedangels (https://www.armedangels.com) - 레이아웃: 유럽 친환경 웰니스 미니멀 톤온톤 / UX: 트렌디 에디토리얼, 성분 탭 UI
+[Item 23] Colorful Standard (https://colorfulstandard.com) - 레이아웃: 가벼운 파스텔 톤온톤 / UX: 넓은 여백 룩북, 색상 Swatch 선택기
+[Item 24] Uniform Standard (https://uniformstandard.com) - 레이아웃: 차분한 웜 베이지 미니멀 여백 / UX: 에디토리얼 화보 프레임, 호버 줌인
+[Item 25] Nudie Jeans (https://www.nudiejeans.com) - 레이아웃: 지속가능 데님 미니멀 여백 / UX: 감성 룩북 레이아웃, 원단 매크로 샷
+★[Item 26] Alignmed (https://www.alignmed.com) - 레이아웃: 척추 자세 교정 에디토리얼 / UX: 척추 지지 탄성 밴드 초근접 샷, 3-step 포스처 UI
+★[Item 27] IntelliSkin (https://www.intelliskin.net) - 레이아웃: 타겟팅 압박 원단 비대칭 프레임 / UX: 압박 원단 초근접 샷, 자세 교정 1-2-3 스텝
+[Item 28] IFGfit (https://ifgfit.com) - 레이아웃: FDA 2등급 자세 보정 미니멀 비주얼 / UX: 원단 초근접 샷, PPR 3단계 원리 다이어그램
+★[Item 29] BAX-U (https://bax-u.com) - 레이아웃: 어깨 조절 밴드 에디토리얼 / UX: 매크로 샷, 착용 1-2-3 스텝 다이어그램, Bottom sheet
+[Item 30] Copper Fit (https://www.shopcopperfit.com) - 레이아웃: 압박 엠보싱 원단 비주얼 / UX: 원단 초근접 샷, 케어 1-2-3 스텝, Sticky 구매 버튼
+[Item 31] Chirp (https://gochirp.com) - 레이아웃: 백휠 척추 자극 비대칭 그리드 / UX: 백휠 돌기 매크로 샷, 3단계 스트레칭 가이드 모션
+[Item 32] BackEmbrace (https://backembrace.com) - 레이아웃: 자세 스트랩 웜 베이지 에디토리얼 / UX: 스트랩 매크로 샷, 3-step 착용 가이드 UI
+[Item 33] Upright Pose (https://www.uprightpose.com) - 레이아웃: 바이오센서 인터랙티브 스토리텔링 / UX: 실시간 진동 경고 3단계 스텝, 돋보기 확대
+[Item 34] Kinesiotaping (https://kinesiotaping.com) - 레이아웃: 스포츠 테이핑 미니멀 레이아웃 / UX: 점착면 초근접 샷, 근육 부착 3단계 가이드
+[Item 35] PRO-KLIMA (https://proklima.com) - 레이아웃: 쿨링 매쉬 기술 에디토리얼 / UX: 매쉬 원단 모세관 매크로 샷, 3-step 쿨링 스토리
+[Item 36] Under Armour (https://www.underarmour.com) - 레이아웃: 3D 펀칭 심리스 스포츠 그리드 / UX: 심리스 원단 초근접 샷, 핏 3단계 다이어그램
+[Item 37] Nike (https://www.nike.com) - 레이아웃: 습기 배출 레이어링 스토리텔링 / UX: 습기 배출 층 초근접 매크로 샷, 3-step 레이어링 가이드
+[Item 38] Newton Running (https://www.newtonrunning.com) - 레이아웃: 러닝 미드풋 기술 그리드 / UX: 전족부 러그 초근접 매크로 샷, 3단계 착지 가이드
+[Item 39] Tracksmith (https://www.tracksmith.com) - 레이아웃: 러너스 울 기술 원단 매크로 / UX: 3단계 훈련 가이드 UI, Bottom Sheet 퀵뷰
+[Item 40] District Vision (https://www.districtvision.com) - 레이아웃: 스포츠 아이웨어 미니멀 여백 / UX: 렌즈/코받침 초근접 샷, 3-step 가이드
+[Item 41] Satisfy Running (https://satisfyrunning.com) - 레이아웃: 아방가르드 웰니스 여백 / UX: 통기성 구멍 매크로 샷, Sticky 장바구니
+[Item 42] Ten Thousand (https://www.tenthousand.cc) - 레이아웃: 미니멀 베이지 여백 / UX: 마찰 방지 라이너 초근접 샷, 3단계 내구성 가이드
+[Item 43] Pact (https://wearpact.com) - 레이아웃: 오가닉 코튼 베이지 톤온톤 / UX: 가볍고 편안한 여백 비주얼, 탭 가이드 UI
+[Item 44] Tentree (https://www.tentree.com) - 레이아웃: 자연주의 미니멀 파스텔 톤 / UX: 눈 피로도를 낮춘 여백, 나무 심기 3-step 레포트
+[Item 45] Girlfriend Collective (https://girlfriend.com) - 레이아웃: 내추럴 파스텔 여백 그리드 / UX: 리사이클 원단 매크로 샷, Sticky 장바구니 바
+[Item 46] Outdoor Voices (https://www.outdoorvoices.com) - 레이아웃: 웰니스 레크리에이션 톤온톤 / UX: 원단 텍스처 초근접 샷, Sticky Quick Add
+[Item 47] Gymondo (https://www.gymondo.com) - 레이아웃: 파스텔 웰니스 에디토리얼 룩북 / UX: 운동 3-step 과정, Bottom Sheet 회원가입/결제
+[Item 48] Hatch Collection (https://www.hatchcollection.com) - 레이아웃: 따뜻한 웰니스 웜 베이지 여백 / UX: 원단 3-step 가이드, Sticky 장바구니
+[Item 49] Sweaty Betty (https://www.sweatybetty.com) - 레이아웃: 액티브 웰니스 에디토리얼 여백 / UX: 원단 매크로 샷, Sticky 장바구니 바
+[Item 50] Beyond Yoga (https://beyondyoga.com) - 레이아웃: 웜 톤 파스텔 여백 그리드 / UX: 스페이스다이 원단 초근접 샷, Sticky Quick Buy

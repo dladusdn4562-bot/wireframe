@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM(스밈) 테크 개발자 와이어프레임 스튜디오 (가상클라이언트 3: 강민우)</title>
+  <style>
+    :root {
+      --bg-canvas: #0B0F17;
+      --bg-studio: #111827;
+      --sidebar-width: 320px;
+      --wf-bg: #0B0F17;
+      --wf-border: #1E293B;
+      --wf-text-main: #F8FAFC;
+      --wf-text-muted: #94A3B8;
+      --wf-box-bg: #111827;
+      --wf-accent: #0284C7;
+      --wf-accent-cyan: #38BDF8;
+      --wf-accent-green: #10B981;
+      --wf-font: 'JetBrains Mono', 'Fira Code', -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--wf-font);
+      background: var(--bg-canvas);
+      color: #F8FAFC;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
+
+    #sidebar {
+      width: var(--sidebar-width);
+      background: var(--bg-studio);
+      border-right: 1px solid var(--wf-border);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      flex-shrink: 0;
+      z-index: 100;
+    }
+
+    .studio-header {
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--wf-border);
+    }
+    .studio-title { font-size: 16px; font-weight: 800; color: #38BDF8; display: flex; align-items: center; gap: 8px; }
+    .studio-subtitle { font-size: 11.5px; color: #94A3B8; margin-top: 4px; }
+
+    .search-box {
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--wf-border);
+    }
+    .search-input {
+      width: 100%;
+      padding: 8px 12px;
+      background: #0B0F17;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      color: #F8FAFC;
+      font-size: 12.5px;
+      outline: none;
+    }
+    .search-input:focus { border-color: #38BDF8; }
+
+    .screen-tree {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px 10px;
+    }
+    .tree-category {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748B;
+      text-transform: uppercase;
+      padding: 8px 12px 4px 12px;
+      letter-spacing: 0.5px;
+    }
+    .tree-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #CBD5E1;
+      font-size: 12.5px;
+      margin-bottom: 2px;
+      transition: all 0.15s;
+    }
+    .tree-item:hover { background: #1E293B; color: #FFFFFF; }
+    .tree-item.active { background: #0284C7; color: #FFFFFF; font-weight: 700; }
+    .tree-badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .badge-page { background: #0284C7; color: #FFFFFF; }
+    .badge-modal { background: #D97706; color: #FFFFFF; }
+    .badge-except { background: #DC2626; color: #FFFFFF; }
+
+    #main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      background: #06090E;
+    }
+
+    .top-toolbar {
+      height: 56px;
+      background: var(--bg-studio);
+      border-bottom: 1px solid var(--wf-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      flex-shrink: 0;
+    }
+    .screen-info { display: flex; align-items: center; gap: 12px; }
+    .screen-title { font-size: 15px; font-weight: 700; color: #F8FAFC; }
+    .screen-meta { font-size: 12px; color: #94A3B8; }
+
+    .viewport-controls { display: flex; align-items: center; gap: 8px; }
+    .btn-vp {
+      background: #0B0F17;
+      border: 1px solid #334155;
+      color: #CBD5E1;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .btn-vp.active { background: #0284C7; border-color: #38BDF8; color: #FFFFFF; }
+
+    .canvas-viewport {
+      flex: 1;
+      overflow: auto;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: radial-gradient(circle at center, #111827 0%, #06090E 100%);
+    }
+
+    .wf-frame {
+      width: 1200px;
+      background: var(--wf-bg);
+      color: var(--wf-text-main);
+      border-radius: 8px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.7);
+      border: 1px solid var(--wf-border);
+      overflow: hidden;
+      margin-bottom: 40px;
+      transition: width 0.3s;
+    }
+
+    /* Common Wireframe Components */
+    .wf-gnb {
+      height: 70px;
+      border-bottom: 1px solid var(--wf-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      background: #111827;
+    }
+    .wf-logo { font-size: 18px; font-weight: 800; color: #38BDF8; }
+    .wf-nav { display: flex; gap: 20px; }
+    .wf-nav-item { font-size: 13px; font-weight: 700; color: #94A3B8; cursor: pointer; }
+    .wf-nav-item:hover { color: #38BDF8; }
+    .wf-btn-cta {
+      background: #0284C7;
+      color: #FFFFFF;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .wf-btn-cta:hover { background: #0369A1; }
+
+    .wf-hero {
+      padding: 60px 40px;
+      background: linear-gradient(180deg, #111827 0%, #0B0F17 100%);
+      color: #FFFFFF;
+      text-align: center;
+    }
+    .wf-hero h1 { font-size: 28px; margin-bottom: 12px; color: #38BDF8; }
+    .wf-hero p { font-size: 15px; color: #94A3B8; margin-bottom: 24px; }
+
+    .wf-section {
+      padding: 50px 40px;
+      border-bottom: 1px solid var(--wf-border);
+    }
+    .wf-section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #38BDF8;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .wf-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .wf-card {
+      background: #111827;
+      border: 1px solid var(--wf-border);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .wf-card h3 { font-size: 15px; color: #38BDF8; margin-bottom: 8px; }
+    .wf-card p { font-size: 13px; color: #94A3B8; line-height: 1.5; }
+
+    .wf-console-box {
+      background: #06090E;
+      border: 1px solid var(--wf-border);
+      border-radius: 8px;
+      padding: 24px;
+      color: #10B981;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .wf-footer {
+      background: #06090E;
+      color: #64748B;
+      padding: 40px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    /* Modal Overlay Mock */
+    .wf-modal-overlay {
+      background: rgba(6, 9, 14, 0.85);
+      padding: 60px 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .wf-modal-box {
+      background: #111827;
+      border-radius: 12px;
+      width: 550px;
+      padding: 32px;
+      border: 1px solid #0284C7;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5);
+    }
+    .wf-form-group { margin-bottom: 16px; }
+    .wf-form-group label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; color: #38BDF8; }
+    .wf-form-input { width: 100%; padding: 10px; background: #0B0F17; border: 1px solid #334155; border-radius: 6px; font-size: 13px; color: #F8FAFC; }
+  </style>
+</head>
+<body>
+  <!-- 좌측 사이드바 트리 -->
+  <aside id="sidebar">
+    <div class="studio-header">
+      <div class="studio-title">💻 SEUMIM 테크 스튜디오</div>
+      <div class="studio-subtitle">가상클라이언트 3: 강민우 (풀스택 개발자)</div>
+    </div>
+    <div class="search-box">
+      <input type="text" class="search-input" placeholder="화면 ID 또는 명칭 검색..." id="searchInput" oninput="filterScreens()">
+    </div>
+    <div class="screen-tree" id="screenTree">
+      <div class="tree-category">1. 메인 및 핵심 페이지</div>
+      <div class="tree-item active" onclick="loadScreen('SCR-01')">
+        <span>SCR-01 0.0 다크 메인 랜딩</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-02')">
+        <span>SCR-02 1.0 척추 조끼 HW</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-04')">
+        <span>SCR-04 2.0 시차 필터링 테크</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-05')">
+        <span>SCR-05 3.0 AI 대시보드</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-06')">
+        <span>SCR-06 3.3 GitHub 잔디 히트맵</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-07')">
+        <span>SCR-07 4.0 무료 체험/구독</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-10')">
+        <span>SCR-10 5.0 데스크 케어</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+
+      <div class="tree-category">2. 모달 및 전환 팝업</div>
+      <div class="tree-item" onclick="loadScreen('SCR-03')">
+        <span>SCR-03 1.3 하드웨어 사이즈</span>
+        <span class="tree-badge badge-modal">MODAL</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-08')">
+        <span>SCR-08 4.3 GitHub 1-Click 신청</span>
+        <span class="tree-badge badge-modal">MODAL</span>
+      </div>
+
+      <div class="tree-category">3. 주문 완료 및 회원 [가정]</div>
+      <div class="tree-item" onclick="loadScreen('SCR-09')">
+        <span>SCR-09 4.4 라이선스 발급 완료</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-11')">
+        <span>SCR-11 6.1 GitHub OAuth 로그인</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-12')">
+        <span>SCR-12 6.2 마이페이지 대시보드</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+
+      <div class="tree-category">4. 시스템 예외 [가정]</div>
+      <div class="tree-item" onclick="loadScreen('SCR-13')">
+        <span>SCR-13 9.1 404 Error 콘솔</span>
+        <span class="tree-badge badge-except">EXCEPT</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-14')">
+        <span>SCR-14 9.2 API 서버 점검</span>
+        <span class="tree-badge badge-except">EXCEPT</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 메인 캔버스 뷰포트 -->
+  <main id="main-content">
+    <header class="top-toolbar">
+      <div class="screen-info">
+        <span class="screen-title" id="currentTitle">SCR-01 0.0 다크 메인 랜딩</span>
+        <span class="screen-meta" id="currentMeta">Depth: 1차 | Type: PAGE | Path: P-0.0</span>
+      </div>
+      <div class="viewport-controls">
+        <button class="btn-vp active" onclick="setViewport(1200)">Desktop 1200px</button>
+        <button class="btn-vp" onclick="setViewport(768)">Tablet 768px</button>
+        <button class="btn-vp" onclick="setViewport(375)">Mobile 375px</button>
+      </div>
+    </header>
+
+    <div class="canvas-viewport">
+      <div class="wf-frame" id="wfFrame">
+        <!-- 렌더링 컨테이너 -->
+        <div id="screenContainer"></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const screens = {
+      'SCR-01': {
+        title: 'SCR-01 0.0 다크모드 메인 랜딩페이지',
+        meta: 'Depth: 1차 | Type: PAGE | Path: P-0.0',
+        html: `
+          <div class="wf-gnb">
+            <div class="wf-logo">&lt;SEUMIM_DEV /&gt;</div>
+            <div class="wf-nav">
+              <span class="wf-nav-item" onclick="loadScreen('SCR-02')">척추 조끼 HW</span>
+              <span class="wf-nav-item" onclick="loadScreen('SCR-04')">시차 필터링</span>
+              <span class="wf-nav-item" onclick="loadScreen('SCR-05')">AI 대시보드</span>
+              <span class="wf-nav-item" onclick="loadScreen('SCR-07')">무료 구독</span>
+              <span class="wf-nav-item" onclick="loadScreen('SCR-10')">데스크 케어</span>
+            </div>
+            <button class="wf-btn-cta" onclick="loadScreen('SCR-08')">GitHub 3개월 무료 시작</button>
+          </div>
+          <div class="wf-hero">
+            <h1>몰입을 방해하지 않는 단 하나의 자세 코칭</h1>
+            <p>0.5초 시차 필터링 & 스마트워치 퀵-글랜스 링 UI</p>
+            <button class="wf-btn-cta" style="padding: 12px 28px; font-size: 15px;" onclick="loadScreen('SCR-08')">🐙 GitHub 1-Click 3개월 무료 구독</button>
+          </div>
+          <div class="wf-section">
+            <div class="wf-section-title">개발자 91.2% 거북목/디스크 호소</div>
+            <div class="wf-grid-3">
+              <div class="wf-card">
+                <h3>0.5초 시차 필터링</h3>
+                <p>단순 타이핑이나 물 마실 때 울리지 않는 오알림 0건 필터링 로직.</p>
+              </div>
+              <div class="wf-card">
+                <h3>3초 퀵-글랜스 워치 링</h3>
+                <p>IDE 창을 가리지 않고 손목에서 3초 만에 척추 정렬 확인.</p>
+              </div>
+              <div class="wf-card">
+                <h3>GitHub 잔디 히트맵</h3>
+                <p>일간 코딩 시간과 척추 밸런스를 커밋 잔디 형태로 기록.</p>
+              </div>
+            </div>
+          </div>
+          <div class="wf-section">
+            <div class="wf-section-title">실시간 다크모드 자세 데이터 스트림</div>
+            <div class="wf-console-box">
+              $ seumim stream --watch<br>
+              [OK] Bluetooth Sensor Connected: SEUMIM-CORE-V2 (Latency: 12ms)<br>
+              [DATA] Spine Angle: 8.2° (Target &lt; 15°) | Status: OPTIMAL<br>
+              [SCORE] Real-time Score: 96 / 100 [Live Streaming]
+            </div>
+          </div>
+          <div class="wf-footer">
+            <p>&lt;SEUMIM_DEV /&gt; | Open Source SDK & Developer First Ergonomics</p>
+          </div>
+        `
+      },
+      'SCR-02': {
+        title: 'SCR-02 1.0 척추 조끼 HW',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-1.0',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">&lt;SEUMIM_DEV /&gt;</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">전도성 센서 섬유 & 룩북 화보</div>
+            <div class="wf-grid-3">
+              <div class="wf-card"><h3>전도성 센서 직조</h3><p>세탁 100회 내구성 시험 통과</p></div>
+              <div class="wf-card"><h3>맨투맨/후드티 핏</h3><p>개발자 일상복에 완벽 은폐</p></div>
+              <div class="wf-card"><h3>초경량 85g</h3><p>무게감 없는 Effort-Free 착용감</p></div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+              <button class="wf-btn-cta" onclick="loadScreen('SCR-03')">정밀 사이즈 가이드 열기</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-03': {
+        title: 'SCR-03 1.3 하드웨어 정밀 사이즈 가이드 [모달]',
+        meta: 'Depth: 3차 | Type: MODAL | Path: P-1.3',
+        html: `
+          <div class="wf-modal-overlay">
+            <div class="wf-modal-box">
+              <h2 style="color: #38BDF8; margin-bottom: 12px;">상의 기준 정밀 사이즈 매칭</h2>
+              <div class="wf-form-group">
+                <label>평소 착용하는 상의 치수</label>
+                <select class="wf-form-input">
+                  <option>95 (S) - 신장 165~172cm / 체중 55~65kg</option>
+                  <option selected>100 (M) - 신장 170~178cm / 체중 65~75kg</option>
+                  <option>105 (L) - 신장 175~185cm / 체중 75~85kg</option>
+                  <option>110 (XL) - 신장 180cm 이상 / 체중 85kg 이상</option>
+                </select>
+              </div>
+              <button class="wf-btn-cta" style="width: 100%; margin-top: 10px;" onclick="loadScreen('SCR-08')">이 사이즈로 30일 시착 신청</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-04': {
+        title: 'SCR-04 2.0 시차 필터링 테크',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-2.0',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">&lt;SEUMIM_DEV /&gt;</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">0.5초 오알림 차단 시계열 알고리즘</div>
+            <div class="wf-console-box">
+              [BENCHMARK] Motion Filter Accuracy: 99.4%<br>
+              • Key Typing: Ignored (0.2s fluctuation)<br>
+              • Cup Drinking: Ignored (0.4s tilt)<br>
+              • Slouching &gt; 3.0s: Alert Triggered (Gentle Haptic)
+            </div>
+          </div>
+        `
+      },
+      'SCR-05': {
+        title: 'SCR-05 3.0 AI 대시보드',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-3.0',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">&lt;SEUMIM_DEV /&gt;</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">실시간 자세 대시보드 & 워치 링 UI</div>
+            <div class="wf-console-box" style="text-align: center; font-size: 28px; color: #38BDF8;">
+              Live Score: 96 / 100
+              <div style="font-size: 14px; color: #94A3B8; margin-top: 8px;">스마트워치 3초 퀵-글랜스 링: 동기화 완료</div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+              <button class="wf-btn-cta" onclick="loadScreen('SCR-06')">GitHub 잔디 히트맵 보기</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-06': {
+        title: 'SCR-06 3.3 GitHub 잔디 히트맵',
+        meta: 'Depth: 3차 | Type: PAGE | Path: P-3.3',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">&lt;SEUMIM_DEV /&gt;</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">연간 척추 밸런스 잔디 히트맵</div>
+            <div class="wf-console-box">
+              ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ (94.2% Optimal Days)<br>
+              Total 1,842 Hours Monitored | Average Score: 92.4
+            </div>
+          </div>
+        `
+      },
+      'SCR-07': {
+        title: 'SCR-07 4.0 무료 체험/구독 안내',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-4.0',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">&lt;SEUMIM_DEV /&gt;</div></div>
+          <div class="wf-section" style="text-align: center;">
+            <div class="wf-section-title">GitHub 1-Click 3개월 무료 라이선스</div>
+            <p style="color: #94A3B8; margin-bottom: 24px;">신용카드 등록 없이 GitHub 계정만으로 즉시 시작</p>
+            <button class="wf-btn-cta" style="padding: 12px 30px;" onclick="loadScreen('SCR-08')">무료 구독 시작하기</button>
+          </div>
+        `
+      },
+      'SCR-08': {
+        title: 'SCR-08 4.3 무료 체험/구독 신청 폼 [모달]',
+        meta: 'Depth: 3차 | Type: MODAL | Path: P-4.3',
+        html: `
+          <div class="wf-modal-overlay">
+            <div class="wf-modal-box">
+              <h2 style="color: #38BDF8; margin-bottom: 12px;">GitHub 3개월 무료 라이선스 활성화</h2>
+              <div class="wf-form-group"><label>GitHub Username</label><input type="text" class="wf-form-input" value="minwoo-dev" readonly></div>
+              <div class="wf-form-group"><label>스마트 조끼 30일 시착 상의 사이즈 (선택)</label><select class="wf-form-input"><option>100 (M)</option><option>105 (L)</option></select></div>
+              <div class="wf-form-group"><label>사무실/재택 배송지 주소 (선택)</label><input type="text" class="wf-form-input" placeholder="서울시 서초구 강남대로 ..."></div>
+              <button class="wf-btn-cta" style="width: 100%; margin-top: 10px;" onclick="loadScreen('SCR-09')">라이선스 키 즉시 발급</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-09': {
+        title: 'SCR-09 4.4 라이선스 발급 완료 안내',
+        meta: 'Depth: 3차 | Type: PAGE | Path: P-4.4',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">&lt;SEUMIM_DEV /&gt;</div></div>
+          <div class="wf-section" style="text-align: center;">
+            <div class="wf-section-title" style="color: #10B981;">3개월 무료 라이선스 발급 완료</div>
+            <div class="wf-console-box" style="margin: 20px auto; max-width: 500px;">API Key: sk_live_dev_202608_9942</div>
+            <button class="wf-btn-cta" onclick="loadScreen('SCR-12')">마이페이지 대시보드로 이동</button>
+          </div>
+        `
+      },
+      'SCR-10': {
+        title: 'SCR-10 5.0 데스크 케어',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-5.0',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">&lt;SEUMIM_DEV /&gt;</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">개발자 데스크 10초 AI 스트레칭 루틴</div>
+            <div class="wf-grid-3">
+              <div class="wf-card"><h3>1단계: 시선 정렬</h3><p>모니터 상단 1/3 눈높이</p></div>
+              <div class="wf-card"><h3>2단계: 견갑골 이완</h3><p>팔꿈치 90도 거치</p></div>
+              <div class="wf-card"><h3>3단계: 호흡</h3><p>3초 깊은 호흡</p></div>
+            </div>
+          </div>
+        `
+      },
+      'SCR-11': {
+        title: 'SCR-11 6.1 GitHub OAuth 로그인 [가정]',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-6.1',
+        html: `
+          <div class="wf-modal-overlay">
+            <div class="wf-modal-box" style="text-align: center;">
+              <h2 style="color: #38BDF8; margin-bottom: 20px;">GitHub OAuth 2.0 인증</h2>
+              <button class="wf-btn-cta" style="width: 100%;" onclick="loadScreen('SCR-12')">Authorize SEUMIM_DEV</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-12': {
+        title: 'SCR-12 6.2 마이페이지 대시보드 [가정]',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-6.2',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">&lt;SEUMIM_DEV /&gt;</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">강민우 님의 개발자 대시보드</div>
+            <div class="wf-console-box">
+              • Subscription: PRO Plan (3 Months Free Trial Active)<br>
+              • API Key: sk_live_dev_202608_9942 [Copy]<br>
+              • Hardware Shipping: In Transit (Tracking # 123-4567)
+            </div>
+          </div>
+        `
+      },
+      'SCR-13': {
+        title: 'SCR-13 9.1 404 Not Found [가정]',
+        meta: 'Depth: 2차 | Type: EXCEPT | Path: P-9.1',
+        html: `
+          <div class="wf-section" style="text-align: center; padding: 100px 40px;">
+            <div class="wf-console-box" style="display: inline-block;">
+              $ curl https://seumim.dev/error<br>
+              HTTP/2 404 Not Found: Requested endpoint does not exist.
+            </div>
+            <div style="margin-top: 24px;">
+              <button class="wf-btn-cta" onclick="loadScreen('SCR-01')">cd /main</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-14': {
+        title: 'SCR-14 9.2 API 서버 점검 안내 [가정]',
+        meta: 'Depth: 2차 | Type: EXCEPT | Path: P-9.2',
+        html: `
+          <div class="wf-section" style="text-align: center; padding: 100px 40px;">
+            <div class="wf-console-box" style="display: inline-block;">
+              [MAINTENANCE] API Server undergoing scheduled maintenance.<br>
+              All license tokens and telemetry data are safely persisted.
+            </div>
+          </div>
+        `
+      }
+    };
+
+    function loadScreen(id) {
+      const scr = screens[id] || screens['SCR-01'];
+      document.getElementById('currentTitle').innerText = scr.title;
+      document.getElementById('currentMeta').innerText = scr.meta;
+      document.getElementById('screenContainer').innerHTML = scr.html;
+
+      document.querySelectorAll('.tree-item').forEach(el => el.classList.remove('active'));
+      const activeItem = Array.from(document.querySelectorAll('.tree-item')).find(el => el.innerText.includes(id));
+      if (activeItem) activeItem.classList.add('active');
+    }
+
+    function setViewport(w) {
+      document.getElementById('wfFrame').style.width = w + 'px';
+      document.querySelectorAll('.btn-vp').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    function filterScreens() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      document.querySelectorAll('.tree-item').forEach(item => {
+        item.style.display = item.innerText.toLowerCase().includes(q) ? 'flex' : 'none';
+      });
+    }
+
+    loadScreen('SCR-01');
+  </script>
+</body>
+</html>

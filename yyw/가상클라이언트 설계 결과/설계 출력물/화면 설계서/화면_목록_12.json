@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "SEUMIM(스밈) 맘스 듀얼 서포터 화면 목록 (가상클라이언트 12: 임수현)",
+  "version": "2.0.0",
+  "totalScreens": 14,
+  "screens": [
+    {"screenId": "SCR-01", "sitemapId": "P-0.0", "name": "0.0 웜 피치 맘스 메인 랜딩", "type": "PAGE", "depth": 1, "purpose": "육아 요통 통계, 0dB 무소음 마그네틱 서포터, 맘스 30일 무료체험 유도"},
+    {"screenId": "SCR-02", "sitemapId": "P-1.0", "name": "1.0 맘스 듀얼 서포터", "type": "PAGE", "depth": 2, "purpose": "0.1mm 심리스 홈웨어 핏 및 아이 안을 때 하중 52% 분산 화보"},
+    {"screenId": "SCR-03", "sitemapId": "P-1.3", "name": "1.3 출산 전후 사이즈 가이드 [모달]", "type": "MODAL", "depth": 3, "purpose": "임신 전후 체형 변화 기준 정밀 사이즈 매칭"},
+    {"screenId": "SCR-04", "sitemapId": "P-2.0", "name": "2.0 무소음 마그네틱 테크", "type": "PAGE", "depth": 2, "purpose": "0dB 독일 마그네틱 버클 및 오코텍스 1등급 영유아 안전 성적서"},
+    {"screenId": "SCR-05", "sitemapId": "P-3.0", "name": "3.0 맘카페 100인 후기", "type": "PAGE", "depth": 2, "purpose": "워킹맘/육아맘 실착 포토 리뷰 갤러리 및 평점 4.97점"},
+    {"screenId": "SCR-06", "sitemapId": "P-3.3", "name": "3.3 출산 선물 만족도 후기", "type": "PAGE", "depth": 3, "purpose": "백일/출산 선물 만족도 99% 릴레이 및 프리미엄 포장 안내"},
+    {"screenId": "SCR-07", "sitemapId": "P-4.0", "name": "4.0 맘스 30일 무료체험 안내", "type": "PAGE", "depth": 2, "purpose": "집에서 30일간 아이 안아보며 결정하는 100% 무료 반품 보증 안내"},
+    {"screenId": "SCR-08", "sitemapId": "P-4.2", "name": "4.2 카카오 1-Click 신청 [모달]", "type": "MODAL", "depth": 3, "purpose": "카카오 로그인 기반 10초 간편 배송지 입력 폼"},
+    {"screenId": "SCR-09", "sitemapId": "P-4.3", "name": "4.3 주문 완료 및 배송 안내 [가정]", "type": "PAGE", "depth": 3, "purpose": "접수 번호 확인, 댁으로 무료 배송 현황 안내"},
+    {"screenId": "SCR-10", "sitemapId": "P-5.0", "name": "5.0 육퇴 10초 힐링팁", "type": "PAGE", "depth": 2, "purpose": "침대 위 10초 골반/손목 리셋 스트레칭 영상, 수유 팁, FAQ"},
+    {"screenId": "SCR-11", "sitemapId": "P-6.1", "name": "6.1 카카오 간편 로그인 [가정]", "type": "PAGE", "depth": 2, "purpose": "카카오 OAuth 1-Click 연동 로그인"},
+    {"screenId": "SCR-12", "sitemapId": "P-6.2", "name": "6.2 마이페이지 배송 조회 [가정]", "type": "PAGE", "depth": 2, "purpose": "30일 무료 체험 배송 현황 및 1-Click 무료 반품 신청"},
+    {"screenId": "SCR-13", "sitemapId": "P-9.1", "name": "9.1 404 Not Found [가정]", "type": "EXCEPT", "depth": 2, "purpose": "따뜻한 일러스트 에러 안내 및 메인 바로가기"},
+    {"screenId": "SCR-14", "sitemapId": "P-9.2", "name": "9.2 시스템 점검 안내 [가정]", "type": "EXCEPT", "depth": 2, "purpose": "점검 중 카카오 1:1 상담 채널 안내"}
+  ]
+}

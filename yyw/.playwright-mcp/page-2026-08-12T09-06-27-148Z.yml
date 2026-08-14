@@ -1,0 +1,83 @@
+- generic [ref=f53e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f53e15]:
+      - generic [ref=f53e17]:
+        - generic [ref=f53e18]:
+          - combobox "검색" [ref=f53e20]: minimalist geometric wing crest logo symbol black white vector
+          - generic [ref=f53e21]:
+            - button "검색 입력 삭제" [ref=f53e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f53e30]:
+              - button "Pinterest 렌즈" [ref=f53e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f53e38] [cursor=pointer]:
+          - generic [ref=f53e40]:
+            - generic [ref=f53e41]: 모든 핀
+            - img "드롭다운" [ref=f53e43]
+      - link "내 프로필" [ref=f53e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f53e56]:
+          - generic [ref=f53e57]: 임
+      - button "계정" [ref=f53e61] [cursor=pointer]
+  - navigation [ref=f53e66]:
+    - generic [ref=f53e68]:
+      - generic [ref=f53e69]:
+        - generic "홈" [ref=f53e73]:
+          - link "홈" [ref=f53e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f53e81]:
+          - link "홈" [ref=f53e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f53e89]:
+          - link "내 보드" [ref=f53e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f53e97]:
+          - button "만들기" [ref=f53e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f53e114]:
+        - button "설정 및 지원" [ref=f53e115] [cursor=pointer]
+  - main [ref=f53e120]:
+    - generic [ref=f53e122]:
+      - heading "검색 결과 페이지" [level=1] [ref=f53e124]
+      - region "필터 및 세분화 검색" [ref=f53e128]:
+        - button "필터 표시" [ref=f53e137] [cursor=pointer]
+      - generic [ref=f53e149]:
+        - generic:
+          - generic:
+            - list:
+              - listitem [ref=f53e150]:
+                - button [ref=f53e151] [cursor=pointer]:
+                  - group "핀 카드" [ref=f53e153]:
+                    - generic [ref=f53e155]:
+                      - link "Simple Minimalist Flying Wing Logo Design Vector 핀 페이지" [ref=f53e157]:
+                        - /url: /pin/13229392654311202/
+                        - 'img "포함된 이미지: Simple Minimalist Flying Wing Logo Design Vector" [ref=f53e167]'
+                      - generic [ref=f53e172]:
+                        - heading [level=2] [ref=f53e178]:
+                          - link "Simple Minimalist Flying Wing Logo Design Vector 핀 페이지" [ref=f53e180]:
+                            - /url: /pin/13229392654311202/
+                            - text: Simple Minimalist Flying Wing Logo Design Vector
+                        - generic "추가 작업" [ref=f53e183]:
+                          - button "추가 작업" [ref=f53e184]
+              - listitem [ref=f53e189]:
+                - button [ref=f53e190] [cursor=pointer]:
+                  - group "핀 카드" [ref=f53e192]:
+                    - generic [ref=f53e194]:
+                      - link "Vittagreen | Isologo Base en Monocromía 핀 페이지" [ref=f53e196]:
+                        - /url: /pin/1548181186873375/
+                        - 'img "포함된 이미지: Vittagreen | Isologo Base en Monocromía" [ref=f53e206]'
+                      - generic [ref=f53e211]:
+                        - heading [level=2] [ref=f53e217]:
+                          - link "Vittagreen | Isologo Base en Monocromía 핀 페이지" [ref=f53e219]:
+                            - /url: /pin/1548181186873375/
+                            - text: Vittagreen | Isologo Base en Monocromía
+                        - generic "추가 작업" [ref=f53e222]:
+                          - button "추가 작업" [ref=f53e223]
+              - listitem [ref=f53e228]:
+                - button [ref=f53e229] [cursor=pointer]:
+                  - group "핀 카드" [ref=f53e231]:
+                    - generic [ref=f53e233]:
+                      - link "제목 없음 핀 페이지" [ref=f53e235]:
+                        - /url: /pin/12877548933398950/
+                        - img "포함된 이미지:" [ref=f53e245]
+                      - generic "추가 작업" [ref=f53e254]:
+                        - button "추가 작업" [ref=f53e255]

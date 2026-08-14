@@ -1,0 +1,82 @@
+- generic [ref=e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=e15]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - combobox "검색" [ref=e20]: geometric balance logo minimalist black white
+          - generic [ref=e21]:
+            - button "검색 입력 삭제" [ref=e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=e30]:
+              - button "Pinterest 렌즈" [ref=e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=e38] [cursor=pointer]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: 모든 핀
+            - img "드롭다운" [ref=e43]
+      - link "내 프로필" [ref=e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=e56]:
+          - generic [ref=e57]: 임
+      - button "계정" [ref=e61] [cursor=pointer]
+  - navigation [ref=e66]:
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - generic "홈" [ref=e73]:
+          - link "홈" [ref=e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=e81]:
+          - link "홈" [ref=e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=e89]:
+          - link "내 보드" [ref=e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=e97]:
+          - button "만들기" [ref=e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=e114]:
+        - button "설정 및 지원" [ref=e115] [cursor=pointer]
+  - main [ref=e120]:
+    - generic [ref=e122]:
+      - heading "검색 결과 페이지" [level=1] [ref=e124]
+      - region "필터 및 세분화 검색" [ref=e128]:
+        - button "필터 표시" [ref=e137] [cursor=pointer]
+      - generic [ref=e149]:
+        - generic:
+          - generic:
+            - list:
+              - listitem [ref=e150]:
+                - button [ref=e151] [cursor=pointer]:
+                  - group "핀 카드" [ref=e154]:
+                    - generic [ref=e156]:
+                      - link "🙃 핀 페이지" [ref=e158]:
+                        - /url: /pin/25543922886568787/
+                        - 'img "포함된 이미지: 🙃" [ref=e168]'
+                      - generic [ref=e173]:
+                        - heading [level=2] [ref=e179]:
+                          - link "🙃 핀 페이지" [ref=e181]:
+                            - /url: /pin/25543922886568787/
+                            - text: 🙃
+                        - generic "추가 작업" [ref=e184]:
+                          - button "추가 작업" [ref=e185]
+              - listitem [ref=e190]:
+                - button [ref=e191] [cursor=pointer]:
+                  - group "핀 카드" [ref=e194]:
+                    - generic [ref=e196]:
+                      - link "제목 없음 핀 페이지" [ref=e198]:
+                        - /url: /pin/281543725279450/
+                        - img "포함된 이미지:" [ref=e208]
+                      - generic [ref=e213]:
+                        - link "HINDZ" [ref=e217]:
+                          - /url: /hindzsight/
+                          - generic "HINDZ" [ref=e224]
+                        - generic "추가 작업" [ref=e227]:
+                          - button "추가 작업" [ref=e228]
+              - listitem [ref=e233]:
+                - button [ref=e234] [cursor=pointer]:
+                  - group "핀 카드" [ref=e237]:
+                    - generic [ref=e239]:
+                      - link "BRAND IDENTITY 📈 Fede me puso el desafío de crear una marca que lo identifique como un entrenador cuyo objetivo principal es promover el bienestar integral de sus clientes, priorizando la salud y el equilibrio por encima de la mera estética. Su método fusiona disciplinas como el yoga y el entrenamiento de fuerza. La marca de Fede se centra en la creencia de que un cuerpo sano y equilibrado es la base para una buena calidad de vida. A través de programas personalizados, Fede guía a sus client... 핀 페이지" [ref=e241]:
+                        - /url: /pin/4996249583432584/
+                        - img "포함된 이미지:" [ref=e251]
+                      - generic "추가 작업" [ref=e260]:
+                        - button "추가 작업" [ref=e261]

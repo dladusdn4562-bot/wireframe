@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM(스밈) 메인페이지 저충실도 와이어프레임 시각화 (회색박스 & 텍스트)</title>
+  <style>
+    /* ==========================================================================
+       1. Low-Fidelity Wireframe Tokens (엄격한 흑백/그레이스케일 전용)
+       ========================================================================== */
+    :root {
+      --bg-page: #F8FAFC;
+      --bg-surface: #FFFFFF;
+      --bg-box-light: #F1F5F9;
+      --bg-box-mid: #E2E8F0;
+      --bg-box-dark: #CBD5E1;
+      --border-dark: #1E293B;
+      --border-mid: #64748B;
+      --border-light: #CBD5E1;
+      --text-main: #0F172A;
+      --text-sub: #475569;
+      --text-muted: #64748B;
+      --font-stack: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-stack);
+      line-height: 1.5;
+      padding: 30px 20px 100px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: var(--bg-surface);
+      border: 2px solid var(--border-dark);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Section Wrapper */
+    .wf-section {
+      border-bottom: 2px solid var(--border-dark);
+      padding: 32px 24px;
+      position: relative;
+    }
+    .wf-section-tag {
+      display: inline-block;
+      background: var(--border-dark);
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 2px 8px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Common Box Elements */
+    .box-gray {
+      background: var(--bg-box-light);
+      border: 1px solid var(--border-mid);
+      border-radius: 4px;
+      padding: 16px;
+    }
+    .box-dashed {
+      background: var(--bg-box-light);
+      border: 1.5px dashed var(--border-mid);
+      border-radius: 4px;
+      padding: 20px;
+      text-align: center;
+    }
+    .img-placeholder {
+      background: var(--bg-box-mid);
+      border: 1px solid var(--border-mid);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-sub);
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+    .img-placeholder::before {
+      content: "✕ [IMAGE / MEDIA PLACEHOLDER]";
+      display: block;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    /* Buttons (Wireframe Style) */
+    .btn-wf {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 16px;
+      border: 1.5px solid var(--border-dark);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .btn-wf-primary {
+      background: var(--border-dark);
+      color: #FFFFFF;
+    }
+    .btn-wf-gray {
+      background: var(--bg-box-mid);
+      color: var(--text-main);
+    }
+    .btn-wf-sm { padding: 4px 10px; font-size: 11.5px; }
+
+    /* Grids */
+    .grid { display: grid; gap: 16px; }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+    /* Form Controls */
+    .input-wf {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid var(--border-dark);
+      background: #FFFFFF;
+      font-size: 12.5px;
+      border-radius: 4px;
+    }
+
+    /* Document Top Info Header */
+    .doc-header {
+      background: var(--border-dark);
+      color: #FFFFFF;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    /* Modal Wireframe Box */
+    .modal-preview-box {
+      border: 2px solid var(--border-dark);
+      background: #FFFFFF;
+      border-radius: 6px;
+      margin-top: 24px;
+      overflow: hidden;
+    }
+    .modal-preview-header {
+      background: var(--bg-box-mid);
+      border-bottom: 1px solid var(--border-dark);
+      padding: 10px 16px;
+      font-weight: bold;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Floating Widget */
+    .floating-wf-bar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--border-dark);
+      color: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      padding: 10px 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 12px;
+      font-weight: bold;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- ==========================================================================
+         문서 상단 메타데이터 바
+         ========================================================================== -->
+    <div class="doc-header">
+      <div>
+        <strong>스토리보드 시각화 산출물:</strong> 메인 랜딩페이지 (SCR-01 / P-0.0)
+      </div>
+      <div>
+        가상클라이언트 1 (박서준 기획총괄: HW+AI+O2O 3중 선순환) | <strong>형태: 회색박스 &amp; 텍스트</strong>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-00] 공통 상단 GNB (Global Navigation Bar)
+         ========================================================================== -->
+    <div class="wf-section" style="padding: 14px 24px; background: #FFFFFF;">
+      <span class="wf-section-tag">SEC-00 : GNB (상단 고정 헤더)</span>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="border: 1.5px solid var(--border-dark); padding: 6px 14px; font-weight: 900; font-size: 16px; background: var(--bg-box-light);">
+          [로고] SEUMIM
+        </div>
+        
+        <div style="display: flex; gap: 8px;">
+          <div class="box-gray" style="padding: 6px 12px; font-size: 12px; font-weight: bold;">1.0 브랜드 스토리</div>
+          <div class="box-gray" style="padding: 6px 12px; font-size: 12px; font-weight: bold;">2.0 시그니처 HW</div>
+          <div class="box-gray" style="padding: 6px 12px; font-size: 12px; font-weight: bold;">3.0 AI 데이터 케어</div>
+          <div class="box-gray" style="padding: 6px 12px; font-size: 12px; font-weight: bold;">4.0 오프라인 동행센터</div>
+          <div class="box-gray" style="padding: 6px 12px; font-size: 12px; font-weight: bold;">5.0 혜택 &amp; 체험</div>
+        </div>
+
+        <div style="display: flex; gap: 6px;">
+          <div class="btn-wf btn-wf-sm">로그인 [가정]</div>
+          <div class="btn-wf btn-wf-sm">마이페이지 [가정]</div>
+          <div class="btn-wf btn-wf-primary btn-wf-sm">30일 무료 체험</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-01] 0.1 히어로 섹션 (Hero & 0.1mm 시크릿 핏 슬라이더)
+         ========================================================================== -->
+    <div class="wf-section">
+      <span class="wf-section-tag">SEC-01 : 0.1 히어로 섹션</span>
+      
+      <div class="box-gray" style="text-align: center; padding: 30px; margin-bottom: 20px;">
+        <div class="btn-wf btn-wf-sm" style="margin-bottom: 12px; background: var(--bg-box-mid);">태그 배지: 0.1mm 시크릿 핏 스마트 체형 교정</div>
+        <h1 style="font-size: 26px; margin-bottom: 8px;">일상에 바른 균형이 스며들게, 당신의 일상 균형 스밈(SEUMIM)</h1>
+        <p style="color: var(--text-sub); font-size: 14px; max-width: 750px; margin: 0 auto 20px auto;">
+          억지로 몸을 조이지 않아도, 퇴근 후 고강도 운동을 강요하지 않아도.<br>
+          모니터 앞 앉은 자리에서 자연스럽게 바른 자세가 시작됩니다.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 10px;">
+          <div class="btn-wf btn-wf-primary">[CTA 버튼 1] 30일 무료 체험 신청하기 (결제 0원)</div>
+          <div class="btn-wf">[버튼 2] 3대 원천기술 보기</div>
+        </div>
+        <div style="font-size: 11.5px; color: var(--text-muted); margin-top: 10px;">
+          ✓ 30일 시착 후 불만족 시 100% 무료 반품 보장 | 왕복 배송비 0원
+        </div>
+      </div>
+
+      <!-- 0.1mm 시크릿 핏 슬라이더 와이어프레임 박스 -->
+      <div class="box-gray">
+        <div style="font-weight: bold; font-size: 13px; margin-bottom: 10px; text-align: center;">
+          [인터랙티브 컴포넌트: 0.1mm 시크릿 핏 비포/애프터 비교 슬라이더 영역]
+        </div>
+        <div class="grid grid-2">
+          <div class="img-placeholder" style="height: 220px;">
+            <strong style="font-size: 13px;">[Before] 기존 일반 교정기 착용 컷</strong>
+            <p style="margin-top: 6px; font-size: 11.5px;">• 두께 5.0mm 이상<br>• 셔츠 위로 라인 튀어나옴<br>• 겨드랑이 살 쓸림 발생</p>
+          </div>
+          <div class="img-placeholder" style="height: 220px; background: var(--bg-box-dark); border: 2px solid var(--border-dark);">
+            <strong style="font-size: 13px;">[After] 스밈 0.1mm 시크릿 밴드 착용 컷</strong>
+            <p style="margin-top: 6px; font-size: 11.5px;">• 초슬림 두께 0.1mm<br>• 100% 티 안 남 (Invisible 핏)<br>• 무봉제 심리스 원단</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-02] 0.2 직장인 척추 질환 통계 & 자세 인지 불능 현실
+         ========================================================================== -->
+    <div class="wf-section">
+      <span class="wf-section-tag">SEC-02 : 0.2 직장인 척추 통계 리포트</span>
+      <h3 style="margin-bottom: 14px; text-align: center;">직장인 82.3%가 업무 중 자세 무너짐을 인지하지 못합니다</h3>
+
+      <div class="grid grid-3">
+        <div class="box-gray" style="text-align: center; padding: 24px;">
+          <div style="font-size: 36px; font-weight: 900; border-bottom: 2px solid var(--border-dark); padding-bottom: 6px; margin-bottom: 10px;">82.3%</div>
+          <strong style="font-size: 13.5px;">업무 몰입 시 나쁜 자세 인지 불가</strong>
+          <p style="font-size: 11.5px; color: var(--text-sub); margin-top: 4px;">모니터에 집중할수록 거북목과 허리 무너짐 심화</p>
+        </div>
+
+        <div class="box-gray" style="text-align: center; padding: 24px;">
+          <div style="font-size: 36px; font-weight: 900; border-bottom: 2px solid var(--border-dark); padding-bottom: 6px; margin-bottom: 10px;">25.8%</div>
+          <strong style="font-size: 13.5px;">2030 목디스크 환자 비중 돌파</strong>
+          <p style="font-size: 11.5px; color: var(--text-sub); margin-top: 4px;">건강보험심사평가원 청년층 척추질환 급증 통계</p>
+        </div>
+
+        <div class="box-gray" style="text-align: center; padding: 24px;">
+          <div style="font-size: 36px; font-weight: 900; border-bottom: 2px solid var(--border-dark); padding-bottom: 6px; margin-bottom: 10px;">40.4%</div>
+          <strong style="font-size: 13.5px;">야근/시간 부족으로 치료 미룸</strong>
+          <p style="font-size: 11.5px; color: var(--text-sub); margin-top: 4px;">병원 갈 시간이 없어 앉은 자리 홈케어가 유일한 해법</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-03] 0.3 스밈 3대 원천 기술 요약
+         ========================================================================== -->
+    <div class="wf-section">
+      <span class="wf-section-tag">SEC-03 : 0.3 스밈 3대 원천 기술</span>
+      <h3 style="margin-bottom: 14px; text-align: center;">기침할 때마다 울리던 오작동 진동 스트레스는 이제 그만</h3>
+
+      <div class="grid grid-3">
+        <div class="box-gray">
+          <div class="img-placeholder" style="height: 120px; margin-bottom: 10px;">[3D 모식도: 전도성 섬유]</div>
+          <strong>1. 유연 전도성 센서 섬유</strong>
+          <p style="font-size: 12px; color: var(--text-sub); margin-top: 4px;">100회 세탁기 세탁 시험을 통과한 초내구성 스마트 섬유 원사</p>
+        </div>
+
+        <div class="box-gray">
+          <div class="img-placeholder" style="height: 120px; margin-bottom: 10px;">[알고리즘 순서도]</div>
+          <strong>2. 시차 필터링 알고리즘</strong>
+          <p style="font-size: 12px; color: var(--text-sub); margin-top: 4px;">기침/기지개 등 3초 이내 일상 움직임과 불량 자세를 정확히 구분</p>
+        </div>
+
+        <div class="box-gray">
+          <div class="img-placeholder" style="height: 120px; margin-bottom: 10px;">[지렛대 역학 구조도]</div>
+          <strong>3. 지렛대 탄성 복원 구조</strong>
+          <p style="font-size: 12px; color: var(--text-sub); margin-top: 4px;">억지 조임 없이 어깨와 허리가 자연스럽게 펴지는 물리 넛지</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-04] 0.4 3대 시그니처 HW 라인업
+         ========================================================================== -->
+    <div class="wf-section">
+      <span class="wf-section-tag">SEC-04 : 0.4 3대 시그니처 HW 라인업</span>
+      <h3 style="margin-bottom: 12px; text-align: center;">당신의 무너진 부위에 맞춤 처방하는 3대 시그니처 라인업</h3>
+
+      <!-- 탭 바 -->
+      <div style="display: flex; justify-content: center; gap: 8px; margin-bottom: 16px;">
+        <div class="btn-wf btn-wf-primary">[선택 탭] 1. 어깨 &amp; 거북목 밴드</div>
+        <div class="btn-wf">[탭 2] 2. 스마트 척추 조끼</div>
+        <div class="btn-wf">[탭 3] 3. 골반 에어셀 벨트</div>
+      </div>
+
+      <!-- 제품 상세 디스플레이 박스 -->
+      <div class="box-gray">
+        <div class="grid grid-2" style="align-items: center;">
+          <div class="img-placeholder" style="height: 280px;">
+            <strong>[제품 룩북 화보 영역]</strong>
+            <p style="margin-top: 6px; font-size: 11.5px;">어깨 &amp; 거북목 프리미엄 밴드 (0.1mm 시크릿 핏)<br>무게 38g | 통기성 심리스 메쉬</p>
+          </div>
+          <div>
+            <div class="btn-wf btn-wf-sm" style="margin-bottom: 8px;">Signature 01</div>
+            <h2 style="font-size: 20px; margin-bottom: 8px;">어깨 &amp; 거북목 프리미엄 밴드</h2>
+            <p style="font-size: 13px; color: var(--text-sub); margin-bottom: 14px;">
+              와이셔츠나 티셔츠 안에 입어도 라인이 드러나지 않는 0.1mm 초슬림 핏.<br>
+              굽은 어깨와 앞으로 쏠린 목을 지렛대 원리로 부드럽게 펴줍니다.
+            </p>
+
+            <div class="box-gray" style="background: var(--bg-surface); margin-bottom: 14px;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 12px; font-weight: bold;">
+                <span>상의 의류 사이즈 선택:</span>
+                <span style="text-decoration: underline; cursor: pointer;">[모달 호출] 내 옷 사이즈로 맞추기 ➔</span>
+              </div>
+              <div style="display: flex; gap: 6px;">
+                <div class="btn-wf btn-wf-sm" style="flex: 1; text-align: center;">95 (Type 1)</div>
+                <div class="btn-wf btn-wf-primary btn-wf-sm" style="flex: 1; text-align: center;">100 (Type 2 추천)</div>
+                <div class="btn-wf btn-wf-sm" style="flex: 1; text-align: center;">105 (Type 3)</div>
+              </div>
+            </div>
+
+            <div class="btn-wf btn-wf-primary" style="width: 100%;">[모달 호출] 30일 무료 체험 신청하기 (결제 0원)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-05] 0.5 0.1mm 초슬림 시크릿 착용 핏 룩북
+         ========================================================================== -->
+    <div class="wf-section">
+      <span class="wf-section-tag">SEC-05 : 0.5 0.1mm 시크릿 핏 룩북</span>
+      <div class="grid grid-2" style="align-items: center;">
+        <div>
+          <h3 style="font-size: 18px; margin-bottom: 8px;">얇은 화이트 셔츠 안에 입어도, 아무도 눈치채지 못합니다</h3>
+          <p style="font-size: 13px; color: var(--text-sub); margin-bottom: 12px;">
+            0.1mm 초슬림 스킨톤 심리스 메쉬로 옷 맵시를 완벽히 유지하면서 체형만 바르게 세웁니다.
+          </p>
+          <div style="display: flex; gap: 6px;">
+            <div class="btn-wf btn-wf-sm">스펙: 두께 0.1mm</div>
+            <div class="btn-wf btn-wf-sm">스펙: 무게 38g</div>
+            <div class="btn-wf btn-wf-sm">피부 무자극 인증</div>
+          </div>
+        </div>
+        <div class="img-placeholder" style="height: 180px;">
+          [초근접 텍스처 매크로 룩북: 화이트 셔츠 속 밴드 투시 뷰]
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-06] 0.6 AI 데이터 대시보드 & 스마트워치 UI
+         ========================================================================== -->
+    <div class="wf-section">
+      <span class="wf-section-tag">SEC-06 : 0.6 AI 대시보드 &amp; 스마트워치 UI</span>
+      <h3 style="margin-bottom: 14px; text-align: center;">손목 위 1초 만에 확인하는 내 몸의 바른 균형</h3>
+
+      <div class="grid grid-2">
+        <div class="box-gray" style="text-align: center; padding: 24px;">
+          <strong>[스마트폰 실시간 대시보드 시뮬레이터]</strong>
+          <div style="width: 120px; height: 120px; border: 8px solid var(--border-dark); border-radius: 50%; margin: 16px auto; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div style="font-size: 28px; font-weight: 900;">88점</div>
+            <div style="font-size: 10px; color: var(--text-muted);">밸런스 우수</div>
+          </div>
+          <p style="font-size: 12px; color: var(--text-sub);">"목 각도가 12° 기울어졌습니다. 10초 스트레칭을 시작하세요."</p>
+        </div>
+
+        <div class="box-gray" style="text-align: center; padding: 24px;">
+          <strong>[스마트워치 퀵-글랜스(Quick-Glance) 링 UI]</strong>
+          <div style="width: 100px; height: 120px; border: 3px solid var(--border-dark); border-radius: 24px; margin: 16px auto; display: flex; align-items: center; justify-content: center; background: var(--bg-box-mid);">
+            <div style="width: 60px; height: 60px; border: 5px solid var(--border-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold;">
+              88%
+            </div>
+          </div>
+          <p style="font-size: 12px; color: var(--text-sub);">업무 몰입 방해 없는 무음 화면 넛지 코칭</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-07] 0.7 앉은 자리 10초 AI 미니멀 케어 루틴
+         ========================================================================== -->
+    <div class="wf-section">
+      <span class="wf-section-tag">SEC-07 : 0.7 앉은 자리 10초 케어 루틴</span>
+      <div class="box-gray" style="text-align: center; padding: 24px;">
+        <h3 style="margin-bottom: 6px;">자리에서 일어나지 않아도 괜찮습니다. 앉은 자리 10초 AI 릴렉스</h3>
+        <p style="font-size: 12.5px; color: var(--text-sub); margin-bottom: 16px;">하드웨어 신청 시 AI 미니멀 케어 3개월 무료 구독권 즉시 지급</p>
+        
+        <div class="grid grid-3" style="margin-bottom: 16px;">
+          <div class="box-dashed">
+            <strong>Step 1</strong>
+            <p style="font-size: 12px; margin-top: 4px;">턱 당기기 (3초)</p>
+          </div>
+          <div class="box-dashed">
+            <strong>Step 2</strong>
+            <p style="font-size: 12px; margin-top: 4px;">견갑골 조이기 (4초)</p>
+          </div>
+          <div class="box-dashed">
+            <strong>Step 3</strong>
+            <p style="font-size: 12px; margin-top: 4px;">호흡 정렬 (3초)</p>
+          </div>
+        </div>
+
+        <div class="btn-wf btn-wf-primary">[버튼] 3개월 무료 구독 시작하기 ➔</div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-08] 0.8 오프라인 동행센터 1회 무료 체험권 & 지점 검색
+         ========================================================================== -->
+    <div class="wf-section">
+      <span class="wf-section-tag">SEC-08 : 0.8 O2O 센터 검색 &amp; 1회 무료 예약</span>
+      <h3 style="margin-bottom: 8px;">전국 제휴 센터 1:1 체형 정밀 진단 1회 무료 체험</h3>
+      <p style="font-size: 13px; color: var(--text-sub); margin-bottom: 14px;">전문 체형교정사의 3D 체형 측정과 맞춤 코칭을 무료로 경험하세요.</p>
+
+      <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+        <input type="text" class="input-wf" placeholder="지역명(예: 강남, 판교) 또는 지하철역 검색..." value="서울 강남구" style="flex: 1;">
+        <div class="btn-wf btn-wf-primary">지점 검색</div>
+        <div class="btn-wf">내 주변 센터</div>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="box-gray">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+            <strong>스밈 강남 플래그십점</strong>
+            <span class="btn-wf btn-wf-sm" style="padding: 2px 6px;">오늘 예약 가능</span>
+          </div>
+          <p style="font-size: 11.5px; color: var(--text-sub); margin-bottom: 10px;">서울 강남구 테헤란로 123 (강남역 1번 출구 도보 3분)</p>
+          <div class="btn-wf btn-wf-primary btn-wf-sm" style="width: 100%;">[모달 호출] 1회 무료 4단계 예약하기</div>
+        </div>
+
+        <div class="box-gray">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+            <strong>스밈 판교 테크노밸리점</strong>
+            <span class="btn-wf btn-wf-sm" style="padding: 2px 6px;">잔여 3슬롯</span>
+          </div>
+          <p style="font-size: 11.5px; color: var(--text-sub); margin-bottom: 10px;">경기 성남시 분당구 판교역로 235</p>
+          <div class="btn-wf btn-wf-sm" style="width: 100%;">예약하기</div>
+        </div>
+
+        <div class="box-gray">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+            <strong>스밈 여의도 IFC점</strong>
+            <span class="btn-wf btn-wf-sm" style="padding: 2px 6px;">잔여 2슬롯</span>
+          </div>
+          <p style="font-size: 11.5px; color: var(--text-sub); margin-bottom: 10px;">서울 영등포구 국제금융로 10 IFC몰 B2층</p>
+          <div class="btn-wf btn-wf-sm" style="width: 100%;">예약하기</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-09] 0.9 직장인 찐후기 갤러리 & FAQ 아코디언
+         ========================================================================== -->
+    <div class="wf-section">
+      <span class="wf-section-tag">SEC-09 : 0.9 찐후기 &amp; FAQ 아코디언</span>
+      <h3 style="margin-bottom: 14px; text-align: center;">직장인 14,820명이 증명하는 실사용 후기 (평점 4.9/5.0)</h3>
+
+      <div class="grid grid-3" style="margin-bottom: 24px;">
+        <div class="box-gray">
+          <div style="font-size: 11px; font-weight: bold; color: var(--text-sub);">★ 5.0 | IT 풀스택 개발자 (32세)</div>
+          <strong style="display: block; margin: 6px 0; font-size: 13px;">"코딩할 때 오작동 진동이 없어서 최고예요"</strong>
+          <p style="font-size: 11.5px; color: var(--text-sub);">기침만 해도 울리던 타사 센서와 달리 구부정할 때만 조용히 잡아줍니다.</p>
+        </div>
+
+        <div class="box-gray">
+          <div style="font-size: 11px; font-weight: bold; color: var(--text-sub);">★ 5.0 | 퍼포먼스 마케터 (28세)</div>
+          <strong style="display: block; margin: 6px 0; font-size: 13px;">"화이트 블라우스 속에도 티가 전혀 안 나요"</strong>
+          <p style="font-size: 11.5px; color: var(--text-sub);">0.1mm 두께라 매일 입고 출근합니다. 30일 무료체험 강추!</p>
+        </div>
+
+        <div class="box-gray">
+          <div style="font-size: 11px; font-weight: bold; color: var(--text-sub);">★ 5.0 | 스타트업 대표 (35세)</div>
+          <strong style="display: block; margin: 6px 0; font-size: 13px;">"오프라인 1회 무료 진단 꼭 가보세요"</strong>
+          <p style="font-size: 11.5px; color: var(--text-sub);">강남점에서 3D 모아레 측정받고 제 체형 불균형을 직접 확인했습니다.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 아코디언 (Pure CSS <details>) -->
+      <h4 style="margin-bottom: 10px;">자주 묻는 질문 (FAQ)</h4>
+      <details class="box-gray" style="margin-bottom: 8px;" open>
+        <summary style="font-weight: bold; cursor: pointer; font-size: 13px;">Q. 세탁기에 넣고 돌려도 센서가 고장 나지 않나요?</summary>
+        <p style="font-size: 12px; color: var(--text-sub); margin-top: 6px;">A. 네, 스밈 센서 섬유는 일반 의류와 동일하게 세탁기 100회 세탁 시험을 통과했습니다.</p>
+      </details>
+      <details class="box-gray" style="margin-bottom: 8px;">
+        <summary style="font-weight: bold; cursor: pointer; font-size: 13px;">Q. 30일 써보고 불만족 시 반품 비용이 드나요? (100% 무료 반품)</summary>
+        <p style="font-size: 12px; color: var(--text-sub); margin-top: 6px;">A. 아닙니다. 마이페이지에서 1-Click 반품 시 왕복 배송비 전액 무료로 수거됩니다.</p>
+      </details>
+      <details class="box-gray" style="margin-bottom: 8px;">
+        <summary style="font-weight: bold; cursor: pointer; font-size: 13px;">Q. 의류 사이즈와 스밈 규격 매칭은 어떻게 하나요?</summary>
+        <p style="font-size: 12px; color: var(--text-sub); margin-top: 6px;">A. 상의 95=Type 1, 100=Type 2, 105=Type 3으로 평소 입으시는 옷 기준으로 매칭됩니다.</p>
+      </details>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-11] 공통 하단 푸터 (FNB)
+         ========================================================================== -->
+    <div class="wf-section" style="background: var(--bg-box-light);">
+      <span class="wf-section-tag">SEC-11 : 공통 하단 푸터 (FNB)</span>
+      <div class="grid grid-3" style="font-size: 12px; color: var(--text-sub);">
+        <div>
+          <strong>(주)스밈 웰니스</strong> | 대표: 박서준 | 사업자번호: 123-45-67890<br>
+          주소: 서울특별시 강남구 테헤란로 123 스밈타워 8층<br>
+          고객센터: 1588-0000 (평일 09:00 ~ 18:00)
+        </div>
+        <div>
+          <strong>안심 보장 정책</strong><br>
+          • 30일 무상 시착 규정<br>
+          • 100% 무료 반품 정책<br>
+          • 이용약관 및 개인정보처리방침
+        </div>
+        <div>
+          <strong>공식 채널</strong><br>
+          • 인스타그램 @seumim.official<br>
+          • 카카오톡 채널 @스밈웰니스<br>
+          • 블라인드 기업 리뷰
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-M1] 2.4 정밀 사이즈 가이드 [모달 시각화]
+         ========================================================================== -->
+    <div class="wf-section" style="background: #FFFFFF;">
+      <span class="wf-section-tag">SEC-M1 : [연계 모달 1] 2.4 정밀 사이즈 가이드 (SCR-04 / P-2.4)</span>
+      
+      <div class="modal-preview-box" style="max-width: 600px; margin: 10px auto;">
+        <div class="modal-preview-header">
+          <span>📐 스밈 의류 연계 정밀 사이즈 추천 가이드</span>
+          <span>✕ [닫기]</span>
+        </div>
+        <div style="padding: 20px;">
+          <p style="font-size: 12px; color: var(--text-sub); margin-bottom: 12px;">평소 입으시는 상의(티셔츠/셔츠) 사이즈를 기준으로 최적의 0.1mm 시크릿 핏을 매칭해 드립니다.</p>
+          
+          <div style="display: flex; gap: 6px; margin-bottom: 12px;">
+            <div class="btn-wf btn-wf-primary btn-wf-sm" style="flex: 1;">남성 규격표</div>
+            <div class="btn-wf btn-wf-sm" style="flex: 1;">여성 규격표</div>
+          </div>
+
+          <div class="box-gray" style="margin-bottom: 14px; font-size: 12px;">
+            <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--border-light);">
+              <span>상의 90 ~ 95</span>
+              <strong>Type 1 (슬림 핏)</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--border-light); background: var(--bg-box-mid);">
+              <span>상의 100 ~ 105 (추천)</span>
+              <strong>Type 2 (스탠다드 핏)</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 6px 0;">
+              <span>상의 110 이상</span>
+              <strong>Type 3 (릴렉스 핏)</strong>
+            </div>
+          </div>
+
+          <div style="font-size: 12px; font-weight: bold; margin-bottom: 6px;">신체 치수 직접 계산 (선택)</div>
+          <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+            <input type="number" class="input-wf" placeholder="키 (cm)" value="176" style="flex: 1;">
+            <input type="number" class="input-wf" placeholder="몸무게 (kg)" value="72" style="flex: 1;">
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 8px;">
+            <div class="btn-wf">취소</div>
+            <div class="btn-wf btn-wf-primary">추천 사이즈(Type 2)로 체험 신청 ➔</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         [SEC-M2] 5.2 30일 무료 체험 사전 신청 [모달 시각화]
+         ========================================================================== -->
+    <div class="wf-section" style="background: #FFFFFF;">
+      <span class="wf-section-tag">SEC-M2 : [연계 모달 2] 5.2 30일 무료 체험 사전 신청 (SCR-10 / P-5.2)</span>
+      
+      <div class="modal-preview-box" style="max-width: 600px; margin: 10px auto;">
+        <div class="modal-preview-header">
+          <span>📦 스밈 30일 무료 체험 &amp; 사전 신청</span>
+          <span>✕ [닫기]</span>
+        </div>
+        <div style="padding: 20px; font-size: 12.5px;">
+          <div class="box-gray" style="margin-bottom: 14px; font-size: 11.5px;">
+            • 결제 금액 0원! 30일간 입어보시고 불만족 시 100% 무료 반품해 드립니다.<br>
+            • 사전 예약자 전원 AI 미니멀 케어 3개월 무료 구독권(29,700원 상당) 증정!
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <label style="font-weight: bold; display: block; margin-bottom: 4px;">체험 신청 제품</label>
+            <select class="input-wf">
+              <option selected>어깨 &amp; 거북목 프리미엄 밴드 (0.1mm 시크릿 핏)</option>
+              <option>스마트 척추 정렬 가디건 조끼</option>
+              <option>골반 수평 유지 에어셀 벨트</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <label style="font-weight: bold; display: block; margin-bottom: 4px;">사이즈 선택</label>
+            <select class="input-wf">
+              <option selected>Type 2: 상의 100~105 스탠다드 (추천)</option>
+              <option>Type 1: 상의 90~95 슬림 핏</option>
+              <option>Type 3: 상의 110+ 릴렉스 핏</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <label style="font-weight: bold; display: block; margin-bottom: 4px;">신청자 이름</label>
+            <input type="text" class="input-wf" value="김스밈">
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <label style="font-weight: bold; display: block; margin-bottom: 4px;">휴대폰 번호 (알림톡 수신용)</label>
+            <input type="tel" class="input-wf" value="010-1234-5678">
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <label style="font-weight: bold; display: block; margin-bottom: 4px;">배송지 주소</label>
+            <input type="text" class="input-wf" value="서울특별시 강남구 테헤란로 123" style="margin-bottom: 4px;">
+            <input type="text" class="input-wf" value="8층 스밈하우스">
+          </div>
+
+          <div style="margin-bottom: 16px;">
+            <label><input type="checkbox" checked> 30일 무상 시착 이용약관 및 개인정보 수집 동의 (필수)</label>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 8px;">
+            <div class="btn-wf">취소</div>
+            <div class="btn-wf btn-wf-primary">사전 신청 완료하기 (0원)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- [SEC-10] 플로팅 스티키 바 (고정 위젯) -->
+  <div class="floating-wf-bar">
+    <span>🔥 [SEC-10] 30일 시착 무료 반품 보장</span>
+    <div class="btn-wf btn-wf-primary btn-wf-sm">체험 신청하기</div>
+    <div class="btn-wf btn-wf-gray btn-wf-sm">센터 예약하기</div>
+  </div>
+
+</body>
+</html>

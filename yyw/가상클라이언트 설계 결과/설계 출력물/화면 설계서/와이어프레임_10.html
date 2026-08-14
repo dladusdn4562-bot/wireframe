@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM MOBILITY 흉추 모빌리티 탑 와이어프레임 스튜디오 (가상클라이언트 10: 송민경)</title>
+  <style>
+    :root {
+      --primary: #3F6212;
+      --primary-dark: #166534;
+      --primary-light: #ECFCCB;
+      --accent: #65A30D;
+      --bg: #FEFCE8;
+      --surface: #FFFFFF;
+      --text: #1E293B;
+      --text-muted: #64748B;
+      --border: #D9F99D;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif; }
+    body { background: var(--bg); color: var(--text); display: flex; height: 100vh; overflow: hidden; font-size: 16px; }
+    
+    .sidebar { width: 340px; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; flex-shrink: 0; }
+    .sidebar-header { padding: 20px; border-bottom: 1px solid var(--border); background: var(--primary); color: #fff; }
+    .sidebar-header h1 { font-size: 17px; font-weight: 800; color: #FEFCE8; margin-bottom: 4px; }
+    .sidebar-header p { font-size: 12px; color: #ECFCCB; }
+    .screen-tree { flex: 1; overflow-y: auto; padding: 12px; }
+    .tree-group-title { font-size: 11px; font-weight: 700; color: var(--primary); text-transform: uppercase; margin: 12px 8px 6px; }
+    .tree-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-radius: 6px; font-size: 13px; cursor: pointer; transition: all 0.2s; margin-bottom: 2px; }
+    .tree-item:hover { background: var(--primary-light); color: var(--primary); }
+    .tree-item.active { background: var(--primary); color: #fff; font-weight: 700; }
+    .badge { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 700; }
+    .badge-page { background: #ECFCCB; color: #3F6212; }
+    .badge-modal { background: #DCFCE7; color: #166534; }
+    .badge-except { background: #FEE2E2; color: #991B1B; }
+    .tree-item.active .badge { background: rgba(255,255,255,0.2); color: #fff; }
+
+    .main-canvas { flex: 1; display: flex; flex-direction: column; overflow: hidden; background: #F7FEE7; }
+    .canvas-toolbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+    .screen-title { font-size: 15px; font-weight: 700; color: var(--primary); }
+    .viewport-controls { display: flex; gap: 8px; }
+    .vp-btn { padding: 6px 12px; border: 1px solid var(--border); background: var(--surface); border-radius: 6px; font-size: 12px; cursor: pointer; }
+    .vp-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); font-weight: 700; }
+    
+    .viewport-wrapper { flex: 1; overflow-y: auto; padding: 30px; display: flex; justify-content: center; align-items: flex-start; }
+    .device-frame { background: var(--surface); box-shadow: 0 20px 25px -5px rgba(63, 98, 18, 0.1); border-radius: 12px; overflow: hidden; width: 100%; max-width: 1200px; border: 1px solid var(--border); min-height: 800px; }
+    .device-frame.tablet { max-width: 768px; }
+    .device-frame.mobile { max-width: 390px; }
+
+    .wf-gnb { height: 72px; background: var(--surface); display: flex; align-items: center; justify-content: space-between; padding: 0 28px; border-bottom: 2px solid var(--primary); }
+    .wf-logo { font-size: 20px; font-weight: 900; color: var(--primary); }
+    .wf-nav { display: flex; gap: 24px; font-size: 15px; font-weight: 700; }
+    .wf-nav span { cursor: pointer; color: var(--text-muted); }
+    .wf-nav span:hover { color: var(--primary); }
+    .wf-btn-trial { background: var(--primary); color: #fff; padding: 10px 18px; border-radius: 8px; font-size: 14px; font-weight: 800; border: none; cursor: pointer; }
+    
+    .wf-content { padding: 40px 32px; }
+    .wf-hero { background: linear-gradient(135deg, #FEFCE8 0%, #ECFCCB 100%); padding: 52px 36px; border-radius: 14px; text-align: center; border: 2px solid var(--border); margin-bottom: 32px; }
+    .wf-hero h2 { font-size: 32px; font-weight: 900; color: var(--primary); margin-bottom: 16px; }
+    .wf-hero p { font-size: 18px; color: #4D7C0F; margin-bottom: 28px; font-weight: 600; }
+    .wf-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 32px; }
+    .wf-card { background: var(--surface); border: 2px solid var(--border); border-radius: 12px; padding: 28px; }
+    .wf-card h3 { font-size: 18px; font-weight: 800; color: var(--primary); margin-bottom: 12px; }
+    .wf-card p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+    
+    .modal-preview { background: var(--surface); border: 3px solid var(--primary); border-radius: 16px; padding: 36px; max-width: 540px; margin: 0 auto; text-align: center; }
+    .form-group { margin-bottom: 18px; text-align: left; }
+    .form-group label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+    .form-input { width: 100%; padding: 14px 16px; border: 2px solid var(--border); border-radius: 8px; font-size: 16px; }
+    .wf-footer { background: #1C1917; color: #D6D3D1; padding: 40px 32px; font-size: 14px; text-align: center; line-height: 1.8; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h1>SEUMIM MOBILITY TOP</h1>
+      <p>가상클라이언트 10: 송민경 (14개 화면)</p>
+    </div>
+    <div class="screen-tree">
+      <div class="tree-group-title">1. 메인 및 모빌리티 탑</div>
+      <div class="tree-item active" onclick="switchScreen('SCR-01')"><span>SCR-01 0.0 보태니컬 메인</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-02')"><span>SCR-02 1.0 모빌리티 탑</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-03')"><span>SCR-03 1.3 사이즈 가이드</span><span class="badge badge-modal">MODAL</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-04')"><span>SCR-04 2.0 가동성 테크</span><span class="badge badge-page">PAGE</span></div>
+
+      <div class="tree-group-title">2. 강사 후기 & 스튜디오 체험</div>
+      <div class="tree-item" onclick="switchScreen('SCR-05')"><span>SCR-05 3.0 인스트럭터 후기</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-06')"><span>SCR-06 3.3 스튜디오 B2B</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-07')"><span>SCR-07 4.0 강사 30일 체험</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-08')"><span>SCR-08 4.2 강사 1-Click 신청</span><span class="badge badge-modal">MODAL</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-09')"><span>SCR-09 4.3 주문 완료 안내</span><span class="badge badge-page">PAGE</span></div>
+
+      <div class="tree-group-title">3. 매트 시퀀스 & 시스템</div>
+      <div class="tree-item" onclick="switchScreen('SCR-10')"><span>SCR-10 5.0 매트 시퀀스</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-11')"><span>SCR-11 6.1 강사 로그인</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-12')"><span>SCR-12 6.2 마이페이지</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-13')"><span>SCR-13 9.1 404 Not Found</span><span class="badge badge-except">EXCEPT</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-14')"><span>SCR-14 9.2 시스템 점검</span><span class="badge badge-except">EXCEPT</span></div>
+    </div>
+  </div>
+
+  <div class="main-canvas">
+    <div class="canvas-toolbar">
+      <div class="screen-title" id="screenTitle">SCR-01 0.0 보태니컬 메인 랜딩 (P-0.0)</div>
+      <div class="viewport-controls">
+        <button class="vp-btn active" onclick="setViewport('desktop')">Desktop</button>
+        <button class="vp-btn" onclick="setViewport('tablet')">Tablet</button>
+        <button class="vp-btn" onclick="setViewport('mobile')">Mobile</button>
+      </div>
+    </div>
+
+    <div class="viewport-wrapper">
+      <div class="device-frame" id="deviceFrame">
+        <div class="wf-gnb">
+          <div class="wf-logo">SEUMIM MOBILITY</div>
+          <div class="wf-nav">
+            <span onclick="switchScreen('SCR-02')">모빌리티 탑</span>
+            <span onclick="switchScreen('SCR-04')">가동성 테크</span>
+            <span onclick="switchScreen('SCR-05')">인스트럭터 후기</span>
+            <span onclick="switchScreen('SCR-07')">강사 30일 체험</span>
+            <span onclick="switchScreen('SCR-10')">매트 시퀀스</span>
+          </div>
+          <button class="wf-btn-trial" onclick="switchScreen('SCR-08')">🧘 강사 30일 무료체험</button>
+        </div>
+
+        <div class="wf-content" id="screenContent">
+          <div class="wf-hero">
+            <h2>타인의 몸을 바르게 세우느라 지친 당신을 위해</h2>
+            <p>레깅스 위 0.1mm 심리스 일체형 핏 & 흉추 회전 가동성 28% 확장</p>
+            <div style="display: flex; justify-content: center; gap: 16px;">
+              <button class="wf-btn-trial" style="font-size: 16px; padding: 14px 28px;" onclick="switchScreen('SCR-08')">스튜디오로 30일 무료체험 신청</button>
+            </div>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>🚨 강사 86.4% = 흉추 굳음 & 늑골 벌어짐</h3>
+              <p>회원 핸즈온 티칭 시 발생하는 흉추 과신전과 늑골 들림을 완벽하게 잡아줍니다.</p>
+            </div>
+            <div class="wf-card">
+              <h3>⚡ 0.1mm 심리스 일체형 브라탑</h3>
+              <p>수업 중 근육 라인이 완벽히 드러나며 땀 배출과 통기성이 뛰어난 에어로 스판 원단.</p>
+            </div>
+            <div class="wf-card">
+              <h3>🔄 흉추 회전각 28.4% 증가</h3>
+              <p>필라테스 리포머 및 요가 트위스트 동작 시 흉곽을 조이지 않고 가동 범위를 확장합니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wf-footer">
+          (주)스밈 웰니스 사업부 | 전국 요가·필라테스 강사 30일 스튜디오 무료 체험 보증제<br>
+          한국체육과학연구원 임상 검증 완료 | KATRI 세탁 복원력 인증 완료
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const screens = {
+      'SCR-01': {
+        title: 'SCR-01 0.0 보태니컬 메인 랜딩 (P-0.0)',
+        html: `
+          <div class="wf-hero">
+            <h2>타인의 몸을 바르게 세우느라 지친 당신을 위해</h2>
+            <p>레깅스 위 0.1mm 심리스 일체형 핏 & 흉추 회전 가동성 28% 확장</p>
+            <div style="display: flex; justify-content: center; gap: 16px;">
+              <button class="wf-btn-trial" style="font-size: 16px; padding: 14px 28px;" onclick="switchScreen('SCR-08')">스튜디오로 30일 무료체험 신청</button>
+            </div>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>🚨 강사 86.4% = 흉추 굳음 & 늑골 벌어짐</h3>
+              <p>회원 핸즈온 티칭 시 발생하는 흉추 과신전과 늑골 들림을 완벽하게 잡아줍니다.</p>
+            </div>
+            <div class="wf-card">
+              <h3>⚡ 0.1mm 심리스 일체형 브라탑</h3>
+              <p>수업 중 근육 라인이 완벽히 드러나며 땀 배출과 통기성이 뛰어난 에어로 스판 원단.</p>
+            </div>
+            <div class="wf-card">
+              <h3>🔄 흉추 회전각 28.4% 증가</h3>
+              <p>필라테스 리포머 및 요가 트위스트 동작 시 흉곽을 조이지 않고 가동 범위를 확장합니다.</p>
+            </div>
+          </div>
+        `
+      },
+      'SCR-05': {
+        title: 'SCR-05 3.0 인스트럭터 100인 후기 (P-3.0)',
+        html: `
+          <div class="wf-hero" style="background: #FEFCE8; border-color: #65A30D;">
+            <h2 style="color: #3F6212;">전국 요가·필라테스 원장님들의 실착 후기</h2>
+            <p style="color: #4D7C0F;">평점 4.96점! "수업 5개를 연달아 해도 숨이 안 차고 허리가 편안해요"</p>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card"><h3>🧘 신사동 요가원 송** 원장님</h3><p>"핸즈온 할 때 늑골이 벌어지던 게 싹 잡혔어요. 회원들에게도 적극 추천하고 있습니다."</p></div>
+            <div class="wf-card"><h3>🤸 한남동 필라테스 강** 원장님</h3><p>"리포머 시연할 때 흉추 회전각이 확실히 넓어져서 동작이 훨씬 우아하게 나옵니다."</p></div>
+            <div class="wf-card"><h3>🧘 판교 웰니스 센터 이** 강사님</h3><p>"레깅스 위에 입어도 전혀 둔해 보이지 않고 브라탑 일체형이라 수업 때 너무 편해요."</p></div>
+          </div>
+        `
+      },
+      'SCR-08': {
+        title: 'SCR-08 4.2 강사 1-Click 신청 [모달] (P-4.2)',
+        html: `
+          <div class="modal-preview">
+            <h2 style="font-size: 22px; font-weight: 900; color: var(--primary); margin-bottom: 12px;">스튜디오 30일 무료체험 신청</h2>
+            <p style="font-size: 15px; color: var(--text-muted); margin-bottom: 20px;">지도자 자격증 인증 시 스튜디오로 무료 체험 키트가 발송됩니다.</p>
+            <div class="form-group"><label>강사 성함 & 연락처</label><input type="text" class="form-input" placeholder="송민경 / 010-1234-5678"></div>
+            <div class="form-group"><label>스튜디오명 & 주소 (예: 숨 요가 신사점)</label><input type="text" class="form-input" placeholder="스튜디오 주소를 입력하세요"></div>
+            <div class="form-group"><label>지도자 자격증 번호 또는 SNS 강사 프로필</label><input type="text" class="form-input" placeholder="자격증 번호 또는 @instagram_id"></div>
+            <div class="form-group"><label>탑웨어 사이즈</label><select class="form-input"><option>M (75B/75C/80A) - 정사이즈</option><option>S (70A/70B/75A)</option><option>L (80B/80C/85A)</option></select></div>
+            <button class="wf-btn-trial" style="width: 100%; padding: 16px; font-size: 16px; justify-content: center; margin-top: 12px;" onclick="switchScreen('SCR-09')">스튜디오 30일 무료체험 신청 (배송비 0원)</button>
+          </div>
+        `
+      },
+      'SCR-09': {
+        title: 'SCR-09 4.3 주문 완료 및 배송 안내 [가정] (P-4.3)',
+        html: `
+          <div class="wf-hero" style="background: #F0FDF4; border-color: #86EFAC;">
+            <h2 style="color: #166534;">🎉 스튜디오 30일 무료체험 접수가 완료되었습니다!</h2>
+            <p style="color: #15803D;">주문 번호: <strong>YOGA-2026-0812-1001</strong> | 고객님 스튜디오로 즉시 발송됩니다.</p>
+          </div>
+        `
+      }
+    };
+
+    function switchScreen(id) {
+      document.querySelectorAll('.tree-item').forEach(el => el.classList.remove('active'));
+      event?.currentTarget?.classList.add('active');
+      const data = screens[id] || {
+        title: `${id} 화면 인터랙티브 뷰`,
+        html: `<div class="wf-hero"><h2>${id} 와이어프레임 뷰</h2><p>해당 화면의 젠 보태니컬 UI 컴포넌트가 렌더링됩니다.</p></div>`
+      };
+      document.getElementById('screenTitle').innerText = data.title;
+      document.getElementById('screenContent').innerHTML = data.html;
+    }
+
+    function setViewport(type) {
+      document.querySelectorAll('.vp-btn').forEach(el => el.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+      document.getElementById('deviceFrame').className = 'device-frame ' + (type === 'desktop' ? '' : type);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+graph TD
+    classDef root fill:#3F6212,stroke:#1E293B,stroke-width:2px,color:#fff;
+    classDef depth1 fill:#65A30D,stroke:#3F6212,stroke-width:2px,color:#fff;
+    classDef depth2 fill:#FEFCE8,stroke:#65A30D,stroke-width:1px,color:#1E293B;
+    classDef modal fill:#DCFCE7,stroke:#16A34A,stroke-width:1px,color:#1E293B;
+    classDef journey fill:#ECFCCB,stroke:#84CC16,stroke-width:2px,stroke-dasharray: 5 5,color:#1E293B;
+
+    ROOT["0.0 보태니컬 메인 랜딩 (P-0.0)"]:::root
+
+    ROOT --> N1["1.0 흉추 모빌리티 탑 (P-1.0)"]:::depth1
+    N1 --> N1_1["1.1 0.1mm 심리스 일체형 탑 (P-1.1)"]:::depth2
+    N1 --> N1_2["1.2 늑골 모아줌 & 3D 텐션 지지 (P-1.2)"]:::depth2
+    N1 --> N1_3["1.3 탑웨어 사이즈 가이드 [모달] (P-1.3)"]:::modal
+
+    ROOT --> N2["2.0 가동성 확장 테크 (P-2.0)"]:::depth1
+    N2 --> N2_1["2.1 흉추 회전각 28% 향상 시험 (P-2.1)"]:::depth2
+    N2 --> N2_2["2.2 늑골 과신전 방지 메커니즘 (P-2.2)"]:::depth2
+    N2 --> N2_3["2.3 KATRI 100회 세탁 복원력 (P-2.3)"]:::depth2
+
+    ROOT --> N3["3.0 인스트럭터 100인 후기 (P-3.0)"]:::depth1
+    N3 --> N3_1["3.1 원장님 실착 포토 리뷰 (P-3.1)"]:::depth2
+    N3 --> N3_2["3.2 고난도 아사나 인터뷰 (P-3.2)"]:::depth2
+    N3 --> N3_3["3.3 스튜디오 B2B 제휴 (P-3.3)"]:::depth2
+
+    ROOT --> N4["4.0 강사 30일 무료체험 (P-4.0)"]:::depth1
+    N4 --> N4_1["4.1 스튜디오 30일 무료 실착 (P-4.1)"]:::depth2
+    N4 --> N4_2["4.2 강사 1-Click 신청 [모달] (P-4.2)"]:::modal
+    N4 --> N4_3["4.3 주문 완료 및 배송 안내 (P-4.3)"]:::depth2
+
+    ROOT --> N5["5.0 매트 10초 시퀀스 (P-5.0)"]:::depth1
+    N5 --> N5_1["5.1 10초 흉추 이완 영상 (P-5.1)"]:::depth2
+    N5 --> N5_2["5.2 손목 건초염 예방 루틴 (P-5.2)"]:::depth2
+    N5 --> N5_3["5.3 탑웨어 세탁 & B2B FAQ (P-5.3)"]:::depth2
+
+    subgraph JOURNEY["[핵심 사용자 3대 전환 여정]"]
+        J1["여정 1 (강사 30일 체험): 메인 ➔ 흉추 모빌리티 ➔ 회전각 28% ➔ 강사 인증 모달 ➔ 스튜디오 수령"]:::journey
+        J2["여정 2 (일반 웰니스): 인스트럭터 후기 ➔ 사이즈 매칭 ➔ 30일 무료 반품 신청"]:::journey
+        J3["여정 3 (B2B 스튜디오): 매트 시퀀스 ➔ 스튜디오 B2B ➔ 25% 단체 제휴 신청"]:::journey
+    end

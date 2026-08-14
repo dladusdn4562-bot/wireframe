@@ -1,0 +1,130 @@
+flowchart TD
+    %% ==========================================
+    %% 1. 스타일 클래스 정의
+    %% ==========================================
+    classDef startEnd fill:#0F172A,stroke:#0284C7,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef screen fill:#F0F9FF,stroke:#0284C7,stroke-width:2px,color:#0F172A,font-weight:bold;
+    classDef modalScreen fill:#FEF3C7,stroke:#D97706,stroke-width:2px,color:#92400E,font-weight:bold;
+    classDef userAction fill:#EEF2FF,stroke:#4F46E5,stroke-width:1.5px,color:#312E81;
+    classDef systemProcess fill:#ECFDF5,stroke:#059669,stroke-width:1.5px,color:#065F46;
+    classDef decision fill:#FEF9C3,stroke:#CA8A04,stroke-width:2px,color:#854D0E;
+    classDef exception fill:#FEE2E2,stroke:#DC2626,stroke-width:1.5px,color:#991B1B;
+    classDef assumed fill:#F1F5F9,stroke:#64748B,stroke-width:1.5px,stroke-dasharray: 4 4,color:#334155;
+
+    %% ==========================================
+    %% 2. 시작 및 공통 진입
+    %% ==========================================
+    START(["● 시작: 사용자 웹사이트 접속"]):::startEnd
+    PAGE_MAIN["0.0 메인 랜딩페이지 (P-0.0)"]:::screen
+    URL_CHECK{"접근 URL 유효성 검사"}:::decision
+    PAGE_404["9.1 404 Not Found [가정] (P-9.1)"]:::exception
+
+    START --> URL_CHECK
+    URL_CHECK -- "정상 URL" --> PAGE_MAIN
+    URL_CHECK -- "잘못된 URL" --> PAGE_404
+    PAGE_404 -- "메인 바로가기" --> PAGE_MAIN
+
+    %% ==========================================
+    %% 3. 메인 내비게이션 분기
+    %% ==========================================
+    NAV_SELECT{"GNB / CTA 메뉴 선택"}:::decision
+    PAGE_MAIN --> NAV_SELECT
+
+    PAGE_BRAND["1.0 브랜드 스토리 (P-1.0)"]:::screen
+    PAGE_PRODUCT["2.0 시그니처 HW (P-2.0)"]:::screen
+    PAGE_AIDATA["3.0 AI 데이터 케어 (P-3.0)"]:::screen
+    PAGE_O2O["4.0 오프라인 동행센터 (P-4.0)"]:::screen
+    PAGE_OFFER["5.0 혜택 & 체험 (P-5.0)"]:::screen
+
+    NAV_SELECT -- "1.0 브랜드" --> PAGE_BRAND
+    NAV_SELECT -- "2.0 시그니처 HW" --> PAGE_PRODUCT
+    NAV_SELECT -- "3.0 AI 데이터" --> PAGE_AIDATA
+    NAV_SELECT -- "4.0 동행센터" --> PAGE_O2O
+    NAV_SELECT -- "5.0 혜택&체험" --> PAGE_OFFER
+    NAV_SELECT -- "메인 플로팅 CTA" --> MODAL_HW_APPLY
+
+    PAGE_BRAND -- "제품 보러가기" --> PAGE_PRODUCT
+    PAGE_OFFER -- "체험 신청" --> MODAL_HW_APPLY
+
+    %% ==========================================
+    %% 4. [Flow A] HW 라인업 & 30일 무료체험 흐름
+    %% ==========================================
+    ACT_PROD_SELECT["사용자: 3대 HW 라인업 탐색"]:::userAction
+    DEC_SIZE{"사이즈 가이드 필요 여부"}:::decision
+    MODAL_SIZE["2.4 정밀 사이즈 가이드 [모달] (P-2.4)"]:::modalScreen
+    ACT_SIZE_MATCH["사용자: 상의 95/100 매칭 선택"]:::userAction
+    MODAL_HW_APPLY["5.2 30일 무료 체험 사전 신청 [모달] (P-5.2)"]:::modalScreen
+    ACT_HW_INPUT["사용자: 신청 정보 및 배송지 입력"]:::userAction
+    SYS_HW_VALID{"입력값 유효성 검증"}:::decision
+    SYS_HW_ERR["시스템: 에러 필드 표시 및 재입력 유도"]:::exception
+    SYS_HW_SAVE["시스템: 사전 예약 데이터 저장"]:::systemProcess
+    END_HW(["◎ 완료: 30일 체험/사전예약 완료"]):::startEnd
+
+    PAGE_PRODUCT --> ACT_PROD_SELECT
+    ACT_PROD_SELECT --> DEC_SIZE
+    DEC_SIZE -- "가이드 필요" --> MODAL_SIZE
+    MODAL_SIZE --> ACT_SIZE_MATCH
+    ACT_SIZE_MATCH --> MODAL_HW_APPLY
+    DEC_SIZE -- "직접 선택" --> MODAL_HW_APPLY
+    MODAL_HW_APPLY --> ACT_HW_INPUT
+    ACT_HW_INPUT --> SYS_HW_VALID
+    SYS_HW_VALID -- "입력 오류" --> SYS_HW_ERR
+    SYS_HW_ERR --> ACT_HW_INPUT
+    SYS_HW_VALID -- "검증 성공" --> SYS_HW_SAVE
+    SYS_HW_SAVE --> END_HW
+    END_HW -.-> PAGE_MAIN
+
+    %% ==========================================
+    %% 5. [Flow B] AI 데이터 케어 무료 구독 흐름
+    %% ==========================================
+    ACT_AI_DEMO["사용자: 다크모드 대시보드/워치 UI 시연"]:::userAction
+    ACT_AI_SUB_CLICK["사용자: 3개월 무료 구독 시작 클릭"]:::userAction
+    DEC_AUTH{"로그인 여부 확인"}:::decision
+    PAGE_LOGIN["6.1 로그인 / 회원가입 [가정] (P-6.1)"]:::assumed
+    SYS_AUTH_PROCESS["시스템: 1-Click SNS 간편 인증"]:::systemProcess
+    SYS_AI_SUBSCRIBE["시스템: AI 미니멀 케어 라이선스 활성화"]:::systemProcess
+    PAGE_MYPAGE["6.2 마이페이지 [가정] (P-6.2)"]:::assumed
+    END_AI(["◎ 완료: AI 데이터 케어 구독 완료"]):::startEnd
+
+    PAGE_AIDATA --> ACT_AI_DEMO
+    ACT_AI_DEMO --> ACT_AI_SUB_CLICK
+    ACT_AI_SUB_CLICK --> DEC_AUTH
+    DEC_AUTH -- "비로그인" --> PAGE_LOGIN
+    PAGE_LOGIN --> SYS_AUTH_PROCESS
+    SYS_AUTH_PROCESS --> SYS_AI_SUBSCRIBE
+    DEC_AUTH -- "로그인 상태" --> SYS_AI_SUBSCRIBE
+    SYS_AI_SUBSCRIBE --> PAGE_MYPAGE
+    PAGE_MYPAGE --> END_AI
+
+    %% ==========================================
+    %% 6. [Flow C] 오프라인 동행센터 1회 무료 체험 예약 흐름
+    %% ==========================================
+    ACT_SEARCH_GEO["사용자: 위치 기반 제휴 지점 검색"]:::userAction
+    DEC_SEARCH_RESULT{"지점 검색 결과 존재 여부"}:::decision
+    SYS_EMPTY_BRANCH["시스템: 인접 지점 추천 및 대체 안내"]:::exception
+    MODAL_O2O_WIZARD["4.2 1회 무료 체험 4단계 예약 [모달] (P-4.2)"]:::modalScreen
+    ACT_WIZARD_INPUT["사용자: 4단계 Wizard 정보 입력\n(지점→일시→인적사항→확인)"]:::userAction
+    DEC_WIZARD_NAV{"Wizard 네비게이션 분기"}:::decision
+    SYS_O2O_VALID{"예약 정보 유효성 검사"}:::decision
+    SYS_O2O_ERR["시스템: 잔여 슬롯 마감 또는 입력 오류 안내"]:::exception
+    SYS_O2O_CONFIRM["시스템: 예약 확정 & SMS 알림톡 발송"]:::systemProcess
+    PAGE_O2O_CONFIRM["4.3 예약 완료 안내 [가정] (P-4.3)"]:::assumed
+    END_O2O(["◎ 완료: 오프라인 1회 무료 진단 예약 확정"]):::startEnd
+
+    PAGE_O2O --> ACT_SEARCH_GEO
+    ACT_SEARCH_GEO --> DEC_SEARCH_RESULT
+    DEC_SEARCH_RESULT -- "결과 없음" --> SYS_EMPTY_BRANCH
+    SYS_EMPTY_BRANCH -- "재검색" --> ACT_SEARCH_GEO
+    SYS_EMPTY_BRANCH -- "AI 케어 전환" --> PAGE_AIDATA
+    DEC_SEARCH_RESULT -- "지점 선택" --> MODAL_O2O_WIZARD
+    MODAL_O2O_WIZARD --> ACT_WIZARD_INPUT
+    ACT_WIZARD_INPUT --> DEC_WIZARD_NAV
+    DEC_WIZARD_NAV -- "이전 단계 이동" --> MODAL_O2O_WIZARD
+    DEC_WIZARD_NAV -- "작성 취소" --> PAGE_O2O
+    DEC_WIZARD_NAV -- "예약 신청 완료" --> SYS_O2O_VALID
+    SYS_O2O_VALID -- "검증 실패" --> SYS_O2O_ERR
+    SYS_O2O_ERR --> ACT_WIZARD_INPUT
+    SYS_O2O_VALID -- "검증 통과" --> SYS_O2O_CONFIRM
+    SYS_O2O_CONFIRM --> PAGE_O2O_CONFIRM
+    PAGE_O2O_CONFIRM --> END_O2O
+    PAGE_O2O_CONFIRM -.-> PAGE_MYPAGE

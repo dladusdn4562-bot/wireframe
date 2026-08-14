@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "SEUMIM(스밈) 너스케어 스크럽 이너탑 & 인솔 화면 목록 (가상클라이언트 9: 윤지민)",
+  "version": "2.0.0",
+  "totalScreens": 14,
+  "screens": [
+    {"screenId": "SCR-01", "sitemapId": "P-0.0", "name": "0.0 메디컬 민트 메인 랜딩", "type": "PAGE", "depth": 1, "purpose": "간호사 2만 보 요통 공감, 0.1mm 심리스 스크럽 핏, 병동 1+1 30일 무료 신청"},
+    {"screenId": "SCR-02", "sitemapId": "P-1.0", "name": "1.0 너스 스크럽 이너탑", "type": "PAGE", "depth": 2, "purpose": "0.1mm 심리스 무봉제 핏 및 은나노 99.9% 항균 소취 화보"},
+    {"screenId": "SCR-03", "sitemapId": "P-1.3", "name": "1.3 상의 사이즈 가이드 [모달]", "type": "MODAL", "depth": 3, "purpose": "유니폼 상의(85~105) 기준 정밀 사이즈 매칭"},
+    {"screenId": "SCR-04", "sitemapId": "P-2.0", "name": "2.0 족저 밸런스 인솔", "type": "PAGE", "depth": 2, "purpose": "2만 보 보행 충격 62% 흡수 및 아치 정렬 성적서"},
+    {"screenId": "SCR-05", "sitemapId": "P-3.0", "name": "3.0 나이팅게일 100인 후기", "type": "PAGE", "depth": 2, "purpose": "3교대 간호사들의 실착 포토 리뷰 및 맘/간호사 카페 평점"},
+    {"screenId": "SCR-06", "sitemapId": "P-3.3", "name": "3.3 100개 병동 단체 후기", "type": "PAGE", "depth": 3, "purpose": "전국 100개 병동 단체 칭찬 릴레이 및 추천 인터뷰"},
+    {"screenId": "SCR-07", "sitemapId": "P-4.0", "name": "4.0 병동 1+1 무료체험 안내", "type": "PAGE", "depth": 2, "purpose": "동료와 함께 30일 무료 실착 및 100% 무료 반품 보증"},
+    {"screenId": "SCR-08", "sitemapId": "P-4.2", "name": "4.2 간호사 1-Click 신청 [모달]", "type": "MODAL", "depth": 3, "purpose": "간호사 면허 간편인증 및 병동 주소 10초 간편 신청"},
+    {"screenId": "SCR-09", "sitemapId": "P-4.3", "name": "4.3 주문 완료 및 안내 [가정]", "type": "PAGE", "depth": 3, "purpose": "접수 번호 및 1+1 세트 병동 배송 알림톡 발송"},
+    {"screenId": "SCR-10", "sitemapId": "P-5.0", "name": "5.0 3교대 힐링팁", "type": "PAGE", "depth": 2, "purpose": "교대 시간 10초 족저/골반 리셋 스트레칭 팁"},
+    {"screenId": "SCR-11", "sitemapId": "P-6.1", "name": "6.1 간호사 면허 간편 로그인 [가정]", "type": "PAGE", "depth": 2, "purpose": "면허번호 기반 간편 주문 조회"},
+    {"screenId": "SCR-12", "sitemapId": "P-6.2", "name": "6.2 마이페이지 배송 조회 [가정]", "type": "PAGE", "depth": 2, "purpose": "1+1 체험 배송 현황 및 무료 반품 신청"},
+    {"screenId": "SCR-13", "sitemapId": "P-9.1", "name": "9.1 404 Not Found [가정]", "type": "EXCEPT", "depth": 2, "purpose": "친절한 에러 안내 및 메인 바로가기"},
+    {"screenId": "SCR-14", "sitemapId": "P-9.2", "name": "9.2 시스템 점검 안내 [가정]", "type": "EXCEPT", "depth": 2, "purpose": "점검 중 카톡 1:1 상담 안내"}
+  ]
+}

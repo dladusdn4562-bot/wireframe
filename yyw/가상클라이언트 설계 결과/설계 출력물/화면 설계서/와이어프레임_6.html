@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM 주부 홈케어 와이어프레임 인터랙티브 스튜디오 (가상클라이언트 6: 정은숙)</title>
+  <style>
+    :root {
+      --primary: #EA580C;
+      --primary-dark: #9A3412;
+      --primary-light: #FFEDD5;
+      --secondary: #10B981;
+      --bg: #FFF7ED;
+      --surface: #FFFFFF;
+      --text: #1C1917;
+      --text-muted: #78716C;
+      --border: #FED7AA;
+      --amber: #D97706;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif; }
+    body { background: var(--bg); color: var(--text); display: flex; height: 100vh; overflow: hidden; font-size: 16px; }
+    
+    /* 사이드바 */
+    .sidebar { width: 340px; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; flex-shrink: 0; z-index: 10; }
+    .sidebar-header { padding: 20px; border-bottom: 1px solid var(--border); background: var(--primary-dark); color: #fff; }
+    .sidebar-header h1 { font-size: 17px; font-weight: 700; color: #FFEDD5; margin-bottom: 4px; }
+    .sidebar-header p { font-size: 12px; color: #FED7AA; }
+    .screen-tree { flex: 1; overflow-y: auto; padding: 12px; }
+    .tree-group-title { font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin: 12px 8px 6px; }
+    .tree-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.2s; margin-bottom: 2px; }
+    .tree-item:hover { background: var(--primary-light); color: var(--primary-dark); }
+    .tree-item.active { background: var(--primary); color: #fff; font-weight: 600; }
+    .badge { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+    .badge-page { background: #FFEDD5; color: #9A3412; }
+    .badge-modal { background: #FEF3C7; color: #92400E; }
+    .badge-except { background: #FEE2E2; color: #991B1B; }
+    .tree-item.active .badge { background: rgba(255,255,255,0.2); color: #fff; }
+
+    /* 메인 캔버스 */
+    .main-canvas { flex: 1; display: flex; flex-direction: column; overflow: hidden; background: #FDF4E3; }
+    .canvas-toolbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+    .screen-title { font-size: 15px; font-weight: 700; color: var(--primary-dark); display: flex; align-items: center; gap: 8px; }
+    .viewport-controls { display: flex; gap: 8px; }
+    .vp-btn { padding: 6px 12px; border: 1px solid var(--border); background: var(--surface); border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .vp-btn.active { background: var(--primary-dark); color: #fff; border-color: var(--primary-dark); }
+    
+    /* 뷰포트 컨테이너 */
+    .viewport-wrapper { flex: 1; overflow-y: auto; padding: 30px; display: flex; justify-content: center; align-items: flex-start; }
+    .device-frame { background: var(--surface); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08); border-radius: 12px; overflow: hidden; transition: width 0.3s ease; width: 100%; max-width: 1200px; border: 1px solid var(--border); min-height: 800px; }
+    .device-frame.tablet { max-width: 768px; }
+    .device-frame.mobile { max-width: 390px; }
+
+    /* 와이어프레임 공통 컴포넌트 (시니어 큰 글씨) */
+    .wf-gnb { height: 72px; background: var(--surface); display: flex; align-items: center; justify-content: space-between; padding: 0 28px; color: var(--text); border-bottom: 2px solid var(--primary); }
+    .wf-logo { font-size: 20px; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
+    .wf-nav { display: flex; gap: 24px; font-size: 15px; font-weight: 700; }
+    .wf-nav span { cursor: pointer; }
+    .wf-nav span:hover { color: var(--primary); }
+    .wf-btn-call { background: var(--primary); color: #fff; padding: 10px 18px; border-radius: 8px; font-size: 14px; font-weight: 800; border: none; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+    
+    .wf-content { padding: 40px 32px; }
+    .wf-hero { background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%); padding: 52px 36px; border-radius: 16px; text-align: center; border: 2px solid #FED7AA; margin-bottom: 32px; }
+    .wf-hero h2 { font-size: 32px; font-weight: 900; color: var(--primary-dark); margin-bottom: 16px; line-height: 1.3; }
+    .wf-hero p { font-size: 18px; color: #9A3412; margin-bottom: 28px; font-weight: 600; }
+    .wf-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 32px; }
+    .wf-card { background: var(--surface); border: 2px solid var(--border); border-radius: 12px; padding: 28px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+    .wf-card h3 { font-size: 18px; font-weight: 800; color: var(--text); margin-bottom: 12px; }
+    .wf-card p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+    
+    /* 동영상 시뮬레이터 */
+    .video-widget { height: 340px; background: #FFEDD5; border-radius: 14px; border: 2px dashed var(--primary); display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 28px; text-align: center; }
+    .play-btn { width: 64px; height: 64px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 12px; box-shadow: 0 4px 10px rgba(234,88,12,0.3); }
+
+    /* 모달 오버레이 시뮬레이션 */
+    .modal-preview { background: var(--surface); border: 3px solid var(--primary); border-radius: 16px; padding: 36px; max-width: 540px; margin: 0 auto; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); text-align: center; }
+    .call-box { background: #FFEDD5; border: 2px solid var(--primary); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .call-number { font-size: 28px; font-weight: 900; color: var(--primary-dark); letter-spacing: -0.5px; }
+    .form-group { margin-bottom: 18px; text-align: left; }
+    .form-group label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+    .form-input { width: 100%; padding: 14px 16px; border: 2px solid var(--border); border-radius: 8px; font-size: 16px; font-weight: 500; }
+
+    .wf-footer { background: #292524; color: #D6D3D1; padding: 40px 32px; font-size: 14px; text-align: center; line-height: 1.8; }
+  </style>
+</head>
+<body>
+
+  <!-- 사이드바 트리 -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h1>SEUMIM HOMECARE</h1>
+      <p>가상클라이언트 6: 정은숙 (14개 화면 스튜디오)</p>
+    </div>
+    <div class="screen-tree">
+      <div class="tree-group-title">1. 메인 및 착용 테크</div>
+      <div class="tree-item active" onclick="switchScreen('SCR-01')">
+        <span>SCR-01 0.0 주부 메인 랜딩</span>
+        <span class="badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-02')">
+        <span>SCR-02 1.0 홈케어 조끼</span>
+        <span class="badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-03')">
+        <span>SCR-03 1.3 상의 사이즈 가이드</span>
+        <span class="badge badge-modal">MODAL</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-04')">
+        <span>SCR-04 2.0 허리 안심 테크</span>
+        <span class="badge badge-page">PAGE</span>
+      </div>
+
+      <div class="tree-group-title">2. 주부 후기 & 30일 무료 체험</div>
+      <div class="tree-item" onclick="switchScreen('SCR-05')">
+        <span>SCR-05 3.0 동년배 100인 후기</span>
+        <span class="badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-06')">
+        <span>SCR-06 3.3 자녀 효도 선물</span>
+        <span class="badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-07')">
+        <span>SCR-07 4.0 30일 무료 체험 안내</span>
+        <span class="badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-08')">
+        <span>SCR-08 4.2 080전화/신청 폼</span>
+        <span class="badge badge-modal">MODAL</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-09')">
+        <span>SCR-09 4.3 주문 완료 및 안내</span>
+        <span class="badge badge-page">PAGE</span>
+      </div>
+
+      <div class="tree-group-title">3. 살림 케어 및 시스템</div>
+      <div class="tree-item" onclick="switchScreen('SCR-10')">
+        <span>SCR-10 5.0 살림 케어 가이드</span>
+        <span class="badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-11')">
+        <span>SCR-11 6.1 전화번호 간편 조회</span>
+        <span class="badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-12')">
+        <span>SCR-12 6.2 마이페이지 배송조회</span>
+        <span class="badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-13')">
+        <span>SCR-13 9.1 404 Not Found</span>
+        <span class="badge badge-except">EXCEPT</span>
+      </div>
+      <div class="tree-item" onclick="switchScreen('SCR-14')">
+        <span>SCR-14 9.2 시스템 점검</span>
+        <span class="badge badge-except">EXCEPT</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 메인 캔버스 -->
+  <div class="main-canvas">
+    <div class="canvas-toolbar">
+      <div class="screen-title" id="screenTitle">
+        <span>SCR-01 0.0 주부 홈케어 메인 랜딩 (P-0.0)</span>
+      </div>
+      <div class="viewport-controls">
+        <button class="vp-btn active" onclick="setViewport('desktop')">Desktop (1200px)</button>
+        <button class="vp-btn" onclick="setViewport('tablet')">Tablet (768px)</button>
+        <button class="vp-btn" onclick="setViewport('mobile')">Mobile (390px)</button>
+      </div>
+    </div>
+
+    <div class="viewport-wrapper">
+      <div class="device-frame" id="deviceFrame">
+        <!-- 상단 GNB -->
+        <div class="wf-gnb">
+          <div class="wf-logo">SEUMIM HOMECARE</div>
+          <div class="wf-nav">
+            <span onclick="switchScreen('SCR-02')">홈케어 조끼</span>
+            <span onclick="switchScreen('SCR-04')">허리 안심 테크</span>
+            <span onclick="switchScreen('SCR-05')">동년배 100인 후기</span>
+            <span onclick="switchScreen('SCR-07')">30일 무료 체험</span>
+            <span onclick="switchScreen('SCR-10')">살림 케어</span>
+          </div>
+          <button class="wf-btn-call" onclick="switchScreen('SCR-08')">📞 080-800-1234 무료 전화</button>
+        </div>
+
+        <!-- 동적 뷰포트 컨텐츠 -->
+        <div class="wf-content" id="screenContent">
+          <!-- 기본: SCR-01 -->
+          <div class="wf-hero">
+            <h2>가사 노동으로 지친 허리, 3초 만에 편안하게!</h2>
+            <p>뒤로 손 안 닿아도 앞에서 3초 만에 척! 설거지할 때 허리 하중 40% 분산</p>
+            <div style="display: flex; justify-content: center; gap: 16px;">
+              <button class="wf-btn-call" style="font-size: 16px; padding: 14px 28px;" onclick="switchScreen('SCR-08')">📞 080 무료 전화로 신청하기</button>
+              <button class="wf-btn-call" style="font-size: 16px; padding: 14px 28px; background: #10B981;" onclick="switchScreen('SCR-08')">집에서 30일 무료로 입어보기</button>
+            </div>
+          </div>
+
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>🚨 설거지 1시간 = 허리 하중 3.5배</h3>
+              <p>싱크대 앞에 서서 상체를 15도만 숙여도 척추에 쌀 한 가마니(80kg)의 무게가 실립니다.</p>
+            </div>
+            <div class="wf-card">
+              <h3>⚡ 1-Touch 3초 전면 벨크로</h3>
+              <p>오십견으로 팔을 뒤로 돌릴 필요 없습니다. 앞에서 가볍게 당겨 붙이면 착용 끝!</p>
+            </div>
+            <div class="wf-card">
+              <h3>🧺 세탁기 통세척 안심 위생</h3>
+              <p>가사 노동 중 땀이 나도 걱정 없습니다. 세탁망에 넣어 세탁기 통세척이 가능합니다.</p>
+            </div>
+          </div>
+
+          <!-- 3초 착용 영상 시뮬레이터 -->
+          <div class="video-widget">
+            <div class="play-btn">▶</div>
+            <h3 style="font-size: 20px; font-weight: 800; color: var(--primary-dark); margin-bottom: 6px;">[시연 영상] 50대 주부 3초 착용법 보기</h3>
+            <p style="font-size: 14px; color: #9A3412;">뒤로 손을 전혀 돌리지 않고 앞에서 가볍게 당겨 붙이는 실제 시연</p>
+          </div>
+        </div>
+
+        <!-- 푸터 -->
+        <div class="wf-footer">
+          (주)스밈 주부 홈케어 사업부 | 080 무료 전화 주문 상담센터 080-800-1234 (통화료 무료)<br>
+          30일 안심 무료 반품 보증제 | 왕복 배송비 0원 전액 본사 부담 | KC 섬유 안전 인증 완료
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const screens = {
+      'SCR-01': {
+        title: 'SCR-01 0.0 주부 홈케어 메인 랜딩 (P-0.0)',
+        html: `
+          <div class="wf-hero">
+            <h2>가사 노동으로 지친 허리, 3초 만에 편안하게!</h2>
+            <p>뒤로 손 안 닿아도 앞에서 3초 만에 척! 설거지할 때 허리 하중 40% 분산</p>
+            <div style="display: flex; justify-content: center; gap: 16px;">
+              <button class="wf-btn-call" style="font-size: 16px; padding: 14px 28px;" onclick="switchScreen('SCR-08')">📞 080 무료 전화로 신청하기</button>
+              <button class="wf-btn-call" style="font-size: 16px; padding: 14px 28px; background: #10B981;" onclick="switchScreen('SCR-08')">집에서 30일 무료로 입어보기</button>
+            </div>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>🚨 설거지 1시간 = 허리 하중 3.5배</h3>
+              <p>싱크대 앞에 서서 상체를 15도만 숙여도 척추에 쌀 한 가마니(80kg)의 무게가 실립니다.</p>
+            </div>
+            <div class="wf-card">
+              <h3>⚡ 1-Touch 3초 전면 벨크로</h3>
+              <p>오십견으로 팔을 뒤로 돌릴 필요 없습니다. 앞에서 가볍게 당겨 붙이면 착용 끝!</p>
+            </div>
+            <div class="wf-card">
+              <h3>🧺 세탁기 통세척 안심 위생</h3>
+              <p>가사 노동 중 땀이 나도 걱정 없습니다. 세탁망에 넣어 세탁기 통세척이 가능합니다.</p>
+            </div>
+          </div>
+          <div class="video-widget">
+            <div class="play-btn">▶</div>
+            <h3 style="font-size: 20px; font-weight: 800; color: var(--primary-dark); margin-bottom: 6px;">[시연 영상] 50대 주부 3초 착용법 보기</h3>
+            <p style="font-size: 14px; color: #9A3412;">뒤로 손을 전혀 돌리지 않고 앞에서 가볍게 당겨 붙이는 실제 시연</p>
+          </div>
+        `
+      },
+      'SCR-05': {
+        title: 'SCR-05 3.0 동년배 100인 후기 (P-3.0)',
+        html: `
+          <div class="wf-hero" style="background: #D1FAE5; border-color: #A7F3D0;">
+            <h2 style="color: #065F46;">동년배 주부 100인의 싱크대 설거지 찐후기</h2>
+            <p style="color: #047857;">맘카페 평점 4.92점! "설거지 끝나고 허리 펴는 게 이렇게 쉬운 줄 몰랐어요"</p>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>👵 분당 정** 주부 (54세)</h3>
+              <p>"오십견 때문에 뒤로 손이 안 돌아가서 보호대를 못 찼는데, 이건 앞에서 3초 만에 척 붙이니까 너무 편해요."</p>
+            </div>
+            <div class="wf-card">
+              <h3>👵 일산 김** 주부 (58세)</h3>
+              <p>"김장하고 명절 치를 때마다 허리가 끊어질 것 같았는데, 이 조끼 입고 설거지하니 허리가 꼿꼿하게 받쳐집니다."</p>
+            </div>
+            <div class="wf-card">
+              <h3>👵 대구 이** 주부 (51세)</h3>
+              <p>"딸이 효도 선물로 보내줬는데 30일 무료 반품이라 부담 없이 입어봤어요. 절대 반품 안 하고 매일 입습니다."</p>
+            </div>
+          </div>
+        `
+      },
+      'SCR-08': {
+        title: 'SCR-08 4.2 080 전화 / 카톡 간편 신청 [모달] (P-4.2)',
+        html: `
+          <div class="modal-preview">
+            <h2 style="font-size: 22px; font-weight: 900; color: var(--primary-dark); margin-bottom: 12px;">집에서 30일간 무료로 입어보세요!</h2>
+            <p style="font-size: 15px; color: var(--text-muted); margin-bottom: 20px;">복잡한 결제 없이 전화 한 통으로 신청 완료됩니다.</p>
+            
+            <div class="call-box">
+              <p style="font-size: 13px; color: #9A3412; font-weight: 700; margin-bottom: 4px;">[통화료 무료] 상담원 직접 연결</p>
+              <div class="call-number">📞 080-800-1234</div>
+            </div>
+
+            <p style="font-size: 14px; font-weight: 700; color: var(--text-muted); margin-bottom: 16px;">─ 또는 아래 주소만 적어주시면 2벌 보내드립니다 ─</p>
+
+            <div class="form-group">
+              <label>받으시는 분 성함 & 연락처</label>
+              <input type="text" class="form-input" placeholder="정은숙 / 010-1234-5678">
+            </div>
+            <div class="form-group">
+              <label>배송받으실 주소</label>
+              <input type="text" class="form-input" placeholder="상세 주소를 입력해 주세요">
+            </div>
+            <div class="form-group">
+              <label>평소 입으시는 옷 치수 (2벌 동시 발송)</label>
+              <select class="form-input">
+                <option>66 사이즈 (66+77 2벌 함께 발송)</option>
+                <option>77 사이즈 (77+88 2벌 함께 발송)</option>
+                <option>88 사이즈 (88+99 2벌 함께 발송)</option>
+              </select>
+            </div>
+            <button class="wf-btn-call" style="width: 100%; padding: 16px; font-size: 16px; justify-content: center; margin-top: 12px;" onclick="switchScreen('SCR-09')">30일 무료 체험 신청하기 (배송비 0원)</button>
+          </div>
+        `
+      },
+      'SCR-09': {
+        title: 'SCR-09 4.3 주문 완료 및 배송 안내 [가정] (P-4.3)',
+        html: `
+          <div class="wf-hero" style="background: #ECFDF5; border-color: #A7F3D0;">
+            <h2 style="color: #065F46;">🎉 30일 무료 체험 접수가 완료되었습니다!</h2>
+            <p style="color: #047857;">주문 번호: <strong>HOME-2026-0812-601</strong> | 고객님 댁으로 2벌이 함께 발송됩니다.</p>
+          </div>
+          <div class="wf-card" style="max-width: 600px; margin: 0 auto 28px; text-align: left;">
+            <h3>📦 30일 무료 체험 안심 약속</h3>
+            <p style="margin-bottom: 8px;">• 집에서 30일간 설거지, 청소기 돌리실 때 편안하게 입어보세요.<br>• 딱 맞는 1벌만 입으시고, 맞지 않는 1벌은 동봉된 반품 봉투에 넣어 문 앞에 두시면 무료 수거합니다.<br>• 불만족 시 100% 무료 반품 가능하며 위약금이나 배송비가 전혀 없습니다.</p>
+          </div>
+        `
+      }
+    };
+
+    function switchScreen(id) {
+      document.querySelectorAll('.tree-item').forEach(el => el.classList.remove('active'));
+      event?.currentTarget?.classList.add('active');
+      const data = screens[id] || {
+        title: `${id} 화면 상세 와이어프레임`,
+        html: `<div class="wf-hero"><h2>${id} 와이어프레임 뷰</h2><p>해당 화면의 시니어 큰 글씨 UI 컴포넌트가 렌더링됩니다.</p></div>`
+      };
+      document.getElementById('screenTitle').innerText = data.title;
+      document.getElementById('screenContent').innerHTML = data.html;
+    }
+
+    function setViewport(type) {
+      document.querySelectorAll('.vp-btn').forEach(el => el.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+      const frame = document.getElementById('deviceFrame');
+      frame.className = 'device-frame ' + (type === 'desktop' ? '' : type);
+    }
+  </script>
+</body>
+</html>

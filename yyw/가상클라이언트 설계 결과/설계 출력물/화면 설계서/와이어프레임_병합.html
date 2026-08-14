@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM (스밈) - 0.1mm 에르고 맞춤 코어웨어 & 체형 교정 플랫폼 (와이어프레임_병합)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { background: #0B0F19; color: #F8FAFC; overflow-x: hidden; line-height: 1.65; }
+    .container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    
+    /* GNB */
+    #gnb { position: sticky; top: 0; z-index: 1000; background: rgba(15, 23, 42, 0.94); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(51, 65, 85, 0.6); height: 72px; display: flex; align-items: center; }
+    .gnb-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+    .logo { font-size: 22px; font-weight: 900; color: #38BDF8; letter-spacing: -0.5px; display: flex; align-items: center; gap: 8px; cursor: pointer; }
+    .logo-badge { font-size: 10px; padding: 2px 6px; background: rgba(56, 189, 248, 0.2); border-radius: 4px; color: #38BDF8; font-weight: 700; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: #CBD5E1; text-decoration: none; font-size: 13.5px; font-weight: 600; transition: all 0.2s; }
+    .nav-links a:hover { color: #38BDF8; }
+    .gnb-actions { display: flex; align-items: center; gap: 12px; }
+    .btn-login { color: #94A3B8; background: transparent; border: 1px solid #334155; padding: 8px 16px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+    .btn-login:hover { color: #FFF; border-color: #64748B; }
+    .btn-gnb-trial { background: #0284C7; color: #FFF; border: none; padding: 9px 20px; border-radius: 6px; font-size: 12.5px; font-weight: 800; cursor: pointer; transition: background 0.2s; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3); }
+    .btn-gnb-trial:hover { background: #0369A1; }
+
+    /* Section Base */
+    section { padding: 100px 0; border-bottom: 1px solid #1E293B; }
+    .sec-header { text-align: center; margin-bottom: 54px; }
+    .sec-badge { display: inline-block; padding: 5px 14px; background: rgba(2, 132, 199, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); color: #38BDF8; font-size: 11.5px; font-weight: 800; border-radius: 20px; margin-bottom: 14px; letter-spacing: 0.5px; }
+    .sec-title { font-size: 34px; font-weight: 900; color: #F8FAFC; letter-spacing: -0.5px; margin-bottom: 14px; }
+    .sec-desc { font-size: 15.5px; color: #94A3B8; max-width: 720px; margin: 0 auto; line-height: 1.6; }
+
+    /* 1. Manifesto & Hero Section (image.png Style) */
+    #manifesto { padding: 120px 0 90px; background: radial-gradient(circle at 50% 20%, rgba(2, 132, 199, 0.22) 0%, rgba(11, 15, 25, 1) 70%); }
+    .mani-tag { color: #38BDF8; font-size: 13px; font-weight: 800; letter-spacing: 1px; margin-bottom: 16px; text-transform: uppercase; }
+    .mani-title { font-size: 42px; font-weight: 900; color: #F8FAFC; line-height: 1.3; max-width: 940px; margin-bottom: 24px; letter-spacing: -1px; }
+    .mani-sub { font-size: 16.5px; color: #94A3B8; max-width: 780px; line-height: 1.75; margin-bottom: 44px; }
+    
+    /* 6 Value Pillars */
+    .pillar-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 50px; }
+    .pillar-card { background: #111827; border: 1px solid #1F2937; border-radius: 8px; padding: 22px; transition: transform 0.2s, border-color 0.2s; }
+    .pillar-card:hover { transform: translateY(-4px); border-color: #38BDF8; }
+    .pillar-no { font-size: 11px; font-weight: 800; color: #38BDF8; margin-bottom: 4px; }
+    .pillar-title { font-size: 14.5px; font-weight: 800; color: #F8FAFC; margin-bottom: 6px; }
+    .pillar-desc { font-size: 12px; color: #94A3B8; line-height: 1.5; }
+
+    /* Pride Metrics */
+    .pride-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; border-top: 1px solid #1E293B; padding-top: 40px; }
+    .pride-num { font-size: 44px; font-weight: 900; color: #38BDF8; letter-spacing: -1px; margin-bottom: 4px; }
+    .pride-label { font-size: 12.5px; color: #94A3B8; font-weight: 700; }
+
+    /* ★ 2. Detailed Brand Storytelling Section (길고 깊은 서사 구조) */
+    #brand-story { background: #080C14; }
+    .story-chapter { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 70px; }
+    .story-chapter.reverse { direction: rtl; }
+    .story-chapter.reverse > div { direction: ltr; }
+    .story-img-box { height: 320px; background: #0F172A; border-radius: 12px; border: 1px dashed #334155; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #94A3B8; font-weight: 700; text-align: center; padding: 24px; }
+    .story-tag { color: #38BDF8; font-size: 12px; font-weight: 800; letter-spacing: 1px; margin-bottom: 8px; }
+    .story-heading { font-size: 26px; font-weight: 900; color: #F8FAFC; line-height: 1.35; margin-bottom: 16px; letter-spacing: -0.5px; }
+    .story-body { font-size: 14.5px; color: #94A3B8; line-height: 1.8; margin-bottom: 16px; }
+    .story-highlight { background: rgba(56, 189, 248, 0.1); border-left: 3px solid #38BDF8; padding: 12px 18px; border-radius: 0 6px 6px 0; font-size: 13.5px; color: #E0F2FE; font-weight: 600; line-height: 1.6; }
+
+    /* ★ 3. Featured 3 Masterpieces (지그재그 형태 배치) */
+    #featured { background: #0B0F19; }
+    .zigzag-card { background: #111827; border: 1px solid #1F2937; border-radius: 14px; padding: 36px; margin-bottom: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; transition: border-color 0.2s; }
+    .zigzag-card:hover { border-color: #0284C7; }
+    .zigzag-card.reverse { direction: rtl; }
+    .zigzag-card.reverse > div { direction: ltr; }
+    .zigzag-visual { height: 290px; background: #0F172A; border-radius: 10px; border: 1px dashed #334155; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #94A3B8; font-size: 13px; font-weight: 700; text-align: center; padding: 20px; }
+    .zigzag-badge { display: inline-block; font-size: 11.5px; font-weight: 800; color: #38BDF8; background: rgba(56, 189, 248, 0.15); padding: 4px 10px; border-radius: 4px; margin-bottom: 10px; }
+    .zigzag-title { font-size: 24px; font-weight: 900; color: #F8FAFC; margin-bottom: 12px; letter-spacing: -0.5px; }
+    .zigzag-desc { font-size: 14px; color: #94A3B8; line-height: 1.7; margin-bottom: 20px; }
+    .zigzag-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 20px; }
+    .zigzag-price { font-size: 22px; font-weight: 900; color: #38BDF8; }
+    .zigzag-origin { font-size: 13px; color: #64748B; text-decoration: line-through; }
+    .zigzag-disc { font-size: 14px; font-weight: 800; color: #EF4444; }
+
+    /* 4. Products Showcase */
+    .tab-bar { display: flex; justify-content: center; gap: 10px; margin-bottom: 36px; flex-wrap: wrap; }
+    .tab-btn { padding: 10px 22px; background: #111827; border: 1px solid #334155; color: #CBD5E1; font-size: 13.5px; font-weight: 700; border-radius: 30px; cursor: pointer; transition: all 0.2s; }
+    .tab-btn.active { background: #0284C7; border-color: #0284C7; color: #FFF; }
+    .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .product-card { background: #111827; border: 1px solid #1F2937; border-radius: 10px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+    .p-badge { position: absolute; top: 14px; left: 14px; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 800; }
+    .badge-best { background: #EF4444; color: #FFF; }
+    .badge-pro { background: #8B5CF6; color: #FFF; }
+    .badge-new { background: #10B981; color: #FFF; }
+    .badge-tech { background: #0284C7; color: #FFF; }
+    .badge-acc { background: #F59E0B; color: #000; }
+    .p-img-box { height: 130px; background: #0F172A; border-radius: 6px; border: 1px dashed #334155; display: flex; align-items: center; justify-content: center; color: #64748B; font-size: 11px; font-weight: 700; margin-bottom: 12px; }
+    .p-tag { font-size: 11px; color: #38BDF8; font-weight: 700; margin-bottom: 4px; }
+    .p-name { font-size: 13.5px; font-weight: 800; color: #F8FAFC; line-height: 1.4; margin-bottom: 6px; height: 38px; overflow: hidden; }
+    .p-desc { font-size: 11px; color: #94A3B8; line-height: 1.4; margin-bottom: 12px; height: 30px; overflow: hidden; }
+    .p-price-row { display: flex; align-items: baseline; gap: 6px; margin-bottom: 12px; }
+    .p-price { font-size: 16px; font-weight: 900; color: #F8FAFC; }
+    .p-origin { font-size: 11px; color: #64748B; text-decoration: line-through; }
+    .p-disc { font-size: 11px; font-weight: 800; color: #EF4444; }
+    .p-actions { display: flex; gap: 6px; }
+    .btn-qv { flex: 1; padding: 8px 0; background: #1E293B; border: 1px solid #334155; color: #CBD5E1; font-size: 11px; font-weight: 700; border-radius: 4px; cursor: pointer; }
+    .btn-trial { flex: 1.3; padding: 8px 0; background: #0284C7; border: none; color: #FFF; font-size: 11px; font-weight: 800; border-radius: 4px; cursor: pointer; }
+
+    /* Modals */
+    .modal-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(5px); display: flex; align-items: center; justify-content: center; z-index: 2000; }
+    .modal-card { width: 90%; max-width: 580px; background: #111827; border: 2px solid #38BDF8; border-radius: 12px; overflow: hidden; color: #F8FAFC; }
+    .modal-head { padding: 18px 24px; background: #0F172A; border-bottom: 1px solid #1F2937; display: flex; justify-content: space-between; align-items: center; }
+    .modal-head h3 { font-size: 16px; font-weight: 800; color: #38BDF8; }
+    .modal-close { background: none; border: none; font-size: 18px; color: #94A3B8; cursor: pointer; }
+    .modal-body { padding: 24px; max-height: 75vh; overflow-y: auto; }
+    .modal-foot { padding: 16px 24px; background: #0F172A; border-top: 1px solid #1F2937; display: flex; justify-content: flex-end; gap: 10px; }
+    .hidden { display: none !important; }
+
+    /* Floating Bar */
+    .floating-bar { position: fixed; bottom: 24px; right: 24px; background: #0F172A; border: 2px solid #38BDF8; border-radius: 40px; padding: 12px 24px; color: #FFF; display: flex; align-items: center; gap: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 999; }
+    .floating-btn { background: #0284C7; color: #FFF; border: none; padding: 8px 18px; border-radius: 20px; font-size: 12px; font-weight: 800; cursor: pointer; }
+
+    /* FAQ */
+    .faq-item { background: #111827; border: 1px solid #1F2937; border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+    .faq-q { padding: 18px 24px; font-size: 15px; font-weight: 800; color: #F8FAFC; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-a { padding: 0 24px 18px; font-size: 13.5px; color: #94A3B8; line-height: 1.6; display: none; }
+
+    @media (max-width: 1024px) {
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .pillar-grid { grid-template-columns: 1fr; }
+      .story-chapter, .story-chapter.reverse { grid-template-columns: 1fr; direction: ltr !important; }
+      .zigzag-card, .zigzag-card.reverse { grid-template-columns: 1fr; direction: ltr !important; }
+      .pride-row { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="gnb">
+    <div class="container gnb-inner">
+      <div class="logo" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+        <span>SEUMIM</span>
+        <span class="logo-badge">마스터 통합 플랫폼</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#manifesto">브랜드 철학</a></li>
+        <li><a href="#brand-story">스밈의 서사</a></li>
+        <li><a href="#featured">대표 작품 3종</a></li>
+        <li><a href="#products">15개 전 라인업</a></li>
+        <li><a href="#ai-hud">AI 데이터 케어</a></li>
+        <li><a href="#center">웰니스 센터</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="gnb-actions">
+        <button class="btn-login" onclick="openLoginModal()">로그인</button>
+        <button class="btn-gnb-trial" onclick="openTrialModal()">30일 무료 시착</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. Brand Manifesto Section (image.png Style) -->
+  <section id="manifesto">
+    <div class="container">
+      <div class="mani-tag">SEUMIM ERGO-TECH MANIFESTO</div>
+      <h1 class="mani-title">
+        스밈은 독자적인 전도성 센서 섬유 기술로<br>
+        <span style="color:#38BDF8;">일상에 바른 균형이 스며드는 웰니스</span>를 설계합니다.
+      </h1>
+      <p class="mani-sub">
+        현대 전문직 종사자 89개 직업군의 작업 환경에서 발생하는 신체적 한계를 극복하기 위해,<br>
+        몸을 억지로 조이지 않고 0.1mm 시크릿 핏으로 스스로 바른 정렬을 유지하도록 돕습니다.
+      </p>
+
+      <div class="pillar-grid">
+        <div class="pillar-card">
+          <div class="pillar-no">01</div>
+          <div class="pillar-title">Conductive Fiber</div>
+          <div class="pillar-desc">0.1mm 전도성 센서 직조 원사 (100회 물세탁 내구성)</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-no">02</div>
+          <div class="pillar-title">Zero-False AI</div>
+          <div class="pillar-desc">0.01초 작업 시차 필터링으로 오알람 스트레스 차단</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-no">03</div>
+          <div class="pillar-title">Lever Ergonomics</div>
+          <div class="pillar-desc">압박 없이 지렛대 원리로 펴주는 인체공학 프레임</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-no">04</div>
+          <div class="pillar-title">Invisible Core</div>
+          <div class="pillar-desc">38g 초경량 무봉제로 작업복/정장 속 완전 은폐</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-no">05</div>
+          <div class="pillar-title">AI Bio Telemetry</div>
+          <div class="pillar-desc">작업 중 무소음 촉각 햅틱 넛지 및 실시간 자세 HUD</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-no">06</div>
+          <div class="pillar-title">O2O 3D Clinic</div>
+          <div class="pillar-desc">전국 35개 거점 센터 1:1 3D 체형 스캔 처방 연동</div>
+        </div>
+      </div>
+
+      <div class="pride-row">
+        <div>
+          <div class="pride-num">38g</div>
+          <div class="pride-label">초경량 0.1mm 심리스</div>
+        </div>
+        <div>
+          <div class="pride-num">99.8%</div>
+          <div class="pride-label">작업복 속 무봉제 은폐율</div>
+        </div>
+        <div>
+          <div class="pride-num">300+</div>
+          <div class="pride-label">현직 전문가 실착 검증</div>
+        </div>
+        <div>
+          <div class="pride-num">100%</div>
+          <div class="pride-label">30일 무조건 무료 반품 보증</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ★ 2. Deep Brand Storytelling Section (길고 깊은 브랜드 서사) -->
+  <section id="brand-story">
+    <div class="container">
+      <div class="sec-header">
+        <div class="sec-badge">OUR PHILOSOPHY &amp; JOURNEY</div>
+        <h2 class="sec-title">우리가 걸어온 길, 그리고 스밈이 존재하는 이유</h2>
+        <p class="sec-desc">
+          시중에 널린 흔한 교정 밴드를 만들지 않습니다. 원천 부품 기술에서 출발하여 일상에 자연스럽게 스며드는 바른 균형의 여정을 들려드립니다.
+        </p>
+      </div>
+
+      <!-- Story Chapter 1: The Origin -->
+      <div class="story-chapter">
+        <div class="story-img-box">
+          <div style="font-size:36px; margin-bottom:12px;">🧵</div>
+          <div style="font-size:16px; color:#F8FAFC; margin-bottom:8px;">[원천 기술: 유연 전도성 센서 섬유]</div>
+          <div style="font-size:12px; line-height:1.5;">딱딱한 센서 기계 대신 옷감 자체에 미세 센서 회로를 직조하는 독자적인 나노 원사 공학</div>
+        </div>
+        <div>
+          <div class="story-tag">CHAPTER 01 · 탄생의 배경</div>
+          <h3 class="story-heading">"왜 체형 교정은 늘 아프고 불편해야만 할까요?"</h3>
+          <p class="story-body">
+            우리는 본래 첨단 스마트 섬유 부품을 개발하던 엔지니어 팀이었습니다. 수많은 현대인들이 목과 허리의 극심한 통증으로 고통받으면서도, 시중의 딱딱한 강제 압박 밴드나 투박한 거치대 제품에 실망하고 중도 포기하는 모습을 지켜보았습니다.
+          </p>
+          <p class="story-body">
+            "몸을 억지로 조이지 않으면서도, 마치 아무것도 입지 않은 것처럼 가볍게 바른 자세를 유도할 수는 없을까?" 이 질문 하나에서 스밈(SEUMIM)의 여정이 시작되었습니다.
+          </p>
+          <div class="story-highlight">
+            💡 부품 제조 기업의 원천 기술인 '전도성 센서 섬유'를 6조 8,000억 달러 웰니스 시장의 게임 체인저로 전환한 첫 발걸음이었습니다.
+          </div>
+        </div>
+      </div>
+
+      <!-- Story Chapter 2: The Problem We Solve (Reverse) -->
+      <div class="story-chapter reverse">
+        <div class="story-img-box">
+          <div style="font-size:36px; margin-bottom:12px;">⚖️</div>
+          <div style="font-size:16px; color:#F8FAFC; margin-bottom:8px;">[기존 교정기 3대 한계의 완벽한 극복]</div>
+          <div style="font-size:12px; line-height:1.5;">강제 압박 통증 / 단순 오작동 알람 / 세탁 불가라는 3대 치명적 결함을 공학적으로 해결</div>
+        </div>
+        <div>
+          <div class="story-tag">CHAPTER 02 · 기존 시장의 한계 극복</div>
+          <h3 class="story-heading">고통스러운 강제 조임과 시끄러운 오알람의 종말</h3>
+          <p class="story-body">
+            기존의 고무줄 강제 압박기는 착용할수록 근육을 퇴화시키고 소화불량을 유발합니다. 또한 기존의 부착형 센서는 신발을 묶거나 물을 마시는 일상 동작조차 '불량 자세'로 오진하여 시도 때도 없이 진동을 울리며 극심한 스트레스를 주었습니다.
+          </p>
+          <p class="story-body">
+            스밈은 <strong>0.01초 작업 시차 필터링 알고리즘</strong>으로 일시적 움직임과 고착된 나쁜 자세를 완벽히 구분하고, <strong>인체공학 지렛대 탄성 복원 구조</strong>를 통해 압박 없이 스스로 펴지도록 만들었습니다.
+          </p>
+          <div class="story-highlight">
+            ⚡ 82.3%의 직장인이 자세 무너짐을 인지하지 못하는 현실, 스밈은 업무 몰입을 방해하지 않는 '무소음 촉각 햅틱 넛지'로 바른 정렬을 회복시킵니다.
+          </div>
+        </div>
+      </div>
+
+      <!-- Story Chapter 3: The Philosophy of SEUMIM -->
+      <div class="story-chapter">
+        <div class="story-img-box">
+          <div style="font-size:36px; margin-bottom:12px;">🌿</div>
+          <div style="font-size:16px; color:#F8FAFC; margin-bottom:8px;">[스밈(SEUMIM): 일상 속에 스며들다]</div>
+          <div style="font-size:12px; line-height:1.5;">티 없이(Seamless &amp; Flawless) — 옷 안에서도 티 나지 않고, 신체 결함 없이 바른 상태</div>
+        </div>
+        <div>
+          <div class="story-tag">CHAPTER 03 · 브랜드 철학과 가치</div>
+          <h3 class="story-heading">"일상에 바른 균형이 자연스럽게 스며들도록"</h3>
+          <p class="story-body">
+            **스밈(SEUMIM)**은 '스며들다'에서 비롯된 이름입니다. 퇴근 후 지친 몸을 이끌고 억지로 운동을 강요하지 않습니다. 모니터 앞, 조타실, 수술실, 분장실 등 여러분이 치열하게 일하는 그 자리에서 바른 습관이 옷처럼 편안하게 스며듭니다.
+          </p>
+          <p class="story-body">
+            0.1mm 초슬림 무봉제 공법으로 어떤 복장 속에 입어도 티가 나지 않으며, 100회 물세탁이 가능하여 매일 아침 새 옷처럼 쾌적하게 착용할 수 있습니다.
+          </p>
+          <div class="story-highlight">
+            ✨ 하드웨어 15종 + AI 10초 미니멀 케어 구독 + 전국 35개 웰니스 센터의 3중 선순환 플랫폼으로 지속 가능한 건강한 변화를 약속합니다.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ★ 3. Featured 3 Masterpieces Section (지그재그 형태 배치) -->
+  <section id="featured">
+    <div class="container">
+      <div class="sec-header">
+        <div class="sec-badge">FEATURED MASTERPIECES</div>
+        <h2 class="sec-title">우리가 만든 결과와 기술로 증명합니다</h2>
+        <p class="sec-desc">스밈의 원천 기술이 집약된 3대 시그니처 대표 라인업의 해부학적 작동 원리를 만나보세요.</p>
+      </div>
+
+      <!-- Masterpiece 1: Left Visual / Right Text -->
+      <div class="zigzag-card">
+        <div class="zigzag-visual">
+          <div style="font-size:32px; margin-bottom:10px;">📐</div>
+          <div style="font-size:15px; color:#F8FAFC; margin-bottom:6px;">[3D 단면도: 0.1mm 심리스 넥&amp;숄더 밴드]</div>
+          <div style="font-size:11.5px; color:#64748B;">해부학적 X자 밴드 구조 &amp; 전면 0.05초 퀵 체결 자석 버클 메커니즘</div>
+        </div>
+        <div>
+          <div class="zigzag-badge">MASTERPIECE 01 · 상의/경추형</div>
+          <h3 class="zigzag-title">0.1mm 심리스 시그니처 넥&amp;숄더 밴드</h3>
+          <p class="zigzag-desc">
+            거북목의 근본 원인인 '말린 어깨(라운드 숄더)'와 굽은 등을 먼저 교정하여 머리의 무게중심을 정상 C커브 위치로 유도합니다. 가방을 매듯 걸친 후 전면 자석 버클로 1초 만에 체결하며, 0.1mm 초슬림 살구색 메쉬 소재로 얇은 셔츠 속에서도 윤곽이 전혀 드러나지 않습니다.
+          </p>
+          <div class="zigzag-price-row">
+            <span class="zigzag-price">98,000원</span>
+            <span class="zigzag-origin">139,000원</span>
+            <span class="zigzag-disc">29% OFF (30일 시착 특가)</span>
+          </div>
+          <button class="btn-gnb-trial" onclick="openTrialModal(1)">30일 무료 시착 신청 ➔</button>
+        </div>
+      </div>
+
+      <!-- Masterpiece 2: Left Text / Right Visual (Reverse Zig-Zag) -->
+      <div class="zigzag-card reverse">
+        <div class="zigzag-visual">
+          <div style="font-size:32px; margin-bottom:10px;">🛡️</div>
+          <div style="font-size:15px; color:#F8FAFC; margin-bottom:6px;">[3D 단면도: 3D 에어로 메쉬 척추 정렬 조끼]</div>
+          <div style="font-size:11.5px; color:#64748B;">출근복 속 숨은 지퍼(Concealed Zipper) &amp; 척추 틀어짐 차단 탄성 프레임 단면</div>
+        </div>
+        <div>
+          <div class="zigzag-badge">MASTERPIECE 02 · 중간/흉요추형</div>
+          <h3 class="zigzag-title">3D 에어로 메쉬 스마트 척추 정렬 조끼</h3>
+          <p class="zigzag-desc">
+            일상적인 유연한 움직임은 그대로 허용하되, 척추가 비정상적으로 틀어지거나 앞으로 쏟아지는 순간 조끼 내부의 인체공학 탄성 프레임이 물리적으로 고정 차단합니다. 전면 숨은 지퍼 구조로 정장 재킷이나 출근용 가디건 속에 완벽히 겹쳐 입을 수 있습니다.
+          </p>
+          <div class="zigzag-price-row">
+            <span class="zigzag-price">149,000원</span>
+            <span class="zigzag-origin">199,000원</span>
+            <span class="zigzag-disc">25% OFF (30일 시착 특가)</span>
+          </div>
+          <button class="btn-gnb-trial" onclick="openTrialModal(2)">30일 무료 시착 신청 ➔</button>
+        </div>
+      </div>
+
+      <!-- Masterpiece 3: Left Visual / Right Text -->
+      <div class="zigzag-card">
+        <div class="zigzag-visual">
+          <div style="font-size:32px; margin-bottom:10px;">🎈</div>
+          <div style="font-size:15px; color:#F8FAFC; margin-bottom:6px;">[3D 모식도: 골반 수평 유지 에어셀 벨트]</div>
+          <div style="font-size:11.5px; color:#64748B;">착석 시 다리 꼬기 물리 차단 듀얼 공기 주머니(Air-Cell) 팽창 메커니즘</div>
+        </div>
+        <div>
+          <div class="zigzag-badge">MASTERPIECE 03 · 하의/골반형</div>
+          <h3 class="zigzag-title">골반 수평 유지 에어셀 벨트</h3>
+          <p class="zigzag-desc">
+            의자에 앉아 무의식적으로 다리를 꼬려고 하면 측면의 특수 에어셀 패드가 공간을 물리적으로 채워 차단함으로써 골반의 좌우 수평 균형을 안정적으로 유지합니다. 통기성 메모리폼 벨트와 슬림 벨크로 결착 방식으로 사무실이나 비행기 내에서도 손쉽게 휴대·착용할 수 있습니다.
+          </p>
+          <div class="zigzag-price-row">
+            <span class="zigzag-price">109,000원</span>
+            <span class="zigzag-origin">159,000원</span>
+            <span class="zigzag-disc">31% OFF (30일 시착 특가)</span>
+          </div>
+          <button class="btn-gnb-trial" onclick="openTrialModal(3)">30일 무료 시착 신청 ➔</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. All 15 Products Showcase Section -->
+  <section id="products">
+    <div class="container">
+      <div class="sec-header">
+        <div class="sec-badge">FULL LINEUP (15)</div>
+        <h2 class="sec-title">스밈 15대 에르고 전 라인업</h2>
+        <p class="sec-desc">시그니처 코어부터 89개 직업 연계 교정 ACC까지 4대 카테고리로 비교·탐색하세요.</p>
+      </div>
+
+      <div class="tab-bar">
+        <button class="tab-btn active" onclick="filterCategory('all', event)">전체 컬렉션 (15)</button>
+        <button class="tab-btn" onclick="filterCategory('signature', event)">시그니처 라인 (4)</button>
+        <button class="tab-btn" onclick="filterCategory('care', event)">전문 집중 케어 (4)</button>
+        <button class="tab-btn" onclick="filterCategory('sensor', event)">스마트 센서 테크 (4)</button>
+        <button class="tab-btn" onclick="filterCategory('acc', event)">직업 맞춤 교정 ACC (3)</button>
+      </div>
+
+      <div class="product-grid" id="productGridContainer"></div>
+    </div>
+  </section>
+
+  <!-- 5. AI Bio Data Care HUD Section -->
+  <section id="ai-hud" style="background:#090D16;">
+    <div class="container">
+      <div class="sec-header">
+        <div class="sec-badge">AI BIO TELEMETRY</div>
+        <h2 class="sec-title">실시간 척추 밸런스 HUD 대시보드</h2>
+        <p class="sec-desc">작업 중 무소음 촉각 피드백과 실시간 자세 점수 모니터링</p>
+      </div>
+
+      <div style="background:#111827; border:2px solid #0284C7; border-radius:12px; padding:36px; max-width:880px; margin:0 auto;">
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; text-align:center; margin-bottom:24px;">
+          <div style="background:#0B0F19; padding:20px; border-radius:8px;">
+            <div style="font-size:12px; color:#94A3B8;">현재 자세 정렬 점수</div>
+            <div style="font-size:32px; font-weight:900; color:#38BDF8;">94.8점</div>
+          </div>
+          <div style="background:#0B0F19; padding:20px; border-radius:8px;">
+            <div style="font-size:12px; color:#94A3B8;">경추 숙임 각도</div>
+            <div style="font-size:32px; font-weight:900; color:#F8FAFC;">14.2°</div>
+          </div>
+          <div style="background:#0B0F19; padding:20px; border-radius:8px;">
+            <div style="font-size:12px; color:#94A3B8;">좌우 하중 밸런스</div>
+            <div style="font-size:32px; font-weight:900; color:#10B981;">50:50</div>
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <button class="btn-gnb-trial" style="padding:12px 28px; font-size:13px;" onclick="openTrialModal()">AI 케어 3개월 무료 라이선스 받기 ➔</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Wellness Center Section -->
+  <section id="center">
+    <div class="container">
+      <div class="sec-header">
+        <div class="sec-badge">O2O 3D CLINIC</div>
+        <h2 class="sec-title">전국 35개 거점 웰니스 센터</h2>
+        <p class="sec-desc">1:1 맞춤형 3D 체형 스캔 및 에르고 피팅 리셋 처방</p>
+      </div>
+
+      <div style="background:#111827; border:1px solid #1F2937; border-radius:12px; padding:32px; max-width:880px; margin:0 auto; text-align:center;">
+        <div style="height:200px; background:#0F172A; border:1px dashed #334155; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#94A3B8; font-weight:700; margin-bottom:20px;">
+          [전국 35개 거점 센터 지도 API 및 지점 검색 인터랙션]
+        </div>
+        <button class="btn-gnb-trial" style="padding:12px 32px;" onclick="openCenterModal()">1회 무료 4단계 Wizard 예약하기 ➔</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FAQ Section -->
+  <section id="faq">
+    <div class="container" style="max-width:800px;">
+      <div class="sec-header">
+        <div class="sec-badge">FAQ</div>
+        <h2 class="sec-title">자주 묻는 질문</h2>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>30일 무료 시착 시 비용이 발생하나요?</span>
+          <span style="color:#38BDF8;">+</span>
+        </div>
+        <div class="faq-a">
+          아닙니다. 사전 신청 시 결제 금액은 0원이며, 30일 동안 일상 및 업무 중 충분히 착용해 보신 후 불만족 시 100% 무조건 무료 반품이 가능합니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>작업복이나 셔츠 안에 입어도 티가 나지 않나요?</span>
+          <span style="color:#38BDF8;">+</span>
+        </div>
+        <div class="faq-a">
+          네, 스밈의 0.1mm 심리스 무봉제 공법은 얇은 흰색 린넨 셔츠나 방진복, 타이트한 유니폼 속에 착용해도 봉제선과 윤곽이 드러나지 않는 99.8% 은폐율을 자랑합니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>센서가 장착된 웨어는 물세탁이 가능한가요?</span>
+          <span style="color:#38BDF8;">+</span>
+        </div>
+        <div class="faq-a">
+          네, 스밈의 전도성 센서 원사는 섬유 자체에 직조되어 있어 별도의 센서 탈착 없이 일반 세탁망에 넣어 100회 이상 물세탁이 가능합니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>직업 맞춤 교정 ACC 3종은 어떻게 활용하나요?</span>
+          <span style="color:#38BDF8;">+</span>
+        </div>
+        <div class="faq-a">
+          에어 럼버 앵커, 관절 중립 락 스트랩, 체압 분산 힐 컵은 장시간 착석 또는 10시간 이상 기립 작업 시 특정 관절과 요추의 비틀림을 물리적으로 지지하는 필수 교정 도구입니다.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Sticky Bar -->
+  <div class="floating-bar">
+    <div style="font-size:13px; font-weight:700;">✨ 30일 에르고 무상 시착 (100% 무료 반품)</div>
+    <button class="floating-btn" onclick="openTrialModal()">지금 시착 신청 ➔</button>
+  </div>
+
+  <!-- QuickView Modal -->
+  <div id="qvModal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="qvTitle">상품 퀵뷰</h3>
+        <button class="modal-close" onclick="closeModal('qvModal')">✕</button>
+      </div>
+      <div class="modal-body" id="qvBody"></div>
+      <div class="modal-foot">
+        <button class="btn-login" onclick="closeModal('qvModal')">닫기</button>
+        <button class="btn-gnb-trial" onclick="openTrialModalFromQv()">30일 무료 시착 신청</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 30-Day Trial Modal -->
+  <div id="trialModal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>✨ SEUMIM 30일 무료 시착 신청 (결제금액 0원)</h3>
+        <button class="modal-close" onclick="closeModal('trialModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom:14px;">
+          <label style="font-size:12px; font-weight:700; color:#CBD5E1; display:block; margin-bottom:4px;">시착 상품 선택</label>
+          <select id="trialProductSelect" style="width:100%; padding:10px; background:#0F172A; border:1px solid #334155; border-radius:6px; color:#FFF; font-size:13px;"></select>
+        </div>
+        <div style="margin-bottom:14px;">
+          <label style="font-size:12px; font-weight:700; color:#CBD5E1; display:block; margin-bottom:4px;">사이즈 선택 (의류 규격 연계)</label>
+          <div style="display:flex; gap:8px;">
+            <button class="btn-login" style="flex:1; background:#0284C7; color:#FFF; border-color:#0284C7;">95 (M)</button>
+            <button class="btn-login" style="flex:1;">100 (L)</button>
+            <button class="btn-login" style="flex:1;">105 (XL)</button>
+          </div>
+        </div>
+        <div style="margin-bottom:14px;">
+          <label style="font-size:12px; font-weight:700; color:#CBD5E1; display:block; margin-bottom:4px;">안심 배송지 주소</label>
+          <input type="text" placeholder="배송지 주소를 상세히 입력하세요" style="width:100%; padding:10px; background:#0F172A; border:1px solid #334155; border-radius:6px; color:#FFF; font-size:13px;">
+        </div>
+        <div style="font-size:11px; color:#94A3B8; background:#0B0F19; padding:10px; border-radius:6px;">
+          ✓ 30일 시착 후 불만족 시 100% 무료 반품 보증 (왕복 택배비 0원)
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button class="btn-gnb-trial" style="width:100%; padding:12px;" onclick="alert('30일 무료 시착 신청이 정상 접수되었습니다!'); closeModal('trialModal');">무료 시착 신청 완료 (결제 0원) ➔</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Center Booking Wizard Modal -->
+  <div id="centerModal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>🏛️ 전국 35개 웰니스 센터 1회 무료 예약 (4단계 Wizard)</h3>
+        <button class="modal-close" onclick="closeModal('centerModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom:14px;">
+          <label style="font-size:12px; font-weight:700; color:#CBD5E1; display:block; margin-bottom:4px;">Step 1. 거점 센터 선택</label>
+          <select style="width:100%; padding:10px; background:#0F172A; border:1px solid #334155; border-radius:6px; color:#FFF; font-size:13px;">
+            <option>서울 강남 플래그십 센터 (도곡로)</option>
+            <option>서울 판교 테크밸리 센터</option>
+            <option>부산 해운대 센텀 센터</option>
+            <option>대전 둔산 웰니스 센터</option>
+          </select>
+        </div>
+        <div style="margin-bottom:14px;">
+          <label style="font-size:12px; font-weight:700; color:#CBD5E1; display:block; margin-bottom:4px;">Step 2. 방문 일시 선택</label>
+          <input type="datetime-local" style="width:100%; padding:10px; background:#0F172A; border:1px solid #334155; border-radius:6px; color:#FFF; font-size:13px;">
+        </div>
+        <div style="margin-bottom:14px;">
+          <label style="font-size:12px; font-weight:700; color:#CBD5E1; display:block; margin-bottom:4px;">Step 3. 직업군 및 주요 통증 부위</label>
+          <input type="text" placeholder="예: 개발자 / 경추 45도 숙임 및 손목 통증" style="width:100%; padding:10px; background:#0F172A; border:1px solid #334155; border-radius:6px; color:#FFF; font-size:13px;">
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button class="btn-gnb-trial" style="width:100%; padding:12px;" onclick="alert('웰니스 센터 1:1 체형 스캔 예약이 확정되었습니다!'); closeModal('centerModal');">예약 확정하기 ➔</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const productsData = [{"id": 1, "cat": "signature", "name": "SEUMIM 0.1mm 심리스 시그니처 넥&숄더 밴드", "price": 98000, "origin": 139000, "disc": "29%", "badge": "BEST", "badgeClass": "badge-best", "tag": "#시그니처 #거북목교정", "rating": 4.9, "reviews": 380, "desc": "말린 어깨와 거북목을 펴주는 해부학적 X자 밴드 구조 & 전면 자석 버클"}, {"id": 2, "cat": "signature", "name": "SEUMIM 3D 에어로 메쉬 스마트 척추 정렬 조끼", "price": 149000, "origin": 199000, "disc": "25%", "badge": "BEST", "badgeClass": "badge-best", "tag": "#척추정렬 #숨은지퍼", "rating": 4.9, "reviews": 460, "desc": "출근복/가디건 속 숨은 지퍼 & 척추 틀어짐을 물리 차단하는 탄성 프레임"}, {"id": 3, "cat": "signature", "name": "SEUMIM 골반 수평 유지 에어셀 벨트", "price": 109000, "origin": 159000, "disc": "31%", "badge": "BEST", "badgeClass": "badge-best", "tag": "#골반수평 #다리꼬기차단", "rating": 4.8, "reviews": 310, "desc": "착석 시 다리 꼬기를 공기 주머니로 물리 차단하는 듀얼 에어셀 패드"}, {"id": 4, "cat": "signature", "name": "SEUMIM 올인원 프로 마스터 에르고 슈트", "price": 239000, "origin": 329000, "disc": "27%", "badge": "PRO", "badgeClass": "badge-pro", "tag": "#올인원 #전신케어", "rating": 5.0, "reviews": 190, "desc": "경추+척추+골반을 유기적으로 동시에 바로잡는 플래그십 전신 통합 슈트"}, {"id": 5, "cat": "care", "name": "SEUMIM 수근관 안티스트레인 손목 서포터", "price": 49000, "origin": 69000, "disc": "29%", "badge": "NEW", "badgeClass": "badge-new", "tag": "#손목보호 #수근관보호", "rating": 4.8, "reviews": 150, "desc": "장시간 작업 중 손목 신경 압박과 건초염을 물리적으로 방지"}, {"id": 6, "cat": "care", "name": "SEUMIM 인체공학 3D 럼버 메모리 쿠션", "price": 55000, "origin": 79000, "disc": "30%", "badge": "HOT", "badgeClass": "badge-best", "tag": "#요추쿠션 #C커브복원", "rating": 4.9, "reviews": 240, "desc": "착석 작업 시 요추 굴곡 완벽 밀착 및 척추 기립근 체압 분산"}, {"id": 7, "cat": "care", "name": "SEUMIM 점진적 압박 림프 케어 카프 슬리브", "price": 38000, "origin": 55000, "disc": "31%", "badge": "NEW", "badgeClass": "badge-new", "tag": "#하지부종 #혈류개선", "rating": 4.7, "reviews": 130, "desc": "장시간 기립 및 착석 작업 시 하지 혈류 개선 및 부종 55% 완화"}, {"id": 8, "cat": "care", "name": "SEUMIM 퇴근 후 10분 C-Spine 경추 견인 릴렉서", "price": 48000, "origin": 69000, "disc": "30%", "badge": "HOT", "badgeClass": "badge-best", "tag": "#경추견인 #후두하근이완", "rating": 4.8, "reviews": 110, "desc": "작업 후 굳은 후두하근 즉각 이완 및 정상 경추 C커브 견인 복원"}, {"id": 9, "cat": "sensor", "name": "SEUMIM 0.05도 초정밀 블루투스 모션 트래커", "price": 45000, "origin": 65000, "disc": "31%", "badge": "TECH", "badgeClass": "badge-tech", "tag": "#스마트센서 #실시간각도", "rating": 4.9, "reviews": 320, "desc": "0.05도 척추 각도 측정 및 스마트폰/워치 실시간 라이브 연동"}, {"id": 10, "cat": "sensor", "name": "SEUMIM 작업 몰입 방해 없는 무소음 AI 햅틱 클립", "price": 39000, "origin": 59000, "disc": "34%", "badge": "TECH", "badgeClass": "badge-tech", "tag": "#무소음햅틱 #촉각피드백", "rating": 4.9, "reviews": 270, "desc": "소음/진동 알람 없이 몸으로 느끼는 미세 촉각 자세 넛지"}, {"id": 11, "cat": "sensor", "name": "SEUMIM 데스크 부착형 자세 밸런스 HUD 디스플레이", "price": 69000, "origin": 99000, "disc": "30%", "badge": "TECH", "badgeClass": "badge-tech", "tag": "#자세HUD #스마트모니터", "rating": 4.8, "reviews": 160, "desc": "작업 공간 벽면/모니터 옆 실시간 척추 밸런스 점수 HUD"}, {"id": 12, "cat": "sensor", "name": "SEUMIM 3D 체압 매트릭스 스마트 센서 패드", "price": 129000, "origin": 179000, "disc": "28%", "badge": "TECH", "badgeClass": "badge-tech", "tag": "#체압패드 #좌우밸런스", "rating": 4.9, "reviews": 95, "desc": "좌우 불균형 하중 실시간 3D 히트맵 분석 및 골반 교정 알림"}, {"id": 13, "cat": "acc", "name": "SEUMIM 프로페셔널 척추 만곡 유지 에어 럼버 앵커", "price": 25000, "origin": 35000, "disc": "29%", "badge": "ACC", "badgeClass": "badge-acc", "tag": "#직업교정ACC #요추만곡", "rating": 4.9, "reviews": 280, "desc": "89개 직업 작업 환경에서 척추 만곡을 유지하는 에어 펌핑 앵커"}, {"id": 14, "cat": "acc", "name": "SEUMIM 관절 중립 락 스트랩 (손목/발목 공용)", "price": 22000, "origin": 32000, "disc": "31%", "badge": "ACC", "badgeClass": "badge-acc", "tag": "#직업교정ACC #관절보호", "rating": 4.8, "reviews": 210, "desc": "고강도 작업 중 관절 과신전 및 꺾임을 물리적으로 방지"}, {"id": 15, "cat": "acc", "name": "SEUMIM 아치 붕괴 방지 체압 분산 에르고 힐 컵", "price": 19000, "origin": 29000, "disc": "34%", "badge": "ACC", "badgeClass": "badge-acc", "tag": "#직업교정ACC #체압분산", "rating": 4.9, "reviews": 330, "desc": "10시간 이상 기립 작업 시 발바닥 아치 무너짐 방지 및 충격 흡수"}];
+    let currentCat = 'all';
+
+    function renderProducts() {
+      const grid = document.getElementById("productGridContainer");
+      grid.innerHTML = "";
+      const filtered = currentCat === 'all' ? productsData : productsData.filter(p => p.cat === currentCat);
+      filtered.forEach(p => {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.innerHTML = `
+          <div>
+            <span class="p-badge ${p.badgeClass}">${p.badge}</span>
+            <div class="p-img-box">[IMG_${p.id < 10 ? '0' + p.id : p.id}] 0.1mm 핏</div>
+            <div class="p-tag">${p.tag}</div>
+            <div class="p-name">${p.name}</div>
+            <div class="p-desc">${p.desc}</div>
+          </div>
+          <div>
+            <div class="p-price-row">
+              <span class="p-price">${p.price.toLocaleString()}원</span>
+              <span class="p-origin">${p.origin.toLocaleString()}원</span>
+              <span class="p-disc">${p.disc}</span>
+            </div>
+            <div class="p-actions">
+              <button class="btn-qv" onclick="openQuickView(${p.id})">🔍 퀵뷰</button>
+              <button class="btn-trial" onclick="openTrialModal(${p.id})">30일 시착</button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      const select = document.getElementById("trialProductSelect");
+      if (select) {
+        select.innerHTML = "";
+        productsData.forEach(p => {
+          const opt = document.createElement("option");
+          opt.value = p.id;
+          opt.innerText = `[${p.badge}] ${p.name} (${p.price.toLocaleString()}원)`;
+          select.appendChild(opt);
+        });
+      }
+    }
+
+    function filterCategory(cat, e) {
+      currentCat = cat;
+      const btns = document.querySelectorAll(".tab-btn");
+      btns.forEach(b => b.classList.remove("active"));
+      if (e && e.target) e.target.classList.add("active");
+      renderProducts();
+    }
+
+    function openQuickView(pid) {
+      const p = productsData.find(item => item.id === pid);
+      if (!p) return;
+      document.getElementById("qvTitle").innerText = `[${p.badge}] ${p.name}`;
+      document.getElementById("qvBody").innerHTML = `
+        <div style="height:180px; background:#0F172A; border:1px dashed #334155; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#94A3B8; font-weight:700; margin-bottom:16px;">
+          [0.1mm 고화질 3D 실착 룩북 뷰어]
+        </div>
+        <div style="font-size:12px; color:#38BDF8; font-weight:700; margin-bottom:4px;">${p.tag}</div>
+        <div style="font-size:17px; font-weight:900; color:#F8FAFC; margin-bottom:8px;">${p.name}</div>
+        <div style="font-size:13px; color:#94A3B8; line-height:1.6; margin-bottom:16px;">${p.desc}</div>
+        <div style="background:#0F172A; padding:16px; border-radius:8px; margin-bottom:16px;">
+          <div style="display:flex; justify-content:space-between; font-size:16px; font-weight:900;">
+            <span style="color:#FFF;">30일 무료체험 특가</span>
+            <span style="color:#38BDF8;">${p.price.toLocaleString()}원 (${p.disc} 할인)</span>
+          </div>
+        </div>
+      `;
+      document.getElementById("qvModal").classList.remove("hidden");
+    }
+
+    function openTrialModal(pid) {
+      if (pid) document.getElementById("trialProductSelect").value = pid;
+      document.getElementById("trialModal").classList.remove("hidden");
+    }
+    function openCenterModal() { document.getElementById("centerModal").classList.remove("hidden"); }
+    function openTrialModalFromQv() { closeModal('qvModal'); openTrialModal(); }
+    function closeModal(id) { document.getElementById(id).classList.add("hidden"); }
+
+    function toggleFaq(el) {
+      const ans = el.nextElementSibling;
+      if (ans.style.display === "block") {
+        ans.style.display = "none";
+        el.querySelector("span:last-child").innerText = "+";
+      } else {
+        ans.style.display = "block";
+        el.querySelector("span:last-child").innerText = "−";
+      }
+    }
+
+    window.onload = renderProducts;
+  </script>
+</body>
+</html>

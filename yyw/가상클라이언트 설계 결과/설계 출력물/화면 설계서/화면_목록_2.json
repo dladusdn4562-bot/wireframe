@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "SEUMIM(스밈) 수험생 척추 조끼 화면 설계 스키마 (가상클라이언트 2: 김도윤)",
+  "version": "2.0.0",
+  "totalScreens": 14,
+  "screens": [
+    {
+      "id": "SCR-01",
+      "sitemapMapping": "P-0.0",
+      "name": "수험생 메인 랜딩페이지",
+      "depth": "1차",
+      "type": "PAGE",
+      "route": "/",
+      "purpose": "하루 14시간 착석 피로 공감, 0.1mm 시크릿 핏 및 0dB 무소음 힌지 검증, 30일 무료 체험 전환",
+      "components": [
+        "GNB (Header)",
+        "Hero Section (순공 14시간 슬로건, 룩북 비주얼, 30일 체험 CTA)",
+        "수험생 89.4% 통증 인포그래픽 카드",
+        "0.1mm 시크릿 핏 비침 비교 슬라이더",
+        "독서실 0dB 바이오 힌지 탄성 메커니즘 3D 뷰",
+        "실시간 스터디 타이머 대시보드 위젯",
+        "서울대/의대 합격생 100인 실착 후기 갤러리",
+        "하단 교복 사이즈 선택 및 30일 무료 체험 CTA",
+        "FNB (Footer)"
+      ],
+      "interactions": [
+        "GNB 메뉴 클릭 시 서브페이지(SCR-02, 04, 05, 07, 10) 이동",
+        "비침 비교 슬라이더 좌우 드래그 시 투명도 실시간 전환",
+        "스터디 타이머 [시작/정지] 토글 인터랙션",
+        "사이즈 칩 선택 후 [30일 무료 체험] 클릭 시 SCR-08 모달 호출"
+      ]
+    },
+    {
+      "id": "SCR-02",
+      "sitemapMapping": "P-1.0",
+      "name": "수험생 조끼 상세",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/product/student-vest",
+      "purpose": "0.1mm 초극세사 스킨 메쉬의 비침 방지 및 사계절 쾌적성 검증",
+      "components": ["GNB", "0.1mm 원단 스펙 시트", "교복/체육복 착용 핏 룩북", "사이즈 가이드 호출 버튼", "FNB"],
+      "interactions": ["룩북 이미지 호버 시 줌 확대", "[내 교복 사이즈 찾기] 클릭 시 SCR-03 호출"]
+    },
+    {
+      "id": "SCR-03",
+      "sitemapMapping": "P-1.3",
+      "name": "교복 정밀 사이즈 가이드 [모달]",
+      "depth": "3차",
+      "type": "MODAL",
+      "route": "/modal/size-guide",
+      "purpose": "교복 상의 치수(85~110) 기준 정밀 사이즈 추천으로 착용 실패 방지",
+      "components": ["모달 컨테이너", "상의 사이즈 선택 드롭다운 (85~110)", "신장/체중 권장표", "2개 사이즈 동시 발송 배지", "체험 신청 버튼"],
+      "interactions": ["사이즈 선택 시 권장 체형 실시간 하이라이트", "[이 사이즈로 30일 체험] 클릭 시 SCR-08 모달 전환"]
+    },
+    {
+      "id": "SCR-04",
+      "sitemapMapping": "P-2.0",
+      "name": "무소음 테크",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/tech/silent-hinge",
+      "purpose": "독서실 0dB 무소음 물리 지지 메커니즘 및 피로 이완 입증",
+      "components": ["GNB", "3D 바이오 탄성 힌지 분해도", "독서실 0dB 공인 시험 성적서", "승모근 근전도 38% 완화 차트", "FNB"],
+      "interactions": ["3D 부품 호버 시 세부 스펙 툴팁 노출", "근전도 비교 토글"]
+    },
+    {
+      "id": "SCR-05",
+      "sitemapMapping": "P-3.0",
+      "name": "순공 대시보드",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/dashboard/study",
+      "purpose": "착석 시간과 척추 각도 결합을 통한 순공 집중도 향상 가치 체감",
+      "components": ["GNB", "디지털 스터디 타이머 인터랙티브 위젯", "자세 점수 원형 게이지", "일간/주간 리포트 차트", "FNB"],
+      "interactions": ["타이머 조작 시 자세 점수 시뮬레이션", "[10초 루틴 가이드] 클릭 시 SCR-06 이동"]
+    },
+    {
+      "id": "SCR-06",
+      "sitemapMapping": "P-3.3",
+      "name": "시험 기간 10초 루틴",
+      "depth": "3차",
+      "type": "PAGE",
+      "route": "/dashboard/10s-routine",
+      "purpose": "문제 풀이 중간 앉은 자리에서 10초 만에 끝내는 스트레칭 가이드",
+      "components": ["GNB", "10초 3단계 스트레칭 동영상", "수능 당일 컨디션 팁", "FNB"],
+      "interactions": ["단계별 영상 재생/일시정지"]
+    },
+    {
+      "id": "SCR-07",
+      "sitemapMapping": "P-4.0",
+      "name": "30일 무료 체험 안내",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/trial/info",
+      "purpose": "30일간 집/독서실에서 무료로 입어보는 혜택 및 안심 반품 보증",
+      "components": ["GNB", "30일 무료 시착 혜택표", "왕복 배송비 0원 100% 무료 반품 약관", "[무료 체험 신청] CTA", "FNB"],
+      "interactions": ["[무료 체험 신청] 클릭 시 SCR-08 호출"]
+    },
+    {
+      "id": "SCR-08",
+      "sitemapMapping": "P-4.3",
+      "name": "30일 무료 체험 신청 폼 [모달]",
+      "depth": "3차",
+      "type": "MODAL",
+      "route": "/modal/free-trial",
+      "purpose": "30일 무상 시착 사전 접수 완료",
+      "components": ["모달 헤더", "신청자 구분 라디오", "성함/연락처 인풋", "교복 사이즈 선택 셀렉트", "배송지 주소 인풋", "신청 완료 버튼"],
+      "interactions": ["유효성 검증 (누락 필드 하이라이트)", "제출 성공 시 SCR-09 화면 호출"]
+    },
+    {
+      "id": "SCR-09",
+      "sitemapMapping": "P-4.4",
+      "name": "신청 완료 및 배송 안내 [가정]",
+      "depth": "3차",
+      "type": "PAGE",
+      "route": "/order/complete",
+      "purpose": "접수 번호 확인 및 안심 배송 일정 전달",
+      "components": ["GNB", "주문 접수 완료 카드", "고유 접수번호", "배송 일정 안내", "카카오 알림톡 발송 공지", "FNB"],
+      "interactions": ["[메인으로 이동] 클릭 시 SCR-01 이동"]
+    },
+    {
+      "id": "SCR-10",
+      "sitemapMapping": "P-5.0",
+      "name": "학부모 후기",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/reviews/parent",
+      "purpose": "선배 합격생 및 학부모 찐 경험 검증을 통한 신뢰 구축",
+      "components": ["GNB", "명문대 100인 포토 후기 그리드", "대치동 맘 인터뷰 영상", "자주 묻는 질문 FAQ 아코디언", "FNB"],
+      "interactions": ["FAQ 질문 클릭 시 아코디언 토글"]
+    },
+    {
+      "id": "SCR-11",
+      "sitemapMapping": "P-6.1",
+      "name": "간편 로그인 / 회원가입 [가정]",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/auth/login",
+      "purpose": "카카오/네이버 SNS 간편 로그인 및 계정 연동",
+      "components": ["간편 로그인 박스", "카카오 1-Click 버튼", "네이버 로그인 버튼"],
+      "interactions": ["SNS 인증 클릭 시 OAuth 프로세스 후 SCR-12 이동"]
+    },
+    {
+      "id": "SCR-12",
+      "sitemapMapping": "P-6.2",
+      "name": "마이페이지 순공 대시보드 [가정]",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/mypage/dashboard",
+      "purpose": "무료 체험 배송 조회 및 일간 순공 집중도 리포트 관리",
+      "components": ["GNB", "30일 시착 진행 상태 카드", "일간 순공 점수 차트", "1-Click 무료 반품 신청 버튼", "FNB"],
+      "interactions": ["[1-Click 무료 반품] 클릭 시 반품 접수 팝업 호출"]
+    },
+    {
+      "id": "SCR-13",
+      "sitemapMapping": "P-9.1",
+      "name": "404 Not Found [가정]",
+      "depth": "2차",
+      "type": "EXCEPT",
+      "route": "/error/404",
+      "purpose": "잘못된 경로 접근 시 수험생 맞춤 에러 안내",
+      "components": ["404 에러 안내 메시지", "메인 바로가기 CTA 버튼"],
+      "interactions": ["[메인으로 이동] 클릭 시 SCR-01 이동"]
+    },
+    {
+      "id": "SCR-14",
+      "sitemapMapping": "P-9.2",
+      "name": "시스템 점검 안내 [가정]",
+      "depth": "2차",
+      "type": "EXCEPT",
+      "route": "/system/maintenance",
+      "purpose": "정기 점검 시간 공지 및 무료 체험 신청 데이터 보존 안내",
+      "components": ["점검 시간 안내 박스", "고객센터 비상 연락처", "데이터 안전 보존 공지"],
+      "interactions": []
+    }
+  ]
+}

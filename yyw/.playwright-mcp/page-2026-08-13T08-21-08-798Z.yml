@@ -1,0 +1,99 @@
+- generic [ref=f27e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f27e15]:
+      - generic [ref=f27e17]:
+        - generic [ref=f27e18]:
+          - combobox "검색" [ref=f27e20]: zen balance logo minimalist black white
+          - generic [ref=f27e21]:
+            - button "검색 입력 삭제" [ref=f27e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f27e30]:
+              - button "Pinterest 렌즈" [ref=f27e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f27e38] [cursor=pointer]:
+          - generic [ref=f27e40]:
+            - generic [ref=f27e41]: 모든 핀
+            - img "드롭다운" [ref=f27e43]
+      - link "내 프로필" [ref=f27e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f27e56]:
+          - generic [ref=f27e57]: 임
+      - button "계정" [ref=f27e61] [cursor=pointer]
+  - navigation [ref=f27e66]:
+    - generic [ref=f27e68]:
+      - generic [ref=f27e69]:
+        - generic "홈" [ref=f27e73]:
+          - link "홈" [ref=f27e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f27e81]:
+          - link "홈" [ref=f27e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f27e89]:
+          - link "내 보드" [ref=f27e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f27e97]:
+          - button "만들기" [ref=f27e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f27e114]:
+        - button "설정 및 지원" [ref=f27e115] [cursor=pointer]
+  - main [ref=f27e120]:
+    - generic [ref=f27e122]:
+      - heading "검색 결과 페이지" [level=1] [ref=f27e124]
+      - region "필터 및 세분화 검색" [ref=f27e128]:
+        - button "필터 표시" [ref=f27e137] [cursor=pointer]
+      - generic [ref=f27e149]:
+        - generic:
+          - generic:
+            - list:
+              - listitem [ref=f27e150]:
+                - button [ref=f27e151] [cursor=pointer]:
+                  - group "핀 카드" [ref=f27e154]:
+                    - generic [ref=f27e156]:
+                      - link "🙃 핀 페이지" [ref=f27e158]:
+                        - /url: /pin/25543922886568787/
+                        - 'img "포함된 이미지: 🙃" [ref=f27e168]'
+                      - generic [ref=f27e173]:
+                        - heading [level=2] [ref=f27e179]:
+                          - link "🙃 핀 페이지" [ref=f27e181]:
+                            - /url: /pin/25543922886568787/
+                            - text: 🙃
+                        - generic "추가 작업" [ref=f27e184]:
+                          - button "추가 작업" [ref=f27e185]
+              - listitem [ref=f27e190]:
+                - button [ref=f27e191] [cursor=pointer]:
+                  - group "핀 카드" [ref=f27e194]:
+                    - generic [ref=f27e196]:
+                      - link "aistudio.dropshot.io" [ref=f27e200]:
+                        - /url: https://aistudio.dropshot.io/ko?utm_source=pinterest&utm_medium=display&utm_campaign=DA_AI_Pinterest_Conv_Signup&utm_content=pin16&pp=0
+                        - generic [ref=f27e203]:
+                          - img "생각나는 순간 바로 생성. 모든 생성형 AI 모델을 한 곳에서" [ref=f27e216]
+                          - generic [ref=f27e217]: 거래
+                      - generic [ref=f27e223]:
+                        - generic [ref=f27e224]:
+                          - link "aistudio.dropshot.io" [ref=f27e228]:
+                            - /url: https://aistudio.dropshot.io/ko?utm_source=pinterest&utm_medium=display&utm_campaign=DA_AI_Pinterest_Conv_Signup&utm_content=pin16&pp=0
+                            - text: 코드 DOUBLEWEEK(으)로 50% 할인
+                          - heading [level=2] [ref=f27e233]:
+                            - link "AI 영상, 클릭 한번이면 끝 (aistudio.dropshot.io)" [ref=f27e237]:
+                              - /url: https://aistudio.dropshot.io/ko?utm_source=pinterest&utm_medium=display&utm_campaign=DA_AI_Pinterest_Conv_Signup&utm_content=pin16&pp=0
+                              - text: AI 영상, 클릭 한번이면 끝
+                          - link "후원 핀" [ref=f27e240]:
+                            - /url: /1wbgvlmje9emf9q7x5j515pwmb02ie/
+                            - generic [ref=f27e242]:
+                              - generic [ref=f27e243]: Dropshot AI
+                              - generic "후원 핀" [ref=f27e249]
+                        - generic "추가 작업" [ref=f27e252]:
+                          - button "추가 작업" [ref=f27e253]
+              - listitem [ref=f27e258]:
+                - button [ref=f27e259] [cursor=pointer]:
+                  - group "핀 카드" [ref=f27e262]:
+                    - generic [ref=f27e264]:
+                      - link "12,600+ Yoga Logo Stock Illustrations, Royalty-Free Vector Graphics &amp; Clip Art - iStock 핀 페이지" [ref=f27e266]:
+                        - /url: /pin/4785143351316867/
+                        - 'img "포함된 이미지: 12,600+ Yoga Logo Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f27e276]'
+                      - generic [ref=f27e281]:
+                        - heading [level=2] [ref=f27e287]:
+                          - link "12,600+ Yoga Logo Stock Illustrations, Royalty-Free Vector Graphics &amp; Clip Art - iStock 핀 페이지" [ref=f27e289]:
+                            - /url: /pin/4785143351316867/
+                            - text: 12,600+ Yoga Logo Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+                        - generic "추가 작업" [ref=f27e292]:
+                          - button "추가 작업" [ref=f27e293]

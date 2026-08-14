@@ -1,0 +1,33 @@
+flowchart TD
+    classDef step fill:#1E293B,stroke:#1E3A8A,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef action fill:#1E3A8A,stroke:#1E40AF,stroke-width:1.5px,color:#FFFFFF;
+    classDef study fill:#10B981,stroke:#059669,stroke-width:1.5px,color:#FFFFFF;
+    classDef decision fill:#F59E0B,stroke:#D97706,stroke-width:1.5px,color:#0F172A;
+    classDef finish fill:#0284C7,stroke:#0369A1,stroke-width:2px,color:#FFFFFF;
+    classDef exception fill:#EF4444,stroke:#B91C1C,stroke-width:1.5px,color:#FFFFFF;
+
+    START([시작: 수험생 웹사이트 유입]):::step --> ST01["ST-01: 메인 탐색 & 14시간 착석 통계 확인"]:::action
+    ST01 --> DEC01{"어떤 정보를 먼저 확인할 것인가?"}:::decision
+
+    DEC01 -- "교복 시크릿 핏" --> ST02["ST-02: 교복 셔츠 안 0.1mm 밀착 룩북 확인"]:::action
+    ST02 --> ST03["ST-03: 독서실 0dB 무소음 탄성 테크 검증"]:::action
+    ST03 --> ST05["ST-05: 교복 상의(85~110) 사이즈 매칭"]:::action
+
+    DEC01 -- "합격생 100인 후기" --> ST04["ST-04: 서울대/의대 선배 실착 후기 검증"]:::action
+    ST04 --> ST05
+
+    DEC01 -- "순공 플래너 시연" --> ST07["ST-07: 스터디 타이머 & 집중도 점수 시연"]:::study
+    ST07 --> ST05
+
+    ST05 --> DEC02{"30일 무료 체험 신청 진행?"}:::decision
+
+    DEC02 -- Yes --> ST06["ST-06: 30일 무료 체험 폼 작성 (학생/사이즈/주소)"]:::action
+    DEC02 -- No --> ST01
+
+    ST06 --> DEC03{"입력값 유효성 검증"}:::decision
+    DEC03 -- "입력 오류" --> ST06E["ST-06E: 오류 필드 안내 및 재입력"]:::exception
+    ST06E --> ST06
+
+    DEC03 -- "정상 제출" --> ST06A["ST-06A: 30일 무료 체험 접수 완료 & 배송 출발"]:::finish
+    ST06A --> ST08["ST-08: 카카오 알림톡 수신 & 순공 대시보드 연동"]:::finish
+    ST08 --> END([종료: 30일 집/독서실 실착 후 결정]):::step

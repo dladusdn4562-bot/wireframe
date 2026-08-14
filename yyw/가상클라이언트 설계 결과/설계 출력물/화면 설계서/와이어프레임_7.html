@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM GAMING e스포츠 햅틱 기어 와이어프레임 스튜디오 (가상클라이언트 7: 한태준)</title>
+  <style>
+    :root {
+      --primary: #00F0FF;
+      --primary-dark: #0A0E17;
+      --accent: #8B5CF6;
+      --bg: #07090E;
+      --surface: #0F172A;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --border: #1E293B;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'JetBrains Mono', -apple-system, BlinkMacSystemFont, sans-serif; }
+    body { background: var(--bg); color: var(--text); display: flex; height: 100vh; overflow: hidden; }
+    
+    .sidebar { width: 340px; background: var(--primary-dark); border-right: 1px solid var(--border); display: flex; flex-direction: column; flex-shrink: 0; }
+    .sidebar-header { padding: 20px; border-bottom: 1px solid var(--border); background: #05070B; }
+    .sidebar-header h1 { font-size: 16px; font-weight: 800; color: var(--primary); margin-bottom: 4px; }
+    .sidebar-header p { font-size: 12px; color: var(--text-muted); }
+    .screen-tree { flex: 1; overflow-y: auto; padding: 12px; }
+    .tree-group-title { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; margin: 12px 8px 6px; }
+    .tree-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-radius: 6px; font-size: 13px; cursor: pointer; transition: all 0.2s; margin-bottom: 2px; }
+    .tree-item:hover { background: rgba(0,240,255,0.1); color: var(--primary); }
+    .tree-item.active { background: var(--primary); color: #000; font-weight: 700; }
+    .badge { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 700; }
+    .badge-page { background: #1E293B; color: var(--primary); }
+    .badge-modal { background: #1F2937; color: var(--accent); }
+    .badge-except { background: #450A0A; color: #F87171; }
+    .tree-item.active .badge { background: #000; color: var(--primary); }
+
+    .main-canvas { flex: 1; display: flex; flex-direction: column; overflow: hidden; background: #030508; }
+    .canvas-toolbar { height: 56px; background: var(--primary-dark); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+    .screen-title { font-size: 15px; font-weight: 700; color: var(--primary); }
+    .viewport-controls { display: flex; gap: 8px; }
+    .vp-btn { padding: 6px 12px; border: 1px solid var(--border); background: var(--surface); color: #fff; border-radius: 6px; font-size: 12px; cursor: pointer; }
+    .vp-btn.active { background: var(--primary); color: #000; border-color: var(--primary); font-weight: 700; }
+    
+    .viewport-wrapper { flex: 1; overflow-y: auto; padding: 30px; display: flex; justify-content: center; align-items: flex-start; }
+    .device-frame { background: var(--surface); box-shadow: 0 20px 25px -5px rgba(0, 240, 255, 0.1); border-radius: 12px; overflow: hidden; width: 100%; max-width: 1200px; border: 1px solid var(--border); min-height: 800px; }
+    .device-frame.tablet { max-width: 768px; }
+    .device-frame.mobile { max-width: 390px; }
+
+    .wf-gnb { height: 68px; background: var(--primary-dark); display: flex; align-items: center; justify-content: space-between; padding: 0 28px; border-bottom: 2px solid var(--primary); }
+    .wf-logo { font-size: 18px; font-weight: 900; color: var(--primary); letter-spacing: -0.5px; }
+    .wf-nav { display: flex; gap: 20px; font-size: 13px; font-weight: 600; }
+    .wf-nav span { cursor: pointer; color: var(--text-muted); }
+    .wf-nav span:hover { color: var(--primary); }
+    .wf-btn-cta { background: var(--primary); color: #000; padding: 8px 16px; border-radius: 6px; font-size: 12px; font-weight: 800; border: none; cursor: pointer; }
+    
+    .wf-content { padding: 36px 28px; }
+    .wf-hero { background: linear-gradient(135deg, #0A0E17 0%, #1E1B4B 100%); padding: 48px 32px; border-radius: 12px; text-align: center; border: 1px solid var(--primary); margin-bottom: 28px; }
+    .wf-hero h2 { font-size: 30px; font-weight: 900; color: var(--primary); margin-bottom: 12px; }
+    .wf-hero p { font-size: 15px; color: #38BDF8; margin-bottom: 24px; }
+    .wf-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 28px; }
+    .wf-card { background: #0A0E17; border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
+    .wf-card h3 { font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+    .wf-card p { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+    
+    .discord-widget { height: 320px; background: #1E1B4B; border-radius: 10px; border: 2px dashed var(--accent); display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 24px; text-align: center; }
+    .modal-preview { background: #0A0E17; border: 2px solid var(--accent); border-radius: 12px; padding: 32px; max-width: 520px; margin: 0 auto; text-align: center; }
+    .form-group { margin-bottom: 16px; text-align: left; }
+    .form-group label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px; color: var(--text-muted); }
+    .form-input { width: 100%; padding: 10px 14px; background: #111827; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; color: #fff; }
+    .wf-footer { background: #05070B; color: var(--text-muted); padding: 36px 28px; font-size: 12px; text-align: center; line-height: 1.6; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h1>SEUMIM GAMING HUD</h1>
+      <p>가상클라이언트 7: 한태준 (14개 화면 스튜디오)</p>
+    </div>
+    <div class="screen-tree">
+      <div class="tree-group-title">1. 메인 및 햅틱 테크</div>
+      <div class="tree-item active" onclick="switchScreen('SCR-01')"><span>SCR-01 0.0 네온 메인</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-02')"><span>SCR-02 1.0 게이밍 기어</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-03')"><span>SCR-03 1.3 사이즈 가이드</span><span class="badge badge-modal">MODAL</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-04')"><span>SCR-04 2.0 햅틱 테크</span><span class="badge badge-page">PAGE</span></div>
+
+      <div class="tree-group-title">2. 디스코드 & 시착</div>
+      <div class="tree-item" onclick="switchScreen('SCR-05')"><span>SCR-05 3.0 디스코드 HUD</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-06')"><span>SCR-06 3.2 파티원 랭킹</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-07')"><span>SCR-07 4.0 30일 시착 안내</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-08')"><span>SCR-08 4.2 디스코드 신청</span><span class="badge badge-modal">MODAL</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-09')"><span>SCR-09 4.3 주문 완료 안내</span><span class="badge badge-page">PAGE</span></div>
+
+      <div class="tree-group-title">3. 에임 케어 & 시스템</div>
+      <div class="tree-item" onclick="switchScreen('SCR-10')"><span>SCR-10 5.0 에임 케어</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-11')"><span>SCR-11 6.1 디스코드 로그인</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-12')"><span>SCR-12 6.2 마이페이지</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-13')"><span>SCR-13 9.1 404 Not Found</span><span class="badge badge-except">EXCEPT</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-14')"><span>SCR-14 9.2 API 점검</span><span class="badge badge-except">EXCEPT</span></div>
+    </div>
+  </div>
+
+  <div class="main-canvas">
+    <div class="canvas-toolbar">
+      <div class="screen-title" id="screenTitle">SCR-01 0.0 네온 다크 메인 랜딩 (P-0.0)</div>
+      <div class="viewport-controls">
+        <button class="vp-btn active" onclick="setViewport('desktop')">Desktop</button>
+        <button class="vp-btn" onclick="setViewport('tablet')">Tablet</button>
+        <button class="vp-btn" onclick="setViewport('mobile')">Mobile</button>
+      </div>
+    </div>
+
+    <div class="viewport-wrapper">
+      <div class="device-frame" id="deviceFrame">
+        <div class="wf-gnb">
+          <div class="wf-logo">&lt;SEUMIM_GAMING /&gt;</div>
+          <div class="wf-nav">
+            <span onclick="switchScreen('SCR-02')">게이밍 기어</span>
+            <span onclick="switchScreen('SCR-04')">햅틱 테크</span>
+            <span onclick="switchScreen('SCR-05')">디스코드 HUD</span>
+            <span onclick="switchScreen('SCR-07')">30일 무상 시착</span>
+            <span onclick="switchScreen('SCR-10')">에임 케어</span>
+          </div>
+          <button class="wf-btn-cta" onclick="switchScreen('SCR-08')">👾 Discord로 30일 시착</button>
+        </div>
+
+        <div class="wf-content" id="screenContent">
+          <div class="wf-hero">
+            <h2>0.01초 햅틱 넛지, 무너진 에임을 바로잡다</h2>
+            <p>목 각도 45도 시 반응속도 0.2초 지연! 화면 가림 없는 0.01s 햅틱 기어 & 디스코드 HUD 연동</p>
+            <button class="wf-btn-cta" style="font-size: 14px; padding: 12px 24px;" onclick="switchScreen('SCR-08')">30일 무상 시착 신청 (디스코드 1-Click)</button>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>🎯 에임 정확도 23% 향상</h3>
+              <p>목이 모니터 앞으로 쏠리는 순간 0.01초 미세 햅틱 진동이 척추를 바로잡아 에임 흔들림을 방지합니다.</p>
+            </div>
+            <div class="wf-card">
+              <h3>🎧 95g 초경량 헤드셋 무간섭</h3>
+              <p>헤드셋 착용 시 전혀 걸리적거리지 않는 인체공학적 넥 라인과 게이밍 져지 안 0.1mm 시크릿 핏.</p>
+            </div>
+            <div class="wf-card">
+              <h3>👾 디스코드 봇 랭킹 연동</h3>
+              <p>파티원들과 실시간 척추 밸런스 점수를 경쟁하고 큐 대기 시간 10초 스트레칭 알림을 받으세요.</p>
+            </div>
+          </div>
+          <div class="discord-widget">
+            <h3 style="color: var(--primary); margin-bottom: 8px;">[Discord Bot Live Stream Widget]</h3>
+            <p style="color: var(--text-muted); font-size: 13px;">현재 5인 랭크 파티원의 자세 점수가 HUD 오버레이로 실시간 동기화 중입니다.</p>
+          </div>
+        </div>
+
+        <div class="wf-footer">
+          (주)스밈 e스포츠 게이밍 사업부 | 30일 무상 시착 보증제 | KC 전자파 적합성 인증 완료<br>
+          Discord Community: discord.gg/seumim-gaming | Steam Workshop 연동 지원
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const screens = {
+      'SCR-01': {
+        title: 'SCR-01 0.0 네온 다크 메인 랜딩 (P-0.0)',
+        html: `
+          <div class="wf-hero">
+            <h2>0.01초 햅틱 넛지, 무너진 에임을 바로잡다</h2>
+            <p>목 각도 45도 시 반응속도 0.2초 지연! 화면 가림 없는 0.01s 햅틱 기어 & 디스코드 HUD 연동</p>
+            <button class="wf-btn-cta" style="font-size: 14px; padding: 12px 24px;" onclick="switchScreen('SCR-08')">30일 무상 시착 신청 (디스코드 1-Click)</button>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>🎯 에임 정확도 23% 향상</h3>
+              <p>목이 모니터 앞으로 쏠리는 순간 0.01초 미세 햅틱 진동이 척추를 바로잡아 에임 흔들림을 방지합니다.</p>
+            </div>
+            <div class="wf-card">
+              <h3>🎧 95g 초경량 헤드셋 무간섭</h3>
+              <p>헤드셋 착용 시 전혀 걸리적거리지 않는 인체공학적 넥 라인과 게이밍 져지 안 0.1mm 시크릿 핏.</p>
+            </div>
+            <div class="wf-card">
+              <h3>👾 디스코드 봇 랭킹 연동</h3>
+              <p>파티원들과 실시간 척추 밸런스 점수를 경쟁하고 큐 대기 시간 10초 스트레칭 알림을 받으세요.</p>
+            </div>
+          </div>
+          <div class="discord-widget">
+            <h3 style="color: var(--primary); margin-bottom: 8px;">[Discord Bot Live Stream Widget]</h3>
+            <p style="color: var(--text-muted); font-size: 13px;">현재 5인 랭크 파티원의 자세 점수가 HUD 오버레이로 실시간 동기화 중입니다.</p>
+          </div>
+        `
+      },
+      'SCR-05': {
+        title: 'SCR-05 3.0 디스코드 HUD 오버레이 (P-3.0)',
+        html: `
+          <div class="wf-hero" style="background: #1E1B4B; border-color: var(--accent);">
+            <h2 style="color: #C4B5FD;">파티원 5인 실시간 자세 랭킹 HUD</h2>
+            <p style="color: #A78BFA;">디스코드 음성 채널과 연동되어 게임 중 척추 점수를 실시간으로 비교합니다.</p>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card"><h3>👑 1위 한태준 (98점)</h3><p>에임 컨디션 최상 (목 각도 5도 유지)</p></div>
+            <div class="wf-card"><h3>🥈 2위 김원딜 (85점)</h3><p>거북목 주의 (목 각도 20도)</p></div>
+            <div class="wf-card"><h3>🥉 3위 박서폿 (62점)</h3><p>🚨 척추 무너짐 감지! 10초 스트레칭 권장</p></div>
+          </div>
+        `
+      },
+      'SCR-08': {
+        title: 'SCR-08 4.2 디스코드 1-Click 신청 [모달] (P-4.2)',
+        html: `
+          <div class="modal-preview">
+            <h2 style="font-size: 20px; font-weight: 800; color: var(--primary); margin-bottom: 12px;">30일 무상 시착 신청</h2>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">디스코드 계정 승인 후 30일간 랭크 게임 중 실착해 보세요.</p>
+            <button class="wf-btn-cta" style="width: 100%; padding: 12px; margin-bottom: 16px; background: var(--accent); color: #fff;">👾 Continue with Discord</button>
+            <div class="form-group"><label>수령인 이름 & 연락처</label><input type="text" class="form-input" placeholder="한태준 / 010-1234-5678"></div>
+            <div class="form-group"><label>배송받을 주소</label><input type="text" class="form-input" placeholder="배송지 주소를 입력하세요"></div>
+            <div class="form-group"><label>게이밍 상의 사이즈</label><select class="form-input"><option>100 (L) - 권장 체형 170~180cm</option><option>95 (M)</option><option>105 (XL)</option></select></div>
+            <button class="wf-btn-cta" style="width: 100%; padding: 14px; font-size: 14px;" onclick="switchScreen('SCR-09')">무상 시착 접수 완료 (배송비 0원)</button>
+          </div>
+        `
+      },
+      'SCR-09': {
+        title: 'SCR-09 4.3 주문 완료 및 배송 안내 [가정] (P-4.3)',
+        html: `
+          <div class="wf-hero" style="background: #064E3B; border-color: #10B981;">
+            <h2 style="color: #6EE7B7;">🎉 30일 무상 시착 접수가 완료되었습니다!</h2>
+            <p style="color: #A7F3D0;">주문 번호: <strong>GAMING-2026-0812-701</strong> | 디스코드 봇 초대 링크가 전송되었습니다.</p>
+          </div>
+        `
+      }
+    };
+
+    function switchScreen(id) {
+      document.querySelectorAll('.tree-item').forEach(el => el.classList.remove('active'));
+      event?.currentTarget?.classList.add('active');
+      const data = screens[id] || {
+        title: `${id} 화면 인터랙티브 뷰`,
+        html: `<div class="wf-hero"><h2>${id} 와이어프레임 뷰</h2><p>해당 화면의 사이버 다크 게이밍 UI 컴포넌트가 렌더링됩니다.</p></div>`
+      };
+      document.getElementById('screenTitle').innerText = data.title;
+      document.getElementById('screenContent').innerHTML = data.html;
+    }
+
+    function setViewport(type) {
+      document.querySelectorAll('.vp-btn').forEach(el => el.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+      document.getElementById('deviceFrame').className = 'device-frame ' + (type === 'desktop' ? '' : type);
+    }
+  </script>
+</body>
+</html>

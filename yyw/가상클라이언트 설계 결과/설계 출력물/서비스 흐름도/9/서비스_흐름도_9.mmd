@@ -1,0 +1,37 @@
+graph TD
+    classDef step fill:#134E4A,stroke:#0D9488,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef action fill:#0D9488,stroke:#115E59,stroke-width:1.5px,color:#FFFFFF;
+    classDef nurse fill:#059669,stroke:#047857,stroke-width:1.5px,color:#FFFFFF;
+    classDef decision fill:#F59E0B,stroke:#D97706,stroke-width:1.5px,color:#0F172A;
+    classDef finish fill:#0284C7,stroke:#0369A1,stroke-width:2px,color:#FFFFFF;
+    classDef exception fill:#EF4444,stroke:#B91C1C,stroke-width:1.5px,color:#FFFFFF;
+
+    START([시작: 메디컬 민트 웹사이트 접속]):::step --> ST01["ST-01: 메인 탐색 & 2만 보 요통 통계 공감"]:::action
+    ST01 --> DEC01{"어떤 정보를 먼저 확인할 것인가?"}:::decision
+
+    DEC01 -- "0.1mm 심리스 스크럽 핏" --> ST02["ST-02: 스크럽 안 무봉제 핏 & 은나노 항균"]:::action
+    ST02 --> ST06["ST-06: 상의(85~105) & 발 사이즈 매칭"]:::action
+    ST06 --> ST07["ST-07: 간호사 1-Click 병동 1+1 신청 모달"]:::nurse
+
+    DEC01 -- "족저 충격 62% 흡수" --> ST03["ST-03: 충격 흡수 인솔 & 골반 정렬 성적서"]:::action
+    ST03 --> ST07
+
+    DEC01 -- "나이팅게일 100인 후기" --> ST04["ST-04: 3교대 간호사 실착 리뷰 & 평점"]:::nurse
+    ST04 --> ST10["ST-10: 전국 100개 병동 단체 후기 확인"]:::nurse
+    ST10 --> ST07
+
+    DEC01 -- "3교대 힐링 팁" --> ST05["ST-05: 교대 시간 10초 족저/골반 리셋"]:::action
+    ST05 --> ST09["ST-09: 병동 1+1 30일 무료체험 혜택"]:::action
+    ST09 --> ST07
+
+    ST07 --> DEC02{"간호사 면허/신청서 검증"}:::decision
+    DEC02 -- "입력 오류" --> ST07E["ST-07E: 오류 안내 및 재입력"]:::exception
+    ST07E --> ST07
+
+    DEC02 -- "정상 제출" --> ST08["ST-08: 병동 1+1 무료체험 접수 완료"]:::finish
+    ST08 --> ST11["ST-11: 간호사 면허 간편 로그인 [가정]"]:::finish
+    ST11 --> ST12["ST-12: 마이페이지 병동 배송 현황 & 무료 반품"]:::finish
+    ST12 --> END([종료: 병동에서 30일간 근무 중 실착 후 결정]):::step
+
+    EX1["ST-13: 404 Not Found [가정]"]:::exception -.-> ST01
+    EX2["ST-14: 시스템 점검 안내 [가정]"]:::exception -.-> ST01

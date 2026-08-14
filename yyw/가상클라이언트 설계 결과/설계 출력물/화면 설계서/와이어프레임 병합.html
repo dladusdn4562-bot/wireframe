@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM(스밈) - Biomechanist-led Precision Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Nanum+Myeongjo:wght@700;800&family=Pretendard:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0A0F1D;
+      --surface-dark: #111827;
+      --surface-card: #1E293B;
+      --primary-accent: #38BDF8;
+      --primary-blue: #0284C7;
+      --gold-accent: #D97706;
+      --gold-light: #FEF3C7;
+      --gold-border: #F59E0B;
+      --text-white: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-dark: #0F172A;
+      --border-dark: #334155;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 24px;
+      --font-serif: 'Cinzel', 'Nanum Myeongjo', serif;
+      --font-sans: 'Pretendard', -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font-sans); }
+    body { background: #050811; color: var(--text-white); display: flex; flex-direction: column; height: 100vh; overflow: hidden; font-size: 15px; }
+
+    /* Studio Top Toolbar */
+    .studio-header { height: 60px; background: #070B14; border-bottom: 1px solid #1F2937; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; flex-shrink: 0; z-index: 1000; }
+    .studio-brand { display: flex; align-items: center; gap: 12px; }
+    .studio-brand h1 { font-family: var(--font-serif); font-size: 18px; font-weight: 900; color: #38BDF8; letter-spacing: 1px; }
+    .badge-luxury { background: rgba(217, 119, 6, 0.15); color: #FCD34D; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(217, 119, 6, 0.3); }
+
+    .tabs-nav-bar { display: flex; gap: 6px; background: #111827; padding: 4px; border-radius: 10px; border: 1px solid #374151; }
+    .tab-item-btn { padding: 8px 18px; border: none; background: transparent; color: #9CA3AF; font-size: 13px; font-weight: 800; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+    .tab-item-btn:hover { color: #fff; }
+    .tab-item-btn.active { background: var(--primary-blue); color: #fff; box-shadow: 0 2px 10px rgba(2, 132, 199, 0.5); }
+
+    .vp-switch-group { display: flex; gap: 6px; }
+    .vp-switch-btn { padding: 6px 14px; border: 1px solid #374151; background: #111827; border-radius: 8px; font-size: 12px; font-weight: 800; color: #9CA3AF; cursor: pointer; transition: all 0.15s; }
+    .vp-switch-btn:hover { background: #1F2937; color: #fff; }
+    .vp-switch-btn.active { background: #38BDF8; color: #0A0F1D; font-weight: 900; border-color: #38BDF8; }
+
+    /* Canvas Stage Area */
+    .canvas-stage { flex: 1; overflow-y: auto; padding: 24px 16px; display: flex; justify-content: center; align-items: flex-start; background: #050811; }
+    
+    /* Device Frame */
+    .viewport-box { background: var(--bg-dark); box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8); border-radius: var(--radius-md); overflow: hidden; width: 100%; max-width: 1200px; border: 1px solid #1F2937; transition: max-width 0.3s ease; position: relative; }
+    .viewport-box.tablet { max-width: 768px; }
+    .viewport-box.mobile { max-width: 390px; }
+
+    /* The Garden Clinic Style Live Bar */
+    .garden-live-bar { background: #080D1A; color: #94A3B8; padding: 9px 32px; font-size: 12px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1E293B; }
+    .garden-live-bar strong { color: #38BDF8; }
+    .pulse-dot { width: 8px; height: 8px; background: #10B981; border-radius: 50%; display: inline-block; margin-right: 6px; animation: pulseGlow 1.5s infinite; }
+    @keyframes pulseGlow { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+
+    /* The Garden Clinic Style Global Header */
+    .garden-header { height: 84px; background: rgba(10, 15, 29, 0.95); backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: space-between; padding: 0 36px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); position: sticky; top: 0; z-index: 100; }
+    .header-logo { font-family: var(--font-serif); font-size: 24px; font-weight: 900; color: #fff; letter-spacing: 2px; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+    .header-logo span { font-family: var(--font-sans); font-size: 11px; font-weight: 900; background: rgba(56, 189, 248, 0.15); color: #38BDF8; padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(56, 189, 248, 0.3); }
+    .nav-links-wrap { display: flex; gap: 32px; font-size: 15px; font-weight: 800; letter-spacing: -0.3px; }
+    .nav-links-wrap a { text-decoration: none; color: #CBD5E1; cursor: pointer; transition: color 0.15s; position: relative; }
+    .nav-links-wrap a:hover, .nav-links-wrap a.active { color: #38BDF8; }
+    .nav-links-wrap a.active::after { content: ''; position: absolute; bottom: -8px; left: 0; width: 100%; height: 2px; background: #38BDF8; }
+    
+    .header-actions { display: flex; align-items: center; gap: 14px; }
+    .btn-header-call { background: rgba(217, 119, 6, 0.15); color: #FCD34D; border: 1px solid rgba(245, 158, 11, 0.4); padding: 9px 16px; border-radius: var(--radius-sm); font-size: 13px; font-weight: 800; text-decoration: none; display: flex; align-items: center; gap: 6px; }
+    .btn-header-reserve { background: #38BDF8; color: #0A0F1D; border: none; padding: 10px 22px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 900; cursor: pointer; transition: all 0.2s; }
+    .btn-header-reserve:hover { background: #7DD3FC; transform: translateY(-1px); }
+
+    /* Page View Display */
+    .view-panel { display: none; }
+    .view-panel.active { display: block; }
+
+    /* Common Section Theme */
+    .luxury-sec { padding: 88px 48px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+    .luxury-sec.alt-dark { background: #070B14; }
+    .sec-badge-pill { display: inline-block; background: rgba(56, 189, 248, 0.1); color: #38BDF8; font-size: 12px; font-weight: 900; padding: 5px 16px; border-radius: 30px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; border: 1px solid rgba(56, 189, 248, 0.2); }
+    .sec-headline { text-align: center; max-width: 820px; margin: 0 auto 56px; }
+    .sec-headline h2 { font-family: var(--font-serif); font-size: 34px; font-weight: 900; color: #F8FAFC; margin-bottom: 14px; letter-spacing: -0.5px; line-height: 1.3; }
+    .sec-headline p { font-size: 16px; color: var(--text-muted); line-height: 1.7; font-weight: 500; }
+
+    /* Grids & Luxury Cards */
+    .grid-3-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .grid-2-col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 36px; align-items: center; }
+    .grid-4-col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+    .luxury-card { background: var(--surface-card); border: 1px solid var(--border-dark); border-radius: var(--radius-md); padding: 36px; transition: all 0.3s ease; }
+    .luxury-card:hover { transform: translateY(-4px); border-color: var(--primary-accent); box-shadow: 0 12px 30px -10px rgba(56, 189, 248, 0.2); }
+    .card-num-gold { font-family: var(--font-serif); font-size: 28px; font-weight: 900; color: #F59E0B; margin-bottom: 12px; }
+    .luxury-card h3 { font-size: 20px; font-weight: 900; color: #F8FAFC; margin-bottom: 12px; line-height: 1.35; }
+    .luxury-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+
+    /* The Garden Style Fullscreen Hero (SEC-M01) */
+    .thegarden-hero { background: radial-gradient(circle at center, #1E293B 0%, #0A0F1D 80%); padding: 110px 48px; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.08); position: relative; }
+    .hero-optima-title { font-family: var(--font-serif); font-size: 52px; font-weight: 900; color: #F8FAFC; letter-spacing: 1.5px; line-height: 1.2; margin-bottom: 24px; }
+    .hero-optima-title span { color: #38BDF8; font-style: italic; }
+    .hero-sub-korean { font-size: 20px; font-weight: 700; color: #CBD5E1; margin-bottom: 36px; line-height: 1.6; }
+    .hero-badges-row { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+    .h-chip { font-size: 13px; font-weight: 800; padding: 7px 16px; border-radius: 30px; }
+    .h-chip.blue-glass { background: rgba(56, 189, 248, 0.12); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); }
+    .h-chip.gold-glass { background: rgba(217, 119, 6, 0.15); color: #FCD34D; border: 1px solid rgba(245, 158, 11, 0.4); }
+    .hero-btn-row { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+    .btn-primary-reserve { background: #38BDF8; color: #0A0F1D; border: none; padding: 18px 44px; border-radius: var(--radius-sm); font-size: 17px; font-weight: 900; cursor: pointer; box-shadow: 0 12px 30px -5px rgba(56, 189, 248, 0.5); transition: all 0.2s; }
+    .btn-primary-reserve:hover { background: #7DD3FC; transform: translateY(-2px); }
+    .btn-gold-call { background: #D97706; color: #fff; border: none; padding: 18px 36px; border-radius: var(--radius-sm); font-size: 16px; font-weight: 900; cursor: pointer; box-shadow: 0 12px 30px -5px rgba(217, 119, 6, 0.4); }
+
+    /* The Garden Style Concerns Selector (SEC-M05) */
+    .concerns-container { background: #111827; border: 1px solid #1F2937; border-radius: var(--radius-lg); overflow: hidden; display: grid; grid-template-columns: 0.9fr 1.1fr; }
+    .concerns-nav-list { background: #0B1120; border-right: 1px solid #1F2937; padding: 20px 0; }
+    .concern-item { padding: 18px 28px; cursor: pointer; border-left: 4px solid transparent; transition: all 0.2s; }
+    .concern-item:hover { background: rgba(56, 189, 248, 0.05); }
+    .concern-item.active { background: #1E293B; border-left-color: #38BDF8; }
+    .concern-item h4 { font-size: 16px; font-weight: 900; color: #F8FAFC; margin-bottom: 4px; }
+    .concern-item span { font-size: 12px; color: #94A3B8; }
+    .concern-display-panel { padding: 44px; display: flex; flex-direction: column; justify-content: space-between; }
+    .concern-badge-tag { display: inline-block; background: rgba(56, 189, 248, 0.15); color: #38BDF8; font-size: 12px; font-weight: 900; padding: 4px 12px; border-radius: 4px; margin-bottom: 16px; }
+    .concern-display-panel h3 { font-size: 24px; font-weight: 900; color: #fff; margin-bottom: 12px; line-height: 1.35; }
+    .concern-display-panel p { font-size: 15px; color: #94A3B8; line-height: 1.75; margin-bottom: 24px; }
+
+    /* 3D Simulation Panel (SEC-M06) */
+    .sim-card-box { background: #111827; border: 1px solid #1F2937; border-radius: var(--radius-lg); padding: 44px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .sim-slider-inner { background: #1E293B; padding: 28px; border-radius: 16px; border: 1px solid #334155; text-align: center; }
+    .sim-range { width: 90%; height: 10px; accent-color: #38BDF8; cursor: pointer; margin: 20px 0; }
+    .sim-tag-val { font-size: 24px; font-weight: 900; color: #FCD34D; margin-top: 10px; }
+
+    /* Size Calculator (SEC-M08) */
+    .calc-box-wrap { background: #111827; border: 2px solid #38BDF8; border-radius: var(--radius-lg); padding: 44px; text-align: center; max-width: 700px; margin: 0 auto; }
+    .calc-row-wrap { margin: 24px 0; text-align: left; }
+    .calc-row-wrap label { display: flex; justify-content: space-between; font-weight: 900; font-size: 15px; margin-bottom: 10px; color: #E2E8F0; }
+    .calc-output-card { background: rgba(56, 189, 248, 0.1); color: #38BDF8; padding: 20px; border-radius: 14px; font-size: 19px; font-weight: 900; margin: 24px 0; border: 1px dashed #38BDF8; }
+
+    /* Gold Seal Guarantee (SEC-M09) */
+    .gold-box-wrap { background: linear-gradient(135deg, #1C1917 0%, #292524 100%); border: 2px solid #D97706; border-radius: var(--radius-lg); padding: 56px 44px; text-align: center; }
+    .gold-seal-circ { width: 92px; height: 92px; background: #D97706; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 900; margin: 0 auto 24px; border: 4px solid #FCD34D; box-shadow: 0 10px 25px rgba(217, 119, 6, 0.4); }
+    .gold-box-wrap h2 { font-family: var(--font-serif); font-size: 32px; font-weight: 900; color: #FCD34D; margin-bottom: 14px; }
+    .gold-box-wrap p { font-size: 16px; color: #E7E5E4; max-width: 760px; margin: 0 auto 36px; line-height: 1.75; font-weight: 500; }
+
+    /* 3 Signature Cards (Category Page) */
+    .sig-prod-card { background: #111827; border: 1px solid #1F2937; border-radius: var(--radius-md); overflow: hidden; display: flex; flex-direction: column; }
+    .sig-prod-img { height: 220px; background: #1E293B; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 15px; font-weight: 900; color: #CBD5E1; position: relative; }
+    .sig-badge-label { position: absolute; top: 16px; left: 16px; background: #38BDF8; color: #0A0F1D; font-size: 11px; font-weight: 900; padding: 4px 10px; border-radius: 6px; }
+    .sig-prod-body { padding: 28px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .sig-prod-body h3 { font-size: 19px; font-weight: 900; color: #F8FAFC; margin-bottom: 10px; }
+    .sig-prod-specs { font-size: 13px; color: #94A3B8; margin-bottom: 24px; line-height: 1.65; }
+    .btn-sig-order { width: 100%; background: #38BDF8; color: #0A0F1D; border: none; padding: 13px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 900; cursor: pointer; }
+
+    /* Spec Matrix Table */
+    .luxury-matrix-table { width: 100%; border-collapse: collapse; margin-top: 32px; font-size: 14px; }
+    .luxury-matrix-table th, .luxury-matrix-table td { padding: 18px 24px; border: 1px solid #1F2937; text-align: center; }
+    .luxury-matrix-table th { background: #111827; font-weight: 900; color: #F8FAFC; }
+    .luxury-matrix-table td.glow-col { background: rgba(56, 189, 248, 0.08); font-weight: 900; color: #38BDF8; }
+
+    /* FAQ Accordion */
+    .faq-accordion-item { background: #111827; border: 1px solid #1F2937; border-radius: var(--radius-sm); margin-bottom: 14px; overflow: hidden; }
+    .faq-q-bar { padding: 22px 30px; font-weight: 900; font-size: 16px; color: #F8FAFC; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-q-bar:hover { background: #1E293B; }
+    .faq-a-content { padding: 0 30px 22px; font-size: 14px; color: #94A3B8; line-height: 1.75; display: none; }
+    .faq-accordion-item.open .faq-a-content { display: block; }
+    .faq-accordion-item.open .faq-q-bar { color: #38BDF8; }
+
+    /* Live Toast Popup */
+    .floating-toast { position: fixed; bottom: 28px; left: 28px; background: rgba(17, 24, 39, 0.95); color: #fff; padding: 16px 24px; border-radius: 12px; font-size: 13px; font-weight: 700; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); display: flex; align-items: center; gap: 12px; border: 1px solid #374151; z-index: 3000; }
+
+    /* The Garden Style Modal Overlay */
+    .garden-modal-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(5, 8, 17, 0.85); backdrop-filter: blur(8px); display: none; justify-content: center; align-items: center; z-index: 2500; }
+    .garden-modal-bg.open { display: flex; }
+    .garden-modal-box { background: #111827; width: 92%; max-width: 540px; border-radius: var(--radius-lg); padding: 44px; box-shadow: 0 30px 70px rgba(0, 0, 0, 0.8); text-align: center; border: 1px solid #38BDF8; position: relative; }
+    .garden-modal-box h2 { font-family: var(--font-serif); font-size: 26px; font-weight: 900; color: #F8FAFC; margin-bottom: 8px; }
+    .garden-modal-box p { font-size: 14px; color: #94A3B8; margin-bottom: 26px; }
+    .modal-input-group { text-align: left; margin-bottom: 16px; }
+    .modal-input-group label { display: block; font-size: 12px; font-weight: 900; color: #CBD5E1; margin-bottom: 6px; }
+    .modal-input-group input, .modal-input-group select { width: 100%; padding: 13px 16px; background: #0B1120; border: 1px solid #334155; color: #fff; border-radius: 8px; font-size: 14px; font-weight: 600; outline: none; }
+    .btn-kakao-sync-large { width: 100%; background: #FEE500; color: #000; border: none; padding: 16px; border-radius: 8px; font-size: 15px; font-weight: 900; cursor: pointer; margin-bottom: 14px; }
+    .btn-submit-reservation { width: 100%; background: #38BDF8; color: #0A0F1D; border: none; padding: 16px; border-radius: 8px; font-size: 16px; font-weight: 900; cursor: pointer; }
+    .btn-close-garden { margin-top: 16px; background: none; border: none; font-size: 13px; color: #94A3B8; text-decoration: underline; cursor: pointer; }
+
+    /* The Garden Style Footer */
+    .garden-footer { background: #070B14; color: #64748B; padding: 64px 48px; font-size: 13px; text-align: center; line-height: 1.85; border-top: 1px solid #1F2937; }
+    .garden-footer strong { color: #CBD5E1; }
+
+    /* Responsive Adaptation */
+    .viewport-box.mobile .grid-3-col, .viewport-box.mobile .grid-2-col, .viewport-box.mobile .grid-4-col { grid-template-columns: 1fr; }
+    .viewport-box.mobile .concerns-container { grid-template-columns: 1fr; }
+    .viewport-box.mobile .sim-card-box { grid-template-columns: 1fr; padding: 24px; }
+    .viewport-box.mobile .nav-links-wrap { display: none; }
+    .viewport-box.mobile .thegarden-hero { padding: 64px 20px; }
+    .viewport-box.mobile .hero-optima-title { font-size: 32px; }
+    .viewport-box.mobile .luxury-sec { padding: 56px 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Studio Control Bar -->
+  <header class="studio-header">
+    <div class="studio-brand">
+      <h1>SEUMIM BIOMED</h1>
+      <span class="badge-luxury">💎 더가든클리닉 벤치마킹 럭셔리 웰니스</span>
+    </div>
+
+    <!-- 4대 탭 컨트롤러 -->
+    <div class="tabs-nav-bar">
+      <button class="tab-item-btn active" onclick="switchGardenTab('tabMain')">1. 메인 랜딩 (14개 섹션)</button>
+      <button class="tab-item-btn" onclick="switchGardenTab('tabSignature')">2. 3대 시그니처 & 고민별 (10개 섹션)</button>
+      <button class="tab-item-btn" onclick="switchGardenTab('tabWhy')">3. 설계기준(Why) & R&D (10개 섹션)</button>
+      <button class="tab-item-btn" onclick="switchGardenTab('tabMypage')">4. 마이페이지 (반품 관리)</button>
+    </div>
+
+    <!-- 3단 반응형 뷰포트 스위처 -->
+    <div class="vp-switch-group">
+      <button class="vp-switch-btn active" onclick="setGardenVp('desktop')">Desktop 1200</button>
+      <button class="vp-switch-btn" onclick="setGardenVp('tablet')">Tablet 768</button>
+      <button class="vp-switch-btn" onclick="setGardenVp('mobile')">Mobile 390</button>
+    </div>
+  </header>
+
+  <!-- Stage Canvas -->
+  <main class="canvas-stage">
+    <div class="viewport-box" id="gardenViewport">
+      
+      <!-- Live Rolling Status Bar -->
+      <div class="garden-live-bar">
+        <div><span class="pulse-dot"></span> <strong>실시간 접수 현황:</strong> 오늘 배정된 30일 무료체험 키트 300개 중 <strong>278개 접수 완료</strong> (잔여 22개)</div>
+        <div>📞 VIP 직통 무료 상담: <strong>080-800-1234</strong></div>
+      </div>
+
+      <!-- The Garden Style Global GNB -->
+      <nav class="garden-header">
+        <div class="header-logo" onclick="switchGardenTab('tabMain')">
+          SEUMIM <span>BIOMED</span>
+        </div>
+        <div class="nav-links-wrap">
+          <a class="active" onclick="switchGardenTab('tabMain')">메인 홈</a>
+          <a onclick="switchGardenTab('tabWhy')">진료·설계기준 (Why)</a>
+          <a onclick="switchGardenTab('tabSignature')">3대 시그니처</a>
+          <a onclick="switchGardenTab('tabSignature')">고민별 맞춤 (Concerns)</a>
+          <a onclick="switchGardenTab('tabMypage')">체험관리·배송조회</a>
+        </div>
+        <div class="header-actions">
+          <a href="tel:0808001234" class="btn-header-call">📞 080 무료 전화</a>
+          <button class="btn-header-reserve" onclick="openGardenModal()">30일 무료체험 예약</button>
+        </div>
+      </nav>
+
+      <!-- ================================================================= -->
+      <!-- [TAB 1] 메인 랜딩페이지 14개 섹션 풀 구현 (더가든클리닉 스타일) -->
+      <!-- ================================================================= -->
+      <div id="tabMain" class="view-panel active">
+        
+        <!-- SEC-M01: 풀스크린 메인 비주얼 (Hero) -->
+        <section class="thegarden-hero">
+          <div class="hero-badges-row">
+            <span class="h-chip blue-glass">🔬 독자 특허 전도성 센서 섬유</span>
+            <span class="h-chip gold-glass">🛡️ 30일 현장 100% 무료 반품 보증</span>
+            <span class="h-chip blue-glass">🪶 0.1mm 심리스 무봉제 밀착 핏</span>
+          </div>
+          <h1 class="hero-optima-title">
+            Biomechanist-led<br>
+            <span>Precision Care.</span>
+          </h1>
+          <p class="hero-sub-korean">
+            당신에게 필요한 것만, 가장 정밀하게.<br>
+            일상에 바른 균형이 스며들게, 티 없이 바르게.
+          </p>
+          <div class="hero-btn-row">
+            <button class="btn-primary-reserve" onclick="openGardenModal()">30일 현장 무료체험 신청 (배송비 0원)</button>
+            <button class="btn-gold-call" onclick="window.location.href='tel:0808001234'">📞 080 무료 전화 주문</button>
+          </div>
+          <div style="font-size: 13px; color: var(--text-muted); font-weight: 600;">※ 결제 정보 입력 없이 제품부터 먼저 수령 | 불만족 시 왕복 배송비 100% 본사 부담</div>
+        </section>
+
+        <!-- SEC-M03: 스밈 설계 기준 (Why SEUMIM) -->
+        <section class="luxury-sec alt-dark">
+          <div class="sec-headline">
+            <span class="sec-badge-pill">WHY SEUMIM</span>
+            <h2>스밈이 세우는 4대 정밀 설계 기준</h2>
+            <p>기존 교정기의 통증, 오작동, 세탁 불가를 원천 기술력으로 해결했습니다.</p>
+          </div>
+          <div class="grid-4-col">
+            <div class="luxury-card">
+              <div class="card-num-gold">01</div>
+              <h3>전도성 센서 섬유</h3>
+              <p>딱딱한 기계 부착이 아닌, 실 자체에 센서를 직조하여 일반 옷처럼 자유롭게 물세탁이 가능합니다.</p>
+            </div>
+            <div class="luxury-card">
+              <div class="card-num-gold">02</div>
+              <h3>지렛대 탄성 복원</h3>
+              <p>강제 압박으로 인한 통증 없이, 지렛대 원리로 척추와 어깨가 자연스럽게 펴지는 인체공학적 설계.</p>
+            </div>
+            <div class="luxury-card">
+              <div class="card-num-gold">03</div>
+              <h3>오작동 제로 필터링</h3>
+              <p>신발 묶기 등 일상적인 일시적 움직임을 구별하여 불필요한 알림 스트레스를 원천 차단합니다.</p>
+            </div>
+            <div class="luxury-card">
+              <div class="card-num-gold">04</div>
+              <h3>30일 안심 보증</h3>
+              <p>일터에서 30일간 직접 입어보고 효과가 없으면 왕복 배송비 0원 전액 본사 부담으로 무료 반품.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEC-M05: 8대 고민별 맞춤 케어 (The Garden Concerns 매핑) -->
+        <section class="luxury-sec">
+          <div class="sec-headline">
+            <span class="sec-badge-pill">CONCERNS & SYMPTOMS</span>
+            <h2>당신의 직무와 일상 속 고민을 선택하세요</h2>
+            <p>더가든클리닉의 정밀 문진처럼, 증상에 꼭 맞춘 1:1 바이오메카닉스 솔루션을 제안합니다.</p>
+          </div>
+
+          <div class="concerns-container">
+            <div class="concerns-nav-list">
+              <div class="concern-item active" onclick="showConcern(0)">
+                <h4>1. 수술·진료 시 상체 기울어짐</h4>
+                <span>치과의사 / 외과의사 / 정밀 엔지니어</span>
+              </div>
+              <div class="concern-item" onclick="showConcern(1)">
+                <h4>2. 장시간 비행 & 기립 허리 통증</h4>
+                <span>항공 승무원 / 플로리스트 / 교사</span>
+              </div>
+              <div class="concern-item" onclick="showConcern(2)">
+                <h4>3. 18홀 라운딩 후 골반·무릎 충격</h4>
+                <span>액티브 시니어 / 프로 골퍼</span>
+              </div>
+              <div class="concern-item" onclick="showConcern(3)">
+                <h4>4. 아이를 안을 때 요추 삐끗함</h4>
+                <span>3040 육아맘 / 워킹맘 / 영유아 교사</span>
+              </div>
+              <div class="concern-item" onclick="showConcern(4)">
+                <h4>5. 14시간 코딩 거북목 & 굽은 등</h4>
+                <span>AI 개발자 / 웹툰 작가 / 펀드매니저</span>
+              </div>
+            </div>
+
+            <div class="concern-display-panel" id="concernDetail">
+              <div>
+                <span class="concern-badge-tag">추천 솔루션</span>
+                <h3 id="concernTitle">덴탈 & 서지컬 에르고 숄더-요추 하네스</h3>
+                <p id="concernDesc">
+                  8시간 미세 현미경 수술 및 진료 시 발생하는 편측 30도 비틀림 하중을 48% 균등 분산시킵니다. 
+                  가운 속에 착용해도 겉으로 티 나지 않는 0.1mm 심리스 무봉제 에어로 스판 및 90도 고온 멸균 세탁 섬유 적용.
+                </p>
+              </div>
+              <div>
+                <button class="btn-primary-reserve" onclick="openGardenModal()">이 솔루션으로 30일 무료체험하기</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEC-M06: 3D 하중 분산 시뮬레이터 -->
+        <section class="luxury-sec alt-dark">
+          <div class="sim-card-box">
+            <div>
+              <span class="sec-badge-pill">3D BIOMECHANICS SIMULATOR</span>
+              <h2 style="font-family: var(--font-serif); font-size: 28px; font-weight: 900; color: #38BDF8; margin-bottom: 14px;">착용 즉시 척추 하중 55% 분산</h2>
+              <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">
+                스밈의 3D 듀얼 앵커 프레임이 요추 전만을 바르게 고정하고 골반의 뒤틀림을 방어하여 퇴근 후 피로도를 혁신적으로 줄여줍니다.
+              </p>
+              <button class="btn-primary-reserve" onclick="openGardenModal()">30일 무료체험 신청</button>
+            </div>
+            <div class="sim-slider-inner">
+              <p style="font-size: 14px; color: #94A3B8; margin-bottom: 8px;">슬라이더를 움직여 하중 분산율을 확인하세요</p>
+              <input type="range" class="sim-range" min="10" max="100" value="50" oninput="document.getElementById('simDisplayVal').innerText = (this.value * 0.55).toFixed(1) + '% 하중 분산 감쇄'">
+              <div class="sim-tag-val" id="simDisplayVal">27.5% 하중 분산 감쇄</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEC-M08: 1:1 정밀 사이즈 계산기 -->
+        <section class="luxury-sec">
+          <div class="sec-headline">
+            <span class="sec-badge-pill">PRECISION FIT CALCULATOR</span>
+            <h2>내 신체 치수에 딱 맞는 1:1 맞춤 사이즈 찾기</h2>
+            <p>둘레 치수를 설정하시면 실패 없는 맞춤 사이즈와 0.1mm 밀착 가이드를 제안합니다.</p>
+          </div>
+          <div class="calc-box-wrap">
+            <div class="calc-row-wrap">
+              <label><span>허리 / 가슴 둘레 (인치 / cm)</span><strong id="gardenInchLabel" style="color: #38BDF8;">32 인치 (81 cm)</strong></label>
+              <input type="range" min="24" max="44" value="32" style="width: 100%; height: 8px; accent-color: #38BDF8;" oninput="updateGardenInch(this.value)">
+            </div>
+            <div class="calc-output-card" id="gardenCalcOutput">
+              추천 사이즈: <strong>M (표준 체형)</strong> - 0.1mm 심리스 최적 밀착
+            </div>
+            <button class="btn-primary-reserve" style="width: 100%;" onclick="openGardenModal()">이 사이즈로 30일 무료체험 키트 받기</button>
+          </div>
+        </section>
+
+        <!-- SEC-M09: 30일 무료체험 골드 씰 보증서 -->
+        <section class="luxury-sec alt-dark">
+          <div class="gold-box-wrap">
+            <div class="gold-seal-circ">100%<br>안심보증</div>
+            <h2>30일 현장 무료체험 & 100% 무료 반품 안심 보증서</h2>
+            <p>일터에서 30일간 직접 착용해 보세요. 허리와 관절이 편안해지지 않는다면 묻지도 따지지도 않고 100% 무료 수거해 드립니다. 왕복 배송비 0원 전액 본사 부담!</p>
+            <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+              <button class="btn-primary-reserve" onclick="openGardenModal()">30일 안심 무료체험 시작하기</button>
+              <a href="tel:0808001234" class="btn-gold-call" style="padding: 16px 28px; font-size: 15px;">📞 080-800-1234 전화 상담</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEC-M10: 10초 롱제비티 루틴 숏폼 비디오 -->
+        <section class="luxury-sec">
+          <div class="sec-headline">
+            <span class="sec-badge-pill">LONGEVITY & 10-SEC CARE</span>
+            <h2>퇴근 후 운동이 필요 없는 앉은 자리 10초 리셋</h2>
+            <p>앉은 자리에서 10초 만에 끝내는 호흡 및 미세 근육 이완 솔루션</p>
+          </div>
+          <div class="grid-3-col">
+            <div class="luxury-card" style="text-align: center;">
+              <div style="height: 150px; background: #0B1120; color: #38BDF8; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 16px; border: 1px solid #1F2937;">▶️ 10초 흉추 이완</div>
+              <h3>1. 흉추 & 날개뼈 10초 리셋</h3>
+              <p>의자에 앉아 기지개를 켜며 굳어있던 흉추를 이완시키는 호흡 루틴</p>
+            </div>
+            <div class="luxury-card" style="text-align: center;">
+              <div style="height: 150px; background: #0B1120; color: #38BDF8; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 16px; border: 1px solid #1F2937;">▶️ 10초 목 릴렉스</div>
+              <h3>2. 거북목 & 승모근 10초 릴렉스</h3>
+              <p>턱을 살짝 당겨 경추 C커브를 즉시 복원하는 정형외과 전문의 팁</p>
+            </div>
+            <div class="luxury-card" style="text-align: center;">
+              <div style="height: 150px; background: #0B1120; color: #38BDF8; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 16px; border: 1px solid #1F2937;">▶️ 10초 골반 순환</div>
+              <h3>3. 골반 수평 10초 순환</h3>
+              <p>다리 꼬기로 비틀린 좌우 골반 밸런스를 바로잡는 에어셀 스트레칭</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEC-M13: 5대 핵심 FAQ -->
+        <section class="luxury-sec alt-dark">
+          <div class="sec-headline">
+            <span class="sec-badge-pill">FAQ</span>
+            <h2>자주 묻는 질문</h2>
+            <p>고객님들이 가장 자주 묻는 질문들을 모았습니다.</p>
+          </div>
+          <div style="max-width: 820px; margin: 0 auto;">
+            <div class="faq-accordion-item open" onclick="this.classList.toggle('open')">
+              <div class="faq-q-bar"><span>Q. 세탁기에 그냥 돌려도 센서나 탄성이 안 망가지나요?</span><span>▼</span></div>
+              <div class="faq-a-content">네! 스밈은 딱딱한 기계가 아닌 '전도성 센서 섬유' 원천 기술로 제작되어 세탁망에 넣어 일반 세탁기로 자유롭게 물세탁이 가능합니다. KATRI 100회 세탁 복원력 인증을 완료했습니다.</div>
+            </div>
+            <div class="faq-accordion-item" onclick="this.classList.toggle('open')">
+              <div class="faq-q-bar"><span>Q. 30일 체험 후 반품할 때 배송비가 드나요?</span><span>▼</span></div>
+              <div class="faq-a-content">아닙니다. 30일간 일터에서 충분히 착용해 보신 후 불만족 시 왕복 배송비 0원 전액 본사 부담으로 1-Click 무료 수거를 진행해 드립니다.</div>
+            </div>
+            <div class="faq-accordion-item" onclick="this.classList.toggle('open')">
+              <div class="faq-q-bar"><span>Q. 전화로도 주문할 수 있나요?</span><span>▼</span></div>
+              <div class="faq-a-content">네, 무료 상담 전화 080-800-1234를 운영하고 있어 상담원과 통화 한 통으로 성함과 주소만 말씀해 주시면 댁으로 즉시 무료 발송해 드립니다.</div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ================================================================= -->
+      <!-- [TAB 2] 3대 시그니처 하드웨어 & 고민별 라인업 (10개 섹션) -->
+      <!-- ================================================================= -->
+      <div id="tabSignature" class="view-panel">
+        
+        <section class="luxury-sec">
+          <div class="sec-headline">
+            <span class="sec-badge-pill">SIGNATURE HARDWARE 3-LINEUP</span>
+            <h2>스밈의 3대 시그니처 체형 교정 하드웨어</h2>
+            <p>대표님의 원천 기획서에 명시된 3대 시그니처 라인업(어깨밴드, 척추조끼, 골반에어셀벨트)입니다.</p>
+          </div>
+
+          <div class="grid-3-col">
+            
+            <div class="sig-prod-card">
+              <div class="sig-prod-img">
+                <span class="sig-badge-label">시그니처 상의형</span>
+                🪶 0.1mm 살구색 심리스 메쉬<br>
+                🧲 전면 독일 마그네틱 자석 버클
+              </div>
+              <div class="sig-prod-body">
+                <div>
+                  <h3>어깨 & 거북목 프리미엄 교정 밴드</h3>
+                  <div class="sig-prod-specs">
+                    • <strong>작동 원리:</strong> 말린 어깨(라운드숄더)와 굽은 등을 지렛대 탄성으로 펴주어 머리 무게중심 정상화<br>
+                    • <strong>소재:</strong> 무봉제 초슬림 에어로 스판 (45g)<br>
+                    • <strong>체결:</strong> 잠든 아이 안 깨우는 0dB 무소음 자석
+                  </div>
+                </div>
+                <button class="btn-sig-order" onclick="openGardenModal()">30일 무료체험 신청</button>
+              </div>
+            </div>
+
+            <div class="sig-prod-card">
+              <div class="sig-prod-img">
+                <span class="sig-badge-label">시그니처 중간형</span>
+                👔 출근룩 위 숨은 지퍼 구조<br>
+                🛡️ 내부 3D 탄성 프레임 내장
+              </div>
+              <div class="sig-prod-body">
+                <div>
+                  <h3>스마트 척추 정렬 가디건 조끼</h3>
+                  <div class="sig-prod-specs">
+                    • <strong>작동 원리:</strong> 일상 움직임은 허용하되, 척추가 비정상적으로 틀어질 때 내부 프레임이 물리적 고정<br>
+                    • <strong>디자인:</strong> 출근용 셔츠 위에 깔끔하게 겹쳐 입는 숨은 지퍼<br>
+                    • <strong>통기성:</strong> 24시간 쾌적 에어로 쿨링 메쉬
+                  </div>
+                </div>
+                <button class="btn-sig-order" onclick="openGardenModal()">30일 무료체험 신청</button>
+              </div>
+            </div>
+
+            <div class="sig-prod-card">
+              <div class="sig-prod-img">
+                <span class="sig-badge-label">시그니처 하의형</span>
+                💨 다리 꼬기 방지 측면 에어셀<br>
+                ⛳ 18홀 충격 45% 흡수 메모리폼
+              </div>
+              <div class="sig-prod-body">
+                <div>
+                  <h3>골반 수평 유지 에어셀 벨트</h3>
+                  <div class="sig-prod-specs">
+                    • <strong>작동 원리:</strong> 다리를 꼬려고 하면 측면 에어셀이 부풀어 올라 물리적 차단 및 골반 수평 유지<br>
+                    • <strong>소재:</strong> 통기성 메모리폼 & 부드러운 접착 벨크로<br>
+                    • <strong>효과:</strong> 골프 스윙 비거리 +15m 및 무릎 연골 보호
+                  </div>
+                </div>
+                <button class="btn-sig-order" onclick="openGardenModal()">30일 무료체험 신청</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 라인업 정밀 스펙 비교표 -->
+          <div style="margin-top: 56px;">
+            <h3 style="font-family: var(--font-serif); font-size: 22px; font-weight: 900; text-align: center; margin-bottom: 20px; color: #F8FAFC;">📊 3대 시그니처 하드웨어 정밀 스펙 비교</h3>
+            <table class="luxury-matrix-table">
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>어깨 & 거북목 밴드</th>
+                  <th>척추 정렬 가디건 조끼</th>
+                  <th>골반 수평 에어셀 벨트</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>착용 부위</strong></td>
+                  <td class="glow-col">경추(C5-C6) & 견갑골</td>
+                  <td>흉추 & 요추(L4-L5)</td>
+                  <td>골반 & 고관절</td>
+                </tr>
+                <tr>
+                  <td><strong>핵심 기술</strong></td>
+                  <td class="glow-col">0.1mm 심리스 & 자석 버클</td>
+                  <td>내부 탄성 프레임 & 숨은 지퍼</td>
+                  <td>다리 꼬기 차단 에어셀 패드</td>
+                </tr>
+                <tr>
+                  <td><strong>순간 하중 분산율</strong></td>
+                  <td class="glow-col">48% 분산 감쇄</td>
+                  <td>55% 분산 감쇄</td>
+                  <td>52% 분산 감쇄</td>
+                </tr>
+                <tr>
+                  <td><strong>세탁 관리</strong></td>
+                  <td>세탁망 표준 물세탁</td>
+                  <td>세탁망 표준 물세탁</td>
+                  <td>세탁망 표준 물세탁</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ================================================================= -->
+      <!-- [TAB 3] 진료·설계기준 (Why SEUMIM) & R&D (10개 섹션) -->
+      <!-- ================================================================= -->
+      <div id="tabWhy" class="view-panel">
+        
+        <section class="luxury-sec">
+          <div class="sec-headline">
+            <span class="sec-badge-pill">WHY SEUMIM & MANIFESTO</span>
+            <h2>몸을 바르게 세우는 기술,<br>숨 쉬듯 삶 속에 스며드는 바른 균형</h2>
+            <p>부품 제조 기업의 원천 기술인 '전도성 센서 섬유'를 고부가가치 웰니스 플랫폼으로 혁신한 스밈의 브랜드 스토리입니다.</p>
+          </div>
+
+          <div class="grid-2-col">
+            <div>
+              <h3 style="font-family: var(--font-serif); font-size: 26px; font-weight: 900; margin-bottom: 16px; color: #38BDF8;">부품 원천 기술을 일상의 웰니스로</h3>
+              <p style="color: var(--text-muted); line-height: 1.85; margin-bottom: 20px;">
+                기존 시장의 교정기들은 과도한 압박으로 통증을 유발하거나, 딱딱한 센서가 신발 묶기 같은 일상 동작에도 오작동을 일으켜 알림 스트레스를 주었습니다. 
+                스밈은 <strong>실 자체에 센서를 직조하는 '전도성 센서 섬유 특허 기술'</strong>과 <strong>지차 필터링 오작동 제로 알고리즘</strong>을 완성하여, 
+                일반 옷처럼 물세탁하고 셔츠 속에 티 없이 입는 진짜 일상 교정을 구현했습니다.
+              </p>
+              <button class="btn-primary-reserve" onclick="openGardenModal()">스밈 30일 무료체험 참여하기</button>
+            </div>
+            <div style="background: #111827; border: 1px solid #1F2937; color: #fff; padding: 44px; border-radius: var(--radius-lg); text-align: center;">
+              <div style="font-family: var(--font-serif); font-size: 44px; font-weight: 900; color: #38BDF8; margin-bottom: 8px;">100%</div>
+              <div style="font-size: 18px; font-weight: 900; margin-bottom: 20px; color: #FCD34D;">무료 반품 안심 약속</div>
+              <p style="color: #94A3B8; font-size: 14px; line-height: 1.75;">
+                "효과를 체감하지 못한다면 고객에게 단 1원의 부담도 드리지 않습니다. 
+                이것이 우리가 제조 역량과 기술 장벽에 대해 가진 절대적 자신감입니다."
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ================================================================= -->
+      <!-- [TAB 4] 마이페이지 & 배송조회 / 1-Click 무료 반품 관리 -->
+      <!-- ================================================================= -->
+      <div id="tabMypage" class="view-panel">
+        
+        <section class="luxury-sec alt-dark">
+          <div class="sec-headline">
+            <span class="sec-badge-pill">MY TRIAL & RETURNS</span>
+            <h2>나의 30일 무료체험 관리 & 1-Click 무료 반품</h2>
+            <p>체험 기간 동안 잔여일수를 확인하고, 마음에 들지 않으실 경우 클릭 한 번으로 배송비 0원 무료 반품을 신청하세요.</p>
+          </div>
+
+          <div style="max-width: 720px; margin: 0 auto; background: #111827; border: 1px solid #1F2937; border-radius: var(--radius-lg); padding: 40px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1F2937; padding-bottom: 20px; margin-bottom: 24px;">
+              <div>
+                <h3 style="font-size: 19px; font-weight: 900; color: #F8FAFC;">주문번호: SEUMIM-2026-TRIAL-88</h3>
+                <p style="font-size: 13px; color: #94A3B8;">어깨 & 거북목 프리미엄 교정 밴드 (M 사이즈)</p>
+              </div>
+              <span style="background: rgba(16, 185, 129, 0.15); color: #10B981; font-weight: 900; font-size: 13px; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(16, 185, 129, 0.3);">체험 진행 중</span>
+            </div>
+
+            <!-- D-Day Progress Bar -->
+            <div style="margin-bottom: 32px;">
+              <div style="display: flex; justify-content: space-between; font-weight: 900; font-size: 14px; margin-bottom: 10px;">
+                <span style="color: #CBD5E1;">30일 무료체험 진행률</span>
+                <strong style="color: #38BDF8;">체험 12일차 / 18일 남음</strong>
+              </div>
+              <div style="width: 100%; height: 12px; background: #1F2937; border-radius: 6px; overflow: hidden;">
+                <div style="width: 40%; height: 100%; background: #38BDF8;"></div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <button style="padding: 15px; background: rgba(239, 68, 68, 0.15); color: #EF4444; border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; font-weight: 900; font-size: 14px; cursor: pointer;" onclick="alert('기사님 무료 수거 예약이 완료되었습니다. 고객님 부담 배송비는 0원입니다.');">
+                1-Click 무료 반품 신청 (배송비 0원)
+              </button>
+              <button style="padding: 15px; background: #38BDF8; color: #0A0F1D; border: none; border-radius: 8px; font-weight: 900; font-size: 14px; cursor: pointer;" onclick="alert('스밈 정기 멤버십 가입이 확정되었습니다!');">
+                체험 후 구매 확정 & 멤버십 가입
+              </button>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- The Garden Style Global Footer -->
+      <footer class="garden-footer">
+        <div style="font-family: var(--font-serif); font-size: 20px; font-weight: 900; color: #fff; margin-bottom: 12px; letter-spacing: 2px;">SEUMIM BIOMED</div>
+        <strong>(주)스밈 바이오메카닉스 웰니스 사업부</strong> | 사업자등록번호 120-88-12345 | 통신판매업신고 2026-서울강남-01234<br>
+        고객센터: <strong>080-800-1234</strong> (평일 09:00~18:00, 통화료 무료) | 본사: 서울시 강남구 테헤란로 123 스밈타워<br>
+        KATRI 시험 인증 완료 | KCL 안전 인증 완료 | 30일 100% 무료 반품 안심 보증 (왕복 배송비 0원 전액 본사 부담)
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Live Toast Alert -->
+  <div class="floating-toast" id="gardenToast">
+    <span>⚡</span> <span id="gardenToastMsg">방금 서울 서초구에서 [치과의사 0.1mm 서포터 M] 30일 무료체험 신청 완료</span>
+  </div>
+
+  <!-- The Garden Style 1-Click Trial Modal -->
+  <div class="garden-modal-bg" id="gardenModal" onclick="closeGardenModal()">
+    <div class="garden-modal-box" onclick="event.stopPropagation()">
+      <h2>30일 현장 무료체험 예약</h2>
+      <p>결제 정보 입력 없이 10초 만에 배송비 0원 무료 발송 접수됩니다.</p>
+      
+      <button class="btn-kakao-sync-large" onclick="alert('카카오 간편 주소가 1초 만에 연동되었습니다!'); closeGardenModal(); alert('🎉 30일 무료체험 키트 발송 접수가 완료되었습니다! 내일 발송됩니다.');">
+        💬 카카오로 1초 만에 간편 예약
+      </button>
+
+      <div style="margin: 16px 0; font-size: 12px; color: #64748B;">또는 배송 정보 직접 입력</div>
+
+      <div class="modal-input-group">
+        <label>성함 & 연락처</label>
+        <input type="text" placeholder="홍길동 / 010-1234-5678">
+      </div>
+      <div class="modal-input-group">
+        <label>배송받으실 주소</label>
+        <input type="text" placeholder="상세 주소를 입력하세요">
+      </div>
+      <div class="modal-input-group">
+        <label>시그니처 제품 및 사이즈 선택</label>
+        <select>
+          <option>1. 어깨 & 거북목 교정 밴드 (M - 권장)</option>
+          <option>1. 어깨 & 거북목 교정 밴드 (S - 슬림형)</option>
+          <option>1. 어깨 & 거북목 교정 밴드 (L - 체격형)</option>
+          <option>2. 척추 정렬 가디건 조끼 (M - 권장)</option>
+          <option>3. 골반 수평 에어셀 벨트 (Free 사이즈)</option>
+        </select>
+      </div>
+
+      <button class="btn-submit-reservation" onclick="closeGardenModal(); alert('🎉 30일 무료체험 키트 신청이 완료되었습니다! 내일 발송됩니다.');">
+        30일 무료체험 키트 받기 (배송비 0원)
+      </button>
+      
+      <button class="btn-close-garden" onclick="closeGardenModal()">창 닫기</button>
+    </div>
+  </div>
+
+  <script>
+    // Tab Switcher
+    function switchGardenTab(tabId) {
+      document.querySelectorAll('.view-panel').forEach(el => el.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+
+      document.querySelectorAll('.tab-item-btn').forEach(b => b.classList.remove('active'));
+      if(tabId === 'tabMain') document.querySelectorAll('.tab-item-btn')[0].classList.add('active');
+      if(tabId === 'tabSignature') document.querySelectorAll('.tab-item-btn')[1].classList.add('active');
+      if(tabId === 'tabWhy') document.querySelectorAll('.tab-item-btn')[2].classList.add('active');
+      if(tabId === 'tabMypage') document.querySelectorAll('.tab-item-btn')[3].classList.add('active');
+      
+      window.scrollTo(0, 0);
+    }
+
+    // Viewport Switcher
+    function setGardenVp(mode) {
+      document.querySelectorAll('.vp-switch-btn').forEach(b => b.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+      const vp = document.getElementById('gardenViewport');
+      vp.className = 'viewport-box ' + (mode === 'desktop' ? '' : mode);
+    }
+
+    // Concerns Display Switcher
+    const concernsData = [
+      {
+        title: "덴탈 & 서지컬 에르고 숄더-요추 하네스",
+        desc: "8시간 미세 현미경 수술 및 진료 시 발생하는 편측 30도 비틀림 하중을 48% 균등 분산시킵니다. 가운 속에 착용해도 겉으로 티 나지 않는 0.1mm 심리스 무봉제 에어로 스판 및 90도 고온 멸균 세탁 섬유 적용."
+      },
+      {
+        title: "심리스 에어로 쿨링 포스처 베스트탑",
+        desc: "장거리 14시간 비행 및 기내 카트 푸싱 시 발생하는 요추 압박을 완벽 지탱합니다. 실크 블라우스나 유니폼 속에 입어도 속옷 라인이 튀어나오지 않는 45g 초경량 시크릿 핏."
+      },
+      {
+        title: "3D 액티브 골반-요추 회전 벨트 (KPGA 감수)",
+        desc: "강력한 드라이버 스윙 시 골반의 뒤틀림을 방어하여 비거리를 15m 늘려주고, 18홀 15,000보 보행 시 무릎 연골로 전해지는 충격을 45% 흡수합니다."
+      },
+      {
+        title: "0dB 무소음 마그네틱 맘스 서포터",
+        desc: "10kg 이상의 아이를 안아 올릴 때 요추 하중을 52% 분산시킵니다. 잠든 아기를 침대에 눕힐 때 찍찍이 소음이 전혀 발생하지 않는 독일 특허 0dB 자석 버클 적용."
+      },
+      {
+        title: "스마트 척추 정렬 가디건 조끼 & 10초 AI 리셋",
+        desc: "14시간 코딩 몰입 중 자세가 무너지는 순간 내부 프레임이 물리적으로 지탱하며, 앉은 자리에서 10초 만에 끝내는 AI 미니멀 호흡 케어로 거북목을 리셋합니다."
+      }
+    ];
+
+    function showConcern(idx) {
+      document.querySelectorAll('.concern-item').forEach((el, i) => {
+        el.classList.toggle('active', i === idx);
+      });
+      const data = concernsData[idx];
+      document.getElementById('concernTitle').innerText = data.title;
+      document.getElementById('concernDesc').innerText = data.desc;
+    }
+
+    // Interactive Size Calculator
+    function updateGardenInch(val) {
+      document.getElementById('gardenInchLabel').innerText = val + ' 인치 (' + Math.round(val * 2.54) + ' cm)';
+      let sizeText = 'M (표준 체형)';
+      if (val < 29) sizeText = 'S (슬림 체형)';
+      else if (val > 35) sizeText = 'L (체격형 체형)';
+      document.getElementById('gardenCalcOutput').innerHTML = `추천 사이즈: <strong>${sizeText}</strong> - 0.1mm 심리스 최적 밀착`;
+    }
+
+    // Modal Controls
+    function openGardenModal() {
+      document.getElementById('gardenModal').classList.add('open');
+    }
+    function closeGardenModal() {
+      document.getElementById('gardenModal').classList.remove('open');
+    }
+
+    // Toast Alert Loop
+    const toastItems = [
+      "방금 서울 서초구에서 [치과의사 0.1mm 서포터 M] 30일 무료체험 신청 완료",
+      "방금 경기 성남시에서 [파크골프 3D 골반벨트] 30일 무료체험 신청 완료",
+      "방금 부산 해운대구에서 [워킹맘 0dB 무소음 밴드] 30일 무료체험 신청 완료",
+      "방금 서울 강남구에서 [AI개발자 스마트 척추조끼 L] 30일 무료체험 신청 완료"
+    ];
+    let toastIdx = 0;
+    setInterval(() => {
+      toastIdx = (toastIdx + 1) % toastItems.length;
+      document.getElementById('gardenToastMsg').innerText = toastItems[toastIdx];
+    }, 5000);
+  </script>
+</body>
+</html>

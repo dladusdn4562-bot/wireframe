@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 2220" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0A0E17; }
+      .main-title { font-family: 'JetBrains Mono', 'Pretendard', sans-serif; font-size: 26px; font-weight: 800; fill: #00F0FF; }
+      .sub-title { font-family: 'JetBrains Mono', 'Pretendard', sans-serif; font-size: 14px; fill: #94A3B8; font-weight: 500; }
+      .node-text { font-family: 'JetBrains Mono', 'Pretendard', sans-serif; font-size: 13px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+      .edge-label { font-family: 'JetBrains Mono', 'Pretendard', sans-serif; font-size: 11.5px; font-weight: 600; fill: #94A3B8; text-anchor: middle; }
+      
+      /* 연결선 */
+      .line { stroke: #334155; stroke-width: 2px; fill: none; }
+      .line-accent { stroke: #00F0FF; stroke-width: 2.5px; fill: none; }
+      .line-dashed { stroke: #8B5CF6; stroke-width: 2px; stroke-dasharray: 5,5; fill: none; }
+      .line-error { stroke: #EF4444; stroke-width: 2px; stroke-dasharray: 4,4; fill: none; }
+      .line-success { stroke: #10B981; stroke-width: 2px; fill: none; }
+      
+      /* 마커 */
+      .arrow { fill: #334155; }
+      .arrow-accent { fill: #00F0FF; }
+      .arrow-dashed { fill: #8B5CF6; }
+      .arrow-error { fill: #EF4444; }
+      .arrow-success { fill: #10B981; }
+
+      /* 노드 스타일 */
+      .box-start-end { fill: #111827; stroke: #00F0FF; stroke-width: 2px; }
+      .text-start-end { fill: #38BDF8; font-size: 13.5px; font-weight: bold; }
+      
+      .box-screen { fill: #111827; stroke: #00F0FF; stroke-width: 2px; rx: 8px; ry: 8px; filter: drop-shadow(0 2px 8px rgba(0,240,255,0.25)); }
+      .text-screen { fill: #00F0FF; font-size: 13px; font-weight: bold; }
+      
+      .box-user { fill: #1E293B; stroke: #0284C7; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-user { fill: #BAE6FD; font-size: 12.5px; font-weight: 600; }
+      
+      .box-system { fill: #1E1B4B; stroke: #8B5CF6; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-system { fill: #C4B5FD; font-size: 12.5px; font-weight: 600; }
+      
+      .box-decision { fill: #1E293B; stroke: #F59E0B; stroke-width: 1.8px; }
+      .text-decision { fill: #FBBF24; font-size: 12px; font-weight: bold; }
+      
+      .box-modal { fill: #111827; stroke: #8B5CF6; stroke-width: 2px; stroke-dasharray: 6,3; rx: 8px; ry: 8px; }
+      .text-modal { fill: #C4B5FD; font-size: 13px; font-weight: bold; }
+      
+      .box-exception { fill: #1E293B; stroke: #EF4444; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-exception { fill: #F87171; font-size: 12px; font-weight: 600; }
+
+      .col-container { fill: #111827; stroke: #1E293B; stroke-width: 1.5px; rx: 12px; ry: 12px; }
+      .col-header { font-family: 'JetBrains Mono', sans-serif; font-size: 15px; font-weight: bold; }
+      .legend-box { fill: #111827; stroke: #1E293B; stroke-width: 1px; rx: 8px; ry: 8px; }
+    </style>
+
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow" />
+    </marker>
+    <marker id="arr-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-accent" />
+    </marker>
+    <marker id="arr-dashed" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-dashed" />
+    </marker>
+    <marker id="arr-error" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-error" />
+    </marker>
+    <marker id="arr-success" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-success" />
+    </marker>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- ========================================== -->
+  <!-- 1. 헤더 및 범례 영역 -->
+  <!-- ========================================== -->
+  <g transform="translate(50, 35)">
+    <text x="0" y="28" class="main-title">&lt;SEUMIM_GAMING /&gt; 서비스 흐름도 (Service Flowchart)</text>
+    <text x="0" y="55" class="sub-title">가상클라이언트 7 (한태준: 0.01s 척추 햅틱 넛지 &amp; 디스코드 HUD &amp; 30일 무상 시착)</text>
+    
+    <!-- 범례 (Legend) -->
+    <g transform="translate(730, 0)">
+      <rect width="850" height="65" class="legend-box" />
+      <rect x="20" y="22" width="50" height="22" rx="11" class="box-start-end" />
+      <text x="80" y="37" font-size="12" fill="#94A3B8">시작/종료</text>
+      
+      <rect x="145" y="20" width="30" height="24" class="box-screen" />
+      <text x="185" y="37" font-size="12" fill="#94A3B8">화면(Page)</text>
+      
+      <rect x="265" y="22" width="28" height="22" class="box-user" />
+      <text x="302" y="37" font-size="12" fill="#94A3B8">사용자 행동</text>
+      
+      <rect x="385" y="22" width="28" height="22" class="box-system" />
+      <text x="422" y="37" font-size="12" fill="#94A3B8">시스템 처리</text>
+      
+      <polygon points="505,33 517,21 529,33 517,45" class="box-decision" />
+      <text x="538" y="37" font-size="12" fill="#94A3B8">판단 분기</text>
+      
+      <rect x="610" y="20" width="30" height="24" class="box-modal" />
+      <text x="650" y="37" font-size="12" fill="#94A3B8">디스코드/모달</text>
+
+      <rect x="725" y="22" width="28" height="22" class="box-exception" />
+      <text x="762" y="37" font-size="12" fill="#94A3B8">오류/예외</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. 공통 진입 및 메인 랜딩 네비게이션 -->
+  <!-- ========================================== -->
+  <g transform="translate(715, 125)">
+    <rect width="250" height="46" rx="23" class="box-start-end" />
+    <text x="125" y="23" class="node-text text-start-end">● 시작: 네온 다크 웹사이트 유입</text>
+  </g>
+
+  <path d="M 840 171 L 840 205" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <!-- URL 유효성 검사 분기 다이아몬드 -->
+  <g transform="translate(840, 240)">
+    <polygon points="0,-32 120,0 0,32 -120,0" class="box-decision" />
+    <text x="0" y="0" class="node-text text-decision">URL 유효성 검사</text>
+  </g>
+
+  <path d="M 840 272 L 840 325" class="line-accent" marker-end="url(#arr-accent)" />
+  <rect x="848" y="288" width="56" height="20" fill="#0A0E17" rx="4" />
+  <text x="876" y="302" class="edge-label">정상 URL</text>
+
+  <!-- 404 예외 분기 -->
+  <path d="M 960 240 L 1400 240 L 1400 280" class="line-error" marker-end="url(#arr-error)" />
+  <rect x="1140" y="228" width="65" height="20" fill="#0A0E17" rx="4" />
+  <text x="1172" y="242" class="edge-label" fill="#EF4444">잘못된 URL</text>
+  
+  <g transform="translate(1275, 280)">
+    <rect width="250" height="50" class="box-exception" />
+    <text x="125" y="25" class="node-text text-exception">9.1 404 Not Found [가정] (P-9.1)</text>
+  </g>
+  <path d="M 1275 305 L 1100 305 L 1100 350 L 990 350" class="line-dashed" marker-end="url(#arr-dashed)" />
+  <text x="1165" y="297" class="edge-label">게이밍 메인 바로가기</text>
+
+  <!-- 0.0 메인 랜딩페이지 노드 -->
+  <g transform="translate(690, 325)">
+    <rect width="300" height="56" class="box-screen" stroke-width="2.5" />
+    <text x="150" y="28" class="node-text text-screen" font-size="15">0.0 네온 다크 메인 (P-0.0)</text>
+  </g>
+
+  <!-- GNB 분기선 -->
+  <path d="M 840 381 L 840 425" class="line" />
+  <path d="M 285 425 L 1395 425" class="line" />
+
+  <path d="M 285 425 L 285 465" class="line-accent" marker-end="url(#arr-accent)" />
+  <path d="M 840 425 L 840 465" class="line-accent" marker-end="url(#arr-accent)" />
+  <path d="M 1395 425 L 1395 465" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <text x="285" y="445" class="edge-label" font-weight="bold">0.01s 햅틱 테크</text>
+  <text x="840" y="445" class="edge-label" font-weight="bold">디스코드 HUD</text>
+  <text x="1395" y="445" class="edge-label" font-weight="bold">95g 게이밍 기어</text>
+
+  <!-- ========================================================================= -->
+  <!-- 3. 핵심 3대 흐름 컨테이너 (Flow A / Flow B / Flow C) -->
+  <!-- ========================================================================= -->
+
+  <!-- =================================================== -->
+  <!-- COLUMN 1: Flow A (0.01s 햅틱 & 디스코드 1-Click 시착) -->
+  <!-- =================================================== -->
+  <g transform="translate(45, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#1E293B" stroke="#00F0FF" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#00F0FF" text-anchor="middle">[Flow A] 0.01s 햅틱 테크 &amp; 디스코드 30일 시착</text>
+    
+    <!-- 1. 탐색: P-2.0 햅틱 테크 -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">2.0 0.01s 햅틱 테크 (P-2.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 화면 가림 없는 햅틱 확인 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 척추 미세 햅틱 진동 모식도 확인</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 에임 개선 데이터 확인 -->
+    <g transform="translate(90, 225)">
+      <rect width="300" height="46" class="box-screen" />
+      <text x="150" y="23" class="node-text text-screen">2.3 에임 반응속도 23% 개선 데이터</text>
+    </g>
+
+    <path d="M 240 271 L 240 310" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. 모달: 디스코드 1-Click 시착 폼 -->
+    <g transform="translate(75, 310)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">4.2 디스코드 1-Click 시착 폼 [모달] (P-4.2)</text>
+    </g>
+
+    <path d="M 240 362 L 240 400" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 5. 사용자: 디스코드 승인 -->
+    <g transform="translate(90, 400)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: [👾 Continue with Discord] 승인</text>
+    </g>
+
+    <path d="M 240 446 L 240 485" class="line" marker-end="url(#arr)" />
+
+    <!-- 6. OAuth 유효성 검증 분기 -->
+    <g transform="translate(240, 520)">
+      <polygon points="0,-32 110,0 0,32 -110,0" class="box-decision" />
+      <text x="0" y="0" class="node-text text-decision">디스코드 OAuth 검증</text>
+    </g>
+
+    <!-- 에러 경로 -->
+    <path d="M 130 520 L 50 520 L 50 423 L 90 423" class="line-error" marker-end="url(#arr-error)" />
+    <text x="70" y="510" class="edge-label" fill="#EF4444">인증 취소</text>
+
+    <!-- 정상 승인 -->
+    <path d="M 240 552 L 240 590" class="line-success" marker-end="url(#arr-success)" />
+    <text x="260" y="570" class="edge-label" fill="#10B981">인증 성공</text>
+
+    <!-- 7. 시스템 처리 -->
+    <g transform="translate(90, 590)">
+      <rect width="300" height="46" class="box-system" />
+      <text x="150" y="23" class="node-text text-system">시스템: 30일 시착 기어 배송 &amp; 봇 초대</text>
+    </g>
+
+    <path d="M 240 636 L 240 675" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 8. 완료 화면 -->
+    <g transform="translate(90, 675)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">4.3 주문 완료 및 배송 안내 (P-4.3)</text>
+    </g>
+  </g>
+
+  <!-- =================================================== -->
+  <!-- COLUMN 2: Flow B (디스코드 HUD & 파티원 랭킹) -->
+  <!-- =================================================== -->
+  <g transform="translate(600, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#C4B5FD" text-anchor="middle">[Flow B] 디스코드 HUD &amp; 파티원 실시간 랭킹</text>
+
+    <!-- 1. 탐색: P-3.0 디스코드 HUD -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">3.0 디스코드 HUD 오버레이 (P-3.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 디스코드 봇 기능 확인 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 실시간 파티원 자세 점수 위젯 확인</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 파티원 랭킹 확인 -->
+    <g transform="translate(90, 225)">
+      <rect width="300" height="46" class="box-screen" />
+      <text x="150" y="23" class="node-text text-screen">3.2 파티원 실시간 랭킹 (P-3.2)</text>
+    </g>
+
+    <path d="M 240 271 L 240 310" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. 사용자: 30일 무료 신청 클릭 -->
+    <g transform="translate(90, 310)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: [내 에임 보정 기어 30일 시착] 클릭</text>
+    </g>
+
+    <path d="M 240 356 L 240 395" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 5. 모달 오픈 -->
+    <g transform="translate(75, 395)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">4.2 디스코드 1-Click 시착 폼 [모달] (P-4.2)</text>
+    </g>
+  </g>
+
+  <!-- =================================================== -->
+  <!-- COLUMN 3: Flow C (95g 게이밍 핏 룩북 & 10초 케어) -->
+  <!-- =================================================== -->
+  <g transform="translate(1155, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#1E293B" stroke="#00F0FF" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#00F0FF" text-anchor="middle">[Flow C] 95g 게이밍 핏 룩북 &amp; 10초 케어</text>
+
+    <!-- 1. 탐색: P-1.0 게이밍 기어 -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">1.0 프로 게이밍 기어 (P-1.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 95g 초경량 핏 확인 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 져지 안 0.1mm 초경량 실착 확인</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 사이즈 매칭 모달 -->
+    <g transform="translate(90, 225)">
+      <rect width="300" height="46" class="box-modal" />
+      <text x="150" y="23" class="node-text text-modal">1.3 게이밍 사이즈 가이드 [모달] (P-1.3)</text>
+    </g>
+
+    <path d="M 240 271 L 240 310" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. LCK 100인 후기 확인 -->
+    <g transform="translate(90, 310)">
+      <rect width="300" height="46" class="box-screen" />
+      <text x="150" y="23" class="node-text text-screen">5.2 LCK 프로 100인 실착 후기</text>
+    </g>
+
+    <path d="M 240 356 L 240 395" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 5. 시착 신청 모달 -->
+    <g transform="translate(75, 395)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">4.2 디스코드 1-Click 시착 폼 [모달] (P-4.2)</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 4. 하단 공통 수렴 및 사후 관리 영역 -->
+  <!-- ========================================================================= -->
+  <path d="M 285 1685 L 285 1740 L 840 1740" class="line-accent" />
+  <path d="M 840 1685 L 840 1740" class="line-accent" />
+  <path d="M 1395 1685 L 1395 1740 L 840 1740" class="line-accent" />
+
+  <path d="M 840 1740 L 840 1780" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <g transform="translate(690, 1780)">
+    <rect width="300" height="50" class="box-screen" />
+    <text x="150" y="25" class="node-text text-screen">6.1 디스코드 OAuth 로그인 [가정] (P-6.1)</text>
+  </g>
+
+  <path d="M 840 1830 L 840 1870" class="line-success" marker-end="url(#arr-success)" />
+
+  <g transform="translate(690, 1870)">
+    <rect width="300" height="56" class="box-screen" stroke-width="2.5" />
+    <text x="150" y="28" class="node-text text-screen" font-size="14">6.2 마이페이지 판수별 히트맵 [가정] (P-6.2)</text>
+  </g>
+
+  <path d="M 840 1926 L 840 1965" class="line" marker-end="url(#arr)" />
+
+  <!-- 최종 종료 노드 -->
+  <g transform="translate(715, 1965)">
+    <rect width="250" height="46" rx="23" class="box-start-end" />
+    <text x="125" y="23" class="node-text text-start-end">◎ 종료: 30일 랭크 게임 실착 체험</text>
+  </g>
+
+  <g transform="translate(1300, 1960)">
+    <rect width="250" height="50" class="box-exception" />
+    <text x="125" y="25" class="node-text text-exception">9.2 API 서버 점검 [가정] (P-9.2)</text>
+  </g>
+</svg>

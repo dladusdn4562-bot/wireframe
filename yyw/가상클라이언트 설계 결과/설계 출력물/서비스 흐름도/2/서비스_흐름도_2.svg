@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 2220" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #F8FAFC; }
+      .main-title { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 26px; font-weight: 800; fill: #0F172A; }
+      .sub-title { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 14px; fill: #475569; font-weight: 500; }
+      .section-label { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 700; fill: #0F172A; }
+      .badge-text { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 11.5px; font-weight: 700; }
+      .node-text { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 13px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+      .node-subtext { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 11px; font-weight: 400; text-anchor: middle; dominant-baseline: central; fill: #64748B; }
+      .edge-label { font-family: 'Pretendard', 'Malgun Gothic', 'Noto Sans KR', sans-serif; font-size: 11.5px; font-weight: 600; fill: #475569; text-anchor: middle; }
+      
+      /* 연결선 */
+      .line { stroke: #94A3B8; stroke-width: 2px; fill: none; }
+      .line-accent { stroke: #1E3A8A; stroke-width: 2.5px; fill: none; }
+      .line-dashed { stroke: #64748B; stroke-width: 2px; stroke-dasharray: 5,5; fill: none; }
+      .line-error { stroke: #EF4444; stroke-width: 2px; stroke-dasharray: 4,4; fill: none; }
+      .line-success { stroke: #10B981; stroke-width: 2px; fill: none; }
+      
+      /* 마커 */
+      .arrow { fill: #94A3B8; }
+      .arrow-accent { fill: #1E3A8A; }
+      .arrow-dashed { fill: #64748B; }
+      .arrow-error { fill: #EF4444; }
+      .arrow-success { fill: #10B981; }
+
+      /* 노드 스타일 */
+      .box-start-end { fill: #0F172A; stroke: #1E3A8A; stroke-width: 2px; }
+      .text-start-end { fill: #FFFFFF; font-size: 13.5px; font-weight: bold; }
+      
+      .box-screen { fill: #FFFFFF; stroke: #1E3A8A; stroke-width: 2px; rx: 8px; ry: 8px; filter: drop-shadow(0 2px 4px rgba(30,58,138,0.08)); }
+      .text-screen { fill: #1E3A8A; font-size: 13px; font-weight: bold; }
+      
+      .box-user { fill: #EEF2FF; stroke: #4F46E5; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-user { fill: #312E81; font-size: 12.5px; font-weight: 600; }
+      
+      .box-system { fill: #ECFDF5; stroke: #059669; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-system { fill: #065F46; font-size: 12.5px; font-weight: 600; }
+      
+      .box-decision { fill: #FEF9C3; stroke: #CA8A04; stroke-width: 1.8px; }
+      .text-decision { fill: #854D0E; font-size: 12px; font-weight: bold; }
+      
+      .box-modal { fill: #FFFBEB; stroke: #D97706; stroke-width: 2px; stroke-dasharray: 6,3; rx: 8px; ry: 8px; }
+      .text-modal { fill: #B45309; font-size: 13px; font-weight: bold; }
+      
+      .box-exception { fill: #FEF2F2; stroke: #EF4444; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-exception { fill: #991B1B; font-size: 12px; font-weight: 600; }
+
+      .col-container { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1.5px; rx: 12px; ry: 12px; }
+      .col-header { font-family: 'Pretendard', sans-serif; font-size: 15px; font-weight: bold; }
+      .legend-box { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1px; rx: 8px; ry: 8px; }
+    </style>
+
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow" />
+    </marker>
+    <marker id="arr-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-accent" />
+    </marker>
+    <marker id="arr-dashed" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-dashed" />
+    </marker>
+    <marker id="arr-error" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-error" />
+    </marker>
+    <marker id="arr-success" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-success" />
+    </marker>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- ========================================== -->
+  <!-- 1. 헤더 및 범례 영역 -->
+  <!-- ========================================== -->
+  <g transform="translate(50, 35)">
+    <text x="0" y="28" class="main-title">SEUMIM(스밈) 수험생 서비스 흐름도 (Service Flowchart)</text>
+    <text x="0" y="55" class="sub-title">가상클라이언트 2 (김도윤: 14시간 순공 착석 수험생 조끼 &amp; 무소음 0dB &amp; 순공 대시보드 플랫폼)</text>
+    
+    <!-- 범례 (Legend) -->
+    <g transform="translate(730, 0)">
+      <rect width="850" height="65" class="legend-box" />
+      <rect x="20" y="22" width="50" height="22" rx="11" class="box-start-end" />
+      <text x="80" y="37" font-size="12" fill="#334155">시작/종료</text>
+      
+      <rect x="145" y="20" width="30" height="24" class="box-screen" />
+      <text x="185" y="37" font-size="12" fill="#334155">화면(Page)</text>
+      
+      <rect x="265" y="22" width="28" height="22" class="box-user" />
+      <text x="302" y="37" font-size="12" fill="#334155">사용자 행동</text>
+      
+      <rect x="385" y="22" width="28" height="22" class="box-system" />
+      <text x="422" y="37" font-size="12" fill="#334155">시스템 처리</text>
+      
+      <polygon points="505,33 517,21 529,33 517,45" class="box-decision" />
+      <text x="538" y="37" font-size="12" fill="#334155">판단 분기</text>
+      
+      <rect x="610" y="20" width="30" height="24" class="box-modal" />
+      <text x="650" y="37" font-size="12" fill="#334155">모달/팝업</text>
+
+      <rect x="725" y="22" width="28" height="22" class="box-exception" />
+      <text x="762" y="37" font-size="12" fill="#334155">오류/예외</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. 공통 진입 및 메인 랜딩 네비게이션 -->
+  <!-- ========================================== -->
+  <g transform="translate(715, 125)">
+    <rect width="250" height="46" rx="23" class="box-start-end" />
+    <text x="125" y="23" class="node-text text-start-end">● 시작: 수험생 웹사이트 접속</text>
+  </g>
+
+  <path d="M 840 171 L 840 205" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <!-- URL 유효성 검사 분기 다이아몬드 -->
+  <g transform="translate(840, 240)">
+    <polygon points="0,-32 120,0 0,32 -120,0" class="box-decision" />
+    <text x="0" y="0" class="node-text text-decision">URL 유효성 검사</text>
+  </g>
+
+  <!-- 정상 URL -->
+  <path d="M 840 272 L 840 325" class="line-accent" marker-end="url(#arr-accent)" />
+  <rect x="848" y="288" width="56" height="20" fill="#F8FAFC" rx="4" />
+  <text x="876" y="302" class="edge-label">정상 URL</text>
+
+  <!-- 404 예외 분기 -->
+  <path d="M 960 240 L 1400 240 L 1400 280" class="line-error" marker-end="url(#arr-error)" />
+  <rect x="1140" y="228" width="65" height="20" fill="#F8FAFC" rx="4" />
+  <text x="1172" y="242" class="edge-label" fill="#EF4444">잘못된 URL</text>
+  
+  <g transform="translate(1275, 280)">
+    <rect width="250" height="50" class="box-exception" />
+    <text x="125" y="25" class="node-text text-exception">9.1 404 Not Found [가정] (P-9.1)</text>
+  </g>
+  <path d="M 1275 305 L 1100 305 L 1100 350 L 990 350" class="line-dashed" marker-end="url(#arr-dashed)" />
+  <text x="1165" y="297" class="edge-label">메인 바로가기</text>
+
+  <!-- 0.0 메인 랜딩페이지 노드 -->
+  <g transform="translate(690, 325)">
+    <rect width="300" height="56" class="box-screen" stroke-width="2.5" />
+    <text x="150" y="28" class="node-text text-screen" font-size="15">0.0 메인 랜딩페이지 (P-0.0)</text>
+  </g>
+
+  <!-- GNB 분기선 -->
+  <path d="M 840 381 L 840 425" class="line" />
+  <path d="M 285 425 L 1395 425" class="line" />
+
+  <path d="M 285 425 L 285 465" class="line-accent" marker-end="url(#arr-accent)" />
+  <path d="M 840 425 L 840 465" class="line-accent" marker-end="url(#arr-accent)" />
+  <path d="M 1395 425 L 1395 465" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <text x="285" y="445" class="edge-label" font-weight="bold">수험생 조끼 룩북</text>
+  <text x="840" y="445" class="edge-label" font-weight="bold">순공 대시보드 시연</text>
+  <text x="1395" y="445" class="edge-label" font-weight="bold">합격생 후기 검증</text>
+
+  <!-- ========================================================================= -->
+  <!-- 3. 핵심 3대 흐름 컨테이너 (Flow A / Flow B / Flow C) -->
+  <!-- ========================================================================= -->
+
+  <!-- =================================================== -->
+  <!-- COLUMN 1: Flow A (교복 룩북 및 30일 무료 체험) -->
+  <!-- =================================================== -->
+  <g transform="translate(45, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#EFF6FF" stroke="#E2E8F0" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#1E3A8A" text-anchor="middle">[Flow A] 교복 룩북 &amp; 30일 무료 체험 신청</text>
+    
+    <!-- 1. 탐색: P-1.0 수험생 조끼 -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">1.0 수험생 조끼 (P-1.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 교복 핏 화보 확인 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 교복 셔츠 안 0.1mm 밀착 룩북 확인</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 분기: 교복 사이즈 가이드 필요 여부 -->
+    <g transform="translate(240, 260)">
+      <polygon points="0,-30 110,0 0,30 -110,0" class="box-decision" />
+      <text x="0" y="0" class="node-text text-decision">교복 사이즈 확인?</text>
+    </g>
+
+    <path d="M 130 260 L 60 260 L 60 325 L 90 325" class="line" marker-end="url(#arr)" />
+    <text x="80" y="250" class="edge-label">가이드 확인</text>
+
+    <g transform="translate(90, 305)">
+      <rect width="300" height="46" class="box-modal" />
+      <text x="150" y="23" class="node-text text-modal">1.3 교복 정밀 사이즈 [모달] (P-1.3)</text>
+    </g>
+
+    <path d="M 240 351 L 240 380" class="line" marker-end="url(#arr)" />
+
+    <g transform="translate(90, 380)">
+      <rect width="300" height="44" class="box-user" />
+      <text x="150" y="22" class="node-text text-user">사용자: 교복 상의 90/95/100 선택</text>
+    </g>
+
+    <path d="M 350 260 L 415 260 L 415 460 L 390 460" class="line" marker-end="url(#arr)" />
+    <text x="390" y="250" class="edge-label">직접 선택</text>
+
+    <path d="M 240 424 L 240 455" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. 핵심 행동: 4.3 30일 무료 체험 모달 -->
+    <g transform="translate(75, 455)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">4.3 30일 무료 체험 신청 폼 [모달] (P-4.3)</text>
+    </g>
+
+    <path d="M 240 507 L 240 540" class="line" marker-end="url(#arr)" />
+
+    <!-- 5. 사용자 입력 -->
+    <g transform="translate(90, 540)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 학생 정보, 교복 사이즈, 주소 입력</text>
+    </g>
+
+    <path d="M 240 586 L 240 625" class="line" marker-end="url(#arr)" />
+
+    <!-- 6. 유효성 검사 분기 -->
+    <g transform="translate(240, 660)">
+      <polygon points="0,-32 110,0 0,32 -110,0" class="box-decision" />
+      <text x="0" y="0" class="node-text text-decision">입력값 유효성 검증</text>
+    </g>
+
+    <!-- 에러 경로 -->
+    <path d="M 130 660 L 50 660 L 50 563 L 90 563" class="line-error" marker-end="url(#arr-error)" />
+    <text x="70" y="650" class="edge-label" fill="#EF4444">누락 오류</text>
+
+    <!-- 정상 제출 -->
+    <path d="M 240 692 L 240 730" class="line-success" marker-end="url(#arr-success)" />
+    <text x="260" y="710" class="edge-label" fill="#10B981">정상 제출</text>
+
+    <!-- 7. 시스템 처리 -->
+    <g transform="translate(90, 730)">
+      <rect width="300" height="46" class="box-system" />
+      <text x="150" y="23" class="node-text text-system">시스템: 30일 무료 체험 DB 등록 및 알림톡</text>
+    </g>
+
+    <path d="M 240 776 L 240 810" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 8. 완료 화면 -->
+    <g transform="translate(90, 810)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">4.4 신청 완료 및 배송 안내 (P-4.4)</text>
+    </g>
+
+    <path d="M 240 860 L 240 900" class="line" marker-end="url(#arr)" />
+
+    <!-- 9. 후속 여정: 마이페이지 연동 -->
+    <g transform="translate(90, 900)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 알림톡 확인 &amp; 배송 트래킹</text>
+    </g>
+  </g>
+
+  <!-- =================================================== -->
+  <!-- COLUMN 2: Flow B (순공 대시보드 & 타이머 시연) -->
+  <!-- =================================================== -->
+  <g transform="translate(600, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#ECFDF5" stroke="#E2E8F0" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#047857" text-anchor="middle">[Flow B] 순공 대시보드 &amp; 스터디 타이머 시연</text>
+
+    <!-- 1. 탐색: P-3.0 순공 대시보드 -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">3.0 순공 대시보드 (P-3.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 스터디 타이머 조작 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 디지털 스터디 타이머 조작</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 시스템: 자세 점수 시뮬레이션 -->
+    <g transform="translate(90, 225)">
+      <rect width="300" height="46" class="box-system" />
+      <text x="150" y="23" class="node-text text-system">시스템: 순공 시간 &amp; 집중력 게이지 렌더링</text>
+    </g>
+
+    <path d="M 240 271 L 240 310" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. 분기: 10초 스트레칭 루틴 확인 여부 -->
+    <g transform="translate(240, 345)">
+      <polygon points="0,-30 110,0 0,30 -110,0" class="box-decision" />
+      <text x="0" y="0" class="node-text text-decision">10초 루틴 확인?</text>
+    </g>
+
+    <path d="M 130 345 L 60 345 L 60 410 L 90 410" class="line" marker-end="url(#arr)" />
+    <text x="80" y="335" class="edge-label">루틴 확인</text>
+
+    <g transform="translate(90, 390)">
+      <rect width="300" height="46" class="box-screen" />
+      <text x="150" y="23" class="node-text text-screen">3.3 시험 기간 10초 루틴 (P-3.3)</text>
+    </g>
+
+    <path d="M 350 345 L 415 345 L 415 540 L 390 540" class="line" marker-end="url(#arr)" />
+    <text x="390" y="335" class="edge-label">바로 신청</text>
+
+    <path d="M 240 436 L 240 515" class="line" marker-end="url(#arr)" />
+
+    <!-- 5. 전환 CTA: 조끼 30일 시착 신청 -->
+    <g transform="translate(90, 515)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: [순공 조끼 30일 무료 체험] 클릭</text>
+    </g>
+
+    <path d="M 240 561 L 240 600" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 6. 30일 무료 체험 모달 호출 -->
+    <g transform="translate(75, 600)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">4.3 30일 무료 체험 신청 폼 [모달] (P-4.3)</text>
+    </g>
+
+    <path d="M 240 652 L 240 690" class="line-success" marker-end="url(#arr-success)" />
+
+    <g transform="translate(90, 690)">
+      <rect width="300" height="46" class="box-system" />
+      <text x="150" y="23" class="node-text text-system">시스템: 대시보드 계정 동기화 &amp; 주문 접수</text>
+    </g>
+  </g>
+
+  <!-- =================================================== -->
+  <!-- COLUMN 3: Flow C (합격생 100인 후기 & 학부모 안심 신청) -->
+  <!-- =================================================== -->
+  <g transform="translate(1155, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#EFF6FF" stroke="#E2E8F0" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#1E3A8A" text-anchor="middle">[Flow C] 합격생 후기 &amp; 학부모 안심 대리 신청</text>
+
+    <!-- 1. 탐색: P-5.0 학부모 후기 -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">5.0 학부모 후기 (P-5.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 100인 합격 선배 후기 확인 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 서울대/의대 합격생 실착 후기 검증</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 사용자: 30일 무료 반품 정책 확인 -->
+    <g transform="translate(90, 225)">
+      <rect width="300" height="46" class="box-screen" />
+      <text x="150" y="23" class="node-text text-screen">4.0 30일 무료 체험 안내 (P-4.0)</text>
+    </g>
+
+    <path d="M 240 271 L 240 310" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. 학부모 대리 신청 CTA -->
+    <g transform="translate(90, 310)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">학부모: [자녀를 위한 30일 무료 체험] 클릭</text>
+    </g>
+
+    <path d="M 240 356 L 240 395" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 5. 모달 오픈 -->
+    <g transform="translate(75, 395)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">4.3 30일 무료 체험 신청 폼 [모달] (P-4.3)</text>
+    </g>
+
+    <path d="M 240 447 L 240 485" class="line-success" marker-end="url(#arr-success)" />
+
+    <g transform="translate(90, 485)">
+      <rect width="300" height="46" class="box-system" />
+      <text x="150" y="23" class="node-text text-system">시스템: 학부모 대리 접수 DB 저장</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 4. 하단 공통 수렴 및 사후 관리 영역 -->
+  <!-- ========================================================================= -->
+  <!-- 수렴 버스선 -->
+  <path d="M 285 1685 L 285 1740 L 840 1740" class="line-accent" />
+  <path d="M 840 1685 L 840 1740" class="line-accent" />
+  <path d="M 1395 1685 L 1395 1740 L 840 1740" class="line-accent" />
+
+  <path d="M 840 1740 L 840 1780" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <!-- 사후 관리 분기: 간편 로그인 -->
+  <g transform="translate(690, 1780)">
+    <rect width="300" height="50" class="box-screen" />
+    <text x="150" y="25" class="node-text text-screen">6.1 간편 로그인 / 회원가입 [가정] (P-6.1)</text>
+  </g>
+
+  <path d="M 840 1830 L 840 1870" class="line-success" marker-end="url(#arr-success)" />
+
+  <!-- 마이페이지 -->
+  <g transform="translate(690, 1870)">
+    <rect width="300" height="56" class="box-screen" stroke-width="2.5" />
+    <text x="150" y="28" class="node-text text-screen" font-size="14">6.2 마이페이지 순공 대시보드 [가정] (P-6.2)</text>
+  </g>
+
+  <path d="M 840 1926 L 840 1965" class="line" marker-end="url(#arr)" />
+
+  <!-- 최종 종료 노드 -->
+  <g transform="translate(715, 1965)">
+    <rect width="250" height="46" rx="23" class="box-start-end" />
+    <text x="125" y="23" class="node-text text-start-end">◎ 종료: 30일 집/독서실 실착 후 결정</text>
+  </g>
+
+  <!-- 시스템 점검 예외 (우측 하단) -->
+  <g transform="translate(1300, 1960)">
+    <rect width="250" height="50" class="box-exception" />
+    <text x="125" y="25" class="node-text text-exception">9.2 시스템 점검 안내 [가정] (P-9.2)</text>
+  </g>
+</svg>

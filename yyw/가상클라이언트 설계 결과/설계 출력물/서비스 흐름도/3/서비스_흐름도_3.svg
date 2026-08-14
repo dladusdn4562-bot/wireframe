@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 2220" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0B0F17; }
+      .main-title { font-family: 'JetBrains Mono', 'Pretendard', sans-serif; font-size: 26px; font-weight: 800; fill: #38BDF8; }
+      .sub-title { font-family: 'JetBrains Mono', 'Pretendard', sans-serif; font-size: 14px; fill: #94A3B8; font-weight: 500; }
+      .node-text { font-family: 'JetBrains Mono', 'Pretendard', sans-serif; font-size: 13px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+      .edge-label { font-family: 'JetBrains Mono', 'Pretendard', sans-serif; font-size: 11.5px; font-weight: 600; fill: #94A3B8; text-anchor: middle; }
+      
+      /* 연결선 */
+      .line { stroke: #334155; stroke-width: 2px; fill: none; }
+      .line-accent { stroke: #0284C7; stroke-width: 2.5px; fill: none; }
+      .line-dashed { stroke: #64748B; stroke-width: 2px; stroke-dasharray: 5,5; fill: none; }
+      .line-error { stroke: #EF4444; stroke-width: 2px; stroke-dasharray: 4,4; fill: none; }
+      .line-success { stroke: #10B981; stroke-width: 2px; fill: none; }
+      
+      /* 마커 */
+      .arrow { fill: #334155; }
+      .arrow-accent { fill: #0284C7; }
+      .arrow-dashed { fill: #64748B; }
+      .arrow-error { fill: #EF4444; }
+      .arrow-success { fill: #10B981; }
+
+      /* 노드 스타일 */
+      .box-start-end { fill: #111827; stroke: #38BDF8; stroke-width: 2px; }
+      .text-start-end { fill: #7DD3FC; font-size: 13.5px; font-weight: bold; }
+      
+      .box-screen { fill: #111827; stroke: #0284C7; stroke-width: 2px; rx: 8px; ry: 8px; filter: drop-shadow(0 2px 8px rgba(2,132,199,0.2)); }
+      .text-screen { fill: #38BDF8; font-size: 13px; font-weight: bold; }
+      
+      .box-user { fill: #1E293B; stroke: #0284C7; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-user { fill: #BAE6FD; font-size: 12.5px; font-weight: 600; }
+      
+      .box-system { fill: #064E3B; stroke: #10B981; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-system { fill: #A7F3D0; font-size: 12.5px; font-weight: 600; }
+      
+      .box-decision { fill: #1E293B; stroke: #F59E0B; stroke-width: 1.8px; }
+      .text-decision { fill: #FBBF24; font-size: 12px; font-weight: bold; }
+      
+      .box-modal { fill: #111827; stroke: #F59E0B; stroke-width: 2px; stroke-dasharray: 6,3; rx: 8px; ry: 8px; }
+      .text-modal { fill: #FBBF24; font-size: 13px; font-weight: bold; }
+      
+      .box-exception { fill: #1E293B; stroke: #EF4444; stroke-width: 1.5px; rx: 6px; ry: 6px; }
+      .text-exception { fill: #F87171; font-size: 12px; font-weight: 600; }
+
+      .col-container { fill: #111827; stroke: #1E293B; stroke-width: 1.5px; rx: 12px; ry: 12px; }
+      .col-header { font-family: 'JetBrains Mono', sans-serif; font-size: 15px; font-weight: bold; }
+      .legend-box { fill: #111827; stroke: #1E293B; stroke-width: 1px; rx: 8px; ry: 8px; }
+    </style>
+
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow" />
+    </marker>
+    <marker id="arr-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-accent" />
+    </marker>
+    <marker id="arr-dashed" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-dashed" />
+    </marker>
+    <marker id="arr-error" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-error" />
+    </marker>
+    <marker id="arr-success" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-success" />
+    </marker>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- ========================================== -->
+  <!-- 1. 헤더 및 범례 영역 -->
+  <!-- ========================================== -->
+  <g transform="translate(50, 35)">
+    <text x="0" y="28" class="main-title">&lt;SEUMIM_DEV /&gt; 서비스 흐름도 (Service Flowchart)</text>
+    <text x="0" y="55" class="sub-title">가상클라이언트 3 (강민우: 0.5s 시차 필터링 &amp; 다크 대시보드 &amp; GitHub 3개월 무료 라이선스)</text>
+    
+    <!-- 범례 (Legend) -->
+    <g transform="translate(730, 0)">
+      <rect width="850" height="65" class="legend-box" />
+      <rect x="20" y="22" width="50" height="22" rx="11" class="box-start-end" />
+      <text x="80" y="37" font-size="12" fill="#94A3B8">시작/종료</text>
+      
+      <rect x="145" y="20" width="30" height="24" class="box-screen" />
+      <text x="185" y="37" font-size="12" fill="#94A3B8">화면(Page)</text>
+      
+      <rect x="265" y="22" width="28" height="22" class="box-user" />
+      <text x="302" y="37" font-size="12" fill="#94A3B8">사용자 행동</text>
+      
+      <rect x="385" y="22" width="28" height="22" class="box-system" />
+      <text x="422" y="37" font-size="12" fill="#94A3B8">시스템 처리</text>
+      
+      <polygon points="505,33 517,21 529,33 517,45" class="box-decision" />
+      <text x="538" y="37" font-size="12" fill="#94A3B8">판단 분기</text>
+      
+      <rect x="610" y="20" width="30" height="24" class="box-modal" />
+      <text x="650" y="37" font-size="12" fill="#94A3B8">모달/팝업</text>
+
+      <rect x="725" y="22" width="28" height="22" class="box-exception" />
+      <text x="762" y="37" font-size="12" fill="#94A3B8">오류/예외</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. 공통 진입 및 메인 랜딩 네비게이션 -->
+  <!-- ========================================== -->
+  <g transform="translate(715, 125)">
+    <rect width="250" height="46" rx="23" class="box-start-end" />
+    <text x="125" y="23" class="node-text text-start-end">● 시작: 다크모드 웹사이트 유입</text>
+  </g>
+
+  <path d="M 840 171 L 840 205" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <!-- URL 유효성 검사 분기 다이아몬드 -->
+  <g transform="translate(840, 240)">
+    <polygon points="0,-32 120,0 0,32 -120,0" class="box-decision" />
+    <text x="0" y="0" class="node-text text-decision">URL 유효성 검사</text>
+  </g>
+
+  <path d="M 840 272 L 840 325" class="line-accent" marker-end="url(#arr-accent)" />
+  <rect x="848" y="288" width="56" height="20" fill="#0B0F17" rx="4" />
+  <text x="876" y="302" class="edge-label">정상 URL</text>
+
+  <!-- 404 예외 분기 -->
+  <path d="M 960 240 L 1400 240 L 1400 280" class="line-error" marker-end="url(#arr-error)" />
+  <rect x="1140" y="228" width="65" height="20" fill="#0B0F17" rx="4" />
+  <text x="1172" y="242" class="edge-label" fill="#EF4444">잘못된 URL</text>
+  
+  <g transform="translate(1275, 280)">
+    <rect width="250" height="50" class="box-exception" />
+    <text x="125" y="25" class="node-text text-exception">9.1 404 Not Found [가정] (P-9.1)</text>
+  </g>
+  <path d="M 1275 305 L 1100 305 L 1100 350 L 990 350" class="line-dashed" marker-end="url(#arr-dashed)" />
+  <text x="1165" y="297" class="edge-label">cd /main</text>
+
+  <!-- 0.0 메인 랜딩페이지 노드 -->
+  <g transform="translate(690, 325)">
+    <rect width="300" height="56" class="box-screen" stroke-width="2.5" />
+    <text x="150" y="28" class="node-text text-screen" font-size="15">0.0 다크 메인 랜딩 (P-0.0)</text>
+  </g>
+
+  <!-- GNB 분기선 -->
+  <path d="M 840 381 L 840 425" class="line" />
+  <path d="M 285 425 L 1395 425" class="line" />
+
+  <path d="M 285 425 L 285 465" class="line-accent" marker-end="url(#arr-accent)" />
+  <path d="M 840 425 L 840 465" class="line-accent" marker-end="url(#arr-accent)" />
+  <path d="M 1395 425 L 1395 465" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <text x="285" y="445" class="edge-label" font-weight="bold">시차 필터링 테크</text>
+  <text x="840" y="445" class="edge-label" font-weight="bold">조끼 HW 룩북</text>
+  <text x="1395" y="445" class="edge-label" font-weight="bold">데스크 10초 케어</text>
+
+  <!-- ========================================================================= -->
+  <!-- 3. 핵심 3대 흐름 컨테이너 (Flow A / Flow B / Flow C) -->
+  <!-- ========================================================================= -->
+
+  <!-- =================================================== -->
+  <!-- COLUMN 1: Flow A (시차 필터링 & AI 3개월 무료 구독) -->
+  <!-- =================================================== -->
+  <g transform="translate(45, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#1E293B" stroke="#0284C7" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#38BDF8" text-anchor="middle">[Flow A] 시차 필터링 &amp; AI 3개월 무료 구독</text>
+    
+    <!-- 1. 탐색: P-2.0 시차 필터링 -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">2.0 시차 필터링 테크 (P-2.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 0.5s 오알림 차단 확인 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 0.5s 시계열 필터링 파형 확인</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 대시보드 시연 -->
+    <g transform="translate(90, 225)">
+      <rect width="300" height="46" class="box-screen" />
+      <text x="150" y="23" class="node-text text-screen">3.0 AI 데이터 대시보드 (P-3.0)</text>
+    </g>
+
+    <path d="M 240 271 L 240 310" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. 사용자: 스마트워치 링 UI 조작 -->
+    <g transform="translate(90, 310)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 3초 퀵-글랜스 링 인터랙션 조작</text>
+    </g>
+
+    <path d="M 240 356 L 240 395" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 5. 모달: GitHub 1-Click 인증 -->
+    <g transform="translate(75, 395)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">4.3 GitHub 3개월 무료 구독 폼 [모달] (P-4.3)</text>
+    </g>
+
+    <path d="M 240 447 L 240 485" class="line" marker-end="url(#arr)" />
+
+    <!-- 6. 사용자: GitHub 인증 클릭 -->
+    <g transform="translate(90, 485)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: [🐙 Continue with GitHub] 승인</text>
+    </g>
+
+    <path d="M 240 531 L 240 570" class="line" marker-end="url(#arr)" />
+
+    <!-- 7. OAuth 검증 분기 -->
+    <g transform="translate(240, 605)">
+      <polygon points="0,-32 110,0 0,32 -110,0" class="box-decision" />
+      <text x="0" y="0" class="node-text text-decision">GitHub OAuth 검증</text>
+    </g>
+
+    <!-- 에러 경로 -->
+    <path d="M 130 605 L 50 605 L 50 508 L 90 508" class="line-error" marker-end="url(#arr-error)" />
+    <text x="70" y="595" class="edge-label" fill="#EF4444">인증 취소</text>
+
+    <!-- 정상 완료 -->
+    <path d="M 240 637 L 240 675" class="line-success" marker-end="url(#arr-success)" />
+    <text x="260" y="655" class="edge-label" fill="#10B981">인증 성공</text>
+
+    <!-- 8. 시스템 처리 -->
+    <g transform="translate(90, 675)">
+      <rect width="300" height="46" class="box-system" />
+      <text x="150" y="23" class="node-text text-system">시스템: 3개월 라이선스 키 생성 &amp; DB 활성화</text>
+    </g>
+
+    <path d="M 240 721 L 240 760" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 9. 완료 화면 -->
+    <g transform="translate(90, 760)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">4.4 라이선스 발급 완료 안내 (P-4.4)</text>
+    </g>
+  </g>
+
+  <!-- =================================================== -->
+  <!-- COLUMN 2: Flow B (스마트 조끼 HW 30일 시착 신청) -->
+  <!-- =================================================== -->
+  <g transform="translate(600, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#1E293B" stroke="#0284C7" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#38BDF8" text-anchor="middle">[Flow B] 스마트 조끼 HW 30일 시착 신청</text>
+
+    <!-- 1. 탐색: P-1.0 조끼 HW -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">1.0 척추 조끼 HW (P-1.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 전도성 센서 섬유 스펙 확인 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 센서 섬유 &amp; 후드티 룩북 확인</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 모달: 사이즈 매칭 -->
+    <g transform="translate(90, 225)">
+      <rect width="300" height="46" class="box-modal" />
+      <text x="150" y="23" class="node-text text-modal">1.3 하드웨어 정밀 사이즈 [모달] (P-1.3)</text>
+    </g>
+
+    <path d="M 240 271 L 240 310" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. 사용자: 상의 사이즈 선택 -->
+    <g transform="translate(90, 310)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 상의(95/100/105) 사이즈 선택</text>
+    </g>
+
+    <path d="M 240 356 L 240 395" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 5. 30일 시착 신청 폼 모달 -->
+    <g transform="translate(75, 395)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">4.3 30일 HW 시착 신청 폼 [모달] (P-4.3)</text>
+    </g>
+
+    <path d="M 240 447 L 240 485" class="line-success" marker-end="url(#arr-success)" />
+
+    <g transform="translate(90, 485)">
+      <rect width="300" height="46" class="box-system" />
+      <text x="150" y="23" class="node-text text-system">시스템: 30일 무상 시착 배송 접수 완료</text>
+    </g>
+  </g>
+
+  <!-- =================================================== -->
+  <!-- COLUMN 3: Flow C (데스크 10초 케어 & 잔디 히트맵) -->
+  <!-- =================================================== -->
+  <g transform="translate(1155, 465)">
+    <rect width="480" height="1220" class="col-container" />
+    <rect width="480" height="42" fill="#064E3B" stroke="#10B981" stroke-width="1.5" rx="12" />
+    <text x="240" y="26" class="col-header" fill="#A7F3D0" text-anchor="middle">[Flow C] 데스크 10초 케어 &amp; 잔디 히트맵</text>
+
+    <!-- 1. 탐색: P-5.0 데스크 케어 -->
+    <g transform="translate(90, 60)">
+      <rect width="300" height="50" class="box-screen" />
+      <text x="150" y="25" class="node-text text-screen">5.0 데스크 케어 (P-5.0)</text>
+    </g>
+
+    <path d="M 240 110 L 240 145" class="line" marker-end="url(#arr)" />
+
+    <!-- 2. 사용자: 10초 AI 루틴 확인 -->
+    <g transform="translate(90, 145)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 코딩 중 앉은 자리 10초 루틴 확인</text>
+    </g>
+
+    <path d="M 240 191 L 240 225" class="line" marker-end="url(#arr)" />
+
+    <!-- 3. 화면: GitHub 잔디 히트맵 -->
+    <g transform="translate(90, 225)">
+      <rect width="300" height="46" class="box-screen" />
+      <text x="150" y="23" class="node-text text-screen">3.3 GitHub 잔디 히트맵 (P-3.3)</text>
+    </g>
+
+    <path d="M 240 271 L 240 310" class="line" marker-end="url(#arr)" />
+
+    <!-- 4. 사용자: 연간 척추 잔디 확인 -->
+    <g transform="translate(90, 310)">
+      <rect width="300" height="46" class="box-user" />
+      <text x="150" y="23" class="node-text text-user">사용자: 연간 척추 밸런스 히트맵 검증</text>
+    </g>
+
+    <path d="M 240 356 L 240 395" class="line-accent" marker-end="url(#arr-accent)" />
+
+    <!-- 5. 모달: 라이선스 활성화 -->
+    <g transform="translate(75, 395)">
+      <rect width="330" height="52" class="box-modal" stroke-width="2.5" />
+      <text x="165" y="26" class="node-text text-modal">4.3 무료 라이선스 즉시 활성화 [모달] (P-4.3)</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 4. 하단 공통 수렴 및 사후 관리 영역 -->
+  <!-- ========================================================================= -->
+  <path d="M 285 1685 L 285 1740 L 840 1740" class="line-accent" />
+  <path d="M 840 1685 L 840 1740" class="line-accent" />
+  <path d="M 1395 1685 L 1395 1740 L 840 1740" class="line-accent" />
+
+  <path d="M 840 1740 L 840 1780" class="line-accent" marker-end="url(#arr-accent)" />
+
+  <g transform="translate(690, 1780)">
+    <rect width="300" height="50" class="box-screen" />
+    <text x="150" y="25" class="node-text text-screen">6.1 GitHub OAuth 로그인 [가정] (P-6.1)</text>
+  </g>
+
+  <path d="M 840 1830 L 840 1870" class="line-success" marker-end="url(#arr-success)" />
+
+  <g transform="translate(690, 1870)">
+    <rect width="300" height="56" class="box-screen" stroke-width="2.5" />
+    <text x="150" y="28" class="node-text text-screen" font-size="14">6.2 마이페이지 자세 스트림 [가정] (P-6.2)</text>
+  </g>
+
+  <path d="M 840 1926 L 840 1965" class="line" marker-end="url(#arr)" />
+
+  <!-- 최종 종료 노드 -->
+  <g transform="translate(715, 1965)">
+    <rect width="250" height="46" rx="23" class="box-start-end" />
+    <text x="125" y="23" class="node-text text-start-end">◎ 종료: 실시간 자세 코칭 시작</text>
+  </g>
+
+  <g transform="translate(1300, 1960)">
+    <rect width="250" height="50" class="box-exception" />
+    <text x="125" y="25" class="node-text text-exception">9.2 API 서버 점검 안내 [가정] (P-9.2)</text>
+  </g>
+</svg>

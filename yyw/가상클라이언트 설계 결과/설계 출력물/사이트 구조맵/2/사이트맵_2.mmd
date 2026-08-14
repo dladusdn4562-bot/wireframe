@@ -1,0 +1,56 @@
+flowchart TD
+    classDef main fill:#1E293B,stroke:#1E3A8A,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef depth1 fill:#1E3A8A,stroke:#1E40AF,stroke-width:2px,color:#FFFFFF;
+    classDef depth2 fill:#DBEAFE,stroke:#93C5FD,stroke-width:1px,color:#1E293B;
+    classDef modal fill:#F59E0B,stroke:#D97706,stroke-width:1px,color:#0F172A;
+    classDef study fill:#10B981,stroke:#059669,stroke-width:1.5px,color:#FFFFFF;
+    classDef assumed fill:#64748B,stroke:#475569,stroke-width:1px,color:#FFFFFF,stroke-dasharray: 5 5;
+
+    MAIN["0.0 수험생 메인 랜딩 (P-0.0)"]:::main
+
+    VEST["1.0 수험생 조끼 (P-1.0)"]:::depth1
+    TECH["2.0 무소음 테크 (P-2.0)"]:::depth1
+    STUDY["3.0 순공 대시보드 (P-3.0)"]:::study
+    TRIAL["4.0 30일 무료 체험 (P-4.0)"]:::depth1
+    REVIEW["5.0 학부모 후기 (P-5.0)"]:::depth1
+    MYPAGE["6.0 회원 서비스 [가정] (P-6.0)"]:::assumed
+    EXCEPT["9.0 예외 페이지 [가정] (P-9.0)"]:::assumed
+
+    MAIN --> VEST
+    MAIN --> TECH
+    MAIN --> STUDY
+    MAIN --> TRIAL
+    MAIN --> REVIEW
+    MAIN -.-> MYPAGE
+    MAIN -.-> EXCEPT
+
+    VEST --> V1["1.1 0.1mm 스킨 메쉬 사양"]:::depth2
+    VEST --> V2["1.2 교복/체육복 착용 핏"]:::depth2
+    VEST --> V3["1.3 교복 정밀 사이즈 [모달]"]:::modal
+
+    TECH --> T1["2.1 독서실 소음 0dB 구조"]:::depth2
+    TECH --> T2["2.2 근전도 38% 이완 성적서"]:::depth2
+    TECH --> T3["2.3 무진동/반영구 프레임"]:::depth2
+
+    STUDY --> S1["3.1 스터디 타이머 연동"]:::depth2
+    STUDY --> S2["3.2 순공 집중력 점수 리포트"]:::depth2
+    STUDY --> S3["3.3 10초 릴렉스 루틴"]:::depth2
+
+    TRIAL --> F1["4.1 무료 시착 혜택 안내"]:::depth2
+    TRIAL --> F2["4.2 100% 무료 반품 약관"]:::depth2
+    TRIAL --> F3["4.3 30일 무료 체험 신청 [모달]"]:::modal
+    F3 --> F4["4.4 신청 완료 안내 [가정]"]:::assumed
+
+    REVIEW --> R1["5.1 100인 합격생 후기"]:::depth2
+    REVIEW --> R2["5.2 대치동 학부모 인터뷰"]:::depth2
+    REVIEW --> R3["5.3 FAQ 아코디언"]:::depth2
+
+    MYPAGE -.-> M1["6.1 간편 로그인 [가정]"]:::assumed
+    MYPAGE -.-> M2["6.2 마이페이지 [가정]"]:::assumed
+    EXCEPT -.-> E1["9.1 404 Not Found [가정]"]:::assumed
+    EXCEPT -.-> E2["9.2 시스템 점검 안내 [가정]"]:::assumed
+
+    V3 --> F3
+    T1 --> F3
+    S1 --> F3
+    F3 --> F4

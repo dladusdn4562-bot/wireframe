@@ -1,0 +1,163 @@
+- generic [ref=f45e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f45e15]:
+      - generic [ref=f45e17]:
+        - generic [ref=f45e18]:
+          - combobox "검색" [ref=f45e20]: infinity leaf logo grid
+          - generic [ref=f45e21]:
+            - button "검색 입력 삭제" [ref=f45e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f45e30]:
+              - button "Pinterest 렌즈" [ref=f45e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f45e38] [cursor=pointer]:
+          - generic [ref=f45e40]:
+            - generic [ref=f45e41]: 모든 핀
+            - img "드롭다운" [ref=f45e43]
+      - link "내 프로필" [ref=f45e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f45e56]:
+          - generic [ref=f45e57]: 임
+      - button "계정" [ref=f45e61] [cursor=pointer]
+  - navigation [ref=f45e66]:
+    - generic [ref=f45e68]:
+      - generic [ref=f45e69]:
+        - generic "홈" [ref=f45e73]:
+          - link "홈" [ref=f45e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f45e81]:
+          - link "홈" [ref=f45e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f45e89]:
+          - link "내 보드" [ref=f45e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f45e97]:
+          - button "만들기" [ref=f45e98] [cursor=pointer]
+        - generic "업데이트" [ref=f45e107]:
+          - button "업데이트" [ref=f45e108] [cursor=pointer]
+        - generic "메시지" [ref=f45e117]:
+          - button "메시지" [ref=f45e118] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f45e126]:
+        - button "설정 및 지원" [ref=f45e127] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=f45e132]:
+    - generic [ref=f45e134]:
+      - heading "검색 결과 페이지" [level=1] [ref=f45e136]
+      - region "필터 및 세분화 검색" [ref=f45e140]:
+        - button "필터 표시" [ref=f45e149] [cursor=pointer]
+      - generic [ref=f45e160]:
+        - generic [ref=f45e161]: infinity leaf logo grid 검색 결과를 추가로 표시
+        - list [ref=f45e166]:
+          - listitem [ref=f45e167]:
+            - button [ref=f45e169] [cursor=pointer]:
+              - group "핀 카드" [ref=f45e171]:
+                - generic [ref=f45e173]:
+                  - link "The Infinite Seed 핀 페이지" [ref=f45e175]:
+                    - /url: /pin/32651166044859880/
+                    - 'img "포함된 이미지: The Infinite Seed" [ref=f45e185]'
+                  - generic [ref=f45e190]:
+                    - heading [level=2] [ref=f45e196]:
+                      - link "The Infinite Seed 핀 페이지" [ref=f45e198]:
+                        - /url: /pin/32651166044859880/
+                        - text: The Infinite Seed
+                    - generic "추가 작업" [ref=f45e201]:
+                      - button "추가 작업" [ref=f45e202]
+          - listitem [ref=f45e207]:
+            - button [ref=f45e209] [cursor=pointer]:
+              - group "핀 카드" [ref=f45e211]:
+                - generic [ref=f45e213]:
+                  - link "infinity leaf logo 핀 페이지" [ref=f45e215]:
+                    - /url: /pin/4599582731251328384/
+                    - 'img "포함된 이미지: infinity leaf logo" [ref=f45e225]'
+                  - generic [ref=f45e230]:
+                    - generic [ref=f45e232]:
+                      - generic [ref=f45e234]:
+                        - img "쇼핑 가능한 핀 표시기" [ref=f45e236]
+                        - heading [level=2] [ref=f45e239]:
+                          - link "infinity leaf logo 핀 페이지" [ref=f45e241]:
+                            - /url: /pin/4599582731251328384/
+                            - text: infinity leaf logo
+                      - link "infinity leaf logo 핀 페이지" [ref=f45e243]:
+                        - /url: /pin/4599582731251328384/
+                        - generic "Scalebranding" [ref=f45e247]
+                    - generic "추가 작업" [ref=f45e250]:
+                      - button "추가 작업" [ref=f45e251]
+          - listitem [ref=f45e256]:
+            - button [ref=f45e258] [cursor=pointer]:
+              - group "핀 카드" [ref=f45e260]:
+                - generic [ref=f45e262]:
+                  - link "Infinity Oak Leaf Logo 핀 페이지" [ref=f45e264]:
+                    - /url: /pin/4602256722521574272/
+                    - 'img "포함된 이미지: Infinity Oak Leaf Logo" [ref=f45e274]'
+                  - generic [ref=f45e279]:
+                    - generic [ref=f45e281]:
+                      - generic [ref=f45e283]:
+                        - img "쇼핑 가능한 핀 표시기" [ref=f45e285]
+                        - heading [level=2] [ref=f45e288]:
+                          - link "Infinity Oak Leaf Logo 핀 페이지" [ref=f45e290]:
+                            - /url: /pin/4602256722521574272/
+                            - text: Infinity Oak Leaf Logo
+                      - link "Infinity Oak Leaf Logo 핀 페이지" [ref=f45e292]:
+                        - /url: /pin/4602256722521574272/
+                        - generic "Scalebranding" [ref=f45e296]
+                    - generic "추가 작업" [ref=f45e299]:
+                      - button "추가 작업" [ref=f45e300]
+          - listitem [ref=f45e305]:
+            - button [ref=f45e307] [cursor=pointer]:
+              - group "핀 카드" [ref=f45e309]:
+                - generic [ref=f45e311]:
+                  - link "Infinity Mapple Leaf Logo 핀 페이지" [ref=f45e313]:
+                    - /url: /pin/4608801035388925824/
+                    - 'img "포함된 이미지: Infinity Mapple Leaf Logo" [ref=f45e323]'
+                  - generic [ref=f45e328]:
+                    - generic [ref=f45e330]:
+                      - generic [ref=f45e332]:
+                        - img "쇼핑 가능한 핀 표시기" [ref=f45e334]
+                        - heading [level=2] [ref=f45e337]:
+                          - link "Infinity Mapple Leaf Logo 핀 페이지" [ref=f45e339]:
+                            - /url: /pin/4608801035388925824/
+                            - text: Infinity Mapple Leaf Logo
+                      - link "Infinity Mapple Leaf Logo 핀 페이지" [ref=f45e341]:
+                        - /url: /pin/4608801035388925824/
+                        - generic "Scalebranding" [ref=f45e345]
+                    - generic "추가 작업" [ref=f45e348]:
+                      - button "추가 작업" [ref=f45e349]
+          - listitem [ref=f45e354]:
+            - button [ref=f45e356] [cursor=pointer]:
+              - group "핀 카드" [ref=f45e358]:
+                - generic [ref=f45e360]:
+                  - link "Infinity Plant Logo 핀 페이지" [ref=f45e362]:
+                    - /url: /pin/4601693749051411328/
+                    - 'img "포함된 이미지: Infinity Plant Logo" [ref=f45e372]'
+                  - generic [ref=f45e377]:
+                    - generic [ref=f45e379]:
+                      - generic [ref=f45e381]:
+                        - img "쇼핑 가능한 핀 표시기" [ref=f45e383]
+                        - heading [level=2] [ref=f45e386]:
+                          - link "Infinity Plant Logo 핀 페이지" [ref=f45e388]:
+                            - /url: /pin/4601693749051411328/
+                            - text: Infinity Plant Logo
+                      - link "Infinity Plant Logo 핀 페이지" [ref=f45e390]:
+                        - /url: /pin/4601693749051411328/
+                        - generic "Scalebranding" [ref=f45e394]
+                    - generic "추가 작업" [ref=f45e397]:
+                      - button "추가 작업" [ref=f45e398]
+          - listitem [ref=f45e403]:
+            - button [ref=f45e405] [cursor=pointer]:
+              - group "핀 카드" [ref=f45e407]:
+                - generic [ref=f45e409]:
+                  - link "Leaf Lettermark A Infinity Logo 핀 페이지" [ref=f45e411]:
+                    - /url: /pin/4590716207597651328/
+                    - 'img "포함된 이미지: Leaf Lettermark A Infinity Logo" [ref=f45e421]'
+                  - generic [ref=f45e426]:
+                    - generic [ref=f45e427]:
+                      - heading [level=2] [ref=f45e432]:
+                        - link "Leaf Lettermark A Infinity Logo 핀 페이지" [ref=f45e434]:
+                          - /url: /pin/4590716207597651328/
+                          - text: Leaf Lettermark A Infinity Logo
+                      - link "Scalebranding" [ref=f45e437]:
+                        - /url: /scalebrandingstore/
+                        - generic "Scalebranding" [ref=f45e444]
+                    - generic "추가 작업" [ref=f45e447]:
+                      - button "추가 작업" [ref=f45e448]

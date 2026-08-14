@@ -1,0 +1,27 @@
+=============================================================================
+[SEUMIM] 추가 140개 리서치 수집 배제(Drop) 폐기 항목 및 사유 기록
+=============================================================================
+
+01. SpineMed Pro Tech (http://spinemed-protech.com)
+    - 폐기 사유: 파란/흰색 위주의 차가운 병원 엑스레이 및 의료기기 톤앤매너로 SEUMIM 감성 웰니스 무드 및 비대칭 프레임 지침에 부적합.
+
+02. Enterprise Posture SaaS (https://enterprise-posture-saas.io)
+    - 폐기 사유: 기업용 대시보드 및 복잡한 B2B 소프트웨어 레이아웃 구조로 D2C 커머스 브랜드 레퍼런스로 부적합.
+
+03. Global Medical Supplies Mall (https://global-medical-supplies.net)
+    - 폐기 사유: 수십 개 의료용품 카테고리가 조잡하게 나열된 종합 오픈마켓 구조로 미니멀 감성 여백 및 하이엔드 톤앤매너에 불부합.
+
+04. BioClinic Network (https://bioclinic-network.org)
+    - 폐기 사유: 차가운 의학 클리닉 비주얼 및 네트워크 접속 불량 링크.
+
+05. Hospital Equipment Direct (https://hosp-equip-direct.com)
+    - 폐기 사유: 진단기기 위주의 전형적인 의료 장비 사이트로 D2C 감성 커머스 레퍼런스로 부적합.
+
+06. B2B Health Dashboard (https://b2b-health-dashboard.io)
+    - 폐기 사유: B2B 시스템 로그 및 관리자 대시보드 레이아웃으로 커머스 동선 부적합.
+
+07. MediTech Open Store (https://meditech-openstore.net)
+    - 폐기 사유: 조잡한 상품 배치 및 감성 여백 배제 오픈마켓 스타일.
+
+08. Clinic Pro Care (https://clinicpro-care.org)
+    - 폐기 사유: 병원 예약 전용 의료 포털 인터페이스 및 접속 불안정.

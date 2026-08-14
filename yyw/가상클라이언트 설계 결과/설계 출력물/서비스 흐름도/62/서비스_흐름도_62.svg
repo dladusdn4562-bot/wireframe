@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 2220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradFlow75" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0612"/>
+      <stop offset="100%" stop-color="#1E162A"/>
+    </linearGradient>
+    <filter id="shadowFlow75" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1680" height="2220" fill="url(#bgGradFlow75)"/>
+
+  <!-- Title -->
+  <text x="840" y="70" font-family="'Pretendard', sans-serif" font-size="32" font-weight="900" fill="#FDA4AF" text-anchor="middle">SEUMIM Pilates 서비스 흐름도 (가상클라이언트 62: 필라테스재활원장)</text>
+  <text x="840" y="110" font-family="'Pretendard', sans-serif" font-size="16" fill="#94A3B8" text-anchor="middle">15개 브랜드 상품 탭 탐색 / 퀵뷰 모달 / 30일 무료 시착 & 청담 아카데미 예약 전 14단계 풀 플로우</text>
+
+  <!-- ST-01 -->
+  <g transform="translate(640, 160)" filter="url(#shadowFlow75)">
+    <rect width="400" height="90" rx="12" fill="#1E293B" stroke="#FDA4AF" stroke-width="2.5"/>
+    <text x="200" y="38" font-family="'Pretendard', sans-serif" font-size="18" font-weight="800" fill="#FDA4AF" text-anchor="middle">ST-01 웹사이트 진입 및 랜딩</text>
+    <text x="200" y="65" font-family="'Pretendard', sans-serif" font-size="13" fill="#E2E8F0" text-anchor="middle">0.1mm 심리스핏 히어로 + 15개 상품 쇼케이스 로드 (SCR-01)</text>
+  </g>
+
+  <path d="M 840 250 L 840 300" stroke="#FDA4AF" stroke-width="2.5" fill="none"/>
+
+  <!-- ST-02 -->
+  <g transform="translate(640, 300)" filter="url(#shadowFlow75)">
+    <rect width="400" height="80" rx="10" fill="#1E293B" stroke="#64748B" stroke-width="1.5"/>
+    <text x="200" y="34" font-family="'Pretendard', sans-serif" font-size="16" font-weight="700" fill="#F8FAFC" text-anchor="middle">ST-02 여성 산후/체형 통계 확인</text>
+    <text x="200" y="58" font-family="'Pretendard', sans-serif" font-size="12.5" fill="#94A3B8" text-anchor="middle">골반 통증 88.6% 및 척추 불균형 인포그래픽 확인</text>
+  </g>
+
+  <path d="M 840 380 L 840 430" stroke="#FDA4AF" stroke-width="2.5" fill="none"/>
+
+  <!-- ST-03 15 Products Tabs -->
+  <g transform="translate(565, 430)" filter="url(#shadowFlow75)">
+    <rect width="550" height="110" rx="14" fill="#0A192F" stroke="#FDA4AF" stroke-width="2.5"/>
+    <text x="275" y="38" font-family="'Pretendard', sans-serif" font-size="19" font-weight="900" fill="#FDA4AF" text-anchor="middle">★ ST-03 메인 15개 상품 카테고리 탭 탐색</text>
+    <text x="275" y="66" font-family="'Pretendard', sans-serif" font-size="13" fill="#E2E8F0" text-anchor="middle">[전체 15종] / [시그니처 4종] / [산후재활 4종] / [스마트센서 4종] / [홈케어 3종]</text>
+    <text x="275" y="90" font-family="'Pretendard', sans-serif" font-size="12" fill="#FDA4AF" text-anchor="middle">탭 전환 시 비동기 카드 리렌더링 & 뱃지/가격/평점 확인</text>
+  </g>
+
+  <!-- Decision -->
+  <path d="M 840 540 L 840 600" stroke="#FDA4AF" stroke-width="2.5" fill="none"/>
+  <g transform="translate(690, 600)">
+    <polygon points="150,0 300,60 150,120 0,60" fill="#312E81" stroke="#818CF8" stroke-width="2"/>
+    <text x="150" y="55" font-family="'Pretendard', sans-serif" font-size="14" font-weight="700" fill="#EEF2FF" text-anchor="middle">상품 탐색 방식</text>
+    <text x="150" y="75" font-family="'Pretendard', sans-serif" font-size="11" fill="#C7D2FE" text-anchor="middle">선택 분기</text>
+  </g>
+
+  <!-- Left: Quick View -->
+  <path d="M 690 660 L 400 660 L 400 730" stroke="#818CF8" stroke-width="2" fill="none"/>
+  <g transform="translate(230, 730)" filter="url(#shadowFlow75)">
+    <rect width="340" height="85" rx="10" fill="#FFFBEB" stroke="#D97706" stroke-width="2"/>
+    <text x="170" y="34" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" fill="#92400E" text-anchor="middle">ST-04 퀵뷰 모달 호출</text>
+    <text x="170" y="58" font-family="'Pretendard', sans-serif" font-size="12" fill="#B45309" text-anchor="middle">메인 이탈 없이 세부 스펙/화보 팝업 표출</text>
+  </g>
+
+  <path d="M 400 815 L 400 860" stroke="#D97706" stroke-width="2" fill="none"/>
+  <g transform="translate(230, 860)" filter="url(#shadowFlow75)">
+    <rect width="340" height="85" rx="10" fill="#FFFBEB" stroke="#D97706" stroke-width="2"/>
+    <text x="170" y="34" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" fill="#92400E" text-anchor="middle">ST-05 체형 사이즈 매칭</text>
+    <text x="170" y="58" font-family="'Pretendard', sans-serif" font-size="12" fill="#B45309" text-anchor="middle">여성 치수(44/55/66/77) 자동 계산기 연동 (SCR-04)</text>
+  </g>
+
+  <!-- Right: Direct Trial -->
+  <path d="M 990 660 L 1280 660 L 1280 730" stroke="#818CF8" stroke-width="2" fill="none"/>
+  <g transform="translate(1110, 730)" filter="url(#shadowFlow75)">
+    <rect width="340" height="85" rx="10" fill="#FFFBEB" stroke="#D97706" stroke-width="2"/>
+    <text x="170" y="34" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" fill="#92400E" text-anchor="middle">ST-06 30일 시착 신청 모달</text>
+    <text x="170" y="58" font-family="'Pretendard', sans-serif" font-size="12" fill="#B45309" text-anchor="middle">15개 상품 중 선택 및 신청서 로드 (SCR-10)</text>
+  </g>
+
+  <!-- Convergence to ST-07 & ST-08 -->
+  <path d="M 400 945 L 400 1000 L 840 1000" stroke="#D97706" stroke-width="2" fill="none"/>
+  <path d="M 1280 815 L 1280 1000 L 840 1000" stroke="#D97706" stroke-width="2" fill="none"/>
+  <path d="M 840 1000 L 840 1040" stroke="#D97706" stroke-width="2.5" fill="none"/>
+
+  <g transform="translate(640, 1040)" filter="url(#shadowFlow75)">
+    <rect width="400" height="90" rx="12" fill="#FFFBEB" stroke="#D97706" stroke-width="2"/>
+    <text x="200" y="38" font-family="'Pretendard', sans-serif" font-size="17" font-weight="800" fill="#92400E" text-anchor="middle">ST-07 배송 정보 & 사전 신청서 작성</text>
+    <text x="200" y="65" font-family="'Pretendard', sans-serif" font-size="12.5" fill="#B45309" text-anchor="middle">성명, 연락처, 안심 배송지 입력 및 약관 동의</text>
+  </g>
+
+  <path d="M 840 1130 L 840 1180" stroke="#10B981" stroke-width="2.5" fill="none"/>
+
+  <g transform="translate(620, 1180)" filter="url(#shadowFlow75)">
+    <rect width="440" height="95" rx="14" fill="#065F46" stroke="#10B981" stroke-width="2.5"/>
+    <text x="220" y="40" font-family="'Pretendard', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF" text-anchor="middle">ST-08 30일 무료 체험 접수 완료 [성공]</text>
+    <text x="220" y="68" font-family="'Pretendard', sans-serif" font-size="13" fill="#D1FAE5" text-anchor="middle">사전 예약 번호 발급, 30일 무료 반품 안내, 알림톡 발송</text>
+  </g>
+
+  <!-- Flow 2 & 3 Containers -->
+  <g transform="translate(100, 1340)">
+    <rect width="1480" height="340" rx="16" fill="#0B132B" stroke="#10B981" stroke-width="2"/>
+    <text x="740" y="45" font-family="'Pretendard', sans-serif" font-size="20" font-weight="800" fill="#34D399" text-anchor="middle">Flow B: 청담/한남 재활 아카데미 1:1 체형 스캔 4단계 예약 플로우</text>
+    <g transform="translate(60, 90)">
+      <rect width="380" height="100" rx="10" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
+      <text x="190" y="40" font-family="'Pretendard', sans-serif" font-size="16" font-weight="700" fill="#F8FAFC" text-anchor="middle">ST-09 재활 아카데미 검색 (SCR-06)</text>
+      <text x="190" y="68" font-family="'Pretendard', sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">청담 / 한남 지점 지도 탐색</text>
+    </g>
+    <path d="M 440 140 L 520 140" stroke="#10B981" stroke-width="2.5" fill="none"/>
+    <g transform="translate(520, 90)">
+      <rect width="440" height="100" rx="10" fill="#FFFBEB" stroke="#D97706" stroke-width="2"/>
+      <text x="220" y="40" font-family="'Pretendard', sans-serif" font-size="16" font-weight="800" fill="#92400E" text-anchor="middle">ST-10 4단계 예약 폼 작성 (SCR-07)</text>
+      <text x="220" y="68" font-family="'Pretendard', sans-serif" font-size="12" fill="#B45309" text-anchor="middle">지점 ➔ 일시 ➔ 체형고민 ➔ 예약확정</text>
+    </g>
+    <path d="M 960 140 L 1040 140" stroke="#10B981" stroke-width="2.5" fill="none"/>
+    <g transform="translate(1040, 90)">
+      <rect width="380" height="100" rx="10" fill="#065F46" stroke="#10B981" stroke-width="2.5"/>
+      <text x="190" y="40" font-family="'Pretendard', sans-serif" font-size="16" font-weight="900" fill="#FFFFFF" text-anchor="middle">ST-11 예약 확정 안내 (SCR-08)</text>
+      <text x="190" y="68" font-family="'Pretendard', sans-serif" font-size="12" fill="#D1FAE5" text-anchor="middle">예약 번호 확인, 센터 약도 및 알림톡 발송</text>
+    </g>
+  </g>
+
+  <g transform="translate(100, 1720)">
+    <rect width="1480" height="420" rx="16" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    <text x="740" y="45" font-family="'Pretendard', sans-serif" font-size="20" font-weight="800" fill="#FDA4AF" text-anchor="middle">Flow C: AI 바이오 케어 구독 & 5대 분기/예외 핸들링</text>
+    <g transform="translate(80, 90)">
+      <rect width="400" height="110" rx="10" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>
+      <text x="200" y="40" font-family="'Pretendard', sans-serif" font-size="16" font-weight="700" fill="#EEF2FF" text-anchor="middle">ST-12 AI 바이오 케어 3개월 구독</text>
+      <text x="200" y="68" font-family="'Pretendard', sans-serif" font-size="12" fill="#C7D2FE" text-anchor="middle">호흡/골반 대시보드 ➔ 1-Click 간편 로그인 ➔ 구독</text>
+    </g>
+    <g transform="translate(540, 90)">
+      <rect width="400" height="110" rx="10" fill="#450A0A" stroke="#F87171" stroke-width="1.5"/>
+      <text x="200" y="40" font-family="'Pretendard', sans-serif" font-size="16" font-weight="700" fill="#FEE2E2" text-anchor="middle">ST-13 404 Not Found (SCR-13)</text>
+      <text x="200" y="68" font-family="'Pretendard', sans-serif" font-size="12" fill="#FCA5A5" text-anchor="middle">오류 안내 및 [메인으로 이동] 버튼</text>
+    </g>
+    <g transform="translate(1000, 90)">
+      <rect width="400" height="110" rx="10" fill="#450A0A" stroke="#F87171" stroke-width="1.5"/>
+      <text x="200" y="40" font-family="'Pretendard', sans-serif" font-size="16" font-weight="700" fill="#FEE2E2" text-anchor="middle">ST-14 정기 점검 안내 (SCR-14)</text>
+      <text x="200" y="68" font-family="'Pretendard', sans-serif" font-size="12" fill="#FCA5A5" text-anchor="middle">서버 점검 시간 안내 및 고객센터</text>
+    </g>
+  </g>
+</svg>

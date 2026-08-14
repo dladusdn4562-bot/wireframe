@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1350" width="1200" height="1350">
+  <rect width="1200" height="1350" fill="#0F172A"/>
+  <text x="600" y="60" fill="#F8FAFC" font-size="26" font-weight="bold" text-anchor="middle">SEUMIM Sound 사이트 구조맵 (가상클라이언트 75: 게임사운드수석디자이너)</text>
+  <text x="600" y="95" fill="#06B6D4" font-size="15" text-anchor="middle">메인 15개 상품 쇼케이스 &amp; 14개 전 화면 완전 구조도</text>
+
+  <!-- Main Root -->
+  <rect x="450" y="140" width="300" height="70" rx="10" fill="#581C87" stroke="#06B6D4" stroke-width="2"/>
+  <text x="600" y="175" fill="#FFFFFF" font-size="16" font-weight="bold" text-anchor="middle">P-0.0 메인 랜딩페이지</text>
+  <text x="600" y="195" fill="#E2E8F0" font-size="12" text-anchor="middle">15개 상품 대형 쇼케이스 (4대 탭)</text>
+
+  <!-- 1st Tier Nav -->
+  <line x1="600" y1="210" x2="600" y2="260" stroke="#06B6D4" stroke-width="2"/>
+  <line x1="150" y1="260" x2="1050" y2="260" stroke="#06B6D4" stroke-width="2"/>
+
+  <!-- Col 1 -->
+  <line x1="150" y1="260" x2="150" y2="300" stroke="#06B6D4" stroke-width="2"/>
+  <rect x="50" y="300" width="200" height="60" rx="8" fill="#1E293B" stroke="#475569"/>
+  <text x="150" y="330" fill="#F8FAFC" font-size="14" font-weight="bold" text-anchor="middle">P-1.0 브랜드 철학</text>
+  <text x="150" y="348" fill="#94A3B8" font-size="11" text-anchor="middle">3대 원천기술 3D 분해도</text>
+
+  <!-- Col 2 -->
+  <line x1="375" y1="260" x2="375" y2="300" stroke="#06B6D4" stroke-width="2"/>
+  <rect x="275" y="300" width="200" height="60" rx="8" fill="#1E293B" stroke="#06B6D4"/>
+  <text x="375" y="330" fill="#F8FAFC" font-size="14" font-weight="bold" text-anchor="middle">P-2.0 전문 컬렉션</text>
+  <text x="375" y="348" fill="#06B6D4" font-size="11" text-anchor="middle">15개 상품 갤러리 &amp; 룩북</text>
+
+  <line x1="375" y1="360" x2="375" y2="400" stroke="#06B6D4" stroke-width="2"/>
+  <rect x="275" y="400" width="200" height="50" rx="6" fill="#0F172A" stroke="#475569"/>
+  <text x="375" y="430" fill="#F8FAFC" font-size="12" text-anchor="middle">P-2.4 사이즈 가이드 [모달]</text>
+
+  <!-- Col 3 -->
+  <line x1="600" y1="260" x2="600" y2="300" stroke="#06B6D4" stroke-width="2"/>
+  <rect x="500" y="300" width="200" height="60" rx="8" fill="#1E293B" stroke="#475569"/>
+  <text x="600" y="330" fill="#F8FAFC" font-size="14" font-weight="bold" text-anchor="middle">P-3.0 AI 데이터 케어</text>
+  <text x="600" y="348" fill="#94A3B8" font-size="11" text-anchor="middle">실시간 HUD 대시보드</text>
+
+  <!-- Col 4 -->
+  <line x1="825" y1="260" x2="825" y2="300" stroke="#06B6D4" stroke-width="2"/>
+  <rect x="725" y="300" width="200" height="60" rx="8" fill="#1E293B" stroke="#475569"/>
+  <text x="825" y="330" fill="#F8FAFC" font-size="14" font-weight="bold" text-anchor="middle">P-4.0 웰니스 센터</text>
+  <text x="825" y="348" fill="#94A3B8" font-size="11" text-anchor="middle">전국 지도 &amp; 1:1 스캔</text>
+
+  <line x1="825" y1="360" x2="825" y2="400" stroke="#06B6D4" stroke-width="2"/>
+  <rect x="725" y="400" width="200" height="50" rx="6" fill="#0F172A" stroke="#475569"/>
+  <text x="825" y="430" fill="#F8FAFC" font-size="12" text-anchor="middle">P-4.2 4단계 예약 [모달]</text>
+
+  <line x1="825" y1="450" x2="825" y2="480" stroke="#06B6D4" stroke-width="2"/>
+  <rect x="725" y="480" width="200" height="50" rx="6" fill="#0F172A" stroke="#475569"/>
+  <text x="825" y="510" fill="#F8FAFC" font-size="12" text-anchor="middle">P-4.3 예약 완료 안내</text>
+
+  <!-- Col 5 -->
+  <line x1="1050" y1="260" x2="1050" y2="300" stroke="#06B6D4" stroke-width="2"/>
+  <rect x="950" y="300" width="200" height="60" rx="8" fill="#1E293B" stroke="#475569"/>
+  <text x="1050" y="330" fill="#F8FAFC" font-size="14" font-weight="bold" text-anchor="middle">P-5.0 혜택 &amp; 체험</text>
+  <text x="1050" y="348" fill="#94A3B8" font-size="11" text-anchor="middle">300인 후기 &amp; 30일 반품</text>
+
+  <line x1="1050" y1="360" x2="1050" y2="400" stroke="#06B6D4" stroke-width="2"/>
+  <rect x="950" y="400" width="200" height="50" rx="6" fill="#0F172A" stroke="#475569"/>
+  <text x="1050" y="430" fill="#F8FAFC" font-size="12" text-anchor="middle">P-5.2 30일 시착 신청 [모달]</text>
+
+  <!-- Conversion Journeys Subgraph -->
+  <rect x="50" y="580" width="1100" height="700" rx="12" fill="#0F172A" stroke="#06B6D4" stroke-width="2"/>
+  <text x="600" y="620" fill="#F8FAFC" font-size="20" font-weight="bold" text-anchor="middle">★ 핵심 3대 전환 여정 (User Conversion Journeys)</text>
+
+  <!-- Flow 1 -->
+  <rect x="80" y="660" width="1040" height="170" rx="8" fill="#1E293B"/>
+  <text x="100" y="695" fill="#06B6D4" font-size="16" font-weight="bold">[Flow A] 15개 상품 탐색 ➔ 퀵뷰 ➔ 정밀 사이즈 매칭 ➔ 30일 무료 시착 (Primary Path)</text>
+  <text x="100" y="730" fill="#CBD5E1" font-size="13">• 단계: P-0.0 (메인 15개 상품 탭) ➔ [퀵뷰 모달] ➔ P-2.4 (사이즈 계산기) ➔ P-5.2 (30일 시착 모달) ➔ 접수 완료</text>
+  <text x="100" y="760" fill="#94A3B8" font-size="12">• 최적화 전략: 메인페이지 이탈 없이 1초 만에 4대 탭 비교, 100% 무료 반품 확약으로 구매 저항 제로 달성</text>
+  <rect x="100" y="780" width="400" height="30" rx="4" fill="#581C87"/>
+  <text x="300" y="800" fill="#FFFFFF" font-size="12" font-weight="bold" text-anchor="middle">전환율 최적화: 15개 상품 퀵뷰 &amp; 30일 무료 반품</text>
+
+  <!-- Flow 2 -->
+  <rect x="80" y="860" width="1040" height="170" rx="8" fill="#1E293B"/>
+  <text x="100" y="895" fill="#06B6D4" font-size="16" font-weight="bold">[Flow B] 전국 제휴 웰니스 센터 1회 무료 1:1 3D 체형 스캔 4단계 예약 (O2O Path)</text>
+  <text x="100" y="930" fill="#CBD5E1" font-size="13">• 단계: P-0.0 (메인) ➔ P-4.0 (센터 지도) ➔ P-4.2 (4단계 Wizard 예약 모달) ➔ P-4.3 (예약 확정 안내)</text>
+  <text x="100" y="960" fill="#94A3B8" font-size="12">• 최적화 전략: 지점선택 ➔ 일시 ➔ 작업환경 ➔ 예약확정 4단계 마이크로 인터랙션 및 알림톡 발송</text>
+  <rect x="100" y="980" width="400" height="30" rx="4" fill="#581C87"/>
+  <text x="300" y="1000" fill="#FFFFFF" font-size="12" font-weight="bold" text-anchor="middle">O2O 연계: 4단계 Wizard 간편 예약 시스템</text>
+
+  <!-- Flow 3 -->
+  <rect x="80" y="1060" width="1040" height="170" rx="8" fill="#1E293B"/>
+  <text x="100" y="1095" fill="#06B6D4" font-size="16" font-weight="bold">[Flow C] AI 바이오 척추 데이터 케어 3개월 무료 라이선스 구독 (Digital Care Path)</text>
+  <text x="100" y="1130" fill="#CBD5E1" font-size="13">• 단계: P-0.0 (메인) ➔ P-3.0 (AI 케어) ➔ P-6.1 (SNS 1-Click 로그인) ➔ P-6.2 (마이페이지 구독 활성화)</text>
+  <text x="100" y="1160" fill="#94A3B8" font-size="12">• 최적화 전략: 실시간 자세 점수 HUD 시연 후 1-Click 간편 로그인으로 3개월 무료 혜택 즉시 제공</text>
+  <rect x="100" y="1180" width="400" height="30" rx="4" fill="#581C87"/>
+  <text x="300" y="1200" fill="#FFFFFF" font-size="12" font-weight="bold" text-anchor="middle">디지털 구독 전환: SNS 1-Click 연동</text>
+</svg>

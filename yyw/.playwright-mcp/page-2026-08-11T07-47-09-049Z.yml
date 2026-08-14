@@ -1,0 +1,151 @@
+- generic [ref=f20e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f20e15]:
+      - generic [ref=f20e17]:
+        - generic [ref=f20e18]:
+          - combobox "검색" [ref=f20e20]: infinity leaf logo
+          - generic [ref=f20e21]:
+            - button "검색 입력 삭제" [ref=f20e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f20e30]:
+              - button "Pinterest 렌즈" [ref=f20e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f20e38] [cursor=pointer]:
+          - generic [ref=f20e40]:
+            - generic [ref=f20e41]: 모든 핀
+            - img "드롭다운" [ref=f20e43]
+      - link "내 프로필" [ref=f20e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f20e56]:
+          - generic [ref=f20e57]: 임
+      - button "계정" [ref=f20e61] [cursor=pointer]
+  - navigation [ref=f20e66]:
+    - generic [ref=f20e68]:
+      - generic [ref=f20e69]:
+        - generic "홈" [ref=f20e73]:
+          - link "홈" [ref=f20e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f20e81]:
+          - link "홈" [ref=f20e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f20e89]:
+          - link "내 보드" [ref=f20e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f20e97]:
+          - button "만들기" [ref=f20e98] [cursor=pointer]
+        - generic "업데이트" [ref=f20e107]:
+          - button "업데이트" [ref=f20e108] [cursor=pointer]
+        - generic "메시지" [ref=f20e117]:
+          - button "메시지" [ref=f20e118] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f20e126]:
+        - button "설정 및 지원" [ref=f20e127] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=f20e132]:
+    - generic [ref=f20e134]:
+      - heading "검색 결과 페이지" [level=1] [ref=f20e136]
+      - region "필터 및 세분화 검색" [ref=f20e140]:
+        - button "필터 표시" [ref=f20e149] [cursor=pointer]
+      - generic [ref=f20e160]:
+        - generic [ref=f20e161]: infinity leaf logo 검색 결과를 추가로 표시
+        - list [ref=f20e166]:
+          - listitem [ref=f20e167]:
+            - button [ref=f20e169] [cursor=pointer]:
+              - group "핀 카드" [ref=f20e171]:
+                - generic [ref=f20e173]:
+                  - link "infinity leaf logo 핀 페이지" [ref=f20e175]:
+                    - /url: /pin/4599582731251328384/
+                    - 'img "포함된 이미지: infinity leaf logo" [ref=f20e185]'
+                  - generic [ref=f20e190]:
+                    - generic [ref=f20e192]:
+                      - generic [ref=f20e194]:
+                        - img "쇼핑 가능한 핀 표시기" [ref=f20e196]
+                        - heading [level=2] [ref=f20e199]:
+                          - link "infinity leaf logo 핀 페이지" [ref=f20e201]:
+                            - /url: /pin/4599582731251328384/
+                            - text: infinity leaf logo
+                      - link "infinity leaf logo 핀 페이지" [ref=f20e203]:
+                        - /url: /pin/4599582731251328384/
+                        - generic "Scalebranding" [ref=f20e207]
+                    - generic "추가 작업" [ref=f20e210]:
+                      - button "추가 작업" [ref=f20e211]
+          - listitem [ref=f20e216]:
+            - button [ref=f20e218] [cursor=pointer]:
+              - group "핀 카드" [ref=f20e220]:
+                - generic [ref=f20e222]:
+                  - link "The Infinite Seed 핀 페이지" [ref=f20e224]:
+                    - /url: /pin/32651166044859880/
+                    - 'img "포함된 이미지: The Infinite Seed" [ref=f20e234]'
+                  - generic [ref=f20e239]:
+                    - heading [level=2] [ref=f20e245]:
+                      - link "The Infinite Seed 핀 페이지" [ref=f20e247]:
+                        - /url: /pin/32651166044859880/
+                        - text: The Infinite Seed
+                    - generic "추가 작업" [ref=f20e250]:
+                      - button "추가 작업" [ref=f20e251]
+          - listitem [ref=f20e256]:
+            - button [ref=f20e258] [cursor=pointer]:
+              - group "핀 카드" [ref=f20e260]:
+                - generic [ref=f20e262]:
+                  - link "Infinity Mapple Leaf Logo 핀 페이지" [ref=f20e264]:
+                    - /url: /pin/4608801035388925824/
+                    - 'img "포함된 이미지: Infinity Mapple Leaf Logo" [ref=f20e274]'
+                  - generic [ref=f20e279]:
+                    - generic [ref=f20e281]:
+                      - generic [ref=f20e283]:
+                        - img "쇼핑 가능한 핀 표시기" [ref=f20e285]
+                        - heading [level=2] [ref=f20e288]:
+                          - link "Infinity Mapple Leaf Logo 핀 페이지" [ref=f20e290]:
+                            - /url: /pin/4608801035388925824/
+                            - text: Infinity Mapple Leaf Logo
+                      - link "Infinity Mapple Leaf Logo 핀 페이지" [ref=f20e292]:
+                        - /url: /pin/4608801035388925824/
+                        - generic "Scalebranding" [ref=f20e296]
+                    - generic "추가 작업" [ref=f20e299]:
+                      - button "추가 작업" [ref=f20e300]
+          - listitem [ref=f20e305]:
+            - button [ref=f20e307] [cursor=pointer]:
+              - group "핀 카드" [ref=f20e309]:
+                - generic [ref=f20e311]:
+                  - link "Infinity Leaf Logo Leaves by Yopie | Creative Market 핀 페이지" [ref=f20e313]:
+                    - /url: /pin/1078541810817388060/
+                    - 'img "포함된 이미지: Infinity Leaf Logo Leaves by Yopie | Creative Market" [ref=f20e323]'
+                  - generic [ref=f20e328]:
+                    - generic [ref=f20e329]:
+                      - heading [level=2] [ref=f20e334]:
+                        - link "Infinity Leaf Logo Leaves by Yopie | Creative Market 핀 페이지" [ref=f20e336]:
+                          - /url: /pin/1078541810817388060/
+                          - text: Infinity Leaf Logo Leaves by Yopie | Creative Market
+                      - link "Creative Market" [ref=f20e339]:
+                        - /url: /creativemarket/
+                        - generic "Creative Market" [ref=f20e346]
+                    - generic "추가 작업" [ref=f20e349]:
+                      - button "추가 작업" [ref=f20e350]
+          - listitem [ref=f20e355]:
+            - button [ref=f20e357] [cursor=pointer]:
+              - group "핀 카드" [ref=f20e359]:
+                - generic [ref=f20e361]:
+                  - link "Leaf Logo, Infinity Logo, Organic Logo 핀 페이지" [ref=f20e363]:
+                    - /url: /pin/82964818136055371/
+                    - 'img "포함된 이미지: Leaf Logo, Infinity Logo, Organic Logo" [ref=f20e373]'
+                  - generic [ref=f20e378]:
+                    - heading [level=2] [ref=f20e384]:
+                      - link "Leaf Logo, Infinity Logo, Organic Logo 핀 페이지" [ref=f20e386]:
+                        - /url: /pin/82964818136055371/
+                        - text: Leaf Logo, Infinity Logo, Organic Logo
+                    - generic "추가 작업" [ref=f20e389]:
+                      - button "추가 작업" [ref=f20e390]
+          - listitem [ref=f20e395]:
+            - button [ref=f20e397] [cursor=pointer]:
+              - group "핀 카드" [ref=f20e399]:
+                - generic [ref=f20e401]:
+                  - link "Infinity Eco Leaf Logo Design | Sustainable Brand Identity 핀 페이지" [ref=f20e403]:
+                    - /url: /pin/1149543873661911165/
+                    - 'img "포함된 내용: A minimalist and clean logo depicting two green leaves intertwined to form a vertical infinity symbol or the figure eight. The top leaf has a lighter, lime-green gradient with fine vein details, while the bottom loop transitions into a darker forest green. The logo is set against a solid white background." [ref=f20e413]'
+                  - generic [ref=f20e418]:
+                    - heading [level=2] [ref=f20e424]:
+                      - link "Infinity Eco Leaf Logo Design | Sustainable Brand Identity 핀 페이지" [ref=f20e426]:
+                        - /url: /pin/1149543873661911165/
+                        - text: Infinity Eco Leaf Logo Design | Sustainable Brand Identity
+                    - generic "추가 작업" [ref=f20e429]:
+                      - button "추가 작업" [ref=f20e430]

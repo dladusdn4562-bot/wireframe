@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad_24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="headerGrad_24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="shadow_24" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feOffset dx="0" dy="4" result="offset"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1350" fill="url(#bgGrad_24)"/>
+
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="90" rx="16" fill="url(#headerGrad_24)" filter="url(#shadow_24)"/>
+    <text x="540" y="42" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="24" font-weight="900" text-anchor="middle">SEUMIM 버스기사 전용 서포터 사이트 구조맵 (가상클라이언트 24: 조현우)</text>
+    <text x="540" y="70" fill="#DBEAFE" font-family="'Pretendard', sans-serif" font-size="14" font-weight="600" text-anchor="middle">0.1mm 럼버 에어 쿠션 벨트 & 진동 흡수 시트 콤보 &amp; 30일 무료 체험 IA</text>
+  </g>
+
+  <g transform="translate(420, 180)">
+    <rect width="360" height="70" rx="12" fill="#1D4ED8" stroke="#3B82F6" stroke-width="2" filter="url(#shadow_24)"/>
+    <text x="180" y="34" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="16" font-weight="800" text-anchor="middle">0.0 메인 랜딩 (P-0.0)</text>
+    <text x="180" y="54" fill="#DBEAFE" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">직업병 통계 &amp; 30일 무료체험</text>
+  </g>
+
+  <g transform="translate(60, 310)"><rect width="200" height="60" rx="10" fill="#2563EB" filter="url(#shadow_24)"/><text x="100" y="34" fill="#FFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">1.0 버스기사 서포터</text></g>
+  <g transform="translate(280, 310)"><rect width="200" height="60" rx="10" fill="#2563EB" filter="url(#shadow_24)"/><text x="100" y="34" fill="#FFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">2.0 보호 테크</text></g>
+  <g transform="translate(500, 310)"><rect width="200" height="60" rx="10" fill="#2563EB" filter="url(#shadow_24)"/><text x="100" y="34" fill="#FFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">3.0 100인 후기</text></g>
+  <g transform="translate(720, 310)"><rect width="200" height="60" rx="10" fill="#2563EB" filter="url(#shadow_24)"/><text x="100" y="34" fill="#FFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">4.0 30일 무료체험</text></g>
+  <g transform="translate(940, 310)"><rect width="200" height="60" rx="10" fill="#2563EB" filter="url(#shadow_24)"/><text x="100" y="34" fill="#FFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">5.0 10초 스트레칭</text></g>
+
+  <path d="M 600 250 L 600 280 M 160 280 L 1040 280 M 160 280 L 160 310 M 380 280 L 380 310 M 600 280 L 600 310 M 820 280 L 820 310 M 1040 280 L 1040 310" stroke="#1D4ED8" stroke-width="2" fill="none"/>
+
+  <g transform="translate(60, 400)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">1.1 0.1mm 심리스 핏</text></g>
+  <g transform="translate(60, 450)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">1.2 하중 분산 테크</text></g>
+  <g transform="translate(60, 500)"><rect width="200" height="40" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/><text x="100" y="25" fill="#1D4ED8" font-size="12" font-weight="800" text-anchor="middle">1.3 사이즈 가이드 [모달]</text></g>
+
+  <g transform="translate(280, 400)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">2.1 3D 하중 분산</text></g>
+  <g transform="translate(280, 450)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">2.2 직업병 통계</text></g>
+  <g transform="translate(280, 500)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">2.3 성능 성적서</text></g>
+
+  <g transform="translate(500, 400)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">3.1 실착 리뷰</text></g>
+  <g transform="translate(500, 450)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">3.2 개선 인터뷰</text></g>
+  <g transform="translate(500, 500)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">3.3 단체 제휴</text></g>
+
+  <g transform="translate(720, 400)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">4.1 30일 무료 실착</text></g>
+  <g transform="translate(720, 450)"><rect width="200" height="40" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/><text x="100" y="25" fill="#1D4ED8" font-size="12" font-weight="800" text-anchor="middle">4.2 1-Click 신청 [모달]</text></g>
+  <g transform="translate(720, 500)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">4.3 주문 완료</text></g>
+
+  <g transform="translate(940, 400)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">5.1 10초 스트레칭</text></g>
+  <g transform="translate(940, 450)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">5.2 바른 자세</text></g>
+  <g transform="translate(940, 500)"><rect width="200" height="40" rx="6" fill="#FFF" stroke="#2563EB" stroke-width="1.5"/><text x="100" y="25" fill="#1E293B" font-size="12" font-weight="700" text-anchor="middle">5.3 B2B FAQ</text></g>
+
+  <g transform="translate(60, 620)">
+    <rect width="1080" height="670" rx="16" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="2" filter="url(#shadow_24)"/>
+    <rect width="1080" height="50" rx="16" fill="#1D4ED8"/>
+    <text x="540" y="32" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="18" font-weight="900" text-anchor="middle">📍 핵심 사용자 3대 전환 여정 (Key User Conversion Journeys)</text>
+
+    <g transform="translate(40, 80)">
+      <rect width="1000" height="160" rx="12" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+      <text x="30" y="36" fill="#1D4ED8" font-size="16" font-weight="800">[여정 1] 1-Click 30일 무료 체험단 여정 (메인 전환)</text>
+      <g transform="translate(30, 90)">
+        <rect width="160" height="45" rx="8" fill="#1D4ED8"/><text x="80" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">0.0 메인 랜딩</text>
+        <text x="175" y="28" fill="#2563EB" font-size="16">➔</text>
+        <rect x="195" width="160" height="45" rx="8" fill="#2563EB"/><text x="275" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">1.0 서포터</text>
+        <text x="370" y="28" fill="#2563EB" font-size="16">➔</text>
+        <rect x="390" width="160" height="45" rx="8" fill="#2563EB"/><text x="470" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">2.0 보호 테크</text>
+        <text x="565" y="28" fill="#2563EB" font-size="16">➔</text>
+        <rect x="585" width="180" height="45" rx="8" fill="#3B82F6"/><text x="675" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">4.2 신청 모달</text>
+        <text x="780" y="28" fill="#2563EB" font-size="16">➔</text>
+        <rect x="800" width="140" height="45" rx="8" fill="#1D4ED8"/><text x="870" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">4.3 댁/현장 수령</text>
+      </g>
+    </g>
+
+    <g transform="translate(40, 270)">
+      <rect width="1000" height="160" rx="12" fill="#F8FAFC" stroke="#2563EB" stroke-width="1.5"/>
+      <text x="30" y="36" fill="#1D4ED8" font-size="16" font-weight="800">[여정 2] 사이즈 정밀 매칭 및 무료 반품 주문 여정</text>
+      <g transform="translate(30, 90)">
+        <rect width="180" height="45" rx="8" fill="#1D4ED8"/><text x="90" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">3.0 업계 후기</text>
+        <text x="195" y="28" fill="#2563EB" font-size="16">➔</text>
+        <rect x="215" width="180" height="45" rx="8" fill="#2563EB"/><text x="305" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">1.3 사이즈 가이드</text>
+        <text x="410" y="28" fill="#2563EB" font-size="16">➔</text>
+        <rect x="430" width="220" height="45" rx="8" fill="#3B82F6"/><text x="540" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">30일 100% 무료 반품 보증</text>
+        <text x="665" y="28" fill="#2563EB" font-size="16">➔</text>
+        <rect x="685" width="160" height="45" rx="8" fill="#1D4ED8"/><text x="765" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">신청 완료</text>
+      </g>
+    </g>
+
+    <g transform="translate(40, 460)">
+      <rect width="1000" height="160" rx="12" fill="#FEF2F2" stroke="#EF4444" stroke-width="1.5"/>
+      <text x="30" y="36" fill="#991B1B" font-size="16" font-weight="800">[여정 3] 단체 B2B 제휴 여정</text>
+      <g transform="translate(30, 90)">
+        <rect width="180" height="45" rx="8" fill="#991B1B"/><text x="90" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">5.0 10초 스트레칭</text>
+        <text x="195" y="28" fill="#EF4444" font-size="16">➔</text>
+        <rect x="215" width="200" height="45" rx="8" fill="#DC2626"/><text x="315" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">3.3 단체 제휴</text>
+        <text x="430" y="28" fill="#EF4444" font-size="16">➔</text>
+        <rect x="450" width="240" height="45" rx="8" fill="#F87171"/><text x="570" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">단체 시착 신청</text>
+        <text x="705" y="28" fill="#EF4444" font-size="16">➔</text>
+        <rect x="725" width="160" height="45" rx="8" fill="#1D4ED8"/><text x="805" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">키트 발송</text>
+      </g>
+    </g>
+  </g>
+</svg>

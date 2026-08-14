@@ -1,0 +1,35 @@
+graph TD
+    classDef main fill:#0F172A,stroke:#EF4444,stroke-width:2px,color:#FFFFFF;
+    classDef sub fill:#1E293B,stroke:#94A3B8,stroke-width:1.5px,color:#F8FAFC;
+    classDef modal fill:#FFFBEB,stroke:#D97706,stroke-width:1.5px,color:#92400E;
+    classDef auth fill:#312E81,stroke:#818CF8,stroke-width:1.5px,color:#EEF2FF;
+    classDef exception fill:#450A0A,stroke:#F87171,stroke-width:1.5px,color:#FEE2E2;
+
+    Root["P-0.0 메인 랜딩페이지<br/>(SCR-01 / 15개 상품 대형 쇼케이스)"]:::main
+    P1["P-1.0 브랜드 철학<br/>(SCR-02)"]:::sub
+    P2["P-2.0 레이싱 컬렉션<br/>(SCR-03)"]:::sub
+    P2_4["P-2.4 콕핏 사이즈 가이드<br/>[모달] (SCR-04)"]:::modal
+    P3["P-3.0 AI 텔레메트리<br/>(SCR-05)"]:::sub
+    P4["P-4.0 콕핏 피팅 센터<br/>(SCR-06)"]:::sub
+    P4_2["P-4.2 4단계 콕핏 예약<br/>[모달] (SCR-07)"]:::modal
+    P4_3["P-4.3 예약 완료 안내<br/>(SCR-08)"]:::sub
+    P5["P-5.0 혜택 & 체험<br/>(SCR-09)"]:::sub
+    P5_2["P-5.2 30일 무료 체험 신청<br/>[모달] (SCR-10)"]:::modal
+    P6_1["P-6.1 로그인/가입<br/>(SCR-11)"]:::auth
+    P6_2["P-6.2 마이페이지<br/>(SCR-12)"]:::auth
+    P9_1["P-9.1 404 Not Found<br/>(SCR-13)"]:::exception
+    P9_2["P-9.2 시스템 점검<br/>(SCR-14)"]:::exception
+
+    Root --> P1
+    Root --> P2
+    P2 --> P2_4
+    Root --> P3
+    Root --> P4
+    P4 --> P4_2
+    P4_2 --> P4_3
+    Root --> P5
+    P5 --> P5_2
+    Root --> P6_1
+    Root --> P6_2
+    Root -.-> P9_1
+    Root -.-> P9_2

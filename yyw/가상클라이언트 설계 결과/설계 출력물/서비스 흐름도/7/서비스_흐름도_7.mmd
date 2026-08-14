@@ -1,0 +1,37 @@
+graph TD
+    classDef step fill:#111827,stroke:#00F0FF,stroke-width:2px,color:#00F0FF,font-weight:bold;
+    classDef action fill:#0284C7,stroke:#0369A1,stroke-width:1.5px,color:#FFFFFF;
+    classDef discord fill:#8B5CF6,stroke:#6D28D9,stroke-width:1.5px,color:#FFFFFF;
+    classDef decision fill:#F59E0B,stroke:#D97706,stroke-width:1.5px,color:#0F172A;
+    classDef finish fill:#10B981,stroke:#059669,stroke-width:2px,color:#FFFFFF;
+    classDef exception fill:#EF4444,stroke:#B91C1C,stroke-width:1.5px,color:#FFFFFF;
+
+    START([시작: 네온 다크 웹사이트 유입]):::step --> ST01["ST-01: 메인 탐색 & 거북목 에임 저하 통계"]:::action
+    ST01 --> DEC01{"어떤 정보를 먼저 확인할 것인가?"}:::decision
+
+    DEC01 -- "0.01s 햅틱 테크" --> ST03["ST-03: 화면 가림 없는 햅틱 넛지 & 23% 개선"]:::action
+    ST03 --> ST07["ST-07: 디스코드 1-Click 시착 신청 모달"]:::discord
+
+    DEC01 -- "프로 게이밍 기어 룩북" --> ST02["ST-02: 95g 초경량 핏 & 헤드셋 무간섭"]:::action
+    ST02 --> ST06["ST-06: 상의 치수(95/100/105) 사이즈 매칭"]:::action
+    ST06 --> ST07
+
+    DEC01 -- "디스코드 HUD 오버레이" --> ST04["ST-04: 디스코드 봇 실시간 자세 점수"]:::discord
+    ST04 --> ST10["ST-10: 파티원 실시간 자세 랭킹 확인"]:::discord
+    ST10 --> ST07
+
+    DEC01 -- "에임 10초 케어" --> ST05["ST-05: 큐 대기 10초 리셋 & LCK 100인 후기"]:::action
+    ST05 --> ST09["ST-09: 30일 무상 시착 혜택 안내"]:::action
+    ST09 --> ST07
+
+    ST07 --> DEC02{"디스코드 OAuth 승인 검증"}:::decision
+    DEC02 -- "승인 오류/취소" --> ST07E["ST-07E: 오류 안내 및 재인증"]:::exception
+    ST07E --> ST07
+
+    DEC02 -- "OAuth 정상 승인" --> ST08["ST-08: 30일 무상 시착 접수 완료 & 봇 초대"]:::finish
+    ST08 --> ST11["ST-11: 디스코드 OAuth 로그인 [가정]"]:::finish
+    ST11 --> ST12["ST-12: 마이페이지 판수별 척추 히트맵 확인"]:::finish
+    ST12 --> END([종료: 랭크 게임 중 실착 체험 및 에임 향상]):::step
+
+    EX1["ST-13: 404 Not Found [가정]"]:::exception -.-> ST01
+    EX2["ST-14: API 서버 점검 안내 [가정]"]:::exception -.-> ST01

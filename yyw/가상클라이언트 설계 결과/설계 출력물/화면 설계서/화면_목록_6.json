@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "SEUMIM(스밈) 주부 홈케어 1-Touch 조끼 화면 목록 (가상클라이언트 6: 정은숙)",
+  "version": "2.0.0",
+  "totalScreens": 14,
+  "screens": [
+    {
+      "screenId": "SCR-01",
+      "sitemapId": "P-0.0",
+      "name": "0.0 주부 홈케어 메인 랜딩",
+      "type": "PAGE",
+      "depth": 1,
+      "purpose": "가사 요통 공감, 1-Touch 3초 착용 영상, 080 무료 전화 및 30일 무료 체험 유도",
+      "components": ["큰 글씨 Hero", "가사 요통 통계 3.5배", "1-Touch 3초 착용 영상", "허리 하중 40% 분산 데이터", "동년배 100인 후기", "080 무료 전화 CTA"],
+      "interactions": [
+        {"element": "[📞 080 전화 주문] CTA", "action": "SCR-08 080 전화/신청 모달 호출"},
+        {"element": "[1-Touch 착용법 보기]", "action": "SCR-02 홈케어 조끼 상세 이동"}
+      ]
+    },
+    {
+      "screenId": "SCR-02",
+      "sitemapId": "P-1.0",
+      "name": "1.0 홈케어 조끼",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "전면 벨크로 1-Touch 구조 및 세탁기 통세척 관리법 검증",
+      "components": ["1-Touch 벨크로 확대 모식도", "세탁기 통세척 가이드", "홈웨어 실착 화보"],
+      "interactions": [
+        {"element": "[내 옷 사이즈 찾기]", "action": "SCR-03 상의 사이즈 모달 호출"}
+      ]
+    },
+    {
+      "screenId": "SCR-03",
+      "sitemapId": "P-1.3",
+      "name": "1.3 상의 치수 사이즈 가이드 [모달]",
+      "type": "MODAL",
+      "depth": 3,
+      "purpose": "평소 옷 치수(66/77/88/99) 기준 정밀 사이즈 선택 및 2벌 동시 발송 안내",
+      "components": ["상의 사이즈 칩 (66~99)", "신장/체중 권장표", "2벌 동시 무료 발송 배지"],
+      "interactions": [
+        {"element": "[이 사이즈로 무료 체험 신청]", "action": "30일 무료 신청 폼 작성"}
+      ]
+    },
+    {
+      "screenId": "SCR-04",
+      "sitemapId": "P-2.0",
+      "name": "2.0 허리 안심 테크",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "싱크대 숙임 시 허리 하중 40% 분산 바이오 힌지 및 오십견 배려 무간섭 패턴 검증",
+      "components": ["척추 하중 40% 분산 성적서", "오십견 무간섭 어깨 패턴 모식도"],
+      "interactions": [
+        {"element": "[30일 무료 체험 신청]", "action": "SCR-08 모달 호출"}
+      ]
+    },
+    {
+      "screenId": "SCR-05",
+      "sitemapId": "P-3.0",
+      "name": "3.0 동년배 100인 후기",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "50대 전업주부 설거지/청소 실착 포토 후기 및 맘카페 추천 리뷰 확인",
+      "components": ["50대 주부 실착 포토 카드 6종", "맘카페 평점 4.92점 통계 배지"],
+      "interactions": [
+        {"element": "[포토 후기 확대]", "action": "고화질 모달 팝업"}
+      ]
+    },
+    {
+      "screenId": "SCR-06",
+      "sitemapId": "P-3.3",
+      "name": "3.3 자녀 효도 선물 인터뷰",
+      "type": "PAGE",
+      "depth": 3,
+      "purpose": "부모님 효도 선물 만족도 99% 인터뷰 및 고급 선물 포장 옵션 안내",
+      "components": ["자녀 인터뷰 영상", "고급 한지 선물 포장 박스 화보"],
+      "interactions": [
+        {"element": "[부모님 댁으로 선물 신청]", "action": "SCR-08 모달 호출"}
+      ]
+    },
+    {
+      "screenId": "SCR-07",
+      "sitemapId": "P-4.0",
+      "name": "4.0 30일 무료 체험 안내",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "집에서 30일간 입어보고 결정하는 100% 무료 반품 정책 및 안심 보증서 안내",
+      "components": ["100% 무료 반품 골드 씰 보증서", "문 앞 자동 수거 3단계 안내표"],
+      "interactions": [
+        {"element": "[무료 체험 신청]", "action": "SCR-08 모달 오픈"}
+      ]
+    },
+    {
+      "screenId": "SCR-08",
+      "sitemapId": "P-4.2",
+      "name": "4.2 080 전화 / 카톡 간편 신청 [모달]",
+      "type": "MODAL",
+      "depth": 3,
+      "purpose": "080 무료 전화 터치 또는 성함/주소 10초 간편 입력 접수",
+      "components": ["[📞 080 무료 전화 연결] 버튼", "카톡 1-Click 신청", "성함/연락처/주소 폼"],
+      "interactions": [
+        {"element": "[080 무료 전화]", "action": "tel:0808001234 다이얼 연결"},
+        {"element": "[신청 완료]", "action": "SCR-09 주문 완료 페이지 이동"}
+      ]
+    },
+    {
+      "screenId": "SCR-09",
+      "sitemapId": "P-4.3",
+      "name": "4.3 주문 완료 및 배송 안내 [가정]",
+      "type": "PAGE",
+      "depth": 3,
+      "purpose": "고유 주문 번호 확인 및 2벌 동시 배송 일정 안내",
+      "components": ["주문 접수 번호", "2벌 동시 배송 일정", "30일 무료 반품 가이드"],
+      "interactions": [
+        {"element": "[배송 조회]", "action": "SCR-12 마이페이지 이동"}
+      ]
+    },
+    {
+      "screenId": "SCR-10",
+      "sitemapId": "P-5.0",
+      "name": "5.0 살림 케어 가이드",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "설거지/청소기 허리 덜 아픈 자세 및 10초 의자 스트레칭 팁 제공",
+      "components": ["허리 안 아픈 자세 영상", "10초 의자 스트레칭", "080 전화 FAQ 아코디언"],
+      "interactions": [
+        {"element": "[스트레칭 영상 재생]", "action": "비디오 팝업"}
+      ]
+    },
+    {
+      "screenId": "SCR-11",
+      "sitemapId": "P-6.1",
+      "name": "6.1 전화번호 간편 조회 [가정]",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "복잡한 비밀번호 없는 휴대폰 번호 간편 주문 조회",
+      "components": ["휴대폰 번호 입력창", "조회 버튼"],
+      "interactions": [
+        {"element": "[주문 조회]", "action": "SCR-12 마이페이지 이동"}
+      ]
+    },
+    {
+      "screenId": "SCR-12",
+      "sitemapId": "P-6.2",
+      "name": "6.2 마이페이지 배송 조회 [가정]",
+      "type": "PAGE",
+      "depth": 2,
+      "purpose": "30일 무료 체험 배송 현황 및 1-Click 무료 반품 신청",
+      "components": ["배송 현황 카드", "1-Click 무료 반품 버튼", "교환 접수"],
+      "interactions": [
+        {"element": "[1-Click 무료 반품]", "action": "반품 신청 모달 오픈"}
+      ]
+    },
+    {
+      "screenId": "SCR-13",
+      "sitemapId": "P-9.1",
+      "name": "9.1 404 Not Found [가정]",
+      "type": "EXCEPT",
+      "depth": 2,
+      "purpose": "친절한 큰 글씨 에러 안내 및 080 무료 전화 주문 바로가기",
+      "components": ["큰 글씨 404 안내문", "[📞 080 전화로 주문하기] CTA"],
+      "interactions": [
+        {"element": "[080 전화 주문]", "action": "SCR-08 이동"}
+      ]
+    },
+    {
+      "screenId": "SCR-14",
+      "sitemapId": "P-9.2",
+      "name": "9.2 시스템 점검 안내 [가정]",
+      "type": "EXCEPT",
+      "depth": 2,
+      "purpose": "점검 중에도 080 전화 주문은 정상 운영됨을 안내",
+      "components": ["점검 시간 공지", "080 무료 전화 정상 운영 안내"],
+      "interactions": [
+        {"element": "[080 전화 연결]", "action": "tel:0808001234 다이얼 연결"}
+      ]
+    }
+  ]
+}

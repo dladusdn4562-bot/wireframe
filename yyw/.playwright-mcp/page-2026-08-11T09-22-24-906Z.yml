@@ -1,0 +1,93 @@
+- generic [ref=f321e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f321e15]:
+      - generic [ref=f321e18]:
+        - generic:
+          - img "검색 아이콘"
+        - combobox "검색" [ref=f321e20]
+        - generic "이미지 업로드" [ref=f321e23]:
+          - button "Pinterest 렌즈" [ref=f321e24] [cursor=pointer]
+      - link "내 프로필" [ref=f321e33] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f321e40]:
+          - generic [ref=f321e41]: 임
+      - button "계정" [ref=f321e45] [cursor=pointer]
+  - navigation [ref=f321e50]:
+    - generic [ref=f321e52]:
+      - generic [ref=f321e53]:
+        - generic "홈" [ref=f321e57]:
+          - link "홈" [ref=f321e58] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f321e65]:
+          - link "홈" [ref=f321e66] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f321e73]:
+          - link "내 보드" [ref=f321e74] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f321e81]:
+          - button "만들기" [ref=f321e82] [cursor=pointer]
+        - generic "업데이트" [ref=f321e91]:
+          - button "업데이트" [ref=f321e92] [cursor=pointer]
+        - generic "메시지" [ref=f321e101]:
+          - button "메시지" [ref=f321e102] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f321e110]:
+        - button "설정 및 지원" [ref=f321e111] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=f321e116]:
+    - generic [ref=f321e125]:
+      - button "뒤로" [ref=f321e127] [cursor=pointer]
+      - generic [ref=f321e136]:
+        - generic [ref=f321e137]: 관련 상품 결과를 불러오는 중
+        - list [ref=f321e142]:
+          - listitem [ref=f321e143]:
+            - group "Closeup content container" [ref=f321e150]:
+              - generic [ref=f321e155]:
+                - generic [ref=f321e159]:
+                  - list [ref=f321e160]:
+                    - generic [ref=f321e161]:
+                      - listitem [ref=f321e163]:
+                        - generic "반응" [ref=f321e166]:
+                          - button "반응" [ref=f321e167] [cursor=pointer]
+                        - generic [ref=f321e172]: "6"
+                      - listitem [ref=f321e174]:
+                        - generic "댓글" [ref=f321e177]:
+                          - button "댓글" [ref=f321e178] [cursor=pointer]
+                      - listitem [ref=f321e184]:
+                        - generic "공유" [ref=f321e188]:
+                          - button "이 핀 공유" [ref=f321e191] [cursor=pointer]
+                      - listitem [ref=f321e197]:
+                        - generic "추가 작업" [ref=f321e202]:
+                          - button "추가 작업" [ref=f321e205] [cursor=pointer]
+                  - generic [ref=f321e215]:
+                    - 'button "저장할 보드 선택: 프로필" [ref=f321e218] [cursor=pointer]':
+                      - generic "프로필" [ref=f321e221]
+                    - button "저장" [ref=f321e227] [cursor=pointer]
+                - region "핀 이미지 및 탐색할 항목" [ref=f321e234]:
+                  - generic [ref=f321e244]:
+                    - button "더 크게 보기" [ref=f321e246] [cursor=pointer]:
+                      - generic [ref=f321e248]:
+                        - generic: 더 크게 보기
+                        - img "더 크게 보기" [ref=f321e250]
+                    - button "이미지 검색" [ref=f321e255] [cursor=pointer]:
+                      - generic [ref=f321e257]:
+                        - generic: 이미지 검색
+                        - img "이미지 검색" [ref=f321e259]
+                - generic [ref=f321e277]:
+                  - generic [ref=f321e279]:
+                    - button [ref=f321e281]
+                    - generic [ref=f321e285]:
+                      - generic: 의견을 공유하려면 댓글을 추가하세요.
+                      - combobox "의견을 공유하려면 댓글을 추가하세요." [ref=f321e287]
+                  - generic [ref=f321e296]:
+                    - button "이모티콘 선택" [ref=f321e297] [cursor=pointer]
+                    - button "스티커 선택" [ref=f321e302] [cursor=pointer]
+                    - button "사진을 선택합니다." [ref=f321e308] [cursor=pointer]
+          - listitem [ref=f321e313]
+          - listitem [ref=f321e317]
+          - listitem [ref=f321e321]
+          - listitem [ref=f321e325]
+  - generic:
+    - contentinfo "꼬리말"

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM NURSE CARE 와이어프레임 스튜디오 (가상클라이언트 9: 윤지민)</title>
+  <style>
+    :root {
+      --primary: #0D9488;
+      --primary-dark: #115E59;
+      --primary-light: #CCFBF1;
+      --accent: #059669;
+      --bg: #F0FDFA;
+      --surface: #FFFFFF;
+      --text: #0F172A;
+      --text-muted: #64748B;
+      --border: #99F6E4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif; }
+    body { background: var(--bg); color: var(--text); display: flex; height: 100vh; overflow: hidden; font-size: 16px; }
+    
+    .sidebar { width: 340px; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; flex-shrink: 0; }
+    .sidebar-header { padding: 20px; border-bottom: 1px solid var(--border); background: var(--primary-dark); color: #fff; }
+    .sidebar-header h1 { font-size: 17px; font-weight: 800; color: #CCFBF1; margin-bottom: 4px; }
+    .sidebar-header p { font-size: 12px; color: #99F6E4; }
+    .screen-tree { flex: 1; overflow-y: auto; padding: 12px; }
+    .tree-group-title { font-size: 11px; font-weight: 700; color: var(--primary); text-transform: uppercase; margin: 12px 8px 6px; }
+    .tree-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-radius: 6px; font-size: 13px; cursor: pointer; transition: all 0.2s; margin-bottom: 2px; }
+    .tree-item:hover { background: var(--primary-light); color: var(--primary-dark); }
+    .tree-item.active { background: var(--primary); color: #fff; font-weight: 700; }
+    .badge { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 700; }
+    .badge-page { background: #CCFBF1; color: #0F766E; }
+    .badge-modal { background: #D1FAE5; color: #065F46; }
+    .badge-except { background: #FEE2E2; color: #991B1B; }
+    .tree-item.active .badge { background: rgba(255,255,255,0.2); color: #fff; }
+
+    .main-canvas { flex: 1; display: flex; flex-direction: column; overflow: hidden; background: #E6FFFA; }
+    .canvas-toolbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+    .screen-title { font-size: 15px; font-weight: 700; color: var(--primary-dark); }
+    .viewport-controls { display: flex; gap: 8px; }
+    .vp-btn { padding: 6px 12px; border: 1px solid var(--border); background: var(--surface); border-radius: 6px; font-size: 12px; cursor: pointer; }
+    .vp-btn.active { background: var(--primary-dark); color: #fff; border-color: var(--primary-dark); font-weight: 700; }
+    
+    .viewport-wrapper { flex: 1; overflow-y: auto; padding: 30px; display: flex; justify-content: center; align-items: flex-start; }
+    .device-frame { background: var(--surface); box-shadow: 0 20px 25px -5px rgba(13, 148, 136, 0.1); border-radius: 12px; overflow: hidden; width: 100%; max-width: 1200px; border: 1px solid var(--border); min-height: 800px; }
+    .device-frame.tablet { max-width: 768px; }
+    .device-frame.mobile { max-width: 390px; }
+
+    .wf-gnb { height: 72px; background: var(--surface); display: flex; align-items: center; justify-content: space-between; padding: 0 28px; border-bottom: 2px solid var(--primary); }
+    .wf-logo { font-size: 20px; font-weight: 900; color: var(--primary); }
+    .wf-nav { display: flex; gap: 24px; font-size: 15px; font-weight: 700; }
+    .wf-nav span { cursor: pointer; color: var(--text-muted); }
+    .wf-nav span:hover { color: var(--primary); }
+    .wf-btn-nurse { background: var(--primary); color: #fff; padding: 10px 18px; border-radius: 8px; font-size: 14px; font-weight: 800; border: none; cursor: pointer; }
+    
+    .wf-content { padding: 40px 32px; }
+    .wf-hero { background: linear-gradient(135deg, #F0FDFA 0%, #CCFBF1 100%); padding: 52px 36px; border-radius: 14px; text-align: center; border: 2px solid var(--border); margin-bottom: 32px; }
+    .wf-hero h2 { font-size: 32px; font-weight: 900; color: var(--primary-dark); margin-bottom: 16px; }
+    .wf-hero p { font-size: 18px; color: #0F766E; margin-bottom: 28px; font-weight: 600; }
+    .wf-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 32px; }
+    .wf-card { background: var(--surface); border: 2px solid var(--border); border-radius: 12px; padding: 28px; }
+    .wf-card h3 { font-size: 18px; font-weight: 800; color: var(--primary-dark); margin-bottom: 12px; }
+    .wf-card p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+    
+    .modal-preview { background: var(--surface); border: 3px solid var(--primary); border-radius: 16px; padding: 36px; max-width: 540px; margin: 0 auto; text-align: center; }
+    .form-group { margin-bottom: 18px; text-align: left; }
+    .form-group label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+    .form-input { width: 100%; padding: 14px 16px; border: 2px solid var(--border); border-radius: 8px; font-size: 16px; }
+    .wf-footer { background: #134E4A; color: #CCFBF1; padding: 40px 32px; font-size: 14px; text-align: center; line-height: 1.8; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h1>SEUMIM NURSE CARE</h1>
+      <p>가상클라이언트 9: 윤지민 (14개 화면 스튜디오)</p>
+    </div>
+    <div class="screen-tree">
+      <div class="tree-group-title">1. 메인 및 스크럽/인솔</div>
+      <div class="tree-item active" onclick="switchScreen('SCR-01')"><span>SCR-01 0.0 메디컬 메인</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-02')"><span>SCR-02 1.0 너스 스크럽</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-03')"><span>SCR-03 1.3 사이즈 가이드</span><span class="badge badge-modal">MODAL</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-04')"><span>SCR-04 2.0 밸런스 인솔</span><span class="badge badge-page">PAGE</span></div>
+
+      <div class="tree-group-title">2. 병동 후기 & 1+1 체험</div>
+      <div class="tree-item" onclick="switchScreen('SCR-05')"><span>SCR-05 3.0 나이팅게일 후기</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-06')"><span>SCR-06 3.3 100개 병동후기</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-07')"><span>SCR-07 4.0 병동 1+1 안내</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-08')"><span>SCR-08 4.2 간호사 신청</span><span class="badge badge-modal">MODAL</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-09')"><span>SCR-09 4.3 주문 완료 안내</span><span class="badge badge-page">PAGE</span></div>
+
+      <div class="tree-group-title">3. 3교대 힐링 & 시스템</div>
+      <div class="tree-item" onclick="switchScreen('SCR-10')"><span>SCR-10 5.0 3교대 힐링팁</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-11')"><span>SCR-11 6.1 면허 간편조회</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-12')"><span>SCR-12 6.2 마이페이지</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-13')"><span>SCR-13 9.1 404 Not Found</span><span class="badge badge-except">EXCEPT</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-14')"><span>SCR-14 9.2 시스템 점검</span><span class="badge badge-except">EXCEPT</span></div>
+    </div>
+  </div>
+
+  <div class="main-canvas">
+    <div class="canvas-toolbar">
+      <div class="screen-title" id="screenTitle">SCR-01 0.0 메디컬 민트 메인 랜딩 (P-0.0)</div>
+      <div class="viewport-controls">
+        <button class="vp-btn active" onclick="setViewport('desktop')">Desktop</button>
+        <button class="vp-btn" onclick="setViewport('tablet')">Tablet</button>
+        <button class="vp-btn" onclick="setViewport('mobile')">Mobile</button>
+      </div>
+    </div>
+
+    <div class="viewport-wrapper">
+      <div class="device-frame" id="deviceFrame">
+        <div class="wf-gnb">
+          <div class="wf-logo">SEUMIM NURSE</div>
+          <div class="wf-nav">
+            <span onclick="switchScreen('SCR-02')">스크럽 이너탑</span>
+            <span onclick="switchScreen('SCR-04')">밸런스 인솔</span>
+            <span onclick="switchScreen('SCR-05')">나이팅게일 후기</span>
+            <span onclick="switchScreen('SCR-07')">병동 1+1 체험</span>
+            <span onclick="switchScreen('SCR-10')">3교대 힐링팁</span>
+          </div>
+          <button class="wf-btn-nurse" onclick="switchScreen('SCR-08')">🏥 병동 1+1 무료체험</button>
+        </div>
+
+        <div class="wf-content" id="screenContent">
+          <div class="wf-hero">
+            <h2>2만 보를 걸어도 가뿐한 허리와 발!</h2>
+            <p>스크럽 유니폼 속 0.1mm 심리스 지지 & 보행 충격 62% 흡수 밸런스 인솔</p>
+            <div style="display: flex; justify-content: center; gap: 16px;">
+              <button class="wf-btn-nurse" style="font-size: 16px; padding: 14px 28px;" onclick="switchScreen('SCR-08')">동료와 함께 1+1 30일 무료 신청</button>
+            </div>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>🚨 하루 2만 보 = 허리 하중 4.2배</h3>
+              <p>환자 이송과 침상 배려로 인한 허리 굽힘과 족저 압력 누적을 즉각적으로 완화합니다.</p>
+            </div>
+            <div class="wf-card">
+              <h3>⚡ 0.1mm 심리스 무봉제 이너</h3>
+              <p>스크럽 유니폼 위로 전혀 티가 나지 않으며 은나노 99.9% 항균 소취로 땀 냄새 걱정 끝.</p>
+            </div>
+            <div class="wf-card">
+              <h3>🦶 족저 충격 62% 흡수 인솔</h3>
+              <p>간호화 안에 쏙 넣어 아치를 단단히 받쳐주고 퇴근길 무릎과 종아리 부종을 방지합니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wf-footer">
+          (주)스밈 너스케어 사업부 | 병동 1+1 30일 무상 체험 보증제 | 왕복 배송비 0원<br>
+          대한간호협회 회원 특별 혜택 | FITI 항균 소취 인증 완료
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const screens = {
+      'SCR-01': {
+        title: 'SCR-01 0.0 메디컬 민트 메인 랜딩 (P-0.0)',
+        html: `
+          <div class="wf-hero">
+            <h2>2만 보를 걸어도 가뿐한 허리와 발!</h2>
+            <p>스크럽 유니폼 속 0.1mm 심리스 지지 & 보행 충격 62% 흡수 밸런스 인솔</p>
+            <div style="display: flex; justify-content: center; gap: 16px;">
+              <button class="wf-btn-nurse" style="font-size: 16px; padding: 14px 28px;" onclick="switchScreen('SCR-08')">동료와 함께 1+1 30일 무료 신청</button>
+            </div>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>🚨 하루 2만 보 = 허리 하중 4.2배</h3>
+              <p>환자 이송과 침상 배려로 인한 허리 굽힘과 족저 압력 누적을 즉각적으로 완화합니다.</p>
+            </div>
+            <div class="wf-card">
+              <h3>⚡ 0.1mm 심리스 무봉제 이너</h3>
+              <p>스크럽 유니폼 위로 전혀 티가 나지 않으며 은나노 99.9% 항균 소취로 땀 냄새 걱정 끝.</p>
+            </div>
+            <div class="wf-card">
+              <h3>🦶 족저 충격 62% 흡수 인솔</h3>
+              <p>간호화 안에 쏙 넣어 아치를 단단히 받쳐주고 퇴근길 무릎과 종아리 부종을 방지합니다.</p>
+            </div>
+          </div>
+        `
+      },
+      'SCR-05': {
+        title: 'SCR-05 3.0 나이팅게일 100인 후기 (P-3.0)',
+        html: `
+          <div class="wf-hero" style="background: #CCFBF1; border-color: #0D9488;">
+            <h2 style="color: #0F766E;">대학병원 3교대 간호사들의 리얼 실착 후기</h2>
+            <p style="color: #115E59;">간호사 커뮤니티 평점 4.96점! "나이트 근무 끝나고 퇴근할 때 다리가 안 부어요"</p>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card"><h3>👩‍⚕️ 응급실 6년 차 윤** 간호사</h3><p>"환자 베드 옮길 때마다 허리가 삐끗했는데, 스크럽 안에 입으니 허리를 단단히 잡아줘서 든든합니다."</p></div>
+            <div class="wf-card"><h3>👩‍⚕️ 중환자실 8년 차 김** 간호사</h3><p>"간호화에 인솔 넣고 2만 보 걸었는데 발바닥 통증이 싹 사라졌어요. 병동 동료들에게 1+1으로 추천했습니다."</p></div>
+            <div class="wf-card"><h3>👩‍⚕️ 수술실 4년 차 박** 간호사</h3><p>"5시간 연속 서 있는 수술 중에도 은나노 메쉬 덕분에 땀이 안 차고 쾌적해요. 세탁기에 막 빨아도 변형 없습니다."</p></div>
+          </div>
+        `
+      },
+      'SCR-08': {
+        title: 'SCR-08 4.2 간호사 1-Click 신청 [모달] (P-4.2)',
+        html: `
+          <div class="modal-preview">
+            <h2 style="font-size: 22px; font-weight: 900; color: var(--primary-dark); margin-bottom: 12px;">병동 동료와 함께 1+1 무료체험 신청</h2>
+            <p style="font-size: 15px; color: var(--text-muted); margin-bottom: 20px;">간호사 1명이 신청하시면 동료를 위한 1세트를 무료로 함께 보내드립니다.</p>
+            <div class="form-group"><label>신청 간호사 성함 & 연락처</label><input type="text" class="form-input" placeholder="윤지민 / 010-1234-5678"></div>
+            <div class="form-group"><label>근무 병원명 & 병동 (예: 서울대병원 응급실)</label><input type="text" class="form-input" placeholder="병원명 및 병동/스테이션을 입력하세요"></div>
+            <div class="form-group"><label>내 사이즈 (상의 / 신발)</label><select class="form-input"><option>상의 90 (M) / 신발 240mm</option><option>상의 85 (S) / 신발 235mm</option><option>상의 95 (L) / 신발 245mm</option></select></div>
+            <div class="form-group"><label>함께 입을 동료 간호사 사이즈</label><select class="form-input"><option>상의 90 (M) / 신발 240mm</option><option>상의 85 (S) / 신발 235mm</option><option>상의 95 (L) / 신발 245mm</option></select></div>
+            <button class="wf-btn-nurse" style="width: 100%; padding: 16px; font-size: 16px; justify-content: center; margin-top: 12px;" onclick="switchScreen('SCR-09')">병동 1+1 무료 체험 신청하기 (배송비 0원)</button>
+          </div>
+        `
+      },
+      'SCR-09': {
+        title: 'SCR-09 4.3 주문 완료 및 배송 안내 [가정] (P-4.3)',
+        html: `
+          <div class="wf-hero" style="background: #ECFDF5; border-color: #A7F3D0;">
+            <h2 style="color: #065F46;">🎉 병동 1+1 무료체험 접수가 완료되었습니다!</h2>
+            <p style="color: #047857;">주문 번호: <strong>NURSE-2026-0812-901</strong> | 고객님 병동으로 2세트가 함께 발송됩니다.</p>
+          </div>
+        `
+      }
+    };
+
+    function switchScreen(id) {
+      document.querySelectorAll('.tree-item').forEach(el => el.classList.remove('active'));
+      event?.currentTarget?.classList.add('active');
+      const data = screens[id] || {
+        title: `${id} 화면 인터랙티브 뷰`,
+        html: `<div class="wf-hero"><h2>${id} 와이어프레임 뷰</h2><p>해당 화면의 메디컬 민트 UI 컴포넌트가 렌더링됩니다.</p></div>`
+      };
+      document.getElementById('screenTitle').innerText = data.title;
+      document.getElementById('screenContent').innerHTML = data.html;
+    }
+
+    function setViewport(type) {
+      document.querySelectorAll('.vp-btn').forEach(el => el.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+      document.getElementById('deviceFrame').className = 'device-frame ' + (type === 'desktop' ? '' : type);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "SEUMIM(스밈) 시니어 파크골프 서포터 화면 목록 (가상클라이언트 11: 배준호)",
+  "version": "2.0.0",
+  "totalScreens": 14,
+  "screens": [
+    {"screenId": "SCR-01", "sitemapId": "P-0.0", "name": "0.0 큰 글씨 파크골프 메인 랜딩", "type": "PAGE", "depth": 1, "purpose": "시니어 스윙 통계, 비거리 15m 증가 서포터, 080 무료 전화 주문 유도"},
+    {"screenId": "SCR-02", "sitemapId": "P-1.0", "name": "1.0 파크골프 서포터", "type": "PAGE", "depth": 2, "purpose": "골프웨어 속 0.1mm 시크릿 벨트 및 요추 비틀림 40% 방지 화보"},
+    {"screenId": "SCR-03", "sitemapId": "P-1.3", "name": "1.3 허리둘레 사이즈 가이드 [모달]", "type": "MODAL", "depth": 3, "purpose": "바지 허리둘레(28~42인치) 기준 정밀 사이즈 매칭"},
+    {"screenId": "SCR-04", "sitemapId": "P-2.0", "name": "2.0 척추-무릎 보호 테크", "type": "PAGE", "depth": 2, "purpose": "18홀 보행 무릎 충격 45% 흡수 성적서 및 카본 힌지 모식도"},
+    {"screenId": "SCR-05", "sitemapId": "P-3.0", "name": "3.0 동호회 100인 후기", "type": "PAGE", "depth": 2, "purpose": "6070 파크골프 회원 실착 포토 리뷰 및 평점 4.95점"},
+    {"screenId": "SCR-06", "sitemapId": "P-3.3", "name": "3.3 동호회 단체 제휴", "type": "PAGE", "depth": 3, "purpose": "전국 파크골프 동호회 10인 이상 단체 구매 20% 특별 할인"},
+    {"screenId": "SCR-07", "sitemapId": "P-4.0", "name": "4.0 30일 필드 무료체험 안내", "type": "PAGE", "depth": 2, "purpose": "필드에서 30일간 차고 쳐보는 100% 무료 반품 보증 안내"},
+    {"screenId": "SCR-08", "sitemapId": "P-4.2", "name": "4.2 080 전화 / 카톡 주문 [모달]", "type": "MODAL", "depth": 3, "purpose": "080-800-1234 무료 전화 다이얼 연동 및 성함/주소 10초 간편 주문 폼"},
+    {"screenId": "SCR-09", "sitemapId": "P-4.3", "name": "4.3 주문 완료 및 배송 안내 [가정]", "type": "PAGE", "depth": 3, "purpose": "주문 번호 확인, 댁으로 무료 배송 현황 안내"},
+    {"screenId": "SCR-10", "sitemapId": "P-5.0", "name": "5.0 티박스 10초 스트레칭", "type": "PAGE", "depth": 2, "purpose": "18홀 라운딩 전후 관절 리셋 영상, 허리 회전 팁, FAQ"},
+    {"screenId": "SCR-11", "sitemapId": "P-6.1", "name": "6.1 전화번호 간편 조회 [가정]", "type": "PAGE", "depth": 2, "purpose": "비밀번호 없는 휴대폰 번호 기반 간편 주문 조회"},
+    {"screenId": "SCR-12", "sitemapId": "P-6.2", "name": "6.2 마이페이지 배송 조회 [가정]", "type": "PAGE", "depth": 2, "purpose": "30일 무료 체험 배송 현황 및 1-Click 무료 반품 신청"},
+    {"screenId": "SCR-13", "sitemapId": "P-9.1", "name": "9.1 404 Not Found [가정]", "type": "EXCEPT", "depth": 2, "purpose": "큰 글씨 404 안내문 및 080 무료 전화 주문 바로가기"},
+    {"screenId": "SCR-14", "sitemapId": "P-9.2", "name": "9.2 시스템 점검 안내 [가정]", "type": "EXCEPT", "depth": 2, "purpose": "점검 중에도 080 전화 주문은 정상 운영됨을 안내"}
+  ]
+}

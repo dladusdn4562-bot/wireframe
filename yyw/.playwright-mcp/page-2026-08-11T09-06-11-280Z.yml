@@ -1,0 +1,109 @@
+- generic [ref=f296e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f296e15]:
+      - generic [ref=f296e18]:
+        - generic:
+          - img "검색 아이콘"
+        - combobox "검색" [ref=f296e20]
+        - generic "이미지 업로드" [ref=f296e23]:
+          - button "Pinterest 렌즈" [ref=f296e24] [cursor=pointer]
+      - link "내 프로필" [ref=f296e33] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f296e40]:
+          - generic [ref=f296e41]: 임
+      - button "계정" [ref=f296e45] [cursor=pointer]
+  - navigation [ref=f296e50]:
+    - generic [ref=f296e52]:
+      - generic [ref=f296e53]:
+        - generic "홈" [ref=f296e57]:
+          - link "홈" [ref=f296e58] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f296e65]:
+          - link "홈" [ref=f296e66] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f296e73]:
+          - link "내 보드" [ref=f296e74] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f296e81]:
+          - button "만들기" [ref=f296e82] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f296e98]:
+        - button "설정 및 지원" [ref=f296e99] [cursor=pointer]
+  - main [ref=f296e104]:
+    - generic [ref=f296e113]:
+      - button "뒤로" [ref=f296e115] [cursor=pointer]
+      - generic [ref=f296e124]:
+        - generic [ref=f296e125]: 관련 상품 결과를 불러오는 중
+        - list [ref=f296e130]:
+          - listitem [ref=f296e131]:
+            - group "Closeup content container" [ref=f296e138]:
+              - generic [ref=f296e143]:
+                - region "핀 이미지 및 탐색할 항목" [ref=f296e146]:
+                  - generic [ref=f296e150]:
+                    - link "사이트 방문" [ref=f296e155] [cursor=pointer]:
+                      - /url: https://www.instagram.com/designi.app?utm_source=Pinterest&utm_medium=organic
+                    - button [disabled] [ref=f296e160]:
+                      - img "스토리 핀 이미지" [ref=f296e168]
+                - generic [ref=f296e169]:
+                  - generic [ref=f296e172]:
+                    - list [ref=f296e173]:
+                      - generic [ref=f296e174]:
+                        - listitem [ref=f296e176]:
+                          - generic "반응" [ref=f296e179]:
+                            - button "반응" [ref=f296e180] [cursor=pointer]
+                          - generic [ref=f296e185]: "2"
+                        - listitem [ref=f296e187]:
+                          - generic "댓글" [ref=f296e190]:
+                            - button "댓글" [ref=f296e191] [cursor=pointer]
+                        - listitem [ref=f296e197]:
+                          - generic "공유" [ref=f296e201]:
+                            - button "이 핀 공유" [ref=f296e204] [cursor=pointer]
+                        - listitem [ref=f296e210]:
+                          - generic "추가 작업" [ref=f296e215]:
+                            - button "추가 작업" [ref=f296e218] [cursor=pointer]
+                    - generic [ref=f296e228]:
+                      - 'button "저장할 보드 선택: ..." [ref=f296e231] [cursor=pointer]':
+                        - generic "..." [ref=f296e234]
+                      - button "저장" [ref=f296e240] [cursor=pointer]
+                  - generic [ref=f296e248]:
+                    - generic [ref=f296e257]:
+                      - link [ref=f296e259] [cursor=pointer]:
+                        - /url: /lohushiryna/
+                        - img "UI/UX Designer | Mobile App Design 아바타 링크" [ref=f296e266]
+                      - link [ref=f296e270] [cursor=pointer]:
+                        - /url: /lohushiryna/
+                        - heading "UI/UX Designer | Mobile App Design" [level=2] [ref=f296e271]
+                    - generic [ref=f296e274]:
+                      - generic [ref=f296e276]:
+                        - link [ref=f296e283] [cursor=pointer]:
+                          - /url: https://www.instagram.com/designi.app?utm_source=Pinterest&utm_medium=organic
+                          - heading "Meditation App Logo Design Ideas | Calm, Minimal & Modern Logos" [level=1] [ref=f296e284]
+                        - link "사이트 방문" [ref=f296e292] [cursor=pointer]:
+                          - /url: https://www.instagram.com/designi.app?utm_source=Pinterest&utm_medium=organic
+                      - generic [ref=f296e296]:
+                        - heading "설명" [level=4] [ref=f296e297]
+                        - generic [ref=f296e301]:
+                          - text: Discover unique logo design ideas made for meditation and mindfulness apps. These modern, clean, and calming logos are perfect for wellness brands, spiritual tools, and relaxing mobile experiences. Ideal inspiration for startups looking for balance and simplicity in branding.
+                          - link "#meditationlogo" [ref=f296e303] [cursor=pointer]:
+                            - /url: /search/pins/?q=meditationlogo
+                          - link "#mindfulnesslogo" [ref=f296e305] [cursor=pointer]:
+                            - /url: /search/pins/?q=mindfulnesslogo
+                          - link "#wellnessapp" [ref=f296e307] [cursor=pointer]:
+                            - /url: /search/pins/?q=wellnessapp
+                          - link "#calmlogo" [ref=f296e309] [cursor=pointer]:
+                            - /url: /search/pins/?q=calmlogo
+                          - link "#spiritualbranding" [ref=f296e311] [cursor=pointer]:
+                            - /url: /search/pins/?q=spiritualbranding
+                          - link "#yogalogo" [ref=f296e313] [cursor=pointer]:
+                            - /url: /search/pins/?q=yogalogo
+                          - link "#minimalistlogo" [ref=f296e315] [cursor=pointer]:
+                            - /url: /search/pins/?q=minimalistlogo
+                          - link "#appdesigninspiration" [ref=f296e317] [cursor=pointer]:
+                            - /url: /search/pins/?q=appdesigninspiration
+                          - link "#logoforsale" [ref=f296e319] [cursor=pointer]:
+                            - /url: /search/pins/?q=logoforsale
+                          - link "#brandingideas" [ref=f296e321] [cursor=pointer]:
+                            - /url: /search/pins/?q=brandingideas
+          - listitem [ref=f296e323]
+          - listitem [ref=f296e327]

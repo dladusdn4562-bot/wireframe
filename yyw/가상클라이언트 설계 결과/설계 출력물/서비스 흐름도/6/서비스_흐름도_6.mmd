@@ -1,0 +1,40 @@
+graph TD
+    classDef step fill:#9A3412,stroke:#EA580C,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef action fill:#EA580C,stroke:#C2410C,stroke-width:1.5px,color:#FFFFFF;
+    classDef senior fill:#10B981,stroke:#059669,stroke-width:1.5px,color:#FFFFFF;
+    classDef decision fill:#F59E0B,stroke:#D97706,stroke-width:1.5px,color:#0F172A;
+    classDef finish fill:#0284C7,stroke:#0369A1,stroke-width:2px,color:#FFFFFF;
+    classDef exception fill:#EF4444,stroke:#B91C1C,stroke-width:1.5px,color:#FFFFFF;
+
+    START([시작: 큰 글씨 웹사이트 유입]):::step --> ST01["ST-01: 메인 탐색 & 가사 요통 통계 공감"]:::action
+    ST01 --> DEC01{"어떤 정보를 먼저 확인할 것인가?"}:::decision
+
+    DEC01 -- "1-Touch 3초 착용 영상" --> ST02["ST-02: 전면 벨크로 착용 영상 & 세탁기 통세척"]:::action
+    ST02 --> ST06["ST-06: 상의 치수(66/77/88) 사이즈 매칭"]:::action
+    ST06 --> ST07["ST-07: 080 전화 / 카톡 간편 신청 모달"]:::senior
+
+    DEC01 -- "싱크대 하중 40% 분산" --> ST03["ST-03: 바이오 힌지 테크 & 오십견 패턴 검증"]:::action
+    ST03 --> ST07
+
+    DEC01 -- "동년배 100인 실착 후기" --> ST04["ST-04: 50대 주부 실착 포토 & 맘카페 평점"]:::senior
+    ST04 --> ST10["ST-10: 자녀 효도 선물 인터뷰 확인"]:::senior
+    ST10 --> ST07
+
+    DEC01 -- "살림 케어 가이드" --> ST05["ST-05: 10초 스트레칭 & 허리 안 아픈 자세"]:::action
+    ST05 --> ST09["ST-09: 30일 무료 체험 혜택 안내"]:::action
+    ST09 --> ST07
+
+    ST07 --> DEC02{"신청 방식 선택 및 검증"}:::decision
+    DEC02 -- "080 무료 전화 터치" --> CALL["📞 080-800-1234 상담원 통화 연결"]:::senior
+    CALL --> ST08["ST-08: 30일 무료 체험 주문 확정"]:::finish
+
+    DEC02 -- "입력 오류" --> ST07E["ST-07E: 큰 글씨 안내 및 080 전화 유도"]:::exception
+    ST07E --> ST07
+
+    DEC02 -- "웹 폼 정상 제출" --> ST08
+    ST08 --> ST11["ST-11: 전화번호 간편 조회 [가정]"]:::finish
+    ST11 --> ST12["ST-12: 마이페이지 배송 현황 & 1-Click 무료 반품"]:::finish
+    ST12 --> END([종료: 집에서 30일간 설거지할 때 실착 후 결정]):::step
+
+    EX1["ST-13: 404 Not Found [가정]"]:::exception -.-> ST01
+    EX2["ST-14: 시스템 점검 안내 [가정]"]:::exception -.-> ST01

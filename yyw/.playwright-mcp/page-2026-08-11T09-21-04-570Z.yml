@@ -1,0 +1,191 @@
+- generic [ref=f309e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f309e15]:
+      - generic [ref=f309e17]:
+        - generic [ref=f309e18]:
+          - combobox "검색" [ref=f309e20]: four petal leaf logo geometric minimal vector
+          - generic [ref=f309e21]:
+            - button "검색 입력 삭제" [ref=f309e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f309e30]:
+              - button "Pinterest 렌즈" [ref=f309e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f309e38] [cursor=pointer]:
+          - generic [ref=f309e40]:
+            - generic [ref=f309e41]: 모든 핀
+            - img "드롭다운" [ref=f309e43]
+      - link "내 프로필" [ref=f309e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f309e56]:
+          - generic [ref=f309e57]: 임
+      - button "계정" [ref=f309e61] [cursor=pointer]
+  - navigation [ref=f309e66]:
+    - generic [ref=f309e68]:
+      - generic [ref=f309e69]:
+        - generic "홈" [ref=f309e73]:
+          - link "홈" [ref=f309e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f309e81]:
+          - link "홈" [ref=f309e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f309e89]:
+          - link "내 보드" [ref=f309e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f309e97]:
+          - button "만들기" [ref=f309e98] [cursor=pointer]
+        - generic "업데이트" [ref=f309e107]:
+          - button "업데이트" [ref=f309e108] [cursor=pointer]
+        - generic "메시지" [ref=f309e117]:
+          - button "메시지" [ref=f309e118] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f309e126]:
+        - button "설정 및 지원" [ref=f309e127] [cursor=pointer]
+  - main [ref=f309e132]:
+    - generic [ref=f309e134]:
+      - heading "검색 결과 페이지" [level=1] [ref=f309e136]
+      - region "필터 및 세분화 검색" [ref=f309e140]:
+        - button "필터 표시" [ref=f309e149] [cursor=pointer]
+      - generic [ref=f309e160]:
+        - generic [ref=f309e161]: four petal leaf logo geometric minimal vector 검색 결과를 추가로 불러오는 중
+        - list [ref=f309e166]:
+          - listitem [ref=f309e167]:
+            - button [ref=f309e169] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e171]:
+                - generic [ref=f309e173]:
+                  - link "제목 없음 핀 페이지" [ref=f309e175]:
+                    - /url: /pin/583779170494947930/
+                    - img "포함된 이미지:" [ref=f309e185]
+                  - generic "추가 작업" [ref=f309e194]:
+                    - button "추가 작업" [ref=f309e195]
+          - listitem [ref=f309e200]:
+            - button [ref=f309e202] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e204]:
+                - generic [ref=f309e206]:
+                  - link "제목 없음 핀 페이지" [ref=f309e208]:
+                    - /url: /pin/319614904831938148/
+                    - img "포함된 이미지:" [ref=f309e218]
+                  - generic "추가 작업" [ref=f309e227]:
+                    - button "추가 작업" [ref=f309e228]
+          - listitem [ref=f309e233]:
+            - button [ref=f309e235] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e237]:
+                - generic [ref=f309e239]:
+                  - link "제목 없음 핀 페이지" [ref=f309e241]:
+                    - /url: /pin/1477812373245582/
+                    - img "포함된 이미지:" [ref=f309e251]
+                  - generic "추가 작업" [ref=f309e260]:
+                    - button "추가 작업" [ref=f309e261]
+          - listitem [ref=f309e266]:
+            - button [ref=f309e268] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e270]:
+                - generic [ref=f309e272]:
+                  - link "제목 없음 핀 페이지" [ref=f309e274]:
+                    - /url: /pin/4362930884334394/
+                    - img "포함된 이미지:" [ref=f309e284]
+                  - generic "추가 작업" [ref=f309e293]:
+                    - button "추가 작업" [ref=f309e294]
+          - listitem [ref=f309e299]:
+            - button [ref=f309e301] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e303]:
+                - generic [ref=f309e305]:
+                  - 'link "Free Logo: I will do 3 modern minimalist logo desi 핀 페이지" [ref=f309e307]':
+                    - /url: /pin/332422016310337985/
+                    - 'img "포함된 내용: Logo professional" [ref=f309e317]'
+                  - generic [ref=f309e322]:
+                    - heading [level=2] [ref=f309e328]:
+                      - 'link "Free Logo: I will do 3 modern minimalist logo desi 핀 페이지" [ref=f309e330]':
+                        - /url: /pin/332422016310337985/
+                        - text: "Free Logo: I will do 3 modern minimalist logo desi"
+                    - generic "추가 작업" [ref=f309e333]:
+                      - button "추가 작업" [ref=f309e334]
+          - listitem [ref=f309e339]:
+            - button [ref=f309e341] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e343]:
+                - generic [ref=f309e345]:
+                  - link "제목 없음 핀 페이지" [ref=f309e347]:
+                    - /url: /pin/70437491156405/
+                    - img "포함된 이미지:" [ref=f309e357]
+                  - generic "추가 작업" [ref=f309e366]:
+                    - button "추가 작업" [ref=f309e367]
+          - listitem [ref=f309e372]:
+            - button [ref=f309e374] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e376]:
+                - generic [ref=f309e378]:
+                  - link "Recycle Logo Minimalist Images – Browse 25,100 Stock Photos, Vectors, and Video 핀 페이지" [ref=f309e380]:
+                    - /url: /pin/258886678566513548/
+                    - 'img "포함된 이미지: Recycle Logo Minimalist Images – Browse 25,100 Stock Photos, Vectors, and Video" [ref=f309e390]'
+                  - generic [ref=f309e395]:
+                    - heading [level=2] [ref=f309e401]:
+                      - link "Recycle Logo Minimalist Images – Browse 25,100 Stock Photos, Vectors, and Video 핀 페이지" [ref=f309e403]:
+                        - /url: /pin/258886678566513548/
+                        - text: Recycle Logo Minimalist Images – Browse 25,100 Stock Photos, Vectors, and Video
+                    - generic "추가 작업" [ref=f309e406]:
+                      - button "추가 작업" [ref=f309e407]
+          - listitem [ref=f309e412]:
+            - button [ref=f309e414] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e416]:
+                - generic [ref=f309e418]:
+                  - link "BLACK AND WHITE MOTIF 핀 페이지" [ref=f309e420]:
+                    - /url: /pin/92394229853265144/
+                    - 'img "포함된 이미지: BLACK AND WHITE MOTIF" [ref=f309e430]'
+                  - generic [ref=f309e435]:
+                    - heading [level=2] [ref=f309e441]:
+                      - link "BLACK AND WHITE MOTIF 핀 페이지" [ref=f309e443]:
+                        - /url: /pin/92394229853265144/
+                        - text: BLACK AND WHITE MOTIF
+                    - generic "추가 작업" [ref=f309e446]:
+                      - button "추가 작업" [ref=f309e447]
+          - listitem [ref=f309e452]:
+            - button [ref=f309e454] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e456]:
+                - generic [ref=f309e458]:
+                  - link "제목 없음 핀 페이지" [ref=f309e460]:
+                    - /url: /pin/7740630593819617/
+                    - img "포함된 이미지:" [ref=f309e470]
+                  - generic "추가 작업" [ref=f309e479]:
+                    - button "추가 작업" [ref=f309e480]
+          - listitem [ref=f309e485]:
+            - button [ref=f309e487] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e489]:
+                - generic [ref=f309e491]:
+                  - link "Simple Flower Logo 핀 페이지" [ref=f309e493]:
+                    - /url: /pin/4597893844984243584/
+                    - 'img "포함된 이미지: Simple Flower Logo" [ref=f309e503]'
+                  - generic [ref=f309e508]:
+                    - generic [ref=f309e509]:
+                      - heading [level=2] [ref=f309e514]:
+                        - link "Simple Flower Logo 핀 페이지" [ref=f309e516]:
+                          - /url: /pin/4597893844984243584/
+                          - text: Simple Flower Logo
+                      - link "Scalebranding" [ref=f309e519]:
+                        - /url: /scalebrandingstore/
+                        - generic "Scalebranding" [ref=f309e526]
+                    - generic "추가 작업" [ref=f309e529]:
+                      - button "추가 작업" [ref=f309e530]
+          - listitem [ref=f309e535]:
+            - button [ref=f309e537] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e539]:
+                - generic [ref=f309e541]:
+                  - link "not-given 핀 페이지" [ref=f309e543]:
+                    - /url: /pin/71987294041114958/
+                    - 'img "포함된 내용: not-given" [ref=f309e553]'
+                  - generic [ref=f309e558]:
+                    - heading [level=2] [ref=f309e564]:
+                      - link "not-given 핀 페이지" [ref=f309e566]:
+                        - /url: /pin/71987294041114958/
+                        - text: not-given
+                    - generic "추가 작업" [ref=f309e569]:
+                      - button "추가 작업" [ref=f309e570]
+          - listitem [ref=f309e575]:
+            - button [ref=f309e577] [cursor=pointer]:
+              - group "핀 카드" [ref=f309e579]:
+                - generic [ref=f309e581]:
+                  - link "Download Abstract Geometric flower icon for free 핀 페이지" [ref=f309e583]:
+                    - /url: /pin/186829084537876906/
+                    - 'img "포함된 이미지: Download Abstract Geometric flower icon for free" [ref=f309e593]'
+                  - generic [ref=f309e598]:
+                    - heading [level=2] [ref=f309e604]:
+                      - link "Download Abstract Geometric flower icon for free 핀 페이지" [ref=f309e606]:
+                        - /url: /pin/186829084537876906/
+                        - text: Download Abstract Geometric flower icon for free
+                    - generic "추가 작업" [ref=f309e609]:
+                      - button "추가 작업" [ref=f309e610]

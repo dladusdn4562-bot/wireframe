@@ -1,0 +1,87 @@
+- generic [ref=f31e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f31e15]:
+      - generic [ref=f31e18]:
+        - generic:
+          - img "검색 아이콘"
+        - combobox "검색" [ref=f31e20]
+        - generic "이미지 업로드" [ref=f31e23]:
+          - button "Pinterest 렌즈" [ref=f31e24] [cursor=pointer]
+      - link "내 프로필" [ref=f31e33] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f31e40]:
+          - generic [ref=f31e41]: 임
+      - button "계정" [ref=f31e45] [cursor=pointer]
+  - navigation [ref=f31e50]:
+    - generic [ref=f31e52]:
+      - generic [ref=f31e53]:
+        - generic "홈" [ref=f31e57]:
+          - link "홈" [ref=f31e58] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f31e65]:
+          - link "홈" [ref=f31e66] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f31e73]:
+          - link "내 보드" [ref=f31e74] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f31e81]:
+          - button "만들기" [ref=f31e82] [cursor=pointer]
+        - generic "업데이트" [ref=f31e91]:
+          - button "업데이트" [ref=f31e92] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f31e105]:
+        - button "설정 및 지원" [ref=f31e106] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=f31e111]:
+    - generic [ref=f31e120]:
+      - button "뒤로" [ref=f31e122] [cursor=pointer]
+      - generic [ref=f31e131]:
+        - generic [ref=f31e132]: 관련 상품 결과를 불러오는 중
+        - list [ref=f31e137]:
+          - listitem [ref=f31e138]:
+            - group "Closeup content container" [ref=f31e145]:
+              - generic [ref=f31e150]:
+                - generic [ref=f31e154]:
+                  - list [ref=f31e155]:
+                    - generic [ref=f31e156]:
+                      - listitem [ref=f31e158]:
+                        - generic "반응" [ref=f31e161]:
+                          - button "반응" [ref=f31e162] [cursor=pointer]
+                        - generic [ref=f31e167]: "5"
+                      - listitem [ref=f31e169]:
+                        - generic "댓글" [ref=f31e172]:
+                          - button "댓글" [ref=f31e173] [cursor=pointer]
+                      - listitem [ref=f31e179]:
+                        - generic "공유" [ref=f31e183]:
+                          - button "이 핀 공유" [ref=f31e186] [cursor=pointer]
+                      - listitem [ref=f31e192]:
+                        - generic "추가 작업" [ref=f31e197]:
+                          - button "추가 작업" [ref=f31e200] [cursor=pointer]
+                  - generic [ref=f31e210]:
+                    - 'button "저장할 보드 선택: ..." [ref=f31e213] [cursor=pointer]':
+                      - generic "..." [ref=f31e216]
+                    - button "저장" [ref=f31e222] [cursor=pointer]
+                - region "핀 이미지 및 탐색할 항목" [ref=f31e229]:
+                  - generic [ref=f31e239]:
+                    - button "더 크게 보기" [ref=f31e241] [cursor=pointer]:
+                      - generic [ref=f31e243]:
+                        - generic: 더 크게 보기
+                        - img "더 크게 보기" [ref=f31e245]
+                    - button "이미지 검색" [ref=f31e250] [cursor=pointer]:
+                      - generic [ref=f31e252]:
+                        - generic: 이미지 검색
+                        - img "이미지 검색" [ref=f31e254]
+                - generic [ref=f31e269]:
+                  - link [ref=f31e271] [cursor=pointer]:
+                    - /url: /Valentina_valentina_/
+                    - img "INSP FASHION. 아바타 링크" [ref=f31e278]
+                  - link [ref=f31e282] [cursor=pointer]:
+                    - /url: /Valentina_valentina_/
+                    - heading "INSP FASHION." [level=2] [ref=f31e283]
+          - listitem [ref=f31e290]
+          - listitem [ref=f31e294]
+          - listitem [ref=f31e298]
+  - generic:
+    - contentinfo "꼬리말"

@@ -1,0 +1,33 @@
+flowchart TD
+    classDef step fill:#1E293B,stroke:#F43F5E,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef action fill:#F43F5E,stroke:#BE123C,stroke-width:1.5px,color:#FFFFFF;
+    classDef review fill:#EC4899,stroke:#DB2777,stroke-width:1.5px,color:#FFFFFF;
+    classDef decision fill:#F59E0B,stroke:#D97706,stroke-width:1.5px,color:#0F172A;
+    classDef finish fill:#10B981,stroke:#059669,stroke-width:2px,color:#FFFFFF;
+    classDef exception fill:#EF4444,stroke:#B91C1C,stroke-width:1.5px,color:#FFFFFF;
+
+    START([시작: 패션 웹사이트 유입]):::step --> ST01["ST-01: 메인 탐색 & 옷태 비포/애프터 확인"]:::action
+    ST01 --> DEC01{"어떤 정보를 먼저 확인할 것인가?"}:::decision
+
+    DEC01 -- "0.1mm 심리스 룩북" --> ST02["ST-02: 셔츠/블라우스 실착 룩북 확인"]:::action
+    ST02 --> ST03["ST-03: 0mm 비침 비교 슬라이더 검증"]:::action
+    ST03 --> ST05["ST-05: 오피스 상의(55/66, S/M/L) 사이즈 매칭"]:::action
+
+    DEC01 -- "100인 눈바디 릴스" --> ST04["ST-04: 직장인 100인 눈바디 릴스 시청"]:::review
+    ST04 --> ST05
+
+    DEC01 -- "사계절 쿨링 케어" --> ST07["ST-07: 에어로 쿨링 원단 & 세탁 가이드"]:::action
+    ST07 --> ST05
+
+    ST05 --> DEC02{"얼리버드 15% 예약 진행?"}:::decision
+
+    DEC02 -- Yes --> ST06["ST-06: 얼리버드 예약 폼 작성 (컬러/사이즈/주소)"]:::action
+    DEC02 -- No --> ST01
+
+    ST06 --> DEC03{"입력값 유효성 검증"}:::decision
+    DEC03 -- "입력 오류" --> ST06E["ST-06E: 오류 필드 안내 및 재입력"]:::exception
+    ST06E --> ST06
+
+    DEC03 -- "정상 제출" --> ST06A["ST-06A: 얼리버드 15% 예약 완료 & 세탁망 증정"]:::finish
+    ST06A --> ST08["ST-08: 카카오 알림톡 수신 & 배송 안내"]:::finish
+    ST08 --> END([종료: 30일 안심 시착 후 결정]):::step

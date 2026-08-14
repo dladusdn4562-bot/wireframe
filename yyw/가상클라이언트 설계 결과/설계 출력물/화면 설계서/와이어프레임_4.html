@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM(스밈) 오피스룩 와이어프레임 스튜디오 (가상클라이언트 4: 이주은)</title>
+  <style>
+    :root {
+      --bg-canvas: #1E1B1E;
+      --bg-studio: #2D242B;
+      --sidebar-width: 320px;
+      --wf-bg: #FFFFFF;
+      --wf-border: #FECDD3;
+      --wf-text-main: #881337;
+      --wf-text-muted: #9F1239;
+      --wf-box-bg: #FFF1F2;
+      --wf-accent: #F43F5E;
+      --wf-accent-pink: #EC4899;
+      --wf-font: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--wf-font);
+      background: var(--bg-canvas);
+      color: #FDF2F8;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
+
+    #sidebar {
+      width: var(--sidebar-width);
+      background: var(--bg-studio);
+      border-right: 1px solid #4A3B47;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      flex-shrink: 0;
+      z-index: 100;
+    }
+
+    .studio-header {
+      padding: 18px 20px;
+      border-bottom: 1px solid #4A3B47;
+    }
+    .studio-title { font-size: 16px; font-weight: 800; color: #FDA4AF; display: flex; align-items: center; gap: 8px; }
+    .studio-subtitle { font-size: 11.5px; color: #FBCFE8; margin-top: 4px; }
+
+    .search-box {
+      padding: 12px 20px;
+      border-bottom: 1px solid #4A3B47;
+    }
+    .search-input {
+      width: 100%;
+      padding: 8px 12px;
+      background: #1E1B1E;
+      border: 1px solid #644A5E;
+      border-radius: 6px;
+      color: #FDF2F8;
+      font-size: 12.5px;
+      outline: none;
+    }
+    .search-input:focus { border-color: #FDA4AF; }
+
+    .screen-tree {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px 10px;
+    }
+    .tree-category {
+      font-size: 11px;
+      font-weight: 700;
+      color: #D194B4;
+      text-transform: uppercase;
+      padding: 8px 12px 4px 12px;
+      letter-spacing: 0.5px;
+    }
+    .tree-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #FCE7F3;
+      font-size: 12.5px;
+      margin-bottom: 2px;
+      transition: all 0.15s;
+    }
+    .tree-item:hover { background: #4A3B47; color: #FFFFFF; }
+    .tree-item.active { background: #F43F5E; color: #FFFFFF; font-weight: 700; }
+    .tree-badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .badge-page { background: #F43F5E; color: #FFFFFF; }
+    .badge-modal { background: #D97706; color: #FFFFFF; }
+    .badge-except { background: #DC2626; color: #FFFFFF; }
+
+    #main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      background: #181418;
+    }
+
+    .top-toolbar {
+      height: 56px;
+      background: var(--bg-studio);
+      border-bottom: 1px solid #4A3B47;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      flex-shrink: 0;
+    }
+    .screen-info { display: flex; align-items: center; gap: 12px; }
+    .screen-title { font-size: 15px; font-weight: 700; color: #FDF2F8; }
+    .screen-meta { font-size: 12px; color: #FBCFE8; }
+
+    .viewport-controls { display: flex; align-items: center; gap: 8px; }
+    .btn-vp {
+      background: #1E1B1E;
+      border: 1px solid #644A5E;
+      color: #FCE7F3;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .btn-vp.active { background: #F43F5E; border-color: #FDA4AF; color: #FFFFFF; }
+
+    .canvas-viewport {
+      flex: 1;
+      overflow: auto;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: radial-gradient(circle at center, #2D242B 0%, #181418 100%);
+    }
+
+    .wf-frame {
+      width: 1200px;
+      background: var(--wf-bg);
+      color: var(--wf-text-main);
+      border-radius: 8px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.6);
+      border: 1px solid var(--wf-border);
+      overflow: hidden;
+      margin-bottom: 40px;
+      transition: width 0.3s;
+    }
+
+    /* Common Wireframe Components */
+    .wf-gnb {
+      height: 70px;
+      border-bottom: 1px solid var(--wf-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      background: #FFF1F2;
+    }
+    .wf-logo { font-size: 18px; font-weight: 800; color: #E11D48; }
+    .wf-nav { display: flex; gap: 20px; }
+    .wf-nav-item { font-size: 13px; font-weight: 700; color: #9F1239; cursor: pointer; }
+    .wf-nav-item:hover { color: #E11D48; }
+    .wf-btn-cta {
+      background: #F43F5E;
+      color: #FFFFFF;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .wf-btn-cta:hover { background: #E11D48; }
+
+    .wf-hero {
+      padding: 60px 40px;
+      background: linear-gradient(180deg, #FFF1F2 0%, #FFE4E6 100%);
+      color: #881337;
+      text-align: center;
+    }
+    .wf-hero h1 { font-size: 28px; margin-bottom: 12px; color: #9F1239; }
+    .wf-hero p { font-size: 15px; color: #BE123C; margin-bottom: 24px; }
+
+    .wf-section {
+      padding: 50px 40px;
+      border-bottom: 1px solid #FFE4E6;
+    }
+    .wf-section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #9F1239;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .wf-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .wf-card {
+      background: #FFF1F2;
+      border: 1px solid #FECDD3;
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .wf-card h3 { font-size: 15px; color: #9F1239; margin-bottom: 8px; }
+    .wf-card p { font-size: 13px; color: #881337; line-height: 1.5; }
+
+    .wf-reels-box {
+      background: #881337;
+      color: #FDA4AF;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .wf-footer {
+      background: #4C0519;
+      color: #FECDD3;
+      padding: 40px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    /* Modal Overlay Mock */
+    .wf-modal-overlay {
+      background: rgba(76, 5, 25, 0.7);
+      padding: 60px 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .wf-modal-box {
+      background: #FFFFFF;
+      border-radius: 12px;
+      width: 550px;
+      padding: 32px;
+      border: 2px solid #F43F5E;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3);
+    }
+    .wf-form-group { margin-bottom: 16px; }
+    .wf-form-group label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; color: #9F1239; }
+    .wf-form-input { width: 100%; padding: 10px; border: 1px solid #FECDD3; border-radius: 6px; font-size: 13px; color: #881337; }
+  </style>
+</head>
+<body>
+  <!-- 좌측 사이드바 트리 -->
+  <aside id="sidebar">
+    <div class="studio-header">
+      <div class="studio-title">👠 SEUMIM 오피스 스튜디오</div>
+      <div class="studio-subtitle">가상클라이언트 4: 이주은 (패션 마케터)</div>
+    </div>
+    <div class="search-box">
+      <input type="text" class="search-input" placeholder="화면 ID 또는 명칭 검색..." id="searchInput" oninput="filterScreens()">
+    </div>
+    <div class="screen-tree" id="screenTree">
+      <div class="tree-category">1. 메인 및 핵심 페이지</div>
+      <div class="tree-item active" onclick="loadScreen('SCR-01')">
+        <span>SCR-01 0.0 오피스룩 메인</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-02')">
+        <span>SCR-02 1.0 오피스 룩북</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-04')">
+        <span>SCR-04 2.0 승모근 이너 핏</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-06')">
+        <span>SCR-06 3.0 눈바디 릴스 후기</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-07')">
+        <span>SCR-07 4.0 얼리버드 혜택</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-10')">
+        <span>SCR-10 5.0 패션 케어 가이드</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+
+      <div class="tree-category">2. 모달 및 전환 팝업</div>
+      <div class="tree-item" onclick="loadScreen('SCR-03')">
+        <span>SCR-03 1.3 0.1mm 비침 비교</span>
+        <span class="tree-badge badge-modal">MODAL</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-05')">
+        <span>SCR-05 2.3 정밀 사이즈 가이드</span>
+        <span class="tree-badge badge-modal">MODAL</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-08')">
+        <span>SCR-08 4.3 얼리버드 예약 폼</span>
+        <span class="tree-badge badge-modal">MODAL</span>
+      </div>
+
+      <div class="tree-category">3. 주문 완료 및 회원 [가정]</div>
+      <div class="tree-item" onclick="loadScreen('SCR-09')">
+        <span>SCR-09 4.4 예약 완료 안내</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-11')">
+        <span>SCR-11 6.1 SNS 간편 로그인</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-12')">
+        <span>SCR-12 6.2 마이페이지 예약 관리</span>
+        <span class="tree-badge badge-page">PAGE</span>
+      </div>
+
+      <div class="tree-category">4. 시스템 예외 [가정]</div>
+      <div class="tree-item" onclick="loadScreen('SCR-13')">
+        <span>SCR-13 9.1 404 Not Found</span>
+        <span class="tree-badge badge-except">EXCEPT</span>
+      </div>
+      <div class="tree-item" onclick="loadScreen('SCR-14')">
+        <span>SCR-14 9.2 시스템 점검 안내</span>
+        <span class="tree-badge badge-except">EXCEPT</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 메인 캔버스 뷰포트 -->
+  <main id="main-content">
+    <header class="top-toolbar">
+      <div class="screen-info">
+        <span class="screen-title" id="currentTitle">SCR-01 0.0 오피스룩 메인</span>
+        <span class="screen-meta" id="currentMeta">Depth: 1차 | Type: PAGE | Path: P-0.0</span>
+      </div>
+      <div class="viewport-controls">
+        <button class="btn-vp active" onclick="setViewport(1200)">Desktop 1200px</button>
+        <button class="btn-vp" onclick="setViewport(768)">Tablet 768px</button>
+        <button class="btn-vp" onclick="setViewport(375)">Mobile 375px</button>
+      </div>
+    </header>
+
+    <div class="canvas-viewport">
+      <div class="wf-frame" id="wfFrame">
+        <!-- 렌더링 컨테이너 -->
+        <div id="screenContainer"></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const screens = {
+      'SCR-01': {
+        title: 'SCR-01 0.0 오피스룩 메인 랜딩페이지',
+        meta: 'Depth: 1차 | Type: PAGE | Path: P-0.0',
+        html: `
+          <div class="wf-gnb">
+            <div class="wf-logo">SEUMIM SLIM FIT</div>
+            <div class="wf-nav">
+              <span class="wf-nav-item" onclick="loadScreen('SCR-02')">오피스 룩북</span>
+              <span class="wf-nav-item" onclick="loadScreen('SCR-04')">승모근 이너 핏</span>
+              <span class="wf-nav-item" onclick="loadScreen('SCR-06')">눈바디 릴스</span>
+              <span class="wf-nav-item" onclick="loadScreen('SCR-07')">얼리버드 혜택</span>
+              <span class="wf-nav-item" onclick="loadScreen('SCR-10')">케어 가이드</span>
+            </div>
+            <button class="wf-btn-cta" onclick="loadScreen('SCR-08')">얼리버드 15% 예약</button>
+          </div>
+          <div class="wf-hero">
+            <h1>출근 룩에 완벽히 스며드는 0.1mm 시크릿 핏</h1>
+            <p>셔츠 안 비침 0% & 승모근 솟음 32% 완화 3D 입체 패턴</p>
+            <button class="wf-btn-cta" style="padding: 12px 28px; font-size: 15px;" onclick="loadScreen('SCR-08')">✨ 얼리버드 15% 예약 + 세탁망 증정</button>
+          </div>
+          <div class="wf-section">
+            <div class="wf-section-title">2030 오피스 워커 84.7% 승모근 & 옷태 고민</div>
+            <div class="wf-grid-3">
+              <div class="wf-card">
+                <h3>0.1mm 심리스 무봉제</h3>
+                <p>화이트 셔츠나 실크 블라우스 안에도 라인이 드러나지 않는 완벽 밀착감.</p>
+              </div>
+              <div class="wf-card">
+                <h3>승모근 32% 완화 패턴</h3>
+                <p>와이드 암홀과 지렛대 탄성 구조로 어깨 결림과 솟은 승모근 완화.</p>
+              </div>
+              <div class="wf-card">
+                <h3>사계절 쿨링 에어로 메쉬</h3>
+                <p>여름철 땀 차지 않는 통기성과 세탁기 통세척 가능한 내구성.</p>
+              </div>
+            </div>
+          </div>
+          <div class="wf-section">
+            <div class="wf-section-title">직장인 100인의 출근 룩 눈바디 릴스</div>
+            <div class="wf-reels-box">
+              🎬 100인 출근 룩 릴스 쇼츠 플레이어 (W컨셉 평점 4.9/5.0)
+            </div>
+          </div>
+          <div class="wf-footer">
+            <p>스밈(SEUMIM) 슬림핏 이너 웰니스 | 30일 안심 무료 반품 보증</p>
+          </div>
+        `
+      },
+      'SCR-02': {
+        title: 'SCR-02 1.0 오피스 룩북 화보',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-1.0',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">SEUMIM SLIM FIT</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">셔츠 / 블라우스 / 슬랙스 0.1mm 심리스 룩북</div>
+            <div class="wf-grid-3">
+              <div class="wf-card"><h3>화이트 셔츠 핏</h3><p>봉제선 비침 0% 완벽 은폐</p></div>
+              <div class="wf-card"><h3>실크 블라우스 핏</h3><p>어깨 라인 자연스러운 3D 입체감</p></div>
+              <div class="wf-card"><h3>오피스 자켓 핏</h3><p>단정한 자세와 핏을 동시에</p></div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+              <button class="wf-btn-cta" onclick="loadScreen('SCR-03')">0.1mm 비침 비교 슬라이더 열기</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-03': {
+        title: 'SCR-03 1.3 0.1mm 비침 비교 [모달]',
+        meta: 'Depth: 3차 | Type: MODAL | Path: P-1.3',
+        html: `
+          <div class="wf-modal-overlay">
+            <div class="wf-modal-box">
+              <h2 style="color: #9F1239; margin-bottom: 12px;">화이트 셔츠 안 비침 0% 비교</h2>
+              <div class="wf-card" style="margin-bottom: 20px;">
+                <p>일반 보정속옷 (두께 2.4mm 비침 발생) vs 스밈 0.1mm 심리스 (비침 0%)</p>
+              </div>
+              <button class="wf-btn-cta" style="width: 100%;" onclick="loadScreen('SCR-05')">정밀 사이즈 가이드 확인</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-04': {
+        title: 'SCR-04 2.0 승모근 이너 핏',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-2.0',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">SEUMIM SLIM FIT</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">솟은 승모근 32% 완화 3D 패턴</div>
+            <div class="wf-card" style="text-align: center; padding: 40px;">
+              <h3>와이드 암홀 & 어깨 눌림 제로 구조</h3>
+              <p style="margin-top: 12px;">승모근 근전도 32% 이완 공인 성적서 완비</p>
+            </div>
+          </div>
+        `
+      },
+      'SCR-05': {
+        title: 'SCR-05 2.3 정밀 사이즈 가이드 [모달]',
+        meta: 'Depth: 3차 | Type: MODAL | Path: P-2.3',
+        html: `
+          <div class="wf-modal-overlay">
+            <div class="wf-modal-box">
+              <h2 style="color: #9F1239; margin-bottom: 12px;">상의 치수 기준 정밀 사이즈 매칭</h2>
+              <div class="wf-form-group">
+                <label>평소 착용하는 의류 사이즈</label>
+                <select class="wf-form-input">
+                  <option>44 (XS) - 신장 150~158cm / 40~48kg</option>
+                  <option selected>55 (S) - 신장 158~165cm / 48~55kg</option>
+                  <option>66 (M) - 신장 163~170cm / 55~63kg</option>
+                  <option>77 (L) - 신장 168cm 이상 / 63kg 이상</option>
+                </select>
+              </div>
+              <button class="wf-btn-cta" style="width: 100%; margin-top: 10px;" onclick="loadScreen('SCR-08')">이 사이즈로 얼리버드 예약</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-06': {
+        title: 'SCR-06 3.0 눈바디 릴스 후기',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-3.0',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">SEUMIM SLIM FIT</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">직장인 100인 출근 룩 릴스 숏폼</div>
+            <div class="wf-grid-3">
+              <div class="wf-card"><h3>대기업 마케터 (28세)</h3><p>"셔츠 핏이 달라져요! 승모근도 덜 아프고 완벽"</p></div>
+              <div class="wf-card"><h3>금융권 직장인 (31세)</h3><p>"자켓 안에 입어도 티 안 나서 매일 착용 중"</p></div>
+              <div class="wf-card"><h3>IT 기획자 (27세)</h3><p>"여름에도 땀 안 차고 시원해서 대만족"</p></div>
+            </div>
+          </div>
+        `
+      },
+      'SCR-07': {
+        title: 'SCR-07 4.0 얼리버드 혜택 안내',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-4.0',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">SEUMIM SLIM FIT</div></div>
+          <div class="wf-section" style="text-align: center;">
+            <div class="wf-section-title">얼리버드 15% 할인 + 세탁망 무료 증정</div>
+            <p style="margin-bottom: 24px; color: #9F1239;">30일간 입어보고 결정하는 100% 무료 반품 안심 보증</p>
+            <button class="wf-btn-cta" style="padding: 12px 30px;" onclick="loadScreen('SCR-08')">얼리버드 예약하기</button>
+          </div>
+        `
+      },
+      'SCR-08': {
+        title: 'SCR-08 4.3 얼리버드 예약 폼 [모달]',
+        meta: 'Depth: 3차 | Type: MODAL | Path: P-4.3',
+        html: `
+          <div class="wf-modal-overlay">
+            <div class="wf-modal-box">
+              <h2 style="color: #9F1239; margin-bottom: 12px;">얼리버드 15% 사전 예약</h2>
+              <div class="wf-form-group"><label>상의 사이즈</label><select class="wf-form-input"><option>55 (S)</option><option>66 (M)</option></select></div>
+              <div class="wf-form-group"><label>컬러 선택</label><select class="wf-form-input"><option>스킨 베이지</option><option>클래식 블랙</option></select></div>
+              <div class="wf-form-group"><label>성함 및 연락처</label><input type="text" class="wf-form-input" placeholder="이주은 / 010-1234-5678"></div>
+              <div class="wf-form-group"><label>배송지 주소</label><input type="text" class="wf-form-input" placeholder="서울시 마포구 ..."></div>
+              <button class="wf-btn-cta" style="width: 100%; margin-top: 10px;" onclick="loadScreen('SCR-09')">얼리버드 15% 예약 완료</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-09': {
+        title: 'SCR-09 4.4 예약 완료 및 배송 안내',
+        meta: 'Depth: 3차 | Type: PAGE | Path: P-4.4',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">SEUMIM SLIM FIT</div></div>
+          <div class="wf-section" style="text-align: center;">
+            <div class="wf-section-title" style="color: #E11D48;">얼리버드 예약 접수 완료</div>
+            <p>예약번호: <b>SM-SLIM-202608-8421</b></p>
+            <p style="margin-top: 8px; color: #9F1239;">고급 란제리 세탁망 무료 증정이 확정되었습니다.</p>
+            <button class="wf-btn-cta" style="margin-top: 24px;" onclick="loadScreen('SCR-01')">메인 룩북으로 복귀</button>
+          </div>
+        `
+      },
+      'SCR-10': {
+        title: 'SCR-10 5.0 패션 케어 가이드',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-5.0',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">SEUMIM SLIM FIT</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">사계절 쿨링 케어 & 세탁기 가이드</div>
+            <div class="wf-grid-3">
+              <div class="wf-card"><h3>에어로 쿨링 메쉬</h3><p>땀 흡수/건조 3배 빠른 기능성</p></div>
+              <div class="wf-card"><h3>세탁기 통세척</h3><p>증정된 세탁망에 넣어 울코스 세탁</p></div>
+              <div class="wf-card"><h3>30일 무료 반품</h3><p>불만족 시 100% 무료 반품 보장</p></div>
+            </div>
+          </div>
+        `
+      },
+      'SCR-11': {
+        title: 'SCR-11 6.1 SNS 간편 로그인 [가정]',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-6.1',
+        html: `
+          <div class="wf-modal-overlay">
+            <div class="wf-modal-box" style="text-align: center;">
+              <h2 style="color: #9F1239; margin-bottom: 20px;">간편 로그인</h2>
+              <button class="wf-btn-cta" style="width: 100%; background: #FEE500; color: #000; margin-bottom: 10px;" onclick="loadScreen('SCR-12')">카카오 1-Click 로그인</button>
+              <button class="wf-btn-cta" style="width: 100%; background: #03C75A;" onclick="loadScreen('SCR-12')">네이버 로그인</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-12': {
+        title: 'SCR-12 6.2 마이페이지 예약 관리 [가정]',
+        meta: 'Depth: 2차 | Type: PAGE | Path: P-6.2',
+        html: `
+          <div class="wf-gnb"><div class="wf-logo" onclick="loadScreen('SCR-01')">SEUMIM SLIM FIT</div></div>
+          <div class="wf-section">
+            <div class="wf-section-title">이주은 님의 얼리버드 예약 현황</div>
+            <div class="wf-card">
+              <h3>얼리버드 15% 예약 (스킨 베이지 55) - 배송 준비 중</h3>
+              <p>증정 사은품: 고급 란제리 세탁망 1EA</p>
+              <button class="wf-btn-cta" style="margin-top: 12px; background: #9F1239;">1-Click 무료 반품 신청</button>
+            </div>
+          </div>
+        `
+      },
+      'SCR-13': {
+        title: 'SCR-13 9.1 404 Not Found [가정]',
+        meta: 'Depth: 2차 | Type: EXCEPT | Path: P-9.1',
+        html: `
+          <div class="wf-section" style="text-align: center; padding: 100px 40px;">
+            <h1 style="font-size: 60px; color: #E11D48;">404</h1>
+            <p style="font-size: 16px; color: #9F1239; margin-top: 12px;">요청하신 룩북 페이지를 찾을 수 없습니다.</p>
+            <button class="wf-btn-cta" style="margin-top: 24px;" onclick="loadScreen('SCR-01')">오피스 룩북 메인으로</button>
+          </div>
+        `
+      },
+      'SCR-14': {
+        title: 'SCR-14 9.2 시스템 점검 안내 [가정]',
+        meta: 'Depth: 2차 | Type: EXCEPT | Path: P-9.2',
+        html: `
+          <div class="wf-section" style="text-align: center; padding: 100px 40px;">
+            <h2 style="font-size: 24px; color: #E11D48;">정기 시스템 점검 중입니다</h2>
+            <p style="font-size: 14px; color: #9F1239; margin-top: 12px;">얼리버드 예약 및 혜택 내역은 안전하게 보존됩니다.</p>
+          </div>
+        `
+      }
+    };
+
+    function loadScreen(id) {
+      const scr = screens[id] || screens['SCR-01'];
+      document.getElementById('currentTitle').innerText = scr.title;
+      document.getElementById('currentMeta').innerText = scr.meta;
+      document.getElementById('screenContainer').innerHTML = scr.html;
+
+      document.querySelectorAll('.tree-item').forEach(el => el.classList.remove('active'));
+      const activeItem = Array.from(document.querySelectorAll('.tree-item')).find(el => el.innerText.includes(id));
+      if (activeItem) activeItem.classList.add('active');
+    }
+
+    function setViewport(w) {
+      document.getElementById('wfFrame').style.width = w + 'px';
+      document.querySelectorAll('.btn-vp').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    function filterScreens() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      document.querySelectorAll('.tree-item').forEach(item => {
+        item.style.display = item.innerText.toLowerCase().includes(q) ? 'flex' : 'none';
+      });
+    }
+
+    loadScreen('SCR-01');
+  </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "SEUMIM(스밈) 테크 개발자 대시보드 화면 설계 스키마 (가상클라이언트 3: 강민우)",
+  "version": "2.0.0",
+  "totalScreens": 14,
+  "screens": [
+    {
+      "id": "SCR-01",
+      "sitemapMapping": "P-0.0",
+      "name": "다크모드 메인 랜딩페이지",
+      "depth": "1차",
+      "type": "PAGE",
+      "route": "/",
+      "purpose": "거북목 통계, 시차 필터링 테크, 실시간 대시보드 시연, 3개월 무료 구독 전환",
+      "components": [
+        "GNB (<SEUMIM_DEV /> 로고, Latency 배지, GitHub CTA)",
+        "Console Hero (몰입 방해 없는 자세 코칭, 스마트워치 연동)",
+        "개발자 91.2% 거북목 인포그래픽 카드",
+        "0.5초 시차 필터링 시계열 파형 시뮬레이터",
+        "전도성 센서 섬유 척추 조끼 룩북",
+        "다크모드 실시간 자세 점수 스트림 콘솔",
+        "연간 척추 밸런스 GitHub 잔디 히트맵",
+        "하단 GitHub 1-Click 3개월 무료 구독 CTA",
+        "FNB (Footer)"
+      ],
+      "interactions": [
+        "GNB 메뉴 클릭 시 서브페이지(SCR-02, 04, 05, 07, 10) 이동",
+        "시계열 파형 시뮬레이터 호버 시 필터링 로직 툴팁 노출",
+        "워치 링 UI 조작 시 점수 게이지 실시간 변동",
+        "[GitHub 3개월 무료 시작] 클릭 시 SCR-08 모달 호출"
+      ]
+    },
+    {
+      "id": "SCR-02",
+      "sitemapMapping": "P-1.0",
+      "name": "척추 조끼 HW",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/hardware/smart-vest",
+      "purpose": "전도성 센서 섬유의 세탁 내구성 및 후드티 착용감 입증",
+      "components": ["GNB", "센서 섬유 스펙 시트", "세탁 100회 인증서", "남녀 공용 상의 룩북", "FNB"],
+      "interactions": ["3D 섬유 단면 줌 확대", "[상의 사이즈 찾기] 클릭 시 SCR-03 호출"]
+    },
+    {
+      "id": "SCR-03",
+      "sitemapMapping": "P-1.3",
+      "name": "하드웨어 정밀 사이즈 가이드 [모달]",
+      "depth": "3차",
+      "type": "MODAL",
+      "route": "/modal/size-guide",
+      "purpose": "상의(95/100/105/110) 기준 정밀 사이즈 추천으로 착용 실패 방지",
+      "components": ["모달 컨테이너", "상의 치수 셀렉트 (95~110)", "체형 권장표", "30일 시착 신청 버튼"],
+      "interactions": ["사이즈 선택 시 권장 치수 하이라이트", "[이 사이즈로 시착] 클릭 시 SCR-08 전환"]
+    },
+    {
+      "id": "SCR-04",
+      "sitemapMapping": "P-2.0",
+      "name": "시차 필터링 테크",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/tech/time-lag-filter",
+      "purpose": "0.5초 단순 숙임 무시 및 오알림 0건의 알고리즘 원리 증명",
+      "components": ["GNB", "시계열 파형 분석 차트", "모션 벤치마크 데이터", "FNB"],
+      "interactions": ["타이핑/물마심/불량자세 모션 토글 인터랙션"]
+    },
+    {
+      "id": "SCR-05",
+      "sitemapMapping": "P-3.0",
+      "name": "AI 데이터 대시보드",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/dashboard/telemetry",
+      "purpose": "실시간 자세 점수 스트림과 스마트워치 퀵-글랜스 UI 직접 조작",
+      "components": ["GNB", "실시간 점수 콘솔 게이지 (Live 96점)", "스마트워치 3초 링 UI", "FNB"],
+      "interactions": ["자세 스트림 재생/일시정지", "[잔디 히트맵 보기] 클릭 시 SCR-06 이동"]
+    },
+    {
+      "id": "SCR-06",
+      "sitemapMapping": "P-3.3",
+      "name": "GitHub 잔디 히트맵",
+      "depth": "3차",
+      "type": "PAGE",
+      "route": "/dashboard/github-grass",
+      "purpose": "연간 척추 밸런스 잔디 히트맵 시각화",
+      "components": ["GNB", "365일 자세 잔디 히트맵 그리드", "일간 데이터 툴팁", "FNB"],
+      "interactions": ["잔디 셀 호버 시 날짜별 상세 스코어 노출"]
+    },
+    {
+      "id": "SCR-07",
+      "sitemapMapping": "P-4.0",
+      "name": "무료 체험/구독 안내",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/subscription/pricing",
+      "purpose": "AI 3개월 무료 라이선스 및 HW 30일 시착 혜택 안내",
+      "components": ["GNB", "AI 플랜 비교표", "30일 무상 시착 약관", "[GitHub 무료 시작] CTA", "FNB"],
+      "interactions": ["[GitHub 무료 시작] 클릭 시 SCR-08 호출"]
+    },
+    {
+      "id": "SCR-08",
+      "sitemapMapping": "P-4.3",
+      "name": "무료 체험/구독 신청 폼 [모달]",
+      "depth": "3차",
+      "type": "MODAL",
+      "route": "/modal/subscribe",
+      "purpose": "GitHub 1-Click 인증 및 3개월 라이선스 발급 접수",
+      "components": ["GitHub 계정 필드", "상의 사이즈 셀렉트", "배송지 주소 인풋", "발급 버튼"],
+      "interactions": ["GitHub OAuth 승인 후 SCR-09 화면 호출"]
+    },
+    {
+      "id": "SCR-09",
+      "sitemapMapping": "P-4.4",
+      "name": "라이선스 발급 완료 안내 [가정]",
+      "depth": "3차",
+      "type": "PAGE",
+      "route": "/order/complete",
+      "purpose": "고유 API Key 발급 및 대시보드 연동 안내",
+      "components": ["API Key 복사 박스", "Webhook 가이드", "마이페이지 이동 버튼", "FNB"],
+      "interactions": ["[API Key 복사] 클릭 시 클립보드 저장 토스트", "[마이페이지 이동] 클릭 시 SCR-12 이동"]
+    },
+    {
+      "id": "SCR-10",
+      "sitemapMapping": "P-5.0",
+      "name": "데스크 케어",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/care/desk-routine",
+      "purpose": "코딩 중 10초 스트레칭 및 개발자 작업 환경 개선 팁 제공",
+      "components": ["GNB", "10초 AI 스트레칭 동영상", "모니터 각도 세팅 가이드", "기술 FAQ", "FNB"],
+      "interactions": ["FAQ 아코디언 토글"]
+    },
+    {
+      "id": "SCR-11",
+      "sitemapMapping": "P-6.1",
+      "name": "GitHub OAuth 로그인 [가정]",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/auth/github",
+      "purpose": "GitHub 계정 1-Click OAuth 인증",
+      "components": ["OAuth 권한 승인 다이얼로그"],
+      "interactions": ["[Authorize] 클릭 시 SCR-12 이동"]
+    },
+    {
+      "id": "SCR-12",
+      "sitemapMapping": "P-6.2",
+      "name": "마이페이지 대시보드 [가정]",
+      "depth": "2차",
+      "type": "PAGE",
+      "route": "/mypage/dashboard",
+      "purpose": "실시간 자세 데이터 스트림 관리 및 API 키 관리",
+      "components": ["GNB", "구독 상태 카드", "API Key 관리", "HW 배송 트래킹", "FNB"],
+      "interactions": ["[1-Click 반품 신청] 클릭 시 팝업 노출"]
+    },
+    {
+      "id": "SCR-13",
+      "sitemapMapping": "P-9.1",
+      "name": "404 Not Found [가정]",
+      "depth": "2차",
+      "type": "EXCEPT",
+      "route": "/error/404",
+      "purpose": "터미널 콘솔형 404 에러 안내",
+      "components": ["404 콘솔 메시지", "cd /main 바로가기 버튼"],
+      "interactions": ["[cd /main] 클릭 시 SCR-01 이동"]
+    },
+    {
+      "id": "SCR-14",
+      "sitemapMapping": "P-9.2",
+      "name": "API 서버 점검 안내 [가정]",
+      "depth": "2차",
+      "type": "EXCEPT",
+      "route": "/system/maintenance",
+      "purpose": "API 서버 점검 공지 및 라이선스 키 보존 안내",
+      "components": ["점검 콘솔 안내문", "API Latency 모니터"],
+      "interactions": []
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+- generic [ref=f233e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f233e15]:
+      - generic [ref=f233e17]:
+        - generic [ref=f233e18]:
+          - combobox "검색" [ref=f233e20]: zen minimalist logo design black white
+          - generic [ref=f233e21]:
+            - button "검색 입력 삭제" [ref=f233e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f233e30]:
+              - button "Pinterest 렌즈" [ref=f233e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f233e38] [cursor=pointer]:
+          - generic [ref=f233e40]:
+            - generic [ref=f233e41]: 모든 핀
+            - img "드롭다운" [ref=f233e43]
+      - link "내 프로필" [ref=f233e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f233e56]:
+          - generic [ref=f233e57]: 임
+      - button "계정" [ref=f233e61] [cursor=pointer]
+  - navigation [ref=f233e66]:
+    - generic [ref=f233e68]:
+      - generic [ref=f233e69]:
+        - generic "홈" [ref=f233e73]:
+          - link "홈" [ref=f233e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f233e81]:
+          - link "홈" [ref=f233e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f233e89]:
+          - link "내 보드" [ref=f233e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f233e97]:
+          - button "만들기" [ref=f233e98] [cursor=pointer]
+        - generic "업데이트" [ref=f233e107]:
+          - button "업데이트" [ref=f233e108] [cursor=pointer]
+        - generic "메시지" [ref=f233e117]:
+          - button "메시지" [ref=f233e118] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f233e126]:
+        - button "설정 및 지원" [ref=f233e127] [cursor=pointer]
+  - main [ref=f233e132]:
+    - generic [ref=f233e134]:
+      - heading "검색 결과 페이지" [level=1] [ref=f233e136]
+      - region "필터 및 세분화 검색" [ref=f233e140]:
+        - generic [ref=f233e143]:
+          - button "필터 표시" [ref=f233e149] [cursor=pointer]
+          - button "Kitchen ideas modern interior" [ref=f233e160] [cursor=pointer]
+          - button "Website" [ref=f233e176] [cursor=pointer]
+          - button "Modern living room" [ref=f233e192] [cursor=pointer]
+          - button "Book cover" [ref=f233e208] [cursor=pointer]
+          - button "Notebook cover" [ref=f233e224] [cursor=pointer]
+          - button "Graphic" [ref=f233e240] [cursor=pointer]
+          - button "Typography" [ref=f233e256] [cursor=pointer]
+          - button "Business card" [ref=f233e272] [cursor=pointer]
+          - button "Beige bedroom" [ref=f233e288] [cursor=pointer]
+          - button "Magazine layout" [ref=f233e304] [cursor=pointer]
+          - button "House" [ref=f233e320] [cursor=pointer]
+          - button "Flyer" [ref=f233e336] [cursor=pointer]
+          - button "Poster" [ref=f233e352] [cursor=pointer]
+          - button "Bento cake" [ref=f233e368] [cursor=pointer]
+          - button "Black-and-white" [ref=f233e384] [cursor=pointer]
+      - generic [ref=f233e400]:
+        - generic [ref=f233e401]: zen minimalist logo design black white 검색 결과를 추가로 불러오는 중
+        - list [ref=f233e406]:
+          - listitem [ref=f233e407]:
+            - button [ref=f233e409] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e411]:
+                - generic [ref=f233e413]:
+                  - link "제목 없음 핀 페이지" [ref=f233e415]:
+                    - /url: /pin/31666003625561530/
+                    - img "포함된 이미지:" [ref=f233e425]
+                  - generic "추가 작업" [ref=f233e434]:
+                    - button "추가 작업" [ref=f233e435]
+          - listitem [ref=f233e440]:
+            - button [ref=f233e442] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e444]:
+                - generic [ref=f233e446]:
+                  - link "Elegant Modern Logo Concepts Designs for Logos 핀 페이지" [ref=f233e448]:
+                    - /url: /pin/183240278583039589/
+                    - img "포함된 이미지:" [ref=f233e458]
+                  - generic "추가 작업" [ref=f233e467]:
+                    - button "추가 작업" [ref=f233e468]
+          - listitem [ref=f233e473]:
+            - button [ref=f233e475] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e477]:
+                - generic [ref=f233e479]:
+                  - link "12,600+ Yoga Logo Stock Illustrations, Royalty-Free Vector Graphics &amp; Clip Art - iStock 핀 페이지" [ref=f233e481]:
+                    - /url: /pin/4785143351316867/
+                    - 'img "포함된 이미지: 12,600+ Yoga Logo Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f233e491]'
+                  - generic [ref=f233e496]:
+                    - heading [level=2] [ref=f233e502]:
+                      - link "12,600+ Yoga Logo Stock Illustrations, Royalty-Free Vector Graphics &amp; Clip Art - iStock 핀 페이지" [ref=f233e504]:
+                        - /url: /pin/4785143351316867/
+                        - text: 12,600+ Yoga Logo Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+                    - generic "추가 작업" [ref=f233e507]:
+                      - button "추가 작업" [ref=f233e508]
+          - listitem [ref=f233e513]:
+            - button [ref=f233e515] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e517]:
+                - generic [ref=f233e519]:
+                  - link "제목 없음 핀 페이지" [ref=f233e521]:
+                    - /url: /pin/11259067814456740/
+                    - img "포함된 이미지:" [ref=f233e531]
+                  - generic "추가 작업" [ref=f233e540]:
+                    - button "추가 작업" [ref=f233e541]
+          - listitem [ref=f233e546]:
+            - button [ref=f233e548] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e550]:
+                - generic [ref=f233e552]:
+                  - 'link "Pixel Font Logo Design Tips: Create Modern Symbols &amp; Branding 핀 페이지" [ref=f233e554]':
+                    - /url: /pin/28499410138550419/
+                    - 'img "포함된 이미지: Pixel Font Logo Design Tips: Create Modern Symbols & Branding" [ref=f233e564]'
+                  - generic [ref=f233e569]:
+                    - heading [level=2] [ref=f233e575]:
+                      - 'link "Pixel Font Logo Design Tips: Create Modern Symbols &amp; Branding 핀 페이지" [ref=f233e577]':
+                        - /url: /pin/28499410138550419/
+                        - text: "Pixel Font Logo Design Tips: Create Modern Symbols & Branding"
+                    - generic "추가 작업" [ref=f233e580]:
+                      - button "추가 작업" [ref=f233e581]
+          - listitem [ref=f233e586]:
+            - button [ref=f233e588] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e590]:
+                - generic [ref=f233e592]:
+                  - link "Yoga Logo Meditation Zen Logo 핀 페이지" [ref=f233e594]:
+                    - /url: /pin/4602819673127472000/
+                    - 'img "포함된 이미지: Yoga Logo Meditation Zen Logo" [ref=f233e604]'
+                  - generic [ref=f233e609]:
+                    - generic [ref=f233e611]:
+                      - generic [ref=f233e613]:
+                        - img "쇼핑 가능한 핀 표시기" [ref=f233e615]
+                        - heading [level=2] [ref=f233e618]:
+                          - link "Yoga Logo Meditation Zen Logo 핀 페이지" [ref=f233e620]:
+                            - /url: /pin/4602819673127472000/
+                            - text: Yoga Logo Meditation Zen Logo
+                      - link "Yoga Logo Meditation Zen Logo 핀 페이지" [ref=f233e622]:
+                        - /url: /pin/4602819673127472000/
+                        - generic "Scalebranding" [ref=f233e626]
+                    - generic "추가 작업" [ref=f233e629]:
+                      - button "추가 작업" [ref=f233e630]
+          - listitem [ref=f233e635]:
+            - button [ref=f233e637] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e639]:
+                - generic [ref=f233e641]:
+                  - link "제목 없음 핀 페이지" [ref=f233e643]:
+                    - /url: /pin/281543725279450/
+                    - img "포함된 이미지:" [ref=f233e653]
+                  - generic [ref=f233e658]:
+                    - link "HINDZ" [ref=f233e662]:
+                      - /url: /hindzsight/
+                      - generic "HINDZ" [ref=f233e669]
+                    - generic "추가 작업" [ref=f233e672]:
+                      - button "추가 작업" [ref=f233e673]
+          - listitem [ref=f233e678]:
+            - button [ref=f233e680] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e682]:
+                - generic [ref=f233e684]:
+                  - 'link "ig: denisuglyperson 핀 페이지" [ref=f233e686]':
+                    - /url: /pin/262053272064285896/
+                    - 'img "포함된 이미지: ig: denisuglyperson" [ref=f233e696]'
+                  - generic [ref=f233e701]:
+                    - heading [level=2] [ref=f233e707]:
+                      - 'link "ig: denisuglyperson 핀 페이지" [ref=f233e709]':
+                        - /url: /pin/262053272064285896/
+                        - text: "ig: denisuglyperson"
+                    - generic "추가 작업" [ref=f233e712]:
+                      - button "추가 작업" [ref=f233e713]
+          - listitem [ref=f233e718]:
+            - button [ref=f233e720] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e722]:
+                - generic [ref=f233e724]:
+                  - link "LOGO 핀 페이지" [ref=f233e726]:
+                    - /url: /pin/68749265125/
+                    - 'img "포함된 이미지: LOGO" [ref=f233e736]'
+                  - generic [ref=f233e741]:
+                    - heading [level=2] [ref=f233e747]:
+                      - link "LOGO 핀 페이지" [ref=f233e749]:
+                        - /url: /pin/68749265125/
+                        - text: LOGO
+                    - generic "추가 작업" [ref=f233e752]:
+                      - button "추가 작업" [ref=f233e753]
+          - listitem [ref=f233e758]:
+            - button [ref=f233e760] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e762]:
+                - generic [ref=f233e764]:
+                  - link "305 mila immagini, foto stock e illustrazioni esenti da diritti d&#39;autore a tema Wellness logo | Shutterstock 핀 페이지" [ref=f233e766]:
+                    - /url: /pin/2603712281529066/
+                    - 'img "포함된 이미지: 305 mila immagini, foto stock e illustrazioni esenti da diritti d''autore a tema Wellness logo | Shutterstock" [ref=f233e776]'
+                  - generic [ref=f233e781]:
+                    - heading [level=2] [ref=f233e787]:
+                      - link "305 mila immagini, foto stock e illustrazioni esenti da diritti d&#39;autore a tema Wellness logo | Shutterstock 핀 페이지" [ref=f233e789]:
+                        - /url: /pin/2603712281529066/
+                        - text: 305 mila immagini, foto stock e illustrazioni esenti da diritti d'autore a tema Wellness logo | Shutterstock
+                    - generic "추가 작업" [ref=f233e792]:
+                      - button "추가 작업" [ref=f233e793]
+          - listitem [ref=f233e798]:
+            - button [ref=f233e800] [cursor=pointer]:
+              - group "핀 카드" [ref=f233e802]:
+                - generic [ref=f233e804]:
+                  - link "제목 없음 핀 페이지" [ref=f233e806]:
+                    - /url: /pin/125326802126150762/
+                    - img "포함된 이미지:" [ref=f233e816]
+                  - generic "추가 작업" [ref=f233e825]:
+                    - button "추가 작업" [ref=f233e826]

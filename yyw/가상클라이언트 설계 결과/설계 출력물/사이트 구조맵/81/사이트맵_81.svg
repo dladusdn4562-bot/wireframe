@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1350" width="1200" height="1350">
+  <rect width="1200" height="1350" fill="#0B0F19"/>
+  <text x="600" y="55" fill="#F8FAFC" font-size="26" font-weight="bold" text-anchor="middle">SEUMIM 반도체클린룸공정엔지니어 사이트 구조맵 (Client 81)</text>
+  <text x="600" y="90" fill="#38BDF8" font-size="14" text-anchor="middle">[매니페스토 선언 ➔ 대표 3종 집중 조명 ➔ 하단 15개 상품 쇼케이스] IA</text>
+
+  <rect x="420" y="130" width="360" height="70" rx="8" fill="#0284C7" stroke="#38BDF8" stroke-width="2"/>
+  <text x="600" y="162" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">P-0.0 메인 랜딩 (반도체클린룸공정엔지니어)</text>
+  <text x="600" y="184" fill="#E0F2FE" font-size="11" text-anchor="middle">매니페스토 + 대표 3종 + 15개 상품 탭</text>
+
+  <line x1="600" y1="200" x2="600" y2="240" stroke="#38BDF8" stroke-width="2"/>
+  <line x1="150" y1="240" x2="1050" y2="240" stroke="#38BDF8" stroke-width="2"/>
+
+  <rect x="50" y="270" width="180" height="55" rx="6" fill="#1E293B" stroke="#475569"/>
+  <text x="140" y="303" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">P-1.0 브랜드 철학</text>
+
+  <rect x="280" y="270" width="180" height="55" rx="6" fill="#1E293B" stroke="#38BDF8"/>
+  <text x="370" y="303" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">P-2.0 컬렉션 (15종)</text>
+
+  <rect x="510" y="270" width="180" height="55" rx="6" fill="#1E293B" stroke="#475569"/>
+  <text x="600" y="303" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">P-3.0 AI 데이터 케어</text>
+
+  <rect x="740" y="270" width="180" height="55" rx="6" fill="#1E293B" stroke="#475569"/>
+  <text x="830" y="303" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">P-4.0 웰니스 센터</text>
+
+  <rect x="970" y="270" width="180" height="55" rx="6" fill="#1E293B" stroke="#475569"/>
+  <text x="1060" y="303" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">P-5.0 혜택 &amp; 체험</text>
+
+  <rect x="50" y="520" width="1100" height="780" rx="10" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+  <text x="600" y="560" fill="#F8FAFC" font-size="20" font-weight="bold" text-anchor="middle">★ 반도체클린룸공정엔지니어 3대 전환 여정 명세</text>
+  
+  <rect x="80" y="590" width="1040" height="200" rx="6" fill="#1E293B"/>
+  <text x="100" y="625" fill="#38BDF8" font-size="15" font-weight="bold">[Journey 1] 대표 3종 확인 ➔ 15개 상품 탭 비교 ➔ 퀵뷰 ➔ 30일 무료 시착 신청</text>
+  <text x="100" y="660" fill="#CBD5E1" font-size="12">• 경로: P-0.0 메인 ➔ SEC-02~04 대표 3종 단독 조명 ➔ SEC-06 15개 상품 탭 ➔ P-5.2 시착 모달 ➔ 접수 완료</text>
+  <text x="100" y="690" fill="#94A3B8" font-size="11">• 최적화: 100% 무료 반품 확약과 직업 연계 교정 ACC 3종 포함으로 구매 전환율 극대화</text>
+
+  <rect x="80" y="810" width="1040" height="200" rx="6" fill="#1E293B"/>
+  <text x="100" y="845" fill="#38BDF8" font-size="15" font-weight="bold">[Journey 2] 전국 35개 거점 웰니스 센터 1회 무료 3D 체형 스캔 4단계 예약</text>
+  <text x="100" y="880" fill="#CBD5E1" font-size="12">• 경로: P-0.0 메인 ➔ P-4.0 센터 안내 ➔ P-4.2 (지점➔일시➔직업환경➔확정) ➔ P-4.3 예약 완료 안내</text>
+  <text x="100" y="910" fill="#94A3B8" font-size="11">• 최적화: 반도체 팹(FAB) 클린룸 수석 공정 기술자 작업 환경 사전 분석을 통한 1:1 맞춤형 피팅 리셋 처방</text>
+
+  <rect x="80" y="1030" width="1040" height="200" rx="6" fill="#1E293B"/>
+  <text x="100" y="1065" fill="#38BDF8" font-size="15" font-weight="bold">[Journey 3] AI 바이오 척추 데이터 케어 실시간 HUD 3개월 무료 라이선스</text>
+  <text x="100" y="1100" fill="#CBD5E1" font-size="12">• 경로: P-0.0 메인 ➔ P-3.0 AI 케어 ➔ P-6.1 SNS 1-Click 로그인 ➔ P-6.2 마이페이지 구독 활성화</text>
+  <text x="100" y="1130" fill="#94A3B8" font-size="11">• 최적화: 작업 중 무소음 햅틱 넛지와 실시간 자세 점수 모니터링 연동</text>
+</svg>

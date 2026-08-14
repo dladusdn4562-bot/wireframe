@@ -1,0 +1,39 @@
+graph TD
+    classDef root fill:#EA580C,stroke:#1E293B,stroke-width:2px,color:#fff;
+    classDef depth1 fill:#F97316,stroke:#EA580C,stroke-width:2px,color:#fff;
+    classDef depth2 fill:#FFF1F2,stroke:#F97316,stroke-width:1px,color:#1E293B;
+    classDef modal fill:#FFE4E6,stroke:#E11D48,stroke-width:1px,color:#1E293B;
+    classDef journey fill:#FEF2F2,stroke:#FB7185,stroke-width:2px,stroke-dasharray: 5 5,color:#1E293B;
+
+    ROOT["0.0 웜 피치 메인 랜딩 (P-0.0)"]:::root
+
+    ROOT --> N1["1.0 맘스 듀얼 서포터 (P-1.0)"]:::depth1
+    N1 --> N1_1["1.1 0.1mm 심리스 홈웨어 (P-1.1)"]:::depth2
+    N1 --> N1_2["1.2 허리 하중 52% 분산 (P-1.2)"]:::depth2
+    N1 --> N1_3["1.3 출산 전후 사이즈 [모달] (P-1.3)"]:::modal
+
+    ROOT --> N2["2.0 무소음 마그네틱 테크 (P-2.0)"]:::depth1
+    N2 --> N2_1["2.1 0dB 무소음 버클 (P-2.1)"]:::depth2
+    N2 --> N2_2["2.2 손목 건초염 보호 성적서 (P-2.2)"]:::depth2
+    N2 --> N2_3["2.3 오코텍스 1등급 인증 (P-2.3)"]:::depth2
+
+    ROOT --> N3["3.0 맘카페 100인 후기 (P-3.0)"]:::depth1
+    N3 --> N3_1["3.1 워킹맘 실착 포토 리뷰 (P-3.1)"]:::depth2
+    N3 --> N3_2["3.2 수유/안아올리기 인터뷰 (P-3.2)"]:::depth2
+    N3 --> N3_3["3.3 출산 선물 만족도 99% (P-3.3)"]:::depth2
+
+    ROOT --> N4["4.0 맘스 30일 무료체험 (P-4.0)"]:::depth1
+    N4 --> N4_1["4.1 집에서 30일 무료 실착 (P-4.1)"]:::depth2
+    N4 --> N4_2["4.2 카카오 1-Click 신청 [모달] (P-4.2)"]:::modal
+    N4 --> N4_3["4.3 주문 완료 및 배송 안내 (P-4.3)"]:::depth2
+
+    ROOT --> N5["5.0 육퇴 10초 힐링팁 (P-5.0)"]:::depth1
+    N5 --> N5_1["5.1 침대 위 10초 리셋 (P-5.1)"]:::depth2
+    N5 --> N5_2["5.2 수유/재택 바른 자세 (P-5.2)"]:::depth2
+    N5 --> N5_3["5.3 세탁기 & 선물 FAQ (P-5.3)"]:::depth2
+
+    subgraph JOURNEY["[핵심 사용자 3대 전환 여정]"]
+        J1["여정 1 (카카오 1-Click 체험): 메인 ➔ 맘스 서포터 ➔ 0dB 무소음 ➔ 카카오 신청 모달 ➔ 댁으로 수령"]:::journey
+        J2["여정 2 (사이즈 매칭): 맘카페 후기 ➔ 출산 전후 사이즈 ➔ 30일 무료 반품 주문"]:::journey
+        J3["여정 3 (출산 선물): 육퇴 힐링팁 ➔ 출산 선물 후기 ➔ 카카오 선물하기 발송"]:::journey
+    end

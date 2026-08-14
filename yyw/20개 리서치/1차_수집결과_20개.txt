@@ -1,0 +1,107 @@
+=================================================================================
+[SEUMIM (스밈)] 1차 웹사이트 레퍼런스 수집 결과 (20개 Batch 1)
+- 수집 일시: 2026-08-04
+- 수집 데이터 표준: brand_name, url, layout_structure, ux_ui_elements
+=================================================================================
+
+[01] SKIMS
+- url: https://skims.com
+- layout_structure: 극도의 미니멀리즘, 압도적 비대칭 여백 및 에디토리얼 매거진 룩북 그리드 레이아웃
+- ux_ui_elements: 뉴트럴 톤 비주얼, 하단 Sticky Quick Add 장바구니 바, 호버 이미지 시퀀스 전환
+
+[02] Cuyana
+- url: https://cuyana.com
+- layout_structure: 지속가능 럭셔리 톤온톤 에디토리얼 여백 및 시네마틱 파라락스 스크롤 레이아웃
+- ux_ui_elements: 3-step 친환경 소재 스토리텔링 모듈, 모바일 Bottom Sheet 퀵 결제
+
+[03] Lunya
+- url: https://lunya.co
+- layout_structure: 실크 라운지웨어 갤러리형 넓은 여백 및 오프화이트 프레임 레이아웃
+- ux_ui_elements: 세탁/착용 3-step 아코디언 가이드 UI, Sticky 장바구니 슬라이더
+
+[04] PANGAIA
+- url: https://thepangaia.com
+- layout_structure: 차분한 파스텔 여백, 눈 피로도를 낮춘 바이오 텍스처 화보 프레임
+- ux_ui_elements: 바이오 소재 인포그래픽 인터랙션, 호버 돋보기 파이버 매크로 뷰
+
+[05] ASKET
+- url: https://www.asket.com
+- layout_structure: 미니멀 오프화이트 여백 중심 및 불필요한 장식을 배제한 에센셜 프레임
+- ux_ui_elements: 추적 가능한 원자재 100% 투명성 인포그래픽, Sticky 사이즈 선택 슬라이더
+
+[06] Tekla Fabrics
+- url: https://teklafabrics.com
+- layout_structure: 스칸디나비안 건축적 미니멀리즘, 극도의 감각적 정적 여백 레이아웃
+- ux_ui_elements: 비대칭 룩북 비스포크 스크롤, 최소화된 반응형 텍스트 네비게이션
+
+[07] Kotn
+- url: https://kotn.com
+- layout_structure: 포근한 오가닉 코튼 베이지 톤온톤 및 매거진 잡지형 에디토리얼 레이아웃
+- ux_ui_elements: 농가 1-2-3 직조 프로세스 인터랙티브 가이드, Sticky Quick Buy 팝업
+
+[08] Oura Ring
+- url: https://ouraring.com
+- layout_structure: 원페이지 스크롤텔링, 하이엔드 테크 비주얼 및 섹션별 다이내믹 프레임
+- ux_ui_elements: 티타늄 센서 초근접 3D 매크로 뷰, 3-step 생체 데이터 스케일 카세트 UI
+
+[09] Forme Science
+- url: https://forme.science
+- layout_structure: 프리미엄 웰니스 라운지 톤온톤 및 척추 케어 기능 중심 프레임
+- ux_ui_elements: 자세 보정 1-2-3 스텝 다이어그램, 원단 텍스처 초근접 매크로 샷, Sticky 장바구니 바
+
+[10] Janji
+- url: https://janji.com
+- layout_structure: 가볍고 다이내믹한 웰니스 룩북 레이아웃 및 여백 비주얼
+- ux_ui_elements: 러닝 초경량 소재 초근접 매크로 뷰, 마우스 호버 돋보기(Magnifier) 확대 기능
+
+[11] Ryzon
+- url: https://www.ryzon.net
+- layout_structure: 독일 테크니컬 미니멀리즘 및 고해상도 화보 비대칭 레이아웃
+- ux_ui_elements: 라이트웨이트 심리스 매크로 샷, 커서 추적형 돋보기(Magnifier) 확대 인터랙션
+
+[12] Hyperice
+- url: https://hyperice.com
+- layout_structure: 하이엔드 모던 웰니스 스크롤텔링, 굵은 에디토리얼 타이포그래피 프레임
+- ux_ui_elements: 모듈 부품 초근접 매크로 샷, 신체 부위별 1-2-3 스텝 케어 모션 가이드
+
+[13] Matek
+- url: https://matek.clothing
+- layout_structure: 레이어드 라운지웨어 갤러리 여백 및 트렌디 에디토리얼 비주얼
+- ux_ui_elements: 직조 질감 초근접 매크로 뷰, 마우스 돋보기 확대 및 호버 미리보기
+
+[14] Ritual
+- url: https://ritual.com
+- layout_structure: 투명한 클린 파스텔 톤온톤 및 정보 전달형 서체 중심 레이아웃
+- ux_ui_elements: 지연 방출 캡슐 3D 매크로 뷰, 성분 영양 흡수 3단계 다이어그램 UI
+
+[15] Alo Yoga
+- url: https://www.aloyoga.com
+- layout_structure: 쇼피파이 스탠다드 오프라인 쇼룸 스타일 + 매거진 에디토리얼 화보 프레임
+- ux_ui_elements: 심리스 원단 초근접 매크로 샷, Sticky Quick-Add 바, 모바일 퀵 결제
+
+[16] HigherDOSE
+- url: https://higherdose.com
+- layout_structure: 적외선 웰니스 릴랙싱 무드, 모던 그리드 커머스 레이아웃
+- ux_ui_elements: 디바이스 사용 3-step 온열 가이드, 모바일 Bottom Sheet 퀵 결제 modal
+
+[17] Eight Sleep
+- url: https://www.eightsleep.com
+- layout_structure: 슬립 테크 럭셔리 매거진 룩 및 섹션 분할 스크롤텔링 프레임
+- ux_ui_elements: 수냉 기술 3-step 메커니즘, 하단 고정 Sticky 구매 옵션바
+
+[18] Faherty
+- url: https://fahertybrand.com
+- layout_structure: 편안한 코스탈 웰니스 베이지 톤온톤 그리드 레이아웃
+- ux_ui_elements: 패브릭 돋보기(Magnifier) 확대, 하단 Sticky 결제 바, 1초 퀵 체크아웃
+
+[19] Marine Layer
+- url: https://www.marinelayer.com
+- layout_structure: 부드러운 삼중 원단 파스텔 무드, 정돈된 스탠다드 그리드 프레임
+- ux_ui_elements: 원단 호버 돋보기 기능, 모바일 Bottom Sheet 슬라이드 장바구니
+
+[20] Bala
+- url: https://shopbala.com
+- layout_structure: 파스텔 미니멀 웰니스 조형 예술 룩북 및 그리드 레이아웃
+- ux_ui_elements: 착용 1-2-3 스텝 모션 가이드, Bottom Sheet 슬라이드 퀵 장바구니
+
+=================================================================================

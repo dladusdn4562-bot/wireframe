@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 2220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgFlowMomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1F2"/>
+      <stop offset="100%" stop-color="#FEF2F2"/>
+    </linearGradient>
+    <linearGradient id="headerMomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+    <filter id="flowShadowMom" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feOffset dx="0" dy="4" result="offset"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.12"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1680" height="2220" fill="url(#bgFlowMomGrad)"/>
+
+  <!-- Main Header -->
+  <g transform="translate(80, 50)">
+    <rect width="1520" height="100" rx="16" fill="url(#headerMomGrad)" filter="url(#flowShadowMom)"/>
+    <text x="760" y="45" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="26" font-weight="900" text-anchor="middle">SEUMIM 맘스 듀얼 서포터 서비스 흐름도 (가상클라이언트 12: 임수현)</text>
+    <text x="760" y="78" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="15" font-weight="600" text-anchor="middle">ST-01~14 전 단계 정의 &amp; 카카오 1-Click 30일 맘스 무료 체험단 Happy Path &amp; 출산 선물 분기</text>
+  </g>
+
+  <!-- Lane 1: Entry & Core Exploration (Y: 190 ~ 650) -->
+  <g transform="translate(80, 190)">
+    <rect width="1520" height="460" rx="16" fill="#FFFFFF" stroke="#EA580C" stroke-width="2" filter="url(#flowShadowMom)"/>
+    <rect width="1520" height="40" rx="16" fill="#EA580C"/>
+    <text x="30" y="26" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800">1. 진입 및 맘스 서포터 탐색 영역 (Entry &amp; Tech Validation)</text>
+
+    <!-- ST-01 -->
+    <g transform="translate(40, 70)">
+      <rect width="320" height="90" rx="12" fill="#EA580C" filter="url(#flowShadowMom)"/>
+      <text x="160" y="38" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-01 웜 피치 메인 랜딩</text>
+      <text x="160" y="62" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-0.0) 육아 요통 공감 &amp; 체험</text>
+    </g>
+
+    <!-- ST-02 -->
+    <g transform="translate(420, 70)">
+      <rect width="320" height="90" rx="12" fill="#F97316" filter="url(#flowShadowMom)"/>
+      <text x="160" y="38" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-02 1.0 맘스 듀얼 서포터</text>
+      <text x="160" y="62" fill="#FFF1F2" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-1.0) 하중 52% 분산 듀얼 프레임</text>
+    </g>
+
+    <!-- ST-03 -->
+    <g transform="translate(800, 70)">
+      <rect width="320" height="90" rx="12" fill="#F97316" filter="url(#flowShadowMom)"/>
+      <text x="160" y="38" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-03 2.0 무소음 마그네틱</text>
+      <text x="160" y="62" fill="#FFF1F2" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-2.0) 0dB 버클 &amp; 오코텍스 1등급</text>
+    </g>
+
+    <!-- ST-06 -->
+    <g transform="translate(1180, 70)">
+      <rect width="300" height="90" rx="12" fill="#FFE4E6" stroke="#E11D48" stroke-width="2" filter="url(#flowShadowMom)"/>
+      <text x="150" y="38" fill="#9F1239" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-06 1.3 출산 전후 사이즈 [모달]</text>
+      <text x="150" y="62" fill="#BE123C" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-1.3) 산후 체형 맞춤 추천</text>
+    </g>
+
+    <!-- Connectors -->
+    <path d="M 360 115 L 420 115 M 740 115 L 800 115 M 740 115 L 740 220 L 1180 220 M 1120 115 L 1180 115" stroke="#EA580C" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Lane 2: Verification & Review (Y: 690 ~ 1150) -->
+  <g transform="translate(80, 690)">
+    <rect width="1520" height="440" rx="16" fill="#FFFFFF" stroke="#EA580C" stroke-width="2" filter="url(#flowShadowMom)"/>
+    <rect width="1520" height="40" rx="16" fill="#EA580C"/>
+    <text x="30" y="26" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800">2. 맘카페 검증 및 출산 선물 영역 (Review &amp; Baby Gift)</text>
+
+    <!-- ST-04 -->
+    <g transform="translate(40, 70)">
+      <rect width="320" height="90" rx="12" fill="#F97316" filter="url(#flowShadowMom)"/>
+      <text x="160" y="38" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-04 3.0 맘카페 100인 후기</text>
+      <text x="160" y="62" fill="#FFF1F2" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-3.0) 평점 4.97점 갤러리</text>
+    </g>
+
+    <!-- ST-10 -->
+    <g transform="translate(420, 70)">
+      <rect width="320" height="90" rx="12" fill="#E11D48" filter="url(#flowShadowMom)"/>
+      <text x="160" y="38" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-10 3.3 출산 선물 후기</text>
+      <text x="160" y="62" fill="#FFE4E6" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-3.3) 백일/출산 선물 만족도 99%</text>
+    </g>
+
+    <!-- ST-05 -->
+    <g transform="translate(800, 70)">
+      <rect width="320" height="90" rx="12" fill="#F97316" filter="url(#flowShadowMom)"/>
+      <text x="160" y="38" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-05 5.0 육퇴 10초 힐링팁</text>
+      <text x="160" y="62" fill="#FFF1F2" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-5.0) 침대 골반 리셋 영상</text>
+    </g>
+
+    <!-- ST-09 -->
+    <g transform="translate(1180, 70)">
+      <rect width="300" height="90" rx="12" fill="#F97316" filter="url(#flowShadowMom)"/>
+      <text x="150" y="38" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-09 4.0 맘스 30일 체험 안내</text>
+      <text x="150" y="62" fill="#FFF1F2" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-4.0) 100% 무료 반품 보증</text>
+    </g>
+  </g>
+
+  <!-- Lane 3: Conversion & Order Completion (Y: 1170 ~ 1630) -->
+  <g transform="translate(80, 1170)">
+    <rect width="1520" height="440" rx="16" fill="#FFFFFF" stroke="#EA580C" stroke-width="2" filter="url(#flowShadowMom)"/>
+    <rect width="1520" height="40" rx="16" fill="#EA580C"/>
+    <text x="30" y="26" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800">3. 카카오 1-Click 신청 및 주문 완료 영역 (Conversion &amp; Completion)</text>
+
+    <!-- ST-07 -->
+    <g transform="translate(420, 70)">
+      <rect width="400" height="110" rx="14" fill="#FFE4E6" stroke="#E11D48" stroke-width="3" filter="url(#flowShadowMom)"/>
+      <text x="200" y="45" fill="#9F1239" font-family="'Pretendard', sans-serif" font-size="18" font-weight="900" text-anchor="middle">ST-07 4.2 카카오 1-Click 신청 [모달]</text>
+      <text x="200" y="75" fill="#BE123C" font-family="'Pretendard', sans-serif" font-size="13" text-anchor="middle">카카오 로그인 연동 + 배송지 10초 간편 접수</text>
+    </g>
+
+    <!-- ST-08 -->
+    <g transform="translate(900, 70)">
+      <rect width="380" height="110" rx="14" fill="#C2410C" filter="url(#flowShadowMom)"/>
+      <text x="190" y="45" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="18" font-weight="900" text-anchor="middle">ST-08 4.3 주문 완료 및 배송 안내</text>
+      <text x="190" y="75" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="13" text-anchor="middle">(P-4.3) 접수 완료 &amp; 댁으로 즉시 발송</text>
+    </g>
+
+    <!-- Connectors -->
+    <path d="M 820 125 L 900 125" stroke="#E11D48" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Lane 4: Member Service & System Exceptions (Y: 1650 ~ 2110) -->
+  <g transform="translate(80, 1650)">
+    <rect width="1520" height="440" rx="16" fill="#FFFFFF" stroke="#EA580C" stroke-width="2" filter="url(#flowShadowMom)"/>
+    <rect width="1520" height="40" rx="16" fill="#EA580C"/>
+    <text x="30" y="26" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800">4. 회원 서비스 및 시스템 예외 처리 영역 (Member &amp; Exceptions)</text>
+
+    <!-- ST-11 -->
+    <g transform="translate(40, 70)">
+      <rect width="320" height="90" rx="12" fill="#EA580C" filter="url(#flowShadowMom)"/>
+      <text x="160" y="38" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-11 6.1 카카오 간편 로그인</text>
+      <text x="160" y="62" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-6.1) 카카오 OAuth 연동 세션</text>
+    </g>
+
+    <!-- ST-12 -->
+    <g transform="translate(420, 70)">
+      <rect width="320" height="90" rx="12" fill="#EA580C" filter="url(#flowShadowMom)"/>
+      <text x="160" y="38" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-12 6.2 마이페이지</text>
+      <text x="160" y="62" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-6.2) 배송 조회 &amp; 무료 반품 신청</text>
+    </g>
+
+    <!-- ST-13 -->
+    <g transform="translate(800, 70)">
+      <rect width="320" height="90" rx="12" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" filter="url(#flowShadowMom)"/>
+      <text x="160" y="38" fill="#991B1B" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-13 9.1 404 Not Found</text>
+      <text x="160" y="62" fill="#B91C1C" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-9.1) 따뜻한 감성 에러 안내</text>
+    </g>
+
+    <!-- ST-14 -->
+    <g transform="translate(1180, 70)">
+      <rect width="300" height="90" rx="12" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" filter="url(#flowShadowMom)"/>
+      <text x="150" y="38" fill="#991B1B" font-family="'Pretendard', sans-serif" font-size="15" font-weight="800" text-anchor="middle">ST-14 9.2 시스템 점검 안내</text>
+      <text x="150" y="62" fill="#B91C1C" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">(P-9.2) 카톡 1:1 상담 정상 운영</text>
+    </g>
+  </g>
+</svg>

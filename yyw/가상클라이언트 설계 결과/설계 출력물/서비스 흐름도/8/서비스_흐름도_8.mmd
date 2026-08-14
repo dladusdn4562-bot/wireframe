@@ -1,0 +1,40 @@
+graph TD
+    classDef step fill:#0F172A,stroke:#F59E0B,stroke-width:2px,color:#FDE68A,font-weight:bold;
+    classDef action fill:#D97706,stroke:#B45309,stroke-width:1.5px,color:#FFFFFF;
+    classDef driver fill:#0284C7,stroke:#0369A1,stroke-width:1.5px,color:#FFFFFF;
+    classDef decision fill:#F59E0B,stroke:#D97706,stroke-width:1.5px,color:#0F172A;
+    classDef finish fill:#10B981,stroke:#059669,stroke-width:2px,color:#FFFFFF;
+    classDef exception fill:#EF4444,stroke:#B91C1C,stroke-width:1.5px,color:#FFFFFF;
+
+    START([시작: 큰 글씨 웹사이트 접속]):::step --> ST01["ST-01: 메인 탐색 & 10시간 운전 요통 공감"]:::action
+    ST01 --> DEC01{"어떤 정보를 먼저 확인할 것인가?"}:::decision
+
+    DEC01 -- "12V 자동 팽창 테크" --> ST02["ST-02: 12V 시거잭 3초 팽창 & 쿨링 시트"]:::action
+    ST02 --> ST06["ST-06: 차종별(세단/SUV/트럭) 호환 매칭"]:::action
+    ST06 --> ST07["ST-07: 080 전화 / 카톡 간편 신청 모달"]:::driver
+
+    DEC01 -- "도로 진동 55% 흡수" --> ST03["ST-03: 요추 L4-L5 0mm 밀착 & 성적서"]:::action
+    ST03 --> ST07
+
+    DEC01 -- "기사님 찐후기" --> ST04["ST-04: 택시 10년 차 실착 후기 & 평점"]:::driver
+    ST04 --> ST10["ST-10: 운송조합 단체 장착 혜택 확인"]:::driver
+    ST10 --> ST07
+
+    DEC01 -- "안전운전 힐링 팁" --> ST05["ST-05: 신호 대기 10초 척추 릴렉스 팁"]:::action
+    ST05 --> ST09["ST-09: 30일 차량 장착 혜택 안내"]:::action
+    ST09 --> ST07
+
+    ST07 --> DEC02{"신청 방식 선택 및 검증"}:::decision
+    DEC02 -- "080 무료 전화 터치" --> CALL["📞 080-800-1234 상담원 통화 연결"]:::driver
+    CALL --> ST08["ST-08: 30일 차량 무료 체험 주문 확정"]:::finish
+
+    DEC02 -- "입력 오류" --> ST07E["ST-07E: 큰 글씨 안내 및 080 전화 유도"]:::exception
+    ST07E --> ST07
+
+    DEC02 -- "웹 폼 정상 제출" --> ST08
+    ST08 --> ST11["ST-11: 전화번호 간편 조회 [가정]"]:::finish
+    ST11 --> ST12["ST-12: 마이페이지 배송 현황 & 무료 반품"]:::finish
+    ST12 --> END([종료: 내 차에서 30일간 도로 주행 실착 후 결정]):::step
+
+    EX1["ST-13: 404 Not Found [가정]"]:::exception -.-> ST01
+    EX2["ST-14: 시스템 점검 안내 [가정]"]:::exception -.-> ST01

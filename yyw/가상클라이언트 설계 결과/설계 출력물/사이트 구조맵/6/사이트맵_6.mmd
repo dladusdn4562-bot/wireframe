@@ -1,0 +1,37 @@
+graph TD
+    classDef main fill:#EA580C,stroke:#C2410C,stroke-width:2px,color:#FFFFFF;
+    classDef menu fill:#1E293B,stroke:#EA580C,stroke-width:1.5px,color:#FFFFFF;
+    classDef sub fill:#FFF7ED,stroke:#EA580C,stroke-width:1px,color:#9A3412;
+    classDef modal fill:#FFFBEB,stroke:#D97706,stroke-width:1.5px,stroke-dasharray: 4 4,color:#B45309;
+    classDef assumed fill:#F1F5F9,stroke:#64748B,stroke-width:1px,stroke-dasharray: 4 4,color:#475569;
+
+    P00["0.0 메인 랜딩 (P-0.0)"]:::main
+
+    P00 --> P10["1.0 홈케어 조끼"]:::menu
+    P00 --> P20["2.0 허리 안심 테크"]:::menu
+    P00 --> P30["3.0 동년배 100인 후기"]:::menu
+    P00 --> P40["4.0 30일 무료 체험"]:::menu
+    P00 --> P50["5.0 살림 케어 가이드"]:::menu
+
+    P10 --> P11["1.1 1-Touch 착용 영상"]:::sub
+    P10 --> P12["1.2 세탁기 통세척 관리"]:::sub
+    P10 --> P13["1.3 상의 사이즈 (모달)"]:::modal
+
+    P20 --> P21["2.1 허리 하중 40% 분산"]:::sub
+    P20 --> P22["2.2 바이오 힌지 기술"]:::sub
+    P20 --> P23["2.3 오십견 무간섭 패턴"]:::sub
+
+    P30 --> P31["3.1 50대 주부 실착 후기"]:::sub
+    P30 --> P32["3.2 맘카페 포토 갤러리"]:::sub
+    P30 --> P33["3.3 자녀 효도 선물"]:::sub
+
+    P40 --> P41["4.1 30일 무료 혜택"]:::sub
+    P40 --> P42["4.2 080전화/카톡 신청 (모달)"]:::modal
+    P40 --> P43["4.3 주문 완료 안내 [가정]"]:::sub
+
+    P50 --> P51["5.1 허리 안 아픈 자세"]:::sub
+    P50 --> P52["5.2 10초 의자 스트레칭"]:::sub
+    P50 --> P53["5.3 080 전화 FAQ"]:::sub
+
+    P00 -.-> P60["[가정] 6.0 회원 서비스"]:::assumed
+    P00 -.-> P90["[가정] 9.0 시스템 예외"]:::assumed

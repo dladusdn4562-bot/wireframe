@@ -1,0 +1,37 @@
+graph TD
+    classDef main fill:#F59E0B,stroke:#D97706,stroke-width:2px,color:#0F172A;
+    classDef menu fill:#0F172A,stroke:#F59E0B,stroke-width:1.5px,color:#FFFFFF;
+    classDef sub fill:#1E293B,stroke:#F59E0B,stroke-width:1px,color:#FDE68A;
+    classDef modal fill:#1F2937,stroke:#0284C7,stroke-width:1.5px,stroke-dasharray: 4 4,color:#BAE6FD;
+    classDef assumed fill:#1E293B,stroke:#64748B,stroke-width:1px,stroke-dasharray: 4 4,color:#94A3B8;
+
+    P00["0.0 큰 글씨 메인 (P-0.0)"]:::main
+
+    P00 --> P10["1.0 드라이브 서포터"]:::menu
+    P00 --> P20["2.0 진동 흡수 테크"]:::menu
+    P00 --> P30["3.0 기사님 찐후기"]:::menu
+    P00 --> P40["4.0 30일 차량 체험"]:::menu
+    P00 --> P50["5.0 안전운전 팁"]:::menu
+
+    P10 --> P11["1.1 12V 3초 자동 팽창"]:::sub
+    P10 --> P12["1.2 에어로 쿨링 시트"]:::sub
+    P10 --> P13["1.3 차종별 호환 (모달)"]:::modal
+
+    P20 --> P21["2.1 충격 55% 흡수"]:::sub
+    P20 --> P22["2.2 요추 L4-L5 밀착"]:::sub
+    P20 --> P23["2.3 피로도 48% 감소"]:::sub
+
+    P30 --> P31["3.1 택시 10년 차 후기"]:::sub
+    P30 --> P32["3.2 화물/택배 기사 인터뷰"]:::sub
+    P30 --> P33["3.3 운송조합 단체 장착"]:::sub
+
+    P40 --> P41["4.1 30일 차량 장착 혜택"]:::sub
+    P40 --> P42["4.2 080 전화 신청 (모달)"]:::modal
+    P40 --> P43["4.3 주문 완료 안내 [가정]"]:::sub
+
+    P50 --> P51["5.1 신호 대기 10초 릴렉스"]:::sub
+    P50 --> P52["5.2 졸음 예방 쿨링 모드"]:::sub
+    P50 --> P53["5.3 차량 전원 FAQ"]:::sub
+
+    P00 -.-> P60["[가정] 6.0 회원 서비스"]:::assumed
+    P00 -.-> P90["[가정] 9.0 시스템 예외"]:::assumed

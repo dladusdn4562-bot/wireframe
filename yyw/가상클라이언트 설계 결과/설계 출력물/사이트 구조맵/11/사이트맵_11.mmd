@@ -1,0 +1,39 @@
+graph TD
+    classDef root fill:#14532D,stroke:#1E293B,stroke-width:2px,color:#fff;
+    classDef depth1 fill:#15803D,stroke:#14532D,stroke-width:2px,color:#fff;
+    classDef depth2 fill:#FEFCE8,stroke:#15803D,stroke-width:1px,color:#1E293B;
+    classDef modal fill:#FEF3C7,stroke:#D97706,stroke-width:1px,color:#1E293B;
+    classDef journey fill:#F0FDF4,stroke:#22C55E,stroke-width:2px,stroke-dasharray: 5 5,color:#1E293B;
+
+    ROOT["0.0 큰 글씨 메인 랜딩 (P-0.0)"]:::root
+
+    ROOT --> N1["1.0 파크골프 서포터 (P-1.0)"]:::depth1
+    N1 --> N1_1["1.1 0.1mm 시크릿 벨트 (P-1.1)"]:::depth2
+    N1 --> N1_2["1.2 비틀림 방지 & 비거리 15m (P-1.2)"]:::depth2
+    N1 --> N1_3["1.3 허리둘레 가이드 [모달] (P-1.3)"]:::modal
+
+    ROOT --> N2["2.0 척추-무릎 보호 테크 (P-2.0)"]:::depth1
+    N2 --> N2_1["2.1 무릎 충격 45% 흡수 (P-2.1)"]:::depth2
+    N2 --> N2_2["2.2 카본 힌지 관절 지지 (P-2.2)"]:::depth2
+    N2 --> N2_3["2.3 정형외과 전문의 추천서 (P-2.3)"]:::depth2
+
+    ROOT --> N3["3.0 동호회 100인 후기 (P-3.0)"]:::depth1
+    N3 --> N3_1["3.1 필드 실착 포토 리뷰 (P-3.1)"]:::depth2
+    N3 --> N3_2["3.2 비거리 증가 인터뷰 (P-3.2)"]:::depth2
+    N3 --> N3_3["3.3 동호회 단체 20% 제휴 (P-3.3)"]:::depth2
+
+    ROOT --> N4["4.0 30일 필드 무료체험 (P-4.0)"]:::depth1
+    N4 --> N4_1["4.1 필드 30일 무료 시타 (P-4.1)"]:::depth2
+    N4 --> N4_2["4.2 080 전화 / 카톡 주문 [모달] (P-4.2)"]:::modal
+    N4 --> N4_3["4.3 주문 완료 및 배송 안내 (P-4.3)"]:::depth2
+
+    ROOT --> N5["5.0 티박스 10초 스트레칭 (P-5.0)"]:::depth1
+    N5 --> N5_1["5.1 관절 리셋 영상 (P-5.1)"]:::depth2
+    N5 --> N5_2["5.2 허리 회전 가동성 팁 (P-5.2)"]:::depth2
+    N5 --> N5_3["5.3 080 전화 & 세탁 FAQ (P-5.3)"]:::depth2
+
+    subgraph JOURNEY["[핵심 사용자 3대 전환 여정]"]
+        J1["여정 1 (080 무료 전화): 메인 ➔ 파크골프 서포터 ➔ 무릎 충격 45% ➔ 080 전화 모달 ➔ 댁으로 수령"]:::journey
+        J2["여정 2 (사이즈 매칭): 동호회 후기 ➔ 허리둘레 매칭 ➔ 30일 무료 반품 주문"]:::journey
+        J3["여정 3 (동호회 단체): 티박스 스트레칭 ➔ 동호회 단체 20% ➔ 단체 시타 신청"]:::journey
+    end

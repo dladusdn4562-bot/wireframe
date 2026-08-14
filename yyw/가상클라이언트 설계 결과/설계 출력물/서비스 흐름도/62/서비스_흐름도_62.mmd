@@ -1,0 +1,42 @@
+graph TD
+    classDef step fill:#0F172A,stroke:#FDA4AF,stroke-width:1.5px,color:#FFFFFF;
+    classDef decision fill:#312E81,stroke:#818CF8,stroke-width:1.5px,color:#EEF2FF;
+    classDef modal fill:#FFFBEB,stroke:#D97706,stroke-width:1.5px,color:#92400E;
+    classDef success fill:#065F46,stroke:#10B981,stroke-width:2px,color:#FFFFFF;
+    classDef error fill:#450A0A,stroke:#F87171,stroke-width:1.5px,color:#FEE2E2;
+
+    ST01["ST-01 메인 랜딩 진입<br/>(SCR-01)"]:::step
+    ST02["ST-02 여성 체형 통계 확인"]:::step
+    ST03["ST-03 15개 상품 탭 탐색<br/>(4대 카테고리 필터링)"]:::step
+    Dec01{"상품 선택 방식?"}:::decision
+    ST04["ST-04 퀵뷰 모달 호출<br/>(SCR-01 유지)"]:::modal
+    ST05["ST-05 체형 사이즈 매칭<br/>(SCR-04)"]:::modal
+    ST06["ST-06 30일 시착 신청 모달<br/>(SCR-10)"]:::modal
+    ST07["ST-07 배송/예약서 작성"]:::modal
+    ST08["ST-08 30일 시착 접수 완료"]:::success
+    ST09["ST-09 재활 아카데미 검색<br/>(SCR-06)"]:::step
+    ST10["ST-10 4단계 예약 폼 작성<br/>(SCR-07)"]:::modal
+    ST11["ST-11 예약 확정 안내<br/>(SCR-08)"]:::success
+    ST12["ST-12 AI 바이오 케어 구독<br/>(SCR-05/11)"]:::step
+    ST13["ST-13 404 예외 처리<br/>(SCR-13)"]:::error
+    ST14["ST-14 정기 점검 예외<br/>(SCR-14)"]:::error
+
+    ST01 --> ST02
+    ST02 --> ST03
+    ST03 --> Dec01
+    Dec01 -- "퀵뷰 확인" --> ST04
+    ST04 --> ST05
+    ST05 --> ST06
+    Dec01 -- "즉시 시착" --> ST06
+    ST06 --> ST07
+    ST07 --> ST08
+
+    ST01 --> ST09
+    ST09 --> ST10
+    ST10 --> ST11
+
+    ST01 --> ST12
+    ST12 --> ST08
+
+    ST01 -.-> ST13
+    ST01 -.-> ST14

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM 쇼호스트 전용 서포터 와이어프레임 스튜디오 (가상클라이언트 33: 표은지)</title>
+  <style>
+    :root {
+      --primary: #C026D3;
+      --primary-dark: #A21CAF;
+      --accent: #E879F9;
+      --bg: #FAE8FF;
+      --surface: #FFFFFF;
+      --text: #1E293B;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif; }
+    body { background: var(--bg); color: var(--text); display: flex; height: 100vh; overflow: hidden; font-size: 16px; }
+    .sidebar { width: 340px; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; flex-shrink: 0; }
+    .sidebar-header { padding: 20px; border-bottom: 1px solid var(--border); background: var(--primary-dark); color: #fff; }
+    .sidebar-header h1 { font-size: 17px; font-weight: 800; color: #FFF; margin-bottom: 4px; }
+    .sidebar-header p { font-size: 12px; color: var(--bg); }
+    .screen-tree { flex: 1; overflow-y: auto; padding: 12px; }
+    .tree-group-title { font-size: 11px; font-weight: 700; color: var(--primary); text-transform: uppercase; margin: 12px 8px 6px; }
+    .tree-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-radius: 6px; font-size: 13px; cursor: pointer; transition: all 0.2s; margin-bottom: 2px; }
+    .tree-item:hover { background: var(--bg); color: var(--primary-dark); }
+    .tree-item.active { background: var(--primary); color: #fff; font-weight: 700; }
+    .badge { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 700; }
+    .badge-page { background: var(--bg); color: var(--primary-dark); }
+    .badge-modal { background: #FEF3C7; color: #92400E; }
+    .badge-except { background: #FEE2E2; color: #991B1B; }
+    .tree-item.active .badge { background: rgba(255,255,255,0.2); color: #fff; }
+
+    .main-canvas { flex: 1; display: flex; flex-direction: column; overflow: hidden; background: #FAFAFA; }
+    .canvas-toolbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+    .screen-title { font-size: 15px; font-weight: 700; color: var(--primary-dark); }
+    .viewport-controls { display: flex; gap: 8px; }
+    .vp-btn { padding: 6px 12px; border: 1px solid var(--border); background: var(--surface); border-radius: 6px; font-size: 12px; cursor: pointer; }
+    .vp-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); font-weight: 700; }
+    
+    .viewport-wrapper { flex: 1; overflow-y: auto; padding: 30px; display: flex; justify-content: center; align-items: flex-start; }
+    .device-frame { background: var(--surface); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden; width: 100%; max-width: 1200px; border: 1px solid var(--border); min-height: 800px; }
+    .device-frame.tablet { max-width: 768px; }
+    .device-frame.mobile { max-width: 390px; }
+
+    .wf-gnb { height: 72px; background: var(--surface); display: flex; align-items: center; justify-content: space-between; padding: 0 28px; border-bottom: 2px solid var(--primary); }
+    .wf-logo { font-size: 20px; font-weight: 900; color: var(--primary-dark); }
+    .wf-nav { display: flex; gap: 24px; font-size: 15px; font-weight: 700; }
+    .wf-nav span { cursor: pointer; color: var(--text-muted); }
+    .wf-nav span:hover { color: var(--primary); }
+    .wf-btn-cta { background: var(--primary); color: #fff; padding: 10px 18px; border-radius: 8px; font-size: 14px; font-weight: 800; border: none; cursor: pointer; }
+    
+    .wf-content { padding: 40px 32px; }
+    .wf-hero { background: linear-gradient(135deg, var(--bg) 0%, #FFFFFF 100%); padding: 52px 36px; border-radius: 14px; text-align: center; border: 2px solid var(--border); margin-bottom: 32px; }
+    .wf-hero h2 { font-size: 32px; font-weight: 900; color: var(--primary-dark); margin-bottom: 16px; }
+    .wf-hero p { font-size: 18px; color: var(--primary); margin-bottom: 28px; font-weight: 600; }
+    .wf-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 32px; }
+    .wf-card { background: var(--surface); border: 2px solid var(--border); border-radius: 12px; padding: 28px; }
+    .wf-card h3 { font-size: 18px; font-weight: 800; color: var(--primary-dark); margin-bottom: 12px; }
+    .wf-card p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+    
+    .modal-preview { background: var(--surface); border: 3px solid var(--primary); border-radius: 16px; padding: 36px; max-width: 540px; margin: 0 auto; text-align: center; }
+    .form-group { margin-bottom: 18px; text-align: left; }
+    .form-group label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+    .form-input { width: 100%; padding: 14px 16px; border: 2px solid var(--border); border-radius: 8px; font-size: 16px; }
+    .wf-footer { background: #1E293B; color: #CBD5E1; padding: 40px 32px; font-size: 14px; text-align: center; line-height: 1.8; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h1>SEUMIM 쇼호스트</h1>
+      <p>가상클라이언트 33: 표은지 (14개 화면)</p>
+    </div>
+    <div class="screen-tree">
+      <div class="tree-group-title">1. 메인 및 서포터</div>
+      <div class="tree-item active" onclick="switchScreen('SCR-01')"><span>SCR-01 0.0 메인 랜딩</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-02')"><span>SCR-02 1.0 쇼호스트 서포터</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-03')"><span>SCR-03 1.3 사이즈 가이드</span><span class="badge badge-modal">MODAL</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-04')"><span>SCR-04 2.0 보호 테크</span><span class="badge badge-page">PAGE</span></div>
+
+      <div class="tree-group-title">2. 후기 & 30일 체험</div>
+      <div class="tree-item" onclick="switchScreen('SCR-05')"><span>SCR-05 3.0 100인 후기</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-06')"><span>SCR-06 3.3 단체 제휴</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-07')"><span>SCR-07 4.0 30일 무료체험</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-08')"><span>SCR-08 4.2 1-Click 신청</span><span class="badge badge-modal">MODAL</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-09')"><span>SCR-09 4.3 주문 완료 안내</span><span class="badge badge-page">PAGE</span></div>
+
+      <div class="tree-group-title">3. 스트레칭 & 시스템</div>
+      <div class="tree-item" onclick="switchScreen('SCR-10')"><span>SCR-10 5.0 10초 스트레칭</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-11')"><span>SCR-11 6.1 간편 로그인</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-12')"><span>SCR-12 6.2 마이페이지</span><span class="badge badge-page">PAGE</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-13')"><span>SCR-13 9.1 404 Not Found</span><span class="badge badge-except">EXCEPT</span></div>
+      <div class="tree-item" onclick="switchScreen('SCR-14')"><span>SCR-14 9.2 시스템 점검</span><span class="badge badge-except">EXCEPT</span></div>
+    </div>
+  </div>
+
+  <div class="main-canvas">
+    <div class="canvas-toolbar">
+      <div class="screen-title" id="screenTitle">SCR-01 0.0 메인 랜딩 (P-0.0)</div>
+      <div class="viewport-controls">
+        <button class="vp-btn active" onclick="setViewport('desktop')">Desktop</button>
+        <button class="vp-btn" onclick="setViewport('tablet')">Tablet</button>
+        <button class="vp-btn" onclick="setViewport('mobile')">Mobile</button>
+      </div>
+    </div>
+
+    <div class="viewport-wrapper">
+      <div class="device-frame" id="deviceFrame">
+        <div class="wf-gnb">
+          <div class="wf-logo">SEUMIM 쇼호스트</div>
+          <div class="wf-nav">
+            <span onclick="switchScreen('SCR-02')">쇼호스트 서포터</span>
+            <span onclick="switchScreen('SCR-04')">보호 테크</span>
+            <span onclick="switchScreen('SCR-05')">100인 후기</span>
+            <span onclick="switchScreen('SCR-07')">30일 무료체험</span>
+            <span onclick="switchScreen('SCR-10')">10초 스트레칭</span>
+          </div>
+          <button class="wf-btn-cta" onclick="switchScreen('SCR-08')">30일 무료체험 신청</button>
+        </div>
+
+        <div class="wf-content" id="screenContent">
+          <div class="wf-hero">
+            <h2>일할 때 무너지던 허리와 관절, 0.1mm 밀착으로 하루 종일 가뿐하게!</h2>
+            <p>원피스 속 0.1mm 시크릿 하이힐 골반-요추 보정 밴드 &amp; 하이힐 착용 시 골반 중립각 복원 & 카메라 조명 아래 무봉제 핏</p>
+            <div style="display: flex; justify-content: center; gap: 16px;">
+              <button class="wf-btn-cta" style="font-size: 16px; padding: 14px 28px;" onclick="switchScreen('SCR-08')">30일 무료체험 신청 (10초 완료)</button>
+            </div>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>🚨 직업병 실태 통계</h3>
+              <p>쇼호스트 90.4%가 생방송 후 하이힐 요통 및 발목 부종 호소</p>
+            </div>
+            <div class="wf-card">
+              <h3>⚡ 0.1mm 심리스 핏</h3>
+              <p>유니폼이나 작업복 속에 착용해도 티 나지 않는 0.1mm 무봉제 에어로 스판 원단.</p>
+            </div>
+            <div class="wf-card">
+              <h3>🛡️ 3D 하중 분산 테크</h3>
+              <p>하이힐 착용 시 골반 중립각 복원 & 카메라 조명 아래 무봉제 핏. 한국의류시험연구원(KATRI) 성능 인증 완료.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wf-footer">
+          (주)스밈 웰니스 테크 사업부 | 표은지님을 위한 30일 무료체험 보증제<br>
+          KATRI 성능 시험 완료 | 100% 무료 반품 보증 (왕복 배송비 0원)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const screens = {
+      'SCR-01': {
+        title: 'SCR-01 0.0 메인 랜딩 (P-0.0)',
+        html: `
+          <div class="wf-hero">
+            <h2>일할 때 무너지던 허리와 관절, 0.1mm 밀착으로 하루 종일 가뿐하게!</h2>
+            <p>원피스 속 0.1mm 시크릿 하이힐 골반-요추 보정 밴드 &amp; 하이힐 착용 시 골반 중립각 복원 & 카메라 조명 아래 무봉제 핏</p>
+            <div style="display: flex; justify-content: center; gap: 16px;">
+              <button class="wf-btn-cta" style="font-size: 16px; padding: 14px 28px;" onclick="switchScreen('SCR-08')">30일 무료체험 신청 (10초 완료)</button>
+            </div>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <h3>🚨 직업병 실태 통계</h3>
+              <p>쇼호스트 90.4%가 생방송 후 하이힐 요통 및 발목 부종 호소</p>
+            </div>
+            <div class="wf-card">
+              <h3>⚡ 0.1mm 심리스 핏</h3>
+              <p>유니폼이나 작업복 속에 착용해도 티 나지 않는 0.1mm 무봉제 에어로 스판 원단.</p>
+            </div>
+            <div class="wf-card">
+              <h3>🛡️ 3D 하중 분산 테크</h3>
+              <p>하이힐 착용 시 골반 중립각 복원 & 카메라 조명 아래 무봉제 핏. 한국의류시험연구원(KATRI) 성능 인증 완료.</p>
+            </div>
+          </div>
+        `
+      },
+      'SCR-05': {
+        title: 'SCR-05 3.0 100인 후기 (P-3.0)',
+        html: `
+          <div class="wf-hero" style="background: #FAE8FF; border-color: #E879F9;">
+            <h2 style="color: #A21CAF;">전국 라이브 커머스 쇼호스트 & 패션 인플루언서 종사자들의 리얼 실착 후기</h2>
+            <p style="color: #C026D3;">평점 4.96점! "하루 종일 일해도 허리와 관절이 뻐근하지 않습니다"</p>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-card"><h3>현장 종사자 실착 후기 1</h3><p>"유니폼 속에 입어도 전혀 티가 안 나고 통풍이 잘돼서 너무 쾌적합니다."</p></div>
+            <div class="wf-card"><h3>현장 종사자 실착 후기 2</h3><p>"집중해서 일할 때 무너지던 자세를 완벽하게 잡아주어 피로도가 절반으로 줄었습니다."</p></div>
+            <div class="wf-card"><h3>현장 종사자 실착 후기 3</h3><p>"30일간 무료로 써보고 결정할 수 있어서 안심하고 주문했습니다."</p></div>
+          </div>
+        `
+      },
+      'SCR-08': {
+        title: 'SCR-08 4.2 1-Click 신청 [모달] (P-4.2)',
+        html: `
+          <div class="modal-preview">
+            <h2 style="font-size: 22px; font-weight: 900; color: #A21CAF; margin-bottom: 12px;">현장에서 30일간 직접 체험해 보세요!</h2>
+            <p style="font-size: 15px; color: var(--text-muted); margin-bottom: 20px;">10초 간편 신청으로 무료 체험 키트가 발송됩니다.</p>
+            <div class="form-group"><label>성함 & 연락처</label><input type="text" class="form-input" placeholder="표은지 / 010-1234-5678"></div>
+            <div class="form-group"><label>배송받으실 주소</label><input type="text" class="form-input" placeholder="상세 주소를 입력하세요"></div>
+            <div class="form-group"><label>사이즈 선택</label><select class="form-input"><option>M (표준 체형) - 권장</option><option>S (슬림형)</option><option>L (체격형)</option></select></div>
+            <button class="wf-btn-cta" style="width: 100%; padding: 16px; font-size: 16px; justify-content: center; margin-top: 12px;" onclick="switchScreen('SCR-09')">30일 무료 체험 신청하기 (배송비 0원)</button>
+          </div>
+        `
+      },
+      'SCR-09': {
+        title: 'SCR-09 4.3 주문 완료 안내 [가정] (P-4.3)',
+        html: `
+          <div class="wf-hero" style="background: #F0FDF4; border-color: #86EFAC;">
+            <h2 style="color: #166534;">🎉 30일 무료 체험 접수가 완료되었습니다!</h2>
+            <p style="color: #15803D;">주문 번호: <strong>SEUMIM-2026-3301</strong> | 고객님 댁/직장으로 즉시 발송됩니다.</p>
+          </div>
+        `
+      }
+    };
+
+    function switchScreen(id) {
+      document.querySelectorAll('.tree-item').forEach(el => el.classList.remove('active'));
+      event?.currentTarget?.classList.add('active');
+      const data = screens[id] || {
+        title: `${id} 화면 인터랙티브 뷰`,
+        html: `<div class="wf-hero"><h2>${id} 와이어프레임 뷰</h2><p>해당 화면의 맞춤형 UI 컴포넌트가 렌더링됩니다.</p></div>`
+      };
+      document.getElementById('screenTitle').innerText = data.title;
+      document.getElementById('screenContent').innerHTML = data.html;
+    }
+
+    function setViewport(type) {
+      document.querySelectorAll('.vp-btn').forEach(el => el.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+      document.getElementById('deviceFrame').className = 'device-frame ' + (type === 'desktop' ? '' : type);
+    }
+  </script>
+</body>
+</html>

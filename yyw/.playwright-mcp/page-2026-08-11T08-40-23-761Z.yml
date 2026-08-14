@@ -1,0 +1,115 @@
+- generic [ref=f181e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f181e15]:
+      - generic [ref=f181e18]:
+        - generic:
+          - img "검색 아이콘"
+        - combobox "검색" [ref=f181e20]
+        - generic "이미지 업로드" [ref=f181e23]:
+          - button "Pinterest 렌즈" [ref=f181e24] [cursor=pointer]
+      - link "내 프로필" [ref=f181e33] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f181e40]:
+          - generic [ref=f181e41]: 임
+      - button "계정" [ref=f181e45] [cursor=pointer]
+  - navigation [ref=f181e50]:
+    - generic [ref=f181e52]:
+      - generic [ref=f181e53]:
+        - generic "홈" [ref=f181e57]:
+          - link "홈" [ref=f181e58] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f181e65]:
+          - link "홈" [ref=f181e66] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f181e73]:
+          - link "내 보드" [ref=f181e74] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f181e81]:
+          - button "만들기" [ref=f181e82] [cursor=pointer]
+        - generic "업데이트" [ref=f181e91]:
+          - button "업데이트" [ref=f181e92] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f181e105]:
+        - button "설정 및 지원" [ref=f181e106] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=f181e111]:
+    - generic [ref=f181e120]:
+      - button "뒤로" [ref=f181e122] [cursor=pointer]
+      - generic [ref=f181e131]:
+        - generic [ref=f181e132]: 관련 상품 결과를 불러오는 중
+        - list [ref=f181e137]:
+          - listitem [ref=f181e138]:
+            - group "Closeup content container" [ref=f181e145]:
+              - generic [ref=f181e150]:
+                - region "핀 이미지 및 탐색할 항목" [ref=f181e153]:
+                  - generic [ref=f181e163]:
+                    - button "더 크게 보기" [ref=f181e165] [cursor=pointer]:
+                      - generic [ref=f181e167]:
+                        - generic: 더 크게 보기
+                        - img "더 크게 보기" [ref=f181e169]
+                    - button "이미지 검색" [ref=f181e174] [cursor=pointer]:
+                      - generic [ref=f181e176]:
+                        - generic: 이미지 검색
+                        - img "이미지 검색" [ref=f181e178]
+                    - link "사이트 방문" [ref=f181e183] [cursor=pointer]:
+                      - /url: https://payhip.com/WhiteCurveShape/blog/news/top-66-clipart-2d-3d-shapes-free-for-creativity?elegant-balance-logo-with-pebble-icon-and-harmony-symbol-in-organic-sh&utm_source=Pinterest&utm_medium=organic
+                - generic [ref=f181e188]:
+                  - generic [ref=f181e191]:
+                    - list [ref=f181e192]:
+                      - generic [ref=f181e193]:
+                        - listitem [ref=f181e195]:
+                          - generic "반응" [ref=f181e198]:
+                            - button "반응" [ref=f181e199] [cursor=pointer]
+                          - generic [ref=f181e204]: "21"
+                        - listitem [ref=f181e206]:
+                          - generic "댓글" [ref=f181e209]:
+                            - button "댓글" [ref=f181e210] [cursor=pointer]
+                        - listitem [ref=f181e216]:
+                          - generic "공유" [ref=f181e220]:
+                            - button "이 핀 공유" [ref=f181e223] [cursor=pointer]
+                        - listitem [ref=f181e229]:
+                          - generic "추가 작업" [ref=f181e234]:
+                            - button "추가 작업" [ref=f181e237] [cursor=pointer]
+                    - generic [ref=f181e247]:
+                      - 'button "저장할 보드 선택: ..." [ref=f181e250] [cursor=pointer]':
+                        - generic "..." [ref=f181e253]
+                      - button "저장" [ref=f181e259] [cursor=pointer]
+                  - generic [ref=f181e267]:
+                    - generic [ref=f181e276]:
+                      - link [ref=f181e278] [cursor=pointer]:
+                        - /url: /shapeWave2025/
+                        - img "ShapeWave Realm 아바타 링크" [ref=f181e285]
+                      - link [ref=f181e289] [cursor=pointer]:
+                        - /url: /shapeWave2025/
+                        - heading "ShapeWave Realm" [level=2] [ref=f181e290]
+                    - generic [ref=f181e293]:
+                      - generic [ref=f181e295]:
+                        - link [ref=f181e302] [cursor=pointer]:
+                          - /url: https://payhip.com/WhiteCurveShape/blog/news/top-66-clipart-2d-3d-shapes-free-for-creativity?elegant-balance-logo-with-pebble-icon-and-harmony-symbol-in-organic-sh&utm_source=Pinterest&utm_medium=organic
+                          - heading "Elegant Balance Logo with Pebble Icon and Harmony Symbol in Organic Shapes" [level=1] [ref=f181e303]
+                        - link "사이트 방문" [ref=f181e311] [cursor=pointer]:
+                          - /url: https://payhip.com/WhiteCurveShape/blog/news/top-66-clipart-2d-3d-shapes-free-for-creativity?elegant-balance-logo-with-pebble-icon-and-harmony-symbol-in-organic-sh&utm_source=Pinterest&utm_medium=organic
+                      - generic [ref=f181e315]:
+                        - heading "설명" [level=4] [ref=f181e316]
+                        - generic [ref=f181e317]: Capture the essence of harmony and stability with this minimalist balance logo featuring stacked stones and a Buddhist-inspired icon. Perfect for tattoo ideas, branding, or mindfulness projects. Visit our site to explore and download a free selection of these organic shapes and symbols to enrich your creative collection! 🌿✨
+                        - button "더 보기" [ref=f181e322] [cursor=pointer]
+                  - generic [ref=f181e332]:
+                    - generic [ref=f181e334]:
+                      - button [ref=f181e336]
+                      - generic [ref=f181e340]:
+                        - generic: 댓글 추가
+                        - combobox "댓글 추가" [ref=f181e342]
+                    - generic [ref=f181e351]:
+                      - button "이모티콘 선택" [ref=f181e352] [cursor=pointer]
+                      - button "스티커 선택" [ref=f181e357] [cursor=pointer]
+                      - button "사진을 선택합니다." [ref=f181e363] [cursor=pointer]
+          - listitem [ref=f181e368]
+          - listitem [ref=f181e372]
+          - listitem [ref=f181e376]
+          - listitem [ref=f181e380]
+          - listitem [ref=f181e384]
+          - listitem [ref=f181e388]
+  - generic:
+    - contentinfo "꼬리말"

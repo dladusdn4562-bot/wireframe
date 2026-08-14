@@ -1,0 +1,37 @@
+graph TD
+    classDef main fill:#00F0FF,stroke:#0A0E17,stroke-width:2px,color:#0A0E17;
+    classDef menu fill:#0A0E17,stroke:#00F0FF,stroke-width:1.5px,color:#00F0FF;
+    classDef sub fill:#111827,stroke:#00F0FF,stroke-width:1px,color:#38BDF8;
+    classDef modal fill:#1F2937,stroke:#8B5CF6,stroke-width:1.5px,stroke-dasharray: 4 4,color:#C4B5FD;
+    classDef assumed fill:#111827,stroke:#64748B,stroke-width:1px,stroke-dasharray: 4 4,color:#94A3B8;
+
+    P00["0.0 네온 다크 메인 (P-0.0)"]:::main
+
+    P00 --> P10["1.0 프로 게이밍 기어"]:::menu
+    P00 --> P20["2.0 0.01s 햅틱 테크"]:::menu
+    P00 --> P30["3.0 디스코드 HUD"]:::menu
+    P00 --> P40["4.0 30일 무상 시착"]:::menu
+    P00 --> P50["5.0 에임 케어"]:::menu
+
+    P10 --> P11["1.1 95g 초경량 핏"]:::sub
+    P10 --> P12["1.2 헤드셋 무간섭 넥"]:::sub
+    P10 --> P13["1.3 상의 사이즈 (모달)"]:::modal
+
+    P20 --> P21["2.1 화면 가림 없는 햅틱"]:::sub
+    P20 --> P22["2.2 목 각도 45도 데이터"]:::sub
+    P20 --> P23["2.3 반응속도 23% 개선"]:::sub
+
+    P30 --> P31["3.1 디스코드 봇 연동"]:::sub
+    P30 --> P32["3.2 파티원 실시간 랭킹"]:::sub
+    P30 --> P33["3.3 스팀 오버레이 가이드"]:::sub
+
+    P40 --> P41["4.1 30일 무상 혜택"]:::sub
+    P40 --> P42["4.2 디스코드 신청 (모달)"]:::modal
+    P40 --> P43["4.3 주문 완료 안내 [가정]"]:::sub
+
+    P50 --> P51["5.1 10초 큐 대기 리셋"]:::sub
+    P50 --> P52["5.2 LCK 100인 후기"]:::sub
+    P50 --> P53["5.3 게이밍 FAQ"]:::sub
+
+    P00 -.-> P60["[가정] 6.0 회원 서비스"]:::assumed
+    P00 -.-> P90["[가정] 9.0 시스템 예외"]:::assumed

@@ -1,0 +1,102 @@
+- generic [ref=f333e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f333e15]:
+      - generic [ref=f333e18]:
+        - generic:
+          - img "검색 아이콘"
+        - combobox "검색" [ref=f333e20]
+        - generic "이미지 업로드" [ref=f333e23]:
+          - button "Pinterest 렌즈" [ref=f333e24] [cursor=pointer]
+      - link "내 프로필" [ref=f333e33] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f333e40]:
+          - generic [ref=f333e41]: 임
+      - button "계정" [ref=f333e45] [cursor=pointer]
+  - navigation [ref=f333e50]:
+    - generic [ref=f333e52]:
+      - generic [ref=f333e53]:
+        - generic "홈" [ref=f333e57]:
+          - link "홈" [ref=f333e58] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f333e65]:
+          - link "홈" [ref=f333e66] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f333e73]:
+          - link "내 보드" [ref=f333e74] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f333e81]:
+          - button "만들기" [ref=f333e82] [cursor=pointer]
+        - generic "업데이트" [ref=f333e91]:
+          - button "업데이트" [ref=f333e92] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f333e105]:
+        - button "설정 및 지원" [ref=f333e106] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=f333e111]:
+    - generic [ref=f333e120]:
+      - button "뒤로" [ref=f333e122] [cursor=pointer]
+      - generic [ref=f333e131]:
+        - generic [ref=f333e132]: 관련 상품 결과를 불러오는 중
+        - list [ref=f333e137]:
+          - listitem [ref=f333e138]:
+            - group "Closeup content container" [ref=f333e145]:
+              - generic [ref=f333e150]:
+                - generic [ref=f333e154]:
+                  - list [ref=f333e155]:
+                    - generic [ref=f333e156]:
+                      - listitem [ref=f333e158]:
+                        - generic "반응" [ref=f333e161]:
+                          - button "반응" [ref=f333e162] [cursor=pointer]
+                        - generic [ref=f333e167]: "0"
+                      - listitem [ref=f333e169]:
+                        - generic "댓글" [ref=f333e172]:
+                          - button "댓글" [ref=f333e173] [cursor=pointer]
+                      - listitem [ref=f333e179]:
+                        - generic "공유" [ref=f333e183]:
+                          - button "이 핀 공유" [ref=f333e186] [cursor=pointer]
+                      - listitem [ref=f333e192]:
+                        - generic "추가 작업" [ref=f333e197]:
+                          - button "추가 작업" [ref=f333e200] [cursor=pointer]
+                  - generic [ref=f333e210]:
+                    - 'button "저장할 보드 선택: ..." [ref=f333e213] [cursor=pointer]':
+                      - generic "..." [ref=f333e216]
+                    - button "저장" [ref=f333e222] [cursor=pointer]
+                - region "핀 이미지 및 탐색할 항목" [ref=f333e229]:
+                  - generic [ref=f333e233]:
+                    - generic [ref=f333e234]:
+                      - button "더 크게 보기" [ref=f333e236] [cursor=pointer]:
+                        - generic [ref=f333e238]:
+                          - generic: 더 크게 보기
+                          - img "더 크게 보기" [ref=f333e240]
+                      - button "이미지 검색" [ref=f333e245] [cursor=pointer]:
+                        - generic [ref=f333e247]:
+                          - generic: 이미지 검색
+                          - img "이미지 검색" [ref=f333e249]
+                    - button [disabled] [ref=f333e251]:
+                      - img "스토리 핀 이미지" [ref=f333e259]
+                - generic [ref=f333e260]:
+                  - generic [ref=f333e273]:
+                    - link [ref=f333e275] [cursor=pointer]:
+                      - /url: /estudiocaldeira/
+                      - img "Estudio Caldeira | Brand Designer 아바타 링크" [ref=f333e282]
+                    - link [ref=f333e286] [cursor=pointer]:
+                      - /url: /estudiocaldeira/
+                      - heading "Estudio Caldeira | Brand Designer" [level=2] [ref=f333e287]
+                  - generic [ref=f333e301]:
+                    - generic [ref=f333e303]:
+                      - button [ref=f333e305]
+                      - generic [ref=f333e309]:
+                        - generic: 의견을 공유하려면 댓글을 추가하세요.
+                        - combobox "의견을 공유하려면 댓글을 추가하세요." [ref=f333e311]
+                    - generic [ref=f333e320]:
+                      - button "이모티콘 선택" [ref=f333e321] [cursor=pointer]
+                      - button "스티커 선택" [ref=f333e326] [cursor=pointer]
+                      - button "사진을 선택합니다." [ref=f333e332] [cursor=pointer]
+          - listitem [ref=f333e337]
+          - listitem [ref=f333e341]
+          - listitem [ref=f333e345]
+          - listitem [ref=f333e349]
+  - generic:
+    - contentinfo "꼬리말"

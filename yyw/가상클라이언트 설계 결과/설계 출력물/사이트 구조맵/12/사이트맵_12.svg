@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgMomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1F2"/>
+      <stop offset="100%" stop-color="#FEF2F2"/>
+    </linearGradient>
+    <linearGradient id="rootMomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+    <linearGradient id="nodeMomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <filter id="shadowMom" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feOffset dx="0" dy="4" result="offset"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1350" fill="url(#bgMomGrad)"/>
+
+  <!-- Title Header -->
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="90" rx="16" fill="#EA580C" filter="url(#shadowMom)"/>
+    <text x="540" y="42" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="24" font-weight="900" text-anchor="middle">SEUMIM 맘스 듀얼 서포터 사이트 구조맵 (가상클라이언트 12: 임수현)</text>
+    <text x="540" y="70" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="14" font-weight="600" text-anchor="middle">0dB 무소음 마그네틱 버클 &amp; 아기띠 결합 허리 하중 52% 분산 IA</text>
+  </g>
+
+  <!-- Root Node -->
+  <g transform="translate(420, 180)">
+    <rect width="360" height="70" rx="12" fill="url(#rootMomGrad)" stroke="#FB7185" stroke-width="2" filter="url(#shadowMom)"/>
+    <text x="180" y="34" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="16" font-weight="800" text-anchor="middle">0.0 웜 피치 메인 랜딩 (P-0.0)</text>
+    <text x="180" y="54" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle">육아 요통 공감 &amp; 맘스 30일 무료체험</text>
+  </g>
+
+  <!-- Level 1 Nodes -->
+  <!-- 1.0 -->
+  <g transform="translate(60, 310)">
+    <rect width="200" height="60" rx="10" fill="url(#nodeMomGrad)" filter="url(#shadowMom)"/>
+    <text x="100" y="28" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">1.0 맘스 듀얼 서포터</text>
+    <text x="100" y="48" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="11" text-anchor="middle">(P-1.0) 하중 52% 분산</text>
+  </g>
+  <!-- 2.0 -->
+  <g transform="translate(280, 310)">
+    <rect width="200" height="60" rx="10" fill="url(#nodeMomGrad)" filter="url(#shadowMom)"/>
+    <text x="100" y="28" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">2.0 무소음 마그네틱</text>
+    <text x="100" y="48" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="11" text-anchor="middle">(P-2.0) 0dB 버클 &amp; 오코텍스</text>
+  </g>
+  <!-- 3.0 -->
+  <g transform="translate(500, 310)">
+    <rect width="200" height="60" rx="10" fill="url(#nodeMomGrad)" filter="url(#shadowMom)"/>
+    <text x="100" y="28" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">3.0 맘카페 100인 후기</text>
+    <text x="100" y="48" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="11" text-anchor="middle">(P-3.0) 평점 4.97점 갤러리</text>
+  </g>
+  <!-- 4.0 -->
+  <g transform="translate(720, 310)">
+    <rect width="200" height="60" rx="10" fill="url(#nodeMomGrad)" filter="url(#shadowMom)"/>
+    <text x="100" y="28" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">4.0 맘스 30일 무료체험</text>
+    <text x="100" y="48" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="11" text-anchor="middle">(P-4.0) 100% 무료 반품</text>
+  </g>
+  <!-- 5.0 -->
+  <g transform="translate(940, 310)">
+    <rect width="200" height="60" rx="10" fill="url(#nodeMomGrad)" filter="url(#shadowMom)"/>
+    <text x="100" y="28" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="14" font-weight="800" text-anchor="middle">5.0 육퇴 10초 힐링팁</text>
+    <text x="100" y="48" fill="#FFEDD5" font-family="'Pretendard', sans-serif" font-size="11" text-anchor="middle">(P-5.0) 침대 골반 리셋 영상</text>
+  </g>
+
+  <!-- Tree Connectors -->
+  <path d="M 600 250 L 600 280 M 160 280 L 1040 280 M 160 280 L 160 310 M 380 280 L 380 310 M 600 280 L 600 310 M 820 280 L 820 310 M 1040 280 L 1040 310" stroke="#EA580C" stroke-width="2" fill="none"/>
+
+  <!-- Level 2 Children -->
+  <!-- 1.0 Children -->
+  <g transform="translate(60, 400)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">1.1 심리스 홈웨어 (P-1.1)</text>
+  </g>
+  <g transform="translate(60, 450)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">1.2 하중 52% 분산 (P-1.2)</text>
+  </g>
+  <g transform="translate(60, 500)">
+    <rect width="200" height="40" rx="6" fill="#FFE4E6" stroke="#E11D48" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#9F1239" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" text-anchor="middle">1.3 출산 전후 사이즈 [모달]</text>
+  </g>
+
+  <!-- 2.0 Children -->
+  <g transform="translate(280, 400)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2.1 0dB 무소음 버클 (P-2.1)</text>
+  </g>
+  <g transform="translate(280, 450)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2.2 손목 건초염 보호 (P-2.2)</text>
+  </g>
+  <g transform="translate(280, 500)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">2.3 오코텍스 1등급 (P-2.3)</text>
+  </g>
+
+  <!-- 3.0 Children -->
+  <g transform="translate(500, 400)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3.1 워킹맘 실착 후기 (P-3.1)</text>
+  </g>
+  <g transform="translate(500, 450)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3.2 수유 통증 인터뷰 (P-3.2)</text>
+  </g>
+  <g transform="translate(500, 500)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">3.3 출산 선물 후기 (P-3.3)</text>
+  </g>
+
+  <!-- 4.0 Children -->
+  <g transform="translate(720, 400)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">4.1 30일 무료 실착 (P-4.1)</text>
+  </g>
+  <g transform="translate(720, 450)">
+    <rect width="200" height="40" rx="6" fill="#FFE4E6" stroke="#E11D48" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#9F1239" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" text-anchor="middle">4.2 카카오 신청 [모달]</text>
+  </g>
+  <g transform="translate(720, 500)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">4.3 주문 완료 안내 (P-4.3)</text>
+  </g>
+
+  <!-- 5.0 Children -->
+  <g transform="translate(940, 400)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">5.1 침대 골반 리셋 (P-5.1)</text>
+  </g>
+  <g transform="translate(940, 450)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">5.2 수유 바른 자세 (P-5.2)</text>
+  </g>
+  <g transform="translate(940, 500)">
+    <rect width="200" height="40" rx="6" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5"/>
+    <text x="100" y="25" fill="#1E293B" font-family="'Pretendard', sans-serif" font-size="12" font-weight="700" text-anchor="middle">5.3 세탁 &amp; 선물 FAQ (P-5.3)</text>
+  </g>
+
+  <!-- Conversion Journeys Sub-Diagram -->
+  <g transform="translate(60, 620)">
+    <rect width="1080" height="670" rx="16" fill="#FFFFFF" stroke="#EA580C" stroke-width="2" filter="url(#shadowMom)"/>
+    <rect width="1080" height="50" rx="16" fill="#EA580C"/>
+    <text x="540" y="32" fill="#FFFFFF" font-family="'Pretendard', sans-serif" font-size="18" font-weight="900" text-anchor="middle">📍 핵심 사용자 3대 전환 여정 (Key User Conversion Journeys)</text>
+
+    <!-- Journey 1 -->
+    <g transform="translate(40, 80)">
+      <rect width="1000" height="160" rx="12" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+      <text x="30" y="36" fill="#EA580C" font-family="'Pretendard', sans-serif" font-size="16" font-weight="800">[여정 1] 카카오 1-Click 30일 맘스 무료 체험단 여정 (메인 전환)</text>
+      <text x="30" y="66" fill="#C2410C" font-family="'Pretendard', sans-serif" font-size="13">타깃: 3040 육아맘/워킹맘 | 유입: 맘스홀릭 &amp; 베이비빌리 앱</text>
+      <g transform="translate(30, 90)">
+        <rect width="160" height="45" rx="8" fill="#EA580C"/><text x="80" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">0.0 메인 랜딩</text>
+        <text x="175" y="28" fill="#F97316" font-size="16">➔</text>
+        <rect x="195" width="160" height="45" rx="8" fill="#F97316"/><text x="275" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">1.0 맘스 서포터</text>
+        <text x="370" y="28" fill="#F97316" font-size="16">➔</text>
+        <rect x="390" width="160" height="45" rx="8" fill="#F97316"/><text x="470" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">2.0 0dB 무소음</text>
+        <text x="565" y="28" fill="#F97316" font-size="16">➔</text>
+        <rect x="585" width="180" height="45" rx="8" fill="#E11D48"/><text x="675" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">4.2 카카오 신청 모달</text>
+        <text x="780" y="28" fill="#F97316" font-size="16">➔</text>
+        <rect x="800" width="140" height="45" rx="8" fill="#9A3412"/><text x="870" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">4.3 댁으로 수령</text>
+      </g>
+    </g>
+
+    <!-- Journey 2 -->
+    <g transform="translate(40, 270)">
+      <rect width="1000" height="160" rx="12" fill="#FFF1F2" stroke="#FB7185" stroke-width="1.5"/>
+      <text x="30" y="36" fill="#9F1239" font-family="'Pretendard', sans-serif" font-size="16" font-weight="800">[여정 2] 출산 전후 체형 사이즈 매칭 및 30일 무료 반품 주문 여정 (모바일)</text>
+      <text x="30" y="66" fill="#BE123C" font-family="'Pretendard', sans-serif" font-size="13">타깃: 출산 후 체형 관리 여성 | 유입: 산후조리 허리보호대 검색</text>
+      <g transform="translate(30, 90)">
+        <rect width="180" height="45" rx="8" fill="#9F1239"/><text x="90" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">3.0 맘카페 후기</text>
+        <text x="195" y="28" fill="#FB7185" font-size="16">➔</text>
+        <rect x="215" width="180" height="45" rx="8" fill="#FB7185"/><text x="305" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">1.3 출산 전후 사이즈</text>
+        <text x="410" y="28" fill="#FB7185" font-size="16">➔</text>
+        <rect x="430" width="220" height="45" rx="8" fill="#F43F5E"/><text x="540" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">30일 100% 무료 반품 보증</text>
+        <text x="665" y="28" fill="#FB7185" font-size="16">➔</text>
+        <rect x="685" width="160" height="45" rx="8" fill="#EA580C"/><text x="765" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">무료 체험 신청 완료</text>
+      </g>
+    </g>
+
+    <!-- Journey 3 -->
+    <g transform="translate(40, 460)">
+      <rect width="1000" height="160" rx="12" fill="#FEF2F2" stroke="#F87171" stroke-width="1.5"/>
+      <text x="30" y="36" fill="#991B1B" font-family="'Pretendard', sans-serif" font-size="16" font-weight="800">[여정 3] 육퇴 10초 힐링팁 &amp; 출산 축하 선물 여정 (기프트)</text>
+      <text x="30" y="66" fill="#B91C1C" font-family="'Pretendard', sans-serif" font-size="13">타깃: 남편/친구/가족 | 유입: 출산 백일 선물 검색</text>
+      <g transform="translate(30, 90)">
+        <rect width="180" height="45" rx="8" fill="#991B1B"/><text x="90" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">5.0 육퇴 힐링팁</text>
+        <text x="195" y="28" fill="#F87171" font-size="16">➔</text>
+        <rect x="215" width="200" height="45" rx="8" fill="#EF4444"/><text x="315" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">3.3 출산 선물 후기</text>
+        <text x="430" y="28" fill="#F87171" font-size="16">➔</text>
+        <rect x="450" width="240" height="45" rx="8" fill="#DC2626"/><text x="570" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">프리미엄 선물 패키지 선택</text>
+        <text x="705" y="28" fill="#F87171" font-size="16">➔</text>
+        <rect x="725" width="160" height="45" rx="8" fill="#EA580C"/><text x="805" y="28" fill="#FFF" font-size="12" font-weight="700" text-anchor="middle">카카오 선물 발송</text>
+      </g>
+    </g>
+  </g>
+</svg>
