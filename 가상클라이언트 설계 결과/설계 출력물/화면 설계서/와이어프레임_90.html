@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEUMIM (스밈) - 0.1mm 에르고 테크 웰니스 체형 교정 플랫폼 (와이어프레임_병합)</title>
+  <title>SEUMIM (스밈) - 0.1mm 에르고 테크 웰니스 체형 교정 플랫폼 (와이어프레임_90)</title>
   <!-- Google Fonts: 한국어 Noto Serif KR & Pretendard CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <style>
-    /* ==========================================================================
-       [CSS Design Tokens & Theme]
-       ========================================================================== */
     :root {
       --bg-base: #fbf9f5;
       --bg-surface: #ffffff;
@@ -50,7 +47,6 @@
       --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* Reset & Base */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font-sans); }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
@@ -101,9 +97,7 @@
     .page-view.active { display: block; animation: fadeIn 0.35s ease; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 
-    /* ==========================================================================
-       [SEC-01: GNB & Header - 와이어프레임_90 표준 규격]
-       ========================================================================== */
+    /* Header */
     .header-gnb {
       background: rgba(251, 249, 245, 0.94);
       backdrop-filter: blur(12px);
@@ -140,7 +134,6 @@
 
     .gnb-actions { display: flex; gap: 10px; align-items: center; }
     
-    /* 장바구니 아이콘 예시.png 규격 반영 라인아트 아이콘 버튼 */
     .gnb-icon-btn {
       position: relative;
       width: 40px;
@@ -204,9 +197,7 @@
     }
     .btn-accent:hover { background: var(--color-terracotta-hover); }
 
-    /* ==========================================================================
-       [SEC-02: Hero & Manifesto - 와이어프레임_90 바로 보이는 화면]
-       ========================================================================== */
+    /* Hero */
     .hero-section {
       padding: 80px 0 60px;
       text-align: center;
@@ -245,7 +236,7 @@
     }
     .hero-cta-group { display: flex; justify-content: center; gap: 14px; margin-bottom: 40px; }
 
-    /* 4대 자부심 지표 바 */
+    /* Pride Metrics */
     .pride-metrics-bar {
       background: var(--bg-surface);
       border: 1px solid var(--color-border);
@@ -265,75 +256,7 @@
     .metric-label { font-size: 13px; font-weight: 800; color: var(--color-text-primary); margin-top: 4px; }
     .metric-sub { font-size: 11px; color: var(--color-text-muted); }
 
-    /* ==========================================================================
-       [브랜드 이야기 시각 이미지 시스템: 우리가 걸어온 길, 그리고 스밈이 존재하는 이유]
-       ========================================================================== */
-    .journey-section {
-      padding: 90px 0;
-      background: var(--bg-surface);
-      border-bottom: 1px solid var(--color-border);
-    }
-    .journey-chapter {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 48px;
-      align-items: center;
-      margin-bottom: 70px;
-    }
-    .journey-chapter.reverse {
-      grid-template-columns: 1.2fr 1fr;
-    }
-    .journey-chapter.reverse .journey-visual-card { order: 2; }
-    .journey-chapter.reverse .journey-text-box { order: 1; }
-
-    .journey-visual-card {
-      background: var(--bg-card);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--color-border);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-    }
-    .visual-image-frame {
-      height: 220px;
-      background: linear-gradient(135deg, #ded5c2 0%, #cfc4ac 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      padding: 20px;
-      text-align: center;
-    }
-    .visual-badge-overlay {
-      position: absolute; top: 12px; left: 12px;
-      background: rgba(36, 48, 40, 0.85); color: #fff;
-      font-size: 10.5px; font-weight: 700; padding: 3px 8px; border-radius: var(--radius-full);
-    }
-    .visual-caption-box {
-      background: #fff;
-      padding: 16px 20px;
-      border-top: 1px solid var(--color-border);
-    }
-    .visual-caption-title { font-size: 13.5px; font-weight: 800; color: var(--color-forest); margin-bottom: 4px; }
-    .visual-caption-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; }
-
-    .journey-tag { color: var(--color-terracotta); font-size: 12px; font-weight: 800; letter-spacing: 0.1em; margin-bottom: 8px; }
-    .journey-heading { font-family: var(--font-serif); font-size: 26px; font-weight: 800; color: var(--color-forest); margin-bottom: 14px; line-height: 1.4; letter-spacing: -0.02em; }
-    .journey-body { font-size: 15px; color: var(--color-text-secondary); line-height: 1.85; margin-bottom: 16px; }
-    .journey-highlight {
-      background: var(--bg-accent-light);
-      border-left: 3px solid var(--color-terracotta);
-      padding: 14px 18px;
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      font-size: 13.5px;
-      color: var(--color-forest);
-      font-weight: 700;
-      line-height: 1.65;
-    }
-
-    /* ==========================================================================
-       [Top 3 Featured Masterpieces] 지그재그 집중 조명
-       ========================================================================== */
+    /* Featured Top 3 */
     .section-title-wrap { text-align: center; margin-bottom: 50px; }
     .section-tag { font-size: 12px; font-weight: 800; color: var(--color-terracotta); letter-spacing: 0.1em; margin-bottom: 8px; }
     .section-title { font-family: var(--font-serif); font-size: 36px; font-weight: 800; color: var(--color-forest); margin-bottom: 12px; letter-spacing: -0.03em; }
@@ -387,7 +310,6 @@
       background: rgba(255,255,255,0.9); padding: 4px 10px; border-radius: var(--radius-full);
     }
 
-    /* 카드 우상단 찜 버튼 */
     .btn-card-wish {
       position: absolute;
       top: 16px;
@@ -441,9 +363,7 @@
 
     .featured-actions { display: flex; gap: 12px; }
 
-    /* ==========================================================================
-       [Social Proof]
-       ========================================================================== */
+    /* Social Proof */
     .proof-section {
       padding: 80px 0;
       background: var(--bg-card);
@@ -468,87 +388,7 @@
     .proof-title { font-size: 14px; font-weight: 800; color: var(--color-text-primary); margin-top: 4px; }
     .proof-desc { font-size: 12px; color: var(--color-text-secondary); margin-top: 2px; }
 
-    .reviews-slider {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-    .review-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .review-stars { color: #f59e0b; font-size: 14px; margin-bottom: 10px; }
-    .review-text { font-size: 13.5px; color: var(--color-text-primary); line-height: 1.65; margin-bottom: 16px; font-weight: 500; }
-    .review-author { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--color-text-muted); border-top: 1px solid var(--bg-card); padding-top: 12px; }
-    .review-badge { background: var(--bg-card); padding: 2px 8px; border-radius: var(--radius-full); font-weight: 700; color: var(--color-forest); }
-
-    /* ==========================================================================
-       [Explore Catalog Banner]
-       ========================================================================== */
-    .explore-catalog-banner {
-      background: linear-gradient(135deg, var(--color-forest) 0%, var(--color-forest-dark) 100%);
-      color: #fff;
-      border-radius: var(--radius-lg);
-      padding: 48px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: var(--shadow-lg);
-      margin: 60px 0;
-    }
-    .catalog-banner-left { max-width: 620px; }
-    .catalog-tag { color: var(--color-terracotta); font-size: 12px; font-weight: 800; letter-spacing: 0.1em; margin-bottom: 8px; }
-    .catalog-banner-title { font-family: var(--font-serif); font-size: 28px; font-weight: 800; margin-bottom: 12px; line-height: 1.35; }
-    .catalog-banner-desc { font-size: 14.5px; color: #b7c7be; line-height: 1.7; }
-    .catalog-category-pills { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
-    .cat-pill { background: rgba(255,255,255,0.12); padding: 4px 12px; border-radius: var(--radius-full); font-size: 12px; font-weight: 700; color: #e1e9e4; }
-
-    /* ==========================================================================
-       [Fit Finder]
-       ========================================================================== */
-    .fit-finder-banner {
-      background: var(--bg-accent-light);
-      border: 2px solid var(--color-terracotta);
-      border-radius: var(--radius-lg);
-      padding: 32px 40px;
-      margin: 60px 0;
-      box-shadow: var(--shadow-md);
-    }
-    .fit-finder-header { text-align: center; margin-bottom: 24px; }
-    .fit-finder-title { font-family: var(--font-serif); font-size: 24px; font-weight: 800; color: var(--color-forest); }
-    
-    .fit-finder-inputs {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr auto;
-      gap: 20px;
-      align-items: center;
-      background: #fff;
-      padding: 20px 24px;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--color-border);
-    }
-    .input-control label { display: block; font-size: 12px; font-weight: 800; color: var(--color-text-secondary); margin-bottom: 6px; }
-    .input-slider-val { font-size: 15px; font-weight: 800; color: var(--color-forest); float: right; }
-    input[type=range] { width: 100%; accent-color: var(--color-terracotta); cursor: pointer; }
-    
-    .fit-result-badge {
-      background: var(--color-forest);
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: var(--radius-md);
-      text-align: center;
-    }
-    .fit-result-label { font-size: 11px; color: #a3c2b0; font-weight: 700; }
-    .fit-result-size { font-size: 20px; font-weight: 800; color: #fff; }
-
-    /* ==========================================================================
-       [AI 실시간 자세 각도 대시보드 & 전국 웰니스 센터 1:1 무료 진단 원본 스타일]
-       ========================================================================== */
+    /* AI HUD & Center 원본 스타일 */
     .hud-center-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -595,7 +435,7 @@
     .gauge-score { font-size: 28px; font-weight: 800; color: var(--color-forest); line-height: 1; }
     .gauge-unit { font-size: 11px; color: var(--color-text-muted); }
 
-    /* FAQ Section */
+    /* FAQ */
     .faq-container { max-width: 800px; margin: 80px auto; }
     .faq-item {
       background: var(--bg-surface);
@@ -624,9 +464,7 @@
     .faq-item.open .faq-answer { display: block; }
     .faq-item.open .faq-question span { transform: rotate(180deg); }
 
-    /* ==========================================================================
-       [서브페이지 전용: 28개 전 상품 4대 탭 및 그리드]
-       ========================================================================== */
+    /* Shop Grid */
     .showcase-tabs {
       display: flex;
       justify-content: center;
@@ -697,40 +535,7 @@
     .btn-card-trial { padding: 6px; font-size: 12px; font-weight: 800; background: var(--color-forest); color: #fff; border-radius: var(--radius-sm); text-align: center; }
     .btn-card-trial:hover { background: var(--color-forest-dark); }
 
-    /* Sticky Bar & Modals */
-    .sticky-trial-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 64px;
-      background: rgba(28, 36, 32, 0.96);
-      backdrop-filter: blur(8px);
-      border-top: 1px solid rgba(255,255,255,0.15);
-      z-index: 1050;
-      display: flex;
-      align-items: center;
-      box-shadow: var(--shadow-sticky);
-    }
-    .sticky-inner {
-      width: 100%;
-      max-width: var(--container-max);
-      margin: 0 auto;
-      padding: 0 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #fff;
-    }
-    .sticky-info { display: flex; align-items: center; gap: 14px; font-size: 14px; }
-    .sticky-pill {
-      background: var(--color-terracotta);
-      font-size: 11px;
-      font-weight: 800;
-      padding: 3px 8px;
-      border-radius: var(--radius-full);
-    }
-
+    /* Modals */
     .modal-overlay {
       position: fixed;
       top: 0; left: 0; width: 100%; height: 100%;
@@ -789,11 +594,9 @@
 </head>
 <body>
 
-  <!-- ==========================================================================
-       [Top Switcher] 3대 독립 페이지 즉시 전환 툴바
-       ========================================================================== -->
+  <!-- Top Switcher -->
   <div class="page-switch-bar">
-    <div><strong>SEUMIM (스밈) 마스터 통합 플랫폼 와이어프레임</strong> (Eight Sleep 융합 롤모델)</div>
+    <div><strong>SEUMIM (스밈) 90번 와이어프레임</strong> (Eight Sleep 융합 롤모델)</div>
     <div class="page-switch-tabs">
       <button class="btn-page-tab active" onclick="switchPage('page-main')">1. 메인 랜딩페이지 (Main)</button>
       <button class="btn-page-tab" onclick="switchPage('page-shop')">2. 28개 전 상품 서브 (Shop All)</button>
@@ -801,9 +604,7 @@
     </div>
   </div>
 
-  <!-- ==========================================================================
-       [SEC-01: GNB & Header - 와이어프레임_90 표준 규격]
-       ========================================================================== -->
+  <!-- GNB Header -->
   <header class="header-gnb">
     <div class="container gnb-inner">
       <a href="javascript:void(0)" class="logo" onclick="switchPage('page-main')">
@@ -821,7 +622,7 @@
 
       <!-- 우측 액션: 라인아트 찜, 장바구니 + 30일 무료시착 (배송조회, 고객센터 제외) -->
       <div class="gnb-actions">
-        <!-- 1. 찜 (라인아트 하트 아이콘) -->
+        <!-- 찜 아이콘 -->
         <button class="gnb-icon-btn" onclick="openWishlistModal()" title="찜한 상품 목록">
           <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
@@ -829,21 +630,17 @@
           <span class="icon-badge" id="gnb-wish-count">2</span>
         </button>
 
-        <!-- 2. 장바구니 (장바구니 아이콘 예시.png 규격 라인아트 토트백 아이콘) -->
+        <!-- 장바구니 아이콘 (장바구니 아이콘 예시.png 형태) -->
         <button class="gnb-icon-btn" onclick="openCartModal()" title="시착 장바구니">
           <svg class="nav-icon-svg" viewBox="0 0 100 100">
-            <!-- Bag Body -->
             <path d="M22 42 Q20 42 22 48 L28 84 Q30 90 38 90 L62 90 Q70 90 72 84 L78 48 Q80 42 78 42 Z" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-            <!-- Handle -->
             <path d="M36 44 V30 C36 18 64 18 64 30 V44" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-            <!-- Rivet circles -->
             <circle cx="36" cy="46" r="6" fill="currentColor" />
             <circle cx="64" cy="46" r="6" fill="currentColor" />
           </svg>
           <span class="icon-badge" id="gnb-cart-count">1</span>
         </button>
 
-        <!-- 3. 30일 무료시착 버튼 -->
         <button class="btn-primary btn-accent" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
           30일 무료 시착 (0원)
         </button>
@@ -851,13 +648,9 @@
     </div>
   </header>
 
-
-  <!-- ==========================================================================
-       [PAGE 1: 메인 랜딩페이지 (Main Landing) - 와이어프레임_90 바로 보이는 화면]
-       ========================================================================== -->
+  <!-- PAGE 1: 메인 랜딩페이지 (와이어프레임_90 바로 보이는 화면) -->
   <main id="page-main" class="page-view active">
-    
-    <!-- SEC-02: Hero & Manifesto (와이어프레임_90 원본과 100% 동일) -->
+    <!-- Hero & 4대 자부심 지표 바 -->
     <section class="hero-section">
       <div class="container">
         <div class="hero-eyebrow">EFFORTLESS WELLNESS · 0.1mm SEAMLESS TECH</div>
@@ -877,7 +670,6 @@
           </button>
         </div>
 
-        <!-- 4대 자부심 지표 바 -->
         <div class="pride-metrics-bar">
           <div class="metric-item">
             <div class="metric-value">38g</div>
@@ -903,105 +695,7 @@
       </div>
     </section>
 
-    <!-- 우리가 걸어온 길, 그리고 스밈이 존재하는 이유 -->
-    <section id="sec-journey" class="journey-section">
-      <div class="container">
-        <div class="section-title-wrap">
-          <div class="section-tag">OUR PHILOSOPHY &amp; JOURNEY</div>
-          <h2 class="section-title">우리가 걸어온 길, 그리고 스밈이 존재하는 이유</h2>
-          <p class="section-desc">
-            시중에 널린 흔한 교정 밴드를 만들지 않습니다. 원천 부품 기술에서 출발하여 일상에 자연스럽게 스며드는 바른 균형의 여정을 시각적 증명과 함께 들려드립니다.
-          </p>
-        </div>
-
-        <!-- Story Chapter 1 -->
-        <div class="journey-chapter">
-          <div class="journey-visual-card">
-            <div class="visual-image-frame">
-              <span class="visual-badge-overlay">📷 R&amp;D 나노 공정 실사진</span>
-              <div style="font-size:52px; margin-bottom:8px;">🧵</div>
-              <div style="font-family:var(--font-serif); font-size:15px; font-weight:800; color:var(--color-forest);">[0.1mm 전도성 센서 섬유 현미경 단면]</div>
-            </div>
-            <div class="visual-caption-box">
-              <div class="visual-caption-title">3년 450번의 원사 배합 실험의 결실</div>
-              <div class="visual-caption-desc">머리카락 굵기보다 얇은 나노 회로를 직조하여 이물감 제로와 100회 물세탁 내구성을 확보했습니다.</div>
-            </div>
-          </div>
-          <div class="journey-text-box">
-            <div class="journey-tag">CHAPTER 01 · 탄생의 배경</div>
-            <h3 class="journey-heading">"왜 체형 교정은 늘 아프고 불편해야만 할까요?"</h3>
-            <p class="journey-body">
-              우리는 본래 첨단 스마트 섬유 부품을 개발하던 엔지니어 팀이었습니다. 하루 14시간씩 현미경과 모니터를 보며 일하던 개발자들은 하나같이 심각한 거북목과 허리 통증을 겪고 있었습니다. 시중의 딱딱한 강제 압박 밴드는 셔츠 밖으로 튀어나왔고 강한 조임은 숨을 턱턱 막히게 했습니다.
-            </p>
-            <p class="journey-body">
-              "몸을 억지로 조이지 않으면서도, 마치 아무것도 입지 않은 것처럼 가볍게 바른 자세를 유도할 수는 없을까?" 이 질문 하나에서 스밈(SEUMIM)의 여정이 시작되었습니다.
-            </p>
-            <div class="journey-highlight">
-              💡 부품 제조 기업의 원천 기술인 '전도성 센서 섬유'를 6조 8,000억 달러 웰니스 시장의 게임 체인저로 전환한 첫 발걸음이었습니다.
-            </div>
-          </div>
-        </div>
-
-        <!-- Story Chapter 2 -->
-        <div class="journey-chapter reverse">
-          <div class="journey-visual-card">
-            <div class="visual-image-frame" style="background: linear-gradient(135deg, #f0e6d6 0%, #e2d4c0 100%);">
-              <span class="visual-badge-overlay" style="background:#d26e2e;">📊 기술 혁신 비교 인포그래픽</span>
-              <div style="font-size:48px; margin-bottom:8px;">⚖️</div>
-              <div style="font-family:var(--font-serif); font-size:14px; font-weight:800; color:var(--color-forest);">[기존 교정기(X) vs 스밈 0.1mm 코어웨어(O)]</div>
-            </div>
-            <div class="visual-caption-box">
-              <div class="visual-caption-title">0.01초 작업 시차 필터링 &amp; 지렛대 탄성 프레임</div>
-              <div class="visual-caption-desc">신발 묶기 등 일상 움직임의 오알람을 완벽히 차단하고, 강제 압박 없이 스스로 바르게 펴지도록 만듭니다.</div>
-            </div>
-          </div>
-          <div class="journey-text-box">
-            <div class="journey-tag">CHAPTER 02 · 기존 시장의 한계 극복</div>
-            <h3 class="journey-heading">고통스러운 강제 조임과 시끄러운 오알람의 종말</h3>
-            <p class="journey-body">
-              기존의 고무줄 강제 압박기는 착용할수록 근육을 퇴화시키고 소화불량을 유발합니다. 또한 기존의 부착형 센서는 물을 마시는 일상 동작조차 '불량 자세'로 오진하여 시도 때도 없이 진동을 울리며 극심한 스트레스를 주었습니다.
-            </p>
-            <p class="journey-body">
-              스밈은 <strong>0.01초 작업 시차 필터링 알고리즘</strong>으로 일시적 움직임과 고착된 나쁜 자세를 완벽히 구분하고, <strong>인체공학 지렛대 탄성 복원 구조</strong>를 통해 압박 없이 스스로 펴지도록 만들었습니다.
-            </p>
-            <div class="journey-highlight">
-              ⚡ 82.3%의 직장인이 자세 무너짐을 인지하지 못하는 현실, 스밈은 업무 몰입을 방해하지 않는 '무소음 촉각 햅틱 넛지'로 바른 정렬을 회복시킵니다.
-            </div>
-          </div>
-        </div>
-
-        <!-- Story Chapter 3 -->
-        <div class="journey-chapter">
-          <div class="journey-visual-card">
-            <div class="visual-image-frame" style="background: linear-gradient(135deg, #dce8e0 0%, #c8dcd0 100%);">
-              <span class="visual-badge-overlay" style="background:#2a7a52;">🌿 300+ 전문가 실착 검증 갤러리</span>
-              <div style="font-size:52px; margin-bottom:8px;">🧑‍⚕️</div>
-              <div style="font-family:var(--font-serif); font-size:14px; font-weight:800; color:var(--color-forest);">[전문의·개발자 300인 실착 임상 현장]</div>
-            </div>
-            <div class="visual-caption-box">
-              <div class="visual-caption-title">300+ 현업 전문가들의 일상 속에 스며든 바른 균형</div>
-              <div class="visual-caption-desc">정형외과 의사, 물리치료사, IT 개발자들이 3주간 일상에서 착용하고 통증 87% 감소 효과를 검증했습니다.</div>
-            </div>
-          </div>
-          <div class="journey-text-box">
-            <div class="journey-tag">CHAPTER 03 · 브랜드 철학과 가치</div>
-            <h3 class="journey-heading">"일상에 바른 균형이 자연스럽게 스며들도록"</h3>
-            <p class="journey-body">
-              <strong>스밈(SEUMIM)</strong>은 '스며들다'에서 비롯된 이름입니다. 퇴근 후 지친 몸을 이끌고 억지로 운동을 강요하지 않습니다. 모니터 앞, 조타실, 수술실, 분장실 등 여러분이 치열하게 일하는 그 자리에서 바른 습관이 옷처럼 편안하게 스며듭니다.
-            </p>
-            <p class="journey-body">
-              0.1mm 초슬림 무봉제 공법으로 어떤 복장 속에 입어도 티가 나지 않으며, 100회 물세탁이 가능하여 매일 아침 새 옷처럼 쾌적하게 착용할 수 있습니다.
-            </p>
-            <div class="journey-highlight">
-              ✨ 하드웨어 28종 + AI 10초 미니멀 케어 구독 + 전국 웰니스 센터의 3중 선순환 플랫폼으로 지속 가능한 건강한 변화를 약속합니다.
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SEC-03~05: Top 3 Featured Masterpieces (지그재그 집중 조명) -->
+    <!-- Top 3 Featured -->
     <section id="sec-featured" class="container" style="padding: 80px 24px;">
       <div class="section-title-wrap">
         <div class="section-tag">FEATURED MASTERPIECES TOP 3</div>
@@ -1010,8 +704,7 @@
       </div>
 
       <div class="featured-grid">
-        
-        <!-- [Top 1] 0.1mm 심리스 넥&숄더 밴드 -->
+        <!-- Top 1 -->
         <div class="featured-card">
           <button class="btn-card-wish active" onclick="toggleWish(1, this)" title="찜하기">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#ef4444" stroke="#ef4444" stroke-width="2">
@@ -1051,7 +744,7 @@
           </div>
         </div>
 
-        <!-- [Top 2] 3D 에어로 메쉬 척추 정렬 조끼 (Reverse) -->
+        <!-- Top 2 -->
         <div class="featured-card reverse">
           <button class="btn-card-wish" onclick="toggleWish(2, this)" title="찜하기">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1091,7 +784,7 @@
           </div>
         </div>
 
-        <!-- [Top 3] 골반 수평 유지 에어셀 벨트 -->
+        <!-- Top 3 -->
         <div class="featured-card">
           <button class="btn-card-wish active" onclick="toggleWish(3, this)" title="찜하기">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#ef4444" stroke="#ef4444" stroke-width="2">
@@ -1130,11 +823,10 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- SEC-06: Social Proof & Clinical Data -->
+    <!-- Social Proof -->
     <section class="proof-section">
       <div class="container">
         <div class="section-title-wrap">
@@ -1190,7 +882,7 @@
       </div>
     </section>
 
-    <!-- [메인 전용 전환 배너] 28개 전 상품 카탈로그 서브페이지로 이동 안내 -->
+    <!-- Explore Catalog Banner -->
     <section class="container">
       <div class="explore-catalog-banner">
         <div class="catalog-banner-left">
@@ -1216,7 +908,7 @@
       </div>
     </section>
 
-    <!-- SEC-08: 스마트 체형 맞춤 사이즈 파인더 미니 모듈 -->
+    <!-- Fit Finder -->
     <section class="container">
       <div class="fit-finder-banner">
         <div class="fit-finder-header">
@@ -1257,7 +949,7 @@
       </div>
     </section>
 
-    <!-- SEC-09: AI HUD & 오프라인 센터 (원본 복원 상태 유지) -->
+    <!-- AI HUD & Center 원본 -->
     <section id="sec-hud" class="container">
       <div class="hud-center-grid">
         <div class="hud-card">
@@ -1299,7 +991,7 @@
       </div>
     </section>
 
-    <!-- SEC-10: FAQ -->
+    <!-- FAQ -->
     <section class="container faq-container">
       <div class="section-title-wrap">
         <div class="section-tag">FREQUENTLY ASKED QUESTIONS</div>
@@ -1314,22 +1006,10 @@
         <div class="faq-question">Q. 사이즈가 맞지 않으면 어떻게 하나요? <span>▼</span></div>
         <div class="faq-answer">30일 기간 내라면 왕복 배송비 전액 무료로 원하시는 사이즈로 100% 무료 맞교환해 드립니다.</div>
       </div>
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-question">Q. 세탁기에 넣고 돌려도 센서가 고장 나지 않나요? <span>▼</span></div>
-        <div class="faq-answer">스밈의 0.1mm 전도성 센서 섬유는 완전 방수 실링 처리되어 일반 세탁망에 넣어 세탁기 표준 코스로 100회 이상 세탁하셔도 안전합니다.</div>
-      </div>
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-question">Q. 셔츠나 정장 안에 입어도 티가 안 나나요? <span>▼</span></div>
-        <div class="faq-answer">0.1mm 초슬림 무봉제 심리스 편직 기술로 제작되어 얇은 흰 셔츠 안에 착용해도 99.8% 은폐되어 겉으로 드러나지 않습니다.</div>
-      </div>
     </section>
-
   </main>
 
-
-  <!-- ==========================================================================
-       [PAGE 2: 28개 전 상품 카탈로그 서브페이지 (Shop All)]
-       ========================================================================== -->
+  <!-- PAGE 2: 상품 카테고리 서브페이지 -->
   <main id="page-shop" class="page-view container" style="padding: 60px 24px;">
     <div class="section-title-wrap" style="text-align:left;">
       <div class="section-tag">SHOP ALL / 28 PRODUCTS CATALOG</div>
@@ -1337,7 +1017,6 @@
       <p class="section-desc" style="margin:0;">스마트 체형 맞춤 사이즈 파인더로 내 사이즈를 확인하고, 4대 카테고리 상품을 정밀 비교하세요.</p>
     </div>
 
-    <!-- 스마트 사이즈 파인더 상단 마스터 바 -->
     <div class="fit-finder-banner" style="margin: 30px 0 40px;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
         <h3 style="font-family:var(--font-serif); font-size:18px; font-weight:800; color:var(--color-forest);">🔍 스마트 사이즈 파인더 연동 활성화</h3>
@@ -1348,7 +1027,6 @@
       </div>
     </div>
 
-    <!-- 카테고리 필터 탭 -->
     <div class="showcase-tabs" style="justify-content:flex-start;">
       <button class="tab-btn active" onclick="filterShopPage('all', this)">전체보기 (28)</button>
       <button class="tab-btn" onclick="filterShopPage('cat1', this)">시그니처 코어웨어 (7)</button>
@@ -1357,14 +1035,10 @@
       <button class="tab-btn" onclick="filterShopPage('cat4', this)">직업 맞춤 교정 ACC (7)</button>
     </div>
 
-    <!-- 28개 전 상품 그리드 -->
     <div class="products-grid-4col" id="shop-products-grid"></div>
   </main>
 
-
-  <!-- ==========================================================================
-       [PAGE 3: 브랜드 이야기 서브페이지 (Our Story)]
-       ========================================================================== -->
+  <!-- PAGE 3: 브랜드 이야기 서브페이지 -->
   <main id="page-story" class="page-view container" style="padding: 60px 24px;">
     <div class="section-title-wrap">
       <div class="section-tag">OUR STORY &amp; PHILOSOPHY</div>
@@ -1373,8 +1047,6 @@
     </div>
 
     <div style="max-width:880px; margin:0 auto;">
-      
-      <!-- Chapter 1 -->
       <div style="padding: 40px 0; border-bottom:1px solid var(--color-border);">
         <div style="font-family:var(--font-serif); font-size:18px; font-weight:700; color:var(--color-terracotta); margin-bottom:8px;">Chapter 01. The Origin</div>
         <h2 style="font-family:var(--font-serif); font-size:30px; font-weight:800; color:var(--color-forest); margin-bottom:16px;">부품 엔지니어 팀의 집념에서 시작된 0.1mm 섬유</h2>
@@ -1397,7 +1069,6 @@
         </p>
       </div>
 
-      <!-- Chapter 2 -->
       <div style="padding: 40px 0; border-bottom:1px solid var(--color-border);">
         <div style="font-family:var(--font-serif); font-size:18px; font-weight:700; color:var(--color-terracotta); margin-bottom:8px;">Chapter 02. The Philosophy</div>
         <h2 style="font-family:var(--font-serif); font-size:30px; font-weight:800; color:var(--color-forest); margin-bottom:16px;">Effortless Wellness : 억지로 조이지 않는 일상 균형</h2>
@@ -1417,7 +1088,6 @@
         </p>
       </div>
 
-      <!-- Chapter 3 -->
       <div style="padding: 40px 0; border-bottom:1px solid var(--color-border);">
         <div style="font-family:var(--font-serif); font-size:18px; font-weight:700; color:var(--color-terracotta); margin-bottom:8px;">Chapter 03. The Vision</div>
         <h2 style="font-family:var(--font-serif); font-size:30px; font-weight:800; color:var(--color-forest); margin-bottom:16px;">글로벌 웰니스 플랫폼으로의 도약</h2>
@@ -1436,20 +1106,15 @@
         </p>
       </div>
 
-      <!-- Story Footer CTA -->
       <div style="background:var(--bg-card); padding:40px; border-radius:var(--radius-lg); text-align:center; margin-top:50px;">
         <h3 style="font-family:var(--font-serif); font-size:22px; font-weight:800; color:var(--color-forest); margin-bottom:12px;">스밈의 3대 시그니처 대표작을 지금 만나보세요</h3>
         <p style="font-size:14px; color:var(--color-text-secondary); margin-bottom:24px;">30일 무료 시착으로 0.1mm의 놀라운 착용감을 결제금액 0원에 직접 체험하세요.</p>
         <button class="btn-primary btn-accent" onclick="switchPage('page-main')">스밈 3대 대표작 3D 체험하러 가기 ➔</button>
       </div>
-
     </div>
   </main>
 
-
-  <!-- ==========================================================================
-       [SEC-11: Global Footer]
-       ========================================================================== -->
+  <!-- Global Footer -->
   <footer class="global-footer" style="background:var(--color-forest-dark); padding:60px 0 100px; color:#fff; font-size:13px; border-top:1px solid rgba(255,255,255,0.1);">
     <div class="container">
       <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1.5fr; gap:40px; margin-bottom:40px;">
@@ -1498,10 +1163,7 @@
     </div>
   </footer>
 
-
-  <!-- ==========================================================================
-       [SEC-12: Sticky Bottom Trial Bar]
-       ========================================================================== -->
+  <!-- Sticky Bottom Bar -->
   <div class="sticky-trial-bar">
     <div class="sticky-inner">
       <div class="sticky-info">
@@ -1514,12 +1176,7 @@
     </div>
   </div>
 
-
-  <!-- ==========================================================================
-       [Modals: 찜, 장바구니, 사이즈, 퀵뷰, 체크아웃]
-       ========================================================================== -->
-  
-  <!-- 1. 찜 목록 모달 -->
+  <!-- Modals -->
   <div id="modal-wishlist" class="modal-overlay" onclick="closeModalOnOutside(event, 'modal-wishlist')">
     <div class="modal-card">
       <span class="modal-close" onclick="closeModal('modal-wishlist')">✕</span>
@@ -1539,7 +1196,6 @@
     </div>
   </div>
 
-  <!-- 2. 시착 장바구니 모달 -->
   <div id="modal-cart" class="modal-overlay" onclick="closeModalOnOutside(event, 'modal-cart')">
     <div class="modal-card">
       <span class="modal-close" onclick="closeModal('modal-cart')">✕</span>
@@ -1566,7 +1222,6 @@
     </div>
   </div>
 
-  <!-- 3. 스마트 사이즈 가이드 모달 -->
   <div id="modal-fit" class="modal-overlay" onclick="closeModalOnOutside(event, 'modal-fit')">
     <div class="modal-card">
       <span class="modal-close" onclick="closeModal('modal-fit')">✕</span>
@@ -1626,7 +1281,6 @@
     </div>
   </div>
 
-  <!-- 4. 상품 퀵뷰 모달 -->
   <div id="modal-quickview" class="modal-overlay" onclick="closeModalOnOutside(event, 'modal-quickview')">
     <div class="modal-card">
       <span class="modal-close" onclick="closeModal('modal-quickview')">✕</span>
@@ -1634,12 +1288,11 @@
     </div>
   </div>
 
-  <!-- 5. Bottom Sheet 1초 퀵 체크아웃 모달 -->
   <div id="modal-checkout" class="bottomsheet-overlay" onclick="closeModalOnOutside(event, 'modal-checkout')">
     <div class="bottomsheet-card">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
         <h3 style="font-family:var(--font-serif); font-size:20px; font-weight:800; color:var(--color-forest);">
-          SEUMIM 30일 무료 시착 접수
+          🛍️ SEUMIM 30일 무료 시착 접수
         </h3>
         <span class="modal-close" style="position:static;" onclick="closeModal('modal-checkout')">✕</span>
       </div>
@@ -1673,10 +1326,6 @@
     </div>
   </div>
 
-
-  <!-- ==========================================================================
-       [JavaScript Master Logic]
-       ========================================================================== -->
   <script>
     const PRODUCTS_28 = [
       { id: 1, cat: 'cat1', catName: '시그니처 코어웨어', name: '[대표 1] 0.1mm 심리스 넥&숄더 밴드', priceSale: '59,000원', priceOrig: '89,000원', tag: '#거북목 #15도견인', icon: '🎽', spec: '말린어깨 자동 견인 38g 무봉제', isTop: true, isWished: true },

@@ -1,0 +1,180 @@
+{
+  "client_id": "가상클라이언트_90",
+  "client_name": "스밈_웰니스융합마스터",
+  "total_sections": 26,
+  "storyboard_version": "2.0_Strict_Rendering_Order",
+  "main_landing_sections": [
+    {
+      "section_id": "SEC-01",
+      "name": "GNB & 글로벌 상단 고정 헤더",
+      "tier": "Global",
+      "type": "StickyHeader",
+      "nav_links": ["Home_Main", "Top3", "ShopAll_28", "AICare_Center", "OurStory"],
+      "actions": ["LineArt_Wishlist_Badge", "LineArt_Cart_Tote_Badge", "Btn_FreeTrial_0KRW"]
+    },
+    {
+      "section_id": "SEC-02",
+      "name": "브랜드 매니페스토 Hero & 4대 자부심 지표 바 (First View)",
+      "tier": "Tier_1_Hero",
+      "type": "ManifestoSection",
+      "metrics": ["38g_Ultralight", "99.8_Seamless", "300_Verified", "100_Free_Return"]
+    },
+    {
+      "section_id": "SEC-03",
+      "name": "[Top 1] 0.1mm 심리스 넥&숄더 밴드 지그재그 조명",
+      "tier": "Tier_2_Top3",
+      "type": "ProductFeatureZigzag",
+      "features": ["15_Degree_Traction", "Magnetic_Buckle", "0.1mm_Magnifier"]
+    },
+    {
+      "section_id": "SEC-04",
+      "name": "[Top 2] 3D 에어로 메쉬 척추 정렬 조끼 지그재그 조명",
+      "tier": "Tier_2_Top3",
+      "type": "ProductFeatureZigzag_Reverse",
+      "features": ["Hidden_Zipper_99.8", "12h_Cooling_AeroMesh", "Elastic_Frame"]
+    },
+    {
+      "section_id": "SEC-05",
+      "name": "[Top 3] 골반 수평 유지 에어셀 벨트 지그재그 조명",
+      "tier": "Tier_2_Top3",
+      "type": "ProductFeatureZigzag",
+      "features": ["Leg_Crossing_Blocker", "Realtime_AirCell_Expansion"]
+    },
+    {
+      "section_id": "SEC-06",
+      "name": "300+ 전문가 실착 데이터 & 4.9점 비포/애프터 갤러리",
+      "tier": "Tier_3_SocialProof",
+      "type": "ReviewGallery",
+      "rating": 4.9,
+      "proof": "Pain_87.4_Reduction"
+    },
+    {
+      "section_id": "SEC-07",
+      "name": "28개 전 상품 컬렉션 서브페이지 이동 배너",
+      "tier": "NavigationBanner",
+      "type": "ExploreCatalogBanner",
+      "target_page": "Shop All (SCR-02)"
+    },
+    {
+      "section_id": "SEC-08",
+      "name": "스마트 체형 맞춤 1초 사이즈 파인더 미니",
+      "tier": "Interaction",
+      "type": "FitFinderMini",
+      "inputs": ["Height_Slider", "Weight_Slider", "BodySilhouette_Selector"]
+    },
+    {
+      "section_id": "SEC-09",
+      "name": "AI 실시간 자세 각도 HUD & 전국 웰니스 센터 1:1 무료 진단",
+      "tier": "O2O_Tech",
+      "type": "HUD_and_Center",
+      "features": ["Circular_Score_Gauge_95", "12_Branches_Reservation"]
+    },
+    {
+      "section_id": "SEC-10",
+      "name": "자주 묻는 질문 FAQ",
+      "tier": "Trust",
+      "type": "AccordionList",
+      "items_count": 2
+    },
+    {
+      "section_id": "SEC-11",
+      "name": "글로벌 푸터",
+      "tier": "Global",
+      "type": "Footer",
+      "elements": ["CS_1588-9240", "Guarantee_Policy", "Copyright"]
+    },
+    {
+      "section_id": "SEC-12",
+      "name": "상시 하단 Sticky 30일 무료 시착 바",
+      "tier": "Conversion",
+      "type": "StickyBottomBar",
+      "cta": "Btn_Sticky_Trial_0Won"
+    },
+    {
+      "section_id": "SEC-13",
+      "name": "30일 무료 시착 1초 퀵 체크아웃 모달",
+      "tier": "Conversion",
+      "type": "BottomSheetModal",
+      "price": "0_KRW"
+    },
+    {
+      "section_id": "SEC-14",
+      "name": "나의 찜한 상품 목록 모달",
+      "tier": "UtilityModal",
+      "type": "WishlistModal"
+    },
+    {
+      "section_id": "SEC-15",
+      "name": "30일 무료 시착 장바구니 모달",
+      "tier": "UtilityModal",
+      "type": "CartModal"
+    },
+    {
+      "section_id": "SEC-16",
+      "name": "1초 스마트 사이즈 가이드 모달",
+      "tier": "UtilityModal",
+      "type": "FitGuideModal"
+    },
+    {
+      "section_id": "SEC-17",
+      "name": "상품 3D 단면 분해 퀵뷰 모달",
+      "tier": "UtilityModal",
+      "type": "QuickViewModal"
+    }
+  ],
+  "sub_story_sections": [
+    {
+      "section_id": "SUB-STORY-01",
+      "name": "브랜드 서브 헤더 & 히어로 (Our Story Hero)",
+      "type": "StoryHeader"
+    },
+    {
+      "section_id": "SUB-STORY-02",
+      "name": "Chapter 01. The Origin - 부품 엔지니어 팀의 집념과 원천 기술",
+      "visual": "VIS-01_NanoMicroscope_Scan_450x",
+      "type": "StoryChapterBlock"
+    },
+    {
+      "section_id": "SUB-STORY-03",
+      "name": "Chapter 02. The Philosophy - Effortless Wellness & 인체공학 지렛대",
+      "visual": "VIS-02_LeverErgonomics_Blueprint",
+      "type": "StoryChapterBlock"
+    },
+    {
+      "section_id": "SUB-STORY-04",
+      "name": "Chapter 03. The Vision - 300인 임상 검증 & 친환경 글로벌 도약",
+      "visual": "VIS-03_ClinicalProof_300Experts",
+      "type": "StoryChapterBlock"
+    },
+    {
+      "section_id": "SUB-STORY-05",
+      "name": "브랜드 서사 하단 시그니처 3대 대표작 3D 체험 전환 배너",
+      "type": "StoryExperienceCTA",
+      "target": "#sec-featured"
+    }
+  ],
+  "sub_shop_sections": [
+    {
+      "section_id": "SUB-SHOP-01",
+      "name": "샵 올 서브 헤더 & 4대 카테고리 탭 필터",
+      "categories_count": 4,
+      "total_products": 28
+    },
+    {
+      "section_id": "SUB-SHOP-02",
+      "name": "스마트 체형 맞춤 사이즈 파인더 마스터 바",
+      "sync_size": "M"
+    },
+    {
+      "section_id": "SUB-SHOP-03",
+      "name": "28개 전 상품 4열 7행(4×7) 인터랙티브 상품 카드 그리드",
+      "grid_layout": "4x7",
+      "actions": ["Wish_Heart_Toggle", "QuickView", "Trial_0KRW"]
+    },
+    {
+      "section_id": "SUB-SHOP-04",
+      "name": "상품 정밀 퀵뷰 모달",
+      "type": "QuickViewModal"
+    }
+  ]
+}

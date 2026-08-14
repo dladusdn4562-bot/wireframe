@@ -1,0 +1,135 @@
+{
+  "client_id": "가상클라이언트_90",
+  "client_name": "스밈_웰니스융합마스터",
+  "total_screens": 14,
+  "pages": {
+    "PAGE-01": "메인 랜딩페이지 (Main Landing)",
+    "PAGE-02": "상품 카테고리 서브페이지 (Shop All)",
+    "PAGE-03": "브랜드 이야기 서브페이지 (Our Story)"
+  },
+  "screens": [
+    {
+      "id": "SCR-01",
+      "name": "메인 랜딩페이지",
+      "page": "PAGE-01",
+      "type": "LandingPage",
+      "components": [
+        "GNB_Header_LineArt_Icons",
+        "SEC_01_Hero_Manifesto_Pride_Metrics",
+        "SEC_02_Brand_Story_Journey_Visual_Cards",
+        "SEC_03_Top1_NeckShoulder",
+        "SEC_04_Top2_SpineVest",
+        "SEC_05_Top3_PelvicBelt",
+        "SEC_06_Social_Proof_300Reviews",
+        "SEC_07_Full_Collection_Banner",
+        "SEC_08_Smart_Fit_Finder_Mini",
+        "SEC_09_AI_HUD_Wellness_Center",
+        "SEC_10_FAQ_Accordion",
+        "SEC_11_Global_Footer",
+        "SEC_12_Sticky_Bottom_Trial_Bar"
+      ]
+    },
+    {
+      "id": "SCR-02",
+      "name": "28개 전 상품 카탈로그 서브페이지",
+      "page": "PAGE-02",
+      "type": "CatalogPage",
+      "components": [
+        "SUB_SHOP_01_Category_Quick_Nav",
+        "SUB_SHOP_02_Smart_Fit_Finder_Master_Bar",
+        "SUB_SHOP_03_Products_Grid_28_Items",
+        "SUB_SHOP_04_Quick_View_Trigger"
+      ]
+    },
+    {
+      "id": "SCR-03",
+      "name": "브랜드 이야기 서브페이지 (Our Story)",
+      "page": "PAGE-03",
+      "type": "StoryPage",
+      "components": [
+        "SUB_STORY_01_Chapter1_The_Origin",
+        "SUB_STORY_02_Chapter2_The_Philosophy",
+        "SUB_STORY_03_Chapter3_The_Vision",
+        "SUB_STORY_04_300_Experts_Interview",
+        "SUB_STORY_05_Bottom_Experience_CTA"
+      ]
+    },
+    {
+      "id": "SCR-04",
+      "name": "스마트 체형 맞춤 사이즈 파인더 모달",
+      "page": "Common",
+      "type": "Modal",
+      "features": ["Height_Weight_Sliders", "AI_Size_Recommendation", "0.1mm_Measurement_Table", "Body_Type_Review_Filter"]
+    },
+    {
+      "id": "SCR-05",
+      "name": "Top 1 넥&숄더 밴드 3D 단면 분해 뷰어",
+      "page": "PAGE-01",
+      "type": "3DViewer",
+      "features": ["15_Degree_Traction_Mechanism", "Magnetic_Buckle", "0.1mm_Magnifier"]
+    },
+    {
+      "id": "SCR-06",
+      "name": "Top 2 척추 정렬 조끼 숨은 지퍼 뷰어",
+      "page": "PAGE-01",
+      "type": "3DViewer",
+      "features": ["Hidden_Zipper_99.8_Invisibility", "Aero_Mesh_Frame"]
+    },
+    {
+      "id": "SCR-07",
+      "name": "Top 3 골반 에어셀 벨트 공기 팽창 뷰어",
+      "page": "PAGE-01",
+      "type": "3DViewer",
+      "features": ["Leg_Crossing_Blocker", "Realtime_Air_Expansion_Pad"]
+    },
+    {
+      "id": "SCR-08",
+      "name": "300+ 전문가 & 실착자 임상 비포/애프터 갤러리",
+      "page": "PAGE-01",
+      "type": "Modal",
+      "features": ["300_Clinical_Data", "Pain_87_Reduction", "Real_Reviews_Filter"]
+    },
+    {
+      "id": "SCR-09",
+      "name": "상품 퀵뷰 인터랙티브 모달",
+      "page": "Common",
+      "type": "Modal",
+      "features": ["3D_Disassembly_Viewer", "0.1mm_Size_Guide", "Free_Trial_Cart_Add"]
+    },
+    {
+      "id": "SCR-10",
+      "name": "AI 실시간 자세 HUD 대시보드",
+      "page": "PAGE-01",
+      "type": "InteractiveDashboard",
+      "features": ["Webcam_Sensor_Tracking", "Circular_Score_Gauge", "10s_AI_Routine"]
+    },
+    {
+      "id": "SCR-11",
+      "name": "전국 웰니스 센터 1:1 무료 진단 예약 모달",
+      "page": "PAGE-01",
+      "type": "Modal",
+      "features": ["12_Branches_Search", "Calendar_Time_Picker", "SMS_Confirmation"]
+    },
+    {
+      "id": "SCR-12",
+      "name": "30일 무료 시착 Bottom Sheet 퀵 체크아웃",
+      "page": "Common",
+      "type": "BottomSheet",
+      "features": ["Zero_KRW_Checkout", "2_Step_Address_Input", "Free_Return_Guarantee"]
+    },
+    {
+      "id": "SCR-13",
+      "name": "30일 무료 시착 접수 완료 & 키트 출고",
+      "page": "Common",
+      "type": "StatusPage",
+      "features": ["Receipt_ID_Display", "Same_Day_Shipping_Notice", "Tracking_SMS"]
+    },
+    {
+      "id": "SCR-14",
+      "name": "글로벌 푸터 & 30일 100% 무료 맞교환/반품 보증",
+      "page": "Common",
+      "type": "FooterPolicy",
+      "features": ["100_Free_Exchange_Return_Policy", "CS_Center_Notice", "Legal_Notice"]
+    }
+  ]
+}

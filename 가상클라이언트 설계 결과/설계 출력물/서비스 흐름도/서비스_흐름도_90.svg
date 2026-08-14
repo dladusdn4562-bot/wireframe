@@ -1,0 +1,324 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 2220" width="1680" height="2220">
+  <defs>
+    <style>
+      .bg { fill: #fbf9f5; }
+      .title-main { font-family: 'Noto Serif KR', 'Pretendard', sans-serif; font-size: 32px; font-weight: 800; fill: #1c2420; }
+      .title-sub { font-family: 'Pretendard', sans-serif; font-size: 16px; fill: #4a5750; }
+      
+      .flow-lane { fill: #ffffff; stroke: #e2dbca; stroke-width: 2; rx: 16; filter: drop-shadow(0 4px 16px rgba(0,0,0,0.04)); }
+      .lane-header { fill: #243028; rx: 12; }
+      .lane-title { font-family: 'Pretendard', sans-serif; font-size: 18px; font-weight: 800; fill: #ffffff; text-anchor: middle; }
+      
+      .step-node { fill: #f5f1e8; stroke: #ded4c0; stroke-width: 1.5; rx: 8; }
+      .step-node-highlight { fill: #fef8f0; stroke: #d26e2e; stroke-width: 2; rx: 8; }
+      .step-node-action { fill: #e8f0ec; stroke: #243028; stroke-width: 2; rx: 8; }
+      .step-tag { fill: #243028; rx: 4; }
+      .step-tag-accent { fill: #d26e2e; rx: 4; }
+      .step-tag-text { font-family: 'Pretendard', sans-serif; font-size: 11px; font-weight: 800; fill: #ffffff; text-anchor: middle; }
+      
+      .step-title { font-family: 'Pretendard', sans-serif; font-size: 14.5px; font-weight: 800; fill: #1c2420; }
+      .step-desc { font-family: 'Pretendard', sans-serif; font-size: 12px; fill: #4a5750; line-height: 1.5; }
+      
+      .flow-arrow { stroke: #7c8a82; stroke-width: 2.5; fill: none; }
+      .flow-arrow-dashed { stroke: #d26e2e; stroke-width: 2.5; stroke-dasharray: 6,6; fill: none; }
+      
+      .decision-diamond { fill: #fef8f0; stroke: #d26e2e; stroke-width: 2; }
+      .decision-text { font-family: 'Pretendard', sans-serif; font-size: 12px; font-weight: 800; fill: #1c2420; text-anchor: middle; }
+      
+      .table-header { fill: #243028; }
+      .table-row-even { fill: #fcfbf9; }
+      .table-row-odd { fill: #f5f1e8; }
+      .table-text { font-family: 'Pretendard', sans-serif; font-size: 11.5px; fill: #1c2420; }
+      .table-text-head { font-family: 'Pretendard', sans-serif; font-size: 12px; font-weight: 800; fill: #ffffff; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#7c8a82" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#d26e2e" />
+    </marker>
+  </defs>
+
+  <rect width="1680" height="2220" class="bg" />
+
+  <!-- Header Banner -->
+  <rect x="50" y="40" width="1580" height="110" fill="#ffffff" stroke="#e2dbca" stroke-width="2" rx="12" />
+  <text x="90" y="90" class="title-main">SEUMIM 통합 서비스 흐름도 (서비스_흐름도_90)</text>
+  <text x="90" y="125" class="title-sub">눈이 편안한 한글 폰트(Pretendard/Noto Serif KR) · 챕터별 시각 이미지 에셋 · 28개 전 상품 4×7 서브 카탈로그 완결 동선</text>
+
+  <!-- ================= LANE 1: 메인 랜딩 & 브랜드 서사 (Main Journey) ================= -->
+  <rect x="50" y="180" width="490" height="1380" class="flow-lane" />
+  <rect x="70" y="200" width="450" height="46" class="lane-header" />
+  <text x="295" y="230" class="lane-title">[LANE 1] 메인 랜딩 &amp; 브랜드 서사 여정</text>
+
+  <!-- ST-01 -->
+  <rect x="75" y="270" width="440" height="90" class="step-node-action" />
+  <rect x="90" y="282" width="60" height="20" class="step-tag" />
+  <text x="120" y="296" class="step-tag-text">ST-01</text>
+  <text x="160" y="297" class="step-title">메인 랜딩 진입 &amp; GNB/매니페스토 인지</text>
+  <text x="90" y="325" class="step-desc">• GNB(라인아트 찜/장바구니 뱃지) &amp; 0.1mm 심리스 선언</text>
+  <text x="90" y="343" class="step-desc">• 4대 자부심 지표(38g / 99.8% / 300+ / 100%) 확인</text>
+
+  <!-- ST-02 (Journey with Visual Images) -->
+  <rect x="75" y="390" width="440" height="115" class="step-node-highlight" />
+  <rect x="90" y="402" width="60" height="20" class="step-tag-accent" />
+  <text x="120" y="416" class="step-tag-text">ST-02</text>
+  <text x="160" y="417" class="step-title">브랜드 서사 &amp; 3대 시각 이미지 증명 탐색</text>
+  <text x="90" y="445" class="step-desc">• Ch 01: [📷 나노 섬유 직조 현미경 컷 &amp; 연구소 스케치]</text>
+  <text x="90" y="465" class="step-desc">• Ch 02: [📊 기존 교정기 vs 스밈 기술 비교 인포그래픽]</text>
+  <text x="90" y="485" class="step-desc">• Ch 03: [🌿 300+ 전문가 실착 검증 현장 포토 확인]</text>
+
+  <!-- ST-03 (Top 3 3D Interaction) -->
+  <rect x="75" y="535" width="440" height="105" class="step-node-action" />
+  <rect x="90" y="547" width="60" height="20" class="step-tag" />
+  <text x="120" y="561" class="step-tag-text">ST-03</text>
+  <text x="160" y="562" class="step-title">Top 3 대표작 3D 단면 분해 &amp; 스마트 돋보기</text>
+  <text x="90" y="590" class="step-desc">• 0.1mm 넥밴드 / 척추조끼 / 골반벨트 지그재그 확인</text>
+  <text x="90" y="610" class="step-desc">• 마우스 호버 스마트 돋보기(Magnifier) 2배 확대 조작</text>
+
+  <!-- ST-04 -->
+  <rect x="75" y="670" width="440" height="95" class="step-node" />
+  <rect x="90" y="682" width="60" height="20" class="step-tag" />
+  <text x="120" y="696" class="step-tag-text">ST-04</text>
+  <text x="160" y="697" class="step-title">300+ 전문가 실착 데이터 &amp; 후기 검증</text>
+  <text x="90" y="725" class="step-desc">• 통증 87.4% 감소 / 바른자세 3.2시간 증가 수치 확인</text>
+  <text x="90" y="745" class="step-desc">• 직업군별(개발자/의사/디자이너) 비포&amp;애프터 필터링</text>
+
+  <!-- ST-05 (Catalog Banner) -->
+  <rect x="75" y="795" width="440" height="100" class="step-node-highlight" fill="#243028" stroke="#d26e2e" />
+  <rect x="90" y="807" width="60" height="20" class="step-tag-accent" />
+  <text x="120" y="821" class="step-tag-text">ST-05</text>
+  <text x="160" y="822" class="step-title" fill="#ffffff">28개 전 상품 컬렉션 이동 배너 클릭</text>
+  <text x="90" y="850" class="step-desc" fill="#dedede">• 메인페이지 28개 나열 배제 확인</text>
+  <text x="90" y="870" class="step-desc" fill="#d26e2e" font-weight="700">➔ [28개 전 상품 컬렉션 보러가기] 클릭하여 LANE 2 전환</text>
+
+  <!-- ST-06 (Smart Fit Finder Mini) -->
+  <rect x="75" y="925" width="440" height="105" class="step-node-highlight" />
+  <rect x="90" y="937" width="60" height="20" class="step-tag-accent" />
+  <text x="120" y="951" class="step-tag-text">ST-06</text>
+  <text x="160" y="952" class="step-title">스마트 체형 맞춤 사이즈 파인더 조작</text>
+  <text x="90" y="980" class="step-desc">• 키(178cm)/몸무게(72kg) 슬라이더 조절</text>
+  <text x="90" y="1000" class="step-desc">• 1초 만에 권장 사이즈(M) 도출 및 실측 치수표 확인</text>
+
+  <!-- ST-07 -->
+  <rect x="75" y="1060" width="440" height="95" class="step-node" />
+  <rect x="90" y="1072" width="60" height="20" class="step-tag" />
+  <text x="120" y="1086" class="step-tag-text">ST-07</text>
+  <text x="160" y="1087" class="step-title">AI 실시간 자세 각도 HUD &amp; 웰니스 센터 예약</text>
+  <text x="90" y="1115" class="step-desc">• AI 바이오 자세 점수(95점) 및 10초 케어 루틴 측정</text>
+  <text x="90" y="1135" class="step-desc">• 전국 12개 오프라인 센터 1:1 무료 진단 팝업 예약</text>
+
+
+  <!-- ================= LANE 2: 28개 전 상품 서브 카탈로그 (Catalog Flow) ================= -->
+  <rect x="590" y="180" width="490" height="1380" class="flow-lane" />
+  <rect x="610" y="200" width="450" height="46" class="lane-header" fill="#3b4d40" />
+  <text x="835" y="230" class="lane-title">[LANE 2] 28개 전 상품 서브 카탈로그 탐색</text>
+
+  <!-- ST-08 -->
+  <rect x="615" y="270" width="440" height="95" class="step-node-action" />
+  <rect x="630" y="282" width="60" height="20" class="step-tag" />
+  <text x="660" y="296" class="step-tag-text">ST-08</text>
+  <text x="700" y="297" class="step-title">28개 전 상품 서브페이지 진입 (Shop All)</text>
+  <text x="630" y="325" class="step-desc">• 상단 스마트 사이즈 연동 마스터 바 확인</text>
+  <text x="630" y="345" class="step-desc">• "현재 키 178cm/72kg ➔ 권장 M 사이즈" 상시 고정</text>
+
+  <!-- ST-09 -->
+  <rect x="615" y="395" width="440" height="110" class="step-node-highlight" />
+  <rect x="630" y="407" width="60" height="20" class="step-tag-accent" />
+  <text x="660" y="421" class="step-tag-text">ST-09</text>
+  <text x="700" y="422" class="step-title">4대 카테고리 탭 필터링 &amp; 4x7 그리드</text>
+  <text x="630" y="450" class="step-desc">• [시그니처 7] / [전문케어 7] / [스마트센서 7] / [직업ACC 7]</text>
+  <text x="630" y="470" class="step-desc">• 28개 전 상품 카드마다 [권장: M] 실시간 뱃지 매핑</text>
+  <text x="630" y="490" class="step-desc">• 가격순 / 인기순 / 부위별 정렬 지원</text>
+
+  <!-- ST-10 (Quick View Modal) -->
+  <rect x="615" y="535" width="440" height="115" class="step-node-action" />
+  <rect x="630" y="547" width="60" height="20" class="step-tag" />
+  <text x="660" y="561" class="step-tag-text">ST-10</text>
+  <text x="700" y="562" class="step-title">[🔍 상품 퀵뷰 모달] 오픈 및 0.1mm 정밀 검증</text>
+  <text x="630" y="590" class="step-desc">• 3D 단면 분해도 뷰어 &amp; 마우스 호버 스마트 돋보기</text>
+  <text x="630" y="610" class="step-desc">• M 사이즈 기준 가슴둘레 96~102cm 실측 치수표</text>
+  <text x="630" y="630" class="step-desc">• 체형별 실착 만족도(98.4%) 및 0원 시착 담기</text>
+
+
+  <!-- ================= LANE 3: 30일 무료 시착 퀵 결제 (Trial Conversion) ================= -->
+  <rect x="1130" y="180" width="500" height="1380" class="flow-lane" />
+  <rect x="1150" y="200" width="460" height="46" class="lane-header" fill="#d26e2e" />
+  <text x="1380" y="230" class="lane-title">[LANE 3] 30일 무료 시착 1초 퀵 체크아웃 (0원)</text>
+
+  <!-- ST-11 -->
+  <rect x="1155" y="270" width="450" height="95" class="step-node-highlight" />
+  <rect x="1170" y="282" width="60" height="20" class="step-tag-accent" />
+  <text x="1200" y="296" class="step-tag-text">ST-11</text>
+  <text x="1240" y="297" class="step-title">상시 하단 Sticky Bar 30일 무료 시착 클릭</text>
+  <text x="1170" y="325" class="step-desc">• 스크롤 위치 무관 상시 하단 64px 고정 바 노출</text>
+  <text x="1170" y="345" class="step-desc">• [결제금액 0원 | 지금 0원에 시착하기 ➔] 원클릭 실행</text>
+
+  <!-- ST-12 (Bottom Sheet Checkout) -->
+  <rect x="1155" y="395" width="450" height="110" class="step-node-action" />
+  <rect x="1170" y="407" width="60" height="20" class="step-tag" />
+  <text x="1200" y="421" class="step-tag-text">ST-12</text>
+  <text x="1240" y="422" class="step-title">Bottom Sheet 1초 퀵 체크아웃 모달 오픈</text>
+  <text x="1170" y="450" class="step-desc">• 선택 상품(0.1mm 넥밴드) 및 추천 사이즈(M) 자동 바인딩</text>
+  <text x="1170" y="470" class="step-desc">• 도로명 주소 &amp; 휴대폰 번호 2단계 간편 입력</text>
+  <text x="1170" y="490" class="step-desc">• 최종 결제 예정 금액: [0원] 확인</text>
+
+  <!-- ST-13 (Decision) -->
+  <polygon points="1380,530 1480,580 1380,630 1280,580" class="decision-diamond" />
+  <text x="1380" y="578" class="decision-text">ST-13: 필수값 검증</text>
+  <text x="1380" y="594" class="decision-text">주소/연락처 유효?</text>
+
+  <!-- ST-14 (Completion) -->
+  <rect x="1155" y="670" width="450" height="95" class="step-node-action" fill="#e8f0ec" stroke="#243028" />
+  <rect x="1170" y="682" width="60" height="20" class="step-tag" />
+  <text x="1200" y="696" class="step-tag-text">ST-14</text>
+  <text x="1240" y="697" class="step-title">0원 무료 시착 접수 완료 &amp; 당일 출고</text>
+  <text x="1170" y="725" class="step-desc">• 접수 번호 발행 &amp; 카카오톡 알림톡 자동 발송</text>
+  <text x="1170" y="745" class="step-desc">• 30일 안심 무료 반품/맞교환 키트 당일 발송</text>
+
+
+  <!-- Connecting Arrows -->
+  <line x1="295" y1="360" x2="295" y2="390" class="flow-arrow" marker-end="url(#arrow)" />
+  <line x1="295" y1="505" x2="295" y2="535" class="flow-arrow" marker-end="url(#arrow)" />
+  <line x1="295" y1="640" x2="295" y2="670" class="flow-arrow" marker-end="url(#arrow)" />
+  <line x1="295" y1="765" x2="295" y2="795" class="flow-arrow" marker-end="url(#arrow)" />
+
+  <!-- Lane 1 -> Lane 2 Catalog Transition (Orange Dashed) -->
+  <path d="M 515 845 L 835 845 L 835 365" class="flow-arrow-dashed" marker-end="url(#arrow-orange)" />
+
+  <!-- Lane 2 Internal -->
+  <line x1="835" y1="365" x2="835" y2="395" class="flow-arrow" marker-end="url(#arrow)" />
+  <line x1="835" y1="505" x2="835" y2="535" class="flow-arrow" marker-end="url(#arrow)" />
+
+  <!-- Lane 2 Quick View -> Lane 3 Checkout Transition -->
+  <path d="M 1055 592 L 1155 317" class="flow-arrow-dashed" marker-end="url(#arrow-orange)" />
+
+  <!-- Lane 3 Internal -->
+  <line x1="1380" y1="365" x2="1380" y2="395" class="flow-arrow" marker-end="url(#arrow)" />
+  <line x1="1380" y1="505" x2="1380" y2="530" class="flow-arrow" marker-end="url(#arrow)" />
+  <line x1="1380" y1="630" x2="1380" y2="670" class="flow-arrow" marker-end="url(#arrow)" />
+
+
+  <!-- ================= BOTTOM SECTION: ST-01~14 풀 정의표 ================= -->
+  <rect x="50" y="1600" width="1580" height="570" fill="#ffffff" stroke="#e2dbca" stroke-width="2" rx="16" />
+  <rect x="70" y="1620" width="1540" height="40" class="table-header" rx="6" />
+  <text x="90" y="1645" class="table-text-head">단계 ID</text>
+  <text x="170" y="1645" class="table-text-head">단계 명칭</text>
+  <text x="360" y="1645" class="table-text-head">수행 주체</text>
+  <text x="460" y="1645" class="table-text-head">화면 ID</text>
+  <text x="560" y="1645" class="table-text-head">사용자 액션 / 시스템 처리 내용</text>
+  <text x="1200" y="1645" class="table-text-head">전환 목표 &amp; 예외 처리</text>
+
+  <!-- Table Rows (ST-01 to ST-14) -->
+  <rect x="70" y="1665" width="1540" height="32" class="table-row-even" />
+  <text x="90" y="1685" class="table-text" font-weight="700">ST-01</text>
+  <text x="170" y="1685" class="table-text">메인 랜딩 진입</text>
+  <text x="360" y="1685" class="table-text">사용자</text>
+  <text x="460" y="1685" class="table-text">SCR-01</text>
+  <text x="560" y="1685" class="table-text">0.1mm 심리스 매니페스토 선언, 6대 가치 기둥, 4대 자부심 지표(38g/99.8%/300+/100%) 인지</text>
+  <text x="1200" y="1685" class="table-text">브랜드 신뢰도 확보 ➔ ST-02 이동</text>
+
+  <rect x="70" y="1700" width="1540" height="32" class="table-row-odd" />
+  <text x="90" y="1720" class="table-text" font-weight="700">ST-02</text>
+  <text x="170" y="1720" class="table-text">브랜드 서사 탐색</text>
+  <text x="360" y="1720" class="table-text">사용자</text>
+  <text x="460" y="1720" class="table-text">SCR-01</text>
+  <text x="560" y="1720" class="table-text">Ch 1~3 서사 및 3대 시각 이미지(나노직조 실사진, 기술비교 인포그래픽, 300인 실착컷) 확인</text>
+  <text x="1200" y="1720" class="table-text">이미지 지연 시 CSS 플레이스홀더 즉시 렌더링</text>
+
+  <rect x="70" y="1735" width="1540" height="32" class="table-row-even" />
+  <text x="90" y="1755" class="table-text" font-weight="700">ST-03</text>
+  <text x="170" y="1755" class="table-text">Top 3 대표작 3D 확인</text>
+  <text x="360" y="1755" class="table-text">사용자</text>
+  <text x="460" y="1755" class="table-text">SCR-01</text>
+  <text x="560" y="1755" class="table-text">넥밴드, 척추조끼, 골반벨트 3D 단면 분해도 조작 및 마우스 호버 돋보기 2배 확대 인터랙션</text>
+  <text x="1200" y="1755" class="table-text">WebGL 미지원 시 2D 단면도로 자동 대체</text>
+
+  <rect x="70" y="1770" width="1540" height="32" class="table-row-odd" />
+  <text x="90" y="1790" class="table-text" font-weight="700">ST-04</text>
+  <text x="170" y="1790" class="table-text">전문가 실착 검증</text>
+  <text x="360" y="1790" class="table-text">사용자</text>
+  <text x="460" y="1790" class="table-text">SCR-01</text>
+  <text x="560" y="1790" class="table-text">통증 87.4% 감소 통계 및 정형외과 전문의/개발자 4.9점 비포&amp;애프터 리뷰 확인</text>
+  <text x="1200" y="1790" class="table-text">사회적 증명(Social Proof) 확립</text>
+
+  <rect x="70" y="1805" width="1540" height="32" class="table-row-even" />
+  <text x="90" y="1825" class="table-text" font-weight="700">ST-05</text>
+  <text x="170" y="1825" class="table-text">서브페이지 이동 배너</text>
+  <text x="360" y="1825" class="table-text">사용자</text>
+  <text x="460" y="1720" class="table-text">SCR-01</text>
+  <text x="560" y="1825" class="table-text">[28개 전 상품 컬렉션 보러가기 ➔] 럭셔리 전환 배너 버튼 클릭</text>
+  <text x="1200" y="1825" class="table-text">SCR-02 서브페이지로 화면 전환</text>
+
+  <rect x="70" y="1840" width="1540" height="32" class="table-row-odd" />
+  <text x="90" y="1860" class="table-text" font-weight="700">ST-06</text>
+  <text x="170" y="1860" class="table-text">사이즈 파인더 조작</text>
+  <text x="360" y="1860" class="table-text">사용자/시스템</text>
+  <text x="460" y="1860" class="table-text">SCR-01/04</text>
+  <text x="560" y="1860" class="table-text">키(178cm) / 몸무게(72kg) 슬라이더 조작 시 1초 만에 권장 M 사이즈 자동 도출</text>
+  <text x="1200" y="1860" class="table-text">0.1mm 실측표 팝업 연동</text>
+
+  <rect x="70" y="1875" width="1540" height="32" class="table-row-even" />
+  <text x="90" y="1895" class="table-text" font-weight="700">ST-07</text>
+  <text x="170" y="1895" class="table-text">AI HUD &amp; 센터 예약</text>
+  <text x="360" y="1895" class="table-text">사용자/시스템</text>
+  <text x="460" y="1895" class="table-text">SCR-01</text>
+  <text x="560" y="1895" class="table-text">실시간 자세 각도 점수(95점) 측정 및 전국 12개 센터 1회 무료 진단 예약 모달</text>
+  <text x="1200" y="1895" class="table-text">카카오톡 예약 확정 알림톡</text>
+
+  <rect x="70" y="1910" width="1540" height="32" class="table-row-odd" />
+  <text x="90" y="1930" class="table-text" font-weight="700">ST-08</text>
+  <text x="170" y="1930" class="table-text">서브 카탈로그 탐색</text>
+  <text x="360" y="1930" class="table-text">사용자</text>
+  <text x="460" y="1930" class="table-text">SCR-02</text>
+  <text x="560" y="1930" class="table-text">상단 고정 스마트 사이즈 파인더 마스터 바 및 4대 카테고리 28개 전 상품 4×7 그리드 로딩</text>
+  <text x="1200" y="1930" class="table-text">전체 상품 탐색 피로도 최소화</text>
+
+  <rect x="70" y="1945" width="1540" height="32" class="table-row-even" />
+  <text x="90" y="1965" class="table-text" font-weight="700">ST-09</text>
+  <text x="170" y="1965" class="table-text">4대 카테고리 필터링</text>
+  <text x="360" y="1965" class="table-text">사용자/시스템</text>
+  <text x="460" y="1965" class="table-text">SCR-02</text>
+  <text x="560" y="1965" class="table-text">시그니처(7), 전문케어(7), 스마트센서(7), 직업ACC(7) 탭 전환 및 [권장: M] 실시간 표시</text>
+  <text x="1200" y="1965" class="table-text">즉시 DOM 필터링(0.05초)</text>
+
+  <rect x="70" y="1980" width="1540" height="32" class="table-row-odd" />
+  <text x="90" y="2000" class="table-text" font-weight="700">ST-10</text>
+  <text x="170" y="2000" class="table-text">상품 퀵뷰 모달 확인</text>
+  <text x="360" y="2000" class="table-text">사용자</text>
+  <text x="460" y="2000" class="table-text">SCR-05</text>
+  <text x="560" y="2000" class="table-text">[🔍 퀵뷰] 클릭 시 3D 단면 분해도, 부위별 0.1mm 실측표, 동일 체형 구매 후기 확인</text>
+  <text x="1200" y="2000" class="table-text">[30일 0원 시착] 바로 연결</text>
+
+  <rect x="70" y="2015" width="1540" height="32" class="table-row-even" />
+  <text x="90" y="2035" class="table-text" font-weight="700">ST-11</text>
+  <text x="170" y="2035" class="table-text">Sticky 시착 바 클릭</text>
+  <text x="360" y="2035" class="table-text">사용자</text>
+  <text x="460" y="2035" class="table-text">SCR-01/02</text>
+  <text x="560" y="2035" class="table-text">상시 하단 고정 바 [지금 0원에 시착하기 ➔] 버튼 원클릭</text>
+  <text x="1200" y="2035" class="table-text">SCR-06 Bottom Sheet 모달 오픈</text>
+
+  <rect x="70" y="2050" width="1540" height="32" class="table-row-odd" />
+  <text x="90" y="2070" class="table-text" font-weight="700">ST-12</text>
+  <text x="170" y="2070" class="table-text">0원 퀵 체크아웃 입력</text>
+  <text x="360" y="2070" class="table-text">사용자</text>
+  <text x="460" y="2070" class="table-text">SCR-06</text>
+  <text x="560" y="2070" class="table-text">선택 상품 및 M 사이즈 자동 매핑, 도로명 주소/연락처 간편 입력, 결제금액 0원 확인</text>
+  <text x="1200" y="2070" class="table-text">입력 누락 시 실시간 붉은색 안내</text>
+
+  <rect x="70" y="2085" width="1540" height="32" class="table-row-even" />
+  <text x="90" y="2105" class="table-text" font-weight="700">ST-13</text>
+  <text x="170" y="2105" class="table-text">필수값 유효성 검증</text>
+  <text x="360" y="2105" class="table-text">시스템</text>
+  <text x="460" y="2105" class="table-text">SCR-06</text>
+  <text x="560" y="2105" class="table-text">주소 정합성 및 휴대폰 11자리 번호 정규식 유효성 검사 통과 여부 판별</text>
+  <text x="1200" y="2105" class="table-text">불일치 시 입력 포커스 자동 이동</text>
+
+  <rect x="70" y="2120" width="1540" height="32" class="table-row-odd" />
+  <text x="90" y="2140" class="table-text" font-weight="700">ST-14</text>
+  <text x="170" y="2140" class="table-text">0원 접수 완료 &amp; 출고</text>
+  <text x="360" y="2140" class="table-text">시스템</text>
+  <text x="460" y="2140" class="table-text">SCR-06</text>
+  <text x="560" y="2140" class="table-text">결제금액 0원 승인 완료, 주문번호 생성, 카카오톡 알림톡 전송 및 당일 키트 출고</text>
+  <text x="1200" y="2140" class="table-text">30일 무료 반품/맞교환 보장</text>
+</svg>
