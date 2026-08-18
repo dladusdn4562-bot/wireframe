@@ -1,203 +1,298 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1350" width="1200" height="1350">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1350" width="1200" height="1350" style="background:#f8f9fa; font-family:'Pretendard', -apple-system, sans-serif;">
   <defs>
-    <style>
-      .bg { fill: #fbf9f5; }
-      .header-title { font-family: 'Noto Serif KR', 'Pretendard', sans-serif; font-size: 28px; font-weight: 800; fill: #1c2420; }
-      .header-desc { font-family: 'Pretendard', sans-serif; font-size: 14px; fill: #4a5750; }
-      
-      .tree-card { fill: #ffffff; stroke: #e2dbca; stroke-width: 1.5; rx: 12; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.03)); }
-      .tree-card-root { fill: #243028; rx: 12; }
-      .root-text { font-family: 'Pretendard', sans-serif; font-size: 16px; font-weight: 800; fill: #ffffff; text-anchor: middle; }
-      
-      .page-col-header { fill: #f5f1e8; stroke: #cfc5af; stroke-width: 1.5; rx: 8; }
-      .col-title { font-family: 'Pretendard', sans-serif; font-size: 14px; font-weight: 800; fill: #243028; text-anchor: middle; }
-      
-      .node-card { fill: #ffffff; stroke: #ded4c0; stroke-width: 1.2; rx: 6; }
-      .node-card-active { fill: #fef8f0; stroke: #d26e2e; stroke-width: 1.5; rx: 6; }
-      .node-text-title { font-family: 'Pretendard', sans-serif; font-size: 12px; font-weight: 800; fill: #1c2420; }
-      .node-text-desc { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7c8a82; }
-      
-      .badge-tag { fill: #243028; rx: 3; }
-      .badge-tag-accent { fill: #d26e2e; rx: 3; }
-      .badge-text { font-family: 'Pretendard', sans-serif; font-size: 9.5px; font-weight: 800; fill: #ffffff; text-anchor: middle; }
-      
-      .line-link { stroke: #cfc5af; stroke-width: 1.8; fill: none; }
-      .line-link-accent { stroke: #d26e2e; stroke-width: 1.8; stroke-dasharray: 4,4; fill: none; }
-    </style>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142c21" />
+      <stop offset="100%" stop-color="#234a38" />
+    </linearGradient>
+    <linearGradient id="rootGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b382b" />
+      <stop offset="100%" stop-color="#2d5a43" />
+    </linearGradient>
+    <linearGradient id="branchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0f5f2" />
+    </linearGradient>
+    <linearGradient id="storyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff9f5" />
+      <stop offset="100%" stop-color="#fceee6" />
+    </linearGradient>
+    <linearGradient id="ctaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97736" />
+      <stop offset="100%" stop-color="#b8581b" />
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.06" />
+    </filter>
   </defs>
 
-  <rect width="1200" height="1350" class="bg" />
+  <style>
+    .title-main { font-size: 26px; font-weight: 800; fill: #ffffff; letter-spacing: -0.5px; }
+    .title-sub { font-size: 14px; font-weight: 500; fill: #a8d5be; }
+    .node-title { font-size: 15px; font-weight: 700; fill: #1b382b; }
+    .story-node-title { font-size: 15px; font-weight: 800; fill: #9c4310; }
+    .leaf-text { font-size: 12px; font-weight: 500; fill: #334e40; }
+    .highlight-text { font-size: 12px; font-weight: 700; fill: #ffffff; }
+    .badge { font-size: 11px; font-weight: 700; fill: #ffffff; }
+    .connector { stroke: #9ebdb0; stroke-width: 2; stroke-linecap: round; fill: none; }
+    .connector-story { stroke: #e3a67d; stroke-width: 2; stroke-linecap: round; fill: none; }
+  </style>
 
-  <!-- Title Banner -->
-  <rect x="40" y="30" width="1120" height="90" fill="#ffffff" stroke="#e2dbca" stroke-width="1.5" rx="12" />
-  <text x="70" y="72" class="header-title">SEUMIM 사이트 구조맵 (사이트맵_91) - 바디럽형 브랜드 소개 전용</text>
-  <text x="70" y="100" class="header-desc">바디럽(BODYLUV)형 일상 공감 서사 &amp; 0.1mm 원천 기술 증명 ➔ 4대 솔루션 라인업 ➔ 3대 대표작 3D 복귀 퍼널</text>
+  <!-- HEADER -->
+  <rect x="40" y="30" width="1120" height="100" rx="16" fill="url(#headerGrad)" filter="url(#cardShadow)" />
+  <text x="70" y="72" class="title-main">SEUMIM 스밈 브랜드 소개 페이지 사이트 구조맵 (IA)</text>
+  <text x="70" y="102" class="title-sub">바디럽(BODYLUV)형 4대 상품 라인별 독립 스토리텔링 &amp; 3D 인터랙티브 0원 시착 퍼널 모델 (가상클라이언트 91)</text>
+  <rect x="990" y="55" width="140" height="34" rx="8" fill="#d97736" />
+  <text x="1060" y="77" class="badge" text-anchor="middle">Bodyluv Story V1.0</text>
 
-  <!-- Root Node -->
-  <rect x="460" y="150" width="280" height="48" class="tree-card-root" />
-  <text x="600" y="180" class="root-text">SEUMIM 플랫폼 (Root IA)</text>
+  <!-- ROOT NODE -->
+  <rect x="360" y="160" width="480" height="70" rx="14" fill="url(#rootGrad)" filter="url(#cardShadow)" />
+  <text x="600" y="193" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle">스밈(SEUMIM) 브랜드 소개 서브페이지 (Our Story)</text>
+  <text x="600" y="215" font-size="12" font-weight="500" fill="#c3e4d4" text-anchor="middle">브랜드 안녕(安寧) 매니페스토 ➔ 4대 상품 라인별 독자적 탄생 서사 ➔ 28종 쇼케이스</text>
 
-  <!-- Branch Lines from Root -->
-  <path d="M 600 198 L 600 230 L 220 230 L 220 260" class="line-link" />
-  <path d="M 600 230 L 600 260" class="line-link" />
-  <path d="M 600 230 L 980 230 L 980 260" class="line-link" />
+  <!-- CONNECTORS FROM ROOT TO 5 MAIN BRANCHES -->
+  <path d="M 600 230 L 600 260 L 150 260 L 150 300" class="connector" />
+  <path d="M 600 230 L 600 260 L 375 260 L 375 300" class="connector" />
+  <path d="M 600 230 L 600 300" class="connector" />
+  <path d="M 600 230 L 600 260 L 825 260 L 825 300" class="connector" />
+  <path d="M 600 230 L 600 260 L 1050 260 L 1050 300" class="connector" />
 
-  <!-- ================= COL 1: 메인 랜딩페이지 (PAGE-01) ================= -->
-  <rect x="40" y="260" width="360" height="1030" class="tree-card" />
-  <rect x="55" y="275" width="330" height="36" class="page-col-header" />
-  <text x="220" y="298" class="col-title">[PAGE-01] 메인 랜딩페이지 (SCR-01)</text>
+  <!-- BRANCH 1: GNB & 탭 바 -->
+  <g transform="translate(40, 300)">
+    <rect x="0" y="0" width="220" height="60" rx="10" fill="url(#branchGrad)" stroke="#2d5a43" stroke-width="1.5" filter="url(#cardShadow)" />
+    <text x="110" y="26" class="node-title" text-anchor="middle">1.0 GNB &amp; 앵커 탭 바</text>
+    <text x="110" y="46" font-size="11" fill="#668274" text-anchor="middle">글로벌 상단 내비게이션</text>
 
-  <!-- SEC-01 -->
-  <rect x="55" y="325" width="330" height="48" class="node-card" />
-  <rect x="65" y="333" width="55" height="16" class="badge-tag" />
-  <text x="92" y="345" class="badge-text">SEC-01</text>
-  <text x="130" y="345" class="node-text-title">GNB (라인아트 찜/장바구니)</text>
-  <text x="65" y="363" class="node-text-desc">중앙 5대 내비 + [하트 찜][토트백 장바구니] + [30일 무료시착]</text>
+    <!-- Children -->
+    <path d="M 110 60 L 110 90" class="connector" />
+    <rect x="10" y="90" width="200" height="40" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="115" class="leaf-text">1.1 스밈 0.1mm 로고 (홈 링크)</text>
 
-  <!-- SEC-02 -->
-  <rect x="55" y="380" width="330" height="60" class="node-card-active" />
-  <rect x="65" y="388" width="55" height="16" class="badge-tag-accent" />
-  <text x="92" y="400" class="badge-text">SEC-02</text>
-  <text x="130" y="400" class="node-text-title">Hero &amp; 4대 자부심 지표 바 (First View)</text>
-  <text x="65" y="418" class="node-text-desc">• 0.1mm 심리스 선언 &amp; 38g 초경량/99.8% 은폐율/300+/100%</text>
-  <text x="65" y="432" class="node-text-desc">• [3대 대표작 알아보기 ➔] / [30일 0원 무료 시착] CTA</text>
+    <path d="M 110 130 L 110 145" class="connector" />
+    <rect x="10" y="145" width="200" height="40" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="170" class="leaf-text">1.2 GNB (홈/대표3/전체28/Our Story)</text>
 
-  <!-- SEC-03~05 -->
-  <rect x="55" y="448" width="330" height="68" class="node-card" />
-  <rect x="65" y="456" width="65" height="16" class="badge-tag" />
-  <text x="97" y="468" class="badge-text">SEC-03~05</text>
-  <text x="140" y="468" class="node-text-title">3대 대표작 지그재그 조명 (Top 1~3)</text>
-  <text x="65" y="488" class="node-text-desc">• Top 1: 넥&amp;숄더 밴드 (15도 견인 &amp; 자석 버클)</text>
-  <text x="65" y="502" class="node-text-desc">• Top 2: 척추 조끼 (숨은 지퍼) / Top 3: 골반 벨트 (에어셀)</text>
+    <path d="M 110 185 L 110 200" class="connector" />
+    <rect x="10" y="200" width="200" height="40" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="225" class="leaf-text">1.3 유틸리티 (토트백 장바구니/찜)</text>
 
-  <!-- SEC-06 -->
-  <rect x="55" y="524" width="330" height="52" class="node-card" />
-  <rect x="65" y="532" width="55" height="16" class="badge-tag" />
-  <text x="92" y="544" class="badge-text">SEC-06</text>
-  <text x="130" y="544" class="node-text-title">300+ 전문가 실착 데이터 (★ 4.9)</text>
-  <text x="65" y="562" class="node-text-desc">통증 87.4% 감소 + 의사/개발자/디자이너 3대 후기</text>
+    <path d="M 110 240 L 110 255" class="connector" />
+    <rect x="10" y="255" width="200" height="50" rx="6" fill="url(#ctaGrad)" />
+    <text x="20" y="278" class="highlight-text">1.4 스토리 앵커 탭 바</text>
+    <text x="20" y="295" font-size="10" fill="#fceee6">(전체 / 코어 / 척추 / 골반 / 테크)</text>
+  </g>
 
-  <!-- SEC-07 -->
-  <rect x="55" y="584" width="330" height="48" class="node-card" />
-  <rect x="65" y="592" width="55" height="16" class="badge-tag" />
-  <text x="92" y="604" class="badge-text">SEC-07</text>
-  <text x="130" y="604" class="node-text-title">28개 전 상품 컬렉션 이동 배너</text>
-  <text x="65" y="622" class="node-text-desc">4대 카테고리 안내 &amp; [전 상품 컬렉션 보러가기 ➔]</text>
+  <!-- BRANCH 2: 브랜드 인트로 -->
+  <g transform="translate(275, 300)">
+    <rect x="0" y="0" width="200" height="60" rx="10" fill="url(#branchGrad)" stroke="#2d5a43" stroke-width="1.5" filter="url(#cardShadow)" />
+    <text x="100" y="26" class="node-title" text-anchor="middle">2.0 안녕(安寧) 매니페스토</text>
+    <text x="100" y="46" font-size="11" fill="#668274" text-anchor="middle">바디럽형 일상 공감 인트로</text>
 
-  <!-- SEC-08 -->
-  <rect x="55" y="640" width="330" height="52" class="node-card" />
-  <rect x="65" y="648" width="55" height="16" class="badge-tag" />
-  <text x="92" y="660" class="badge-text">SEC-08</text>
-  <text x="130" y="660" class="node-text-title">스마트 체형 맞춤 1초 사이즈 파인더</text>
-  <text x="65" y="678" class="node-text-desc">키/몸무게 슬라이더 ➔ 권장 최적 사이즈(M) 자동 추천</text>
+    <!-- Children -->
+    <path d="M 100 60 L 100 90" class="connector" />
+    <rect x="10" y="90" width="180" height="40" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="115" class="leaf-text">2.1 안녕 : 아무 탈 없는 편안함</text>
 
-  <!-- SEC-09 -->
-  <rect x="55" y="700" width="330" height="52" class="node-card" />
-  <rect x="65" y="708" width="55" height="16" class="badge-tag" />
-  <text x="92" y="720" class="badge-text">SEC-09</text>
-  <text x="130" y="720" class="node-text-title">AI 실시간 HUD &amp; 전국 웰니스 센터</text>
-  <text x="65" y="738" class="node-text-desc">95점 자세 각도 원형 게이지 &amp; 1회 무료 체험 예약</text>
+    <path d="M 100 130 L 100 145" class="connector" />
+    <rect x="10" y="145" width="180" height="50" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="167" class="leaf-text">2.2 바디럽형 결정적 질문</text>
+    <text x="20" y="184" font-size="10" fill="#668274">"왜 통증을 늘 참아야 할까?"</text>
 
-  <!-- SEC-10 -->
-  <rect x="55" y="760" width="330" height="44" class="node-card" />
-  <rect x="65" y="768" width="55" height="16" class="badge-tag" />
-  <text x="92" y="780" class="badge-text">SEC-10</text>
-  <text x="130" y="780" class="node-text-title">자주 묻는 질문 FAQ (아코디언)</text>
-  <text x="65" y="796" class="node-text-desc">결제금액 0원 및 100% 무료 맞교환/반품 보증</text>
+    <path d="M 100 195 L 100 210" class="connector" />
+    <rect x="10" y="210" width="180" height="50" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="232" class="leaf-text">2.3 스밈의 존재 이유</text>
+    <text x="20" y="249" font-size="10" fill="#668274">"자연스럽게 스며드는 균형"</text>
+  </g>
 
-  <!-- SEC-11~12 -->
-  <rect x="55" y="812" width="330" height="52" class="node-card" />
-  <rect x="65" y="820" width="65" height="16" class="badge-tag" />
-  <text x="97" y="832" class="badge-text">SEC-11~12</text>
-  <text x="140" y="832" class="node-text-title">글로벌 푸터 &amp; 상시 Sticky 0원 시착 바</text>
-  <text x="65" y="850" class="node-text-desc">CS 고객센터 1588-9240 &amp; 플로팅 0원 시착 바</text>
+  <!-- BRANCH 3: 4대 상품 라인별 독자적 탄생 서사 (CORE FEATURE - WIDE EXPANDED) -->
+  <g transform="translate(490, 300)">
+    <rect x="0" y="0" width="220" height="60" rx="10" fill="url(#storyGrad)" stroke="#d97736" stroke-width="2" filter="url(#cardShadow)" />
+    <text x="110" y="26" class="story-node-title" text-anchor="middle">3.0 상품별 독립 서사</text>
+    <text x="110" y="46" font-size="11" fill="#9c4310" text-anchor="middle">스밈 4대 라인 탄생 비하인드</text>
+  </g>
 
-  <!-- SEC-13~17 Modals -->
-  <rect x="55" y="872" width="330" height="60" class="node-card-active" />
-  <rect x="65" y="880" width="65" height="16" class="badge-tag-accent" />
-  <text x="97" y="892" class="badge-text">SEC-13~17</text>
-  <text x="140" y="892" class="node-text-title">핵심 모달 5종 (0원 체크아웃/찜/장바구니)</text>
-  <text x="65" y="910" class="node-text-desc">• 0원 시착 바텀시트, 찜목록, 장바구니, 사이즈가이드, 3D퀵뷰</text>
+  <!-- 4 INDEPENDENT PRODUCT LINE STORY COLUMNS BELOW BRANCH 3 -->
+  <!-- Line 1: 0.1mm 코어웨어 -->
+  <g transform="translate(40, 660)">
+    <rect x="0" y="0" width="260" height="340" rx="12" fill="#ffffff" stroke="#d97736" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect x="0" y="0" width="260" height="38" rx="12" fill="#d97736" />
+    <text x="130" y="24" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Line 01. 0.1mm 코어웨어 서사</text>
 
-  <!-- ================= COL 2: 상품 카테고리 서브 (PAGE-02) ================= -->
-  <rect x="420" y="260" width="360" height="1030" class="tree-card" />
-  <rect x="435" y="275" width="330" height="36" class="page-col-header" />
-  <text x="600" y="298" class="col-title">[PAGE-02] 상품 카테고리 서브 (SCR-02)</text>
+    <text x="15" y="65" font-size="12" font-weight="700" fill="#9c4310">① 문제 발견</text>
+    <text x="15" y="85" font-size="11" fill="#444">숨 막히는 보정기와 와이어의 고통</text>
 
-  <!-- SUB-SHOP-01 -->
-  <rect x="435" y="325" width="330" height="52" class="node-card" />
-  <rect x="445" y="333" width="75" height="16" class="badge-tag" />
-  <text x="482" y="345" class="badge-text">SUB-SHOP-01</text>
-  <text x="530" y="345" class="node-text-title">4대 카테고리 탭 필터 (28종)</text>
-  <text x="445" y="363" class="node-text-desc">전체(28)/시그니처(7)/전문케어(7)/센서(7)/ACC(7)</text>
+    <text x="15" y="115" font-size="12" font-weight="700" fill="#9c4310">② 3년 원천 연구 (R&amp;D)</text>
+    <text x="15" y="135" font-size="11" fill="#444">엔지니어들의 450회 원사 배합 실험</text>
 
-  <!-- SUB-SHOP-02 -->
-  <rect x="435" y="385" width="330" height="56" class="node-card-active" />
-  <rect x="445" y="393" width="75" height="16" class="badge-tag-accent" />
-  <text x="482" y="405" class="badge-text">SUB-SHOP-02</text>
-  <text x="530" y="405" class="node-text-title">스마트 사이즈 마스터 연동 바</text>
-  <text x="445" y="425" class="node-text-desc">• 178cm/72kg ➔ 전 상품 [권장: M 뱃지] 실시간 동기화</text>
+    <text x="15" y="165" font-size="12" font-weight="700" fill="#9c4310">③ 시각 에셋 (VIS-01)</text>
+    <text x="15" y="185" font-size="11" fill="#444">🧵 나노 센서 섬유 450배 확대 스캔</text>
 
-  <!-- SUB-SHOP-03 -->
-  <rect x="435" y="450" width="330" height="110" class="node-card" />
-  <rect x="445" y="458" width="75" height="16" class="badge-tag" />
-  <text x="482" y="470" class="badge-text">SUB-SHOP-03</text>
-  <text x="530" y="470" class="node-text-title">28개 전 상품 4×7 그리드 카탈로그</text>
-  <text x="445" y="492" class="node-text-desc">• 시그니처 코어웨어 7종 (넥밴드, 척추조끼, 골반벨트...)</text>
-  <text x="445" y="508" class="node-text-desc">• 전문 집중 케어 7종 (손목, 럼버쿠션, 카프슬리브...)</text>
-  <text x="445" y="524" class="node-text-desc">• 스마트 센서 테크 7종 (모션트래커, AI클립, HUD...)</text>
-  <text x="445" y="540" class="node-text-desc">• 직업 맞춤 교정 ACC 7종 (에어럼버, 암레스트, 힐앵커...)</text>
+    <text x="15" y="215" font-size="12" font-weight="700" fill="#9c4310">④ 일상의 변화</text>
+    <text x="15" y="235" font-size="11" fill="#444">99.8% 은폐율, 하루 종일 펴지는 어깨</text>
 
-  <!-- SUB-SHOP-04 -->
-  <rect x="435" y="570" width="330" height="60" class="node-card-active" />
-  <rect x="445" y="578" width="75" height="16" class="badge-tag-accent" />
-  <text x="482" y="590" class="badge-text">SUB-SHOP-04</text>
-  <text x="530" y="590" class="node-text-title">[🔍 상품 퀵뷰 모달] (0.1mm 실측표)</text>
-  <text x="445" y="610" class="node-text-desc">• 3D 단면 분해도, 부위별 실측표, 체형 후기, 0원 시착 담기</text>
+    <rect x="15" y="265" width="230" height="55" rx="8" fill="url(#ctaGrad)" />
+    <text x="25" y="288" class="highlight-text">대표작: 0.1mm 넥&amp;숄더 밴드</text>
+    <text x="25" y="306" font-size="11" fill="#fceee6">3D 단면 분해 ➔ [0원 무료 시착]</text>
+  </g>
 
-  <!-- ================= COL 3: 바디럽형 브랜드 소개 서브 (PAGE-03) ================= -->
-  <rect x="800" y="260" width="360" height="1030" class="tree-card" />
-  <rect x="815" y="275" width="330" height="36" class="page-col-header" />
-  <text x="980" y="298" class="col-title">[PAGE-03] 바디럽형 브랜드 소개 서브 (SCR-03)</text>
+  <!-- Line 2: 3D 에어로 척추조끼 -->
+  <g transform="translate(325, 660)">
+    <rect x="0" y="0" width="260" height="340" rx="12" fill="#ffffff" stroke="#2d5a43" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect x="0" y="0" width="260" height="38" rx="12" fill="#2d5a43" />
+    <text x="130" y="24" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Line 02. 3D 척추 정렬 조끼 서사</text>
 
-  <!-- SUB-STORY-01 -->
-  <rect x="815" y="325" width="330" height="56" class="node-card-active" />
-  <rect x="825" y="333" width="75" height="16" class="badge-tag-accent" />
-  <text x="862" y="345" class="badge-text">SUB-STORY-01</text>
-  <text x="910" y="345" class="node-text-title">브랜드 서브 헤더 &amp; 일상 공감 인트로</text>
-  <text x="825" y="365" class="node-text-desc">"왜 자세 무너짐은 늘 아프고 참아야 할까?" 바디럽형 질문</text>
+    <text x="15" y="65" font-size="12" font-weight="700" fill="#1b382b">① 문제 발견</text>
+    <text x="15" y="85" font-size="11" fill="#444">장시간 착석 직장인의 굽은 등 &amp; 땀</text>
 
-  <!-- SUB-STORY-02 -->
-  <rect x="815" y="390" width="330" height="74" class="node-card" />
-  <rect x="825" y="398" width="75" height="16" class="badge-tag" />
-  <text x="862" y="410" class="badge-text">SUB-STORY-02</text>
-  <text x="910" y="410" class="node-text-title">Chapter 01. The Origin (탄생의 배경)</text>
-  <text x="825" y="430" class="node-text-desc">• [VIS-01] 나노 섬유 현미경 450배 확대 스캔 컷 매핑</text>
-  <text x="825" y="446" class="node-text-desc">• 부품 엔지니어 팀의 개발자 통증 고민 &amp; 3년 450회 실험</text>
+    <text x="15" y="115" font-size="12" font-weight="700" fill="#1b382b">② 3년 원천 연구 (R&amp;D)</text>
+    <text x="15" y="135" font-size="11" fill="#444">척추 기립근 탄성 지렛대 프레임 공학</text>
 
-  <!-- SUB-STORY-03 -->
-  <rect x="815" y="472" width="330" height="74" class="node-card" />
-  <rect x="825" y="480" width="75" height="16" class="badge-tag" />
-  <text x="862" y="492" class="badge-text">SUB-STORY-03</text>
-  <text x="910" y="492" class="node-text-title">Chapter 02. The Philosophy (브랜드 철학)</text>
-  <text x="825" y="512" class="node-text-desc">• [VIS-02] 인체공학 지렛대 탄성 복원 도면 매핑</text>
-  <text x="825" y="528" class="node-text-desc">• 강제 압박 거부, 움직임에 반응하는 Effortless Wellness</text>
+    <text x="15" y="165" font-size="12" font-weight="700" fill="#1b382b">③ 시각 에셋 (VIS-02)</text>
+    <text x="15" y="185" font-size="11" fill="#444">📐 척추 프레임 단면 &amp; 쿨링 인포</text>
 
-  <!-- SUB-STORY-04 -->
-  <rect x="815" y="554" width="330" height="74" class="node-card" />
-  <rect x="825" y="562" width="75" height="16" class="badge-tag" />
-  <text x="862" y="574" class="badge-text">SUB-STORY-04</text>
-  <text x="910" y="574" class="node-text-title">Chapter 03. The Vision (글로벌 도약)</text>
-  <text x="825" y="594" class="node-text-desc">• [VIS-03] 300인 전문의 실착 포토 갤러리 매핑</text>
-  <text x="825" y="610" class="node-text-desc">• 100% 생분해 친환경 원사 &amp; 6조 8천억 웰니스 시장 도약</text>
+    <text x="15" y="215" font-size="12" font-weight="700" fill="#1b382b">④ 일상의 변화</text>
+    <text x="15" y="235" font-size="11" fill="#444">출근복 속 숨은 지퍼, 사계절 쾌적 정렬</text>
 
-  <!-- SUB-STORY-05 -->
-  <rect x="815" y="636" width="330" height="60" class="node-card-active" />
-  <rect x="825" y="644" width="75" height="16" class="badge-tag-accent" />
-  <text x="862" y="656" class="badge-text">SUB-STORY-05</text>
-  <text x="910" y="656" class="node-text-title">3대 대표작 3D 체험 전환 배너</text>
-  <text x="825" y="676" class="node-text-desc">[스밈 3대 대표작 3D 체험하러 가기 ➔] (메인 #sec-featured 복귀)</text>
+    <rect x="15" y="265" width="230" height="55" rx="8" fill="#1b382b" />
+    <text x="25" y="288" class="highlight-text">대표작: 3D 척추 정렬 조끼</text>
+    <text x="25" y="306" font-size="11" fill="#c3e4d4">3D 작동 원리 ➔ [0원 무료 시착]</text>
+  </g>
 
-  <!-- Flow Arrows (Connecting SUB-STORY-05 to SEC-03) -->
-  <path d="M 815 666 L 390 666 L 390 482" class="line-link-accent" />
+  <!-- Line 3: 골반 에어셀 벨트 -->
+  <g transform="translate(615, 660)">
+    <rect x="0" y="0" width="260" height="340" rx="12" fill="#ffffff" stroke="#2d5a43" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect x="0" y="0" width="260" height="38" rx="12" fill="#2d5a43" />
+    <text x="130" y="24" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Line 03. 골반 에어셀 벨트 서사</text>
+
+    <text x="15" y="65" font-size="12" font-weight="700" fill="#1b382b">① 문제 발견</text>
+    <text x="15" y="85" font-size="11" fill="#444">무의식적인 다리 꼬기 &amp; 골반 틀어짐</text>
+
+    <text x="15" y="115" font-size="12" font-weight="700" fill="#1b382b">② 3년 원천 연구 (R&amp;D)</text>
+    <text x="15" y="135" font-size="11" fill="#444">착석 체압 감지 반사 에어셀 메커니즘</text>
+
+    <text x="15" y="165" font-size="12" font-weight="700" fill="#1b382b">③ 시각 에셋 (VIS-03)</text>
+    <text x="15" y="185" font-size="11" fill="#444">💺 착석 체압 비대칭 감지 시뮬레이션</text>
+
+    <text x="15" y="215" font-size="12" font-weight="700" fill="#1b382b">④ 일상의 변화</text>
+    <text x="15" y="235" font-size="11" fill="#444">다리 꼬기 물리 차단, 요추 하중 65% 분산</text>
+
+    <rect x="15" y="265" width="230" height="55" rx="8" fill="#1b382b" />
+    <text x="25" y="288" class="highlight-text">대표작: 골반 에어셀 벨트</text>
+    <text x="25" y="306" font-size="11" fill="#c3e4d4">3D 체압 분산도 ➔ [0원 무료 시착]</text>
+  </g>
+
+  <!-- Line 4: 스마트 햅틱 & 직업 ACC -->
+  <g transform="translate(900, 660)">
+    <rect x="0" y="0" width="260" height="340" rx="12" fill="#ffffff" stroke="#2d5a43" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect x="0" y="0" width="260" height="38" rx="12" fill="#2d5a43" />
+    <text x="130" y="24" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Line 04. 스마트 테크 &amp; 직업ACC</text>
+
+    <text x="15" y="65" font-size="12" font-weight="700" fill="#1b382b">① 문제 발견</text>
+    <text x="15" y="85" font-size="11" fill="#444">내 자세가 언제 무너지는지 모름</text>
+
+    <text x="15" y="115" font-size="12" font-weight="700" fill="#1b382b">② 3년 원천 연구 (R&amp;D)</text>
+    <text x="15" y="135" font-size="11" fill="#444">0.01초 시차 필터링 &amp; 직업별 지지 도구</text>
+
+    <text x="15" y="165" font-size="12" font-weight="700" fill="#1b382b">③ 시각 에셋 (VIS-04)</text>
+    <text x="15" y="185" font-size="11" fill="#444">📊 0.01초 모션 파형 &amp; 300인 포토</text>
+
+    <text x="15" y="215" font-size="12" font-weight="700" fill="#1b382b">④ 일상의 변화</text>
+    <text x="15" y="235" font-size="11" fill="#444">실시간 진동 알림 &amp; 직업별 맞춤 지지</text>
+
+    <rect x="15" y="265" width="230" height="55" rx="8" fill="#1b382b" />
+    <text x="25" y="288" class="highlight-text">대표작: 스마트 센서 &amp; ACC 7종</text>
+    <text x="25" y="306" font-size="11" fill="#c3e4d4">HUD 모니터링 ➔ [0원 무료 시착]</text>
+  </g>
+
+  <!-- CONNECTORS FROM 3.0 TO 4 PRODUCT LINES -->
+  <path d="M 600 360 L 600 620 L 170 620 L 170 660" class="connector-story" />
+  <path d="M 600 620 L 455 620 L 455 660" class="connector-story" />
+  <path d="M 600 620 L 745 620 L 745 660" class="connector-story" />
+  <path d="M 600 620 L 1030 620 L 1030 660" class="connector-story" />
+
+  <!-- BRANCH 4: 사회적 검증 & 비전 (Top Right) -->
+  <g transform="translate(725, 300)">
+    <rect x="0" y="0" width="200" height="60" rx="10" fill="url(#branchGrad)" stroke="#2d5a43" stroke-width="1.5" filter="url(#cardShadow)" />
+    <text x="100" y="26" class="node-title" text-anchor="middle">4.0 사회적 검증 &amp; 비전</text>
+    <text x="100" y="46" font-size="11" fill="#668274" text-anchor="middle">300인 임상 &amp; 글로벌 도약</text>
+
+    <!-- Children -->
+    <path d="M 100 60 L 100 90" class="connector" />
+    <rect x="10" y="90" width="180" height="40" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="115" class="leaf-text">4.1 300인 의사·개발자 실착</text>
+
+    <path d="M 100 130 L 100 145" class="connector" />
+    <rect x="10" y="145" width="180" height="40" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="170" class="leaf-text">4.2 3주 착용 통증 87.4% 감소</text>
+
+    <path d="M 100 185 L 100 200" class="connector" />
+    <rect x="10" y="200" width="180" height="40" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="225" class="leaf-text">4.3 100% 생분해성 친환경 원사</text>
+  </g>
+
+  <!-- BRANCH 5: 28종 쇼케이스 & 0원 시착 (Far Right) -->
+  <g transform="translate(950, 300)">
+    <rect x="0" y="0" width="210" height="60" rx="10" fill="url(#branchGrad)" stroke="#2d5a43" stroke-width="1.5" filter="url(#cardShadow)" />
+    <text x="105" y="26" class="node-title" text-anchor="middle">5.0 28종 쇼케이스 &amp; 시착</text>
+    <text x="105" y="46" font-size="11" fill="#668274" text-anchor="middle">마찰 제로 전환 퍼널</text>
+
+    <!-- Children -->
+    <path d="M 105 60 L 105 90" class="connector" />
+    <rect x="10" y="90" width="190" height="40" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="115" class="leaf-text">5.1 4대 카테고리 28종 탭 매트릭스</text>
+
+    <path d="M 105 130 L 105 145" class="connector" />
+    <rect x="10" y="145" width="190" height="40" rx="6" fill="#ffffff" stroke="#cfded5" />
+    <text x="20" y="170" class="leaf-text">5.2 [3대 대표작 3D 복귀 배너]</text>
+
+    <path d="M 105 185 L 105 200" class="connector" />
+    <rect x="10" y="200" width="190" height="50" rx="6" fill="url(#ctaGrad)" />
+    <text x="20" y="222" class="highlight-text">5.3 [30일 무료시착 (0원)]</text>
+    <text x="20" y="239" font-size="10" fill="#fceee6">100% 무료 반품 안심 보증 바</text>
+  </g>
+
+  <!-- FOOTER SUMMARY BAR -->
+  <g transform="translate(40, 1040)">
+    <rect x="0" y="0" width="1120" height="260" rx="14" fill="#ffffff" stroke="#2d5a43" stroke-width="1.5" filter="url(#cardShadow)" />
+    <text x="30" y="38" font-size="16" font-weight="800" fill="#1b382b">바디럽형 브랜드 소개 페이지 UI/UX 전환 메커니즘 총괄</text>
+
+    <g transform="translate(30, 60)">
+      <rect x="0" y="0" width="245" height="170" rx="10" fill="#f8faf9" stroke="#cfded5" />
+      <text x="15" y="30" font-size="13" font-weight="700" fill="#1b382b">1. 감성 공감 ➔ 의문 제기</text>
+      <text x="15" y="55" font-size="11" fill="#555">안녕(安寧) 매니페스토로 독자의</text>
+      <text x="15" y="73" font-size="11" fill="#555">일상 속 만성 통증을 섬세하게</text>
+      <text x="15" y="91" font-size="11" fill="#555">관찰하고 질문을 던져 깊은</text>
+      <text x="15" y="109" font-size="11" fill="#555">공감대와 몰입감을 형성합니다.</text>
+      <text x="15" y="140" font-size="11" font-weight="700" fill="#d97736">✦ 바디럽 D2C 스토리 공식</text>
+    </g>
+
+    <g transform="translate(300, 60)">
+      <rect x="0" y="0" width="245" height="170" rx="10" fill="#f8faf9" stroke="#cfded5" />
+      <text x="15" y="30" font-size="13" font-weight="700" fill="#1b382b">2. 상품별 독립 탄생 비하인드</text>
+      <text x="15" y="55" font-size="11" fill="#555">4대 라인별 문제 발견 ➔ 3년</text>
+      <text x="15" y="73" font-size="11" fill="#555">원천 R&amp;D ➔ 삶의 변화 4단계</text>
+      <text x="15" y="91" font-size="11" fill="#555">서사로 각 제품의 존재 이유를</text>
+      <text x="15" y="109" font-size="11" fill="#555">압도적으로 입증합니다.</text>
+      <text x="15" y="140" font-size="11" font-weight="700" fill="#2d5a43">✦ 4대 라인 독립 서사</text>
+    </g>
+
+    <g transform="translate(570, 60)">
+      <rect x="0" y="0" width="245" height="170" rx="10" fill="#f8faf9" stroke="#cfded5" />
+      <text x="15" y="30" font-size="13" font-weight="700" fill="#1b382b">3. 시각 에셋 4종 &amp; 3D 증명</text>
+      <text x="15" y="55" font-size="11" fill="#555">나노 현미경 사진(VIS-01), 척추</text>
+      <text x="15" y="73" font-size="11" fill="#555">프레임 도면(VIS-02), 에어셀</text>
+      <text x="15" y="91" font-size="11" fill="#555">시뮬레이션(VIS-03)과 3D 분해도로</text>
+      <text x="15" y="109" font-size="11" fill="#555">원천 기술 신뢰도 200% 상승.</text>
+      <text x="15" y="140" font-size="11" font-weight="700" fill="#2d5a43">✦ 1:1 시각 에셋 매핑</text>
+    </g>
+
+    <g transform="translate(840, 60)">
+      <rect x="0" y="0" width="250" height="170" rx="10" fill="#fff9f5" stroke="#d97736" stroke-width="1.5" />
+      <text x="15" y="30" font-size="13" font-weight="700" fill="#9c4310">4. 마찰 제로 0원 시착 전환</text>
+      <text x="15" y="55" font-size="11" fill="#555">스토리 완독 후 [30일 무료시착</text>
+      <text x="15" y="73" font-size="11" fill="#555">(결제금액 0원)]으로 즉시</text>
+      <text x="15" y="91" font-size="11" fill="#555">연결되어 구매 장벽을 완전히</text>
+      <text x="15" y="109" font-size="11" fill="#555">해소하는 전환 퍼널 완성.</text>
+      <text x="15" y="140" font-size="11" font-weight="700" fill="#d97736">✦ 30일 안심 무료 반품</text>
+    </g>
+  </g>
 </svg>

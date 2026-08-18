@@ -1,0 +1,63 @@
+- generic [active] [ref=f50e1]:
+  - generic [ref=f50e3]:
+    - generic:
+      - paragraph:
+        - link "전체상품목록 바로가기" [ref=f50e4] [cursor=pointer]:
+          - /url: "#category"
+      - paragraph:
+        - link "본문 바로가기" [ref=f50e5] [cursor=pointer]:
+          - /url: "#contents"
+    - generic [ref=f50e10]:
+      - generic [ref=f50e11]:
+        - generic [ref=f50e15]:
+          - heading "안녕, 하세요! 바디럽" [level=1] [ref=f50e16]:
+            - text: 안녕, 하세요!
+            - generic [ref=f50e17]: 바디럽
+          - 'heading "안녕(安寧) : 아무 탈 없이 편안함" [level=2] [ref=f50e18]'
+        - paragraph [ref=f50e23]: 우리 몸에 대한 모든 것을 고민하고, 더 편안하고 안전한 일상을 제안합니다.
+        - generic [ref=f50e26]:
+          - paragraph [ref=f50e27]: “우리가 매일 씻는 물은 과연 깨끗할까?” “푹 잠들지 못하고 밤새 뒤척이는 이유는 뭘까?”
+          - paragraph [ref=f50e28]: 바디럽은 이런 물음에서 시작되었습니다.
+        - paragraph [ref=f50e32]: 누군가에겐 사소할 수도 있지만 누군가에겐 너무 커다란 고민
+        - paragraph [ref=f50e36]: 피곤하지만 잠 못드는 밤
+        - paragraph [ref=f50e40]: 수도꼭지에서 나오는 깨끗하지 못한 물
+        - paragraph [ref=f50e44]: 하늘을 뿌옇게 물들이는 미세먼지까지
+        - generic [ref=f50e47]:
+          - heading "모두가 편안하고 안심할 수 있도록" [level=1] [ref=f50e48]
+          - paragraph [ref=f50e49]: 우리가 느끼는 불편함과 걱정들은 사라지고 온전히 행복한 삶에 집중할 수 있도록
+        - generic [ref=f50e53]:
+          - heading "바디럽과 함께 안녕, 하세요!" [level=1] [ref=f50e54]:
+            - text: 바디럽과 함께
+            - generic [ref=f50e55]: 안녕, 하세요!
+          - paragraph [ref=f50e56]: 하루를 더욱 섬세하게 바라보면서 일상의 문제점들을 발견하고 해결하려 합니다.
+      - button [ref=f50e58] [cursor=pointer]
+      - link [ref=f50e61] [cursor=pointer]:
+        - /url: /
+  - list [ref=f50e64]:
+    - listitem [ref=f50e65]:
+      - link [ref=f50e66] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f50e67]:
+      - link [ref=f50e68] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f50e69]:
+      - link [ref=f50e70] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f50e71]:
+      - link [ref=f50e72] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f50e73]:
+      - link [ref=f50e74] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f50e75]:
+      - link [ref=f50e76] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f50e77]:
+      - link [ref=f50e78] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f50e79]:
+      - link [ref=f50e80] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f50e81]:
+      - link [ref=f50e82] [cursor=pointer]:
+        - /url: "#"

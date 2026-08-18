@@ -1,37 +1,31 @@
 graph TD
-    %% [SEUMIM 서비스 흐름도 - 바디럽 브랜드소개 전용 롤모델]
-    ST01["[ST-01] GNB 'Our Story' 진입\n- story.html 서브페이지 렌더링"]
+    %% [SEUMIM Service Flow - Bodyluv Product Story Hybrid Model]
+    classDef startEnd fill:#1b382b,stroke:#0f2219,stroke-width:3px,color:#ffffff,font-weight:bold,font-size:15px;
+    classDef step fill:#ffffff,stroke:#2d5a43,stroke-width:1.5px,color:#1b382b,font-size:13px;
+    classDef storyStep fill:#fff9f5,stroke:#d97736,stroke-width:2px,color:#9c4310,font-weight:bold,font-size:13px;
+    classDef decision fill:#eef4f0,stroke:#2d5a43,stroke-width:2px,color:#1b382b,font-weight:bold,font-size:13px;
+    classDef cta fill:#d97736,stroke:#9c4310,stroke-width:2px,color:#ffffff,font-weight:bold,font-size:14px;
 
-    ST02["[ST-02] 바디럽형 일상 공감 인트로\n- '왜 자세 무너짐은 늘 아프고 참아야 할까?'\n- Effortless Wellness 매니페스토 선언"]
+    START(["ST-01: GNB 진입 & Our Story 메뉴 선택"]):::startEnd
+    START --> ST02["ST-02: 안녕(安寧) 매니페스토 & 일상 공감 인트로"]:::step
 
-    ST03["[ST-03] [Ch 1 The Origin] 나노 원천 기술\n- [VIS-01] 나노 섬유 현미경 450배 사진\n- 부품 엔지니어 팀 3년 450회 실험 서사"]
+    ST02 --> DEC1{"탐색 방식 선택"}:::decision
+    DEC1 -- "상단 앵커 탭 클릭" --> ST03["ST-03: 스토리 앵커 탭 점프 (ScrollSpy)"]:::step
+    DEC1 -- "자유 스크롤" --> ST04["ST-04: Line 01. 0.1mm 코어웨어 서사 (VIS-01)"]:::storyStep
+    ST03 --> ST04
 
-    ST04["[ST-04] [Ch 2 The Philosophy] 지렛대 공학\n- [VIS-02] 인체공학 지렛대 복원 도면\n- 강제 조임 거부, 스스로 균형을 찾는 텐션"]
+    ST04 --> ST05["ST-05: 0.1mm 넥&숄더 밴드 3D 단면 분해도 조작"]:::storyStep
+    ST05 --> ST06["ST-06: Line 02. 3D 척추 정렬 조끼 서사 (VIS-02)"]:::storyStep
+    ST06 --> ST07["ST-07: Line 03. 골반 수평 에어셀 벨트 서사 (VIS-03)"]:::storyStep
+    ST07 --> ST08["ST-08: Line 04. 스마트 테크 & 직업ACC 서사 (VIS-04)"]:::storyStep
 
-    ST05["[ST-05] [Ch 3 The Vision] 300인 임상 검증\n- [VIS-03] 300인 전문의 실착 포토 갤러리\n- 100% 생분해 친환경 글로벌 비전"]
+    ST08 --> ST09["ST-09: 300인 전문의·개발자 임상 검증 갤러리 확인"]:::step
+    ST09 --> ST10["ST-10: 하단 28종 쇼케이스 4대 카테고리 필터링"]:::step
 
-    ST06["[ST-06] 3대 대표작 3D 체험 배너 클릭\n- [스밈 3대 대표작 3D 체험하러 가기 ➔]"]
+    ST10 --> DEC2{"상세 확인 여부"}:::decision
+    DEC2 -- "상품 퀵뷰 클릭" --> ST11["ST-11: [🔍 퀵뷰] 0.1mm 실측표 & 리뷰 모달"]:::step
+    DEC2 -- "즉시 0원 시착" --> ST12["ST-12: [30일 무료 시착 (0원)] CTA 트리거"]:::cta
+    ST11 --> ST12
 
-    ST07["[ST-07] 메인 3대 대표작 3D 단면 조작\n- Top 1 넥밴드 / Top 2 척추조끼 / Top 3 골반벨트\n- 3D 단면 분해 & 카드 우상단 찜(❤️) 토글"]
-
-    ST08["[ST-08] 28개 전 상품 카탈로그 이동\n- [28개 전 상품 컬렉션 보러가기 ➔]"]
-
-    ST09["[ST-09] 스마트 사이즈 파인더 동기화\n- 키/몸무게 ➔ 28개 카드 [권장: M 뱃지] 표시"]
-
-    ST10["[ST-10] [🔍 상품 퀵뷰 모달] 상세 검토\n- 0.1mm 실측표 & 동일 체형 리뷰 확인"]
-
-    ST11["[ST-11] 30일 무료 시착 장바구니 담기\n- 결제금액 0원 안심 바구니 담기 & 뱃지 갱신"]
-
-    ST12["[ST-12] Bottom Sheet 퀵 체크아웃\n- 주소/연락처 2단계 간편 입력"]
-
-    ST13["[ST-13] 0원 시착 승인 & 키트 출고\n- '결제금액 0원! 30일 후 결정하세요'"]
-
-    ST14["[ST-14] 30일 시착 후 안심 맞교환/반품\n- 100% 무료 맞교환 / 무료 반품 보증"]
-
-    %% 플로우 연결
-    ST01 --> ST02 --> ST03 --> ST04 --> ST05 --> ST06
-    ST06 -->|메인 대표작 복귀| ST07
-    ST07 -->|0원 시착 신청| ST11
-    ST07 -->|전 상품 탐색| ST08
-    ST08 --> ST09 --> ST10 -->|시착 담기| ST11
-    ST11 --> ST12 --> ST13 --> ST14
+    ST12 --> ST13["ST-13: 사이즈/배송지 입력 & 결제금액 0원 승인"]:::cta
+    ST13 --> ST14(["ST-14: 무료 시착 주문 완료 & 30일 안심 보증 시작"]):::startEnd

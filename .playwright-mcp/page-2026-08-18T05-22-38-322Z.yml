@@ -1,0 +1,120 @@
+- generic [ref=f14e3]:
+  - generic:
+    - paragraph:
+      - link "전체상품목록 바로가기" [ref=f14e4] [cursor=pointer]:
+        - /url: "#category"
+    - paragraph:
+      - link "본문 바로가기" [ref=f14e5] [cursor=pointer]:
+        - /url: "#contents"
+  - generic [ref=f14e6]:
+    - generic [ref=f14e10]:
+      - generic:
+        - generic [ref=f14e11]:
+          - paragraph [ref=f14e12]:
+            - link [ref=f14e13] [cursor=pointer]:
+              - /url: https://smore.im/quiz/H6AyUp0Au6?utm_source=main&utm_medium=top_pf&utm_campaign=자사몰_탑배너_가이드&utm_term=puresomeguide&utm_content=250925퓨어썸가이드_main_top_pf_puresomeguide_자사몰_메인배너_가이드
+              - text: 나에게 딱 맞는 필터, 수전 제품 찾기
+          - paragraph [ref=f14e14]: bg=#222222
+        - link "1+1 특가부터 사은품까지, 퓨어썸머페스타 70%" [ref=f14e16] [cursor=pointer]:
+          - /url: https://bodyluv.kr/event/detail.html?product_no=1001&utm_source=internal&utm_medium=banner&utm_campaign=top_banner&utm_content=eventpage
+        - link "국내최초! PFAS 제거 필터 런칭! 시그니처 샤워기·해바라기 수전" [ref=f14e18] [cursor=pointer]:
+          - /url: https://bodyluv.kr/product/list.html?cate_no=364
+        - link "품절컬러 드디어 재입고! UV 칫솔살균기 최대 37%" [ref=f14e20] [cursor=pointer]:
+          - /url: https://bodyluv.kr/product/detail.html?product_no=672&utm_source=internal&utm_medium=banner&utm_campaign=top_banner
+        - link "우리 아이 면역 지키는 육아 듀오 헤드필터 증정" [ref=f14e22] [cursor=pointer]:
+          - /url: https://bodyluv.kr/product/detail.html?product_no=892&utm_source=internal&utm_medium=banner&utm_campaign=top_banner
+        - link "회원가입하고 최대 7,000원 할인 받기" [ref=f14e24] [cursor=pointer]:
+          - /url: https://bodyluv.kr/member/login_intro.html?cafe_mkt=ue_top_pf
+        - link "물 흔적 없는 무광 매트블랙, NEW 시그니처 샤워기" [ref=f14e26] [cursor=pointer]:
+          - /url: https://bodyluv.kr/product/detail.html?product_no=374&cafe_mkt=ue_top_pf
+        - link "우리 집 욕실을 호텔처럼, 메탈릭 샤워기 필터 1&1" [ref=f14e28] [cursor=pointer]:
+          - /url: https://bodyluv.kr/product/detail.html?product_no=833&utm_source=internal&utm_medium=banner&utm_campaign=top_banner
+        - link "나에게 딱 맞는 필터, 수전 제품 찾기" [ref=f14e30] [cursor=pointer]:
+          - /url: https://smore.im/quiz/H6AyUp0Au6?utm_source=main&utm_medium=top_pf&utm_campaign=자사몰_탑배너_가이드&utm_term=puresomeguide&utm_content=250925퓨어썸가이드_main_top_pf_puresomeguide_자사몰_메인배너_가이드
+        - link [ref=f14e32] [cursor=pointer]:
+          - /url: https://bodyluv.kr/event/detail.html?product_no=1001&utm_source=internal&utm_medium=banner&utm_campaign=top_banner&utm_content=eventpage
+          - text: 1+1 특가부터 사은품까지, 퓨어썸머페스타 70%
+    - banner [ref=f14e33]:
+      - generic [ref=f14e35]:
+        - generic [ref=f14e36]:
+          - link "bodyluv_logo":
+            - /url: /
+            - img "bodyluv_logo" [ref=f14e37] [cursor=pointer]
+        - generic [ref=f14e38]:
+          - list [ref=f14e41]:
+            - listitem [ref=f14e42]:
+              - link "BEST" [ref=f14e43] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=289
+            - listitem [ref=f14e44]:
+              - link "썸머페스타~70%" [ref=f14e45] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=365
+            - listitem [ref=f14e46]:
+              - link "PFAS 필터" [ref=f14e47] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=364
+            - listitem [ref=f14e48]:
+              - link "필터구독" [ref=f14e49] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=354
+            - listitem [ref=f14e50]:
+              - link "필터/수전" [ref=f14e51] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=150
+            - listitem [ref=f14e52]:
+              - link "여름침구" [ref=f14e53] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=157
+            - listitem [ref=f14e54]:
+              - link "여행용품" [ref=f14e55] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=162
+            - listitem [ref=f14e56]:
+              - link "생활용품" [ref=f14e57] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=164
+          - list [ref=f14e60]:
+            - listitem [ref=f14e61]:
+              - link "이벤트" [ref=f14e62] [cursor=pointer]:
+                - /url: /event/list.html?cate_no=241
+            - listitem [ref=f14e63]:
+              - link "브랜드" [ref=f14e64] [cursor=pointer]:
+                - /url: /brand.html
+        - list [ref=f14e66]:
+          - listitem [ref=f14e67]:
+            - button [ref=f14e68] [cursor=pointer]
+          - listitem [ref=f14e69]:
+            - link [ref=f14e70] [cursor=pointer]:
+              - /url: /member/login.html
+          - listitem [ref=f14e71]:
+            - link "0" [ref=f14e72] [cursor=pointer]:
+              - /url: /order/basket.html
+  - link [ref=f14e86] [cursor=pointer]:
+    - /url: https://bodyluv.kr/product/list.html?cate_no=24
+  - contentinfo [ref=f14e101]:
+    - generic [ref=f14e102]:
+      - generic [ref=f14e103]:
+        - heading [level=2] [ref=f14e104]:
+          - link "고객센터 문의하기" [ref=f14e106] [cursor=pointer]:
+            - /url: http://pf.kakao.com/_xmxhges
+        - text: "02-6927-2699 평일 09:00 AM - 18:00 PM (점심 시간 : 12시~1시) 배송 안내 : CJ대한통운 (Tel. 1588-1255) 계좌 정보 : 100-032-071774 신한은행 (주)블랭크코퍼레이션"
+        - generic [ref=f14e107]:
+          - link "브랜드 스토리" [ref=f14e108] [cursor=pointer]:
+            - /url: /brand_2024.html
+          - link "자주 묻는 질문" [ref=f14e109] [cursor=pointer]:
+            - /url: /front/php/b/board_list.php?board_no=3
+      - generic [ref=f14e110]:
+        - heading "회사 정보" [level=2] [ref=f14e111]
+        - strong [ref=f14e112]: (주)블랭크코퍼레이션
+        - text: "대표이사 남대광 서울특별시 강남구 역삼로 179 (해당 주소는 바디럽 반송지가 아닙니다.해당 주소로는 반송이 불가합니다.) 사업자등록번호 : 359-87-00301 통신판매업신고 : 제2016-서울강남-01468호 I E-Mail : bodyluv@blankcorp.kr I 대표번호 : 02-6928-2699"
+      - generic [ref=f14e113]:
+        - generic [ref=f14e114]:
+          - link [ref=f14e115] [cursor=pointer]:
+            - /url: http://pf.kakao.com/_xmxhges
+          - link [ref=f14e117] [cursor=pointer]:
+            - /url: https://www.instagram.com/official.bodyluv/
+          - link [ref=f14e119] [cursor=pointer]:
+            - /url: https://www.facebook.com/bodyluv.official/
+          - link [ref=f14e121] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCjOefWT-W32XPLcQtIv9Lmw
+          - img "클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다." [ref=f14e123]
+        - generic [ref=f14e126]:
+          - link "이용약관" [ref=f14e127] [cursor=pointer]:
+            - /url: /member/agreement.html
+          - text: "|"
+          - link "개인정보 처리방침" [ref=f14e128] [cursor=pointer]:
+            - /url: /member/privacy.html
+        - generic [ref=f14e129]: Copyright © BODYLUV. All rights reserved.

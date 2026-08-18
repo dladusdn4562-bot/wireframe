@@ -1,43 +1,79 @@
 {
-  "client_id": "가상클라이언트_91",
-  "client_name": "스밈_바디럽형_브랜드소개마스터",
-  "total_sections": 5,
-  "storyboard_version": "1.0_Bodyluv_Brand_Story_Dedicated",
-  "brand_story_sections": [
+  "client_id": 91,
+  "client_name": "스밈_바디럽형_상품별스토리_브랜드소개",
+  "storyboard_version": "2.0_Bodyluv_Product_Story_Dedicated",
+  "document_title": "SEUMIM 브랜드 소개 전용 스토리보드 (바디럽 상품별 독립 스토리 롤모델)",
+  "sections_count": 14,
+  "sections": [
     {
       "section_id": "SUB-STORY-01",
-      "name": "브랜드 소개 서브 헤더 & 일상 공감 질문 인트로",
-      "tier": "StoryHeader",
-      "type": "DailyEmpathyIntro",
-      "question": "왜 자세 무너짐은 늘 아프고 참아야 할까?"
+      "name": "글로벌 상단 GNB & 모던 라인아트 유틸리티 바",
+      "type": "Header"
     },
     {
       "section_id": "SUB-STORY-02",
-      "name": "Chapter 01. The Origin - 부품 엔지니어 팀의 집념과 원천 기술",
-      "tier": "StoryChapter",
-      "visual_asset": "VIS-01_NanoMicroscope_Scan_450x",
-      "story_topic": "Hardware_Engineer_Pain_and_450_Trials"
+      "name": "브랜드 소개 서브 앵커 탭 바 (ScrollSpy 연동)",
+      "type": "SubNavigation"
     },
     {
       "section_id": "SUB-STORY-03",
-      "name": "Chapter 02. The Philosophy - Effortless Wellness & 인체공학 지렛대",
-      "tier": "StoryChapter",
-      "visual_asset": "VIS-02_LeverErgonomics_Blueprint",
-      "story_topic": "No_Forced_Compression_and_Tension_Memory"
+      "name": "브랜드 안녕(安寧) 매니페스토 & 일상 공감 인트로",
+      "type": "HeroManifesto"
     },
     {
       "section_id": "SUB-STORY-04",
-      "name": "Chapter 03. The Vision - 300인 임상 검증 & 친환경 글로벌 도약",
-      "tier": "StoryChapter",
-      "visual_asset": "VIS-03_ClinicalProof_300Experts",
-      "story_topic": "Doctor_Verification_and_Eco_Friendly_Fiber"
+      "name": "Line 01. 0.1mm 심리스 코어웨어 탄생 서사 & VIS-01 현미경 스캔",
+      "type": "ProductStoryLine1"
     },
     {
       "section_id": "SUB-STORY-05",
-      "name": "Our Story 하단 시그니처 3대 대표작 3D 체험 전환 배너",
-      "tier": "StoryCTA",
-      "type": "ExperienceReturnBanner",
-      "target_anchor": "#sec-featured"
+      "name": "Line 01. 0.1mm 넥&숄더 밴드 3D 단면 분해 쇼케이스",
+      "type": "FeaturedProduct1"
+    },
+    {
+      "section_id": "SUB-STORY-06",
+      "name": "Line 02. 3D 에어로 메쉬 척추 정렬 조끼 집념 서사 & VIS-02 열화상 쿨링",
+      "type": "ProductStoryLine2"
+    },
+    {
+      "section_id": "SUB-STORY-07",
+      "name": "Line 02. 출근복 속 숨은 지퍼 & 쿨링 공학 쇼케이스",
+      "type": "FeaturedProduct2"
+    },
+    {
+      "section_id": "SUB-STORY-08",
+      "name": "Line 03. 인체공학 에어셀 골반 밸런스 벨트 혁신 서사 & VIS-03 체압 분산",
+      "type": "ProductStoryLine3"
+    },
+    {
+      "section_id": "SUB-STORY-09",
+      "name": "Line 03. 착석 체압 비대칭 감지 & 에어셀 물리 차단 쇼케이스",
+      "type": "FeaturedProduct3"
+    },
+    {
+      "section_id": "SUB-STORY-10",
+      "name": "Line 04. 스마트 햅틱 센서 & 직업 맞춤 ACC 서사 & VIS-04 모션 센싱",
+      "type": "ProductStoryLine4"
+    },
+    {
+      "section_id": "SUB-STORY-11",
+      "name": "Line 04. 0.01초 실시간 HUD & 직업 맞춤 ACC 7종 쇼케이스",
+      "type": "FeaturedProduct4"
+    },
+    {
+      "section_id": "SUB-STORY-12",
+      "name": "300인 전문의·개발자 실착 검증 & 친환경 비전",
+      "type": "SocialProof"
+    },
+    {
+      "section_id": "SUB-STORY-13",
+      "name": "4대 카테고리 28개 전 상품 매트릭스 쇼케이스 & 퀵뷰",
+      "type": "ProductMatrixCatalog"
+    },
+    {
+      "section_id": "SUB-STORY-14",
+      "name": "30일 무료 시착 (결제금액 0원) 바텀시트 & 안심 보증 푸터",
+      "type": "ZeroPaymentConversion"
     }
   ]
 }

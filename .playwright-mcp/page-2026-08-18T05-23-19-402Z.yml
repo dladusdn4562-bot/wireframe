@@ -1,0 +1,248 @@
+- generic [ref=f38e3]:
+  - generic:
+    - paragraph:
+      - link "전체상품목록 바로가기" [ref=f38e4] [cursor=pointer]:
+        - /url: "#category"
+    - paragraph:
+      - link "본문 바로가기" [ref=f38e5] [cursor=pointer]:
+        - /url: "#contents"
+  - generic [ref=f38e6]:
+    - generic [ref=f38e10]:
+      - generic:
+        - generic [ref=f38e11]:
+          - paragraph [ref=f38e12]:
+            - link [ref=f38e13] [cursor=pointer]:
+              - /url: https://smore.im/quiz/H6AyUp0Au6?utm_source=main&utm_medium=top_pf&utm_campaign=자사몰_탑배너_가이드&utm_term=puresomeguide&utm_content=250925퓨어썸가이드_main_top_pf_puresomeguide_자사몰_메인배너_가이드
+              - text: 나에게 딱 맞는 필터, 수전 제품 찾기
+          - paragraph [ref=f38e14]: bg=#222222
+        - link "1+1 특가부터 사은품까지, 퓨어썸머페스타 70%" [ref=f38e16] [cursor=pointer]:
+          - /url: https://bodyluv.kr/event/detail.html?product_no=1001&utm_source=internal&utm_medium=banner&utm_campaign=top_banner&utm_content=eventpage
+        - link "국내최초! PFAS 제거 필터 런칭! 시그니처 샤워기·해바라기 수전" [ref=f38e18] [cursor=pointer]:
+          - /url: https://bodyluv.kr/product/list.html?cate_no=364
+        - link "품절컬러 드디어 재입고! UV 칫솔살균기 최대 37%" [ref=f38e20] [cursor=pointer]:
+          - /url: https://bodyluv.kr/product/detail.html?product_no=672&utm_source=internal&utm_medium=banner&utm_campaign=top_banner
+        - link "우리 아이 면역 지키는 육아 듀오 헤드필터 증정" [ref=f38e22] [cursor=pointer]:
+          - /url: https://bodyluv.kr/product/detail.html?product_no=892&utm_source=internal&utm_medium=banner&utm_campaign=top_banner
+        - link "회원가입하고 최대 7,000원 할인 받기" [ref=f38e24] [cursor=pointer]:
+          - /url: https://bodyluv.kr/member/login_intro.html?cafe_mkt=ue_top_pf
+        - link "물 흔적 없는 무광 매트블랙, NEW 시그니처 샤워기" [ref=f38e26] [cursor=pointer]:
+          - /url: https://bodyluv.kr/product/detail.html?product_no=374&cafe_mkt=ue_top_pf
+        - link "우리 집 욕실을 호텔처럼, 메탈릭 샤워기 필터 1&1" [ref=f38e28] [cursor=pointer]:
+          - /url: https://bodyluv.kr/product/detail.html?product_no=833&utm_source=internal&utm_medium=banner&utm_campaign=top_banner
+        - link "나에게 딱 맞는 필터, 수전 제품 찾기" [ref=f38e30] [cursor=pointer]:
+          - /url: https://smore.im/quiz/H6AyUp0Au6?utm_source=main&utm_medium=top_pf&utm_campaign=자사몰_탑배너_가이드&utm_term=puresomeguide&utm_content=250925퓨어썸가이드_main_top_pf_puresomeguide_자사몰_메인배너_가이드
+        - link [ref=f38e32] [cursor=pointer]:
+          - /url: https://bodyluv.kr/event/detail.html?product_no=1001&utm_source=internal&utm_medium=banner&utm_campaign=top_banner&utm_content=eventpage
+          - text: 1+1 특가부터 사은품까지, 퓨어썸머페스타 70%
+    - banner [ref=f38e33]:
+      - generic [ref=f38e35]:
+        - generic [ref=f38e36]:
+          - link "bodyluv_logo":
+            - /url: /
+            - img "bodyluv_logo" [ref=f38e37] [cursor=pointer]
+        - generic [ref=f38e38]:
+          - list [ref=f38e41]:
+            - listitem [ref=f38e42]:
+              - link "BEST" [ref=f38e43] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=289
+            - listitem [ref=f38e44]:
+              - link "썸머페스타~70%" [ref=f38e45] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=365
+            - listitem [ref=f38e46]:
+              - link "PFAS 필터" [ref=f38e47] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=364
+            - listitem [ref=f38e48]:
+              - link "필터구독" [ref=f38e49] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=354
+            - listitem [ref=f38e50]:
+              - link "필터/수전" [ref=f38e51] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=150
+            - listitem [ref=f38e52]:
+              - link "여름침구" [ref=f38e53] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=157
+            - listitem [ref=f38e54]:
+              - link "여행용품" [ref=f38e55] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=162
+            - listitem [ref=f38e56]:
+              - link "생활용품" [ref=f38e57] [cursor=pointer]:
+                - /url: /product/list.html?cate_no=164
+          - list [ref=f38e60]:
+            - listitem [ref=f38e61]:
+              - link "이벤트" [ref=f38e62] [cursor=pointer]:
+                - /url: /event/list.html?cate_no=241
+            - listitem [ref=f38e63]:
+              - link "브랜드" [ref=f38e64] [cursor=pointer]:
+                - /url: /brand.html
+        - list [ref=f38e66]:
+          - listitem [ref=f38e67]:
+            - button [ref=f38e68] [cursor=pointer]
+          - listitem [ref=f38e69]:
+            - link [ref=f38e70] [cursor=pointer]:
+              - /url: /member/login.html
+          - listitem [ref=f38e71]:
+            - link "0" [ref=f38e72] [cursor=pointer]:
+              - /url: /order/basket.html
+  - generic [ref=f38e75]:
+    - generic [ref=f38e76]:
+      - heading "NEWS" [level=1] [ref=f38e78]
+      - list [ref=f38e81]:
+        - group "1 / 7" [ref=f38e82]:
+          - generic [ref=f38e83]:
+            - link [ref=f38e84] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=957&cate_no=1&display_group=20
+            - paragraph [ref=f38e85]:
+              - link "더 편하게, 필터 정기구독" [ref=f38e86] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=957&cate_no=1&display_group=20
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=957&cate_no=1&display_group=20
+        - group "2 / 7" [ref=f38e87]:
+          - generic [ref=f38e88]:
+            - link [ref=f38e89] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=725&cate_no=1&display_group=20
+            - paragraph [ref=f38e90]:
+              - link "바디럽 x GVG x 디즈니" [ref=f38e91] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=725&cate_no=1&display_group=20
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=725&cate_no=1&display_group=20
+        - group "3 / 7" [ref=f38e92]:
+          - generic [ref=f38e93]:
+            - link [ref=f38e94] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=678&cate_no=1&display_group=20
+            - paragraph [ref=f38e95]:
+              - link "완벽한 제품을 위한 노력" [ref=f38e96] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=678&cate_no=1&display_group=20
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=678&cate_no=1&display_group=20
+        - group "4 / 7" [ref=f38e97]:
+          - generic [ref=f38e98]:
+            - link [ref=f38e99] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=667&cate_no=1&display_group=20
+            - paragraph [ref=f38e100]:
+              - link "제 1회 바디럽 시상식" [ref=f38e101] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=667&cate_no=1&display_group=20
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=667&cate_no=1&display_group=20
+        - group "5 / 7" [ref=f38e102]:
+          - generic [ref=f38e103]:
+            - link [ref=f38e104] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=652&cate_no=1&display_group=20
+            - paragraph [ref=f38e105]:
+              - link "바디럽 퓨어썸 7주년" [ref=f38e106] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=652&cate_no=1&display_group=20
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=652&cate_no=1&display_group=20
+        - group "6 / 7" [ref=f38e107]:
+          - generic [ref=f38e108]:
+            - link [ref=f38e109] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=650&cate_no=1&display_group=20
+            - paragraph [ref=f38e110]:
+              - link "바디럽 X 미니언즈" [ref=f38e111] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=650&cate_no=1&display_group=20
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=650&cate_no=1&display_group=20
+        - group "7 / 7" [ref=f38e112]:
+          - generic [ref=f38e113]:
+            - link [ref=f38e114] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=648&cate_no=1&display_group=20
+            - paragraph [ref=f38e115]:
+              - link "백 투더 퓨어" [ref=f38e116] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=648&cate_no=1&display_group=20
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=648&cate_no=1&display_group=20
+    - generic [ref=f38e117]:
+      - heading "GUIDE" [level=1] [ref=f38e119]
+      - list [ref=f38e122]:
+        - group "1 / 2" [ref=f38e123]:
+          - generic [ref=f38e124]:
+            - link [ref=f38e125] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=655&cate_no=1&display_group=21
+            - paragraph [ref=f38e126]:
+              - link "퓨어썸 가이드" [ref=f38e127] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=655&cate_no=1&display_group=21
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=655&cate_no=1&display_group=21
+        - group "2 / 2" [ref=f38e128]:
+          - generic [ref=f38e129]:
+            - link [ref=f38e130] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=970&cate_no=1&display_group=21
+            - paragraph [ref=f38e131]:
+              - link "바디럽 멤버십 안내" [ref=f38e132] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=970&cate_no=1&display_group=21
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=970&cate_no=1&display_group=21
+    - generic [ref=f38e133]:
+      - heading "STORY" [level=1] [ref=f38e135]
+      - list [ref=f38e138]:
+        - group "1 / 3" [ref=f38e139]:
+          - generic [ref=f38e140]:
+            - link [ref=f38e141] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=665&cate_no=1&display_group=22
+            - paragraph [ref=f38e142]:
+              - link "바디럽 3.0" [ref=f38e143] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=665&cate_no=1&display_group=22
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=665&cate_no=1&display_group=22
+        - group "2 / 3" [ref=f38e144]:
+          - generic [ref=f38e145]:
+            - link [ref=f38e146] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=647&cate_no=1&display_group=22
+            - paragraph [ref=f38e147]:
+              - link "바디럽 2.0" [ref=f38e148] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=647&cate_no=1&display_group=22
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=647&cate_no=1&display_group=22
+        - group "3 / 3" [ref=f38e149]:
+          - generic [ref=f38e150]:
+            - link [ref=f38e151] [cursor=pointer]:
+              - /url: /event/detail.html?product_no=646&cate_no=1&display_group=22
+            - paragraph [ref=f38e152]:
+              - link "바디럽 1.0" [ref=f38e153] [cursor=pointer]:
+                - /url: /event/detail.html?product_no=646&cate_no=1&display_group=22
+            - paragraph:
+              - link:
+                - /url: /event/detail.html?product_no=646&cate_no=1&display_group=22
+  - contentinfo [ref=f38e154]:
+    - generic [ref=f38e155]:
+      - generic [ref=f38e156]:
+        - heading [level=2] [ref=f38e157]:
+          - link "고객센터 문의하기" [ref=f38e159] [cursor=pointer]:
+            - /url: http://pf.kakao.com/_xmxhges
+        - text: "02-6927-2699 평일 09:00 AM - 18:00 PM (점심 시간 : 12시~1시) 배송 안내 : CJ대한통운 (Tel. 1588-1255) 계좌 정보 : 100-032-071774 신한은행 (주)블랭크코퍼레이션"
+        - generic [ref=f38e160]:
+          - link "브랜드 스토리" [ref=f38e161] [cursor=pointer]:
+            - /url: /brand_2024.html
+          - link "자주 묻는 질문" [ref=f38e162] [cursor=pointer]:
+            - /url: /front/php/b/board_list.php?board_no=3
+      - generic [ref=f38e163]:
+        - heading "회사 정보" [level=2] [ref=f38e164]
+        - strong [ref=f38e165]: (주)블랭크코퍼레이션
+        - text: "대표이사 남대광 서울특별시 강남구 역삼로 179 (해당 주소는 바디럽 반송지가 아닙니다.해당 주소로는 반송이 불가합니다.) 사업자등록번호 : 359-87-00301 통신판매업신고 : 제2016-서울강남-01468호 I E-Mail : bodyluv@blankcorp.kr I 대표번호 : 02-6928-2699"
+      - generic [ref=f38e166]:
+        - generic [ref=f38e167]:
+          - link [ref=f38e168] [cursor=pointer]:
+            - /url: http://pf.kakao.com/_xmxhges
+          - link [ref=f38e170] [cursor=pointer]:
+            - /url: https://www.instagram.com/official.bodyluv/
+          - link [ref=f38e172] [cursor=pointer]:
+            - /url: https://www.facebook.com/bodyluv.official/
+          - link [ref=f38e174] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCjOefWT-W32XPLcQtIv9Lmw
+          - img "클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다." [ref=f38e176]
+        - generic [ref=f38e179]:
+          - link "이용약관" [ref=f38e180] [cursor=pointer]:
+            - /url: /member/agreement.html
+          - text: "|"
+          - link "개인정보 처리방침" [ref=f38e181] [cursor=pointer]:
+            - /url: /member/privacy.html
+        - generic [ref=f38e182]: Copyright © BODYLUV. All rights reserved.

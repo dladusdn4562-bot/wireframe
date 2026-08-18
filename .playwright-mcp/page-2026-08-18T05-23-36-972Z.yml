@@ -1,0 +1,47 @@
+- generic [active] [ref=f62e1]:
+  - generic [ref=f62e3]:
+    - generic:
+      - paragraph:
+        - link "전체상품목록 바로가기" [ref=f62e4] [cursor=pointer]:
+          - /url: "#category"
+      - paragraph:
+        - link "본문 바로가기" [ref=f62e5] [cursor=pointer]:
+          - /url: "#contents"
+    - generic [ref=f62e10]:
+      - generic [ref=f62e11]:
+        - generic [ref=f62e15]:
+          - heading "안녕, 하세요! 바디럽" [level=1] [ref=f62e16]:
+            - text: 안녕, 하세요!
+            - generic [ref=f62e17]: 바디럽
+          - 'heading "안녕(安寧) : 아무 탈 없이 편안함" [level=2] [ref=f62e18]'
+        - paragraph [ref=f62e24]: 우리 몸에 대한 모든 것을 고민하고, 더 편안하고 안전한 일상을 제안합니다.
+        - generic [ref=f62e27]:
+          - paragraph [ref=f62e28]: “우리가 매일 씻는 물은 과연 깨끗할까?” “푹 잠들지 못하고 밤새 뒤척이는 이유는 뭘까?”
+          - paragraph [ref=f62e29]: 바디럽은 이런 물음에서 시작되었습니다.
+        - generic [ref=f62e33]:
+          - heading "모두가 편안하고 안심할 수 있도록" [level=1] [ref=f62e34]
+          - paragraph [ref=f62e35]: 우리가 느끼는 불편함과 걱정들은 사라지고 온전히 행복한 삶에 집중할 수 있기를
+        - generic [ref=f62e39]:
+          - heading "바디럽과 함께 안녕, 하세요!" [level=1] [ref=f62e40]:
+            - text: 바디럽과 함께
+            - generic [ref=f62e41]: 안녕, 하세요!
+          - paragraph [ref=f62e42]: 하루를 더욱 섬세하게 바라보면서 일상의 문제점들을 발견하고 해결하려 합니다.
+      - button [ref=f62e44] [cursor=pointer]
+      - link [ref=f62e47] [cursor=pointer]:
+        - /url: /
+  - list [ref=f62e50]:
+    - listitem [ref=f62e51]:
+      - link [ref=f62e52] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f62e53]:
+      - link [ref=f62e54] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f62e55]:
+      - link [ref=f62e56] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f62e57]:
+      - link [ref=f62e58] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=f62e59]:
+      - link [ref=f62e60] [cursor=pointer]:
+        - /url: "#"
