@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1450" width="1200" height="1450">
+  <defs>
+    <style>
+      .bg { fill: #0B132B; }
+      .header-bg { fill: #1C2541; stroke: #3A506B; stroke-width: 2; }
+      .title { fill: #6FFFE9; font-family: 'Pretendard', sans-serif; font-size: 24px; font-weight: 800; }
+      .subtitle { fill: #A3CEF1; font-family: 'Pretendard', sans-serif; font-size: 14px; }
+      .node-root { fill: #1C2541; stroke: #5BC0BE; stroke-width: 3; rx: 12; }
+      .node-sec { fill: #1E293B; stroke: #38BDF8; stroke-width: 2; rx: 8; }
+      .node-sub { fill: #334155; stroke: #94A3B8; stroke-width: 1.5; rx: 6; }
+      .node-highlight { fill: #0F3854; stroke: #00F0FF; stroke-width: 2; rx: 6; }
+      .node-alert { fill: #451A1A; stroke: #F87171; stroke-width: 1.5; rx: 6; }
+      .node-philo { fill: #1A2E3B; stroke: #38BDF8; stroke-width: 1.5; rx: 6; }
+      .node-bridge { fill: #0C4A6E; stroke: #38BDF8; stroke-width: 2; stroke-dasharray: 4; rx: 8; }
+      .txt-main { fill: #FFFFFF; font-family: 'Pretendard', sans-serif; font-size: 15px; font-weight: 700; }
+      .txt-sub { fill: #94A3B8; font-family: 'Pretendard', sans-serif; font-size: 12px; }
+      .txt-accent { fill: #38BDF8; font-family: 'Pretendard', sans-serif; font-size: 13px; font-weight: 600; }
+      .txt-alert { fill: #FCA5A5; font-family: 'Pretendard', sans-serif; font-size: 12px; }
+      .line-solid { stroke: #5BC0BE; stroke-width: 2; }
+      .badge { fill: #0284C7; rx: 4; }
+      .badge-txt { fill: #FFFFFF; font-family: 'Pretendard', sans-serif; font-size: 11px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1450" class="bg" />
+
+  <!-- Header Section -->
+  <rect x="40" y="30" width="1120" height="90" rx="12" class="header-bg" />
+  <text x="70" y="70" class="title">SEUMIM 사이트 구조맵 (IA) - 가상클라이언트 92 (인터랙티브 스크롤 반응형)</text>
+  <text x="70" y="98" class="subtitle">스크롤 프로그레스 ➔ Hero ➔ Bento (차트 트리거) ➔ 브릿지 ➔ Zig-Zag ➔ 풀블리드 ➔ 3D 틸트 Blueprint ➔ 15종</text>
+
+  <!-- Root Node -->
+  <rect x="420" y="150" width="360" height="60" class="node-root" />
+  <text x="600" y="185" text-anchor="middle" class="txt-main" font-size="16">SEUMIM 인터랙티브 메인 (GC-92)</text>
+
+  <line x1="600" y1="210" x2="600" y2="245" class="line-solid" />
+
+  <!-- Section 01: Dual Hero -->
+  <rect x="80" y="245" width="1040" height="85" class="node-sec" />
+  <rect x="95" y="260" width="80" height="20" class="badge" />
+  <text x="135" y="274" text-anchor="middle" class="badge-txt">DUAL HERO</text>
+  <text x="185" y="275" class="txt-main">SEC-01 Hero : [0.1mm Seamless · 스며드는 다정한 균형] &amp; 듀얼 CTA</text>
+  <text x="95" y="310" class="txt-sub">"Seamless Balance, Kind Lifestyles" + "바쁜 하루 속 나를 아끼는 다정한 균형" 오버레이</text>
+
+  <!-- Section 02: Bento Grid Origin -->
+  <rect x="80" y="350" width="1040" height="160" class="node-highlight" />
+  <rect x="95" y="365" width="90" height="20" fill="#E11D48" rx="4" />
+  <text x="140" y="379" text-anchor="middle" class="badge-txt">BENTO GRID</text>
+  <text x="195" y="380" class="txt-main">SEC-02 The Origin : 비대칭 벤토 그리드 (스크롤 시 차트 카운트업 트리거)</text>
+  
+  <rect x="100" y="400" width="240" height="95" class="node-sub" />
+  <text x="115" y="425" class="txt-accent">[Bento 1] 82.3% 도넛</text>
+  <text x="115" y="445" class="txt-sub">📊 뷰포트 진입 시 카운트업</text>
+  <text x="115" y="465" class="txt-sub">자세 인지 불능 시각화</text>
+
+  <rect x="355" y="400" width="240" height="95" class="node-sub" />
+  <text x="370" y="425" class="txt-accent">[Bento 2] 9.4h 타임라인</text>
+  <text x="370" y="445" class="txt-sub">⏳ 타임라인 바 차오름</text>
+  <text x="370" y="465" class="txt-sub">18.2° 골반 각도 다이어그램</text>
+
+  <rect x="610" y="400" width="250" height="95" class="node-alert" />
+  <text x="625" y="425" class="txt-alert">[Bento 3] 1줄 찐후기</text>
+  <text x="625" y="445" class="txt-alert">💬 "쇠 와이어 30분 만에 벗음"</text>
+  <text x="625" y="465" class="txt-alert">💬 "셔츠 위 툭 튀어나옴"</text>
+
+  <rect x="875" y="400" width="225" height="95" class="node-alert" />
+  <text x="890" y="425" class="txt-alert">[Bento 4] 고통 컷</text>
+  <text x="890" y="445" class="txt-alert">📸 피부 붉은 자국</text>
+  <text x="890" y="465" class="txt-alert">📸 서랍 속 방치 컷</text>
+
+  <!-- Narrative Bridge Banner -->
+  <rect x="80" y="525" width="1040" height="55" class="node-bridge" />
+  <text x="600" y="558" text-anchor="middle" class="txt-main" font-size="14">✦ [서사 브릿지 배너] "그래서 우리는 몸을 조이는 대신, 일상에 자연스럽게 스며드는 길을 선택했습니다."</text>
+
+  <!-- Section 03: Zig-Zag Pillars -->
+  <rect x="80" y="595" width="1040" height="120" class="node-sec" />
+  <rect x="95" y="610" width="70" height="20" class="badge" />
+  <text x="130" y="624" text-anchor="middle" class="badge-txt">ZIG-ZAG</text>
+  <text x="175" y="625" class="txt-main">SEC-03 The 3 Pillars : 1줄 대조 숏카피 지그재그 에디토리얼 (Scroll Reveal)</text>
+  
+  <rect x="100" y="645" width="310" height="55" class="node-philo" />
+  <text x="115" y="668" class="txt-accent">01. '스며들다' (습관 형성)</text>
+  <text x="115" y="686" class="txt-sub">강제 교정 ➔ 자연스러운 습관</text>
+
+  <rect x="445" y="645" width="310" height="55" class="node-philo" />
+  <text x="460" y="668" class="txt-accent">02. '티 없이' (0.1mm 은폐)</text>
+  <text x="460" y="686" class="txt-sub">와이어 핏 ➔ 99.8% 슬림 은폐</text>
+
+  <rect x="790" y="645" width="310" height="55" class="node-philo" />
+  <text x="805" y="668" class="txt-accent">03. 'Effort-Free' (10초 케어)</text>
+  <text x="805" y="686" class="txt-sub">1시간 운동 ➔ 앉은 자리 10초 케어</text>
+
+  <!-- Full Bleed Visual Section -->
+  <rect x="80" y="730" width="1040" height="60" fill="#0369A1" rx="8" />
+  <text x="600" y="766" text-anchor="middle" class="txt-main" font-size="14">📸 SEC-04 풀블리드 원단 매크로 컷 : 0.1mm 심리스 무봉제 나노 텍스처 초근접 시각 휴식</text>
+
+  <!-- Section 05: Blueprint Tech with 3D Tilt -->
+  <rect x="80" y="805" width="1040" height="150" class="node-sec" />
+  <rect x="95" y="820" width="90" height="20" class="badge" />
+  <text x="140" y="834" text-anchor="middle" class="badge-txt">3D BLUEPRINT</text>
+  <text x="195" y="835" class="txt-main">SEC-05 Science of Feel : 3D 테크니컬 블루프린트 (마우스 호버 3D 틸트 인터랙션)</text>
+  
+  <rect x="100" y="860" width="310" height="80" class="node-sub" />
+  <text x="120" y="885" class="txt-accent">01. Naked Seamless 도면</text>
+  <text x="120" y="907" class="txt-sub">0.1mm 무봉제 나노 압착 도면</text>
+
+  <rect x="445" y="860" width="310" height="80" class="node-sub" />
+  <text x="465" y="885" class="txt-accent">02. Airy Weightless 기류도</text>
+  <text x="465" y="907" class="txt-sub">38g 쿨링 메쉬 공기순환 시뮬레이션</text>
+
+  <rect x="790" y="860" width="310" height="80" class="node-sub" />
+  <text x="810" y="885" class="txt-accent">03. Dynamic Restoring 단면</text>
+  <text x="810" y="907" class="txt-sub">지렛대 원리 4중 척추 텐션 지지</text>
+
+  <!-- Section 06: Filterable Use Cases -->
+  <rect x="80" y="970" width="1040" height="120" class="node-sec" />
+  <rect x="95" y="985" width="80" height="20" class="badge" />
+  <text x="135" y="999" text-anchor="middle" class="badge-txt">USE CASES</text>
+  <text x="185" y="1000" class="txt-main">SEC-06 인터랙티브 Before/After 드래그 슬라이더 &amp; 4대 태그 필터 갤러리</text>
+  
+  <rect x="100" y="1020" width="480" height="55" class="node-sub" />
+  <text x="120" y="1045" class="txt-accent">마우스 드래그 B/A 실시간 비교 (32% 개선)</text>
+
+  <rect x="620" y="1020" width="480" height="55" class="node-sub" />
+  <text x="640" y="1045" class="txt-accent">태그 필터: [전체 / 데스크 / 출퇴근 / 미팅]</text>
+
+  <!-- Section 07: Collection with Micro Specs -->
+  <rect x="80" y="1105" width="1040" height="180" class="node-highlight" />
+  <rect x="95" y="1120" width="80" height="20" fill="#059669" rx="4" />
+  <text x="135" y="1134" text-anchor="middle" class="badge-txt">COLLECTION</text>
+  <text x="185" y="1135" class="txt-main">SEC-07 15종 상품 쇼케이스 : [38g], [0.1mm] 마이크로 스펙 칩 탑재</text>
+  
+  <rect x="100" y="1160" width="1000" height="45" class="node-sub" />
+  <text x="150" y="1187" class="txt-main" font-size="13">38g 초경량</text>
+  <text x="380" y="1187" class="txt-main" font-size="13">99.8% 은폐율</text>
+  <text x="620" y="1187" class="txt-main" font-size="13">300+ 전문의 검증</text>
+  <text x="870" y="1187" class="txt-main" font-size="13">100% 30일 무료시착</text>
+
+  <rect x="100" y="1215" width="1000" height="55" class="node-sec" />
+  <text x="120" y="1240" class="txt-accent">15종 4대 탭 (마이크로 칩 표시) ➔ 3D 퀵뷰 모달 &amp; 30일 무료 시착 (0원) 안심 퍼널</text>
+
+  <!-- Footer -->
+  <rect x="80" y="1300" width="1040" height="65" class="header-bg" />
+  <text x="110" y="1330" class="txt-main">글로벌 푸터 &amp; 결제금액 0원 30일 무료 시착 (왕복 배송비 0원) 안심 보증</text>
+</svg>

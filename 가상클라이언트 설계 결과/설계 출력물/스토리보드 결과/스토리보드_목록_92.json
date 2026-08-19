@@ -1,0 +1,64 @@
+{
+  "client_id": 92,
+  "client_name": "스밈_브랜드스토리_직장인척추혁신",
+  "storyboard_version": "3.0_Interactive_Modular_Scroll_Stacked",
+  "document_title": "SEUMIM 브랜드 소개 & 척추 혁신 스토리보드 (풀스크린 Hero & 스티키 스택 쇼케이스)",
+  "sections_count": 11,
+  "sections": [
+    {
+      "section_id": "TOP-01",
+      "name": "실시간 스크롤 프로그레스 바",
+      "type": "ProgressBar"
+    },
+    {
+      "section_id": "SIDE-01",
+      "name": "실시간 ScrollSpy 도트 퀵 네비게이터",
+      "type": "SubNavigation"
+    },
+    {
+      "section_id": "SEC-01",
+      "name": "풀 뷰포트 대형 Hero & 브랜드 매니페스토 (58px 헤드라인)",
+      "type": "HeroManifesto"
+    },
+    {
+      "section_id": "SEC-02",
+      "name": "1-by-1 대형 스티키 스택 문제점 쇼케이스 & 실착 포토 인증",
+      "type": "ProblemStack"
+    },
+    {
+      "section_id": "SEC-BR",
+      "name": "인과적 서사 전환 브릿지 배너",
+      "type": "BridgeBanner"
+    },
+    {
+      "section_id": "SEC-03",
+      "name": "ZIG-ZAG 3 Pillars (한 줄 타이틀 & 0.1mm 심리스 무봉제 비주얼)",
+      "type": "PillarsZigZag"
+    },
+    {
+      "section_id": "SEC-04",
+      "name": "100% 풀블리드 원단 매크로 컷 (시각적 호흡감)",
+      "type": "FullBleedMacro"
+    },
+    {
+      "section_id": "SEC-05",
+      "name": "3D 테크니컬 블루프린트 마우스 틸트",
+      "type": "TechnicalBlueprint"
+    },
+    {
+      "section_id": "SEC-06",
+      "name": "상황별 태그 필터 & Before/After 드래그 슬라이더",
+      "type": "FilterableCases"
+    },
+    {
+      "section_id": "SEC-07",
+      "name": "수치로 증명하는 15종 순수 쇼케이스 갤러리 (구매버튼 배제)",
+      "type": "ProductShowcaseGallery"
+    },
+    {
+      "section_id": "SEC-08",
+      "name": "글로벌 푸터 & 30일 안심 무료 시착 시스템",
+      "type": "FooterTrial"
+    }
+  ]
+}

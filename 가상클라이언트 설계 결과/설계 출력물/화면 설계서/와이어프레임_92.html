@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEUMIM(스밈) 와이어프레임 스튜디오 - 가상클라이언트 92 (텍스트 플레이스홀더 & 후기 강화)</title>
+  <style>
+    :root {
+      --bg-canvas: #0B132B;
+      --bg-studio: #1C2541;
+      --sidebar-width: 300px;
+      --wf-bg: #FFFFFF;
+      --wf-border: #E2E8F0;
+      --wf-text-main: #0F172A;
+      --wf-text-muted: #64748B;
+      --wf-accent: #0284C7;
+      --wf-accent-bg: #E0F2FE;
+      --font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Noto Sans KR', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-family);
+      background: var(--bg-canvas);
+      color: #F8FAFC;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
+
+    #scroll-progress-bar {
+      position: fixed;
+      top: 0;
+      left: var(--sidebar-width);
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #0284C7, #38BDF8, #6FFFE9);
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.1s ease-out;
+    }
+
+    #sidebar {
+      width: var(--sidebar-width);
+      background: var(--bg-studio);
+      border-right: 1px solid #334155;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      flex-shrink: 0;
+      z-index: 100;
+    }
+
+    .studio-header {
+      padding: 24px 20px;
+      border-bottom: 1px solid #334155;
+    }
+    .studio-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #38BDF8;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .studio-subtitle {
+      font-size: 12px;
+      color: #94A3B8;
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    .screen-tree {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 12px;
+    }
+    .tree-category {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748B;
+      text-transform: uppercase;
+      padding: 10px 12px 6px 12px;
+      letter-spacing: 0.5px;
+    }
+    .tree-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #CBD5E1;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 4px;
+      transition: all 0.15s ease;
+    }
+    .tree-item:hover {
+      background: #334155;
+      color: #FFFFFF;
+    }
+    .tree-item.active {
+      background: #0284C7;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .tree-badge {
+      font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.15);
+    }
+
+    #main-canvas {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      background: #0F172A;
+      position: relative;
+    }
+
+    .canvas-topbar {
+      height: 56px;
+      background: #1E293B;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      flex-shrink: 0;
+      z-index: 10;
+    }
+    .vp-btn {
+      padding: 6px 14px;
+      border-radius: 6px;
+      background: #334155;
+      border: 1px solid #475569;
+      color: #CBD5E1;
+      font-size: 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .vp-btn.active {
+      background: #0284C7;
+      color: #FFFFFF;
+      border-color: #0284C7;
+    }
+
+    .scroll-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 40px 60px 80px 60px;
+      display: flex;
+      justify-content: center;
+      scroll-behavior: smooth;
+    }
+
+    .wf-document {
+      width: 100%;
+      max-width: 1240px;
+      background: var(--wf-bg);
+      color: var(--wf-text-main);
+      border-radius: 20px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+      overflow: hidden;
+      border: 1px solid var(--wf-border);
+    }
+
+    /* GNB */
+    .wf-gnb {
+      background: #FFFFFF;
+      border-bottom: 1px solid #E2E8F0;
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+    }
+    .gnb-logo {
+      font-size: 20px;
+      font-weight: 900;
+      color: #0F172A;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .gnb-tag {
+      font-size: 11px;
+      background: #E0F2FE;
+      color: #0284C7;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .gnb-nav {
+      display: flex;
+      gap: 32px;
+    }
+    .nav-link {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #475569;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.15s;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #0284C7;
+    }
+    .btn-cta-gnb {
+      background: #0284C7;
+      color: #FFFFFF;
+      border: none;
+      padding: 11px 22px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-cta-gnb:hover { background: #0369A1; }
+
+    /* Universal Placeholder Box */
+    .wf-ph-box {
+      background: #F8FAFC;
+      border: 1.5px dashed #CBD5E1;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 18px;
+      color: #475569;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .wf-ph-box:hover {
+      border-color: #0284C7;
+      background: #F0F9FF;
+    }
+    .wf-ph-title {
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 4px;
+    }
+
+    /* SEC-01 Hero */
+    .hero-fullscreen {
+      position: relative;
+      width: 100%;
+      width: 100%; min-height: calc(100vh - 80px); display: flex; align-items: center;
+      background-color: #0F172A;
+      display: flex;
+      align-items: center;
+      padding: 0 90px;
+      overflow: hidden;
+      color: #FFFFFF;
+    }
+    .hero-bg-indicator {
+      position: absolute;
+      top: 28px;
+      right: 36px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px dashed rgba(56, 189, 248, 0.4);
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 12.5px;
+      color: #38BDF8;
+      z-index: 2;
+      line-height: 1.6;
+      text-align: right;
+    }
+    .hero-content-wrap {
+      position: relative;
+      z-index: 5;
+      max-width: 680px;
+    }
+    .hero-pill-badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      color: #38BDF8;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+    }
+    .hero-title {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.3;
+      letter-spacing: -1.5px;
+      color: #FFFFFF;
+      margin-bottom: 22px;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.4);
+    }
+    .hero-subtitle {
+      font-size: 19px;
+      color: #CBD5E1;
+      line-height: 1.8;
+      margin-bottom: 38px;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.3);
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 16px;
+    }
+    .btn-hero-main {
+      background: #0284C7;
+      color: #FFFFFF;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 14.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+    }
+    .btn-hero-main:hover {
+      background: #0369A1;
+      transform: translateY(-1px);
+    }
+    .btn-hero-sub {
+      background: rgba(255,255,255,0.12);
+      color: #FFFFFF;
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: 14px 26px;
+      border-radius: 8px;
+      font-size: 14.5px;
+      font-weight: 700;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      transition: background 0.15s;
+    }
+    .btn-hero-sub:hover { background: rgba(255,255,255,0.22); }
+
+    /* Common Section */
+    .wf-section {
+      padding: 140px 70px;
+      border-bottom: 1px solid #E2E8F0;
+      position: relative;
+    }
+    .sec-header {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .sec-tag {
+      display: inline-block;
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #0284C7;
+      background: #E0F2FE;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+    }
+    .sec-title {
+      font-size: 34px;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 18px;
+      letter-spacing: -0.5px;
+      line-height: 1.4;
+    }
+    .sec-desc {
+      font-size: 16.5px;
+      color: #64748B;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* SEC-02 Bento Grid (후기 포토 & 빈공간 없는 꽉 찬 레이아웃) */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .bento-card {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      padding: 32px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .bento-card.wide { grid-column: span 2; }
+    .bento-card.alert-bg {
+      background: #FFF1F2;
+      border-color: #FECDD3;
+    }
+    .bento-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    .bento-title {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .donut-gauge {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: conic-gradient(#0284C7 0% 82.3%, #E2E8F0 82.3% 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .donut-inner {
+      width: 54px;
+      height: 54px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14.5px;
+      font-weight: 900;
+      color: #0284C7;
+    }
+    .timeline-bar-frame {
+      width: 100%;
+      height: 16px;
+      background: #E2E8F0;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 12px 0 8px 0;
+    }
+    .timeline-fill {
+      width: 39.1%;
+      height: 100%;
+      background: #0284C7;
+      border-radius: 8px;
+    }
+
+    /* Review Grid in Bento */
+    .wf-review-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .wf-review-box {
+      background: #FFFFFF;
+      border: 1px solid #FECDD3;
+      border-radius: 10px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .narrative-bridge {
+      background: linear-gradient(135deg, #0C4A6E, #0369A1);
+      color: #FFFFFF;
+      padding: 36px 50px;
+      border-radius: 16px;
+      text-align: center;
+      margin: 70px 0 0 0;
+      border: 1px dashed rgba(255,255,255,0.3);
+      box-shadow: 0 10px 30px rgba(2, 132, 199, 0.2);
+    }
+    .bridge-text {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.5;
+    }
+    .bridge-sub {
+      font-size: 13.5px;
+      opacity: 0.9;
+      margin-top: 6px;
+    }
+
+    /* SEC-03 Zig-Zag */
+    .zigzag-container {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+    .zigzag-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .zigzag-row.reverse { direction: rtl; }
+    .zigzag-row.reverse .zigzag-content { direction: ltr; }
+    .zigzag-ph-wrap {
+      height: 340px;
+      border-radius: 20px;
+    }
+    .zigzag-content { padding: 20px; }
+    .zigzag-badge {
+      color: #0284C7;
+      font-size: 12.5px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .zigzag-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 18px;
+      line-height: 1.4;
+    }
+    .zigzag-contrast-box {
+      background: #F1F5F9;
+      border-left: 4px solid #0284C7;
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 14px;
+    }
+    .zigzag-desc {
+      font-size: 14.5px;
+      color: #64748B;
+      line-height: 1.7;
+    }
+
+    /* SEC-04 Full-bleed Macro */
+    .fullbleed-macro {
+      width: 100%;
+      height: 320px;
+      background: #0284C7;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(2, 132, 199, 0.25);
+    }
+
+    /* SEC-05 Blueprint */
+    .blueprint-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      perspective: 1000px;
+    }
+    .blueprint-card {
+      background: #0F172A;
+      color: #FFFFFF;
+      border: 1px solid #334155;
+      border-radius: 18px;
+      overflow: hidden;
+      transition: transform 0.1s ease-out, box-shadow 0.2s ease-out;
+      transform-style: preserve-3d;
+    }
+    .blueprint-card:hover {
+      box-shadow: 0 20px 40px rgba(56, 189, 248, 0.15);
+    }
+    .blueprint-ph-box {
+      height: 200px;
+      background: #1E293B;
+      border-bottom: 1px dashed #475569;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #38BDF8;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+      padding: 20px;
+    }
+    .blueprint-content { padding: 30px; }
+    .blueprint-spec-tag {
+      font-size: 11px;
+      font-weight: 800;
+      color: #38BDF8;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .blueprint-title {
+      font-size: 19px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #FFFFFF;
+    }
+    .blueprint-desc {
+      font-size: 13.5px;
+      color: #94A3B8;
+      line-height: 1.7;
+    }
+
+    /* SEC-06 Filterable Cases */
+    .filter-tags {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 50px;
+    }
+    .filter-btn {
+      padding: 10px 22px;
+      border-radius: 20px;
+      background: #F1F5F9;
+      border: 1px solid #CBD5E1;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #475569;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .filter-btn.active {
+      background: #0284C7;
+      color: #FFFFFF;
+      border-color: #0284C7;
+    }
+    .usecases-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .ba-box {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 18px;
+      padding: 32px;
+    }
+    .ba-slider-wrap {
+      position: relative;
+      height: 280px;
+      border-radius: 12px;
+      overflow: hidden;
+      user-select: none;
+      cursor: ew-resize;
+    }
+    .ba-layer {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 800;
+      text-align: center;
+      padding: 20px;
+    }
+    .ba-layer.before {
+      background: #FEE2E2;
+      color: #DC2626;
+      width: 100%;
+    }
+    .ba-layer.after {
+      background: #DCFCE7;
+      color: #16A34A;
+      width: 50%;
+      border-right: 3px solid #059669;
+      overflow: hidden;
+    }
+    .ba-handle {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px; height: 36px;
+      background: #0F172A;
+      color: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      pointer-events: none;
+    }
+    .cases-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .case-card {
+      background: #F1F5F9;
+      border-radius: 14px;
+      padding: 24px;
+      border: 1px solid #E2E8F0;
+    }
+    .case-time { font-size: 12px; font-weight: 800; color: #0284C7; margin-bottom: 6px; }
+    .case-title { font-size: 15px; font-weight: 700; color: #0F172A; margin-bottom: 6px; }
+    .case-desc { font-size: 12.5px; color: #64748B; line-height: 1.6; }
+
+    /* SEC-07 Collection */
+    .metric-board {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      background: #0284C7;
+      color: #FFFFFF;
+      border-radius: 18px;
+      padding: 40px 30px;
+      margin-bottom: 70px;
+      text-align: center;
+    }
+    .metric-val { font-size: 40px; font-weight: 900; letter-spacing: -1px; }
+    .metric-lbl { font-size: 13.5px; opacity: 0.92; margin-top: 6px; font-weight: 600; }
+
+    .showcase-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .sc-tab {
+      padding: 12px 24px;
+      border-radius: 8px;
+      background: #F1F5F9;
+      border: 1px solid #E2E8F0;
+      font-size: 14px;
+      font-weight: 700;
+      color: #64748B;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .sc-tab.active {
+      background: #0F172A;
+      color: #FFFFFF;
+      border-color: #0F172A;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .prod-card {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .prod-ph-box {
+      height: 160px;
+      background: #F8FAFC;
+      border-bottom: 1px dashed #CBD5E1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #64748B;
+      text-align: center;
+      padding: 16px;
+    }
+    .prod-info-box {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .prod-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .prod-badge {
+      font-size: 10.5px;
+      font-weight: 800;
+      color: #0284C7;
+      background: #E0F2FE;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .prod-spec-chip {
+      font-size: 10px;
+      font-weight: 700;
+      color: #059669;
+      background: #D1FAE5;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+    .prod-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 6px;
+    }
+    .prod-desc {
+      font-size: 12.5px;
+      color: #64748B;
+      line-height: 1.6;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(15, 23, 42, 0.75);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-box {
+      background: #FFFFFF;
+      width: 540px;
+      border-radius: 18px;
+      padding: 38px;
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px; right: 20px;
+      font-size: 20px;
+      cursor: pointer;
+      color: #94A3B8;
+      border: none;
+      background: none;
+    }
+  
+    /* Large Problem Stack */
+    .problem-stack-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+    .problem-large-card {
+      background: #F8FAFC;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 20px;
+      padding: 44px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 100px;
+      min-height: 480px;
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .problem-large-card:nth-child(1) { z-index: 10; top: 90px; }
+    .problem-large-card:nth-child(2) { z-index: 20; top: 105px; }
+    .problem-large-card:nth-child(3) { z-index: 30; top: 120px; }
+    .problem-large-card:nth-child(4) { z-index: 40; top: 135px; }
+
+    .problem-large-card.alert-bg {
+      background: #FFF5F5;
+      border-color: #FECDD3;
+    }
+    .problem-badge-pill {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      color: #0284C7;
+      background: #E0F2FE;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .problem-large-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+    .problem-large-desc {
+      font-size: 15px;
+      color: #64748B;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .problem-stat-box {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 18px 24px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="scroll-progress-bar"></div>
+
+  <aside id="sidebar">
+    <div class="studio-header">
+      <div class="studio-title">
+        <span>SEUMIM 스튜디오</span>
+        <span class="tree-badge">GC-92</span>
+      </div>
+      <div class="studio-subtitle">텍스트 플레이스홀더 &amp; 후기 강화</div>
+    </div>
+
+    <div class="screen-tree">
+      <div class="tree-category">Interactive Story Flow</div>
+      <div class="tree-item active" onclick="scrollToSection('sec-hero')">
+        <span>01. Full-Bleed Hero (텍스트 가이드)</span>
+        <span class="tree-badge">SCR-01</span>
+      </div>
+      <div class="tree-item" onclick="scrollToSection('sec-bento')">
+        <span>02. Bento Grid (후기 포토 강화)</span>
+        <span class="tree-badge">SCR-02</span>
+      </div>
+      <div class="tree-item" onclick="scrollToSection('sec-zigzag')">
+        <span>03. Zig-Zag 3 Pillars</span>
+        <span class="tree-badge">SCR-03</span>
+      </div>
+      <div class="tree-item" onclick="scrollToSection('sec-macro')">
+        <span>04. Full-bleed Visual</span>
+        <span class="tree-badge">SCR-04</span>
+      </div>
+      <div class="tree-item" onclick="scrollToSection('sec-blueprint')">
+        <span>05. 3D Blueprint (Tilt)</span>
+        <span class="tree-badge">SCR-05</span>
+      </div>
+      <div class="tree-item" onclick="scrollToSection('sec-usecases')">
+        <span>06. Filterable Cases (Slider)</span>
+        <span class="tree-badge">SCR-06</span>
+      </div>
+      <div class="tree-item" onclick="scrollToSection('sec-collection')">
+        <span>07. Collection (이미지 쇼케이스)</span>
+        <span class="tree-badge">SCR-07</span>
+      </div>
+
+      <div class="tree-category" style="margin-top: 20px;">Modals</div>
+      <div class="tree-item" onclick="openModal('modal-try')">
+        <span>30일 0원 무료 시착 신청</span>
+        <span class="tree-badge">MOD-03</span>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-canvas">
+    <div class="canvas-topbar">
+      <div style="font-weight: 700; color: #F8FAFC; font-size: 14px;">
+        단독 와이어프레임 프리뷰 (Wireframe 92)
+      </div>
+      <div class="viewport-controls">
+        <button class="vp-btn active">Desktop (1240px)</button>
+        <button class="vp-btn" onclick="openModal('modal-try')">0원 시착 테스트</button>
+      </div>
+    </div>
+
+    <div class="scroll-container" id="main-scroll-container">
+      <div class="wf-document">
+
+        <!-- GNB Header -->
+        <header class="wf-gnb">
+          <div class="gnb-logo">
+            SEUMIM <span class="gnb-tag">0.1mm Seamless</span>
+          </div>
+          <nav class="gnb-nav">
+            <a class="nav-link active" onclick="scrollToSection('sec-hero')">Our Purpose</a>
+            <a class="nav-link" onclick="scrollToSection('sec-bento')">The Origin</a>
+            <a class="nav-link" onclick="scrollToSection('sec-zigzag')">3 Pillars</a>
+            <a class="nav-link" onclick="scrollToSection('sec-blueprint')">Blueprint</a>
+            <a class="nav-link" onclick="scrollToSection('sec-collection')">Collection</a>
+          </nav>
+          <div class="gnb-actions">
+            <button class="btn-cta-gnb" onclick="openModal('modal-try')">30일 무료 시착 (0원)</button>
+          </div>
+        </header>
+
+        <!-- SEC-01: Hero -->
+        <section id="sec-hero" class="hero-fullscreen">
+          <div class="hero-bg-indicator">
+            <strong>📸 [HERO FULL-SCREEN IMAGE AREA]</strong><br>
+            햇살이 비치는 밝은 오피스 공간 &amp; 0.1mm 심리스 코어웨어를 착용한 직장인의 편안하고 당당한 전신 실루엣 화보
+          </div>
+
+          <div class="hero-content-wrap" style="max-width:880px;">
+            <span class="hero-pill-badge">✦ 0.1mm Seamless · 스며드는 다정한 균형</span>
+            <h1 class="hero-title" style="font-size:52px; line-height:1.35; margin-bottom:22px;">
+              <span style="display:block; white-space:nowrap;">우리는 몸을 억지로 조이는 대신,</span>
+              <span style="display:block; white-space:nowrap;">일상에 자연스럽게 스며들기로 했습니다</span>
+            </h1>
+            <p class="hero-subtitle" style="font-size:18px; line-height:1.8; margin-bottom:34px;">
+              <span style="display:block; white-space:nowrap;">하루 9.4시간 책상 앞,</span>
+              <span style="display:block; white-space:nowrap;">쇠 와이어의 고통을 견디던 직장인들을 위해 시작된 0.1mm 심리스 혁신 이야기</span>
+            </p>
+            <div class="hero-cta-group">
+              <button class="btn-hero-main" onclick="openModal('modal-try')">30일 무료 시착 시작하기 (0원)</button>
+              <button class="btn-hero-sub" onclick="scrollToSection('sec-collection')">15종 컬렉션 탐색하기 ➔</button>
+            </div>
+          </div>
+        </section>
+
+                <!-- SEC-02: Bento Grid ➔ One-by-One Large Problem Showcase -->
+        <section id="sec-bento" class="wf-section">
+          <div class="sec-header">
+            <span class="sec-tag" style="background: #FFE4E6; color: #E11D48;">THE ORIGIN &amp; EVIDENCE</span>
+            <h2 class="sec-title">하루 9.4시간 책상 앞,<br>왜 우리는 매일 무너질까요?</h2>
+            <p class="sec-desc">
+              스크롤을 내려 우리가 바쁜 일상 속에서 당연하게 참아왔던,<br>4가지 자세 무너짐의 실태와 고통을 하나씩 확인해 보세요.
+            </p>
+          </div>
+
+          <div class="problem-stack-wrap">
+            <!-- Card 01 -->
+            <div class="problem-large-card">
+              <div class="wf-ph-box" style="height:380px; padding:28px;">
+                <div class="wf-ph-title" style="font-size:16px; margin-bottom:8px;">📸 [시각자료 01 : 목 &amp; 승모근 통증 실태]</div>
+                <div style="font-size:13.5px; max-width:360px; line-height:1.7;">
+                  모니터를 향해 거북이처럼 15° 이상 쏟아지는 경추와 이로 인해 2.4배 이상 솟아오른 승모근 근육 경직 실태 시각 자료
+                </div>
+              </div>
+              <div>
+                <span class="problem-badge-pill">PROBLEM 01 / 04</span>
+                <h3 class="problem-large-title">무너지는 자세,<br>통증 후에야 깨닫는 자각 불가</h3>
+                <p class="problem-large-desc">
+                  업무에 몰입하는 동안 목과 허리가 서서히 앞으로 쏟아지지만,<br>뇌는 이를 인지하지 못합니다.<br>퇴근길 묵직한 통증이 찾아온 뒤에야 후회합니다.
+                </p>
+                <div class="problem-stat-box">
+                  <div style="display:flex; align-items:center; gap:20px;">
+                    <div class="donut-gauge" style="margin-bottom:0; width:68px; height:68px;">
+                      <div class="donut-inner" style="width:48px; height:48px; font-size:13.5px;">82.3%</div>
+                    </div>
+                    <div>
+                      <div style="font-size:17px; font-weight:800; color:#0F172A; margin-bottom:4px;">직장인 82.3% 자세 무너짐 자각 불가</div>
+                      <div style="font-size:12.5px; color:#64748B;">업무 집중 중 척추 각도가 18° 틀어져도 스스로 인지 불가능</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 02 -->
+            <div class="problem-large-card">
+              <div class="wf-ph-box" style="height:380px; padding:28px;">
+                <div class="wf-ph-title" style="font-size:16px; margin-bottom:8px;">📸 [시각자료 02 : 치료 골든타임 지연 &amp; 야근 실태]</div>
+                <div style="font-size:13.5px; max-width:360px; line-height:1.7;">
+                  야근과 연차 눈치로 병원 물리치료를 미루는 2030 직장인의 고립된 오피스 야간 실루엣 &amp; 연간 척추 환자 421만 명 통계 도해
+                </div>
+              </div>
+              <div>
+                <span class="problem-badge-pill">PROBLEM 02 / 04</span>
+                <h3 class="problem-large-title">골든타임을 미루는 현실:<br>40.4%가 시간 부족과 눈치로 치료 지연</h3>
+                <p class="problem-large-desc">
+                  환자는 폭증하고 있으나,<br>2030 직장인의 40.4%가 '야근 등 절대적인 시간 부족'과 '연차 사용의 눈치' 때문에<br>실질적인 병원 물리치료를 미루고 있습니다.
+                </p>
+                <div class="problem-stat-box">
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="font-size:13px; font-weight:700; color:#0F172A;">시간 부족·연차 눈치로 치료 지연율</span>
+                    <span style="font-size:16px; font-weight:900; color:#0284C7;">40.4% (직장인 10명 중 4명)</span>
+                  </div>
+                  <div class="timeline-bar-frame" style="margin:6px 0;">
+                    <div class="timeline-fill" style="width: 40.4%;"></div>
+                  </div>
+                  <div style="display:flex; justify-content:space-between; font-size:12px; color:#64748B;">
+                    <span>평일 낮 병원 방문 불가</span>
+                    <span>연간 2030 척추 환자 421만 명 급증 🏥</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 03 -->
+            <div class="problem-large-card alert-bg">
+              <div class="wf-ph-box" style="height:380px; padding:28px; background:#FFF0F2; border-color:#FECDD3;">
+                <div class="wf-ph-title" style="font-size:16px; color:#9F1239; margin-bottom:8px;">📸 [시각자료 03 : 쇠 와이어 피부 압박 &amp; 방치]</div>
+                <div style="font-size:13.5px; color:#9F1239; max-width:360px; line-height:1.7;">
+                  두꺼운 플라스틱 지지대와 쇠 와이어 보조기가 갈비뼈를 짓누르고 피부에 남긴 붉은 상처 자국 &amp; 서랍 속에 처박힌 실태 컷
+                </div>
+              </div>
+              <div>
+                <span class="problem-badge-pill" style="background:#FFE4E6; color:#E11D48;">PROBLEM 03 / 04</span>
+                <h3 class="problem-large-title" style="color:#9F1239;">서랍 속에 처박힌<br>조임 보조기들의 고통</h3>
+                <p class="problem-large-desc">
+                  자세를 고쳐보려 구매했던 수많은 교정기들은,<br>두꺼운 쇠붙이와 억지 압박으로 소화불량과 흉통을 유발해<br>30분도 견디지 못하고 서랍 속에 방치되었습니다.
+                </p>
+                <div class="problem-stat-box" style="border-color:#FECDD3;">
+                  <div style="font-size:13px; color:#9F1239; font-weight:800; line-height:1.7;">
+                    • 기존 보조기 30분 이상 착용 불가율: <strong>76.4%</strong><br>
+                    • 셔츠 밖으로 튀어나와 출근 시 착용 불가: <strong>91.2%</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 04 -->
+            <div class="problem-large-card alert-bg">
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div class="wf-ph-box" style="height:380px; padding:20px; background:#FFF0F2; border-color:#FECDD3;">
+                  <div style="font-weight:800; font-size:13px; color:#9F1239; margin-bottom:6px;">📸 [불편 후기 포토 01]</div>
+                  <div style="font-size:12px; color:#64748B; line-height:1.5; margin-bottom:12px;">타사 쇠 와이어 보조기의 갈비뼈 압박 &amp; 옷태 파괴 컷</div>
+                  <div style="background:#ffffff; padding:12px; border-radius:8px; font-size:12px; border:1px solid #FECDD3; text-align:left; color:#333; line-height:1.5;">
+                    "유명하다는 8만 원대 밴드 샀는데 쇠 와이어가 갈비뼈를 너무 짓눌러서 밥 먹으면 체함. 셔츠 밖으로 툭 튀어나와 출근할 땐 절대 못 참."
+                    <div style="font-weight:800; color:#BE123C; margin-top:4px;">— IT 개발자 A님 (32세)</div>
+                  </div>
+                </div>
+
+                <div class="wf-ph-box" style="height:380px; padding:20px; background:#FFF0F2; border-color:#FECDD3;">
+                  <div style="font-weight:800; font-size:13px; color:#9F1239; margin-bottom:6px;">📸 [불편 후기 포토 02]</div>
+                  <div style="font-size:12px; color:#64748B; line-height:1.5; margin-bottom:12px;">타사 부착형 센서 오작동 &amp; 테이프 피부 발진 컷</div>
+                  <div style="background:#ffffff; padding:12px; border-radius:8px; font-size:12px; border:1px solid #FECDD3; text-align:left; color:#333; line-height:1.5;">
+                    "등에 붙이는 센서는 신발 끈만 묶어도 징징 울려서 회의 때 민망해 죽는 줄... 테이프 붙인 자리에 빨간 뾰루지까지 나서 일주일 만에 버림."
+                    <div style="font-weight:800; color:#BE123C; margin-top:4px;">— 마케터 B님 (29세)</div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="problem-badge-pill" style="background:#FFE4E6; color:#E11D48;">PROBLEM 04 / 04</span>
+                <h3 class="problem-large-title" style="color:#9F1239;">블라인드 2030 직장인들의<br>타 교정제품 실패 찐후기</h3>
+                <p class="problem-large-desc">
+                  자세를 고쳐보려 수많은 제품을 샀지만, <strong>"숨 막히는 강제 조임"</strong>, <strong>"셔츠 밖 옷태 파괴"</strong>, <strong>"시도 때도 없는 오작동 진동 스트레스"</strong>로 인해 결국 1주일도 못 가 서랍 속에 처박혔습니다.
+                </p>
+                <div class="problem-stat-box" style="border-color:#FECDD3;">
+                  <div style="margin-bottom:8px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                      <span style="font-size:13px; font-weight:700; color:#0F172A;">타사 교정제품 1개월 내 중도 포기율</span>
+                      <span style="font-size:20px; font-weight:900; color:#E11D48;">91.4%</span>
+                    </div>
+                  </div>
+                  <div style="font-size:12px; color:#64748B; line-height:1.6; border-top:1px dashed #FECDD3; padding-top:6px;">
+                    • 포기 사유 1위: 살 짓눌림 &amp; 소화불량 흉통 (48.2%)<br>
+                    • 포기 사유 2위: 셔츠 밖 튀어나옴 등 옷태 훼손 (29.6%)<br>
+                    • 포기 사유 3위: 센서 오진동 스트레스 &amp; 피부 발진 (13.6%)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="narrative-bridge">
+            <div class="bridge-text">✦ 그래서 우리는 몸을 억지로 조이는 대신,<br>일상에 자연스럽게 스며드는 길을 선택했습니다.</div>
+            <div class="bridge-sub">피부와 호흡을 존중하는,<br>스밈(SEUMIM)의 3대 다정한 균형 철학</div>
+          </div>
+        </section>
+
+        <!-- SEC-03: The 3 Pillars -->
+        <section id="sec-zigzag" class="wf-section">
+          <div class="sec-header" style="max-width: 1040px; margin-left: auto; margin-right: auto;">
+            <span class="sec-tag">ZIG-ZAG 3 PILLARS</span>
+            <h2 class="sec-title" style="white-space: nowrap; font-size: 30px; letter-spacing: -0.02em;">고통스러운 조임 대신,<br>일상에 스며드는 '티 없는' 다정한 균형</h2>
+            <p class="sec-desc">
+              바른 자세는 억지로 뼈를 꺾고 몸을 옥죄어 만드는 것이 아닙니다.<br>스밈(SEUMIM)은 일상을 방해하지 않고 가장 다정하게 지탱합니다.
+            </p>
+          </div>
+
+          <div class="zigzag-container">
+            <div class="zigzag-row">
+              <div class="wf-ph-box zigzag-ph-wrap">
+                <div class="wf-ph-title">📸 [비주얼 02 : 스며들다 (Natural Habit)]</div>
+                <div>피부에 부드럽게 닿는 천연 텐셀 나노 섬유 직조 컷 &amp; 스스로 자세를 기억하게 만드는 메커니즘 도해</div>
+              </div>
+              <div class="zigzag-content">
+                <div class="zigzag-badge">PILLAR 01</div>
+                <h3 class="zigzag-title">'스며들다' (Natural Habit)</h3>
+                <div class="zigzag-contrast-box">
+                  강제 교정의 피로 ➔ 일상 속 자연스러운 습관 형성
+                </div>
+                <p class="zigzag-desc">
+                  억지로 자세를 강요하지 않고,<br>건강한 습관이 일상에 자연스럽게 녹아들어<br>몸과 마음의 균형을 완성합니다.
+                </p>
+              </div>
+            </div>
+
+            <div class="zigzag-row reverse">
+              <div class="wf-ph-box zigzag-ph-wrap">
+                <div class="wf-ph-title">📸 [비주얼 03 : 티 없이 (Seamless &amp; Flawless)]</div>
+                <div>0.1mm 심리스 무봉제 본딩 초접사 단면 &amp; 얇은 화이트 셔츠 속 99.8% 완벽 은폐 스킨핏 컷</div>
+              </div>
+              <div class="zigzag-content">
+                <div class="zigzag-badge">PILLAR 02</div>
+                <h3 class="zigzag-title">'티 없이' (Seamless &amp; Flawless)</h3>
+                <div class="zigzag-contrast-box">
+                  투박한 옷태 파괴 ➔ 0.1mm 셔츠 속 99.8% 은폐
+                </div>
+                <p class="zigzag-desc">
+                  봉제선이 전혀 없는 0.1mm 무봉제 본딩 기술로 얇은 화이트 셔츠나 슬랙스 안에 입어도 겉으로 전혀 '티가 나지 않는' 극상의 슬림함과 당당한 오피스 실루엣을 선사합니다.
+                </p>
+              </div>
+            </div>
+
+            <div class="zigzag-row">
+              <div class="wf-ph-box zigzag-ph-wrap">
+                <div class="wf-ph-title">📸 [비주얼 04 : Effort-Free (Kind Balance)]</div>
+                <div>퇴근 후 힘든 운동 없이도, 앉은 자리에서 지렛대 탄성으로 편안하게 숨 쉬며 지탱하는 오피스 웰니스 컷</div>
+              </div>
+              <div class="zigzag-content">
+                <div class="zigzag-badge">PILLAR 03</div>
+                <h3 class="zigzag-title">'Effort-Free' (Kind Balance)</h3>
+                <div class="zigzag-contrast-box">
+                  퇴근 후 1시간 운동 강요 ➔ 앉은 자리 10초 케어
+                </div>
+                <p class="zigzag-desc">
+                  퇴근 후 힘든 운동을 강요하지 않습니다. 일하는 순간에도 숨 쉬듯 편안하게 지탱하는 다정한 웰니스를 만듭니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEC-04: Full-bleed Macro -->
+        <section id="sec-macro" class="wf-section" style="padding-top: 40px; padding-bottom: 40px;">
+          <div class="fullbleed-macro">
+            <div>
+              <div style="font-size: 14px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.9;">100% Full-bleed Macro Visual</div>
+              <div style="font-size: 26px; font-weight: 900; margin-bottom: 8px;">[📸 비주얼 05 : 0.1mm 심리스 무봉제 나노 텍스처 초근접 100% 풀와이드 줌인]</div>
+              <div style="font-size: 15px; opacity: 0.9;">피부와 하나 되는 완벽한 밀착, 닿는 순간 숨 쉬는 편안함을 시각적으로 증명하는 매크로 컷</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEC-05: Technical Blueprint -->
+        <section id="sec-blueprint" class="wf-section" style="background: #0B132B; color: #FFFFFF;">
+          <div class="sec-header">
+            <span class="sec-tag" style="background: rgba(56, 189, 248, 0.15); color: #38BDF8;">3D TECHNICAL BLUEPRINT</span>
+            <h2 class="sec-title" style="color: #FFFFFF;">몸에 닿는 순간 느껴지는 착용감의 과학</h2>
+            <p class="sec-desc" style="color: #94A3B8;">
+              카드 위에 마우스를 올려 3D 엔지니어링 도면 인터랙션을 확인하세요.
+            </p>
+          </div>
+
+          <div class="blueprint-grid">
+            <div class="blueprint-card tilt-card">
+              <div class="blueprint-ph-box">
+                <div class="wf-ph-title" style="color: #38BDF8;">📐 [도면 01 : 0.1mm 심리스 나노 압착 직조 도면]</div>
+                <div style="font-size: 12px; color: #94A3B8; margin-top: 4px;">무봉제 접합 단면 3D 렌더링 도면</div>
+              </div>
+              <div class="blueprint-content">
+                <div class="blueprint-spec-tag">NAKED SEAMLESS BLUEPRINT</div>
+                <div class="blueprint-title">01. 0.1mm 심리스 본딩</div>
+                <div class="blueprint-desc">봉제선을 100% 제거하여 셔츠 속 99.8% 은폐율을 자랑하며 살 눌림 자국이 전혀 남지 않습니다.</div>
+              </div>
+            </div>
+
+            <div class="blueprint-card tilt-card">
+              <div class="blueprint-ph-box">
+                <div class="wf-ph-title" style="color: #38BDF8;">🌬️ [도면 02 : 38g 에어로 메쉬 통기 기류도]</div>
+                <div style="font-size: 12px; color: #94A3B8; margin-top: 4px;">초미세 쿨링 에어로 에어플로우 시뮬레이션</div>
+              </div>
+              <div class="blueprint-content">
+                <div class="blueprint-spec-tag">AIRY WEIGHTLESS SIMULATION</div>
+                <div class="blueprint-title">02. 38g 에어로 메쉬</div>
+                <div class="blueprint-desc">달걀 하나보다 가벼운 무게로 하루 종일 착용해도 땀이 차지 않는 초미세 통기 구조를 갖췄습니다.</div>
+              </div>
+            </div>
+
+            <div class="blueprint-card tilt-card">
+              <div class="blueprint-ph-box">
+                <div class="wf-ph-title" style="color: #38BDF8;">⚙️ [도면 03 : 척추 기립근 4중 동적 텐션 단면도]</div>
+                <div style="font-size: 12px; color: #94A3B8; margin-top: 4px;">지렛대 원리 탄성 복원 메커니즘</div>
+              </div>
+              <div class="blueprint-content">
+                <div class="blueprint-spec-tag">DYNAMIC RESTORING MECHANISM</div>
+                <div class="blueprint-title">03. 동적 텐션 프레임</div>
+                <div class="blueprint-desc">몸을 옥죄지 않고 지렛대 원리에 따라 유연하게 척추를 밀어 올려 바른 정렬을 복원합니다.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEC-06: Filterable Cases -->
+        <section id="sec-usecases" class="wf-section">
+          <div class="sec-header">
+            <span class="sec-tag">FILTERABLE USE CASES</span>
+            <h2 class="sec-title">하루 끝에 비로소 느껴지는 가벼운 어깨</h2>
+            <p class="sec-desc">
+              스밈을 만난 후, 2030 직장인들의 일상과 실루엣이 어떻게 변화했는지 확인해 보세요.
+            </p>
+          </div>
+
+          <div class="filter-tags">
+            <button class="filter-btn active" onclick="filterCases('all')">전체 보기 (4)</button>
+            <button class="filter-btn" onclick="filterCases('desk')">오피스 데스크</button>
+            <button class="filter-btn" onclick="filterCases('commute')">출퇴근 · 이동</button>
+            <button class="filter-btn" onclick="filterCases('meeting')">외근 · 미팅</button>
+          </div>
+
+          <div class="usecases-container">
+            <div class="ba-box">
+              <div style="font-weight: 800; font-size: 16px; margin-bottom: 16px;">마우스로 좌우를 드래그하여 비교하세요</div>
+              <div class="ba-slider-wrap" id="ba-slider">
+                <div class="ba-layer before">
+                  <div>
+                    <div style="font-size: 13px; margin-bottom: 6px;">[BEFORE]</div>
+                    [📸 비주얼 : 굽은 등 &amp; 솟아오른 승모근 통증]
+                  </div>
+                </div>
+                <div class="ba-layer after" id="ba-after-layer">
+                  <div>
+                    <div style="font-size: 13px; margin-bottom: 6px;">[AFTER]</div>
+                    [📸 비주얼 : 어깨선 32% 개선 단정한 실루엣]
+                  </div>
+                </div>
+                <div class="ba-handle" id="ba-handle">⬌</div>
+              </div>
+              <div style="text-align: center; margin-top: 16px; font-size: 12.5px; color: #64748B;">
+                * 300인 전문의 &amp; IT 앰배서더 실착 임상 테스트 결과 (만족도 98.6%)
+              </div>
+            </div>
+
+            <div class="cases-grid" id="cases-container">
+              <div class="case-card">
+                <div class="case-time">08:30 출근길</div>
+                <div class="case-title">슬림한 오피스룩</div>
+                <div class="case-desc">얇은 셔츠 속에도 티 나지 않는 0.1mm 완벽 은폐</div>
+              </div>
+              <div class="case-card">
+                <div class="case-time">14:00 집중 업무</div>
+                <div class="case-title">무의식 거북목 지탱</div>
+                <div class="case-desc">모니터 앞 쏟아지는 목과 어깨를 탄성으로 서포트</div>
+              </div>
+              <div class="case-card">
+                <div class="case-time">17:00 외근 미팅</div>
+                <div class="case-title">당당한 프로 핏</div>
+                <div class="case-desc">단정하게 펴진 어깨선으로 당당한 실루엣 연출</div>
+              </div>
+              <div class="case-card">
+                <div class="case-time">19:30 가벼운 퇴근</div>
+                <div class="case-title">가벼운 승모근</div>
+                <div class="case-desc">퇴근길에도 뭉침 없이 깃털처럼 가벼운 어깨</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEC-07: Collection (No Buy Buttons, Pure Image Showcase) -->
+        <section id="sec-collection" class="wf-section">
+          <div class="sec-header">
+            <span class="sec-tag" style="background: #D1FAE5; color: #059669;">COLLECTION SHOWCASE</span>
+            <h2 class="sec-title">수치로 증명하는 스밈 15종 전 라인업</h2>
+          </div>
+          
+          <div class="metric-board">
+            <div>
+              <div class="metric-val">38g</div>
+              <div class="metric-lbl">깃털 초경량 설계</div>
+            </div>
+            <div>
+              <div class="metric-val">99.8%</div>
+              <div class="metric-lbl">무봉제 의류 은폐율</div>
+            </div>
+            <div>
+              <div class="metric-val">300+</div>
+              <div class="metric-lbl">전문의·앰배서더 검증</div>
+            </div>
+            <div>
+              <div class="metric-val">100%</div>
+              <div class="metric-lbl">30일 0원 안심 무료 시착</div>
+            </div>
+          </div>
+
+          <div class="showcase-tabs">
+            <button class="sc-tab active" onclick="switchTab('signature')">시그니처 코어웨어 (4)</button>
+            <button class="sc-tab" onclick="switchTab('care')">전문 집중케어 (4)</button>
+            <button class="sc-tab" onclick="switchTab('sensor')">스마트 센서테크 (4)</button>
+            <button class="sc-tab" onclick="switchTab('acc')">직업 맞춤ACC (3)</button>
+          </div>
+
+          <div class="product-grid" id="product-container">
+            <!-- 01 -->
+            <div class="prod-card">
+              <div class="prod-ph-box">
+                <div class="wf-ph-title">[대표 01 제품 컷]</div>
+                <div>0.1mm 심리스 넥&amp;숄더 밴드 렌더링</div>
+              </div>
+              <div class="prod-info-box">
+                <div class="prod-badge-row">
+                  <span class="prod-badge">대표작 01</span>
+                  <span class="prod-spec-chip">0.1mm 무봉제</span>
+                  <span class="prod-spec-chip">38g 초경량</span>
+                </div>
+                <div class="prod-title">0.1mm 심리스 넥&amp;숄더 밴드</div>
+                <div class="prod-desc">Naked Seamless 0.1mm 무봉제 본딩, 전면 자석 버클로 완벽 밀착 및 말린 어깨 정렬</div>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="prod-card">
+              <div class="prod-ph-box">
+                <div class="wf-ph-title">[대표 02 제품 컷]</div>
+                <div>3D 에어로 메쉬 척추 조끼 렌더링</div>
+              </div>
+              <div class="prod-info-box">
+                <div class="prod-badge-row">
+                  <span class="prod-badge">대표작 02</span>
+                  <span class="prod-spec-chip">38g 쿨링메쉬</span>
+                  <span class="prod-spec-chip">4중 텐션</span>
+                </div>
+                <div class="prod-title">3D 에어로 메쉬 척추 조끼</div>
+                <div class="prod-desc">Airy Weightless 쿨링 메쉬, 척추 기립근 4중 탄성 프레임으로 하루 종일 쾌적한 지지력</div>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="prod-card">
+              <div class="prod-ph-box">
+                <div class="wf-ph-title">[대표 03 제품 컷]</div>
+                <div>골반 수평 유지 에어셀 벨트 렌더링</div>
+              </div>
+              <div class="prod-info-box">
+                <div class="prod-badge-row">
+                  <span class="prod-badge">대표작 03</span>
+                  <span class="prod-spec-chip">에어셀 패드</span>
+                  <span class="prod-spec-chip">골반 18.2° 교정</span>
+                </div>
+                <div class="prod-title">골반 수평 유지 에어셀 벨트</div>
+                <div class="prod-desc">Dynamic Restoring 에어셀 패드로 다리 꼬기 습관을 물리적으로 부드럽게 차단</div>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="prod-card">
+              <div class="prod-ph-box">
+                <div class="wf-ph-title">[코어웨어 제품 컷]</div>
+                <div>0.1mm 럼버 서포트 언더웨어 컷</div>
+              </div>
+              <div class="prod-info-box">
+                <div class="prod-badge-row">
+                  <span class="prod-badge">코어웨어</span>
+                  <span class="prod-spec-chip">요추 4~5번 지지</span>
+                  <span class="prod-spec-chip">슬랙스핏</span>
+                </div>
+                <div class="prod-title">0.1mm 럼버 서포트 언더웨어</div>
+                <div class="prod-desc">요추 4~5번 38g 초경량 밀착 지지, 슬랙스 핏을 흐트러뜨리지 않는 완벽한 은폐 디자인</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="background: #F8FAFC; padding: 60px 70px; border-top: 1px solid #E2E8F0; font-size: 13.5px; color: #64748B; line-height: 1.8;">
+          <div style="font-weight: 800; color: #0F172A; margin-bottom: 10px; font-size: 15px;">스밈(SEUMIM) 100% 안심 무료 시착 시스템</div>
+          <div>결제금액 0원 · 왕복 배송비 무료 · 30일 이내 무조건 무료 반품 및 사이즈 교환</div>
+        </footer>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Trial Modal -->
+  <div class="modal-overlay" id="modal-try" onclick="closeModal('modal-try')">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal-try')">✕</button>
+      <div style="font-size: 12px; font-weight: 800; color: #059669; margin-bottom: 8px;">RISK-FREE 30 DAYS</div>
+      <h3 style="font-size: 20px; font-weight: 800; margin-bottom: 8px;">30일 무료 시착 신청서</h3>
+      <p style="font-size: 13px; color: #64748B; margin-bottom: 20px;">지금 결제되는 금액은 0원입니다. 30일간 충분히 입어보세요.</p>
+      
+      <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 22px;">
+        <input type="text" placeholder="받으시는 분 이름" style="padding: 10px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px;">
+        <input type="tel" placeholder="연락처 (알림톡 수신)" style="padding: 10px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px;">
+        <input type="text" placeholder="배송지 주소" style="padding: 10px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px;">
+      </div>
+
+      <div style="background: #F8FAFC; padding: 14px; border-radius: 6px; font-size: 12.5px; color: #475569; margin-bottom: 22px; line-height: 1.6;">
+        ✓ 결제금액: <strong>0원</strong> (왕복 배송비 무료)<br>
+        ✓ 30일 시착 후 불만족 시 무조건 무료 수거
+      </div>
+
+      <button class="btn-hero-main" style="width: 100%; padding: 12px; background: #059669;" onclick="alert('30일 무료 시착 신청이 접수되었습니다!'); closeModal('modal-try');">
+        0원으로 30일 무료 시착 시작하기
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function openModal(id) {
+      document.getElementById(id).classList.add('active');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('active');
+    }
+
+    const scrollContainer = document.getElementById('main-scroll-container');
+    const progressBar = document.getElementById('scroll-progress-bar');
+    if (scrollContainer && progressBar) {
+      scrollContainer.addEventListener('scroll', () => {
+        const scrollTop = scrollContainer.scrollTop;
+        const scrollHeight = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+        if (scrollHeight > 0) {
+          const progress = (scrollTop / scrollHeight) * 100;
+          progressBar.style.width = progress + '%';
+        }
+      });
+    }
+
+    const tiltCards = document.querySelectorAll('.tilt-card');
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -8;
+        const rotateY = ((x - centerX) / centerX) * 8;
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
+      });
+    });
+
+    const sliderWrap = document.getElementById('ba-slider');
+    const afterLayer = document.getElementById('ba-after-layer');
+    const handle = document.getElementById('ba-handle');
+    let isDragging = false;
+
+    if (sliderWrap && afterLayer && handle) {
+      function updateSlider(x) {
+        const rect = sliderWrap.getBoundingClientRect();
+        let pos = ((x - rect.left) / rect.width) * 100;
+        if (pos < 0) pos = 0;
+        if (pos > 100) pos = 100;
+        afterLayer.style.width = pos + '%';
+        handle.style.left = pos + '%';
+      }
+      sliderWrap.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        updateSlider(e.clientX);
+      });
+      window.addEventListener('mousemove', (e) => {
+        if (isDragging) updateSlider(e.clientX);
+      });
+      window.addEventListener('mouseup', () => { isDragging = false; });
+    }
+
+    function filterCases(category) {
+      const btns = document.querySelectorAll('.filter-btn');
+      btns.forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const container = document.getElementById('cases-container');
+      if (!container) return;
+
+      if (category === 'all') {
+        container.innerHTML = `
+          <div class="case-card">
+            <div class="case-time">08:30 출근길</div>
+            <div class="case-title">슬림한 오피스룩</div>
+            <div class="case-desc">얇은 셔츠 속에도 티 나지 않는 0.1mm 완벽 은폐</div>
+          </div>
+          <div class="case-card">
+            <div class="case-time">14:00 집중 업무</div>
+            <div class="case-title">무의식 거북목 지탱</div>
+            <div class="case-desc">모니터 앞 쏟아지는 목과 어깨를 탄성으로 서포트</div>
+          </div>
+          <div class="case-card">
+            <div class="case-time">17:00 외근 미팅</div>
+            <div class="case-title">당당한 프로 핏</div>
+            <div class="case-desc">단정하게 펴진 어깨선으로 당당한 실루엣 연출</div>
+          </div>
+          <div class="case-card">
+            <div class="case-time">19:30 가벼운 퇴근</div>
+            <div class="case-title">가벼운 승모근</div>
+            <div class="case-desc">퇴근길에도 뭉침 없이 깃털처럼 가벼운 어깨</div>
+          </div>
+        `;
+      } else if (category === 'desk') {
+        container.innerHTML = `
+          <div class="case-card" style="grid-column: span 2;">
+            <div class="case-time">14:00 데스크 집중 업무 모드</div>
+            <div class="case-title">모니터 앞 쏟아지는 상체 동적 텐션 복원</div>
+            <div class="case-desc">8시간 동안 책상 앞에 앉아 있어도 허리와 목이 굽어지지 않도록 인체공학적 탄성 프레임이 부드럽게 지탱합니다.</div>
+          </div>
+        `;
+      } else if (category === 'commute') {
+        container.innerHTML = `
+          <div class="case-card" style="grid-column: span 2;">
+            <div class="case-time">08:30 &amp; 19:30 지하철/버스 출퇴근</div>
+            <div class="case-title">38g 깃털 같은 무게로 피로도 제로 보행</div>
+            <div class="case-desc">출퇴근 이동 중 척추에 가해지는 보행 충격을 흡수하고, 셔츠 속에 99.8% 은폐되어 아무도 눈치채지 못합니다.</div>
+          </div>
+        `;
+      } else if (category === 'meeting') {
+        container.innerHTML = `
+          <div class="case-card" style="grid-column: span 2;">
+            <div class="case-time">17:00 VIP 클라이언트 외근 &amp; 프레젠테이션</div>
+            <div class="case-title">단정하게 펴진 어깨선으로 당당한 프로페셔널 핏</div>
+            <div class="case-desc">중요한 발표나 미팅 자리에서 라운드숄더 없이 곧고 당당한 실루엣을 완성하여 신뢰감을 극대화합니다.</div>
+          </div>
+        `;
+      }
+    }
+
+    function switchTab(type) {
+      const tabs = document.querySelectorAll('.sc-tab');
+      tabs.forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const container = document.getElementById('product-container');
+      if (!container) return;
+
+      if (type === 'signature') {
+        container.innerHTML = `
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[대표 01 제품 컷]</div>
+              <div>0.1mm 심리스 넥&amp;숄더 밴드 렌더링</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">대표작 01</span>
+                <span class="prod-spec-chip">0.1mm 무봉제</span>
+                <span class="prod-spec-chip">38g 초경량</span>
+              </div>
+              <div class="prod-title">0.1mm 심리스 넥&amp;숄더 밴드</div>
+              <div class="prod-desc">Naked Seamless 0.1mm 무봉제 본딩, 전면 자석 버클로 완벽 밀착 및 말린 어깨 정렬</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[대표 02 제품 컷]</div>
+              <div>3D 에어로 메쉬 척추 조끼 렌더링</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">대표작 02</span>
+                <span class="prod-spec-chip">38g 쿨링메쉬</span>
+                <span class="prod-spec-chip">4중 텐션</span>
+              </div>
+              <div class="prod-title">3D 에어로 메쉬 척추 조끼</div>
+              <div class="prod-desc">Airy Weightless 쿨링 메쉬, 척추 기립근 4중 탄성 프레임으로 하루 종일 쾌적한 지지력</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[대표 03 제품 컷]</div>
+              <div>골반 수평 유지 에어셀 벨트 렌더링</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">대표작 03</span>
+                <span class="prod-spec-chip">에어셀 패드</span>
+                <span class="prod-spec-chip">골반 18.2° 교정</span>
+              </div>
+              <div class="prod-title">골반 수평 유지 에어셀 벨트</div>
+              <div class="prod-desc">Dynamic Restoring 에어셀 패드로 다리 꼬기 습관을 물리적으로 부드럽게 차단</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[코어웨어 제품 컷]</div>
+              <div>0.1mm 럼버 서포트 언더웨어 컷</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">코어웨어</span>
+                <span class="prod-spec-chip">요추 4~5번 지지</span>
+                <span class="prod-spec-chip">슬랙스핏</span>
+              </div>
+              <div class="prod-title">0.1mm 럼버 서포트 언더웨어</div>
+              <div class="prod-desc">요추 4~5번 38g 초경량 밀착 지지, 슬랙스 핏을 흐트러뜨리지 않는 완벽한 은폐 디자인</div>
+            </div>
+          </div>
+        `;
+      } else if (type === 'care') {
+        container.innerHTML = `
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[전문케어 제품 컷]</div>
+              <div>경추 C커브 릴렉스 서포터 각도 렌더링</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">전문케어</span>
+                <span class="prod-spec-chip">메모리폼</span>
+                <span class="prod-spec-chip">C커브 각도</span>
+              </div>
+              <div class="prod-title">경추 C커브 릴렉스 서포터</div>
+              <div class="prod-desc">메모리 에어로폼, 턱 당김 유도 인체공학적 각도로 목 뒤 압력 즉각 이완</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[전문케어 제품 컷]</div>
+              <div>흉추 확장 텐션 스트랩 듀얼 밴딩 컷</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">전문케어</span>
+                <span class="prod-spec-chip">듀얼 밴딩</span>
+                <span class="prod-spec-chip">라운드숄더</span>
+              </div>
+              <div class="prod-title">흉추 확장 텐션 스트랩</div>
+              <div class="prod-desc">견갑골 모음 듀얼 밴딩 시스템으로 말린 흉추를 자연스럽게 확장 교정</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[전문케어 제품 컷]</div>
+              <div>좌골 체압 분산 밸런스 방석 3D 허니콤 컷</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">전문케어</span>
+                <span class="prod-spec-chip">3D 허니콤</span>
+                <span class="prod-spec-chip">체압 분산</span>
+              </div>
+              <div class="prod-title">좌골 체압 분산 밸런스 방석</div>
+              <div class="prod-desc">3D 허니콤 에어셀로 엉덩이 압력을 균등 분산하여 척추 압박 완화</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[전문케어 제품 컷]</div>
+              <div>발목 밸런스 힐 서포트 인솔 아치 컷</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">전문케어</span>
+                <span class="prod-spec-chip">3단 아치</span>
+                <span class="prod-spec-chip">충격 흡수</span>
+              </div>
+              <div class="prod-title">발목 밸런스 힐 서포트 인솔</div>
+              <div class="prod-desc">발 아치 3단 서포트로 보행 시 무릎 안쪽 꺾임 및 척추 충격 방지</div>
+            </div>
+          </div>
+        `;
+      } else if (type === 'sensor') {
+        container.innerHTML = `
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[스마트 테크 제품 컷]</div>
+              <div>스마트 햅틱 자세 코칭 밴드 모듈 컷</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">스마트 테크</span>
+                <span class="prod-spec-chip">15° 햅틱코칭</span>
+                <span class="prod-spec-chip">시차 필터링</span>
+              </div>
+              <div class="prod-title">스마트 햅틱 자세 코칭 밴드</div>
+              <div class="prod-desc">15도 이상 기울어짐 감지 시 미세 진동으로 스스로 바른 자세를 기억하도록 유도</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[스마트 테크 제품 컷]</div>
+              <div>블루투스 실시간 각도 센서 &amp; 앱 화면</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">스마트 테크</span>
+                <span class="prod-spec-chip">6축 자이로</span>
+                <span class="prod-spec-chip">앱 대시보드</span>
+              </div>
+              <div class="prod-title">블루투스 실시간 각도 센서 모듈</div>
+              <div class="prod-desc">6축 자이로 센서로 일일 자세 점수 및 척추 불균형 데이터를 스마트폰 앱으로 분석</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[스마트 테크 제품 컷]</div>
+              <div>온열 릴렉스 럼버 테크 벨트 그래핀 패드 컷</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">스마트 테크</span>
+                <span class="prod-spec-chip">그래핀 온열</span>
+                <span class="prod-spec-chip">3단 온도</span>
+              </div>
+              <div class="prod-title">온열 릴렉스 럼버 테크 벨트</div>
+              <div class="prod-desc">초경량 그래핀 발열 패드가 긴장된 허리 기립근을 따뜻하게 이완 케어</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[스마트 테크 제품 컷]</div>
+              <div>EMS 척추 근육 활성화 패치 미세전류 컷</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">스마트 테크</span>
+                <span class="prod-spec-chip">저주파 EMS</span>
+                <span class="prod-spec-chip">15분 회복</span>
+              </div>
+              <div class="prod-title">EMS 척추 근육 활성화 패치</div>
+              <div class="prod-desc">저주파 미세 전류로 굳어진 심부 기립근을 부드럽게 자극하고 강화</div>
+            </div>
+          </div>
+        `;
+      } else if (type === 'acc') {
+        container.innerHTML = `
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[직업 ACC 제품 컷]</div>
+              <div>직장인 데스크 에르고 암레스트 거치 컷</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">직업 ACC</span>
+                <span class="prod-spec-chip">어깨 체압분산</span>
+                <span class="prod-spec-chip">인체공학</span>
+              </div>
+              <div class="prod-title">직장인 데스크 에르고 암레스트</div>
+              <div class="prod-desc">키보드/마우스 타이핑 시 손목과 승모근에 실리는 하중을 40% 분산 지탱</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[직업 ACC 제품 컷]</div>
+              <div>출장용 휴대용 에어 럼버 앵커 KTX 좌석 컷</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">직업 ACC</span>
+                <span class="prod-spec-chip">원터치 에어</span>
+                <span class="chip-spec">KTX/항공</span>
+              </div>
+              <div class="prod-title">출장용 휴대용 에어 럼버 앵커</div>
+              <div class="prod-desc">KTX, 비행기, 택시 등 장거리 이동 시 요추 빈 공간을 완벽하게 채워주는 휴대용 지지대</div>
+            </div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-ph-box">
+              <div class="wf-ph-title">[직업 ACC 제품 컷]</div>
+              <div>차량용 척추 드라이빙 패드 시트 장착 컷</div>
+            </div>
+            <div class="prod-info-box">
+              <div class="prod-badge-row">
+                <span class="prod-badge">직업 ACC</span>
+                <span class="prod-spec-chip">3D 입체성형</span>
+                <span class="prod-spec-chip">운전피로 완화</span>
+              </div>
+              <div class="prod-title">차량용 척추 드라이빙 패드</div>
+              <div class="prod-desc">장거리 출퇴근 및 운전 시 척추에 가해지는 도로 진동과 골반 틀어짐 방지</div>
+            </div>
+          </div>
+        `;
+      }
+    }
+  </script>
+</body>
+</html>
