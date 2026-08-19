@@ -1499,7 +1499,7 @@
     <div><strong>SEUMIM (스밈) 마스터 통합 플랫폼 와이어프레임</strong> (Eight Sleep 융합 롤모델)</div>
     <div class="page-switch-tabs">
       <button class="btn-page-tab active" onclick="switchPage('page-main')">1. 메인 랜딩페이지 (Main)</button>
-      <button class="btn-page-tab" onclick="switchPage('page-shop')">2. 28개 전 상품 서브 (Shop All)</button>
+      <button class="btn-page-tab" onclick="switchPage('page-shop')">2. 15개 전 상품 서브 (Shop All)</button>
       <button class="btn-page-tab" onclick="switchPage('page-story')">3. 브랜드 이야기 서브 (Our Story)</button>
     </div>
   </div>
@@ -1517,7 +1517,7 @@
       <nav class="gnb-nav">
         <a href="javascript:void(0)" class="gnb-link active" onclick="switchPage('page-main')">홈(메인)</a>
         <a href="#sec-featured" class="gnb-link" onclick="switchPage('page-main')">3대 대표작</a>
-        <a href="javascript:void(0)" class="gnb-link" onclick="switchPage('page-shop')">전체 상품 (28)</a>
+        <a href="javascript:void(0)" class="gnb-link" onclick="switchPage('page-shop')">전체 상품 (15)</a>
         <a href="#sec-hud" class="gnb-link" onclick="switchPage('page-main')">AI 케어 &amp; 센터</a>
         <a href="javascript:void(0)" class="gnb-link" onclick="switchPage('page-story')">Our Story</a>
       </nav>
@@ -1574,10 +1574,8 @@
         </p>
         
         <div class="hero-cta-group">
-          <button class="btn-primary" onclick="scrollToSection('sec-featured')">스밈 3대 대표작 알아보기 ➔</button>
-          <button class="btn-primary btn-accent" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M')">
-            결제금액 0원 · 30일 무료 시착
-          </button>
+          <button class="btn-primary" onclick="scrollToSection('sec-journey')">스밈의 시작 알아보기 ↓</button>
+          <button class="btn-secondary" onclick="scrollToSection('sec-featured')">스밈 3대 대표작 알아보기 ➔</button>
         </div>
 
         <!-- 4대 자부심 지표 바 -->
@@ -1893,27 +1891,26 @@
       </div>
     </section>
 
-    <!-- [메인 전용 전환 배너] 28개 전 상품 카탈로그 서브페이지로 이동 안내 -->
+    <!-- [메인 전용 전환 배너] 15개 전 상품 카탈로그 서브페이지로 이동 안내 -->
     <section class="container">
       <div class="explore-catalog-banner">
         <div class="catalog-banner-left">
-          <div class="catalog-tag">FULL COLLECTION (28 PRODUCTS)</div>
-          <h3 class="catalog-banner-title">더 많은 맞춤형 교정 솔루션이 필요하신가요?</h3>
+          <div class="catalog-tag">FULL COLLECTION (15 PRODUCTS)</div>
+          <h3 class="catalog-banner-title">더 많은 부위별 파생 맞춤 솔루션이 필요하신가요?</h3>
           <p class="catalog-banner-desc">
-            스밈은 3대 대표작 외에도 전문 집중 케어, 스마트 센서 테크, 직무별 인체공학 ACC 등 
-            <strong>총 28종의 체형 맞춤 라인업</strong>을 완비하고 있습니다. 
-            서브페이지에서 4대 카테고리 전체 상품을 탐색하고 비교해 보세요.
+            스밈은 3대 대표작 외에도 각 부위별 케어를 완성하는 
+            <strong>3대 파생 라인 총 15종의 체형 맞춤 라인업</strong>을 완비하고 있습니다. 
+            서브페이지에서 어깨·척추·골반 파생 전체 상품을 탐색하고 비교해 보세요.
           </p>
           <div class="catalog-category-pills">
-            <span class="cat-pill">시그니처 코어웨어 7종</span>
-            <span class="cat-pill">전문 집중 케어 7종</span>
-            <span class="cat-pill">스마트 센서 테크 7종</span>
-            <span class="cat-pill">직업 맞춤 교정 ACC 7종</span>
+            <span class="cat-pill">어깨 · 경추 케어 5종</span>
+            <span class="cat-pill">척추 · 허리 케어 5종</span>
+            <span class="cat-pill">골반 · 하체 케어 5종</span>
           </div>
         </div>
         <div>
           <button class="btn-primary btn-accent" style="padding:16px 28px; font-size:15px; white-space:nowrap;" onclick="switchPage('page-shop')">
-            28개 전 상품 컬렉션 보러가기 ➔
+            15종 전 상품 컬렉션 보러가기 ➔
           </button>
         </div>
       </div>
@@ -2031,13 +2028,13 @@
 
 
   <!-- ==========================================================================
-       [PAGE 2: 28개 전 상품 카탈로그 서브페이지 (Shop All)]
+       [PAGE 2: 15개 전 상품 카탈로그 서브페이지 (Shop All)]
        ========================================================================== -->
   <main id="page-shop" class="page-view container" style="padding: 60px 24px;">
     <div class="section-title-wrap" style="text-align:left;">
-      <div class="section-tag">SHOP ALL / 28 PRODUCTS CATALOG</div>
-      <h1 class="section-title">스밈 4대 카테고리 28개 전 상품 컬렉션</h1>
-      <p class="section-desc" style="margin:0;">스마트 체형 맞춤 사이즈 파인더로 내 사이즈를 확인하고, 4대 카테고리 상품을 정밀 비교하세요.</p>
+      <div class="section-tag">SHOP ALL / 15 PRODUCTS CATALOG</div>
+      <h1 class="section-title">스밈 3대 파생 라인 15종 전 상품 컬렉션</h1>
+      <p class="section-desc" style="margin:0;">대표 상품 3종과 부위별 연계 파생 상품 5종씩, 총 15종의 라인업을 비교하고 체형 맞춤 사이즈를 확인하세요.</p>
     </div>
 
     <!-- 스마트 사이즈 파인더 상단 마스터 바 -->
@@ -2047,20 +2044,19 @@
         <span style="font-size:12px; color:var(--color-terracotta); font-weight:800;">● 현재 키: 178cm / 몸무게: 72kg ➔ 권장: M 사이즈</span>
       </div>
       <div style="font-size:13px; color:var(--color-text-secondary);">
-        아래 28개 전 상품 카드에 내 체형에 최적합한 <strong>[권장 사이즈 뱃지]</strong>가 실시간으로 표시됩니다.
+        아래 15종 전 상품 카드에 내 체형에 최적합한 <strong>[권장 사이즈 뱃지]</strong>가 실시간으로 표시됩니다.
       </div>
     </div>
 
-    <!-- 카테고리 필터 탭 -->
+    <!-- 3대 파생 카테고리 필터 탭 -->
     <div class="showcase-tabs" style="justify-content:flex-start;">
-      <button class="tab-btn active" onclick="filterShopPage('all', this)">전체보기 (28)</button>
-      <button class="tab-btn" onclick="filterShopPage('cat1', this)">시그니처 코어웨어 (7)</button>
-      <button class="tab-btn" onclick="filterShopPage('cat2', this)">전문 집중 케어 (7)</button>
-      <button class="tab-btn" onclick="filterShopPage('cat3', this)">스마트 센서 테크 (7)</button>
-      <button class="tab-btn" onclick="filterShopPage('cat4', this)">직업 맞춤 교정 ACC (7)</button>
+      <button class="tab-btn active" onclick="filterShopPage('all', this)">전체보기 (15)</button>
+      <button class="tab-btn" onclick="filterShopPage('cat_neck', this)">어깨 · 경추 케어 라인 (5)</button>
+      <button class="tab-btn" onclick="filterShopPage('cat_spine', this)">척추 · 허리 케어 라인 (5)</button>
+      <button class="tab-btn" onclick="filterShopPage('cat_pelvis', this)">골반 · 하체 케어 라인 (5)</button>
     </div>
 
-    <!-- 28개 전 상품 그리드 -->
+    <!-- 15개 전 상품 그리드 -->
     <div class="products-grid-4col" id="shop-products-grid"></div>
   </main>
 
@@ -2080,29 +2076,33 @@
           <span class="story-dot"></span>
           <span class="story-btn-text">01. 브랜드 매니페스토</span>
         </button>
-        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-origin', this)" title="02. 문제점&후기">
+        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-name-origin', this)" title="02. 스밈의 어원&탄생">
           <span class="story-dot"></span>
-          <span class="story-btn-text">02. 문제점 &amp; 실착 인증</span>
+          <span class="story-btn-text">02. 스밈의 어원 &amp; 탄생기</span>
         </button>
-        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-pillars', this)" title="03. 3대 철학">
+        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-origin', this)" title="03. 일상 문제점">
           <span class="story-dot"></span>
-          <span class="story-btn-text">03. 3대 다정한 균형</span>
+          <span class="story-btn-text">03. 3대 일상 문제점</span>
         </button>
-        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-macro', this)" title="04. 심리스 나노">
+        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-pillars', this)" title="04. 3대 철학">
           <span class="story-dot"></span>
-          <span class="story-btn-text">04. 0.1mm 심리스 혁신</span>
+          <span class="story-btn-text">04. 3대 다정한 균형</span>
         </button>
-        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-blueprint', this)" title="05. 3D 도면">
+        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-macro', this)" title="05. 심리스 나노">
           <span class="story-dot"></span>
-          <span class="story-btn-text">05. 3D 엔지니어링 도면</span>
+          <span class="story-btn-text">05. 0.1mm 심리스 혁신</span>
         </button>
-        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-usecases', this)" title="06. 전후 비교">
+        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-blueprint', this)" title="06. 3D 도면">
           <span class="story-dot"></span>
-          <span class="story-btn-text">06. 일상 변화 B/A</span>
+          <span class="story-btn-text">06. 3D 엔지니어링 도면</span>
         </button>
-        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-collection', this)" title="07. 15종 쇼케이스">
+        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-usecases', this)" title="07. 전후 비교">
           <span class="story-dot"></span>
-          <span class="story-btn-text">07. 15종 전 라인업</span>
+          <span class="story-btn-text">07. 일상 변화 B/A</span>
+        </button>
+        <button class="story-tab-btn" onclick="scrollToStorySec('sec-st92-collection', this)" title="08. 15종 쇼케이스">
+          <span class="story-dot"></span>
+          <span class="story-btn-text">08. 15종 전 라인업</span>
         </button>
       </div>
     </div>
@@ -2122,27 +2122,152 @@
           <span style="display:block; white-space:nowrap;">일상에 자연스럽게 스며들기로 했습니다</span>
         </h1>
         <p class="story92-hero-sub" style="font-size:18px; color:#e2dbca; line-height:1.8; margin-bottom:34px;">
-          <span style="display:block; white-space:nowrap;">하루 9.4시간 책상 앞,</span>
-          <span style="display:block; white-space:nowrap;">쇠 와이어의 고통을 견디던 직장인들을 위해 시작된 0.1mm 심리스 혁신 이야기</span>
+          <span style="display:block; white-space:nowrap;">하루 9시간 책상 앞,</span>
+          <span style="display:block; white-space:nowrap;">쇠 와이어와 강제 조임의 고통을 덜어내고 시작된 0.1mm 심리스 혁신 이야기</span>
         </p>
         <div style="display:flex; gap:14px; flex-wrap:wrap;">
-          <button class="btn-primary btn-accent" style="padding:14px 28px; font-size:14.5px;" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
-            30일 무료 시착 시작하기 (0원)
+          <button class="btn-primary btn-accent" style="padding:14px 28px; font-size:14.5px;" onclick="scrollToStorySec('sec-st92-name-origin')">
+            스밈의 어원과 탄생 이야기 알아보기 ↓
           </button>
-          <button class="btn-sm-ghost" style="padding:14px 24px; font-size:14.5px; border:1px solid rgba(255,255,255,0.35); color:#fff; border-radius:var(--radius-full);" onclick="scrollToStorySec('sec-st92-collection')">
-            15종 컬렉션 탐색하기 ➔
+          <button class="btn-sm-ghost" style="padding:14px 24px; font-size:14.5px; border:1px solid rgba(255,255,255,0.35); color:#fff; border-radius:var(--radius-full);" onclick="scrollToStorySec('sec-st92-pillars')">
+            3대 다정한 균형 철학 ➔
           </button>
         </div>
       </div>
     </section>
 
-        <!-- SEC-02: The Origin & Evidence (One-by-One Large Problem Showcase) -->
-    <section id="sec-st92-origin" style="padding:40px 0 60px;">
+    <!-- ★ SEC-01-B [대형 전용 섹션]: 브랜드명 '스밈(SEUMIM)'의 어원과 탄생 비하인드 스토리 -->
+    <section id="sec-st92-name-origin" style="padding: 70px 0 80px; border-bottom: 1px solid var(--color-border); scroll-margin-top: 100px;">
+      <div style="text-align:center; max-width:860px; margin:0 auto 50px;">
+        <span class="section-tag" style="background:#fde8e4; color:var(--color-terracotta); font-size:12.5px; padding:5px 14px; border-radius:var(--radius-full);">
+          WHY SEUMIM &amp; BRAND ORIGIN
+        </span>
+        <h2 class="story-section-title" style="font-family:var(--font-maruburi); font-size:36px; margin:14px 0 16px; line-height:1.35; word-break:keep-all;">
+          스밈(SEUMIM), 왜 '스밈'이어야 했을까요?<br>
+          <span style="color:var(--color-terracotta); font-size:28px;">"억지로 조이지 않고, 일상 속에 자연스럽게 스며드는 균형"</span>
+        </h2>
+        <p style="font-size:16px; color:var(--color-text-secondary); line-height:1.8; word-break:keep-all;">
+          우리는 '교정'이라는 이름으로 몸을 억누르고 숨 막히게 옥죄던 기존 시장의 오랜 관성에 질문을 던졌습니다.<br>
+          스밈은 아침에 옷을 입듯, 내 몸에 티 나지 않게 스며드는 가장 다정한 지지력을 만들기 위해 탄생했습니다.
+        </p>
+      </div>
+
+      <!-- 대형 2열 서사 및 어원 분석 쇼케이스 -->
+      <div style="display:grid; grid-template-columns: 1.05fr 1.2fr; gap:40px; align-items:stretch; background:var(--bg-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:44px; box-shadow:var(--shadow-md);">
+        
+        <!-- 좌측: 브랜드 이름 '스미다' 타이포그래피 & 어원 정의 엠블럼 -->
+        <div style="background:var(--bg-base); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:36px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+              <span style="font-size:12px; font-weight:800; color:var(--color-terracotta); letter-spacing:0.1em;">NAME ETYMOLOGY</span>
+              <span style="font-size:11px; font-weight:700; background:#fff; padding:3px 8px; border-radius:4px; border:1px solid var(--color-border);">순우리말 어원</span>
+            </div>
+
+            <!-- 스미다 타이포 아트 -->
+            <div style="text-align:center; padding:24px 0; border-bottom:1px dashed var(--color-border); margin-bottom:24px;">
+              <div style="font-family:var(--font-maruburi); font-size:44px; font-weight:900; color:var(--color-forest); letter-spacing:-0.03em; margin-bottom:4px;">
+                스·밈 <span style="font-size:22px; font-weight:400; color:var(--color-text-muted);">[SEUMIM]</span>
+              </div>
+              <div style="font-family:var(--font-serif); font-size:15px; color:var(--color-terracotta); font-weight:700; margin-top:6px;">
+                "빛이나 물이 천천히 배어들듯, 마음에 자연스럽게 녹아들다"
+              </div>
+            </div>
+
+            <div style="font-size:14px; color:var(--color-text-secondary); line-height:1.8; word-break:keep-all;">
+              <p style="margin-bottom:12px;">
+                <strong>'스밈'</strong>은 몸을 쇠붙이로 옥죄어 강제로 꺾는 것이 아니라, 
+                <strong>바른 자세가 물이 스미듯 자연스러운 일상의 습관으로 배어들게 한다</strong>는 약속을 담은 이름입니다.
+              </p>
+              <p>
+                매일 아침 거부감 없이 손이 가고, 하루 종일 입고 있어도 입은 사실조차 잊게 되는 편안함. 
+                그것이 스밈이 정의하는 '스며드는 웰니스'의 본질입니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- 0.1mm 레이어 단면 플레이스홀더 -->
+          <div class="story92-ph-box" style="height:150px; margin-top:24px; padding:16px; background:#fff;">
+            <div class="story92-ph-title" style="font-size:13px; margin-bottom:4px;">📸 [원단 스며듦 모식도]</div>
+            <div style="font-size:12px; color:var(--color-text-muted); line-height:1.5;">
+              피부 굴곡을 따라 봉제선 없이 매끄럽게 흡수 밀착되는 0.1mm 초슬림 심리스 융착 단면
+            </div>
+          </div>
+        </div>
+
+        <!-- 우측: 스밈의 3단계 탄생 비하인드 서사 (Origin Timeline) -->
+        <div style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="font-size:12px; font-weight:800; color:var(--color-forest); letter-spacing:0.08em; margin-bottom:16px; text-transform:uppercase;">
+              ✦ THE 3-STEP ORIGIN STORY
+            </div>
+
+            <!-- Step 1 -->
+            <div style="display:flex; gap:18px; margin-bottom:24px;">
+              <div style="width:34px; height:34px; border-radius:50%; background:var(--color-forest); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0;">1</div>
+              <div>
+                <h3 style="font-family:var(--font-maruburi); font-size:17px; font-weight:800; color:var(--color-forest); margin-bottom:6px;">
+                  의문의 시작 : "왜 자세를 펴는 일은 늘 아프고 참아야 할까?"
+                </h3>
+                <p style="font-size:13.5px; color:var(--color-text-secondary); line-height:1.7; word-break:keep-all;">
+                  하루 9시간 이상 책상 앞에서 모니터를 보며 일하던 개발자와 디자이너 팀. 무너진 자세를 고치려 시중의 유명 보조기를 샀지만, 두꺼운 쇠 와이어가 갈비뼈를 짓누르고 소화불량을 유발해 30분도 착용할 수 없었습니다. "왜 바른 자세를 유지하는 방법은 늘 고통스러워야 할까?"라는 근본적인 의문이 스밈의 출발점이었습니다.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div style="display:flex; gap:18px; margin-bottom:24px;">
+              <div style="width:34px; height:34px; border-radius:50%; background:var(--color-terracotta); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0;">2</div>
+              <div>
+                <h3 style="font-family:var(--font-maruburi); font-size:17px; font-weight:800; color:var(--color-forest); margin-bottom:6px;">
+                  '스며들다' 철학의 발견 : 강제 압박 대신 옷처럼 스며드는 지지
+                </h3>
+                <p style="font-size:13.5px; color:var(--color-text-secondary); line-height:1.7; word-break:keep-all;">
+                  우리는 인위적인 강제 조임이 오히려 몸의 근육을 퇴화시키고 거부감을 낳는다는 사실을 발견했습니다. 지속 가능한 유일한 길은 '일상 속에서 의식하지 않아도 스스로 자세를 회복할 수 있도록 옷처럼 편안하게 스며드는 것'이었습니다.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div style="display:flex; gap:18px;">
+              <div style="width:34px; height:34px; border-radius:50%; background:var(--color-sage); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0;">3</div>
+              <div>
+                <h3 style="font-family:var(--font-maruburi); font-size:17px; font-weight:800; color:var(--color-forest); margin-bottom:6px;">
+                  3년 R&amp;D의 결실 : 0.1mm 심리스 무봉제 융착 기술의 탄생
+                </h3>
+                <p style="font-size:13.5px; color:var(--color-text-secondary); line-height:1.7; word-break:keep-all;">
+                  쇠붙이와 두꺼운 벨크로를 모두 버리고, 450번의 원단 직조 테스트와 무봉제 본딩 공정을 거쳐 피부와 완벽히 하나 되는 0.1mm 심리스 코어웨어를 완성했습니다. 흰 셔츠 안에서도 99.8% 티 나지 않는 스밈의 다정한 균형이 그렇게 세상에 나왔습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 하단 3대 핵심 가치 뱃지 바 -->
+          <div style="margin-top:28px; padding-top:20px; border-top:1px solid var(--color-border); display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; text-align:center;">
+            <div style="background:var(--bg-card); padding:10px; border-radius:var(--radius-sm);">
+              <div style="font-weight:800; font-size:13px; color:var(--color-forest);">0.1mm 초슬림</div>
+              <div style="font-size:11px; color:var(--color-text-muted);">무봉제 피부 밀착</div>
+            </div>
+            <div style="background:var(--bg-card); padding:10px; border-radius:var(--radius-sm);">
+              <div style="font-weight:800; font-size:13px; color:var(--color-forest);">38g 초경량</div>
+              <div style="font-size:11px; color:var(--color-text-muted);">어깨 결림 제로</div>
+            </div>
+            <div style="background:var(--bg-card); padding:10px; border-radius:var(--radius-sm);">
+              <div style="font-weight:800; font-size:13px; color:var(--color-forest);">99.8% 은폐율</div>
+              <div style="font-size:11px; color:var(--color-text-muted);">출근복 완벽 시크릿</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEC-02: The Origin & Evidence (3대 핵심 공감 문제 쇼케이스) -->
+    <section id="sec-st92-origin" style="padding:60px 0;">
       <div style="text-align:center; max-width:820px; margin:0 auto 50px;">
         <span class="section-tag" style="background:#fde8e4; color:var(--color-terracotta);">THE ORIGIN &amp; EVIDENCE</span>
-        <h2 class="story-section-title" style="font-family:var(--font-maruburi); font-size:34px; margin-bottom:14px;">하루 9.4시간 책상 앞,<br>왜 우리는 매일 무너질까요?</h2>
+        <h2 class="story-section-title" style="font-family:var(--font-maruburi); font-size:34px; margin-bottom:14px;">하루 9시간 책상 앞,<br>왜 우리는 매일 무너질까요?</h2>
         <p style="font-size:16px; color:var(--color-text-secondary); line-height:1.8;">
-          스크롤을 내려 우리가 바쁜 일상 속에서 당연하게 참아왔던 <strong>4가지 자세 무너짐의 실태와 고통</strong>을 하나씩 확인해 보세요.
+          스크롤을 내려 우리가 바쁜 일상 속에서 당연하게 참아왔던 <strong>3가지 자세 무너짐의 실태와 한계</strong>를 확인해 보세요.
         </p>
       </div>
 
@@ -2151,26 +2276,23 @@
         <!-- Problem Card 01 -->
         <div class="story92-problem-card">
           <div class="story92-ph-box" style="height:380px; padding:28px;">
-            <div class="story92-ph-title" style="font-size:16px; margin-bottom:8px;">📸 [시각자료 01 : 목 &amp; 승모근 통증 실태]</div>
+            <div class="story92-ph-title" style="font-size:16px; margin-bottom:8px;">📸 [시각자료 01 : 목 &amp; 어깨 하중 변화]</div>
             <div style="font-size:13.5px; color:var(--color-text-secondary); max-width:360px; line-height:1.7;">
-              모니터를 향해 거북이처럼 15° 이상 쏟아지는 경추와 이로 인해 2.4배 이상 솟아오른 승모근 근육 경직 실태 시각 자료
+              모니터를 향해 서서히 앞으로 쏟아지는 경추 각도 변화 및 승모근 경직 실태를 보여주는 인체공학 도해
             </div>
           </div>
           <div>
-            <div class="story92-problem-badge">PROBLEM 01 / 04</div>
+            <div class="story92-problem-badge">PROBLEM 01 / 03</div>
             <h3 class="story92-problem-title">무너지는 자세,<br>통증 후에야 깨닫는 자각 불가</h3>
             <p class="story92-problem-desc">
-              업무에 몰입하는 동안 목과 허리가 서서히 앞으로 쏟아지지만, 뇌는 이를 인지하지 못합니다. 퇴근길 묵직한 두통과 결림이 찾아온 뒤에야 무너졌음을 후회합니다.
+              업무에 몰입하는 동안 목과 어깨가 서서히 앞으로 쏟아지지만, 뇌는 이를 즉각 인지하지 못합니다. 퇴근길 묵직한 피로와 결림이 찾아온 뒤에야 무너졌음을 뒤늦게 깨닫습니다.
             </p>
             <div class="story92-problem-statbox">
-              <div style="display:flex; align-items:center; gap:20px;">
-                <div style="width:72px; height:72px; border-radius:50%; background:conic-gradient(var(--color-terracotta) 0% 82.3%, var(--color-border) 82.3% 100%); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                  <div style="width:52px; height:52px; background:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14.5px; font-weight:900; color:var(--color-terracotta);">82.3%</div>
-                </div>
-                <div>
-                  <div style="font-family:var(--font-maruburi); font-size:17px; font-weight:700; color:var(--color-forest); margin-bottom:4px;">직장인 82.3% 자세 무너짐 자각 불가</div>
-                  <div style="font-size:12.5px; color:var(--color-text-muted); line-height:1.5;">업무 집중 상태에서는 척추 각도가 18° 틀어져도 스스로 인지 불가능</div>
-                </div>
+              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:4px;">
+                몰입 상태의 무의식적 자세 붕괴
+              </div>
+              <div style="font-size:13px; color:var(--color-text-muted); line-height:1.6;">
+                작업 중에는 상체 중심선이 15° 이상 기울어져도 스스로 알아차리기 어려워 근육에 지속적인 부담이 누적됩니다.
               </div>
             </div>
           </div>
@@ -2179,28 +2301,23 @@
         <!-- Problem Card 02 -->
         <div class="story92-problem-card">
           <div class="story92-ph-box" style="height:380px; padding:28px;">
-            <div class="story92-ph-title" style="font-size:16px; margin-bottom:8px;">📸 [시각자료 02 : 치료 골든타임 지연 &amp; 야근 실태]</div>
+            <div class="story92-ph-title" style="font-size:16px; margin-bottom:8px;">📸 [시각자료 02 : 일상 속 자세 관리의 한계]</div>
             <div style="font-size:13.5px; color:var(--color-text-secondary); max-width:360px; line-height:1.7;">
-              야근과 연차 눈치로 병원 물리치료를 미루는 2030 직장인의 고립된 오피스 야간 실루엣 &amp; 연간 척추 환자 421만 명 통계 도해
+              바쁜 업무 일정과 야근 속에서 별도의 운동이나 자세 관리를 매일 지속하기 어려운 직장인의 일상 리서치 컷
             </div>
           </div>
           <div>
-            <div class="story92-problem-badge">PROBLEM 02 / 04</div>
-            <h3 class="story92-problem-title">골든타임을 미루는 현실:<br>40.4%가 시간 부족과 눈치로 치료 지연</h3>
+            <div class="story92-problem-badge">PROBLEM 02 / 03</div>
+            <h3 class="story92-problem-title">바쁜 일과 시간 부족으로<br>미루게 되는 일상 속 자세 케어</h3>
             <p class="story92-problem-desc">
-              환자는 폭증하고 있으나,<br>2030 직장인의 40.4%가 '야근 등 절대적인 시간 부족'과 '연차 사용의 눈치' 때문에<br>실질적인 병원 물리치료를 미루고 있습니다.
+              자세 관리의 필요성은 누구나 절감하지만, 바쁜 업무와 피로 속에서 퇴근 후 매일 꾸준한 운동이나 관리를 이어가기에는 현실적인 제약이 큽니다.
             </p>
             <div class="story92-problem-statbox">
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-                <span style="font-size:13px; font-weight:700; color:var(--color-forest);">시간 부족·연차 눈치로 치료 지연율</span>
-                <span style="font-size:16px; font-weight:900; color:var(--color-terracotta);">40.4% (직장인 10명 중 4명)</span>
+              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:4px;">
+                지속적인 관리의 어려움
               </div>
-              <div style="width:100%; height:14px; background:var(--color-border); border-radius:10px; overflow:hidden; margin-bottom:8px;">
-                <div style="width:40.4%; height:100%; background:var(--color-terracotta);"></div>
-              </div>
-              <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--color-text-muted);">
-                <span>평일 낮 병원 방문 불가</span>
-                <span>연간 2030 척추 환자 421만 명 급증 🏥</span>
+              <div style="font-size:13px; color:var(--color-text-muted); line-height:1.6;">
+                별도의 시간을 들이지 않고, 일하는 시간 동안 자연스럽게 지탱해 주는 일상 솔루션이 절실합니다.
               </div>
             </div>
           </div>
@@ -2209,65 +2326,21 @@
         <!-- Problem Card 03 -->
         <div class="story92-problem-card alert-card">
           <div class="story92-ph-box" style="height:380px; padding:28px; background:#fffaf8; border-color:#f6d4c4;">
-            <div class="story92-ph-title" style="font-size:16px; color:var(--color-terracotta); margin-bottom:8px;">📸 [시각자료 03 : 쇠 와이어 피부 압박 &amp; 서랍 방치]</div>
+            <div class="story92-ph-title" style="font-size:16px; color:var(--color-terracotta); margin-bottom:8px;">📸 [시각자료 03 : 압박형 보조기 대비 편안함]</div>
             <div style="font-size:13.5px; color:#a15322; max-width:360px; line-height:1.7;">
-              두꺼운 플라스틱 지지대와 쇠 와이어 보조기가 갈비뼈를 짓누르고 피부에 남긴 붉은 상처 자국 &amp; 서랍 속에 처박힌 실태 컷
+              두꺼운 지지대와 억지 압박으로 인한 답답함 대비 일상복에 부드럽게 밀착되는 0.1mm 심리스의 착용성 대조 컷
             </div>
           </div>
           <div>
-            <div class="story92-problem-badge" style="background:#fde8e4; color:var(--color-terracotta);">PROBLEM 03 / 04</div>
-            <h3 class="story92-problem-title">서랍 속에 처박힌<br>조임 보조기들의 고통</h3>
+            <div class="story92-problem-badge" style="background:#fde8e4; color:var(--color-terracotta);">PROBLEM 03 / 03</div>
+            <h3 class="story92-problem-title">몸을 억지로 옥죄는<br>답답한 강제 조임의 한계</h3>
             <p class="story92-problem-desc">
-              자세를 고쳐보려 구매했던 수많은 교정기들은 두꺼운 쇠붙이와 억지 압박으로 소화불량과 흉통을 유발했습니다. 결국 30분도 견디지 못하고 서랍 속에 방치되었습니다.
+              자세를 억지로 펴기 위해 착용했던 두꺼운 보조 기구들은 답답한 압박감과 옷 밖으로 튀어나오는 불편함 때문에 일상에서 오래 지속하기 어려웠습니다.
             </p>
             <div class="story92-problem-statbox" style="background:#ffffff; border-color:#f6d4c4;">
               <div style="font-size:13px; color:var(--color-terracotta); font-weight:800; line-height:1.7;">
-                • 기존 보조기 30분 이상 착용 불가율: <strong>76.4%</strong><br>
-                • 셔츠 밖으로 튀어나와 출근 시 착용 불가: <strong>91.2%</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Problem Card 04 -->
-        <div class="story92-problem-card alert-card">
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-            <div class="story92-ph-box" style="height:380px; padding:20px; background:#fffaf8; border-color:#f6d4c4;">
-              <div style="font-weight:800; font-size:13px; color:var(--color-terracotta); margin-bottom:6px;">📸 [불편 후기 포토 01]</div>
-              <div style="font-size:12px; color:var(--color-text-secondary); line-height:1.5; margin-bottom:12px;">타사 쇠 와이어 보조기의 갈비뼈 압박 &amp; 옷태 파괴 컷</div>
-              <div style="background:#ffffff; padding:12px; border-radius:var(--radius-sm); font-size:12px; border:1px solid #f6d4c4; text-align:left; color:#333; line-height:1.5;">
-                "유명하다는 8만 원대 밴드 샀는데 쇠 와이어가 갈비뼈를 너무 짓눌러서 밥 먹으면 체함. 셔츠 밖으로 툭 튀어나와 출근할 땐 절대 못 참."
-                <div style="font-weight:800; color:var(--color-terracotta); margin-top:4px;">— IT 개발자 A님 (32세)</div>
-              </div>
-            </div>
-
-            <div class="story92-ph-box" style="height:380px; padding:20px; background:#fffaf8; border-color:#f6d4c4;">
-              <div style="font-weight:800; font-size:13px; color:var(--color-terracotta); margin-bottom:6px;">📸 [불편 후기 포토 02]</div>
-              <div style="font-size:12px; color:var(--color-text-secondary); line-height:1.5; margin-bottom:12px;">타사 부착형 센서 오작동 &amp; 테이프 피부 발진 컷</div>
-              <div style="background:#ffffff; padding:12px; border-radius:var(--radius-sm); font-size:12px; border:1px solid #f6d4c4; text-align:left; color:#333; line-height:1.5;">
-                "등에 붙이는 센서는 신발 끈만 묶어도 징징 울려서 회의 때 민망해 죽는 줄... 테이프 붙인 자리에 빨간 뾰루지까지 나서 일주일 만에 버림."
-                <div style="font-weight:800; color:var(--color-terracotta); margin-top:4px;">— 마케터 B님 (29세)</div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="story92-problem-badge" style="background:#fde8e4; color:var(--color-terracotta);">PROBLEM 04 / 04</div>
-            <h3 class="story92-problem-title">블라인드 2030 직장인들의<br>타 교정제품 실패 찐후기</h3>
-            <p class="story92-problem-desc">
-              자세를 고쳐보려 수많은 제품을 샀지만, <strong>"숨 막히는 강제 조임"</strong>, <strong>"셔츠 밖 옷태 파괴"</strong>, <strong>"시도 때도 없는 오작동 진동 스트레스"</strong>로 인해 결국 1주일도 못 가 서랍 속에 처박혔습니다.
-            </p>
-            <div class="story92-problem-statbox" style="background:#ffffff; border-color:#f6d4c4;">
-              <div style="margin-bottom:8px;">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                  <span style="font-size:13px; font-weight:700; color:var(--color-forest);">타사 교정제품 1개월 내 중도 포기율</span>
-                  <span style="font-size:20px; font-weight:900; color:var(--color-terracotta);">91.4%</span>
-                </div>
-              </div>
-              <div style="font-size:12px; color:var(--color-text-muted); line-height:1.6; border-top:1px dashed #f6d4c4; padding-top:6px;">
-                • 포기 사유 1위: 살 짓눌림 &amp; 소화불량 흉통 (48.2%)<br>
-                • 포기 사유 2위: 셔츠 밖 튀어나옴 등 옷태 훼손 (29.6%)<br>
-                • 포기 사유 3위: 센서 오진동 스트레스 &amp; 피부 발진 (13.6%)
+                • 인위적인 강제 조임 대신 신체 곡선에 맞춘 부드러운 지지력 필요<br>
+                • 셔츠 안에 입어도 전혀 티 나지 않는 0.1mm 초슬림 무봉제 핏 추구
               </div>
             </div>
           </div>
@@ -2275,12 +2348,16 @@
 
       </div>
 
-      <!-- Narrative Bridge -->
-      <div style="background:var(--color-forest); color:#fff; padding:36px 40px; border-radius:var(--radius-lg); text-align:center; box-shadow:var(--shadow-md); margin-top:20px;">
-        <div style="font-family:var(--font-maruburi); font-size:20px; font-weight:700; margin-bottom:6px;">
-          ✦ 그래서 우리는 몸을 억지로 조이는 대신,<br>일상에 자연스럽게 스며드는 길을 선택했습니다.
+      <!-- Narrative Bridge (스밈의 어원 & 제작 여정 선언) -->
+      <div style="background:var(--color-forest); color:#fff; padding:36px 40px; border-radius:var(--radius-lg); text-align:center; box-shadow:var(--shadow-md); margin-top:30px;">
+        <div style="font-family:var(--font-maruburi); font-size:21px; font-weight:700; margin-bottom:8px;">
+          ✦ 스밈(SEUMIM), 이름에 담긴 약속
         </div>
-        <div style="font-size:13.5px; color:#e2dbca;">피부와 호흡을 존중하는,<br>스밈(SEUMIM)의 3대 다정한 균형 철학</div>
+        <p style="font-size:14.5px; color:#e2dbca; line-height:1.8; max-width:760px; margin:0 auto 12px;">
+          '억지로 조이지 않고, 일상 속에 바른 균형이 자연스럽게 스며들게 한다'는 생각에서 시작되었습니다.<br>
+          수백 번의 원단 테스트와 0.1mm 심리스 무봉제 융착 본딩 공정으로 옷 속에 머무는 다정한 균형을 만듭니다.
+        </p>
+        <div style="font-size:12.5px; color:#a8d5be; font-weight:700;">피부와 호흡을 존중하는 스밈의 3대 다정한 균형 철학</div>
       </div>
     </section>
 
@@ -2439,13 +2516,13 @@
             <div class="story92-ba-layer after" id="st92-ba-after">
               <div>
                 <div style="font-size:12.5px; font-weight:900; margin-bottom:4px;">[AFTER]</div>
-                [📸 비주얼 : 어깨선 32% 개선 단정한 실루엣]
+                [📸 비주얼 : 상체 중심선 정렬 및 단정한 실루엣]
               </div>
             </div>
             <div class="story92-ba-handle" id="st92-ba-handle">⬌</div>
           </div>
           <div style="text-align:center; margin-top:14px; font-size:12px; color:var(--color-text-muted);">
-            * 300인 전문의 &amp; IT 앰배서더 실착 임상 테스트 결과 (만족도 98.6%)
+            * 실사용자 및 테스터 300인 착용성 평가 및 필드 테스트 결과 (만족도 98% 이상)
           </div>
         </div>
 
@@ -2492,7 +2569,7 @@
         </div>
         <div>
           <div style="font-size:34px; font-weight:900; color:#fff;">300+</div>
-          <div style="font-size:13px; color:#e2dbca; margin-top:4px;">전문의·앰배서더 검증</div>
+          <div style="font-size:13px; color:#e2dbca; margin-top:4px;">실사용자 필드 테스트</div>
         </div>
         <div>
           <div style="font-size:34px; font-weight:900; color:var(--color-sage);">100%</div>
@@ -2501,10 +2578,9 @@
       </div>
 
       <div style="display:flex; justify-content:center; gap:10px; margin-bottom:30px;">
-        <button class="btn-page-tab active" onclick="switchStory92Category('signature', this)">시그니처 코어웨어 (4)</button>
-        <button class="btn-page-tab" onclick="switchStory92Category('care', this)">전문 집중케어 (4)</button>
-        <button class="btn-page-tab" onclick="switchStory92Category('sensor', this)">스마트 센서테크 (4)</button>
-        <button class="btn-page-tab" onclick="switchStory92Category('acc', this)">직업 맞춤ACC (3)</button>
+        <button class="btn-page-tab active" onclick="switchStory92Category('cat_neck', this)">어깨 · 경추 케어 라인 (5)</button>
+        <button class="btn-page-tab" onclick="switchStory92Category('cat_spine', this)">척추 · 허리 케어 라인 (5)</button>
+        <button class="btn-page-tab" onclick="switchStory92Category('cat_pelvis', this)">골반 · 하체 케어 라인 (5)</button>
       </div>
 
       <!-- Pure Product Showcase Grid without Buy Buttons -->
@@ -2553,10 +2629,10 @@
             <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
               <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">대표작 03</span>
               <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">에어셀 패드</span>
-              <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">골반 18.2° 교정</span>
+              <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">골반 수평 지지</span>
             </div>
             <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">골반 수평 유지 에어셀 벨트</div>
-            <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">Dynamic Restoring 공기 주입식 에어셀 패드로 다리 꼬기 습관을 물리적으로 부드럽게 차단</div>
+            <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">Dynamic Restoring 공기 주입식 에어셀 패드로 다리 꼬기 습관 완화 및 골반 수평 보조</div>
           </div>
         </div>
 
@@ -2579,19 +2655,32 @@
       </div>
     </section>
 
-    <!-- Story Footer Navigation Banner -->
-    <div style="background:var(--bg-card); padding:48px 32px; border-radius:var(--radius-lg); text-align:center; margin-top:40px; border:1px solid var(--color-border);">
-      <h3 style="font-family:var(--font-maruburi); font-size:24px; font-weight:700; color:var(--color-forest); margin-bottom:12px;">스밈의 4대 카테고리 28종 전체 컬렉션을 확인해보세요</h3>
-      <p style="font-size:14px; color:var(--color-text-secondary); margin-bottom:28px;">30일 무료 시착으로 0.1mm의 놀라운 착용감을 결제금액 0원에 직접 체험하실 수 있습니다.</p>
-      <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
-        <button class="btn-primary btn-accent" style="padding:14px 28px; font-size:15px;" onclick="switchPage('page-shop')">
-          28종 전 상품 카탈로그 보러 가기 ➔
+    <!-- Story Footer Final Single Conversion CTA (결말부 30일 무료 시착 1회 집중 강조) -->
+    <section class="story-final-cta" style="background:var(--color-forest-dark); color:#fff; padding:70px 40px; border-radius:var(--radius-lg); text-align:center; margin-top:50px; box-shadow:var(--shadow-lg);">
+      <span class="section-tag" style="background:rgba(255,255,255,0.1); color:#e2dbca; border:1px solid rgba(255,255,255,0.2); font-size:12px; padding:4px 14px; border-radius:var(--radius-full); margin-bottom:16px; display:inline-block;">
+        ✦ EFFORT-FREE WELLNESS TRIAL
+      </span>
+      <h2 style="font-family:var(--font-maruburi); font-size:36px; font-weight:800; margin-bottom:14px; line-height:1.35; word-break:keep-all;">
+        내 일상 속에 직접 입어보고 결정하세요
+      </h2>
+      <p style="font-size:15px; color:#dedede; max-width:620px; margin:0 auto 32px; line-height:1.8; word-break:keep-all;">
+        스밈은 제품에 대한 확신으로 30일 안심 무료 시착 시스템을 운영합니다.<br>
+        결제금액 0원으로 집과 사무실에서 충분히 체험해 보세요.
+      </p>
+
+      <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-bottom:20px;">
+        <button class="btn-primary btn-accent" style="padding:16px 36px; font-size:16px; font-weight:800; box-shadow:0 10px 25px rgba(210,110,46,0.35);" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
+          30일 무료 시착 신청하기 (0원)
         </button>
-        <button class="btn-sm-ghost" style="padding:14px 28px; font-size:14px; border:1px solid var(--color-forest); border-radius:var(--radius-full); background:#fff;" onclick="switchPage('page-main')">
-          메인 3D 체험으로 돌아가기
+        <button class="btn-sm-ghost" style="padding:16px 28px; font-size:15px; border:1px solid rgba(255,255,255,0.35); color:#fff; border-radius:var(--radius-full);" onclick="switchPage('page-shop')">
+          15종 전 상품 카탈로그 둘러보기 ➔
         </button>
       </div>
-    </div>
+
+      <div style="font-size:12.5px; color:#a5b5ac;">
+        왕복 배송비 전액 무료 · 30일 이내 100% 무상 반품 및 사이즈 맞교환 보장
+      </div>
+    </section>
 
   </main>
 
@@ -2609,12 +2698,11 @@
           </p>
         </div>
         <div>
-          <div style="font-size:14px; font-weight:800; color:#fff; margin-bottom:14px;">제품 라인업 (28)</div>
+          <div style="font-size:14px; font-weight:800; color:#fff; margin-bottom:14px;">제품 라인업 (15)</div>
           <ul style="display:flex; flex-direction:column; gap:8px; color:#a5b5ac; font-size:12.5px;">
-            <li><a href="javascript:void(0)" onclick="switchPage('page-shop')">시그니처 코어웨어 (7)</a></li>
-            <li><a href="javascript:void(0)" onclick="switchPage('page-shop')">전문 집중 케어 (7)</a></li>
-            <li><a href="javascript:void(0)" onclick="switchPage('page-shop')">스마트 센서 테크 (7)</a></li>
-            <li><a href="javascript:void(0)" onclick="switchPage('page-shop')">직업 맞춤 교정 ACC (7)</a></li>
+            <li><a href="javascript:void(0)" onclick="switchPage('page-shop'); filterShopPage('cat_neck', document.querySelectorAll('#page-shop .showcase-tabs .tab-btn')[1]);">어깨 · 경추 케어 라인 (5)</a></li>
+            <li><a href="javascript:void(0)" onclick="switchPage('page-shop'); filterShopPage('cat_spine', document.querySelectorAll('#page-shop .showcase-tabs .tab-btn')[2]);">척추 · 허리 케어 라인 (5)</a></li>
+            <li><a href="javascript:void(0)" onclick="switchPage('page-shop'); filterShopPage('cat_pelvis', document.querySelectorAll('#page-shop .showcase-tabs .tab-btn')[3]);">골반 · 하체 케어 라인 (5)</a></li>
           </ul>
         </div>
         <div>
@@ -2827,38 +2915,27 @@
        [JavaScript Master Logic]
        ========================================================================== -->
   <script>
-    const PRODUCTS_28 = [
-      { id: 1, cat: 'cat1', catName: '시그니처 코어웨어', name: '[대표 1] 0.1mm 심리스 넥&숄더 밴드', priceSale: '59,000원', priceOrig: '89,000원', tag: '#거북목 #15도견인', icon: '🎽', spec: '말린어깨 자동 견인 38g 무봉제', isTop: true, isWished: true },
-      { id: 2, cat: 'cat1', catName: '시그니처 코어웨어', name: '[대표 2] 3D 에어로 메쉬 척추 조끼', priceSale: '89,000원', priceOrig: '129,000원', tag: '#숨은지퍼 #12시간쿨링', icon: '🦺', spec: '출근복 속 은폐 탄성 프레임', isTop: true, isWished: false },
-      { id: 3, cat: 'cat1', catName: '시그니처 코어웨어', name: '[대표 3] 골반 수평 유지 에어셀 벨트', priceSale: '69,000원', priceOrig: '99,000원', tag: '#다리꼬기차단 #체압분산', icon: '🥋', spec: '공기 팽창 밸런스 패드', isTop: true, isWished: true },
-      { id: 4, cat: 'cat1', catName: '시그니처 코어웨어', name: '올인원 심리스 풀바디 밸런스 슈트', priceSale: '139,000원', priceOrig: '189,000원', tag: '#전신정렬 #일체형', icon: '🦸', spec: '목부터 골반까지 3중 일체형 케어', isWished: false },
-      { id: 5, cat: 'cat1', catName: '시그니처 코어웨어', name: '흉추 확장 라이트 하네스', priceSale: '54,000원', priceOrig: '79,000원', tag: '#굽은등 #X크로스', icon: '🎗️', spec: '가슴 열림 텐션 밴드', isWished: false },
-      { id: 6, cat: 'cat1', catName: '시그니처 코어웨어', name: '요추 지지 통기성 코르셋 웨어', priceSale: '75,000원', priceOrig: '109,000원', tag: '#허리뻐근함 #탄성지지대', icon: '🩱', spec: '4개 탄성 지지대 초슬림 웨어', isWished: false },
-      { id: 7, cat: 'cat1', catName: '시그니처 코어웨어', name: '경추 릴렉스 심리스 카라 넥웨어', priceSale: '47,000원', priceOrig: '69,000원', tag: '#셔츠카라속 #미세견인', icon: '👔', spec: '비즈니스 셔츠 카라 속 은폐형', isWished: false },
+    const PRODUCTS_15 = [
+      // 1. 어깨·경추 케어 라인 (5종)
+      { id: 1, cat: 'cat_neck', catName: '어깨 · 경추 케어 라인', name: '[대표 1] 0.1mm 심리스 넥&숄더 밴드', priceSale: '59,000원', priceOrig: '89,000원', tag: '#말린어깨 #38g무봉제', icon: '🎽', spec: '말린 어깨 자동 정렬 전면 자석 버클', isTop: true, isWished: true },
+      { id: 2, cat: 'cat_neck', catName: '어깨 · 경추 케어 라인', name: '경추 릴렉스 넥 서포터 슬리브', priceSale: '34,000원', priceOrig: '49,000원', tag: '#턱당김유도 #C커브지지', icon: '👔', spec: '턱 당김 유도 인체공학적 경추 C커브 지지', isWished: false },
+      { id: 3, cat: 'cat_neck', catName: '어깨 · 경추 케어 라인', name: '승모근 마이크로 릴렉스 패드', priceSale: '28,000원', priceOrig: '39,000원', tag: '#승모근긴장완화 #슬림패드', icon: '🧣', spec: '승모근 부착형 체압 분산 초슬림 패드', isWished: false },
+      { id: 4, cat: 'cat_neck', catName: '어깨 · 경추 케어 라인', name: '0.1mm 심리스 어깨 밸런스 이너웨어', priceSale: '49,000원', priceOrig: '69,000원', tag: '#셔츠속은폐 #견갑골지지', icon: '🩱', spec: '흰 셔츠 속 99.8% 은폐형 견갑골 지지 이너', isWished: false },
+      { id: 5, cat: 'cat_neck', catName: '어깨 · 경추 케어 라인', name: '경추 스트레칭 에어셀 서포터', priceSale: '39,000원', priceOrig: '55,000원', tag: '#공기주입이완 #데스크케어', icon: '🛏️', spec: '공기 주입식 경추 긴장 완화 서포터', isWished: false },
 
-      { id: 8, cat: 'cat2', catName: '전문 집중 케어', name: '수근관 터널 손목 중립 서포터', priceSale: '31,000원', priceOrig: '45,000원', tag: '#손목각도0도 #타건피로', icon: '🧤', spec: '키보드/마우스 작업 각도 고정', isWished: false },
-      { id: 9, cat: 'cat2', catName: '전문 집중 케어', name: '3D 에르고노믹 럼버 허리 쿠션', priceSale: '45,000원', priceOrig: '65,000원', tag: '#요추전만45도 #의자밀착', icon: '🛋️', spec: '등받이 밀착 메모리폼', isWished: false },
-      { id: 10, cat: 'cat2', catName: '전문 집중 케어', name: '림프 순환 케어 카프 슬리브', priceSale: '27,000원', priceOrig: '39,000원', tag: '#다리부종 #단계별압박', icon: '🧦', spec: '무봉제 종아리 혈액순환 케어', isWished: false },
-      { id: 11, cat: 'cat2', catName: '전문 집중 케어', name: 'C-Spine 경추 견인 메모리폼 베개', priceSale: '59,000원', priceOrig: '85,000원', tag: '#수면중C자복원 #목결림', icon: '🛏️', spec: '수면 중 경추 곡선 자동 복원', isWished: false },
-      { id: 12, cat: 'cat2', catName: '전문 집중 케어', name: '견관절 회전근개 안정 서포트 밴드', priceSale: '38,000원', priceOrig: '55,000원', tag: '#어깨들림방지 #회전안정', icon: '🧣', spec: '팔을 많이 쓰는 직군용 스트랩', isWished: false },
-      { id: 13, cat: 'cat2', catName: '전문 집중 케어', name: '족저근막 아치 릴리프 슬리브', priceSale: '24,000원', priceOrig: '35,000원', tag: '#발바닥아치 #체압분산', icon: '🦶', spec: '실리콘 돔형 아치 서포트', isWished: false },
-      { id: 14, cat: 'cat2', catName: '전문 집중 케어', name: '무릎 관절 감압 완충 프로텍터', priceSale: '34,000원', priceOrig: '49,000원', tag: '#슬개골완충 #계단보행', icon: '🦵', spec: '보행 시 슬개골 압력 30% 감압', isWished: false },
+      // 2. 척추·허리 케어 라인 (5종)
+      { id: 6, cat: 'cat_spine', catName: '척추 · 허리 케어 라인', name: '[대표 2] 3D 에어로 메쉬 척추 정렬 조끼', priceSale: '89,000원', priceOrig: '129,000원', tag: '#쿨링메쉬 #4중동적텐션', icon: '🦺', spec: '출근복 속 은폐 척추 기립근 탄성 지지', isTop: true, isWished: false },
+      { id: 7, cat: 'cat_spine', catName: '척추 · 허리 케어 라인', name: '0.1mm 심리스 럼버 서포트 언더웨어', priceSale: '54,000원', priceOrig: '79,000원', tag: '#요추4~5번지지 #슬랙스핏', icon: '🩲', spec: '요추 4~5번 38g 초경량 밀착 지지', isWished: true },
+      { id: 8, cat: 'cat_spine', catName: '척추 · 허리 케어 라인', name: '척추 체압 분산 에르고 등받이 패드', priceSale: '45,000원', priceOrig: '65,000원', tag: '#요추전만복원 #의자밀착', icon: '🛋️', spec: '사무용 의자 밀착 메모리폼 등받이', isWished: false },
+      { id: 9, cat: 'cat_spine', catName: '척추 · 허리 케어 라인', name: '심리스 코어 허리 밸런스 밴드', priceSale: '42,000원', priceOrig: '59,000원', tag: '#복부코어지지 #초슬림', icon: '🎗️', spec: '허리 둘레 감싸는 0.1mm 복부 코어 밴드', isWished: false },
+      { id: 10, cat: 'cat_spine', catName: '척추 · 허리 케어 라인', name: '에어로 쿨링 척추 지지 슬리브리스', priceSale: '48,000원', priceOrig: '68,000원', tag: '#통기성쿨링 #이너착용', icon: '👕', spec: '땀이 차지 않는 척추 탄성 슬리브리스', isWished: false },
 
-      { id: 15, cat: 'cat3', catName: '스마트 센서 테크', name: '0.05도 초정밀 모션 바이오 트래커', priceSale: '99,000원', priceOrig: '149,000원', tag: '#블루투스 #0.05도감지', icon: '📡', spec: '척추 각도 실시간 측정 센서', isWished: false },
-      { id: 16, cat: 'cat3', catName: '스마트 센서 테크', name: '무소음 AI 햅틱 넛지 클립', priceSale: '59,000원', priceOrig: '89,000원', tag: '#무소음진동 #옷깃부착', icon: '📎', spec: '구부정할 때 조용히 진동 알림', isWished: false },
-      { id: 17, cat: 'cat3', catName: '스마트 센서 테크', name: '데스크탑 USB 실시간 자세 HUD', priceSale: '79,000원', priceOrig: '119,000원', tag: '#모니터부착 #LED점수', icon: '🖥️', spec: '모니터 상단 자세 점수 라이트바', isWished: false },
-      { id: 18, cat: 'cat3', catName: '스마트 센서 테크', name: '3D 스마트 체압 매트릭스 방석', priceSale: '109,000원', priceOrig: '159,000원', tag: '#좌우체압감지 #방석형', icon: '💺', spec: '엉덩이 한쪽 쏠림 실시간 알림', isWished: false },
-      { id: 19, cat: 'cat3', catName: '스마트 센서 테크', name: '스마트 횡격막 호흡 유도 밴드', priceSale: '69,000원', priceOrig: '99,000원', tag: '#복식호흡 #흉곽압박감지', icon: '🫁', spec: '스트레스성 흉식호흡 완화', isWished: false },
-      { id: 20, cat: 'cat3', catName: '스마트 센서 테크', name: '생체 데이터 스마트 링 연동 모듈', priceSale: '129,000원', priceOrig: '179,000원', tag: '#스마트링 #수면자세', icon: '💍', spec: '수면 중 자세 뒤틀림 기록', isWished: false },
-      { id: 21, cat: 'cat3', catName: '스마트 센서 테크', name: 'AI 실시간 자세 워치 페이스 앱', priceSale: '0원 (무료)', priceOrig: '29,000원', tag: '#애플워치 #갤럭시워치', icon: '⌚', spec: '워치 화면 1초 퀵-글랜스 점수', isWished: false },
-
-      { id: 22, cat: 'cat4', catName: '직업 맞춤 교정 ACC', name: '출장용 에어 럼버 팽창 앵커', priceSale: '29,000원', priceOrig: '42,000원', tag: '#KTX비행기좌석 #1초공기', icon: '✈️', spec: '이동 좌석 허리 빈 공간 지지', isWished: false },
-      { id: 23, cat: 'cat4', catName: '직업 맞춤 교정 ACC', name: '타블렛 드로잉 암레스트 서포터', priceSale: '36,000원', priceOrig: '52,000원', tag: '#웹툰작가 #팔꿈치지지', icon: '🎨', spec: '펜 타블렛 작업 시 팔꿈치 부양', isWished: false },
-      { id: 24, cat: 'cat4', catName: '직업 맞춤 교정 ACC', name: '운전용 페달링 힐 안정화 앵커', priceSale: '26,000원', priceOrig: '38,000원', tag: '#발목꺾임방지 #운전기사', icon: '🚗', spec: '엑셀 조작 시 발뒤꿈치 지지', isWished: false },
-      { id: 25, cat: 'cat4', catName: '직업 맞춤 교정 ACC', name: '기립 작업 체압 분산 힐 컵', priceSale: '19,000원', priceOrig: '29,000원', tag: '#바리스타셰프 #뒤꿈치충격', icon: '👞', spec: '서서 일할 때 충격 40% 흡수', isWished: false },
-      { id: 26, cat: 'cat4', catName: '직업 맞춤 교정 ACC', name: '관절 중립 락(Lock) 텐션 스트랩', priceSale: '23,000원', priceOrig: '33,000원', tag: '#미용사공예가 #손가락보호', icon: '✂️', spec: '반복 작업 시 관절 꺾임 방지', isWished: false },
-      { id: 27, cat: 'cat4', catName: '직업 맞춤 교정 ACC', name: '현장 기립 작업 무릎 완충 패드', priceSale: '25,000원', priceOrig: '37,000원', tag: '#감리소장 #무릎보호', icon: '👷', spec: '쪼그려 앉을 때 무릎 관절 보호', isWished: false },
-      { id: 28, cat: 'cat4', catName: '직업 맞춤 교정 ACC', name: '에르고 랩탑 넥-업 거치형 파우치', priceSale: '33,000원', priceOrig: '48,000원', tag: '#노마드 #15도시야각', icon: '💻', spec: '노트북 파우치 겸 15도 거치대', isWished: false }
+      // 3. 골반·하체 케어 라인 (5종)
+      { id: 11, cat: 'cat_pelvis', catName: '골반 · 하체 케어 라인', name: '[대표 3] 골반 수평 유지 에어셀 벨트', priceSale: '69,000원', priceOrig: '99,000원', tag: '#다리꼬기완화 #착석수평', icon: '🥋', spec: '동적 에어셀 패드 착석 수평 지지', isTop: true, isWished: true },
+      { id: 12, cat: 'cat_pelvis', catName: '골반 · 하체 케어 라인', name: '골반 밸런스 심리스 숏팬츠', priceSale: '43,000원', priceOrig: '62,000원', tag: '#골반비대칭방지 #이너쇼츠', icon: '🩳', spec: '골반 좌우 균형 잡아주는 기능성 쇼츠', isWished: false },
+      { id: 13, cat: 'cat_pelvis', catName: '골반 · 하체 케어 라인', name: '좌골 체압 분산 3D 허니콤 방석', priceSale: '52,000원', priceOrig: '75,000원', tag: '#좌우체압분산 #통기성', icon: '💺', spec: '오랜 착석에도 엉덩이 배김 없는 에어 방석', isWished: false },
+      { id: 14, cat: 'cat_pelvis', catName: '골반 · 하체 케어 라인', name: '출장용 에어 럼버 팽창 앵커', priceSale: '29,000원', priceOrig: '42,000원', tag: '#KTX비행기 #1초공기', icon: '✈️', spec: '이동 좌석 허리 빈 공간 인체공학 지지', isWished: false },
+      { id: 15, cat: 'cat_pelvis', catName: '골반 · 하체 케어 라인', name: '고관절 안정화 서포트 스트랩', priceSale: '33,000원', priceOrig: '48,000원', tag: '#고관절보호 #보행안정', icon: '🦵', spec: '보행 및 착석 시 고관절 수평 안정화', isWished: false }
     ];
 
     let cartList = [
@@ -2866,8 +2943,9 @@
     ];
 
     document.addEventListener('DOMContentLoaded', () => {
-      renderProducts('shop-products-grid', PRODUCTS_28);
+      renderProducts('shop-products-grid', PRODUCTS_15);
       updateBadges();
+      switchStory92Category('cat_neck');
     });
 
     function renderProducts(containerId, list) {
@@ -2904,7 +2982,7 @@
     }
 
     function toggleWish(id, btn) {
-      const p = PRODUCTS_28.find(item => item.id === id);
+      const p = PRODUCTS_15.find(item => item.id === id);
       if (p) {
         p.isWished = !p.isWished;
         const svg = btn.querySelector('svg');
@@ -2926,13 +3004,13 @@
     }
 
     function updateBadges() {
-      const wishCount = PRODUCTS_28.filter(p => p.isWished).length;
+      const wishCount = PRODUCTS_15.filter(p => p.isWished).length;
       document.getElementById('gnb-wish-count').innerText = wishCount;
       document.getElementById('gnb-cart-count').innerText = cartList.length;
     }
 
     function openWishlistModal() {
-      const wished = PRODUCTS_28.filter(p => p.isWished);
+      const wished = PRODUCTS_15.filter(p => p.isWished);
       const container = document.getElementById('wishlist-items-container');
       if (wished.length === 0) {
         container.innerHTML = `<div style="text-align:center; padding:30px 0; color:var(--color-text-muted);">찜한 상품이 없습니다. 마음에 드는 상품을 찜해보세요!</div>`;
@@ -3004,7 +3082,7 @@
     function filterShopPage(cat, btn) {
       document.querySelectorAll('#page-shop .showcase-tabs .tab-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      const filtered = cat === 'all' ? PRODUCTS_28 : PRODUCTS_28.filter(p => p.cat === cat);
+      const filtered = cat === 'all' ? PRODUCTS_15 : PRODUCTS_15.filter(p => p.cat === cat);
       renderProducts('shop-products-grid', filtered);
     }
 
@@ -3030,7 +3108,7 @@
     function closeModalOnOutside(e, id) { if (e.target.id === id) closeModal(id); }
 
     function openQuickView(id) {
-      const p = PRODUCTS_28.find(item => item.id === id) || PRODUCTS_28[0];
+      const p = PRODUCTS_15.find(item => item.id === id) || PRODUCTS_15[0];
       const content = document.getElementById('quickview-content');
       content.innerHTML = `
         <div style="text-align:center; padding:10px 0 20px; border-bottom:1px solid var(--color-border); margin-bottom:20px;">
@@ -3264,7 +3342,7 @@
       }
     }
 
-    // Switch Category for Story 92 Showcase (No Buy Buttons)
+    // Switch Category for Story 92 Showcase (3대 파생 라인 15종 전용 쇼케이스)
     function switchStory92Category(cat, btn) {
       document.querySelectorAll('#sec-st92-collection .btn-page-tab').forEach(b => b.classList.remove('active'));
       if (btn) btn.classList.add('active');
@@ -3272,244 +3350,24 @@
       const container = document.getElementById('st92-product-container');
       if (!container) return;
 
-      if (cat === 'signature') {
-        container.innerHTML = `
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[대표 01 제품 컷]</div>
-              <div>0.1mm 심리스 넥&amp;숄더 밴드 렌더링</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">대표작 01</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">0.1mm 무봉제</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">38g 초경량</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">0.1mm 심리스 넥&amp;숄더 밴드</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">Naked Seamless 0.1mm 무봉제 본딩, 전면 자석 버클로 완벽 밀착 및 말린 어깨 정렬</div>
-            </div>
+      const targetList = PRODUCTS_15.filter(p => p.cat === cat);
+      container.innerHTML = targetList.map(p => `
+        <div class="story92-prod-card">
+          <div class="story92-prod-ph">
+            <div class="story92-ph-title" style="font-size:13px;">[제품 렌더링 컷]</div>
+            <div>${p.name} 3D 디테일</div>
           </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[대표 02 제품 컷]</div>
-              <div>3D 에어로 메쉬 척추 조끼 렌더링</div>
+          <div style="padding:20px;">
+            <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
+              <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">${p.isTop ? '⭐ 대표 시그니처' : '파생 라인'}</span>
+              <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">${p.tag}</span>
             </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">대표작 02</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">38g 쿨링메쉬</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">4중 텐션</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">3D 에어로 메쉬 척추 조끼</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">Airy Weightless 쿨링 메쉬, 척추 기립근 4중 탄성 프레임으로 하루 종일 쾌적한 지지력</div>
-            </div>
+            <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">${p.name}</div>
+            <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">${p.spec}</div>
+            <div style="margin-top:10px; font-size:13.5px; font-weight:800; color:var(--color-terracotta);">${p.priceSale}</div>
           </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[대표 03 제품 컷]</div>
-              <div>골반 수평 유지 에어셀 벨트 렌더링</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">대표작 03</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">에어셀 패드</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">골반 18.2° 교정</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">골반 수평 유지 에어셀 벨트</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">Dynamic Restoring 공기 주입식 에어셀 패드로 다리 꼬기 습관을 물리적으로 부드럽게 차단</div>
-            </div>
-          </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[코어웨어 제품 컷]</div>
-              <div>0.1mm 럼버 서포트 언더웨어 컷</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">코어웨어</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">요추 4~5번 지지</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">슬랙스핏</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">0.1mm 럼버 서포트 언더웨어</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">요추 4~5번 38g 초경량 밀착 지지, 슬랙스 핏을 흐트러뜨리지 않는 완벽한 은폐 디자인</div>
-            </div>
-          </div>
-        `;
-      } else if (cat === 'care') {
-        container.innerHTML = `
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[전문케어 제품 컷]</div>
-              <div>경추 C커브 릴렉스 서포터 각도 렌더링</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">전문케어</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">메모리폼</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">C커브 각도</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">경추 C커브 릴렉스 서포터</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">메모리 에어로폼, 턱 당김 유도 인체공학적 각도로 목 뒤 압력 즉각 이완</div>
-            </div>
-          </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[전문케어 제품 컷]</div>
-              <div>흉추 확장 텐션 스트랩 듀얼 밴딩 컷</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">전문케어</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">듀얼 밴딩</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">라운드숄더</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">흉추 확장 텐션 스트랩</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">견갑골 모음 듀얼 밴딩 시스템으로 말린 흉추를 자연스럽게 확장 교정</div>
-            </div>
-          </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[전문케어 제품 컷]</div>
-              <div>좌골 체압 분산 밸런스 방석 3D 허니콤 컷</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">전문케어</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">3D 허니콤</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">체압 분산</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">좌골 체압 분산 밸런스 방석</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">3D 허니콤 에어셀로 엉덩이 압력을 균등 분산하여 척추 압박 완화</div>
-            </div>
-          </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[전문케어 제품 컷]</div>
-              <div>발목 밸런스 힐 서포트 인솔 아치 컷</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">전문케어</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">3단 아치</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">충격 흡수</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">발목 밸런스 힐 서포트 인솔</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">발 아치 3단 서포트로 보행 시 무릎 안쪽 꺾임 및 척추 충격 방지</div>
-            </div>
-          </div>
-        `;
-      } else if (cat === 'sensor') {
-        container.innerHTML = `
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[스마트 테크 제품 컷]</div>
-              <div>스마트 햅틱 자세 코칭 밴드 모듈 컷</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">스마트 테크</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">15° 햅틱코칭</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">시차 필터링</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">스마트 햅틱 자세 코칭 밴드</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">15도 이상 기울어짐 감지 시 미세 진동으로 스스로 바른 자세를 기억하도록 유도</div>
-            </div>
-          </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[스마트 테크 제품 컷]</div>
-              <div>블루투스 실시간 각도 센서 &amp; 앱 화면</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">스마트 테크</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">6축 자이로</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">앱 대시보드</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">블루투스 실시간 각도 센서 모듈</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">6축 자이로 센서로 일일 자세 점수 및 척추 불균형 데이터를 스마트폰 앱으로 분석</div>
-            </div>
-          </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[스마트 테크 제품 컷]</div>
-              <div>온열 릴렉스 럼버 테크 벨트 그래핀 패드 컷</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">스마트 테크</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">그래핀 온열</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">3단 온도</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">온열 릴렉스 럼버 테크 벨트</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">초경량 그래핀 발열 패드가 긴장된 허리 기립근을 따뜻하게 이완 케어</div>
-            </div>
-          </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[스마트 테크 제품 컷]</div>
-              <div>EMS 척추 근육 활성화 패치 미세전류 컷</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">스마트 테크</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">저주파 EMS</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">15분 회복</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">EMS 척추 근육 활성화 패치</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">저주파 미세 전류로 굳어진 심부 기립근을 부드럽게 자극하고 강화</div>
-            </div>
-          </div>
-        `;
-      } else if (cat === 'acc') {
-        container.innerHTML = `
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[직업 ACC 제품 컷]</div>
-              <div>직장인 데스크 에르고 암레스트 거치 컷</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">직업 ACC</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">어깨 체압분산</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">인체공학</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">직장인 데스크 에르고 암레스트</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">키보드/마우스 타이핑 시 손목과 승모근에 실리는 하중을 40% 분산 지탱</div>
-            </div>
-          </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[직업 ACC 제품 컷]</div>
-              <div>출장용 휴대용 에어 럼버 앵커 KTX 좌석 컷</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">직업 ACC</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">원터치 에어</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">KTX/항공</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">출장용 휴대용 에어 럼버 앵커</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">KTX, 비행기, 택시 등 장거리 이동 시 요추 빈 공간을 완벽하게 채워주는 휴대용 지지대</div>
-            </div>
-          </div>
-          <div class="story92-prod-card">
-            <div class="story92-prod-ph">
-              <div class="story92-ph-title" style="font-size:13px;">[직업 ACC 제품 컷]</div>
-              <div>차량용 척추 드라이빙 패드 시트 장착 컷</div>
-            </div>
-            <div style="padding:20px;">
-              <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                <span class="section-tag" style="font-size:10.5px; padding:2px 6px;">직업 ACC</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">3D 입체성형</span>
-                <span style="font-size:10px; font-weight:700; color:var(--color-sage); background:#e6f4ea; padding:2px 6px; border-radius:4px;">운전피로 완화</span>
-              </div>
-              <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700; color:var(--color-forest); margin-bottom:6px;">차량용 척추 드라이빙 패드</div>
-              <div style="font-size:12.5px; color:var(--color-text-secondary); line-height:1.6;">장거리 출퇴근 및 운전 시 척추에 가해지는 도로 진동과 골반 틀어짐 방지</div>
-            </div>
-          </div>
-        `;
-      }
+        </div>
+      `).join('');
     }
 
   </script>
