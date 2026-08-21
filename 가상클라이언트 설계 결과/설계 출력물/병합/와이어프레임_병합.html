@@ -77,12 +77,32 @@
       letter-spacing: -0.02em;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
+      padding-top: 117px; /* 데스크톱: 상단 전환바(45px) + GNB(72px) 완벽 고정 높이 */
+    }
+
+    /* 모든 섹션 스크롤 이동 시 상단바에 가려지지 않도록 스크롤 마진 확보 */
+    section, [id^="sec-"], main {
+      scroll-margin-top: 130px;
     }
 
     a { text-decoration: none; color: inherit; }
     button { cursor: pointer; border: none; background: none; font-family: inherit; }
     ul { list-style: none; }
     .container { width: 100%; max-width: var(--container-max); margin: 0 auto; padding: 0 clamp(16px, 3.5vw, 28px); box-sizing: border-box; }
+
+    /* ==========================================================================
+       [Site Header Fixed Master Wrapper] 언제 어디서나 최상단 완벽 고정
+       ========================================================================== */
+    .site-header-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1100;
+      background: transparent;
+      box-shadow: 0 4px 20px rgba(28, 36, 32, 0.06);
+    }
 
     /* Top Switcher */
     .page-switch-bar {
@@ -93,9 +113,6 @@
       justify-content: space-between;
       align-items: center;
       font-size: 13px;
-      position: sticky;
-      top: 0;
-      z-index: 1100;
       border-bottom: 1px solid rgba(255,255,255,0.1);
     }
     .page-switch-tabs { display: flex; gap: 8px; }
@@ -122,12 +139,10 @@
        [SEC-01: GNB & Header - 와이어프레임_90 표준 규격]
        ========================================================================== */
     .header-gnb {
-      background: rgba(251, 249, 245, 0.94);
+      background: rgba(251, 249, 245, 0.96);
       backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--color-border);
-      position: sticky;
-      top: 45px;
-      z-index: 1000;
       transition: var(--transition);
     }
     .gnb-inner {
@@ -1597,7 +1612,7 @@
     }
 
     /* ==========================================================================
-       [Fluid Responsive & Hamburger Breakpoint (<= 1024px & <= 768px)]
+       [Fluid Responsive & Hamburger Breakpoint (<= 1024px & <= 768px & <= 480px)]
        ========================================================================== */
     @media (max-width: 1024px) {
       /* 1. 1024px 이하에서 GNB 햄버거 메뉴로 자동 전환 */
@@ -1615,14 +1630,41 @@
         padding: 8px 16px;
       }
 
-      /* 2. 그리드 2열 유연 전환 */
+      /* 2. 메인/샵 페이지 태블릿 2열 유연 전환 */
+      .products-grid-4col {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 18px !important;
+      }
+      .pride-metrics-bar {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+      }
+      .metric-item:not(:last-child)::after {
+        display: none !important;
+      }
+      .proof-stats-grid,
+      .reviews-slider {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+      }
+      .hud-center-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+      }
+
+      /* 3. Story 92 페이지 그리드 유연 전환 */
+      .st92-origin-grid {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+        padding: 32px 24px !important;
+      }
       .story92-blueprint-grid {
         grid-template-columns: repeat(2, 1fr) !important;
       }
       .story92-product-grid {
         grid-template-columns: repeat(2, 1fr) !important;
       }
-      .featured-grid, .core-values-grid, .prod-grid {
+      .core-values-grid, .prod-grid {
         grid-template-columns: repeat(2, 1fr) !important;
       }
       .story92-problem-card {
@@ -1637,12 +1679,247 @@
     }
 
     @media (max-width: 768px) {
-      /* 1. 상단 전환 바 모바일 최적화 */
+      /* 1. 상단 전환 바 모바일 최적화 & 바디 패딩 조절 */
+      body {
+        padding-top: 68px !important; /* 모바일: GNB 단독 고정 높이 */
+      }
+      section, [id^="sec-"], main {
+        scroll-margin-top: 80px !important;
+      }
       .page-switch-bar {
         display: none !important;
       }
+      .gnb-inner {
+        height: 68px !important;
+      }
+      .mobile-menu-drawer {
+        top: 68px !important;
+      }
 
-      /* 2. Hero 섹션 모바일 최적화 & 가로 스크롤 원천 차단 */
+      /* 2. Hero & Manifesto 섹션 모바일 완벽 최적화 */
+      .hero-section {
+        padding: 45px 0 35px !important;
+      }
+      .hero-eyebrow {
+        font-size: 11px !important;
+        padding: 4px 12px !important;
+        margin-bottom: 16px !important;
+      }
+      .hero-manifesto-title {
+        font-size: clamp(23px, 6.4vw, 32px) !important;
+        line-height: 1.35 !important;
+        margin-bottom: 16px !important;
+      }
+      .hero-manifesto-desc {
+        font-size: 14.5px !important;
+        line-height: 1.65 !important;
+        margin-bottom: 24px !important;
+      }
+      .hero-cta-group {
+        flex-direction: column !important;
+        gap: 10px !important;
+        width: 100% !important;
+        margin-bottom: 28px !important;
+      }
+      .hero-cta-group button {
+        width: 100% !important;
+        justify-content: center !important;
+        margin-left: 0 !important;
+        padding: 12px 18px !important;
+      }
+
+      /* 3. 4대 자부심 지표 바 모바일 2열 정렬 & 삐져나옴 원천 차단 */
+      .pride-metrics-bar {
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding: 16px 12px !important;
+        gap: 14px 8px !important;
+      }
+      .metric-value {
+        font-size: 24px !important;
+      }
+      .metric-label {
+        font-size: 12px !important;
+      }
+      .metric-sub {
+        font-size: 10px !important;
+      }
+
+      /* 4. 브랜드 여정 3대 챕터 모바일 1열 스택 */
+      .journey-section {
+        padding: 50px 0 !important;
+      }
+      .journey-chapter,
+      .journey-chapter.reverse {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        margin-bottom: 45px !important;
+      }
+      .journey-heading {
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+      }
+      .journey-body {
+        font-size: 14px !important;
+        line-height: 1.75 !important;
+      }
+      .visual-image-frame {
+        height: 180px !important;
+      }
+
+      /* 5. 3대 대표작 지그재그 카드 1열 스택 & 패딩 다이어트 */
+      #sec-featured {
+        padding: 50px 16px !important;
+      }
+      .featured-grid {
+        gap: 36px !important;
+      }
+      .featured-card,
+      .featured-card.reverse {
+        grid-template-columns: 1fr !important;
+      }
+      .featured-visual {
+        padding: 24px 16px !important;
+        border-right: none !important;
+        border-bottom: 1px solid var(--color-border) !important;
+      }
+      .featured-card.reverse .featured-visual {
+        border-left: none !important;
+        border-bottom: 1px solid var(--color-border) !important;
+      }
+      .visual-3d-box {
+        height: 220px !important;
+      }
+      .featured-content {
+        padding: 24px 18px !important;
+      }
+      .featured-name {
+        font-size: 20px !important;
+      }
+      .featured-copy {
+        font-size: 13.5px !important;
+        line-height: 1.65 !important;
+      }
+      .featured-actions {
+        flex-direction: column !important;
+        gap: 8px !important;
+      }
+      .featured-actions .btn-primary {
+        width: 100% !important;
+        justify-content: center !important;
+        margin-left: 0 !important;
+      }
+
+      /* 6. 소셜 프루프 & 임상 데이터 1열 스택 */
+      .proof-section {
+        padding: 50px 0 !important;
+        margin: 50px 0 !important;
+      }
+      .proof-stats-grid,
+      .reviews-slider {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+      }
+      .proof-stat-card {
+        padding: 16px !important;
+      }
+      .proof-num {
+        font-size: 30px !important;
+      }
+      .review-card {
+        padding: 18px !important;
+      }
+
+      /* 7. 15종 카탈로그 이동 배너 세로 스택 */
+      .explore-catalog-banner {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 20px !important;
+        padding: 28px 18px !important;
+        margin: 40px 0 !important;
+      }
+      .catalog-banner-title {
+        font-size: 20px !important;
+      }
+      .explore-catalog-banner button {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 12px 18px !important;
+      }
+
+      /* 8. 스마트 사이즈 파인더 모바일 1열 스택 */
+      .fit-finder-banner {
+        padding: 24px 16px !important;
+        margin: 40px 0 !important;
+      }
+      .fit-finder-title {
+        font-size: 19px !important;
+      }
+      .fit-finder-inputs {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+        padding: 16px !important;
+      }
+      .fit-finder-banner > div:last-child {
+        flex-direction: column !important;
+        gap: 8px !important;
+      }
+      .fit-finder-banner > div:last-child button {
+        width: 100% !important;
+        justify-content: center !important;
+      }
+
+      /* 9. AI HUD & 웰니스 센터 1열 스택 */
+      .hud-center-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+        margin: 40px 0 !important;
+      }
+      .hud-card, .center-card {
+        padding: 22px 18px !important;
+      }
+      .gauge-container {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 14px !important;
+      }
+
+      /* 10. 전체 상품 서브페이지(Shop All) 1열 스택 및 탭 가로 스크롤 */
+      #page-shop {
+        padding: 30px 16px !important;
+      }
+      .products-grid-4col {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+      }
+      .showcase-tabs {
+        justify-content: flex-start !important;
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        padding-bottom: 8px !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+      .showcase-tabs .tab-btn {
+        white-space: nowrap !important;
+        padding: 8px 16px !important;
+        font-size: 13px !important;
+        flex-shrink: 0 !important;
+      }
+
+      /* 11. FAQ & 모달 최적화 */
+      .faq-container {
+        margin: 40px auto !important;
+      }
+      .modal-card {
+        width: 92% !important;
+        padding: 22px 16px !important;
+      }
+      .bottomsheet-card {
+        padding: 24px 18px !important;
+      }
+
+      /* 12. Story 92 섹션 모바일 최적화 & 가로 스크롤 원천 차단 */
       .story92-hero {
         width: 100% !important;
         margin: 0 auto 40px !important;
@@ -1666,7 +1943,6 @@
         margin-bottom: 22px !important;
       }
 
-      /* Hero 하단 3대 지표 바 모바일 가로 삐져나옴 방지 */
       .story92-hero div[style*="inline-grid"] {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
@@ -1687,13 +1963,38 @@
         line-height: 1.2 !important;
       }
 
-      /* 3. 브랜드 어원 및 3대 탄생기 1열 스택 */
-      #sec-st92-name-origin .container > div:nth-child(2) {
+      /* 12-B. 스밈 어원 및 3대 탄생기(SEC-01-B) 모바일 1열 스택 & 가로 스크롤 완벽 차단 */
+      .st92-origin-grid {
         grid-template-columns: 1fr !important;
-        gap: 32px !important;
+        gap: 24px !important;
+        padding: 20px 14px !important;
+      }
+      .st92-etymology-box {
+        padding: 20px 16px !important;
+      }
+      .st92-origin-title-main {
+        font-size: clamp(22px, 5.5vw, 32px) !important;
+      }
+      .st92-origin-title-sub {
+        font-size: clamp(16px, 4.2vw, 22px) !important;
+      }
+      .st92-etymology-typo {
+        font-size: 32px !important;
+      }
+      .st92-origin-badges {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 6px !important;
+      }
+      .st92-origin-badges > div {
+        padding: 8px 4px !important;
+      }
+      .st92-origin-badges div[style*="font-size:13px"] {
+        font-size: 11.5px !important;
+      }
+      .st92-origin-badges div[style*="font-size:11px"] {
+        font-size: 9.5px !important;
       }
 
-      /* 4. 문제 카드 스택 모바일 1열 스택 & sticky 최적화 */
       .story92-problem-stack {
         gap: 20px !important;
       }
@@ -1709,20 +2010,17 @@
         font-size: 18px !important;
       }
 
-      /* 5. 3대 철학 지그재그 모바일 1열 스택 */
       .story92-zigzag-row,
       .story92-zigzag-row.reverse {
         grid-template-columns: 1fr !important;
         gap: 18px !important;
       }
 
-      /* 6. 3D 테크니컬 도면 1열 스택 */
       .story92-blueprint-grid {
         grid-template-columns: 1fr !important;
         gap: 18px !important;
       }
 
-      /* 7. Before/After 슬라이더 & 유즈케이스 모바일 1열 스택 & 가로 스크롤 방지 */
       #sec-st92-usecases > div:last-child {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
@@ -1734,13 +2032,12 @@
         min-width: 100% !important;
       }
 
-      /* 8. 15종 쇼케이스 모바일 1열 스택 */
       .story92-product-grid {
         grid-template-columns: 1fr !important;
         gap: 14px !important;
       }
 
-      /* 9. 모바일 본문 최하단 플로팅 CTA 여백 확보 */
+      /* 13. 모바일 본문 최하단 플로팅 CTA 여백 확보 */
       #page-story, #page-main, #page-shop {
         padding-bottom: 120px !important;
       }
@@ -1751,117 +2048,127 @@
 <body>
 
   <!-- ==========================================================================
-       [Top Switcher] 3대 독립 페이지 즉시 전환 툴바
+       [Site Header Fixed Master Wrapper] 언제 어디서나 최상단 완벽 고정
        ========================================================================== -->
-  <div class="page-switch-bar">
-    <div><strong>SEUMIM (스밈) 마스터 통합 플랫폼 와이어프레임</strong> (Eight Sleep 융합 롤모델)</div>
-    <div class="page-switch-tabs">
-      <button class="btn-page-tab active" onclick="switchPage('page-main')">1. 메인 랜딩페이지 (Main)</button>
-      <button class="btn-page-tab" onclick="switchPage('page-shop')">2. 15개 전 상품 서브 (Shop All)</button>
-      <button class="btn-page-tab" onclick="switchPage('page-story')">3. 브랜드 이야기 서브 (Our Story)</button>
-    </div>
-  </div>
-
-  <!-- ==========================================================================
-       [SEC-01: GNB & Header - 와이어프레임_90 표준 규격]
-       ========================================================================== -->
-  <header class="header-gnb">
-    <div class="container gnb-inner">
-      <a href="javascript:void(0)" class="logo" onclick="switchPage('page-main')">
-        SEUMIM <span class="logo-badge">스밈 0.1mm</span>
-      </a>
-
-      <!-- 중앙 내비게이션 (데스크탑) -->
-      <nav class="gnb-nav">
-        <a href="javascript:void(0)" class="gnb-link active" onclick="switchPage('page-main')">홈(메인)</a>
-        <a href="#sec-featured" class="gnb-link" onclick="switchPage('page-main')">3대 대표작</a>
-        <a href="javascript:void(0)" class="gnb-link" onclick="switchPage('page-shop')">전체 상품 (15)</a>
-        <a href="#sec-hud" class="gnb-link" onclick="switchPage('page-main')">AI 케어 &amp; 센터</a>
-        <a href="javascript:void(0)" class="gnb-link" onclick="switchPage('page-story')">Our Story</a>
-      </nav>
-
-      <!-- 우측 액션: 라인아트 찜, 장바구니 + 30일 무료시착 + 모바일 햄버거 버튼 -->
-      <div class="gnb-actions" style="display:flex; align-items:center; gap:10px;">
-        <!-- 1. 찜 (라인아트 하트 아이콘) -->
-        <button class="gnb-icon-btn" onclick="openWishlistModal()" title="찜한 상품 목록">
-          <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-          </svg>
-          <span class="icon-badge" id="gnb-wish-count">2</span>
-        </button>
-
-        <!-- 2. 장바구니 (라인아트 토트백 아이콘) -->
-        <button class="gnb-icon-btn" onclick="openCartModal()" title="시착 장바구니">
-          <svg class="nav-icon-svg" viewBox="0 0 100 100">
-            <path d="M22 42 Q20 42 22 48 L28 84 Q30 90 38 90 L62 90 Q70 90 72 84 L78 48 Q80 42 78 42 Z" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-            <path d="M36 44 V30 C36 18 64 18 64 30 V44" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-            <circle cx="36" cy="46" r="6" fill="currentColor" />
-            <circle cx="64" cy="46" r="6" fill="currentColor" />
-          </svg>
-          <span class="icon-badge" id="gnb-cart-count">1</span>
-        </button>
-
-        <!-- 3. 데스크탑 30일 무료시착 버튼 -->
-        <button class="btn-primary btn-accent" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
-          30일 무료 시착 (0원)
-        </button>
-
-        <!-- 4. 모바일 전용 햄버거 메뉴 토글 버튼 -->
-        <button class="gnb-hamburger-btn" id="gnb-hamburger-btn" onclick="toggleMobileMenu()" aria-label="메뉴 열기/닫기">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+  <header class="site-header-fixed" id="site-header-fixed">
+    <!-- 1. Top Switcher Bar (데스크탑 3대 독립 페이지 즉시 전환) -->
+    <div class="page-switch-bar">
+      <div><strong>SEUMIM (스밈) 마스터 통합 플랫폼 와이어프레임</strong> (Eight Sleep 융합 롤모델)</div>
+      <div class="page-switch-tabs">
+        <button class="btn-page-tab active" onclick="navigateToSection('page-main')">1. 메인 랜딩페이지 (Main)</button>
+        <button class="btn-page-tab" onclick="navigateToSection('page-shop')">2. 15개 전 상품 서브 (Shop All)</button>
+        <button class="btn-page-tab" onclick="navigateToSection('page-story')">3. 브랜드 이야기 서브 (Our Story)</button>
       </div>
     </div>
 
-    <!-- 모바일 전용 드롭다운 메뉴 드로어 -->
-    <div class="mobile-menu-drawer" id="mobile-menu-drawer">
-      <div style="display:flex; flex-direction:column; gap:10px;">
-        
-        <!-- 메뉴 1: 대표작 -->
-        <a href="javascript:void(0)" class="mobile-menu-item" onclick="navigateMobileMenu('page-main', 'sec-featured')">
-          <div class="mobile-menu-icon">✦</div>
-          <div>
-            <div class="mobile-menu-title">대표작 (3대 시그니처)</div>
-            <div class="mobile-menu-desc">0.1mm 넥&amp;숄더 · 에어로 조끼 · 에어셀 벨트</div>
-          </div>
+    <!-- 2. SEC-01: GNB & Header - 와이어프레임_90 표준 규격 -->
+    <div class="header-gnb">
+      <div class="container gnb-inner">
+        <a href="javascript:void(0)" class="logo" onclick="navigateToSection('page-main')">
+          SEUMIM <span class="logo-badge">스밈 0.1mm</span>
         </a>
 
-        <!-- 메뉴 2: 전체상품 -->
-        <a href="javascript:void(0)" class="mobile-menu-item" onclick="navigateMobileMenu('page-shop')">
-          <div class="mobile-menu-icon">📦</div>
-          <div>
-            <div class="mobile-menu-title">전체 상품 (15종 라인업)</div>
-            <div class="mobile-menu-desc">시그니처 · 전문케어 · 스마트센서 · 직업ACC</div>
-          </div>
-        </a>
+        <!-- 중앙 내비게이션 (데스크탑 - 어느 페이지에서든 즉시 이동) -->
+        <nav class="gnb-nav">
+          <a href="javascript:void(0)" class="gnb-link active" onclick="navigateToSection('page-main')">홈(메인)</a>
+          <a href="javascript:void(0)" class="gnb-link" onclick="navigateToSection('page-main', 'sec-featured')">3대 대표작</a>
+          <a href="javascript:void(0)" class="gnb-link" onclick="navigateToSection('page-shop')">전체 상품 (15)</a>
+          <a href="javascript:void(0)" class="gnb-link" onclick="navigateToSection('page-main', 'sec-hud')">AI 케어 &amp; 센터</a>
+          <a href="javascript:void(0)" class="gnb-link" onclick="navigateToSection('page-story')">Our Story</a>
+        </nav>
 
-        <!-- 메뉴 3: AI 케어 & 센터 -->
-        <a href="javascript:void(0)" class="mobile-menu-item" onclick="navigateMobileMenu('page-main', 'sec-hud')">
-          <div class="mobile-menu-icon">⚡</div>
-          <div>
-            <div class="mobile-menu-title">AI 케어 &amp; 센터</div>
-            <div class="mobile-menu-desc">실시간 AI 척추 HUD 진단 &amp; 웰니스 센터</div>
-          </div>
-        </a>
+        <!-- 우측 액션: 라인아트 찜, 장바구니 + 30일 무료시착 + 모바일 햄버거 버튼 -->
+        <div class="gnb-actions" style="display:flex; align-items:center; gap:10px;">
+          <!-- 1. 찜 (라인아트 하트 아이콘) -->
+          <button class="gnb-icon-btn" onclick="openWishlistModal()" title="찜한 상품 목록">
+            <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+            <span class="icon-badge" id="gnb-wish-count">2</span>
+          </button>
 
-        <!-- 메뉴 4: Our Story -->
-        <a href="javascript:void(0)" class="mobile-menu-item" onclick="navigateMobileMenu('page-story')">
-          <div class="mobile-menu-icon">📖</div>
-          <div>
-            <div class="mobile-menu-title">Our Story (브랜드 이야기)</div>
-            <div class="mobile-menu-desc">스밈의 시작과 0.1mm 심리스 기술 혁신</div>
-          </div>
-        </a>
+          <!-- 2. 장바구니 (라인아트 토트백 아이콘) -->
+          <button class="gnb-icon-btn" onclick="openCartModal()" title="시착 장바구니">
+            <svg class="nav-icon-svg" viewBox="0 0 100 100">
+              <path d="M22 42 Q20 42 22 48 L28 84 Q30 90 38 90 L62 90 Q70 90 72 84 L78 48 Q80 42 78 42 Z" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+              <path d="M36 44 V30 C36 18 64 18 64 30 V44" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+              <circle cx="36" cy="46" r="6" fill="currentColor" />
+              <circle cx="64" cy="46" r="6" fill="currentColor" />
+            </svg>
+            <span class="icon-badge" id="gnb-cart-count">1</span>
+          </button>
 
+          <!-- 3. 데스크탑 30일 무료시착 버튼 -->
+          <button class="btn-primary btn-accent" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
+            30일 무료 시착 (0원)
+          </button>
+
+          <!-- 4. 모바일 전용 햄버거 메뉴 토글 버튼 -->
+          <button class="gnb-hamburger-btn" id="gnb-hamburger-btn" onclick="toggleMobileMenu()" aria-label="메뉴 열기/닫기">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
 
-      <!-- 모바일 드로어 하단 CTA -->
-      <div style="padding-top:10px; border-top:1px solid rgba(255,255,255,0.12);">
-        <button class="btn-primary btn-accent" style="width:100%; padding:14px; font-size:15px; font-weight:800; border-radius:var(--radius-md); box-shadow:0 6px 18px rgba(210,110,46,0.4);" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)'); closeMobileMenu();">
-          30일 무료 시착 시작하기 (0원)
-        </button>
+      <!-- 모바일 전용 드롭다운 메뉴 드로어 -->
+      <div class="mobile-menu-drawer" id="mobile-menu-drawer">
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          
+          <!-- 메뉴 1: 메인 홈 -->
+          <a href="javascript:void(0)" class="mobile-menu-item" onclick="navigateToSection('page-main')">
+            <div class="mobile-menu-icon">🏠</div>
+            <div>
+              <div class="mobile-menu-title">홈 (메인 랜딩페이지)</div>
+              <div class="mobile-menu-desc">스밈 브랜드 매니페스토 &amp; 4대 자부심 지표</div>
+            </div>
+          </a>
+
+          <!-- 메뉴 2: 대표작 -->
+          <a href="javascript:void(0)" class="mobile-menu-item" onclick="navigateToSection('page-main', 'sec-featured')">
+            <div class="mobile-menu-icon">✦</div>
+            <div>
+              <div class="mobile-menu-title">대표작 (3대 시그니처)</div>
+              <div class="mobile-menu-desc">0.1mm 넥&amp;숄더 · 에어로 조끼 · 에어셀 벨트</div>
+            </div>
+          </a>
+
+          <!-- 메뉴 3: 전체상품 -->
+          <a href="javascript:void(0)" class="mobile-menu-item" onclick="navigateToSection('page-shop')">
+            <div class="mobile-menu-icon">📦</div>
+            <div>
+              <div class="mobile-menu-title">전체 상품 (15종 라인업)</div>
+              <div class="mobile-menu-desc">시그니처 · 전문케어 · 스마트센서 · 직업ACC</div>
+            </div>
+          </a>
+
+          <!-- 메뉴 4: AI 케어 & 센터 -->
+          <a href="javascript:void(0)" class="mobile-menu-item" onclick="navigateToSection('page-main', 'sec-hud')">
+            <div class="mobile-menu-icon">⚡</div>
+            <div>
+              <div class="mobile-menu-title">AI 케어 &amp; 센터</div>
+              <div class="mobile-menu-desc">실시간 AI 척추 HUD 진단 &amp; 웰니스 센터</div>
+            </div>
+          </a>
+
+          <!-- 메뉴 5: Our Story -->
+          <a href="javascript:void(0)" class="mobile-menu-item" onclick="navigateToSection('page-story')">
+            <div class="mobile-menu-icon">📖</div>
+            <div>
+              <div class="mobile-menu-title">Our Story (브랜드 이야기)</div>
+              <div class="mobile-menu-desc">스밈의 시작과 0.1mm 심리스 기술 혁신</div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- 모바일 드로어 하단 CTA -->
+        <div style="padding-top:10px; border-top:1px solid rgba(255,255,255,0.12);">
+          <button class="btn-primary btn-accent" style="width:100%; padding:14px; font-size:15px; font-weight:800; border-radius:var(--radius-md); box-shadow:0 6px 18px rgba(210,110,46,0.4);" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)'); closeMobileMenu();">
+            30일 무료 시착 시작하기 (0원)
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -2481,9 +2788,9 @@
         <span class="section-tag" style="background:#fde8e4; color:var(--color-terracotta); font-size:12.5px; padding:5px 14px; border-radius:var(--radius-full);">
           WHY SEUMIM &amp; BRAND ORIGIN
         </span>
-        <h2 class="story-section-title" style="font-family:var(--font-maruburi); font-size:36px; margin:14px 0 16px; line-height:1.35; word-break:keep-all;">
+        <h2 class="story-section-title st92-origin-title-main" style="font-family:var(--font-maruburi); font-size:36px; margin:14px 0 16px; line-height:1.35; word-break:keep-all;">
           스밈(SEUMIM), 왜 '스밈'이어야 했을까요?<br>
-          <span style="color:var(--color-terracotta); font-size:28px;">"억지로 조이지 않고, 일상 속에 자연스럽게 스며드는 균형"</span>
+          <span class="st92-origin-title-sub" style="color:var(--color-terracotta); font-size:28px; display:inline-block; margin-top:4px;">"억지로 조이지 않고, 일상 속에 자연스럽게 스며드는 균형"</span>
         </h2>
         <p style="font-size:16px; color:var(--color-text-secondary); line-height:1.8; word-break:keep-all;">
           우리는 '교정'이라는 이름으로 몸을 억누르고 숨 막히게 옥죄던 기존 시장의 오랜 관성에 질문을 던졌습니다.<br>
@@ -2491,11 +2798,11 @@
         </p>
       </div>
 
-      <!-- 대형 2열 서사 및 어원 분석 쇼케이스 -->
-      <div style="display:grid; grid-template-columns: 1.05fr 1.2fr; gap:40px; align-items:stretch; background:var(--bg-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:44px; box-shadow:var(--shadow-md);">
+      <!-- 대형 2열 서사 및 어원 분석 쇼케이스 (태블릿/모바일에서는 1열 세로 스택 자동 전환) -->
+      <div class="st92-origin-grid" style="display:grid; grid-template-columns: 1.05fr 1.2fr; gap:40px; align-items:stretch; background:var(--bg-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:44px; box-shadow:var(--shadow-md);">
         
-        <!-- 좌측: 브랜드 이름 '스미다' 타이포그래피 & 어원 정의 엠블럼 -->
-        <div style="background:var(--bg-base); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:36px; display:flex; flex-direction:column; justify-content:space-between;">
+        <!-- 좌측 (상단): 브랜드 이름 '스미다' 타이포그래피 & 어원 정의 엠블럼 -->
+        <div class="st92-etymology-box" style="background:var(--bg-base); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:36px; display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
               <span style="font-size:12px; font-weight:800; color:var(--color-terracotta); letter-spacing:0.1em;">NAME ETYMOLOGY</span>
@@ -2504,7 +2811,7 @@
 
             <!-- 스미다 타이포 아트 -->
             <div style="text-align:center; padding:24px 0; border-bottom:1px dashed var(--color-border); margin-bottom:24px;">
-              <div style="font-family:var(--font-maruburi); font-size:44px; font-weight:900; color:var(--color-forest); letter-spacing:-0.03em; margin-bottom:4px;">
+              <div class="st92-etymology-typo" style="font-family:var(--font-maruburi); font-size:44px; font-weight:900; color:var(--color-forest); letter-spacing:-0.03em; margin-bottom:4px;">
                 스·밈 <span style="font-size:22px; font-weight:400; color:var(--color-text-muted);">[SEUMIM]</span>
               </div>
               <div style="font-family:var(--font-serif); font-size:15px; color:var(--color-terracotta); font-weight:700; margin-top:6px;">
@@ -2550,8 +2857,8 @@
           </div>
         </div>
 
-        <!-- 우측: 스밈의 3단계 탄생 비하인드 서사 (Origin Timeline) -->
-        <div style="display:flex; flex-direction:column; justify-content:space-between;">
+        <!-- 우측 (하단): 스밈의 3단계 탄생 비하인드 서사 (Origin Timeline) -->
+        <div class="st92-origin-story-box" style="display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="font-size:12px; font-weight:800; color:var(--color-forest); letter-spacing:0.08em; margin-bottom:16px; text-transform:uppercase;">
               ✦ THE 3-STEP ORIGIN STORY
@@ -2598,7 +2905,7 @@
           </div>
 
           <!-- 하단 3대 핵심 가치 뱃지 바 -->
-          <div style="margin-top:28px; padding-top:20px; border-top:1px solid var(--color-border); display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; text-align:center;">
+          <div class="st92-origin-badges" style="margin-top:28px; padding-top:20px; border-top:1px solid var(--color-border); display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; text-align:center;">
             <div style="background:var(--bg-card); padding:10px; border-radius:var(--radius-sm);">
               <div style="font-weight:800; font-size:13px; color:var(--color-forest);">0.1mm 초슬림</div>
               <div style="font-size:11px; color:var(--color-text-muted);">무봉제 피부 밀착</div>
@@ -3625,6 +3932,21 @@
       openCheckoutModal(prodName, prodSize);
     }
 
+    function navigateToSection(pageId, secId) {
+      closeMobileMenu();
+      switchPage(pageId);
+      if (secId) {
+        setTimeout(() => {
+          const target = document.getElementById(secId);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 80);
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
     function switchPage(pageId) {
       document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
       document.querySelectorAll('.btn-page-tab').forEach(b => b.classList.remove('active'));
@@ -3634,16 +3956,17 @@
       if (targetPage) targetPage.classList.add('active');
 
       const tabIdx = pageId === 'page-main' ? 0 : pageId === 'page-shop' ? 1 : 2;
-      document.querySelectorAll('.btn-page-tab')[tabIdx].classList.add('active');
+      const tabs = document.querySelectorAll('.btn-page-tab');
+      if (tabs[tabIdx]) tabs[tabIdx].classList.add('active');
       
-      if (pageId === 'page-main') {
-        document.querySelectorAll('.gnb-link')[0].classList.add('active');
-      } else if (pageId === 'page-shop') {
-        document.querySelectorAll('.gnb-link')[2].classList.add('active');
-      } else if (pageId === 'page-story') {
-        document.querySelectorAll('.gnb-link')[4].classList.add('active');
+      const gnbLinks = document.querySelectorAll('.gnb-link');
+      if (pageId === 'page-main' && gnbLinks[0]) {
+        gnbLinks[0].classList.add('active');
+      } else if (pageId === 'page-shop' && gnbLinks[2]) {
+        gnbLinks[2].classList.add('active');
+      } else if (pageId === 'page-story' && gnbLinks[4]) {
+        gnbLinks[4].classList.add('active');
       }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function filterShopPage(cat, btn) {
@@ -3852,16 +4175,7 @@
     }
 
     function navigateMobileMenu(pageId, secId) {
-      closeMobileMenu();
-      switchPage(pageId);
-      if (secId) {
-        setTimeout(() => {
-          const target = document.getElementById(secId);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
-        }, 150);
-      }
+      navigateToSection(pageId, secId);
     }
 
     // Before/After Slider for Story 92 (PC 마우스 & 모바일 터치 완벽 지원)
