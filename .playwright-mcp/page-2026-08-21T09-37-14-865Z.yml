@@ -1,0 +1,455 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - strong [ref=e5]: SEUMIM (스밈) - 기본 와이어프레임
+        - text: "[디자인 요소 제외 / 정보구조 & 레이아웃 전용]"
+      - generic [ref=e6]:
+        - button "1. 메인 랜딩페이지 (Main)" [ref=e7] [cursor=pointer]
+        - button "2. 15개 전 상품 서브 (Shop All)" [ref=e8] [cursor=pointer]
+        - button "3. 브랜드 이야기 서브 (Our Story)" [active] [ref=e9] [cursor=pointer]
+    - generic [ref=e11]:
+      - link "SEUMIM 스밈 0.1mm" [ref=e12] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - text: SEUMIM
+        - generic [ref=e13]: 스밈 0.1mm
+      - generic [ref=e14]:
+        - button "3" [ref=e15] [cursor=pointer]
+        - button "1" [ref=e19] [cursor=pointer]
+        - button "메뉴 열기/닫기" [ref=e26] [cursor=pointer]
+  - main [ref=e647]:
+    - generic [ref=e650]:
+      - generic [ref=e651]: ✦ 0.1mm Seamless · 스며드는 다정한 균형
+      - heading "우리는 몸을 억지로 조이는 대신, 일상에 자연스럽게 스며들기로 했습니다" [level=1] [ref=e652]
+      - paragraph [ref=e653]: 하루 9시간 책상 앞, 쇠 와이어와 강제 조임의 고통을 덜어내고 시작된 0.1mm 심리스 혁신 이야기
+      - generic [ref=e654]:
+        - button "스밈의 시작 알아보기 ↓" [ref=e655] [cursor=pointer]
+        - button "3대 다정한 균형 철학 ➔" [ref=e656] [cursor=pointer]
+      - generic [ref=e657]:
+        - generic [ref=e658]:
+          - generic [ref=e659]: 0.1mm
+          - generic [ref=e660]: 초슬림 무봉제피부 완벽 밀착
+        - generic [ref=e662]:
+          - generic [ref=e663]: 38g
+          - generic [ref=e664]: 초경량 에어로어깨 압박 제로
+        - generic [ref=e666]:
+          - generic [ref=e667]: 99.8%
+          - generic [ref=e668]: 출근복 은폐율얇은 셔츠 완벽 시크릿
+    - generic [ref=e669]:
+      - generic [ref=e670]:
+        - generic [ref=e671]:
+          - text: WHY SEUMIM & BRAND ORIGIN
+          - heading "스밈(SEUMIM), 왜 '스밈'이어야 했을까요? \"억지로 조이지 않고, 일상 속에 자연스럽게 스며드는 균형\"" [level=2] [ref=e672]:
+            - text: 스밈(SEUMIM), 왜 '스밈'이어야 했을까요?
+            - generic [ref=e673]: "\"억지로 조이지 않고, 일상 속에 자연스럽게 스며드는 균형\""
+          - paragraph [ref=e674]: 우리는 '교정'이라는 이름으로 몸을 억누르고 숨 막히게 옥죄던 기존 시장의 오랜 관성에 질문을 던졌습니다. 스밈은 아침에 옷을 입듯, 내 몸에 티 나지 않게 스며드는 가장 다정한 지지력을 만들기 위해 탄생했습니다.
+        - generic [ref=e675]:
+          - generic [ref=e676]:
+            - generic [ref=e677]:
+              - generic [ref=e678]:
+                - generic [ref=e679]: NAME ETYMOLOGY
+                - generic [ref=e680]: 순우리말 어원
+              - generic [ref=e681]:
+                - generic [ref=e682]: 스·밈 [SEUMIM]
+                - generic [ref=e683]: "\"빛이나 물이 천천히 배어들듯, 마음에 자연스럽게 녹아들다\""
+              - generic [ref=e684]:
+                - paragraph [ref=e685]:
+                  - strong [ref=e686]: "'스밈'"
+                  - text: 은 몸을 쇠붙이로 옥죄어 강제로 꺾는 것이 아니라,
+                  - strong [ref=e687]: 바른 자세가 물이 스미듯 자연스러운 일상의 습관으로 배어들게 한다
+                  - text: 는 약속을 담은 이름입니다.
+                - paragraph [ref=e688]: 매일 아침 거부감 없이 손이 가고, 하루 종일 입고 있어도 입은 사실조차 잊게 되는 편안함. 그것이 스밈이 정의하는 '스며드는 웰니스'의 본질입니다.
+            - generic [ref=e689]:
+              - generic [ref=e690]:
+                - generic [ref=e691]: 0.1mm 초극세 심리스 무봉제 융착 단면
+                - generic [ref=e692]: 봉제선 0mm
+              - img [ref=e693]:
+                - generic [ref=e695]: Skin Layer (피부 밀착)
+                - generic [ref=e697]: 0.1mm Seamless Core (초극세 나노 직조)
+                - generic [ref=e698]: Outer Shirt (얇은 셔츠 밖 도드라짐 0%)
+                - generic [ref=e700]: 초음파 무봉제 결합
+              - generic [ref=e701]: 피부 굴곡을 따라 봉제선 없이 매끄럽게 밀착되어 셔츠 위 도드라짐을 99.8% 차단합니다.
+          - generic [ref=e702]:
+            - generic [ref=e703]:
+              - generic [ref=e704]: ✦ THE 3-STEP ORIGIN STORY
+              - generic [ref=e705]:
+                - generic [ref=e706]: "1"
+                - generic [ref=e707]:
+                  - 'heading "의문의 시작 : \"왜 자세를 펴는 일은 늘 아프고 참아야 할까?\"" [level=3] [ref=e708]'
+                  - paragraph [ref=e709]: 하루 9시간 이상 책상 앞에서 모니터를 보며 일하던 개발자와 디자이너 팀. 무너진 자세를 고치려 시중의 유명 보조기를 샀지만, 두꺼운 쇠 와이어가 갈비뼈를 짓누르고 소화불량을 유발해 30분도 착용할 수 없었습니다. "왜 바른 자세를 유지하는 방법은 늘 고통스러워야 할까?"라는 근본적인 의문이 스밈의 출발점이었습니다.
+              - generic [ref=e710]:
+                - generic [ref=e711]: "2"
+                - generic [ref=e712]:
+                  - 'heading "''스며들다'' 철학의 발견 : 강제 압박 대신 옷처럼 스며드는 지지" [level=3] [ref=e713]'
+                  - paragraph [ref=e714]: 우리는 인위적인 강제 조임이 오히려 몸의 근육을 퇴화시키고 거부감을 낳는다는 사실을 발견했습니다. 지속 가능한 유일한 길은 '일상 속에서 의식하지 않아도 스스로 자세를 회복할 수 있도록 옷처럼 편안하게 스며드는 것'이었습니다.
+              - generic [ref=e715]:
+                - generic [ref=e716]: "3"
+                - generic [ref=e717]:
+                  - 'heading "3년 R&D의 결실 : 0.1mm 심리스 무봉제 융착 기술의 탄생" [level=3] [ref=e718]'
+                  - paragraph [ref=e719]: 쇠붙이와 두꺼운 벨크로를 모두 버리고, 450번의 원단 직조 테스트와 무봉제 본딩 공정을 거쳐 피부와 완벽히 하나 되는 0.1mm 심리스 코어웨어를 완성했습니다. 흰 셔츠 안에서도 99.8% 티 나지 않는 스밈의 다정한 균형이 그렇게 세상에 나왔습니다.
+            - generic [ref=e720]:
+              - generic [ref=e721]:
+                - generic [ref=e722]: 0.1mm 초슬림
+                - generic [ref=e723]: 무봉제 피부 밀착
+              - generic [ref=e724]:
+                - generic [ref=e725]: 38g 초경량
+                - generic [ref=e726]: 어깨 결림 제로
+              - generic [ref=e727]:
+                - generic [ref=e728]: 99.8% 은폐율
+                - generic [ref=e729]: 출근복 완벽 시크릿
+      - generic [ref=e730]:
+        - generic [ref=e731]:
+          - text: THE ORIGIN & EVIDENCE
+          - heading "하루 9시간 책상 앞, 왜 우리는 매일 무너질까요?" [level=2] [ref=e732]: 하루 9시간 책상 앞,왜 우리는 매일 무너질까요?
+          - paragraph [ref=e733]:
+            - text: 스크롤을 내려 우리가 바쁜 일상 속에서 당연하게 참아왔던
+            - strong [ref=e734]: 3가지 자세 무너짐의 실태와 한계
+            - text: 를 실제 직장인 일상 사진으로 확인해 보세요.
+        - generic [ref=e735]:
+          - generic [ref=e736]:
+            - generic [ref=e737]:
+              - generic [ref=e738]:
+                - img "모니터 앞 목과 어깨 통증을 느끼는 실제 직장인 실사 사진" [ref=e739]
+                - generic [ref=e741]: REAL SCENE 01 · 작업 몰입 중 경추 과부하
+                - generic [ref=e742]:
+                  - generic [ref=e743]: 업무 몰입 시 무의식적 자세 붕괴
+                  - generic [ref=e744]: 모니터를 향해 15° 기울어질 때마다 경추가 받는 하중은 12kg~22kg으로 폭증합니다.
+              - generic [ref=e745]:
+                - generic [ref=e746]: 퇴근길 묵직한 어깨 결림의 주원인
+                - generic [ref=e747]: 무자각 쏠림 15°+
+            - generic [ref=e748]:
+              - generic [ref=e749]: PROBLEM 01 / 03
+              - heading "무너지는 자세, 통증 후에야 깨닫는 자각 불가" [level=3] [ref=e750]: 무너지는 자세,통증 후에야 깨닫는 자각 불가
+              - paragraph [ref=e751]: 업무에 몰입하는 동안 목과 어깨가 서서히 앞으로 쏟아지지만, 뇌는 이를 즉각 인지하지 못합니다. 퇴근길 묵직한 피로와 결림이 찾아온 뒤에야 무너졌음을 뒤늦게 깨닫습니다.
+              - generic [ref=e752]:
+                - generic [ref=e753]: 몰입 상태의 무의식적 자세 붕괴
+                - generic [ref=e754]: 작업 중에는 상체 중심선이 15° 이상 기울어져도 스스로 알아차리기 어려워 근육에 지속적인 부담이 누적됩니다.
+          - generic [ref=e755]:
+            - generic [ref=e756]:
+              - generic [ref=e757]:
+                - img "야근과 늦은 밤 퇴근길 지친 실제 직장인의 일상 실사 사진" [ref=e758]
+                - generic [ref=e760]: REAL SCENE 02 · 바쁜 일과와 시간 부족
+                - generic [ref=e761]:
+                  - generic [ref=e762]: 퇴근 후 매일 운동하기 힘든 현실
+                  - generic [ref=e763]: 지친 몸으로 퇴근 후 별도 관리를 이어가는 직장인은 18%에 불과합니다.
+              - generic [ref=e764]:
+                - generic [ref=e765]: 일하는 시간 동안의 일상 솔루션 절실
+                - generic [ref=e766]: 운동 포기율 82%
+            - generic [ref=e767]:
+              - generic [ref=e768]: PROBLEM 02 / 03
+              - heading "바쁜 일과 시간 부족으로 미루게 되는 일상 속 자세 케어" [level=3] [ref=e769]: 바쁜 일과 시간 부족으로미루게 되는 일상 속 자세 케어
+              - paragraph [ref=e770]: 자세 관리의 필요성은 누구나 절감하지만, 바쁜 업무와 피로 속에서 퇴근 후 매일 꾸준한 운동이나 관리를 이어가기에는 현실적인 제약이 큽니다.
+              - generic [ref=e771]:
+                - generic [ref=e772]: 지속적인 관리의 어려움
+                - generic [ref=e773]: 별도의 시간을 들이지 않고, 일하는 시간 동안 자연스럽게 지탱해 주는 일상 솔루션이 절실합니다.
+          - generic [ref=e774]:
+            - generic [ref=e775]:
+              - generic [ref=e776]:
+                - img "두꺼운 교정장치를 착용한 뒤 갈비뼈 압박과 옥죄임으로 불편해하는 실제 직장인 실사 사진" [ref=e777]
+                - generic [ref=e779]: REAL SCENE 03 · 기존 교정장치의 압박 고통
+                - generic [ref=e780]:
+                  - generic [ref=e781]: 몸을 억지로 옥죄는 강제 조임의 한계
+                  - generic [ref=e782]: 두꺼운 쇠 와이어와 벨크로의 답답한 압박감으로 30분 이상 착용 불가
+              - generic [ref=e783]:
+                - generic [ref=e784]: 강제 압박 ➔ 소화불량 및 통증 유발
+                - generic [ref=e785]: 착용 유지율 12%
+            - generic [ref=e786]:
+              - generic [ref=e787]: PROBLEM 03 / 03
+              - heading "몸을 억지로 옥죄는 답답한 강제 조임의 한계" [level=3] [ref=e788]: 몸을 억지로 옥죄는답답한 강제 조임의 한계
+              - paragraph [ref=e789]: 자세를 억지로 펴기 위해 착용했던 두꺼운 보조 기구들은 답답한 압박감과 옷 밖으로 튀어나오는 불편함 때문에 일상에서 오래 지속하기 어려웠습니다.
+              - generic [ref=e790]: • 인위적인 강제 조임 대신 신체 곡선에 맞춘 부드러운 지지력 필요 • 셔츠 안에 입어도 전혀 티 나지 않는 0.1mm 초슬림 무봉제 핏 추구
+        - generic [ref=e792]:
+          - generic [ref=e793]: ✦ 스밈(SEUMIM), 이름에 담긴 약속
+          - paragraph [ref=e794]: "'억지로 조이지 않고, 일상 속에 바른 균형이 자연스럽게 스며들게 한다'는 생각에서 시작되었습니다. 수백 번의 원단 테스트와 0.1mm 심리스 무봉제 융착 본딩 공정으로 옷 속에 머무는 다정한 균형을 만듭니다."
+          - generic [ref=e795]: 피부와 호흡을 존중하는 스밈의 3대 다정한 균형 철학
+      - generic [ref=e796]:
+        - generic [ref=e797]:
+          - text: ZIG-ZAG 3 PILLARS
+          - heading "고통스러운 조임 대신, 일상에 스며드는 '티 없는' 다정한 균형" [level=2] [ref=e798]: 고통스러운 조임 대신,일상에 스며드는 '티 없는' 다정한 균형
+          - paragraph [ref=e799]: 바른 자세는 억지로 뼈를 꺾고 몸을 옥죄어 만드는 것이 아닙니다.스밈(SEUMIM)은 일상을 방해하지 않고 가장 다정하게 지탱합니다.
+        - generic [ref=e800]:
+          - generic [ref=e801]:
+            - generic [ref=e802]:
+              - img "아침 자연 채광 속 편안하게 일상을 준비하는 실제 사람 라이프스타일 사진" [ref=e803]
+              - generic [ref=e805]: PILLAR 01 · NATURAL HABIT
+              - generic [ref=e806]:
+                - generic [ref=e807]: 아침에 옷을 입듯, 자연스럽게 스며드는 습관
+                - generic [ref=e808]: 억지 조임 없이 부드러운 천연 텐셀 나노 직조 스킨핏
+            - generic [ref=e809]:
+              - generic [ref=e810]: PILLAR 01
+              - heading "'스며들다' (Natural Habit)" [level=3] [ref=e811]
+              - generic [ref=e812]: 강제 교정의 피로 ➔ 일상 속 자연스러운 습관 형성
+              - paragraph [ref=e813]: 억지로 자세를 강요하지 않고,건강한 습관이 일상에 자연스럽게 녹아들어몸과 마음의 균형을 완성합니다.
+          - generic [ref=e814]:
+            - generic [ref=e815]:
+              - img "화이트 셔츠를 입고 당당하게 걸어가는 세련된 직장인 오피스룩 실사 사진" [ref=e816]
+              - generic [ref=e818]: PILLAR 02 · 99.8% INVISIBLE
+              - generic [ref=e819]:
+                - generic [ref=e820]: 얇은 화이트 셔츠 안에서도 완벽한 시크릿 핏
+                - generic [ref=e821]: 봉제선 0mm 무봉제 본딩으로 겉옷 위 윤곽 노출 제로
+            - generic [ref=e822]:
+              - generic [ref=e823]: PILLAR 02
+              - heading "'티 없이' (Seamless & Flawless)" [level=3] [ref=e824]
+              - generic [ref=e825]: 투박한 옷태 파괴 ➔ 0.1mm 셔츠 속 99.8% 은폐
+              - paragraph [ref=e826]: 봉제선이 전혀 없는 0.1mm 무봉제 본딩 기술로 얇은 화이트 셔츠나 슬랙스 안에 입어도 겉으로 전혀 '티가 나지 않는' 극상의 슬림함과 당당한 오피스 실루엣을 선사합니다.
+          - generic [ref=e827]:
+            - generic [ref=e828]:
+              - img "오피스 체어에서 편안하고 바른 자세로 집중하는 실제 직장인 데스크 씬 실사 사진" [ref=e829]
+              - generic [ref=e831]: PILLAR 03 · KIND BALANCE
+              - generic [ref=e832]:
+                - generic [ref=e833]: 앉은 자리에서 스스로 상체를 세워주는 지렛대 탄성
+                - generic [ref=e834]: 퇴근 후 힘든 운동 강요 없는 편안한 오피스 웰니스
+            - generic [ref=e835]:
+              - generic [ref=e836]: PILLAR 03
+              - heading "'Effort-Free' (Kind Balance)" [level=3] [ref=e837]
+              - generic [ref=e838]: 퇴근 후 1시간 운동 강요 ➔ 앉은 자리 10초 케어
+              - paragraph [ref=e839]: 퇴근 후 지친 몸으로 힘든 운동을 강요하지 않습니다.일하는 순간에도 숨 쉬듯 편안하게 지탱하는다정한 웰니스를 만듭니다.
+      - generic [ref=e840]:
+        - generic [ref=e841]: ✦ 100% Full-bleed Macro Innovation
+        - heading "0.1mm Seamless Nano-Bonding Texture" [level=2] [ref=e842]
+        - paragraph [ref=e843]: 피부와 하나 되는 완벽한 밀착, 닿는 순간 숨 쉬는 편안함을 시각적으로 증명하는 마이크로 매크로 뷰
+        - img [ref=e845]:
+          - generic [ref=e853]: SCALE 계측값
+          - generic [ref=e854]: 0.100 mm
+          - generic [ref=e855]: 초정밀 무봉제 융착 공차 ±0.005mm
+      - generic [ref=e856]:
+        - generic [ref=e857]:
+          - text: 3D TECHNICAL BLUEPRINT
+          - heading "몸에 닿는 순간 느껴지는 착용감의 과학" [level=2] [ref=e858]
+          - paragraph [ref=e859]: 카드 위에 마우스를 올려 3D 엔지니어링 도면 인터랙션을 확인하세요.
+        - generic [ref=e860]:
+          - generic [ref=e861]:
+            - generic [ref=e862]:
+              - generic [ref=e863]:
+                - generic [ref=e864]: BLUEPRINT 01
+                - generic [ref=e865]: ISO 9001 Spec
+              - img [ref=e866]:
+                - generic [ref=e869]: 0.1mm Seamless Joint
+                - generic [ref=e870]: 고주파 초음파 융착 좌표계측도
+            - generic [ref=e871]:
+              - generic [ref=e872]: NAKED SEAMLESS
+              - generic [ref=e873]: 01. 0.1mm 심리스 본딩
+              - generic [ref=e874]: 봉제선을 100% 제거하여 셔츠 속 99.8% 은폐율을 자랑하며 살 눌림 자국이 전혀 남지 않습니다.
+          - generic [ref=e875]:
+            - generic [ref=e876]:
+              - generic [ref=e877]:
+                - generic [ref=e878]: BLUEPRINT 02
+                - generic [ref=e879]: Airflow Dyn
+              - img [ref=e880]:
+                - generic [ref=e885]: 38g Airy
+                - generic [ref=e886]: 초미세 쿨링 에어플로우 시뮬레이션
+            - generic [ref=e887]:
+              - generic [ref=e888]: AIRY WEIGHTLESS
+              - generic [ref=e889]: 02. 38g 에어로 메쉬
+              - generic [ref=e890]: 달걀 하나보다 가벼운 초경량으로 하루 종일 착용해도 땀이 차지 않는 초미세 통기 구조를 갖췄습니다.
+          - generic [ref=e891]:
+            - generic [ref=e892]:
+              - generic [ref=e893]:
+                - generic [ref=e894]: BLUEPRINT 03
+                - generic [ref=e895]: Kinetic Frame
+              - img [ref=e896]:
+                - generic [ref=e900]: 척추 기립근 4중 탄성 복원 벡터도
+            - generic [ref=e901]:
+              - generic [ref=e902]: DYNAMIC RESTORING
+              - generic [ref=e903]: 03. 동적 텐션 프레임
+              - generic [ref=e904]: 몸을 옥죄지 않고 지렛대 원리에 따라 유연하게 척추를 밀어 올려 바른 정렬을 복원합니다.
+      - generic [ref=e905]:
+        - generic [ref=e906]:
+          - text: FILTERABLE USE CASES
+          - heading "하루 끝에 비로소 느껴지는 가벼운 어깨" [level=2] [ref=e907]
+          - paragraph [ref=e908]: 스밈을 만난 후, 2030 직장인들의 일상과 실루엣이 어떻게 변화했는지 확인해 보세요.
+        - generic [ref=e909]:
+          - button "전체 보기 (4)" [ref=e910] [cursor=pointer]
+          - button "오피스 데스크" [ref=e911] [cursor=pointer]
+          - button "출퇴근 · 이동" [ref=e912] [cursor=pointer]
+          - button "외근 · 미팅" [ref=e913] [cursor=pointer]
+        - generic [ref=e914]:
+          - generic [ref=e915]:
+            - generic [ref=e916]:
+              - generic [ref=e917]:
+                - generic [ref=e918]: 실제 착용 전·후 상체 정렬 비교
+                - generic [ref=e919]: 좌우 드래그 ⬌
+              - generic [ref=e920]:
+                - generic [ref=e921]:
+                  - img "스밈 착용 전 데스크 앞 굽은 등과 거북목 뻐근한 자세 실사 사진" [ref=e922]
+                  - generic [ref=e924]: "BEFORE : 미착용 (15° 거북목 · 굽은 등)"
+                  - generic [ref=e925]:
+                    - generic [ref=e926]: 모니터 앞 무너진 척추 & 승모근 과부하
+                    - generic [ref=e927]: 목 15° 전방 쏠림으로 경추에 22kg 하중 누적
+                - generic [ref=e929]:
+                  - img "스밈 착용 후 데스크 앞 허리와 등이 곧게 펴진 바른 자세 실사 사진" [ref=e930]
+                  - generic [ref=e932]: "AFTER : 스밈 착용 (0.0° 수직 척추 정렬)"
+                  - generic [ref=e933]:
+                    - generic [ref=e934]: 곧게 펴진 척추 & 편안한 호흡 회복
+                    - generic [ref=e935]: 0.1mm 심리스 코어웨어가 억지 조임 없이 부드럽게 지탱
+                - generic: ⬌
+            - generic [ref=e936]: "* 실사용자 및 테스터 300인 착용성 평가 및 필드 테스트 결과 (만족도 98% 이상)"
+          - generic [ref=e937]:
+            - generic [ref=e938]:
+              - generic [ref=e939]:
+                - img "08:30 출근길 화이트 셔츠 슬림핏 실사 사진" [ref=e940]
+                - generic [ref=e941]: 08:30 출근길
+              - generic [ref=e942]:
+                - generic [ref=e943]: 슬림한 오피스룩
+                - generic [ref=e944]: 얇은 셔츠 속에도 티 나지 않는 0.1mm 완벽 은폐
+            - generic [ref=e945]:
+              - generic [ref=e946]:
+                - img "14:00 데스크 집중 업무 바른 자세 실사 사진" [ref=e947]
+                - generic [ref=e948]: 14:00 집중 업무
+              - generic [ref=e949]:
+                - generic [ref=e950]: 무의식 거북목 지탱
+                - generic [ref=e951]: 모니터 앞 쏟아지는 목과 어깨를 탄성으로 서포트
+            - generic [ref=e952]:
+              - generic [ref=e953]:
+                - img "17:00 외근 미팅 당당한 숄더 라인 실사 사진" [ref=e954]
+                - generic [ref=e955]: 17:00 외근 미팅
+              - generic [ref=e956]:
+                - generic [ref=e957]: 당당한 프로 핏
+                - generic [ref=e958]: 단정하게 펴진 어깨선으로 당당한 실루엣 연출
+            - generic [ref=e959]:
+              - generic [ref=e960]:
+                - img "19:30 퇴근길 가벼운 어깨 실사 사진" [ref=e961]
+                - generic [ref=e962]: 19:30 가벼운 퇴근
+              - generic [ref=e963]:
+                - generic [ref=e964]: 가벼운 승모근
+                - generic [ref=e965]: 퇴근길에도 뭉침 없이 깃털처럼 가벼운 어깨
+      - generic [ref=e966]:
+        - generic [ref=e967]:
+          - text: COLLECTION SHOWCASE
+          - heading "수치로 증명하는 스밈 15종 전 라인업" [level=2] [ref=e968]
+        - generic [ref=e969]:
+          - generic [ref=e970]:
+            - generic [ref=e971]: 38g
+            - generic [ref=e972]: 깃털 초경량 설계
+          - generic [ref=e973]:
+            - generic [ref=e974]: 99.8%
+            - generic [ref=e975]: 무봉제 의류 은폐율
+          - generic [ref=e976]:
+            - generic [ref=e977]: 300+
+            - generic [ref=e978]: 실사용자 필드 테스트
+          - generic [ref=e979]:
+            - generic [ref=e980]: 100%
+            - generic [ref=e981]: 30일 0원 안심 무료 시착
+        - generic [ref=e982]:
+          - button "어깨 · 경추 케어 라인 (5)" [ref=e983] [cursor=pointer]
+          - button "척추 · 허리 케어 라인 (5)" [ref=e984] [cursor=pointer]
+          - button "골반 · 하체 케어 라인 (5)" [ref=e985] [cursor=pointer]
+        - generic [ref=e986]:
+          - generic [ref=e987]:
+            - generic [ref=e988]:
+              - generic [ref=e989]: "[제품 렌더링 컷]"
+              - generic [ref=e990]: "[대표 1] 0.1mm 심리스 넥&숄더 밴드 3D 디테일"
+            - generic [ref=e991]:
+              - generic [ref=e992]:
+                - generic [ref=e993]: ⭐ 대표 시그니처
+                - generic [ref=e994]: "#말린어깨 #38g무봉제"
+              - generic [ref=e995]: "[대표 1] 0.1mm 심리스 넥&숄더 밴드"
+              - generic [ref=e996]: 말린 어깨 자동 정렬 전면 자석 버클
+              - generic [ref=e997]: 59,000원
+          - generic [ref=e998]:
+            - generic [ref=e999]:
+              - generic [ref=e1000]: "[제품 렌더링 컷]"
+              - generic [ref=e1001]: 경추 릴렉스 넥 서포터 슬리브 3D 디테일
+            - generic [ref=e1002]:
+              - generic [ref=e1003]:
+                - generic [ref=e1004]: 파생 라인
+                - generic [ref=e1005]: "#턱당김유도 #C커브지지"
+              - generic [ref=e1006]: 경추 릴렉스 넥 서포터 슬리브
+              - generic [ref=e1007]: 턱 당김 유도 인체공학적 경추 C커브 지지
+              - generic [ref=e1008]: 34,000원
+          - generic [ref=e1009]:
+            - generic [ref=e1010]:
+              - generic [ref=e1011]: "[제품 렌더링 컷]"
+              - generic [ref=e1012]: 승모근 마이크로 릴렉스 패드 3D 디테일
+            - generic [ref=e1013]:
+              - generic [ref=e1014]:
+                - generic [ref=e1015]: 파생 라인
+                - generic [ref=e1016]: "#승모근긴장완화 #슬림패드"
+              - generic [ref=e1017]: 승모근 마이크로 릴렉스 패드
+              - generic [ref=e1018]: 승모근 부착형 체압 분산 초슬림 패드
+              - generic [ref=e1019]: 28,000원
+          - generic [ref=e1020]:
+            - generic [ref=e1021]:
+              - generic [ref=e1022]: "[제품 렌더링 컷]"
+              - generic [ref=e1023]: 0.1mm 심리스 어깨 밸런스 이너웨어 3D 디테일
+            - generic [ref=e1024]:
+              - generic [ref=e1025]:
+                - generic [ref=e1026]: 파생 라인
+                - generic [ref=e1027]: "#셔츠속은폐 #견갑골지지"
+              - generic [ref=e1028]: 0.1mm 심리스 어깨 밸런스 이너웨어
+              - generic [ref=e1029]: 흰 셔츠 속 99.8% 은폐형 견갑골 지지 이너
+              - generic [ref=e1030]: 49,000원
+          - generic [ref=e1031]:
+            - generic [ref=e1032]:
+              - generic [ref=e1033]: "[제품 렌더링 컷]"
+              - generic [ref=e1034]: 경추 스트레칭 에어셀 서포터 3D 디테일
+            - generic [ref=e1035]:
+              - generic [ref=e1036]:
+                - generic [ref=e1037]: 파생 라인
+                - generic [ref=e1038]: "#공기주입이완 #데스크케어"
+              - generic [ref=e1039]: 경추 스트레칭 에어셀 서포터
+              - generic [ref=e1040]: 공기 주입식 경추 긴장 완화 서포터
+              - generic [ref=e1041]: 39,000원
+      - generic [ref=e1042]:
+        - generic [ref=e1043]: ✦ EFFORT-FREE WELLNESS TRIAL
+        - heading "내 일상 속에 직접 입어보고 결정하세요" [level=2] [ref=e1044]
+        - paragraph [ref=e1045]: 스밈은 제품에 대한 확신으로 30일 안심 무료 시착 시스템을 운영합니다. 결제금액 0원으로 집과 사무실에서 충분히 체험해 보세요.
+        - generic [ref=e1046]:
+          - button "30일 무료 시착 신청하기 (0원)" [ref=e1047] [cursor=pointer]
+          - button "15종 전 상품 카탈로그 둘러보기 ➔" [ref=e1048] [cursor=pointer]
+        - generic [ref=e1049]: 왕복 배송비 전액 무료 · 30일 이내 100% 무상 반품 및 사이즈 맞교환 보장
+  - contentinfo [ref=e316]:
+    - generic [ref=e317]:
+      - generic [ref=e318]:
+        - generic [ref=e319]:
+          - generic [ref=e320]:
+            - text: SEUMIM
+            - generic [ref=e321]: 0.1mm
+          - paragraph [ref=e322]: 스밈(SEUMIM)은 0.1mm 무봉제 전도성 센서 섬유 기술을 바탕으로 일상 속에 바른 균형을 설계하는 하이엔드 테크 웰니스 플랫폼입니다.
+        - generic [ref=e323]:
+          - generic [ref=e324]: 제품 라인업 (15)
+          - list [ref=e325]:
+            - listitem [ref=e326]:
+              - link "어깨 · 경추 케어 라인 (5)" [ref=e327] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e328]:
+              - link "척추 · 허리 케어 라인 (5)" [ref=e329] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e330]:
+              - link "골반 · 하체 케어 라인 (5)" [ref=e331] [cursor=pointer]:
+                - /url: javascript:void(0)
+        - generic [ref=e332]:
+          - generic [ref=e333]: 고객 신뢰 센터
+          - list [ref=e334]:
+            - listitem [ref=e335]:
+              - link "30일 무료 시착 정책" [ref=e336] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e337]:
+              - link "1초 스마트 사이즈 가이드" [ref=e338] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e339]:
+              - link "전국 12개 웰니스 센터" [ref=e340] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e341]:
+              - link "브랜드 스토리 (Our Story)" [ref=e342] [cursor=pointer]:
+                - /url: javascript:void(0)
+        - generic [ref=e343]:
+          - generic [ref=e344]: CS 고객센터
+          - paragraph [ref=e345]: 1588-9240
+          - paragraph [ref=e346]: 평일 09:30 ~ 18:30 (점심 12:30 ~ 13:30) 주말 및 공휴일 1:1 카카오톡 상담 운영
+      - generic [ref=e347]:
+        - generic [ref=e348]: © 2026 SEUMIM Inc. All rights reserved. 30일 안심 무료 맞교환/반품 100% 보장.
+        - generic [ref=e349]:
+          - link "이용약관" [ref=e350] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=e351] [cursor=pointer]:
+            - /url: "#"
+          - link "사업자정보확인" [ref=e352] [cursor=pointer]:
+            - /url: "#"
+  - generic [ref=e354]:
+    - generic [ref=e355]:
+      - generic [ref=e356]: 결제금액 0원
+      - generic [ref=e357]:
+        - strong [ref=e358]: SEUMIM 30일 무료 시착
+        - text: "| 입어보고 결정하세요 (100% 무료 반품)"
+    - button "지금 0원에 시착하기 ➔" [ref=e359] [cursor=pointer]

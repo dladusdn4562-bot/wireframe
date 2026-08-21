@@ -1,0 +1,333 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - strong [ref=e5]: SEUMIM (스밈) - 기본 와이어프레임
+        - text: "[디자인 요소 제외 / 정보구조 & 레이아웃 전용]"
+      - generic [ref=e6]:
+        - button "1. 메인 랜딩페이지 (Main)" [ref=e7] [cursor=pointer]
+        - button "2. 15개 전 상품 서브 (Shop All)" [active] [ref=e8] [cursor=pointer]
+        - button "3. 브랜드 이야기 서브 (Our Story)" [ref=e9] [cursor=pointer]
+    - generic [ref=e11]:
+      - link "SEUMIM 스밈 0.1mm" [ref=e12] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - text: SEUMIM
+        - generic [ref=e13]: 스밈 0.1mm
+      - generic [ref=e14]:
+        - button "3" [ref=e15] [cursor=pointer]
+        - button "1" [ref=e19] [cursor=pointer]
+        - button "메뉴 열기/닫기" [ref=e26] [cursor=pointer]
+  - main [ref=e360]:
+    - generic [ref=e361]:
+      - generic [ref=e362]: SHOP ALL / 15 PRODUCTS CATALOG
+      - heading "스밈 3대 파생 라인 15종 전 상품 컬렉션" [level=1] [ref=e363]
+      - paragraph [ref=e364]: 대표 상품 3종과 부위별 연계 파생 상품 5종씩, 총 15종의 라인업을 비교하고 체형 맞춤 사이즈를 확인하세요.
+    - generic [ref=e365]:
+      - generic [ref=e366]:
+        - heading "🔍 스마트 사이즈 파인더 연동 활성화" [level=3] [ref=e367]
+        - generic [ref=e368]: "● 현재 키: 178cm / 몸무게: 72kg ➔ 권장: M 사이즈"
+      - generic [ref=e369]:
+        - text: 아래 15종 전 상품 카드에 내 체형에 최적합한
+        - strong [ref=e370]: "[권장 사이즈 뱃지]"
+        - text: 가 실시간으로 표시됩니다.
+    - generic [ref=e371]:
+      - button "전체보기 (15)" [ref=e372] [cursor=pointer]
+      - button "어깨 · 경추 케어 라인 (5)" [ref=e373] [cursor=pointer]
+      - button "척추 · 허리 케어 라인 (5)" [ref=e374] [cursor=pointer]
+      - button "골반 · 하체 케어 라인 (5)" [ref=e375] [cursor=pointer]
+    - generic [ref=e376]:
+      - generic [ref=e377]:
+        - button "찜하기" [ref=e378] [cursor=pointer]
+        - generic [ref=e381]:
+          - generic [ref=e382]: 🎽
+          - generic [ref=e383]: 대표 3종
+        - generic [ref=e384]:
+          - generic [ref=e385]:
+            - generic [ref=e386]: "#말린어깨 #38g무봉제"
+            - heading "[대표 1] 0.1mm 심리스 넥&숄더 밴드" [level=4] [ref=e387]
+            - paragraph [ref=e388]: 말린 어깨 자동 정렬 전면 자석 버클
+          - generic [ref=e389]:
+            - generic [ref=e390]: 59,000원
+            - generic [ref=e391]: 89,000원
+          - generic [ref=e392]:
+            - button "🔍 퀵뷰" [ref=e393] [cursor=pointer]
+            - button "0원 시착" [ref=e394] [cursor=pointer]
+      - generic [ref=e395]:
+        - button "찜하기" [ref=e396] [cursor=pointer]
+        - generic [ref=e399]:
+          - generic [ref=e400]: 👔
+          - generic [ref=e401]: "권장: M"
+        - generic [ref=e402]:
+          - generic [ref=e403]:
+            - generic [ref=e404]: "#턱당김유도 #C커브지지"
+            - heading "경추 릴렉스 넥 서포터 슬리브" [level=4] [ref=e405]
+            - paragraph [ref=e406]: 턱 당김 유도 인체공학적 경추 C커브 지지
+          - generic [ref=e407]:
+            - generic [ref=e408]: 34,000원
+            - generic [ref=e409]: 49,000원
+          - generic [ref=e410]:
+            - button "🔍 퀵뷰" [ref=e411] [cursor=pointer]
+            - button "0원 시착" [ref=e412] [cursor=pointer]
+      - generic [ref=e413]:
+        - button "찜하기" [ref=e414] [cursor=pointer]
+        - generic [ref=e417]:
+          - generic [ref=e418]: 🧣
+          - generic [ref=e419]: "권장: M"
+        - generic [ref=e420]:
+          - generic [ref=e421]:
+            - generic [ref=e422]: "#승모근긴장완화 #슬림패드"
+            - heading "승모근 마이크로 릴렉스 패드" [level=4] [ref=e423]
+            - paragraph [ref=e424]: 승모근 부착형 체압 분산 초슬림 패드
+          - generic [ref=e425]:
+            - generic [ref=e426]: 28,000원
+            - generic [ref=e427]: 39,000원
+          - generic [ref=e428]:
+            - button "🔍 퀵뷰" [ref=e429] [cursor=pointer]
+            - button "0원 시착" [ref=e430] [cursor=pointer]
+      - generic [ref=e431]:
+        - button "찜하기" [ref=e432] [cursor=pointer]
+        - generic [ref=e435]:
+          - generic [ref=e436]: 🩱
+          - generic [ref=e437]: "권장: M"
+        - generic [ref=e438]:
+          - generic [ref=e439]:
+            - generic [ref=e440]: "#셔츠속은폐 #견갑골지지"
+            - heading "0.1mm 심리스 어깨 밸런스 이너웨어" [level=4] [ref=e441]
+            - paragraph [ref=e442]: 흰 셔츠 속 99.8% 은폐형 견갑골 지지 이너
+          - generic [ref=e443]:
+            - generic [ref=e444]: 49,000원
+            - generic [ref=e445]: 69,000원
+          - generic [ref=e446]:
+            - button "🔍 퀵뷰" [ref=e447] [cursor=pointer]
+            - button "0원 시착" [ref=e448] [cursor=pointer]
+      - generic [ref=e449]:
+        - button "찜하기" [ref=e450] [cursor=pointer]
+        - generic [ref=e453]:
+          - generic [ref=e454]: 🛏️
+          - generic [ref=e455]: "권장: M"
+        - generic [ref=e456]:
+          - generic [ref=e457]:
+            - generic [ref=e458]: "#공기주입이완 #데스크케어"
+            - heading "경추 스트레칭 에어셀 서포터" [level=4] [ref=e459]
+            - paragraph [ref=e460]: 공기 주입식 경추 긴장 완화 서포터
+          - generic [ref=e461]:
+            - generic [ref=e462]: 39,000원
+            - generic [ref=e463]: 55,000원
+          - generic [ref=e464]:
+            - button "🔍 퀵뷰" [ref=e465] [cursor=pointer]
+            - button "0원 시착" [ref=e466] [cursor=pointer]
+      - generic [ref=e467]:
+        - button "찜하기" [ref=e468] [cursor=pointer]
+        - generic [ref=e471]:
+          - generic [ref=e472]: 🦺
+          - generic [ref=e473]: 대표 3종
+        - generic [ref=e474]:
+          - generic [ref=e475]:
+            - generic [ref=e476]: "#쿨링메쉬 #4중동적텐션"
+            - heading "[대표 2] 3D 에어로 메쉬 척추 정렬 조끼" [level=4] [ref=e477]
+            - paragraph [ref=e478]: 출근복 속 은폐 척추 기립근 탄성 지지
+          - generic [ref=e479]:
+            - generic [ref=e480]: 89,000원
+            - generic [ref=e481]: 129,000원
+          - generic [ref=e482]:
+            - button "🔍 퀵뷰" [ref=e483] [cursor=pointer]
+            - button "0원 시착" [ref=e484] [cursor=pointer]
+      - generic [ref=e485]:
+        - button "찜하기" [ref=e486] [cursor=pointer]
+        - generic [ref=e489]:
+          - generic [ref=e490]: 🩲
+          - generic [ref=e491]: "권장: M"
+        - generic [ref=e492]:
+          - generic [ref=e493]:
+            - generic [ref=e494]: "#요추4~5번지지 #슬랙스핏"
+            - heading "0.1mm 심리스 럼버 서포트 언더웨어" [level=4] [ref=e495]
+            - paragraph [ref=e496]: 요추 4~5번 38g 초경량 밀착 지지
+          - generic [ref=e497]:
+            - generic [ref=e498]: 54,000원
+            - generic [ref=e499]: 79,000원
+          - generic [ref=e500]:
+            - button "🔍 퀵뷰" [ref=e501] [cursor=pointer]
+            - button "0원 시착" [ref=e502] [cursor=pointer]
+      - generic [ref=e503]:
+        - button "찜하기" [ref=e504] [cursor=pointer]
+        - generic [ref=e507]:
+          - generic [ref=e508]: 🛋️
+          - generic [ref=e509]: "권장: M"
+        - generic [ref=e510]:
+          - generic [ref=e511]:
+            - generic [ref=e512]: "#요추전만복원 #의자밀착"
+            - heading "척추 체압 분산 에르고 등받이 패드" [level=4] [ref=e513]
+            - paragraph [ref=e514]: 사무용 의자 밀착 메모리폼 등받이
+          - generic [ref=e515]:
+            - generic [ref=e516]: 45,000원
+            - generic [ref=e517]: 65,000원
+          - generic [ref=e518]:
+            - button "🔍 퀵뷰" [ref=e519] [cursor=pointer]
+            - button "0원 시착" [ref=e520] [cursor=pointer]
+      - generic [ref=e521]:
+        - button "찜하기" [ref=e522] [cursor=pointer]
+        - generic [ref=e525]:
+          - generic [ref=e526]: 🎗️
+          - generic [ref=e527]: "권장: M"
+        - generic [ref=e528]:
+          - generic [ref=e529]:
+            - generic [ref=e530]: "#복부코어지지 #초슬림"
+            - heading "심리스 코어 허리 밸런스 밴드" [level=4] [ref=e531]
+            - paragraph [ref=e532]: 허리 둘레 감싸는 0.1mm 복부 코어 밴드
+          - generic [ref=e533]:
+            - generic [ref=e534]: 42,000원
+            - generic [ref=e535]: 59,000원
+          - generic [ref=e536]:
+            - button "🔍 퀵뷰" [ref=e537] [cursor=pointer]
+            - button "0원 시착" [ref=e538] [cursor=pointer]
+      - generic [ref=e539]:
+        - button "찜하기" [ref=e540] [cursor=pointer]
+        - generic [ref=e543]:
+          - generic [ref=e544]: 👕
+          - generic [ref=e545]: "권장: M"
+        - generic [ref=e546]:
+          - generic [ref=e547]:
+            - generic [ref=e548]: "#통기성쿨링 #이너착용"
+            - heading "에어로 쿨링 척추 지지 슬리브리스" [level=4] [ref=e549]
+            - paragraph [ref=e550]: 땀이 차지 않는 척추 탄성 슬리브리스
+          - generic [ref=e551]:
+            - generic [ref=e552]: 48,000원
+            - generic [ref=e553]: 68,000원
+          - generic [ref=e554]:
+            - button "🔍 퀵뷰" [ref=e555] [cursor=pointer]
+            - button "0원 시착" [ref=e556] [cursor=pointer]
+      - generic [ref=e557]:
+        - button "찜하기" [ref=e558] [cursor=pointer]
+        - generic [ref=e561]:
+          - generic [ref=e562]: 🥋
+          - generic [ref=e563]: 대표 3종
+        - generic [ref=e564]:
+          - generic [ref=e565]:
+            - generic [ref=e566]: "#다리꼬기완화 #착석수평"
+            - heading "[대표 3] 골반 수평 유지 에어셀 벨트" [level=4] [ref=e567]
+            - paragraph [ref=e568]: 동적 에어셀 패드 착석 수평 지지
+          - generic [ref=e569]:
+            - generic [ref=e570]: 69,000원
+            - generic [ref=e571]: 99,000원
+          - generic [ref=e572]:
+            - button "🔍 퀵뷰" [ref=e573] [cursor=pointer]
+            - button "0원 시착" [ref=e574] [cursor=pointer]
+      - generic [ref=e575]:
+        - button "찜하기" [ref=e576] [cursor=pointer]
+        - generic [ref=e579]:
+          - generic [ref=e580]: 🩳
+          - generic [ref=e581]: "권장: M"
+        - generic [ref=e582]:
+          - generic [ref=e583]:
+            - generic [ref=e584]: "#골반비대칭방지 #이너쇼츠"
+            - heading "골반 밸런스 심리스 숏팬츠" [level=4] [ref=e585]
+            - paragraph [ref=e586]: 골반 좌우 균형 잡아주는 기능성 쇼츠
+          - generic [ref=e587]:
+            - generic [ref=e588]: 43,000원
+            - generic [ref=e589]: 62,000원
+          - generic [ref=e590]:
+            - button "🔍 퀵뷰" [ref=e591] [cursor=pointer]
+            - button "0원 시착" [ref=e592] [cursor=pointer]
+      - generic [ref=e593]:
+        - button "찜하기" [ref=e594] [cursor=pointer]
+        - generic [ref=e597]:
+          - generic [ref=e598]: 💺
+          - generic [ref=e599]: "권장: M"
+        - generic [ref=e600]:
+          - generic [ref=e601]:
+            - generic [ref=e602]: "#좌우체압분산 #통기성"
+            - heading "좌골 체압 분산 3D 허니콤 방석" [level=4] [ref=e603]
+            - paragraph [ref=e604]: 오랜 착석에도 엉덩이 배김 없는 에어 방석
+          - generic [ref=e605]:
+            - generic [ref=e606]: 52,000원
+            - generic [ref=e607]: 75,000원
+          - generic [ref=e608]:
+            - button "🔍 퀵뷰" [ref=e609] [cursor=pointer]
+            - button "0원 시착" [ref=e610] [cursor=pointer]
+      - generic [ref=e611]:
+        - button "찜하기" [ref=e612] [cursor=pointer]
+        - generic [ref=e615]:
+          - generic [ref=e616]: ✈️
+          - generic [ref=e617]: "권장: M"
+        - generic [ref=e618]:
+          - generic [ref=e619]:
+            - generic [ref=e620]: "#KTX비행기 #1초공기"
+            - heading "출장용 에어 럼버 팽창 앵커" [level=4] [ref=e621]
+            - paragraph [ref=e622]: 이동 좌석 허리 빈 공간 인체공학 지지
+          - generic [ref=e623]:
+            - generic [ref=e624]: 29,000원
+            - generic [ref=e625]: 42,000원
+          - generic [ref=e626]:
+            - button "🔍 퀵뷰" [ref=e627] [cursor=pointer]
+            - button "0원 시착" [ref=e628] [cursor=pointer]
+      - generic [ref=e629]:
+        - button "찜하기" [ref=e630] [cursor=pointer]
+        - generic [ref=e633]:
+          - generic [ref=e634]: 🦵
+          - generic [ref=e635]: "권장: M"
+        - generic [ref=e636]:
+          - generic [ref=e637]:
+            - generic [ref=e638]: "#고관절보호 #보행안정"
+            - heading "고관절 안정화 서포트 스트랩" [level=4] [ref=e639]
+            - paragraph [ref=e640]: 보행 및 착석 시 고관절 수평 안정화
+          - generic [ref=e641]:
+            - generic [ref=e642]: 33,000원
+            - generic [ref=e643]: 48,000원
+          - generic [ref=e644]:
+            - button "🔍 퀵뷰" [ref=e645] [cursor=pointer]
+            - button "0원 시착" [ref=e646] [cursor=pointer]
+  - contentinfo [ref=e316]:
+    - generic [ref=e317]:
+      - generic [ref=e318]:
+        - generic [ref=e319]:
+          - generic [ref=e320]:
+            - text: SEUMIM
+            - generic [ref=e321]: 0.1mm
+          - paragraph [ref=e322]: 스밈(SEUMIM)은 0.1mm 무봉제 전도성 센서 섬유 기술을 바탕으로 일상 속에 바른 균형을 설계하는 하이엔드 테크 웰니스 플랫폼입니다.
+        - generic [ref=e323]:
+          - generic [ref=e324]: 제품 라인업 (15)
+          - list [ref=e325]:
+            - listitem [ref=e326]:
+              - link "어깨 · 경추 케어 라인 (5)" [ref=e327] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e328]:
+              - link "척추 · 허리 케어 라인 (5)" [ref=e329] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e330]:
+              - link "골반 · 하체 케어 라인 (5)" [ref=e331] [cursor=pointer]:
+                - /url: javascript:void(0)
+        - generic [ref=e332]:
+          - generic [ref=e333]: 고객 신뢰 센터
+          - list [ref=e334]:
+            - listitem [ref=e335]:
+              - link "30일 무료 시착 정책" [ref=e336] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e337]:
+              - link "1초 스마트 사이즈 가이드" [ref=e338] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e339]:
+              - link "전국 12개 웰니스 센터" [ref=e340] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e341]:
+              - link "브랜드 스토리 (Our Story)" [ref=e342] [cursor=pointer]:
+                - /url: javascript:void(0)
+        - generic [ref=e343]:
+          - generic [ref=e344]: CS 고객센터
+          - paragraph [ref=e345]: 1588-9240
+          - paragraph [ref=e346]: 평일 09:30 ~ 18:30 (점심 12:30 ~ 13:30) 주말 및 공휴일 1:1 카카오톡 상담 운영
+      - generic [ref=e347]:
+        - generic [ref=e348]: © 2026 SEUMIM Inc. All rights reserved. 30일 안심 무료 맞교환/반품 100% 보장.
+        - generic [ref=e349]:
+          - link "이용약관" [ref=e350] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=e351] [cursor=pointer]:
+            - /url: "#"
+          - link "사업자정보확인" [ref=e352] [cursor=pointer]:
+            - /url: "#"
+  - generic [ref=e354]:
+    - generic [ref=e355]:
+      - generic [ref=e356]: 결제금액 0원
+      - generic [ref=e357]:
+        - strong [ref=e358]: SEUMIM 30일 무료 시착
+        - text: "| 입어보고 결정하세요 (100% 무료 반품)"
+    - button "지금 0원에 시착하기 ➔" [ref=e359] [cursor=pointer]
