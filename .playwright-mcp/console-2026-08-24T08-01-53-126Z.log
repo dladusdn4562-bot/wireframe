@@ -1,0 +1,53 @@
+[      41ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/problem_neck_pain_1787187142805.jpg:0
+[      41ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/usecase_1400_desk_1787189730062.jpg:0
+[      52ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/usecase_0830_commute_1787189711503.jpg:0
+[      53ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/usecase_1700_meeting_1787189750314.jpg:0
+[     243ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/usecase_1930_leaving_1787189770122.jpg:0
+[     243ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/usecase_1400_desk_1787189730062.jpg:0
+[     322ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/favicon.ico:0
+[  103541ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/problem_neck_pain_1787187142805.jpg:0
+[  103541ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/usecase_1400_desk_1787189730062.jpg:0
+[  103578ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/usecase_0830_commute_1787189711503.jpg:0
+[  103578ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/usecase_1700_meeting_1787189750314.jpg:0
+[  103578ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/usecase_1930_leaving_1787189770122.jpg:0
+[  103578ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/assets/img/usecase_1400_desk_1787189730062.jpg:0
+[  193408ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  194156ms] ReferenceError: resetTilt is not defined
+    at HTMLDivElement.onmouseleave (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  195218ms] ReferenceError: resetTilt is not defined
+    at HTMLDivElement.onmouseleave (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  246217ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  246233ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  246250ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  246269ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  246284ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  246300ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  246317ms] ReferenceError: resetTilt is not defined
+    at HTMLDivElement.onmouseleave (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  247916ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  247933ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  248084ms] ReferenceError: resetTilt is not defined
+    at HTMLDivElement.onmouseleave (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  319633ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  319651ms] ReferenceError: resetTilt is not defined
+    at HTMLDivElement.onmouseleave (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5029:114)
+[  322939ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5016:114)
+[  322950ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5016:114)
+[  322973ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5016:114)
+[  322989ms] ReferenceError: handleTilt is not defined
+    at HTMLDivElement.onmousemove (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5016:114)
+[  323006ms] ReferenceError: resetTilt is not defined
+    at HTMLDivElement.onmouseleave (http://localhost:8080/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8/%EC%88%98%EC%A0%95%20%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84.html:5016:114)

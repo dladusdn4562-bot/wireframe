@@ -1,0 +1,359 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: "🎨 5대 강조 스타일 실시간 비교:"
+        - generic [ref=e6]: 원하는 스타일 버튼을 클릭하여 와이어프레임의 시각적 변화를 바로 확인하세요!
+      - generic [ref=e7]:
+        - button "1. 이솝 1px 미세선" [ref=e8] [cursor=pointer]
+        - button "2. 킨포크 워터마크" [ref=e9] [cursor=pointer]
+        - button "3. 프라마 버티컬바" [ref=e10] [cursor=pointer]
+        - button "4. 젠(Zen) 한글낙관" [ref=e11] [cursor=pointer]
+        - button "5. 수채화 브러시" [ref=e12] [cursor=pointer]
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - strong [ref=e15]: SEUMIM (스밈) - 기본 와이어프레임
+        - text: "[아이콘/디자인요소 제외 · 텍스트 및 정보구조 전용]"
+      - generic [ref=e16]:
+        - button "1. 메인 랜딩페이지 (Main)" [ref=e17] [cursor=pointer]
+        - button "2. 15개 전 상품 서브 (Shop All)" [ref=e18] [cursor=pointer]
+        - button "3. 브랜드 이야기 서브 (Our Story)" [ref=e19] [cursor=pointer]
+    - generic [ref=e21]:
+      - link "SEUMIM 스밈 0.1mm" [ref=e22] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - text: SEUMIM
+        - generic [ref=e23]: 스밈 0.1mm
+      - generic [ref=e24]:
+        - button "찜목록 2" [ref=e25] [cursor=pointer]:
+          - text: 찜목록
+          - generic [ref=e26]: "2"
+        - button "장바구니 1" [ref=e27] [cursor=pointer]:
+          - text: 장바구니
+          - generic [ref=e28]: "1"
+        - button "메뉴" [ref=e29] [cursor=pointer]
+  - main [ref=e30]:
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: 🎨
+          - generic [ref=e36]: 어떤 강조 방식이 가장 마음에 드시나요? 아래 버튼을 눌러 실시간으로 확인해보세요!
+        - generic [ref=e37]:
+          - button "1. 이솝 1px 미세선" [ref=e38] [cursor=pointer]
+          - button "2. 킨포크 워터마크" [ref=e39] [cursor=pointer]
+          - button "3. 프라마 버티컬바" [ref=e40] [cursor=pointer]
+          - button "4. 젠(Zen) 한글낙관" [ref=e41] [cursor=pointer]
+          - button "5. 수채화 브러시" [ref=e42] [cursor=pointer]
+      - generic [ref=e43]: 일상에 자연스럽게 스며드는 0.1mm 바른 균형
+      - heading "바쁜 하루 속에서도, 나를 먼저 아끼는 다정한 균형" [level=1] [ref=e44]
+      - paragraph [ref=e45]: 억지스러운 압박 대신 기분 좋은 편안함으로, 당신의 일상에 건강한 쉼을 채워드릴게요.
+      - generic [ref=e46]:
+        - button "스밈의 시작 알아보기 [바로가기]" [ref=e47] [cursor=pointer]
+        - button "스밈 3대 대표작 알아보기" [ref=e48] [cursor=pointer]
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: 38g
+          - generic [ref=e52]: 깃털 같은 초경량
+          - generic [ref=e53]: 0.1mm 초박형 센서 섬유
+        - generic [ref=e54]:
+          - generic [ref=e55]: 99.8%
+          - generic [ref=e56]: 무봉제 은폐율
+          - generic [ref=e57]: 출근복 속에 쏙 숨는 핏
+        - generic [ref=e58]:
+          - generic [ref=e59]: 300+
+          - generic [ref=e60]: 전문가 실착 검증
+          - generic [ref=e61]: 정형외과 의사·개발자 추천
+        - generic [ref=e62]:
+          - generic [ref=e63]: 100%
+          - generic [ref=e64]: 30일 안심 무료 반품
+          - generic [ref=e65]: 결제금액 0원 무료 맞교환
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e69]: 스밈의 철학 · 우리가 걸어온 길
+        - heading "우리가 걸어온 길, 그리고 스밈이 존재하는 이유" [level=2] [ref=e70]
+        - paragraph [ref=e71]: 시중에 널린 흔한 교정 밴드를 만들지 않습니다. 원천 부품 기술에서 출발하여 일상에 자연스럽게 스며드는 바른 균형의 여정을 시각적 증명과 함께 들려드립니다.
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: "[이미지 영역: 챕터 01]"
+            - generic [ref=e76]: 쇠 와이어의 멍과 고통 / 기존 교정기 착용 압박 실사 화보
+            - generic [ref=e77]: 실사 화보 01 · 일상의 편안함
+          - generic [ref=e78]:
+            - generic [ref=e79]: 3년 450번의 원사 배합 실험의 결실
+            - generic [ref=e80]: 머리카락 굵기보다 얇은 나노 회로를 직조하여 이물감 제로와 100회 물세탁 내구성을 확보했습니다.
+        - generic [ref=e81]:
+          - generic [ref=e82]: 첫 번째 이야기 · 탄생의 배경
+          - heading "\"왜 체형 교정은 늘 아프고 불편해야만 할까요?\"" [level=3] [ref=e83]
+          - paragraph [ref=e84]: 우리는 본래 첨단 스마트 섬유 부품을 개발하던 엔지니어 팀이었습니다. 하루 14시간씩 현미경과 모니터를 보며 일하던 개발자들은 하나같이 심각한 거북목과 허리 통증을 겪고 있었습니다. 시중의 딱딱한 강제 압박 밴드는 셔츠 밖으로 튀어나왔고 강한 조임은 숨을 턱턱 막히게 했습니다.
+          - paragraph [ref=e85]: "\"몸을 억지로 조이지 않으면서도, 마치 아무것도 입지 않은 것처럼 가볍게 바른 자세를 유도할 수는 없을까?\" 이 질문 하나에서 스밈(SEUMIM)의 여정이 시작되었습니다."
+          - generic [ref=e86]: 부품 제조 기업의 원천 기술인 '전도성 센서 섬유'를 6조 8,000억 달러 웰니스 시장의 게임 체인저로 전환한 첫 발걸음이었습니다.
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e90]: 기술 혁신 비교 인포그래픽
+            - generic [ref=e91]: ⚖️
+            - generic [ref=e92]: "[기존 교정기(X) vs 스밈 0.1mm 코어웨어(O)]"
+          - generic [ref=e93]:
+            - generic [ref=e94]: 0.01초 작업 시차 필터링 & 지렛대 탄성 프레임
+            - generic [ref=e95]: 신발 묶기 등 일상 움직임의 오알람을 완벽히 차단하고, 강제 압박 없이 스스로 바르게 펴지도록 만듭니다.
+        - generic [ref=e96]:
+          - generic [ref=e97]: 두 번째 이야기 · 기존 시장의 한계 극복
+          - heading "고통스러운 강제 조임과 시끄러운 오알람의 종말" [level=3] [ref=e98]
+          - paragraph [ref=e99]: 기존의 고무줄 강제 압박기는 착용할수록 근육을 퇴화시키고 소화불량을 유발합니다. 또한 기존의 부착형 센서는 물을 마시는 일상 동작조차 '불량 자세'로 오진하여 시도 때도 없이 진동을 울리며 극심한 스트레스를 주었습니다.
+          - paragraph [ref=e100]:
+            - text: 스밈은
+            - strong [ref=e101]: 0.01초 작업 시차 필터링 알고리즘
+            - text: 으로 일시적 움직임과 고착된 나쁜 자세를 완벽히 구분하고,
+            - strong [ref=e102]: 인체공학 지렛대 탄성 복원 구조
+            - text: 를 통해 압박 없이 스스로 펴지도록 만들었습니다.
+          - generic [ref=e103]: 82.3%의 직장인이 자세 무너짐을 인지하지 못하는 현실, 스밈은 업무 몰입을 방해하지 않는 '무소음 촉각 햅틱 넛지'로 바른 정렬을 회복시킵니다.
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - generic [ref=e107]: 300+ 전문가 실착 검증 갤러리
+            - generic [ref=e108]: ‍⚕️
+            - generic [ref=e109]: "[전문의·개발자 300인 실착 임상 현장]"
+          - generic [ref=e110]:
+            - generic [ref=e111]: 300+ 현업 전문가들의 일상 속에 스며든 바른 균형
+            - generic [ref=e112]: 정형외과 의사, 물리치료사, IT 개발자들이 3주간 일상에서 착용하고 통증 87% 감소 효과를 검증했습니다.
+        - generic [ref=e113]:
+          - generic [ref=e114]: 세 번째 이야기 · 스밈의 철학과 약속
+          - heading "\"일상에 바른 균형이 자연스럽게 스며들도록\"" [level=3] [ref=e115]
+          - paragraph [ref=e116]:
+            - strong [ref=e117]: 스밈(SEUMIM)
+            - text: 은 '스며들다'에서 비롯된 이름입니다. 퇴근 후 지친 몸을 이끌고 억지로 운동을 강요하지 않습니다. 모니터 앞, 조타실, 수술실, 분장실 등 여러분이 치열하게 일하는 그 자리에서 바른 습관이 옷처럼 편안하게 스며듭니다.
+          - paragraph [ref=e118]: 0.1mm 초슬림 무봉제 공법으로 어떤 복장 속에 입어도 티가 나지 않으며, 100회 물세탁이 가능하여 매일 아침 새 옷처럼 쾌적하게 착용할 수 있습니다.
+          - generic [ref=e119]: 하드웨어 28종 + AI 10초 미니멀 케어 구독 + 전국 웰니스 센터의 3중 선순환 플랫폼으로 지속 가능한 건강한 변화를 약속합니다.
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - generic [ref=e122]: 스밈 대표 시그니처 3선
+        - heading "스밈을 대표하는 3대 시그니처 마스터피스" [level=2] [ref=e123]
+        - paragraph [ref=e124]: 가장 많은 직장인의 체형 문제를 해결한 핵심 3대 대표작을 3D 단면도로 확인하세요.
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - 'button "${p.isWished ? \\''[찜됨]\\'' : \\''[찜하기]\\''}" [ref=e127] [cursor=pointer]'
+          - generic [ref=e129]:
+            - generic [ref=e130]: "[Top 1] 0.1mm 넥&숄더 밴드 3D 단면도"
+            - generic [ref=e131]: 전면 자석 버클 & 15도 견인 메커니즘
+            - generic [ref=e132]: 클릭 시 3D 단면 분해 뷰어
+          - generic [ref=e133]:
+            - generic [ref=e134]: 거북목 & 말린 어깨 집중 케어
+            - heading "0.1mm 심리스 넥&숄더 밴드" [level=3] [ref=e135]
+            - paragraph [ref=e136]: 모니터 앞 10시간, 앞으로 쏟아지는 목과 말린 어깨를 전면 자석 버클로 1초 만에 체결하여 15도 자동 견인합니다. 38g 깃털 무게로 셔츠 안에 입어도 전혀 티가 나지 않습니다.
+            - generic [ref=e137]:
+              - generic [ref=e138]: 0.1mm 무봉제 전도성 센서 섬유로 피부 밀착
+              - generic [ref=e140]: 뒤틀림 방지 X-크로스 텐션 백 프레임 탑재
+              - generic [ref=e142]: 300+ 개발자 실착 후기 평점 4.9점 달성
+            - generic [ref=e144]:
+              - generic [ref=e145]: 34% OFF
+              - generic [ref=e146]: 59,000원
+              - generic [ref=e147]: 89,000원
+            - generic [ref=e148]:
+              - button "3D 단면 분해도 보기" [ref=e149] [cursor=pointer]
+              - button "30일 0원 무료 시착" [ref=e150] [cursor=pointer]
+        - generic [ref=e151]:
+          - 'button "${p.isWished ? \\''[찜됨]\\'' : \\''[찜하기]\\''}" [ref=e152] [cursor=pointer]'
+          - generic [ref=e154]:
+            - generic [ref=e155]: "[Top 2] 척추 정렬 조끼 3D 단면도"
+            - generic [ref=e156]: 출근복 속 숨은 지퍼 & 탄성 프레임
+            - generic [ref=e157]: 클릭 시 3D 단면 분해 뷰어
+          - generic [ref=e158]:
+            - generic [ref=e159]: 굽은 등 & 척추 틀어짐 방지
+            - heading "3D 에어로 메쉬 척추 정렬 조끼" [level=3] [ref=e160]
+            - paragraph [ref=e161]: 출근 룩에 완벽히 은폐되는 시크릿 지퍼 구조. 12시간 동안 착용해도 땀이 차지 않는 3중 에어로 메쉬와 척추 곡선을 지지하는 탄성 복원 프레임 단면을 확인하세요.
+            - generic [ref=e162]:
+              - generic [ref=e163]: 99.8% 은폐율 숨은 지퍼 테일러링 공법
+              - generic [ref=e165]: 12시간 쿨링 에어로 메쉬 통기성 극대화
+              - generic [ref=e167]: 장시간 좌식 근무 시 척추 측면 틀어짐 차단
+            - generic [ref=e169]:
+              - generic [ref=e170]: 31% OFF
+              - generic [ref=e171]: 89,000원
+              - generic [ref=e172]: 129,000원
+            - generic [ref=e173]:
+              - button "3D 단면 분해도 보기" [ref=e174] [cursor=pointer]
+              - button "30일 0원 무료 시착" [ref=e175] [cursor=pointer]
+        - generic [ref=e176]:
+          - 'button "${p.isWished ? \\''[찜됨]\\'' : \\''[찜하기]\\''}" [ref=e177] [cursor=pointer]'
+          - generic [ref=e179]:
+            - generic [ref=e180]: "[Top 3] 골반 에어셀 벨트 3D 단면도"
+            - generic [ref=e181]: 공기 팽창 밸런스 패드 메커니즘
+            - generic [ref=e182]: 클릭 시 3D 단면 분해 뷰어
+          - generic [ref=e183]:
+            - generic [ref=e184]: 다리 꼬기 & 골반 틀어짐 차단
+            - heading "골반 수평 유지 에어셀 벨트" [level=3] [ref=e185]
+            - paragraph [ref=e186]: 앉았을 때 무의식적으로 다리를 꼬면, 골반 에어셀 패드가 공기를 팽창시켜 골반을 물리적으로 수평 복원합니다. 짝다리 짚는 습관까지 원천 교정합니다.
+            - generic [ref=e187]:
+              - generic [ref=e188]: 착석 시 다리 꼬기 물리적 차단 에어셀 내장
+              - generic [ref=e190]: 좌우 체압 불균형 0.1초 실시간 감지 분산
+              - generic [ref=e192]: 슬랙스나 바지 안쪽에 얇게 밀착되는 초박형 핏
+            - generic [ref=e194]:
+              - generic [ref=e195]: 30% OFF
+              - generic [ref=e196]: 69,000원
+              - generic [ref=e197]: 99,000원
+            - generic [ref=e198]:
+              - button "3D 단면 분해도 보기" [ref=e199] [cursor=pointer]
+              - button "30일 0원 무료 시착" [ref=e200] [cursor=pointer]
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - generic [ref=e204]: 300인의 전문가 실착 검증 & 임상 데이터
+        - heading "300+ 전문가 실착 데이터 및 4.9점 비포/애프터" [level=2] [ref=e205]
+        - paragraph [ref=e206]: 정형외과 전문의와 IT 개발자들이 3주간 실착하고 검증한 수치화된 개선 결과입니다.
+      - generic [ref=e207]:
+        - generic [ref=e208]:
+          - generic [ref=e209]: 87.4%
+          - generic [ref=e210]: 목·어깨 통증 피로도 감소
+          - generic [ref=e211]: 하루 9시간 이상 코딩 개발자 120인 검증
+        - generic [ref=e212]:
+          - generic [ref=e213]: 3.2 h
+          - generic [ref=e214]: 일일 바른 자세 유지 시간 증가
+          - generic [ref=e215]: 착용 전 1.4시간 착용 후 4.6시간 증가
+        - generic [ref=e216]:
+          - generic [ref=e217]: 98.2%
+          - generic [ref=e218]: 셔츠 속 은폐 만족도
+          - generic [ref=e219]: 출근 시 동료가 눈치채지 못함 응답률
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - generic [ref=e222]: "[만족도: 5.0 / 5.0] 5.0"
+          - paragraph [ref=e223]: "\"하루 12시간 모니터만 보는 백엔드 개발자입니다. 넥밴드 착용 후 퇴근할 때 목 뻐근함이 80% 이상 사라졌습니다. 셔츠 안에 입어도 아무도 몰라요.\""
+          - generic [ref=e224]:
+            - generic [ref=e225]: 김민석 (31세, 시니어 개발자)
+            - generic [ref=e226]: 178cm / 74kg (M 착용)
+        - generic [ref=e227]:
+          - generic [ref=e228]: "[만족도: 5.0 / 5.0] 4.9"
+          - paragraph [ref=e229]: "\"정형외과 의사로서 수많은 교정기를 보았지만, 스밈처럼 '억지로 조이지 않고 체감 피로도를 낮추는 무봉제 기술'은 처음입니다. 환자분들께도 적극 추천합니다.\""
+          - generic [ref=e230]:
+            - generic [ref=e231]: 이현우 원장 (정형외과 전문의)
+            - generic [ref=e232]: 전문의 자문단
+        - generic [ref=e233]:
+          - generic [ref=e234]: "[만족도: 5.0 / 5.0] 5.0"
+          - paragraph [ref=e235]: "\"의자에만 앉으면 다리를 꼬아서 골반이 삐뚤어졌는데, 에어셀 벨트 착용 후 다리 꼴 때마다 팽창해서 자동으로 바른 자세가 잡힙니다. 0원 시착 최고!\""
+          - generic [ref=e236]:
+            - generic [ref=e237]: 박지영 (29세, UX 디자이너)
+            - generic [ref=e238]: 164cm / 52kg (S 착용)
+    - generic [ref=e240]:
+      - generic [ref=e241]:
+        - generic [ref=e242]: 15종 부위별 맞춤 전 컬렉션
+        - heading "더 많은 부위별 파생 맞춤 솔루션이 필요하신가요?" [level=3] [ref=e243]
+        - paragraph [ref=e244]:
+          - text: 스밈은 3대 대표작 외에도 각 부위별 케어를 완성하는
+          - strong [ref=e245]: 3대 파생 라인 총 15종의 체형 맞춤 라인업
+          - text: 을 완비하고 있습니다. 서브페이지에서 어깨·척추·골반 파생 전체 상품을 탐색하고 비교해 보세요.
+        - generic [ref=e246]:
+          - generic [ref=e247]: 어깨 · 경추 케어 5종
+          - generic [ref=e248]: 척추 · 허리 케어 5종
+          - generic [ref=e249]: 골반 · 하체 케어 5종
+      - button "15종 전 상품 컬렉션 보러가기" [ref=e251] [cursor=pointer]
+    - generic [ref=e253]:
+      - generic [ref=e254]:
+        - generic [ref=e255]: 1초 체형 맞춤 사이즈 파인더
+        - heading "내 몸에 딱 맞는 0.1mm 핏! 1초 사이즈 파인더" [level=3] [ref=e256]
+        - paragraph [ref=e257]: 키와 몸무게를 슬라이더로 조절하면 권장 사이즈와 부위별 실측 치수를 실시간 도출합니다.
+      - generic [ref=e258]:
+        - generic [ref=e259]:
+          - generic [ref=e260]:
+            - text: "키 (Height):"
+            - generic [ref=e261]: 178 cm
+          - slider [ref=e262] [cursor=pointer]: "178"
+        - generic [ref=e263]:
+          - generic [ref=e264]:
+            - text: "몸무게 (Weight):"
+            - generic [ref=e265]: 72 kg
+          - slider [ref=e266] [cursor=pointer]: "72"
+        - generic [ref=e267]:
+          - generic [ref=e268]: 체형 실루엣
+          - combobox [ref=e269]:
+            - option "표준 체형 (Standard)" [selected]
+            - option "슬림 체형 (Slim)"
+            - option "어깨/체격 발달형 (Athletic)"
+        - generic [ref=e270]:
+          - generic [ref=e271]: 추천 최적 사이즈
+          - generic [ref=e272]: M (95~100)
+      - generic [ref=e273]:
+        - button "부위별 0.1mm 정밀 실측표 확인" [ref=e274] [cursor=pointer]
+        - button "추천 사이즈로 30일 무료 시착 (0원)" [ref=e275] [cursor=pointer]
+    - generic [ref=e277]:
+      - generic [ref=e278]:
+        - generic [ref=e279]: 실시간 스마트 자세 케어
+        - heading "AI 실시간 자세 각도 대시보드" [level=3] [ref=e280]
+        - paragraph [ref=e281]: 스마트 센서 섬유가 0.05도 단위로 척추 틀어짐을 감지하여 실시간 자세 점수를 표시합니다.
+        - generic [ref=e282]:
+          - generic [ref=e284]:
+            - generic [ref=e285]: "95"
+            - generic [ref=e286]: 바른 균형 점수
+          - generic [ref=e287]:
+            - generic [ref=e288]: ● 정상 정렬 상태 (95점)
+            - generic [ref=e289]: "• 경추 각도: 14도 (안정)"
+            - generic [ref=e290]: "• 좌우 골반 수평 편차: 0.2cm"
+        - button "10초 AI 자세 측정 시작하기" [ref=e291] [cursor=pointer]
+      - generic [ref=e292]:
+        - generic [ref=e293]: 전국 오프라인 웰니스 센터
+        - heading "전국 웰니스 센터 1:1 무료 진단" [level=3] [ref=e294]
+        - paragraph [ref=e295]: 전국 12개 직영/제휴 센터에서 전문 물리치료사의 3D 체형 측정 및 실착 진단을 무료로 받으세요.
+        - generic [ref=e296]:
+          - generic [ref=e297]: 가까운 스밈 웰니스 센터 (강남 플래그십)
+          - generic [ref=e298]: 서울 강남구 테헤란로 152 강남파이낸스센터 3F (예약 가능)
+        - button "오프라인 1회 무료 체험 예약하기" [ref=e299] [cursor=pointer]
+    - generic [ref=e300]:
+      - generic [ref=e301]:
+        - generic [ref=e302]: 자주 묻는 질문 & 안심 케어
+        - heading "자주 묻는 질문" [level=2] [ref=e303]
+      - generic [ref=e304] [cursor=pointer]:
+        - generic [ref=e305]: Q. 30일 무료 시착은 정말 결제금액이 0원인가요?
+        - generic [ref=e306]: 네, 맞습니다. 신청 시 결제되는 금액은 0원이며, 30일 동안 일상과 직장에서 충분히 입어보신 후 만족스러우실 때 구매를 결정하시면 됩니다.
+      - generic [ref=e307] [cursor=pointer]: Q. 사이즈가 맞지 않으면 어떻게 하나요?
+      - generic [ref=e309] [cursor=pointer]: Q. 세탁기에 넣고 돌려도 센서가 고장 나지 않나요?
+      - generic [ref=e311] [cursor=pointer]: Q. 셔츠나 정장 안에 입어도 티가 안 나나요?
+  - contentinfo [ref=e313]:
+    - generic [ref=e314]:
+      - generic [ref=e315]:
+        - generic [ref=e316]:
+          - generic [ref=e317]:
+            - text: SEUMIM
+            - generic [ref=e318]: 0.1mm
+          - paragraph [ref=e319]: 스밈(SEUMIM)은 0.1mm 무봉제 전도성 센서 섬유 기술을 바탕으로 일상 속에 바른 균형을 설계하는 하이엔드 테크 웰니스 플랫폼입니다.
+        - generic [ref=e320]:
+          - generic [ref=e321]: 제품 라인업 (15)
+          - list [ref=e322]:
+            - listitem [ref=e323]:
+              - link "어깨 · 경추 케어 라인 (5)" [ref=e324] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e325]:
+              - link "척추 · 허리 케어 라인 (5)" [ref=e326] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e327]:
+              - link "골반 · 하체 케어 라인 (5)" [ref=e328] [cursor=pointer]:
+                - /url: javascript:void(0)
+        - generic [ref=e329]:
+          - generic [ref=e330]: 고객 신뢰 센터
+          - list [ref=e331]:
+            - listitem [ref=e332]:
+              - link "30일 무료 시착 정책" [ref=e333] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e334]:
+              - link "1초 스마트 사이즈 가이드" [ref=e335] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e336]:
+              - link "전국 12개 웰니스 센터" [ref=e337] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e338]:
+              - link "브랜드 스토리 (Our Story)" [ref=e339] [cursor=pointer]:
+                - /url: javascript:void(0)
+        - generic [ref=e340]:
+          - generic [ref=e341]: CS 고객센터
+          - paragraph [ref=e342]: 1588-9240
+          - paragraph [ref=e343]: 평일 09:30 ~ 18:30 (점심 12:30 ~ 13:30) 주말 및 공휴일 1:1 카카오톡 상담 운영
+      - generic [ref=e344]:
+        - generic [ref=e345]: © 2026 SEUMIM Inc. All rights reserved. 30일 안심 무료 맞교환/반품 100% 보장.
+        - generic [ref=e346]:
+          - link "이용약관" [ref=e347] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=e348] [cursor=pointer]:
+            - /url: "#"
+          - link "사업자정보확인" [ref=e349] [cursor=pointer]:
+            - /url: "#"
+  - generic [ref=e351]:
+    - generic [ref=e352]:
+      - generic [ref=e353]: 결제금액 0원
+      - generic [ref=e354]:
+        - strong [ref=e355]: SEUMIM 30일 무료 시착
+        - text: "| 입어보고 결정하세요 (100% 무료 반품)"
+    - button "지금 0원에 시착하기" [ref=e356] [cursor=pointer]
