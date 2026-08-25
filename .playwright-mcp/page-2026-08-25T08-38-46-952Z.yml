@@ -1,0 +1,252 @@
+- generic [active] [ref=f20e1]:
+  - generic:
+    - generic:
+      - link "주요 콘텐츠로 이동" [ref=f20e2] [cursor=pointer]
+      - link "연속 스크롤 사용 중지" [ref=f20e3] [cursor=pointer]:
+        - /url: "#"
+      - link "접근성 도움말" [ref=f20e4] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ko
+  - generic [ref=f20e9]:
+    - search [ref=f20e10]:
+      - generic [ref=f20e12]:
+        - link "Google 홈페이지로 이동" [ref=f20e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwi-iru8sLuWAxUhkuEIHYQ1HdwQPAgJ
+        - generic [ref=f20e22]:
+          - generic [ref=f20e23]:
+            - combobox "검색" [ref=f20e26]: site:pinterest.com minimalist geometric s curve wave spine logo symbol black white site:pinterest.com minimalist geometric s curve wave spine logo symbol black white
+            - generic [ref=f20e27]:
+              - button "지우기" [ref=f20e29] [cursor=pointer]
+              - generic [ref=f20e34]:
+                - button "입력 도구" [ref=f20e35] [cursor=pointer]
+                - button "음성 검색" [ref=f20e39] [cursor=pointer]
+                - button "이미지로 검색" [ref=f20e42] [cursor=pointer]
+          - button "검색" [ref=f20e45] [cursor=pointer]
+    - generic [ref=f20e51]:
+      - button "Google 앱" [ref=f20e53] [cursor=pointer]
+      - 'button "Google 계정: 임연우 (dladusdn4562@gmail.com)" [ref=f20e58] [cursor=pointer]'
+  - generic [ref=f20e67]:
+    - generic [ref=f20e70]:
+      - navigation [ref=f20e73]:
+        - generic [ref=f20e74]:
+          - list [ref=f20e75]:
+            - listitem [ref=f20e76]:
+              - link "AI 모드" [ref=f20e79] [cursor=pointer]:
+                - /url: /search?q=site:pinterest.com+minimalist+geometric+s+curve+wave+spine+logo+symbol+black+white&sca_esv=1b85b69310503e88&sxsrf=APpeQnvzuui0kDPA3tG8fvnn9hYkOroWoA:1787647119778&udm=50&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwi-iru8sLuWAxUhkuEIHYQ1HdwQ2J8OegQIChAD
+            - listitem [ref=f20e83]:
+              - link "전체" [ref=f20e84] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnvzuui0kDPA3tG8fvnn9hYkOroWoA:1787647119778&q=site:pinterest.com+minimalist+geometric+s+curve+wave+spine+logo+symbol+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&sa=X&ved=2ahUKEwi-iru8sLuWAxUhkuEIHYQ1HdwQ0pQJegQICxAB
+            - listitem [ref=f20e87]:
+              - link "이미지" [disabled] [ref=f20e88]
+            - listitem [ref=f20e91]:
+              - link "쇼핑" [ref=f20e92] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnvzuui0kDPA3tG8fvnn9hYkOroWoA:1787647119778&udm=28&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=site:pinterest.com+minimalist+geometric+s+curve+wave+spine+logo+symbol+black+white&ved=1t:220175&ictx=111
+            - listitem [ref=f20e95]:
+              - link "짧은 동영상" [ref=f20e96] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnvzuui0kDPA3tG8fvnn9hYkOroWoA:1787647119778&udm=39&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=site:pinterest.com+minimalist+geometric+s+curve+wave+spine+logo+symbol+black+white&sa=X&ved=2ahUKEwi-iru8sLuWAxUhkuEIHYQ1HdwQs6gLegQIDxAB
+            - listitem [ref=f20e99]:
+              - link "웹" [ref=f20e100] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnvzuui0kDPA3tG8fvnn9hYkOroWoA:1787647119778&udm=web&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=site:pinterest.com+minimalist+geometric+s+curve+wave+spine+logo+symbol+black+white&sa=X&ved=2ahUKEwi-iru8sLuWAxUhkuEIHYQ1HdwQs6gLegQIDRAB
+            - listitem [ref=f20e103]:
+              - link "금융" [ref=f20e104] [cursor=pointer]:
+                - /url: /finance?sca_esv=1b85b69310503e88&output=search&q=site:pinterest.com+minimalist+geometric+s+curve+wave+spine+logo+symbol+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&sa=X&ved=2ahUKEwi-iru8sLuWAxUhkuEIHYQ1HdwQ0pQJegQIEBAB
+            - listitem [ref=f20e107]:
+              - button [ref=f20e108] [cursor=pointer]:
+                - generic "필터 더보기" [ref=f20e109]: 더보기
+          - button "도구" [ref=f20e116] [cursor=pointer]
+      - link [ref=f20e124] [cursor=pointer]:
+        - /url: /save?sa=X&ved=2ahUKEwi-iru8sLuWAxUhkuEIHYQ1HdwQ7XV6BAgFEAA
+    - heading "검색결과" [level=1] [ref=f20e128]
+    - main [ref=f20e130]:
+      - generic [ref=f20e139]:
+        - generic [ref=f20e143] [cursor=pointer]:
+          - button [ref=f20e148]:
+            - img "The planetary symbols for the solar system (Pluto included). | 23 Incredibly Elegant Science Tattoos" [ref=f20e150]
+          - link "The planetary symbols for the solar system (Pluto included). | 23 Incredibly Elegant Science Tattoos Pinterest" [ref=f20e152]:
+            - /url: https://www.pinterest.com/pin/23-incredibly-elegant-science-tattoos--327566572870432770/
+            - generic [ref=f20e153]:
+              - generic [ref=f20e154]: The planetary symbols for the solar system (Pluto included). | 23 Incredibly Elegant Science Tattoos
+              - generic [ref=f20e156]: Pinterest
+        - generic [ref=f20e163] [cursor=pointer]:
+          - button [ref=f20e168]:
+            - img "Descubra 48 ideias de desenhos e tatuagens geométricas | tatuagem geométrica, tatuagem relogio com rosas, tatuagem de arcanjo e muito mais" [ref=f20e170]
+          - link "Descubra 48 ideias de desenhos e tatuagens geométricas | tatuagem geométrica, tatuagem relogio com rosas, tatuagem de arcanjo e muito mais Pinterest" [ref=f20e172]:
+            - /url: https://www.pinterest.com/fabianobuenotat/desenhos/
+            - generic [ref=f20e173]:
+              - generic [ref=f20e174]: Descubra 48 ideias de desenhos e tatuagens geométricas | tatuagem geométrica, tatuagem relogio com rosas, tatuagem de arcanjo e muito mais
+              - generic [ref=f20e176]: Pinterest
+        - generic [ref=f20e183] [cursor=pointer]:
+          - button [ref=f20e188]:
+            - img "11 Abstract tattoo designs ideas in 2026 | line tattoo hip, abstract hip tattoos women, line hip tattoo" [ref=f20e190]
+          - link "11 Abstract tattoo designs ideas in 2026 | line tattoo hip, abstract hip tattoos women, line hip tattoo Pinterest" [ref=f20e192]:
+            - /url: https://in.pinterest.com/simrannaikade29000/abstract-tattoo-designs/
+            - generic [ref=f20e193]:
+              - generic [ref=f20e194]: 11 Abstract tattoo designs ideas in 2026 | line tattoo hip, abstract hip tattoos women, line hip tattoo
+              - generic [ref=f20e196]: Pinterest
+        - generic [ref=f20e203] [cursor=pointer]:
+          - button [ref=f20e208]:
+            - img "Geometric Arrow Tattoo" [ref=f20e210]
+          - link "Geometric Arrow Tattoo Pinterest" [ref=f20e212]:
+            - /url: https://www.pinterest.com/ideas/geometric-arrow-tattoo/955274759873/
+            - generic [ref=f20e213]:
+              - generic [ref=f20e214]: Geometric Arrow Tattoo
+              - generic [ref=f20e216]: Pinterest
+        - generic [ref=f20e223] [cursor=pointer]:
+          - button [ref=f20e228]:
+            - img "Geometric Arrow Tattoo" [ref=f20e230]
+          - link "Geometric Arrow Tattoo Pinterest" [ref=f20e232]:
+            - /url: https://www.pinterest.com/ideas/geometric-arrow-tattoo/955274759873/
+            - generic [ref=f20e233]:
+              - generic [ref=f20e234]: Geometric Arrow Tattoo
+              - generic [ref=f20e236]: Pinterest
+        - generic [ref=f20e243] [cursor=pointer]:
+          - button [ref=f20e248]:
+            - img "39 Tattoo ideas in 2026 | chakra tattoos spine, chakra spine tattoo, chakra back tattoo" [ref=f20e250]
+          - link "39 Tattoo ideas in 2026 | chakra tattoos spine, chakra spine tattoo, chakra back tattoo Pinterest" [ref=f20e252]:
+            - /url: https://in.pinterest.com/snghvms04/tattoo/
+            - generic [ref=f20e253]:
+              - generic [ref=f20e254]: 39 Tattoo ideas in 2026 | chakra tattoos spine, chakra spine tattoo, chakra back tattoo
+              - generic [ref=f20e256]: Pinterest
+        - generic [ref=f20e263] [cursor=pointer]:
+          - button [ref=f20e268]:
+            - img "8 MMC TATTOO ideas | small tattoos, wind tattoo, body art tattoos" [ref=f20e270]
+          - link "8 MMC TATTOO ideas | small tattoos, wind tattoo, body art tattoos Pinterest" [ref=f20e272]:
+            - /url: https://www.pinterest.com/authorjordanaday/mmc-tattoo/
+            - generic [ref=f20e273]:
+              - generic [ref=f20e274]: 8 MMC TATTOO ideas | small tattoos, wind tattoo, body art tattoos
+              - generic [ref=f20e276]: Pinterest
+        - generic [ref=f20e283] [cursor=pointer]:
+          - button [ref=f20e288]:
+            - img "11 Abstract tattoo designs ideas in 2026 | line tattoo hip, abstract hip tattoos women, line hip tattoo" [ref=f20e290]
+          - link "11 Abstract tattoo designs ideas in 2026 | line tattoo hip, abstract hip tattoos women, line hip tattoo Pinterest" [ref=f20e292]:
+            - /url: https://in.pinterest.com/simrannaikade29000/abstract-tattoo-designs/
+            - generic [ref=f20e293]:
+              - generic [ref=f20e294]: 11 Abstract tattoo designs ideas in 2026 | line tattoo hip, abstract hip tattoos women, line hip tattoo
+              - generic [ref=f20e296]: Pinterest
+        - generic [ref=f20e303] [cursor=pointer]:
+          - button [ref=f20e308]:
+            - img "Geometric Arrow Tattoo" [ref=f20e310]
+          - link "Geometric Arrow Tattoo Pinterest" [ref=f20e312]:
+            - /url: https://www.pinterest.com/ideas/geometric-arrow-tattoo/955274759873/
+            - generic [ref=f20e313]:
+              - generic [ref=f20e314]: Geometric Arrow Tattoo
+              - generic [ref=f20e316]: Pinterest
+        - generic [ref=f20e323] [cursor=pointer]:
+          - button [ref=f20e328]:
+            - img "Ink That Glitters 61 Ornamental Tattoo Designs To Adore" [ref=f20e330]
+          - link "Ink That Glitters 61 Ornamental Tattoo Designs To Adore Pinterest" [ref=f20e332]:
+            - /url: https://www.pinterest.com/pin/1071575305115519724/
+            - generic [ref=f20e333]:
+              - generic [ref=f20e334]: Ink That Glitters 61 Ornamental Tattoo Designs To Adore
+              - generic [ref=f20e336]: Pinterest
+        - generic [ref=f20e343] [cursor=pointer]:
+          - button [ref=f20e348]:
+            - img "Geometric Arrow Tattoo" [ref=f20e350]
+          - link "Geometric Arrow Tattoo Pinterest" [ref=f20e352]:
+            - /url: https://www.pinterest.com/ideas/geometric-arrow-tattoo/955274759873/
+            - generic [ref=f20e353]:
+              - generic [ref=f20e354]: Geometric Arrow Tattoo
+              - generic [ref=f20e356]: Pinterest
+        - generic [ref=f20e363] [cursor=pointer]:
+          - button [ref=f20e368]:
+            - img "Armband Tattoo Stencil" [ref=f20e370]
+          - link "Armband Tattoo Stencil Pinterest" [ref=f20e372]:
+            - /url: https://www.pinterest.com/ideas/armband-tattoo-stencil/907569383629/
+            - generic [ref=f20e373]:
+              - generic [ref=f20e374]: Armband Tattoo Stencil
+              - generic [ref=f20e376]: Pinterest
+        - generic [ref=f20e383] [cursor=pointer]:
+          - button [ref=f20e388]:
+            - img "TATTOO" [ref=f20e390]
+          - link "TATTOO Pinterest" [ref=f20e392]:
+            - /url: https://www.pinterest.com/m201ab25/tattoo/
+            - generic [ref=f20e393]:
+              - generic [ref=f20e394]: TATTOO
+              - generic [ref=f20e396]: Pinterest
+        - generic [ref=f20e403] [cursor=pointer]:
+          - button [ref=f20e408]:
+            - img "Descubra 48 ideias de desenhos e tatuagens geométricas | tatuagem geométrica, tatuagem relogio com rosas, tatuagem de arcanjo e muito mais" [ref=f20e410]
+          - link "Descubra 48 ideias de desenhos e tatuagens geométricas | tatuagem geométrica, tatuagem relogio com rosas, tatuagem de arcanjo e muito mais Pinterest" [ref=f20e412]:
+            - /url: https://www.pinterest.com/fabianobuenotat/desenhos/
+            - generic [ref=f20e413]:
+              - generic [ref=f20e414]: Descubra 48 ideias de desenhos e tatuagens geométricas | tatuagem geométrica, tatuagem relogio com rosas, tatuagem de arcanjo e muito mais
+              - generic [ref=f20e416]: Pinterest
+        - generic [ref=f20e423] [cursor=pointer]:
+          - button [ref=f20e428]:
+            - img "TATTOO" [ref=f20e430]
+          - link "TATTOO Pinterest" [ref=f20e432]:
+            - /url: https://www.pinterest.com/m201ab25/tattoo/
+            - generic [ref=f20e433]:
+              - generic [ref=f20e434]: TATTOO
+              - generic [ref=f20e436]: Pinterest
+        - generic [ref=f20e443] [cursor=pointer]:
+          - button [ref=f20e448]:
+            - img "Elegant Arrow" [ref=f20e450]
+          - link "Elegant Arrow Pinterest" [ref=f20e452]:
+            - /url: https://www.pinterest.com/ideas/elegant-arrow/915935293736/
+            - generic [ref=f20e453]:
+              - generic [ref=f20e454]: Elegant Arrow
+              - generic [ref=f20e456]: Pinterest
+        - generic [ref=f20e463] [cursor=pointer]:
+          - button [ref=f20e468]:
+            - img "Armband Tattoo Stencil" [ref=f20e470]
+          - link "Armband Tattoo Stencil Pinterest" [ref=f20e472]:
+            - /url: https://www.pinterest.com/ideas/armband-tattoo-stencil/907569383629/
+            - generic [ref=f20e473]:
+              - generic [ref=f20e474]: Armband Tattoo Stencil
+              - generic [ref=f20e476]: Pinterest
+        - generic [ref=f20e483] [cursor=pointer]:
+          - button [ref=f20e488]:
+            - img "Elegant Arrow" [ref=f20e490]
+          - link "Elegant Arrow Pinterest" [ref=f20e492]:
+            - /url: https://www.pinterest.com/ideas/elegant-arrow/915935293736/
+            - generic [ref=f20e493]:
+              - generic [ref=f20e494]: Elegant Arrow
+              - generic [ref=f20e496]: Pinterest
+        - generic [ref=f20e503] [cursor=pointer]:
+          - button [ref=f20e508]:
+            - img "39 Tattoo ideas in 2026 | chakra tattoos spine, chakra spine tattoo, chakra back tattoo" [ref=f20e510]
+          - link "39 Tattoo ideas in 2026 | chakra tattoos spine, chakra spine tattoo, chakra back tattoo Pinterest" [ref=f20e512]:
+            - /url: https://in.pinterest.com/snghvms04/tattoo/
+            - generic [ref=f20e513]:
+              - generic [ref=f20e514]: 39 Tattoo ideas in 2026 | chakra tattoos spine, chakra spine tattoo, chakra back tattoo
+              - generic [ref=f20e516]: Pinterest
+        - generic [ref=f20e523] [cursor=pointer]:
+          - button [ref=f20e528]:
+            - img "Geometric Arrow Tattoo" [ref=f20e530]
+          - link "Geometric Arrow Tattoo Pinterest" [ref=f20e532]:
+            - /url: https://www.pinterest.com/ideas/geometric-arrow-tattoo/955274759873/
+            - generic [ref=f20e533]:
+              - generic [ref=f20e534]: Geometric Arrow Tattoo
+              - generic [ref=f20e536]: Pinterest
+        - generic [ref=f20e543] [cursor=pointer]:
+          - button [ref=f20e548]:
+            - 'img "Ink-spiration Galore: Women''s Back Tattoo Ideas!" [ref=f20e550]'
+          - 'link "Ink-spiration Galore: Women''s Back Tattoo Ideas! Pinterest" [ref=f20e552]':
+            - /url: https://www.pinterest.com/beauty-pin/inkspiration-galore-womens-back-tattoo-ideas-in-2025--381680137190832652/
+            - generic [ref=f20e553]:
+              - generic [ref=f20e554]: "Ink-spiration Galore: Women's Back Tattoo Ideas!"
+              - generic [ref=f20e556]: Pinterest
+      - navigation
+    - contentinfo [ref=f20e560]:
+      - heading "바닥글 링크" [level=1] [ref=f20e561]
+      - generic [ref=f20e564]:
+        - generic [ref=f20e565]: 검색 결과가 맞춤설정되지 않았습니다.
+        - generic [ref=f20e570]:
+          - text: 대한민국
+          - generic [ref=f20e572]:
+            - button "월평동 대전광역시 서구 - IP 주소 기반" [ref=f20e574] [cursor=pointer]:
+              - generic [ref=f20e575]: 월평동 대전광역시 서구
+              - generic [ref=f20e577]:
+                - text: "-"
+                - generic [ref=f20e578]: IP 주소 기반
+            - text: "-"
+            - button "위치 업데이트" [ref=f20e580] [cursor=pointer]
+        - generic [ref=f20e583]:
+          - link "도움말" [ref=f20e584] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=ko&fg=1
+          - link "의견 보내기" [ref=f20e585] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=f20e586] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=ko&fg=1
+          - link "약관" [ref=f20e587] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=ko&fg=1

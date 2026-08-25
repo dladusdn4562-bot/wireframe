@@ -1,0 +1,338 @@
+- generic [active] [ref=f51e1]:
+  - generic:
+    - generic:
+      - link "주요 콘텐츠로 이동" [ref=f51e2] [cursor=pointer]
+      - link "접근성 도움말" [ref=f51e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ko
+  - generic [ref=f51e8]:
+    - search [ref=f51e9]:
+      - generic [ref=f51e11]:
+        - link "Google 홈페이지로 이동" [ref=f51e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQPAgI
+        - generic [ref=f51e21]:
+          - generic [ref=f51e22]:
+            - combobox "검색" [ref=f51e25]: site:pinterest.com/pin/ "minimalist" letter s organic curve logo symbol black white site:pinterest.com/pin/ "minimalist" letter s organic curve logo symbol black white
+            - generic [ref=f51e26]:
+              - button "지우기" [ref=f51e28] [cursor=pointer]
+              - generic [ref=f51e33]:
+                - button "입력 도구" [ref=f51e34] [cursor=pointer]
+                - button "음성 검색" [ref=f51e38] [cursor=pointer]
+                - button "이미지로 검색" [ref=f51e41] [cursor=pointer]
+          - button "검색" [ref=f51e44] [cursor=pointer]
+    - generic [ref=f51e49]:
+      - button "공유" [ref=f51e50] [cursor=pointer]
+      - generic [ref=f51e56]:
+        - button "Google 앱" [ref=f51e58] [cursor=pointer]
+        - 'button "Google 계정: 임연우 (dladusdn4562@gmail.com)" [ref=f51e63] [cursor=pointer]'
+  - generic [ref=f51e72]:
+    - navigation [ref=f51e78]:
+      - generic [ref=f51e84]:
+        - list [ref=f51e85]:
+          - listitem [ref=f51e86]:
+            - link "AI 모드" [ref=f51e89] [cursor=pointer]:
+              - /url: /search?q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&udm=50&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPpSs1EXRrKCiKydXz2VHg4BZ43F9-MfAqyB18ZvchEiEA2_q_O9bSJyISG5IdrJU6cdES6lLC2aGnoaRVRxqPkvYvl1TBL7cuXeIdYuACjlrdhZQY--K-WTmz9sefNM1mZCEHIRQCyzCyVXFjaaNP3haRMJag&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQ2J8OegQIERAD
+          - listitem [ref=f51e93]:
+            - link "전체" [disabled] [ref=f51e94]
+          - listitem [ref=f51e97]:
+            - link "이미지" [ref=f51e98] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&udm=2&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPpSs1EXRrKCiKydXz2VHg4BZ43F9-MfAqyB18ZvchEiEA2_q_O9bSJyISG5IdrJU6cdES6lLC2aGnoaRVRxqPkvYvl1TBL7cuXeIdYuACjlrdhZQY--K-WTmz9sefNM1mZCEHIRQCyzCyVXFjaaNP3haRMJag&q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&sa=X&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQtKgLegQIFxAB
+          - listitem [ref=f51e101]:
+            - link "쇼핑" [ref=f51e102] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&udm=28&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPpSs1EXRrKCiKydXz2VHg4BZ43F9-MfAqyB18ZvchEiEA2_q_O9bSJyISG5IdrJU6cdES6lLC2aGnoaRVRxqPkvYvl1TBL7cuXeIdYuACjlrdhZQY--K-WTmz9sefNM1mZCEHIRQCyzCyVXFjaaNP3haRMJag&q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&ved=1t:220175&ictx=111
+          - listitem [ref=f51e105]:
+            - link "동영상" [ref=f51e106] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&udm=7&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPpSs1EXRrKCiKydXz2VHg4BZ43F9-MfAqyB18ZvchEiEA2_q_O9bSJyISG5IdrJU6cdES6lLC2aGnoaRVRxqPkvYvl1TBL7cuXeIdYuACjlrdhZQY--K-WTmz9sefNM1mZCEHIRQCyzCyVXFjaaNP3haRMJag&q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&sa=X&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQtKgLegQIFhAB
+          - listitem [ref=f51e109]:
+            - link "짧은 동영상" [ref=f51e110] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&udm=39&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPpSs1EXRrKCiKydXz2VHg4BZ43F9-MfAqyB18ZvchEiEA2_q_O9bSJyISG5IdrJU6cdES6lLC2aGnoaRVRxqPkvYvl1TBL7cuXeIdYuACjlrdhZQY--K-WTmz9sefNM1mZCEHIRQCyzCyVXFjaaNP3haRMJag&q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&sa=X&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQs6gLegQIFBAB
+          - listitem [ref=f51e113]:
+            - link "뉴스" [ref=f51e114] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&tbm=nws&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPpSs1EXRrKCiKydXz2VHg4BZ43F9-MfAqyB18ZvchEiEA2_q_O9bSJyISG5IdrJU6cdES6lLC2aGnoaRVRxqPkvYvl1TBL7cuXeIdYuACjlrdhZQY--K-WTmz9sefNM1mZCEHIRQCyzCyVXFjaaNP3haRMJag&sa=X&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQ0pQJegQIExAB
+          - listitem [ref=f51e117]:
+            - button [ref=f51e118] [cursor=pointer]:
+              - generic "필터 더보기" [ref=f51e119]: 더보기
+        - button "도구" [ref=f51e126] [cursor=pointer]
+    - heading "검색결과" [level=1] [ref=f51e133]
+    - main [ref=f51e139]:
+      - generic [ref=f51e143]:
+        - generic [ref=f51e147]:
+          - heading "이미지" [level=2] [ref=f51e151]
+          - generic [ref=f51e155]:
+            - generic [ref=f51e159] [cursor=pointer]:
+              - link "Bespoke Pattern & Branding for The Nest | Mindfully Made Pinterest" [ref=f51e160]:
+                - /url: https://mx.pinterest.com/pin/bespoke-pattern-branding-for-the-nest--309129961949457039/
+              - button [ref=f51e162]:
+                - img "Bespoke Pattern & Branding for The Nest | Mindfully Made" [ref=f51e164]
+              - generic [ref=f51e166]:
+                - generic [ref=f51e167]: Bespoke Pattern & Branding for The Nest | Mindfully Made
+                - generic [ref=f51e169]:
+                  - generic [ref=f51e170]: Pinterest
+                  - button "검색결과에 관한 정보" [ref=f51e181]
+            - generic [ref=f51e189] [cursor=pointer]:
+              - link "👉 Schweigert logo - Germany | S logo design, Single letter ... Pinterest" [ref=f51e190]:
+                - /url: https://mx.pinterest.com/pin/585679126594195540/
+              - button [ref=f51e192]:
+                - img "👉 Schweigert logo - Germany | S logo design, Single letter ..." [ref=f51e194]
+              - generic [ref=f51e196]:
+                - generic [ref=f51e197]: 👉 Schweigert logo - Germany | S logo design, Single letter ...
+                - generic [ref=f51e199]:
+                  - generic [ref=f51e200]: Pinterest
+                  - button "검색결과에 관한 정보" [ref=f51e211]
+            - generic [ref=f51e219] [cursor=pointer]:
+              - link "Minimal and Luxury Brandmark Design for Gilda Skincare Pinterest" [ref=f51e220]:
+                - /url: https://in.pinterest.com/pin/403142604166730325/
+              - button [ref=f51e222]:
+                - img "Minimal and Luxury Brandmark Design for Gilda Skincare" [ref=f51e224]
+              - generic [ref=f51e226]:
+                - generic [ref=f51e227]: Minimal and Luxury Brandmark Design for Gilda Skincare
+                - generic [ref=f51e229]:
+                  - generic [ref=f51e230]: Pinterest
+                  - button "검색결과에 관한 정보" [ref=f51e241]
+            - generic [ref=f51e249] [cursor=pointer]:
+              - link "Wibles Pinterest" [ref=f51e250]:
+                - /url: https://nz.pinterest.com/pin/134474738871636557/
+              - button [ref=f51e252]:
+                - img "Wibles" [ref=f51e254]
+              - generic [ref=f51e256]:
+                - generic [ref=f51e257]: Wibles
+                - generic [ref=f51e259]:
+                  - generic [ref=f51e260]: Pinterest
+                  - button "검색결과에 관한 정보" [ref=f51e271]
+            - generic [ref=f51e279] [cursor=pointer]:
+              - link "Black White Letter B Continuous Line Organic Logo Example Browze Pinterest" [ref=f51e280]:
+                - /url: https://mx.pinterest.com/pin/1026398571331967495/
+              - button [ref=f51e282]:
+                - img "Black White Letter B Continuous Line Organic Logo Example Browze" [ref=f51e284]
+              - generic [ref=f51e286]:
+                - generic [ref=f51e287]: Black White Letter B Continuous Line Organic Logo Example Browze
+                - generic [ref=f51e289]:
+                  - generic [ref=f51e290]: Pinterest
+                  - button "검색결과에 관한 정보" [ref=f51e301]
+            - generic [ref=f51e309] [cursor=pointer]:
+              - link "Negativer Raum-Logo-Buchstabe S Pinterest" [ref=f51e310]:
+                - /url: https://in.pinterest.com/pin/negativer-raumlogobuchstabe-s--162622236539613492/
+              - button [ref=f51e312]:
+                - img "Negativer Raum-Logo-Buchstabe S" [ref=f51e314]
+              - generic [ref=f51e316]:
+                - generic [ref=f51e317]: Negativer Raum-Logo-Buchstabe S
+                - generic [ref=f51e319]:
+                  - generic [ref=f51e320]: Pinterest
+                  - button "검색결과에 관한 정보" [ref=f51e331]
+          - button "이미지 더보기" [ref=f51e337] [cursor=pointer]:
+            - separator [ref=f51e338]
+        - generic [ref=f51e346]:
+          - heading "Web results" [level=2] [ref=f51e347]
+          - generic [ref=f51e348]:
+            - generic [ref=f51e351]:
+              - link "Negativer Raum-Logo-Buchstabe S Pinterest · logokucom 2년 전" [ref=f51e353] [cursor=pointer]:
+                - /url: https://in.pinterest.com/pin/negativer-raumlogobuchstabe-s--162622236539613492/
+                - heading "Negativer Raum-Logo-Buchstabe S" [level=3] [ref=f51e354]
+                - generic [ref=f51e360]:
+                  - generic [ref=f51e361]: Pinterest · logokucom
+                  - generic [ref=f51e363]: 2년 전
+              - button "검색결과에 관한 정보" [ref=f51e369] [cursor=pointer]
+            - generic [ref=f51e376]:
+              - emphasis [ref=f51e377]: Letter S Logo
+              - text: /
+              - emphasis [ref=f51e378]: Black Logo
+              - text: /
+              - emphasis [ref=f51e379]: Minimalist Logo
+              - text: / Retail
+              - emphasis [ref=f51e380]: Logo
+              - text: / Schweigert...
+            - link [ref=f51e383] [cursor=pointer]:
+              - /url: https://in.pinterest.com/pin/negativer-raumlogobuchstabe-s--162622236539613492/
+        - generic [ref=f51e389]:
+          - generic [ref=f51e392]:
+            - link "Schweigert logo - Germany Pinterest https://kr.pinterest.com › pin" [ref=f51e394] [cursor=pointer]:
+              - /url: https://kr.pinterest.com/pin/420382946491371390/
+              - heading "Schweigert logo - Germany" [level=3] [ref=f51e395]
+              - generic [ref=f51e401]:
+                - generic [ref=f51e402]: Pinterest
+                - generic [ref=f51e404]: https://kr.pinterest.com › pin
+            - button "검색결과에 관한 정보" [ref=f51e410] [cursor=pointer]
+          - generic [ref=f51e417]:
+            - text: The
+            - emphasis [ref=f51e418]: white
+            - text: figure includes a smaller square cut out at its bottom right corner, creating a modern and
+            - emphasis [ref=f51e419]: minimalist
+            - text: appeal. The contrast between the
+            - emphasis [ref=f51e420]: white
+            - text: shape and ...
+        - generic [ref=f51e424]:
+          - generic [ref=f51e427]:
+            - link "👉 Schweigert logo - Germany | S logo design, Single letter ... Pinterest https://dk.pinterest.com › pin" [ref=f51e429] [cursor=pointer]:
+              - /url: https://dk.pinterest.com/pin/817121926204714609/
+              - heading "👉 Schweigert logo - Germany | S logo design, Single letter ..." [level=3] [ref=f51e430]
+              - generic [ref=f51e436]:
+                - generic [ref=f51e437]: Pinterest
+                - generic [ref=f51e439]: https://dk.pinterest.com › pin
+            - button "검색결과에 관한 정보" [ref=f51e445] [cursor=pointer]
+          - generic [ref=f51e452]:
+            - text: The
+            - emphasis [ref=f51e453]: white
+            - text: figure includes a smaller square cut out at its bottom right corner, creating a modern and
+            - emphasis [ref=f51e454]: minimalist
+            - text: appeal. The contrast between the
+            - emphasis [ref=f51e455]: white
+            - text: shape and ...
+        - generic [ref=f51e459]:
+          - generic [ref=f51e462]:
+            - link "Logo Espace Négatif Lettre S Pinterest · logokucom 2년 전" [ref=f51e464] [cursor=pointer]:
+              - /url: https://fr.pinterest.com/pin/162622236539641501/
+              - heading "Logo Espace Négatif Lettre S" [level=3] [ref=f51e465]
+              - generic [ref=f51e471]:
+                - generic [ref=f51e472]: Pinterest · logokucom
+                - generic [ref=f51e474]: 2년 전
+            - button "검색결과에 관한 정보" [ref=f51e480] [cursor=pointer]
+          - generic [ref=f51e487]:
+            - emphasis [ref=f51e488]: Letter S Logo
+            - text: /
+            - emphasis [ref=f51e489]: Black Logo
+            - text: /
+            - emphasis [ref=f51e490]: Minimalist Logo
+            - text: / Retail
+            - emphasis [ref=f51e491]: Logo
+            - text: / Schweigert...
+        - generic [ref=f51e495]:
+          - generic [ref=f51e498]:
+            - link "👉 Schweigert logo - Germany | S logo design, Single letter ... Pinterest · marckmarcellus 1년 전" [ref=f51e500] [cursor=pointer]:
+              - /url: https://mx.pinterest.com/pin/585679126594195540/
+              - heading "👉 Schweigert logo - Germany | S logo design, Single letter ..." [level=3] [ref=f51e501]
+              - generic [ref=f51e507]:
+                - generic [ref=f51e508]: Pinterest · marckmarcellus
+                - generic [ref=f51e510]: 1년 전
+            - button "검색결과에 관한 정보" [ref=f51e516] [cursor=pointer]
+          - generic [ref=f51e523]:
+            - text: The
+            - emphasis [ref=f51e524]: white
+            - text: figure includes a smaller square cut out at its bottom right corner, creating a modern and
+            - emphasis [ref=f51e525]: minimalist
+            - text: appeal. The contrast between the ...
+        - generic [ref=f51e529]:
+          - generic [ref=f51e532]:
+            - link "Letter B Logo / White Logo / Organic Logo / Browze... Pinterest https://www.pinterest.com › pin › letter-b-logo--17592..." [ref=f51e534] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/letter-b-logo--1759287347975098/
+              - heading "Letter B Logo / White Logo / Organic Logo / Browze..." [level=3] [ref=f51e535]
+              - generic [ref=f51e541]:
+                - generic [ref=f51e542]: Pinterest
+                - generic [ref=f51e544]: https://www.pinterest.com › pin › letter-b-logo--17592...
+            - button "검색결과에 관한 정보" [ref=f51e550] [cursor=pointer]
+          - generic [ref=f51e557]:
+            - text: Presented in monochrome, the
+            - emphasis [ref=f51e558]: black
+            - text: against
+            - emphasis [ref=f51e559]: white
+            - text: creates a timeless and classic feel. Its
+            - emphasis [ref=f51e560]: minimalist
+            - text: aesthetic draws attention to the beauty of the line's
+            - emphasis [ref=f51e561]: curve
+            - text: ...
+        - generic [ref=f51e565]:
+          - generic [ref=f51e568]:
+            - link "Wibles Pinterest · june40536 5개월 전" [ref=f51e570] [cursor=pointer]:
+              - /url: https://nz.pinterest.com/pin/134474738871636557/
+              - heading "Wibles" [level=3] [ref=f51e571]
+              - generic [ref=f51e577]:
+                - generic [ref=f51e578]: Pinterest · june40536
+                - generic [ref=f51e580]: 5개월 전
+            - button "검색결과에 관한 정보" [ref=f51e586] [cursor=pointer]
+          - generic [ref=f51e593]:
+            - text: Wibles ; Modern and
+            - emphasis [ref=f51e594]: Minimalist
+            - text: Business
+            - emphasis [ref=f51e595]: Logo
+            - text: Design | Abstract technology
+            - emphasis [ref=f51e596]: symbol
+            - text: ", Chinese circle design, Abstract · 57. Saves · graphic design."
+          - link [ref=f51e599] [cursor=pointer]:
+            - /url: https://nz.pinterest.com/pin/134474738871636557/
+        - generic [ref=f51e605]:
+          - generic [ref=f51e608]:
+            - link "Black White Letter B Continuous Line Organic Logo ... Pinterest · amauricio1415 1년 전" [ref=f51e610] [cursor=pointer]:
+              - /url: https://mx.pinterest.com/pin/1026398571331967495/
+              - heading "Black White Letter B Continuous Line Organic Logo ..." [level=3] [ref=f51e611]
+              - generic [ref=f51e617]:
+                - generic [ref=f51e618]: Pinterest · amauricio1415
+                - generic [ref=f51e620]: 1년 전
+            - button "검색결과에 관한 정보" [ref=f51e626] [cursor=pointer]
+          - generic [ref=f51e633]:
+            - text: Its
+            - emphasis [ref=f51e634]: minimalist
+            - text: aesthetic draws attention to the beauty of the line's
+            - emphasis [ref=f51e635]: curve
+            - text: and the use of negative space. The design's seamless flow may ...
+          - link [ref=f51e638] [cursor=pointer]:
+            - /url: https://mx.pinterest.com/pin/1026398571331967495/
+        - generic [ref=f51e644]:
+          - generic [ref=f51e647]:
+            - link "Minimal and Luxury Brandmark Design for Gilda Skincare Pinterest · chibitun27 1년 전" [ref=f51e649] [cursor=pointer]:
+              - /url: https://in.pinterest.com/pin/403142604166730325/
+              - heading "Minimal and Luxury Brandmark Design for Gilda Skincare" [level=3] [ref=f51e650]
+              - generic [ref=f51e656]:
+                - generic [ref=f51e657]: Pinterest · chibitun27
+                - generic [ref=f51e659]: 1년 전
+            - button "검색결과에 관한 정보" [ref=f51e665] [cursor=pointer]
+          - generic [ref=f51e672]:
+            - text: Elegant
+            - emphasis [ref=f51e673]: Letter S
+            - text: Design ·
+            - emphasis [ref=f51e674]: Minimalist
+            - text: S
+            - emphasis [ref=f51e675]: Logo
+            - text: Design · S Calligraphy · S Beauty
+            - emphasis [ref=f51e676]: Logo
+            - text: Design · Luxury Scent Brand
+            - emphasis [ref=f51e677]: Logo
+            - text: · Soul
+            - emphasis [ref=f51e678]: Logo
+            - text: ·
+            - emphasis [ref=f51e679]: Minimalist
+            - text: ...
+          - link [ref=f51e682] [cursor=pointer]:
+            - /url: https://in.pinterest.com/pin/403142604166730325/
+      - navigation [ref=f51e687]:
+        - heading "페이지 탐색" [level=1] [ref=f51e688]
+        - text: "1"
+        - link "Page 2" [ref=f51e691] [cursor=pointer]:
+          - /url: /search?q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&ei=9GKNas39GOqTvr0P27mboAc&start=10&sa=N&sstk=AS6-VmLbNz4-LB4EEYLfdJNP2i2EsYuIS_wfPK6EaggvvjTPRUASvgVm0tipL4b6IlwqsjBNCncBQcm-kCTdQgHwm8c_l1e2DE8Xww&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQ8tMDegQIKRAE
+          - text: "2"
+        - link "Page 3" [ref=f51e693] [cursor=pointer]:
+          - /url: /search?q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&ei=9GKNas39GOqTvr0P27mboAc&start=20&sa=N&sstk=AS6-VmLbNz4-LB4EEYLfdJNP2i2EsYuIS_wfPK6EaggvvjTPRUASvgVm0tipL4b6IlwqsjBNCncBQcm-kCTdQgHwm8c_l1e2DE8Xww&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQ8tMDegQIKRAG
+          - text: "3"
+        - link "Page 4" [ref=f51e695] [cursor=pointer]:
+          - /url: /search?q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&ei=9GKNas39GOqTvr0P27mboAc&start=30&sa=N&sstk=AS6-VmLbNz4-LB4EEYLfdJNP2i2EsYuIS_wfPK6EaggvvjTPRUASvgVm0tipL4b6IlwqsjBNCncBQcm-kCTdQgHwm8c_l1e2DE8Xww&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQ8tMDegQIKRAI
+          - text: "4"
+        - link "Page 5" [ref=f51e697] [cursor=pointer]:
+          - /url: /search?q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&ei=9GKNas39GOqTvr0P27mboAc&start=40&sa=N&sstk=AS6-VmLbNz4-LB4EEYLfdJNP2i2EsYuIS_wfPK6EaggvvjTPRUASvgVm0tipL4b6IlwqsjBNCncBQcm-kCTdQgHwm8c_l1e2DE8Xww&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQ8tMDegQIKRAK
+          - text: "5"
+        - link "Page 6" [ref=f51e699] [cursor=pointer]:
+          - /url: /search?q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&ei=9GKNas39GOqTvr0P27mboAc&start=50&sa=N&sstk=AS6-VmLbNz4-LB4EEYLfdJNP2i2EsYuIS_wfPK6EaggvvjTPRUASvgVm0tipL4b6IlwqsjBNCncBQcm-kCTdQgHwm8c_l1e2DE8Xww&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQ8tMDegQIKRAM
+          - text: "6"
+        - heading [level=2] [ref=f51e701]:
+          - link "다음" [ref=f51e702] [cursor=pointer]:
+            - /url: /search?q=site:pinterest.com/pin/+%22minimalist%22+letter+s+organic+curve+logo+symbol+black+white&sca_esv=4e934c2bfe585944&sxsrf=APpeQntk5g04J3DtexymM0OwTwY4OR3jhg:1787650804422&ei=9GKNas39GOqTvr0P27mboAc&start=10&sa=N&sstk=AS6-VmLbNz4-LB4EEYLfdJNP2i2EsYuIS_wfPK6EaggvvjTPRUASvgVm0tipL4b6IlwqsjBNCncBQcm-kCTdQgHwm8c_l1e2DE8Xww&ved=2ahUKEwjNx7eZvruWAxXqia8BHdvcBnQQ8NMDegQIKRAO
+      - navigation
+    - contentinfo [ref=f51e705]:
+      - heading "바닥글 링크" [level=1] [ref=f51e706]
+      - generic [ref=f51e710]:
+        - generic [ref=f51e711]: 검색 결과가 맞춤설정되지 않았습니다.
+        - generic [ref=f51e716]:
+          - text: 대한민국
+          - generic [ref=f51e718]:
+            - button "월평동 대전광역시 서구 - IP 주소 기반" [ref=f51e720] [cursor=pointer]:
+              - generic [ref=f51e721]: 월평동 대전광역시 서구
+              - generic [ref=f51e723]:
+                - text: "-"
+                - generic [ref=f51e724]: IP 주소 기반
+            - text: "-"
+            - button "위치 업데이트" [ref=f51e726] [cursor=pointer]
+        - generic [ref=f51e729]:
+          - link "도움말" [ref=f51e730] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=ko&fg=1
+          - link "의견 보내기" [ref=f51e731] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=f51e732] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=ko&fg=1
+          - link "약관" [ref=f51e733] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=ko&fg=1

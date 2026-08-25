@@ -1,0 +1,235 @@
+- generic [active] [ref=f58e1]:
+  - generic:
+    - generic:
+      - link "주요 콘텐츠로 이동" [ref=f58e2] [cursor=pointer]
+      - link "연속 스크롤 사용 중지" [ref=f58e3] [cursor=pointer]:
+        - /url: "#"
+      - link "접근성 도움말" [ref=f58e4] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ko
+  - generic [ref=f58e9]:
+    - search [ref=f58e10]:
+      - generic [ref=f58e12]:
+        - link "Google 홈페이지로 이동" [ref=f58e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwjS_ePBvruWAxVUkuEIHVZnMNYQPAgJ
+        - generic [ref=f58e22]:
+          - generic [ref=f58e23]:
+            - combobox "검색" [ref=f58e26]: site:pinterest.com/pin/ minimalist organic s curve logo symbol black white site:pinterest.com/pin/ minimalist organic s curve logo symbol black white
+            - generic [ref=f58e27]:
+              - button "지우기" [ref=f58e29] [cursor=pointer]
+              - generic [ref=f58e34]:
+                - button "입력 도구" [ref=f58e35] [cursor=pointer]
+                - button "음성 검색" [ref=f58e39] [cursor=pointer]
+                - button "이미지로 검색" [ref=f58e42] [cursor=pointer]
+          - button "검색" [ref=f58e45] [cursor=pointer]
+    - generic [ref=f58e51]:
+      - button "Google 앱" [ref=f58e53] [cursor=pointer]
+      - 'button "Google 계정: 임연우 (dladusdn4562@gmail.com)" [ref=f58e58] [cursor=pointer]'
+  - generic [ref=f58e67]:
+    - generic [ref=f58e70]:
+      - navigation [ref=f58e73]:
+        - generic [ref=f58e74]:
+          - list [ref=f58e75]:
+            - listitem [ref=f58e76]:
+              - link "AI 모드" [ref=f58e79] [cursor=pointer]:
+                - /url: /search?q=site:pinterest.com/pin/+minimalist+organic+s+curve+logo+symbol+black+white&sca_esv=4e934c2bfe585944&sxsrf=APpeQnv1-XQ3aag-X3WWdGEyRbh2PGnNhw:1787650889030&udm=50&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwjS_ePBvruWAxVUkuEIHVZnMNYQ2J8OegQIChAD
+            - listitem [ref=f58e83]:
+              - link "전체" [ref=f58e84] [cursor=pointer]:
+                - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnv1-XQ3aag-X3WWdGEyRbh2PGnNhw:1787650889030&q=site:pinterest.com/pin/+minimalist+organic+s+curve+logo+symbol+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&sa=X&ved=2ahUKEwjS_ePBvruWAxVUkuEIHVZnMNYQ0pQJegQIDBAB
+            - listitem [ref=f58e87]:
+              - link "이미지" [disabled] [ref=f58e88]
+            - listitem [ref=f58e91]:
+              - link "쇼핑" [ref=f58e92] [cursor=pointer]:
+                - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnv1-XQ3aag-X3WWdGEyRbh2PGnNhw:1787650889030&udm=28&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=site:pinterest.com/pin/+minimalist+organic+s+curve+logo+symbol+black+white&ved=1t:220175&ictx=111
+            - listitem [ref=f58e95]:
+              - link "짧은 동영상" [ref=f58e96] [cursor=pointer]:
+                - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnv1-XQ3aag-X3WWdGEyRbh2PGnNhw:1787650889030&udm=39&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=site:pinterest.com/pin/+minimalist+organic+s+curve+logo+symbol+black+white&sa=X&ved=2ahUKEwjS_ePBvruWAxVUkuEIHVZnMNYQs6gLegQIDRAB
+            - listitem [ref=f58e99]:
+              - link "웹" [ref=f58e100] [cursor=pointer]:
+                - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnv1-XQ3aag-X3WWdGEyRbh2PGnNhw:1787650889030&udm=web&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=site:pinterest.com/pin/+minimalist+organic+s+curve+logo+symbol+black+white&sa=X&ved=2ahUKEwjS_ePBvruWAxVUkuEIHVZnMNYQs6gLegQIDxAB
+            - listitem [ref=f58e103]:
+              - link "금융" [ref=f58e104] [cursor=pointer]:
+                - /url: /finance?sca_esv=4e934c2bfe585944&output=search&q=site:pinterest.com/pin/+minimalist+organic+s+curve+logo+symbol+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&sa=X&ved=2ahUKEwjS_ePBvruWAxVUkuEIHVZnMNYQ0pQJegQICxAB
+            - listitem [ref=f58e107]:
+              - button [ref=f58e108] [cursor=pointer]:
+                - generic "필터 더보기" [ref=f58e109]: 더보기
+          - button "도구" [ref=f58e116] [cursor=pointer]
+      - link [ref=f58e124] [cursor=pointer]:
+        - /url: /save?sa=X&ved=2ahUKEwjS_ePBvruWAxVUkuEIHVZnMNYQ7XV6BAgFEAA
+    - heading "검색결과" [level=1] [ref=f58e128]
+    - main [ref=f58e130]:
+      - generic [ref=f58e139]:
+        - generic [ref=f58e143] [cursor=pointer]:
+          - button [ref=f58e148]:
+            - img "Логотип в черно-белых тонах с буквой s в центре | Ona symbol, Curve line logo," [ref=f58e150]
+          - link "Логотип в черно-белых тонах с буквой s в центре | Ona symbol, Curve line logo, Pinterest" [ref=f58e152]:
+            - /url: https://www.pinterest.com/pin/s--4785143351009399/
+            - generic [ref=f58e153]:
+              - generic [ref=f58e154]: Логотип в черно-белых тонах с буквой s в центре | Ona symbol, Curve line logo,
+              - generic [ref=f58e156]: Pinterest
+        - generic [ref=f58e163] [cursor=pointer]:
+          - button [ref=f58e168]:
+            - img "Hand drawn curved line shape | Curved line icon | Blue texture background, Profile drawing, Curved" [ref=f58e170]
+          - link "Hand drawn curved line shape | Curved line icon | Blue texture background, Profile drawing, Curved Pinterest" [ref=f58e172]:
+            - /url: https://in.pinterest.com/pin/hand-drawn-curved-line-shape--179862578865092921/
+            - generic [ref=f58e173]:
+              - generic [ref=f58e174]: Hand drawn curved line shape | Curved line icon | Blue texture background, Profile drawing, Curved
+              - generic [ref=f58e176]: Pinterest
+        - generic [ref=f58e183] [cursor=pointer]:
+          - button [ref=f58e188]:
+            - img "👉 Schweigert logo - Germany | S logo design, Single letter logo, S letter logo" [ref=f58e190]
+          - link "👉 Schweigert logo - Germany | S logo design, Single letter logo, S letter logo Pinterest" [ref=f58e192]:
+            - /url: https://mx.pinterest.com/pin/585679126594195540/
+            - generic [ref=f58e193]:
+              - generic [ref=f58e194]: 👉 Schweigert logo - Germany | S logo design, Single letter logo, S letter logo
+              - generic [ref=f58e196]: Pinterest
+        - generic [ref=f58e203] [cursor=pointer]:
+          - button [ref=f58e208]:
+            - img "Download Vector vintage vertical line calligraphy divider and separator, swirl and corner decorative ornament. Floral li… | Minimalist decorative swirl, Line separator design, Elegant lines png" [ref=f58e210]
+          - link "Download Vector vintage vertical line calligraphy divider and separator, swirl and corner decorative ornament. Floral li… | Minimalist decorative swirl, Line separator design, Elegant lines png Pinterest" [ref=f58e212]:
+            - /url: https://www.pinterest.com/pin/596445544449113841/
+            - generic [ref=f58e213]:
+              - generic [ref=f58e214]: Download Vector vintage vertical line calligraphy divider and separator, swirl and corner decorative ornament. Floral li… | Minimalist decorative swirl, Line separator design, Elegant lines png
+              - generic [ref=f58e216]: Pinterest
+        - generic [ref=f58e223] [cursor=pointer]:
+          - button [ref=f58e228]:
+            - img "Wibles" [ref=f58e230]
+          - link "Wibles Pinterest" [ref=f58e232]:
+            - /url: https://nz.pinterest.com/pin/134474738871636557/
+            - generic [ref=f58e233]:
+              - generic [ref=f58e234]: Wibles
+              - generic [ref=f58e236]: Pinterest
+        - generic [ref=f58e243] [cursor=pointer]:
+          - button [ref=f58e248]:
+            - img "Curved diagrama vectorial Gratis PNG y Vector | Curvas png, Diseño de frontera, Linea curva" [ref=f58e250]
+          - link "Curved diagrama vectorial Gratis PNG y Vector | Curvas png, Diseño de frontera, Linea curva Pinterest" [ref=f58e252]:
+            - /url: https://es.pinterest.com/pin/curved-diagrama-vectorial--225180050105319912/
+            - generic [ref=f58e253]:
+              - generic [ref=f58e254]: Curved diagrama vectorial Gratis PNG y Vector | Curvas png, Diseño de frontera, Linea curva
+              - generic [ref=f58e256]: Pinterest
+        - generic [ref=f58e263] [cursor=pointer]:
+          - button [ref=f58e268]:
+            - img "Negativer Raum-Logo-Buchstabe S" [ref=f58e270]
+          - link "Negativer Raum-Logo-Buchstabe S Pinterest" [ref=f58e272]:
+            - /url: https://in.pinterest.com/pin/negativer-raumlogobuchstabe-s--162622236539613492/
+            - generic [ref=f58e273]:
+              - generic [ref=f58e274]: Negativer Raum-Logo-Buchstabe S
+              - generic [ref=f58e276]: Pinterest
+        - generic [ref=f58e283] [cursor=pointer]:
+          - button [ref=f58e288]:
+            - img "Free PNG Decorative Line PNG - Three Lines | Tripund png, Under line design png, Decorative lines" [ref=f58e290]
+          - link "Free PNG Decorative Line PNG - Three Lines | Tripund png, Under line design png, Decorative lines Pinterest" [ref=f58e292]:
+            - /url: https://in.pinterest.com/pin/free-png-decorative-line-png-three-lines--184155072258448162/
+            - generic [ref=f58e293]:
+              - generic [ref=f58e294]: Free PNG Decorative Line PNG - Three Lines | Tripund png, Under line design png, Decorative lines
+              - generic [ref=f58e296]: Pinterest
+        - generic [ref=f58e303] [cursor=pointer]:
+          - button [ref=f58e308]:
+            - img "clean modern elegant monogram fashion store label card branding design" [ref=f58e310]
+          - link "clean modern elegant monogram fashion store label card branding design Pinterest" [ref=f58e312]:
+            - /url: https://in.pinterest.com/pin/345580971423572635/
+            - generic [ref=f58e313]:
+              - generic [ref=f58e314]: clean modern elegant monogram fashion store label card branding design
+              - generic [ref=f58e316]: Pinterest
+        - generic [ref=f58e323] [cursor=pointer]:
+          - button [ref=f58e328]:
+            - img "what is difference between icon ,index , sign and symbol - Google Search" [ref=f58e330]
+          - link "what is difference between icon ,index , sign and symbol - Google Search Pinterest" [ref=f58e332]:
+            - /url: https://www.pinterest.com/pin/344243965268073224/
+            - generic [ref=f58e333]:
+              - generic [ref=f58e334]: what is difference between icon ,index , sign and symbol - Google Search
+              - generic [ref=f58e336]: Pinterest
+        - generic [ref=f58e343] [cursor=pointer]:
+          - button [ref=f58e348]:
+            - img "CCC-logo.gif | Are.na" [ref=f58e350]
+          - link "CCC-logo.gif | Are.na Pinterest" [ref=f58e352]:
+            - /url: https://www.pinterest.com/pin/circular-object-with-o-letters--332351647499538860/
+            - generic [ref=f58e353]:
+              - generic [ref=f58e354]: CCC-logo.gif | Are.na
+              - generic [ref=f58e356]: Pinterest
+        - generic [ref=f58e363] [cursor=pointer]:
+          - button [ref=f58e368]:
+            - img "what is difference between icon ,index , sign and symbol - Google Search" [ref=f58e370]
+          - link "what is difference between icon ,index , sign and symbol - Google Search Pinterest" [ref=f58e372]:
+            - /url: https://www.pinterest.com/pin/344243965268073224/
+            - generic [ref=f58e373]:
+              - generic [ref=f58e374]: what is difference between icon ,index , sign and symbol - Google Search
+              - generic [ref=f58e376]: Pinterest
+        - generic [ref=f58e383] [cursor=pointer]:
+          - button [ref=f58e388]:
+            - img "Gambar Garis Melengkung, Garis Melengkung, Menggambar Garis, Melengkung PNG dan Vektor dengan Background Transparan untuk Unduh Gratis" [ref=f58e390]
+          - link "Gambar Garis Melengkung, Garis Melengkung, Menggambar Garis, Melengkung PNG dan Vektor dengan Background Transparan untuk Unduh Gratis Pinterest" [ref=f58e392]:
+            - /url: https://id.pinterest.com/pin/1020276490566891152/
+            - generic [ref=f58e393]:
+              - generic [ref=f58e394]: Gambar Garis Melengkung, Garis Melengkung, Menggambar Garis, Melengkung PNG dan Vektor dengan Background Transparan untuk Unduh Gratis
+              - generic [ref=f58e396]: Pinterest
+        - generic [ref=f58e403] [cursor=pointer]:
+          - button [ref=f58e408]:
+            - img "Fancy Shape" [ref=f58e410]
+          - link "Fancy Shape Pinterest" [ref=f58e412]:
+            - /url: https://in.pinterest.com/pin/802133383677341762/
+            - generic [ref=f58e413]:
+              - generic [ref=f58e414]: Fancy Shape
+              - generic [ref=f58e416]: Pinterest
+        - generic [ref=f58e423] [cursor=pointer]:
+          - button [ref=f58e428]:
+            - img "رسم خط منحني على خلفية مربعات باللونين الأبيض والأسود | Curve frame, Curved line svg, Curved line png" [ref=f58e430]
+          - link "رسم خط منحني على خلفية مربعات باللونين الأبيض والأسود | Curve frame, Curved line svg, Curved line png Pinterest" [ref=f58e432]:
+            - /url: https://in.pinterest.com/pin/png--349099408634726168/
+            - generic [ref=f58e433]:
+              - generic [ref=f58e434]: رسم خط منحني على خلفية مربعات باللونين الأبيض والأسود | Curve frame, Curved line svg, Curved line png
+              - generic [ref=f58e436]: Pinterest
+        - generic [ref=f58e443] [cursor=pointer]:
+          - button [ref=f58e448]:
+            - img "Fractal Geometry" [ref=f58e450]
+          - link "Fractal Geometry Pinterest" [ref=f58e452]:
+            - /url: https://www.pinterest.com/pin/576601558577521560/
+            - generic [ref=f58e453]:
+              - generic [ref=f58e454]: Fractal Geometry
+              - generic [ref=f58e456]: Pinterest
+        - generic [ref=f58e463] [cursor=pointer]:
+          - button [ref=f58e468]:
+            - img "Earthy, Organic Brand Identity for Plant-Based Meal Service | Nuance Co." [ref=f58e470]
+          - link "Earthy, Organic Brand Identity for Plant-Based Meal Service | Nuance Co. Pinterest" [ref=f58e472]:
+            - /url: https://www.pinterest.com/pin/18577417209108284/
+            - generic [ref=f58e473]:
+              - generic [ref=f58e474]: Earthy, Organic Brand Identity for Plant-Based Meal Service | Nuance Co.
+              - generic [ref=f58e476]: Pinterest
+        - generic [ref=f58e483] [cursor=pointer]:
+          - button [ref=f58e488]:
+            - img "Download 36 Technological Vector Shapes" [ref=f58e490]
+          - link "Download 36 Technological Vector Shapes Pinterest" [ref=f58e492]:
+            - /url: https://se.pinterest.com/pin/621637554860174898/
+            - generic [ref=f58e493]:
+              - generic [ref=f58e494]: Download 36 Technological Vector Shapes
+              - generic [ref=f58e496]: Pinterest
+        - generic [ref=f58e503] [cursor=pointer]:
+          - button [ref=f58e508]:
+            - img "Download Vector vintage vertical line calligraphy divider and separator, swirl and corner decorative ornament. Floral li… | Minimalist decorative swirl, Line separator design, Elegant lines png" [ref=f58e510]
+          - link "Download Vector vintage vertical line calligraphy divider and separator, swirl and corner decorative ornament. Floral li… | Minimalist decorative swirl, Line separator design, Elegant lines png Pinterest" [ref=f58e512]:
+            - /url: https://www.pinterest.com/pin/596445544449113841/
+            - generic [ref=f58e513]:
+              - generic [ref=f58e514]: Download Vector vintage vertical line calligraphy divider and separator, swirl and corner decorative ornament. Floral li… | Minimalist decorative swirl, Line separator design, Elegant lines png
+              - generic [ref=f58e516]: Pinterest
+        - generic [ref=f58e523] [cursor=pointer]:
+          - button [ref=f58e528]:
+            - img "The planetary symbols for the solar system (Pluto included). | 23 Incredibly Elegant Science Tattoos" [ref=f58e530]
+          - link "The planetary symbols for the solar system (Pluto included). | 23 Incredibly Elegant Science Tattoos Pinterest" [ref=f58e532]:
+            - /url: https://www.pinterest.com/pin/23-incredibly-elegant-science-tattoos--327566572870432770/
+            - generic [ref=f58e533]:
+              - generic [ref=f58e534]: The planetary symbols for the solar system (Pluto included). | 23 Incredibly Elegant Science Tattoos
+              - generic [ref=f58e536]: Pinterest
+        - generic [ref=f58e543] [cursor=pointer]:
+          - button [ref=f58e548]:
+            - img "Velyra - Humanist Sans-Serif" [ref=f58e550]
+          - link "Velyra - Humanist Sans-Serif Pinterest" [ref=f58e552]:
+            - /url: https://in.pinterest.com/pin/801429696216042964/
+            - generic [ref=f58e553]:
+              - generic [ref=f58e554]: Velyra - Humanist Sans-Serif
+              - generic [ref=f58e556]: Pinterest
+      - generic [ref=f58e563]:
+        - heading "Page Navigation" [level=1] [ref=f58e564]
+        - generic [ref=f58e565]:
+          - text: 나머지 검색 결과가 찾고 있는 항목이 아닐 수도 있습니다.
+          - link "검색 결과 더보기" [ref=f58e566] [cursor=pointer]:
+            - /url: "#"
+      - navigation

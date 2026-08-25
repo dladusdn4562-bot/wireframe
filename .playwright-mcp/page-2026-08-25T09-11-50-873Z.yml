@@ -1,0 +1,940 @@
+- generic [active] [ref=f31e1]:
+  - generic:
+    - generic:
+      - link "주요 콘텐츠로 이동" [ref=f31e2] [cursor=pointer]
+      - link "연속 스크롤 사용 중지" [ref=f31e3] [cursor=pointer]:
+        - /url: "#"
+      - link "접근성 도움말" [ref=f31e4] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ko
+  - generic [ref=f31e9]:
+    - search [ref=f31e10]:
+      - generic [ref=f31e12]:
+        - link "Google 홈페이지로 이동" [ref=f31e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwiSxd_ut7uWAxWDjOEIHUlLOu8QPAgJ
+        - generic [ref=f31e22]:
+          - generic [ref=f31e23]:
+            - combobox "검색" [ref=f31e26]: minimalist geometric fluid s logo symbol monochrome black flat vector minimalist geometric fluid s logo symbol monochrome black flat vector
+            - generic [ref=f31e27]:
+              - button "지우기" [ref=f31e29] [cursor=pointer]
+              - generic [ref=f31e34]:
+                - button "입력 도구" [ref=f31e35] [cursor=pointer]
+                - button "음성 검색" [ref=f31e39] [cursor=pointer]
+                - button "이미지로 검색" [ref=f31e42] [cursor=pointer]
+          - button "검색" [ref=f31e45] [cursor=pointer]
+    - generic [ref=f31e51]:
+      - button "Google 앱" [ref=f31e53] [cursor=pointer]
+      - 'button "Google 계정: 임연우 (dladusdn4562@gmail.com)" [ref=f31e58] [cursor=pointer]'
+  - generic [ref=f31e67]:
+    - generic [ref=f31e70]:
+      - navigation [ref=f31e73]:
+        - generic [ref=f31e74]:
+          - list [ref=f31e75]:
+            - listitem [ref=f31e76]:
+              - link "AI 모드" [ref=f31e79] [cursor=pointer]:
+                - /url: /search?q=minimalist+geometric+fluid+s+logo+symbol+monochrome+black+flat+vector&sca_esv=1b85b69310503e88&sxsrf=APpeQns5vKgO3NWiyGpKMGFvZZKEBvh9vg:1787649104281&udm=50&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqgM6VPCE8ex9zBqMuFPIgWQXExT0fPluSi5h9OXGg6lMM3mBAUqrasET4r6L2K5Xe0Sbxa4FUJ0MI4mH8c7Kc49j7fgOQ&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwiSxd_ut7uWAxWDjOEIHUlLOu8Q2J8OegQIChAD
+            - listitem [ref=f31e83]:
+              - link "전체" [ref=f31e84] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQns5vKgO3NWiyGpKMGFvZZKEBvh9vg:1787649104281&q=minimalist+geometric+fluid+s+logo+symbol+monochrome+black+flat+vector&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqgM6VPCE8ex9zBqMuFPIgWQXExT0fPluSi5h9OXGg6lMM3mBAUqrasET4r6L2K5Xe0Sbxa4FUJ0MI4mH8c7Kc49j7fgOQ&sa=X&ved=2ahUKEwiSxd_ut7uWAxWDjOEIHUlLOu8Q0pQJegQIDRAB
+            - listitem [ref=f31e87]:
+              - link "이미지" [disabled] [ref=f31e88]
+            - listitem [ref=f31e91]:
+              - link "쇼핑" [ref=f31e92] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQns5vKgO3NWiyGpKMGFvZZKEBvh9vg:1787649104281&udm=28&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqgM6VPCE8ex9zBqMuFPIgWQXExT0fPluSi5h9OXGg6lMM3mBAUqrasET4r6L2K5Xe0Sbxa4FUJ0MI4mH8c7Kc49j7fgOQ&q=minimalist+geometric+fluid+s+logo+symbol+monochrome+black+flat+vector&ved=1t:220175&ictx=111
+            - listitem [ref=f31e95]:
+              - link "짧은 동영상" [ref=f31e96] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQns5vKgO3NWiyGpKMGFvZZKEBvh9vg:1787649104281&udm=39&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqgM6VPCE8ex9zBqMuFPIgWQXExT0fPluSi5h9OXGg6lMM3mBAUqrasET4r6L2K5Xe0Sbxa4FUJ0MI4mH8c7Kc49j7fgOQ&q=minimalist+geometric+fluid+s+logo+symbol+monochrome+black+flat+vector&sa=X&ved=2ahUKEwiSxd_ut7uWAxWDjOEIHUlLOu8Qs6gLegQIEBAB
+            - listitem [ref=f31e99]:
+              - link "웹" [ref=f31e100] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQns5vKgO3NWiyGpKMGFvZZKEBvh9vg:1787649104281&udm=web&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqgM6VPCE8ex9zBqMuFPIgWQXExT0fPluSi5h9OXGg6lMM3mBAUqrasET4r6L2K5Xe0Sbxa4FUJ0MI4mH8c7Kc49j7fgOQ&q=minimalist+geometric+fluid+s+logo+symbol+monochrome+black+flat+vector&sa=X&ved=2ahUKEwiSxd_ut7uWAxWDjOEIHUlLOu8Qs6gLegQIDBAB
+            - listitem [ref=f31e103]:
+              - link "금융" [ref=f31e104] [cursor=pointer]:
+                - /url: /finance?sca_esv=1b85b69310503e88&output=search&q=minimalist+geometric+fluid+s+logo+symbol+monochrome+black+flat+vector&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqgM6VPCE8ex9zBqMuFPIgWQXExT0fPluSi5h9OXGg6lMM3mBAUqrasET4r6L2K5Xe0Sbxa4FUJ0MI4mH8c7Kc49j7fgOQ&sa=X&ved=2ahUKEwiSxd_ut7uWAxWDjOEIHUlLOu8Q0pQJegQICxAB
+            - listitem [ref=f31e107]:
+              - button [ref=f31e108] [cursor=pointer]:
+                - generic "필터 더보기" [ref=f31e109]: 더보기
+          - button "도구" [ref=f31e116] [cursor=pointer]
+      - link [ref=f31e124] [cursor=pointer]:
+        - /url: /save?sa=X&ved=2ahUKEwiSxd_ut7uWAxWDjOEIHUlLOu8Q7XV6BAgFEAA
+    - heading "검색결과" [level=1] [ref=f31e128]
+    - main [ref=f31e130]:
+      - generic [ref=f31e139]:
+        - generic [ref=f31e143] [cursor=pointer]:
+          - button [ref=f31e148]:
+            - img "Minimalist Geometric S Letter Logo Design Stock Vector (Royalty Free) 2738828021 | Shutterstock" [ref=f31e150]
+          - link "Minimalist Geometric S Letter Logo Design Stock Vector (Royalty Free) 2738828021 | Shutterstock Shutterstock" [ref=f31e152]:
+            - /url: https://www.shutterstock.com/image-vector/minimalist-geometric-s-letter-logo-design-2738828021
+            - generic [ref=f31e153]:
+              - generic [ref=f31e154]: Minimalist Geometric S Letter Logo Design Stock Vector (Royalty Free) 2738828021 | Shutterstock
+              - generic [ref=f31e156]: Shutterstock
+        - generic [ref=f31e163] [cursor=pointer]:
+          - generic [ref=f31e165]:
+            - button [ref=f31e168]:
+              - img "S Letter Symbol Stock Illustrations – 67,128 S Letter Symbol Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f31e170]
+            - generic: 라이선스
+          - link "S Letter Symbol Stock Illustrations – 67,128 S Letter Symbol Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f31e172]:
+            - /url: https://www.dreamstime.com/illustration/s-letter-symbol.html
+            - generic [ref=f31e173]:
+              - generic [ref=f31e174]: S Letter Symbol Stock Illustrations – 67,128 S Letter Symbol Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f31e176]: Dreamstime.com
+        - generic [ref=f31e183] [cursor=pointer]:
+          - generic [ref=f31e185]:
+            - button [ref=f31e188]:
+              - img "Solid black abstract wave or swoosh shape logo. Modern geometric icon of a dynamic water movement. Minimalist curve symbol with layered fluid motion. 71513241 Vector Art at Vecteezy" [ref=f31e190]
+            - generic: 라이선스
+          - link "Solid black abstract wave or swoosh shape logo. Modern geometric icon of a dynamic water movement. Minimalist curve symbol with layered fluid motion. 71513241 Vector Art at Vecteezy Vecteezy" [ref=f31e192]:
+            - /url: https://www.vecteezy.com/vector-art/71513241-solid-black-abstract-wave-or-swoosh-shape-logo-modern-geometric-icon-of-a-dynamic-water-movement-minimalist-curve-symbol-with-layered-fluid-motion
+            - generic [ref=f31e193]:
+              - generic [ref=f31e194]: Solid black abstract wave or swoosh shape logo. Modern geometric icon of a dynamic water movement. Minimalist curve symbol with layered fluid motion. 71513241 Vector Art at Vecteezy
+              - generic [ref=f31e196]: Vecteezy
+        - generic [ref=f31e203] [cursor=pointer]:
+          - generic [ref=f31e205]:
+            - button [ref=f31e208]:
+              - img "Letter's Logo Company Stock Illustrations – 37,691 Letter's Logo Company Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f31e210]
+            - generic: 라이선스
+          - link "Letter's Logo Company Stock Illustrations – 37,691 Letter's Logo Company Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f31e212]:
+            - /url: https://www.dreamstime.com/illustration/letter-s-logo-company.html
+            - generic [ref=f31e213]:
+              - generic [ref=f31e214]: Letter's Logo Company Stock Illustrations – 37,691 Letter's Logo Company Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f31e216]: Dreamstime.com
+        - generic [ref=f31e223] [cursor=pointer]:
+          - button [ref=f31e228]:
+            - img "S Letter Logo Design Template Black Stock Vector (Royalty Free) 2631289625 | Shutterstock" [ref=f31e230]
+          - link "S Letter Logo Design Template Black Stock Vector (Royalty Free) 2631289625 | Shutterstock Shutterstock" [ref=f31e232]:
+            - /url: https://www.shutterstock.com/image-vector/s-letter-logo-design-template-black-2631289625
+            - generic [ref=f31e233]:
+              - generic [ref=f31e234]: S Letter Logo Design Template Black Stock Vector (Royalty Free) 2631289625 | Shutterstock
+              - generic [ref=f31e236]: Shutterstock
+        - generic [ref=f31e243] [cursor=pointer]:
+          - button [ref=f31e248]:
+            - img "Minimalist Futuristic Geometric Letter S Logo Stock Vector (Royalty Free) 2754418195 | Shutterstock" [ref=f31e250]
+          - link "Minimalist Futuristic Geometric Letter S Logo Stock Vector (Royalty Free) 2754418195 | Shutterstock Shutterstock" [ref=f31e252]:
+            - /url: https://www.shutterstock.com/image-vector/minimalist-futuristic-geometric-letter-s-logo-2754418195
+            - generic [ref=f31e253]:
+              - generic [ref=f31e254]: Minimalist Futuristic Geometric Letter S Logo Stock Vector (Royalty Free) 2754418195 | Shutterstock
+              - generic [ref=f31e256]: Shutterstock
+        - generic [ref=f31e263] [cursor=pointer]:
+          - button [ref=f31e268]:
+            - img "S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength," [ref=f31e270]
+          - link "S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength, Instagram" [ref=f31e272]:
+            - /url: https://www.instagram.com/reel/DQZzNJWAD9V/
+            - generic [ref=f31e273]:
+              - generic [ref=f31e274]: S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength,
+              - generic [ref=f31e276]: Instagram
+        - generic [ref=f31e283] [cursor=pointer]:
+          - generic [ref=f31e285]:
+            - button [ref=f31e288]:
+              - img "Logo design abstract template initial letter s element with geometry. Modern and minimalist artistic s symbol. 11015998 Vector Art at Vecteezy" [ref=f31e290]
+            - generic: 라이선스
+          - link "Logo design abstract template initial letter s element with geometry. Modern and minimalist artistic s symbol. 11015998 Vector Art at Vecteezy Vecteezy" [ref=f31e292]:
+            - /url: https://www.vecteezy.com/vector-art/11015998-logo-design-abstract-template-initial-letter-s-element-with-geometry-modern-and-minimalist-artistic-s-symbol
+            - generic [ref=f31e293]:
+              - generic [ref=f31e294]: Logo design abstract template initial letter s element with geometry. Modern and minimalist artistic s symbol. 11015998 Vector Art at Vecteezy
+              - generic [ref=f31e296]: Vecteezy
+        - generic [ref=f31e303] [cursor=pointer]:
+          - button [ref=f31e308]:
+            - img "Circular Geometric S Logo - Exclusive Premade | Brandforma" [ref=f31e310]
+          - link "Circular Geometric S Logo - Exclusive Premade | Brandforma Brandforma" [ref=f31e312]:
+            - /url: https://brandforma.com/work/circular-geometric-s-logo-for-sale
+            - generic [ref=f31e313]:
+              - generic [ref=f31e314]: Circular Geometric S Logo - Exclusive Premade | Brandforma
+              - generic [ref=f31e316]: Brandforma
+        - generic [ref=f31e323] [cursor=pointer]:
+          - button [ref=f31e328]:
+            - img "Geometric S Logos" [ref=f31e330]
+          - link "Geometric S Logos Branition" [ref=f31e332]:
+            - /url: https://branition.com/search/geometric-s-logo
+            - generic [ref=f31e333]:
+              - generic [ref=f31e334]: Geometric S Logos
+              - generic [ref=f31e336]: Branition
+        - generic [ref=f31e343] [cursor=pointer]:
+          - button [ref=f31e348]:
+            - img "S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength," [ref=f31e350]
+          - link "S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength, Instagram" [ref=f31e352]:
+            - /url: https://www.instagram.com/reel/DQZzNJWAD9V/
+            - generic [ref=f31e353]:
+              - generic [ref=f31e354]: S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength,
+              - generic [ref=f31e356]: Instagram
+        - generic [ref=f31e363] [cursor=pointer]:
+          - button [ref=f31e368]:
+            - img "Letter S Data Tech Geometric Logo | Scalebranding" [ref=f31e370]
+          - link "Letter S Data Tech Geometric Logo | Scalebranding Scalebranding" [ref=f31e372]:
+            - /url: https://scalebranding.com/product/411119
+            - generic [ref=f31e373]:
+              - generic [ref=f31e374]: Letter S Data Tech Geometric Logo | Scalebranding
+              - generic [ref=f31e376]: Scalebranding
+        - generic [ref=f31e383] [cursor=pointer]:
+          - generic [ref=f31e385]:
+            - button [ref=f31e388]:
+              - img "Letter's Symbol Stock Illustrations – 67,128 Letter's Symbol Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f31e390]
+            - generic: 라이선스
+          - link "Letter's Symbol Stock Illustrations – 67,128 Letter's Symbol Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f31e392]:
+            - /url: https://www.dreamstime.com/illustration/letter-s-symbol.html
+            - generic [ref=f31e393]:
+              - generic [ref=f31e394]: Letter's Symbol Stock Illustrations – 67,128 Letter's Symbol Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f31e396]: Dreamstime.com
+        - generic [ref=f31e403] [cursor=pointer]:
+          - button [ref=f31e408]:
+            - img "Letter S Logo Mockup, Outline Black And White Hexagon Hipster Geometric Shape, Idea Modern Simple Emblem Royalty Free SVG, Cliparts, Vectors, and Stock Illustration. Image 75810813." [ref=f31e410]
+          - link "Letter S Logo Mockup, Outline Black And White Hexagon Hipster Geometric Shape, Idea Modern Simple Emblem Royalty Free SVG, Cliparts, Vectors, and Stock Illustration. Image 75810813. 123RF" [ref=f31e412]:
+            - /url: https://www.123rf.com/photo_75810813_letter-s-logo-mockup-outline-black-and-white-hexagon-hipster-geometric-shape-idea-modern-simple.html
+            - generic [ref=f31e413]:
+              - generic [ref=f31e414]: Letter S Logo Mockup, Outline Black And White Hexagon Hipster Geometric Shape, Idea Modern Simple Emblem Royalty Free SVG, Cliparts, Vectors, and Stock Illustration. Image 75810813.
+              - generic [ref=f31e416]: 123RF
+        - generic [ref=f31e423] [cursor=pointer]:
+          - button [ref=f31e428]:
+            - img "Letter S Abstract Geometric Logo | Scalebranding" [ref=f31e430]
+          - link "Letter S Abstract Geometric Logo | Scalebranding Scalebranding" [ref=f31e432]:
+            - /url: https://scalebranding.com/product/418002
+            - generic [ref=f31e433]:
+              - generic [ref=f31e434]: Letter S Abstract Geometric Logo | Scalebranding
+              - generic [ref=f31e436]: Scalebranding
+        - generic [ref=f31e443] [cursor=pointer]:
+          - generic [ref=f31e445]:
+            - button [ref=f31e448]:
+              - img "270,700+ Abstract Circle Logo Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f31e450]
+            - generic: 라이선스
+          - link "270,700+ Abstract Circle Logo Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock iStock" [ref=f31e452]:
+            - /url: https://www.istockphoto.com/illustrations/abstract-circle-logo
+            - generic [ref=f31e453]:
+              - generic [ref=f31e454]: 270,700+ Abstract Circle Logo Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+              - generic [ref=f31e456]: iStock
+        - generic [ref=f31e463] [cursor=pointer]:
+          - generic [ref=f31e465]:
+            - button [ref=f31e468]:
+              - img "abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy" [ref=f31e470]
+            - generic: 라이선스
+          - link "abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy Alamy" [ref=f31e472]:
+            - /url: https://www.alamy.com/abstract-letter-s-simple-curves-geometric-logo-image241749379.html
+            - generic [ref=f31e473]:
+              - generic [ref=f31e474]: abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy
+              - generic [ref=f31e476]: Alamy
+        - generic [ref=f31e483] [cursor=pointer]:
+          - generic [ref=f31e485]:
+            - button [ref=f31e488]:
+              - img "Letter S Geometric Tile Mosaic Modern Future Simple Minimal Monochrome Monogram Vector Logo Design 17265401 Vector Art at Vecteezy" [ref=f31e490]
+            - generic: 라이선스
+          - link "Letter S Geometric Tile Mosaic Modern Future Simple Minimal Monochrome Monogram Vector Logo Design 17265401 Vector Art at Vecteezy Vecteezy" [ref=f31e492]:
+            - /url: https://www.vecteezy.com/vector-art/17265401-letter-s-geometric-tile-mosaic-modern-future-simple-minimal-monochrome-monogram-vector-logo-design
+            - generic [ref=f31e493]:
+              - generic [ref=f31e494]: Letter S Geometric Tile Mosaic Modern Future Simple Minimal Monochrome Monogram Vector Logo Design 17265401 Vector Art at Vecteezy
+              - generic [ref=f31e496]: Vecteezy
+        - generic [ref=f31e503] [cursor=pointer]:
+          - button [ref=f31e508]:
+            - img "S minimal logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f31e510]
+          - link "S minimal logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f31e512]:
+            - /url: https://www.magnific.com/vectors/s-minimal-logo
+            - generic [ref=f31e513]:
+              - generic [ref=f31e514]: S minimal logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f31e516]: Magnific
+        - generic [ref=f31e523] [cursor=pointer]:
+          - button [ref=f31e528]:
+            - img "Geometric Letter S Logo — Modern S Monogram for Tech & Startups by Bohdan Harbaruk 🇺🇦 on Dribbble" [ref=f31e530]
+          - link "Geometric Letter S Logo — Modern S Monogram for Tech & Startups by Bohdan Harbaruk 🇺🇦 on Dribbble Dribbble" [ref=f31e532]:
+            - /url: https://dribbble.com/shots/27228682-Geometric-Letter-S-Logo-Modern-S-Monogram-for-Tech-Startups
+            - generic [ref=f31e533]:
+              - generic [ref=f31e534]: Geometric Letter S Logo — Modern S Monogram for Tech & Startups by Bohdan Harbaruk 🇺🇦 on Dribbble
+              - generic [ref=f31e536]: Dribbble
+        - generic [ref=f31e543] [cursor=pointer]:
+          - button [ref=f31e548]:
+            - img "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f31e550]
+          - link "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f31e552]:
+            - /url: https://www.shutterstock.com/search/s-logo-minimalist
+            - generic [ref=f31e553]:
+              - generic [ref=f31e554]: 75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f31e556]: Shutterstock
+        - generic [ref=f31e563] [cursor=pointer]:
+          - button [ref=f31e568]:
+            - img "Abstract s logo Photos - Download Free High-Quality Pictures | Magnific (formerly Freepik)" [ref=f31e570]
+          - link "Abstract s logo Photos - Download Free High-Quality Pictures | Magnific (formerly Freepik) Magnific" [ref=f31e572]:
+            - /url: https://www.magnific.com/photos/abstract-s-logo
+            - generic [ref=f31e573]:
+              - generic [ref=f31e574]: Abstract s logo Photos - Download Free High-Quality Pictures | Magnific (formerly Freepik)
+              - generic [ref=f31e576]: Magnific
+        - generic [ref=f31e583] [cursor=pointer]:
+          - generic [ref=f31e585]:
+            - button [ref=f31e588]:
+              - img "Geometric S Logo - Dimensional – Royalty-Free Vector | VectorStock" [ref=f31e590]
+            - generic: 라이선스
+          - link "Geometric S Logo - Dimensional – Royalty-Free Vector | VectorStock VectorStock" [ref=f31e592]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/geometric-s-logo-dimensional-vector-31070415
+            - generic [ref=f31e593]:
+              - generic [ref=f31e594]: Geometric S Logo - Dimensional – Royalty-Free Vector | VectorStock
+              - generic [ref=f31e596]: VectorStock
+        - generic [ref=f31e603] [cursor=pointer]:
+          - generic [ref=f31e605]:
+            - button [ref=f31e608]:
+              - img "Simple design logo Black and White Stock Photos & Images - Alamy" [ref=f31e610]
+            - generic: 라이선스
+          - link "Simple design logo Black and White Stock Photos & Images - Alamy Alamy" [ref=f31e612]:
+            - /url: https://www.alamy.com/stock-photo/simple-design-logo.html?blackwhite=1&pseudoid=E85C1DDE-56CA-42F9-941C-9CC3CEA438A4
+            - generic [ref=f31e613]:
+              - generic [ref=f31e614]: Simple design logo Black and White Stock Photos & Images - Alamy
+              - generic [ref=f31e616]: Alamy
+        - generic [ref=f31e623] [cursor=pointer]:
+          - generic [ref=f31e625]:
+            - button [ref=f31e628]:
+              - img "Logo design abstract template initial letter s element with geometry. Modern and minimalist artistic s symbol. 11014389 Vector Art at Vecteezy" [ref=f31e630]
+            - generic: 라이선스
+          - link "Logo design abstract template initial letter s element with geometry. Modern and minimalist artistic s symbol. 11014389 Vector Art at Vecteezy Vecteezy" [ref=f31e632]:
+            - /url: https://www.vecteezy.com/vector-art/11014389-logo-design-abstract-template-initial-letter-s-element-with-geometry-modern-and-minimalist-artistic-s-symbol
+            - generic [ref=f31e633]:
+              - generic [ref=f31e634]: Logo design abstract template initial letter s element with geometry. Modern and minimalist artistic s symbol. 11014389 Vector Art at Vecteezy
+              - generic [ref=f31e636]: Vecteezy
+        - generic [ref=f31e643] [cursor=pointer]:
+          - generic [ref=f31e645]:
+            - button [ref=f31e648]:
+              - img "Geometric S Logo | Scalebranding" [ref=f31e650]
+            - generic: 라이선스
+          - link "Geometric S Logo | Scalebranding Scalebranding" [ref=f31e652]:
+            - /url: https://scalebranding.com/product/182809
+            - generic [ref=f31e653]:
+              - generic [ref=f31e654]: Geometric S Logo | Scalebranding
+              - generic [ref=f31e656]: Scalebranding
+        - generic [ref=f31e663] [cursor=pointer]:
+          - button [ref=f31e668]:
+            - img "s & flow*" [ref=f31e670]
+          - link "s & flow* ru.pinterest.com" [ref=f31e672]:
+            - /url: https://ru.pinterest.com/pin/912964155727112123/
+            - generic [ref=f31e673]:
+              - generic [ref=f31e674]: s & flow*
+              - generic [ref=f31e676]: ru.pinterest.com
+        - generic [ref=f31e683] [cursor=pointer]:
+          - button [ref=f31e688]:
+            - img "Minimalist s logo Images - Free Download on Magnific (formerly Freepik)" [ref=f31e690]
+          - link "Minimalist s logo Images - Free Download on Magnific (formerly Freepik) Magnific" [ref=f31e692]:
+            - /url: https://www.magnific.com/free-photos-vectors/minimalist-s-logo
+            - generic [ref=f31e693]:
+              - generic [ref=f31e694]: Minimalist s logo Images - Free Download on Magnific (formerly Freepik)
+              - generic [ref=f31e696]: Magnific
+        - generic [ref=f31e703] [cursor=pointer]:
+          - generic [ref=f31e705]:
+            - button [ref=f31e708]:
+              - img "S Letter Logo Design | Abstract & Minimalistic Style ⚡️, A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength, ..." [ref=f31e710]
+            - generic: 동영상
+          - link "S Letter Logo Design | Abstract & Minimalistic Style ⚡️, A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength, ... Instagram" [ref=f31e712]:
+            - /url: https://www.instagram.com/reel/DQZzNJWAD9V/
+            - generic [ref=f31e713]:
+              - generic [ref=f31e714]: S Letter Logo Design | Abstract & Minimalistic Style ⚡️, A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength, ...
+              - generic [ref=f31e716]: Instagram
+        - generic [ref=f31e723] [cursor=pointer]:
+          - generic [ref=f31e725]:
+            - button [ref=f31e728]:
+              - img "S Logo Icon Design 71203754 Vector Art at Vecteezy" [ref=f31e730]
+            - generic: 라이선스
+          - link "S Logo Icon Design 71203754 Vector Art at Vecteezy Vecteezy" [ref=f31e732]:
+            - /url: https://www.vecteezy.com/vector-art/71203754-s-logo-icon-design
+            - generic [ref=f31e733]:
+              - generic [ref=f31e734]: S Logo Icon Design 71203754 Vector Art at Vecteezy
+              - generic [ref=f31e736]: Vecteezy
+        - generic [ref=f31e743] [cursor=pointer]:
+          - button [ref=f31e748]:
+            - img "Letter S Modern and Minimal logo | Scalebranding" [ref=f31e750]
+          - link "Letter S Modern and Minimal logo | Scalebranding Scalebranding" [ref=f31e752]:
+            - /url: https://scalebranding.com/product/391011
+            - generic [ref=f31e753]:
+              - generic [ref=f31e754]: Letter S Modern and Minimal logo | Scalebranding
+              - generic [ref=f31e756]: Scalebranding
+        - generic [ref=f31e763] [cursor=pointer]:
+          - button [ref=f31e768]:
+            - img "Browse thousands of Geometric S Logo images for design inspiration | Dribbble" [ref=f31e770]
+          - link "Browse thousands of Geometric S Logo images for design inspiration | Dribbble Dribbble" [ref=f31e772]:
+            - /url: https://dribbble.com/search/geometric-s-logo
+            - generic [ref=f31e773]:
+              - generic [ref=f31e774]: Browse thousands of Geometric S Logo images for design inspiration | Dribbble
+              - generic [ref=f31e776]: Dribbble
+        - generic [ref=f31e783] [cursor=pointer]:
+          - button [ref=f31e788]:
+            - img "Bold Geometric Letter S Logo Diagonal Stock Vector (Royalty Free) 2738848559 | Shutterstock" [ref=f31e790]
+          - link "Bold Geometric Letter S Logo Diagonal Stock Vector (Royalty Free) 2738848559 | Shutterstock Shutterstock" [ref=f31e792]:
+            - /url: https://www.shutterstock.com/image-vector/bold-geometric-letter-s-logo-diagonal-2738848559
+            - generic [ref=f31e793]:
+              - generic [ref=f31e794]: Bold Geometric Letter S Logo Diagonal Stock Vector (Royalty Free) 2738848559 | Shutterstock
+              - generic [ref=f31e796]: Shutterstock
+        - generic [ref=f31e803] [cursor=pointer]:
+          - generic [ref=f31e805]:
+            - button [ref=f31e808]:
+              - img "Letter S logo isometric black and white typography design element, hipster minimalistic symbols initials SSS parallel lines monogram emblem Stock Vector | Adobe Stock" [ref=f31e810]
+            - generic: 라이선스
+          - link "Letter S logo isometric black and white typography design element, hipster minimalistic symbols initials SSS parallel lines monogram emblem Stock Vector | Adobe Stock Adobe Stock" [ref=f31e812]:
+            - /url: https://stock.adobe.com/images/letter-s-logo-isometric-black-and-white-typography-design-element-hipster-minimalistic-symbols-initials-sss-parallel-lines-monogram-emblem/129465935
+            - generic [ref=f31e813]:
+              - generic [ref=f31e814]: Letter S logo isometric black and white typography design element, hipster minimalistic symbols initials SSS parallel lines monogram emblem Stock Vector | Adobe Stock
+              - generic [ref=f31e816]: Adobe Stock
+        - generic [ref=f31e823] [cursor=pointer]:
+          - generic [ref=f31e825]:
+            - button [ref=f31e828]:
+              - img "Logo Shapes Stock Illustrations – 160,017 Logo Shapes Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f31e830]
+            - generic: 라이선스
+          - link "Logo Shapes Stock Illustrations – 160,017 Logo Shapes Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f31e832]:
+            - /url: https://www.dreamstime.com/illustration/logo-shapes.html
+            - generic [ref=f31e833]:
+              - generic [ref=f31e834]: Logo Shapes Stock Illustrations – 160,017 Logo Shapes Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f31e836]: Dreamstime.com
+        - generic [ref=f31e843] [cursor=pointer]:
+          - button [ref=f31e848]:
+            - img "Minimalist black s logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f31e850]
+          - link "Minimalist black s logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f31e852]:
+            - /url: https://www.magnific.com/vectors/minimalist-black-s-logo
+            - generic [ref=f31e853]:
+              - generic [ref=f31e854]: Minimalist black s logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f31e856]: Magnific
+        - generic [ref=f31e863] [cursor=pointer]:
+          - button [ref=f31e868]:
+            - img "letter s simple stripe geometric logo 67737740 Vector Art at Vecteezy" [ref=f31e870]
+          - link "letter s simple stripe geometric logo 67737740 Vector Art at Vecteezy Vecteezy" [ref=f31e872]:
+            - /url: https://www.vecteezy.com/vector-art/67737740-letter-s-simple-stripe-geometric-logo
+            - generic [ref=f31e873]:
+              - generic [ref=f31e874]: letter s simple stripe geometric logo 67737740 Vector Art at Vecteezy
+              - generic [ref=f31e876]: Vecteezy
+        - generic [ref=f31e883] [cursor=pointer]:
+          - button [ref=f31e888]:
+            - img "Browse thousands of Geometric S Logo images for design inspiration | Dribbble" [ref=f31e890]
+          - link "Browse thousands of Geometric S Logo images for design inspiration | Dribbble Dribbble" [ref=f31e892]:
+            - /url: https://dribbble.com/search/geometric-s-logo
+            - generic [ref=f31e893]:
+              - generic [ref=f31e894]: Browse thousands of Geometric S Logo images for design inspiration | Dribbble
+              - generic [ref=f31e896]: Dribbble
+        - generic [ref=f31e903] [cursor=pointer]:
+          - button [ref=f31e908]:
+            - img "Geometric S Logos" [ref=f31e910]
+          - link "Geometric S Logos Branition" [ref=f31e912]:
+            - /url: https://branition.com/search/geometric-s-logo
+            - generic [ref=f31e913]:
+              - generic [ref=f31e914]: Geometric S Logos
+              - generic [ref=f31e916]: Branition
+        - generic [ref=f31e923] [cursor=pointer]:
+          - generic [ref=f31e925]:
+            - button [ref=f31e928]:
+              - img "Letter s simple geometric line logo – Royalty-Free Vector | VectorStock" [ref=f31e930]
+            - generic: 라이선스
+          - link "Letter s simple geometric line logo – Royalty-Free Vector | VectorStock VectorStock" [ref=f31e932]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/letter-s-simple-geometric-line-logo-vector-35211865
+            - generic [ref=f31e933]:
+              - generic [ref=f31e934]: Letter s simple geometric line logo – Royalty-Free Vector | VectorStock
+              - generic [ref=f31e936]: VectorStock
+        - generic [ref=f31e943] [cursor=pointer]:
+          - button [ref=f31e948]:
+            - img "107,713 Geometric S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f31e950]
+          - link "107,713 Geometric S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f31e952]:
+            - /url: https://www.shutterstock.com/search/geometric-s-logo
+            - generic [ref=f31e953]:
+              - generic [ref=f31e954]: 107,713 Geometric S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f31e956]: Shutterstock
+        - generic [ref=f31e963] [cursor=pointer]:
+          - button [ref=f31e968]:
+            - img "S symbol Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f31e970]
+          - link "S symbol Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f31e972]:
+            - /url: https://www.magnific.com/vectors/s-symbol
+            - generic [ref=f31e973]:
+              - generic [ref=f31e974]: S symbol Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f31e976]: Magnific
+        - generic [ref=f31e983] [cursor=pointer]:
+          - button [ref=f31e988]:
+            - img "Abstract Letter S Minimal and Modern logo | Scalebranding" [ref=f31e990]
+          - link "Abstract Letter S Minimal and Modern logo | Scalebranding Scalebranding" [ref=f31e992]:
+            - /url: https://scalebranding.com/product/397355
+            - generic [ref=f31e993]:
+              - generic [ref=f31e994]: Abstract Letter S Minimal and Modern logo | Scalebranding
+              - generic [ref=f31e996]: Scalebranding
+        - generic [ref=f31e1003] [cursor=pointer]:
+          - generic [ref=f31e1005]:
+            - button [ref=f31e1008]:
+              - img "Logo design abstract template initial letter s element with geometry. Modern and minimalist artistic s symbol. 11014389 Vector Art at Vecteezy" [ref=f31e1010]
+            - generic: 라이선스
+          - link "Logo design abstract template initial letter s element with geometry. Modern and minimalist artistic s symbol. 11014389 Vector Art at Vecteezy Vecteezy" [ref=f31e1012]:
+            - /url: https://www.vecteezy.com/vector-art/11014389-logo-design-abstract-template-initial-letter-s-element-with-geometry-modern-and-minimalist-artistic-s-symbol
+            - generic [ref=f31e1013]:
+              - generic [ref=f31e1014]: Logo design abstract template initial letter s element with geometry. Modern and minimalist artistic s symbol. 11014389 Vector Art at Vecteezy
+              - generic [ref=f31e1016]: Vecteezy
+        - generic [ref=f31e1023] [cursor=pointer]:
+          - button [ref=f31e1028]:
+            - img "Geometric S Logos" [ref=f31e1030]
+          - link "Geometric S Logos Branition" [ref=f31e1032]:
+            - /url: https://branition.com/search/geometric-s-logo
+            - generic [ref=f31e1033]:
+              - generic [ref=f31e1034]: Geometric S Logos
+              - generic [ref=f31e1036]: Branition
+        - generic [ref=f31e1043] [cursor=pointer]:
+          - button [ref=f31e1048]:
+            - img "Browse thousands of Minimalist S Logo images for design inspiration | Dribbble" [ref=f31e1050]
+          - link "Browse thousands of Minimalist S Logo images for design inspiration | Dribbble Dribbble" [ref=f31e1052]:
+            - /url: https://dribbble.com/search/minimalist-s-logo
+            - generic [ref=f31e1053]:
+              - generic [ref=f31e1054]: Browse thousands of Minimalist S Logo images for design inspiration | Dribbble
+              - generic [ref=f31e1056]: Dribbble
+        - generic [ref=f31e1063] [cursor=pointer]:
+          - button [ref=f31e1068]:
+            - img "S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f31e1070]
+          - link "S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f31e1072]:
+            - /url: https://www.magnific.com/vectors/s-geometric-logo
+            - generic [ref=f31e1073]:
+              - generic [ref=f31e1074]: S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f31e1076]: Magnific
+        - generic [ref=f31e1083] [cursor=pointer]:
+          - generic [ref=f31e1085]:
+            - button [ref=f31e1088]:
+              - img "Vector black flat design elements for your logo design. Editable monochrome geometric shapes for unique label, sign, symbol identity design. 2908022 Vector Art at Vecteezy" [ref=f31e1090]
+            - generic: 라이선스
+          - link "Vector black flat design elements for your logo design. Editable monochrome geometric shapes for unique label, sign, symbol identity design. 2908022 Vector Art at Vecteezy Vecteezy" [ref=f31e1092]:
+            - /url: https://www.vecteezy.com/vector-art/2908022-vector-black-flat-design-elements-for-your-logo-design-editable-monochrome-geometric-shapes-for-unique-label-sign-symbol-identity-design
+            - generic [ref=f31e1093]:
+              - generic [ref=f31e1094]: Vector black flat design elements for your logo design. Editable monochrome geometric shapes for unique label, sign, symbol identity design. 2908022 Vector Art at Vecteezy
+              - generic [ref=f31e1096]: Vecteezy
+        - generic [ref=f31e1103] [cursor=pointer]:
+          - generic [ref=f31e1105]:
+            - button [ref=f31e1108]:
+              - img "Letter's Symbol Stock Illustrations – 67,128 Letter's Symbol Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f31e1110]
+            - generic: 라이선스
+          - link "Letter's Symbol Stock Illustrations – 67,128 Letter's Symbol Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f31e1112]:
+            - /url: https://www.dreamstime.com/illustration/letter-s-symbol.html
+            - generic [ref=f31e1113]:
+              - generic [ref=f31e1114]: Letter's Symbol Stock Illustrations – 67,128 Letter's Symbol Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f31e1116]: Dreamstime.com
+        - generic [ref=f31e1123] [cursor=pointer]:
+          - button [ref=f31e1128]:
+            - img "Geometric s Vector Images & Graphics for Commercial Use | VectorStock" [ref=f31e1130]
+          - link "Geometric s Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f31e1132]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/geometric-s-vectors
+            - generic [ref=f31e1133]:
+              - generic [ref=f31e1134]: Geometric s Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f31e1136]: VectorStock
+        - generic [ref=f31e1143] [cursor=pointer]:
+          - button [ref=f31e1148]:
+            - img "107,713 Geometric S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f31e1150]
+          - link "107,713 Geometric S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f31e1152]:
+            - /url: https://www.shutterstock.com/search/geometric-s-logo
+            - generic [ref=f31e1153]:
+              - generic [ref=f31e1154]: 107,713 Geometric S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f31e1156]: Shutterstock
+        - generic [ref=f31e1163] [cursor=pointer]:
+          - button [ref=f31e1168]:
+            - img "S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength," [ref=f31e1170]
+          - link "S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength, Instagram" [ref=f31e1172]:
+            - /url: https://www.instagram.com/reel/DQZzNJWAD9V/
+            - generic [ref=f31e1173]:
+              - generic [ref=f31e1174]: S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength,
+              - generic [ref=f31e1176]: Instagram
+        - generic [ref=f31e1183] [cursor=pointer]:
+          - button [ref=f31e1188]:
+            - img "Abstract Letter S Minimal and Modern logo | Scalebranding" [ref=f31e1190]
+          - link "Abstract Letter S Minimal and Modern logo | Scalebranding Scalebranding" [ref=f31e1192]:
+            - /url: https://scalebranding.com/product/397355
+            - generic [ref=f31e1193]:
+              - generic [ref=f31e1194]: Abstract Letter S Minimal and Modern logo | Scalebranding
+              - generic [ref=f31e1196]: Scalebranding
+        - generic [ref=f31e1203] [cursor=pointer]:
+          - generic [ref=f31e1205]:
+            - button [ref=f31e1208]:
+              - img "Creative and Minimalist Letter S Logo Design Icon | Editable in Vector Format in Black and White Color Stock Vector | Adobe Stock" [ref=f31e1210]
+            - generic: 라이선스
+          - link "Creative and Minimalist Letter S Logo Design Icon | Editable in Vector Format in Black and White Color Stock Vector | Adobe Stock Adobe Stock" [ref=f31e1212]:
+            - /url: https://stock.adobe.com/images/creative-and-minimalist-letter-s-logo-design-icon-editable-in-vector-format-in-black-and-white-color/288628830
+            - generic [ref=f31e1213]:
+              - generic [ref=f31e1214]: Creative and Minimalist Letter S Logo Design Icon | Editable in Vector Format in Black and White Color Stock Vector | Adobe Stock
+              - generic [ref=f31e1216]: Adobe Stock
+        - generic [ref=f31e1223] [cursor=pointer]:
+          - button [ref=f31e1228]:
+            - img "Minimalist S Logo designs, themes, templates and downloadable graphic elements on Dribbble" [ref=f31e1230]
+          - link "Minimalist S Logo designs, themes, templates and downloadable graphic elements on Dribbble Dribbble" [ref=f31e1232]:
+            - /url: https://dribbble.com/tags/minimalist-s-logo
+            - generic [ref=f31e1233]:
+              - generic [ref=f31e1234]: Minimalist S Logo designs, themes, templates and downloadable graphic elements on Dribbble
+              - generic [ref=f31e1236]: Dribbble
+        - generic [ref=f31e1243] [cursor=pointer]:
+          - generic [ref=f31e1245]:
+            - button [ref=f31e1248]:
+              - img "Minimalist s logo Images - Free Download on Magnific (formerly Freepik)" [ref=f31e1250]
+            - generic: 6일 전
+          - link "Minimalist s logo Images - Free Download on Magnific (formerly Freepik) Magnific" [ref=f31e1252]:
+            - /url: https://www.magnific.com/free-photos-vectors/minimalist-s-logo
+            - generic [ref=f31e1253]:
+              - generic [ref=f31e1254]: Minimalist s logo Images - Free Download on Magnific (formerly Freepik)
+              - generic [ref=f31e1256]: Magnific
+        - generic [ref=f31e1263] [cursor=pointer]:
+          - button [ref=f31e1268]:
+            - img "Geometric S Logos" [ref=f31e1270]
+          - link "Geometric S Logos Branition" [ref=f31e1272]:
+            - /url: https://branition.com/search/geometric-s-logo
+            - generic [ref=f31e1273]:
+              - generic [ref=f31e1274]: Geometric S Logos
+              - generic [ref=f31e1276]: Branition
+        - generic [ref=f31e1283] [cursor=pointer]:
+          - generic [ref=f31e1285]:
+            - button [ref=f31e1288]:
+              - img "S Logo Template Stock Illustrations – 52,443 S Logo Template Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f31e1290]
+            - generic: 라이선스
+          - link "S Logo Template Stock Illustrations – 52,443 S Logo Template Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f31e1292]:
+            - /url: https://www.dreamstime.com/illustration/s-logo-template.html
+            - generic [ref=f31e1293]:
+              - generic [ref=f31e1294]: S Logo Template Stock Illustrations – 52,443 S Logo Template Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f31e1296]: Dreamstime.com
+        - generic [ref=f31e1303] [cursor=pointer]:
+          - button [ref=f31e1308]:
+            - img "Ssf Logo Ssf Icon Ssf Monogram Stock Vector (Royalty Free) 2645021985 | Shutterstock" [ref=f31e1310]
+          - link "Ssf Logo Ssf Icon Ssf Monogram Stock Vector (Royalty Free) 2645021985 | Shutterstock Shutterstock" [ref=f31e1312]:
+            - /url: https://www.shutterstock.com/image-vector/ssf-logo-icon-monogram-letter-minimalist-2645021985
+            - generic [ref=f31e1313]:
+              - generic [ref=f31e1314]: Ssf Logo Ssf Icon Ssf Monogram Stock Vector (Royalty Free) 2645021985 | Shutterstock
+              - generic [ref=f31e1316]: Shutterstock
+        - generic [ref=f31e1323] [cursor=pointer]:
+          - button [ref=f31e1328]:
+            - img "Letter S Abstract Geometric Logo | Scalebranding" [ref=f31e1330]
+          - link "Letter S Abstract Geometric Logo | Scalebranding Scalebranding" [ref=f31e1332]:
+            - /url: https://scalebranding.com/product/418002
+            - generic [ref=f31e1333]:
+              - generic [ref=f31e1334]: Letter S Abstract Geometric Logo | Scalebranding
+              - generic [ref=f31e1336]: Scalebranding
+        - generic [ref=f31e1343] [cursor=pointer]:
+          - button [ref=f31e1348]:
+            - img "Browse thousands of Minimalist S Logo images for design inspiration | Dribbble" [ref=f31e1350]
+          - link "Browse thousands of Minimalist S Logo images for design inspiration | Dribbble Dribbble" [ref=f31e1352]:
+            - /url: https://dribbble.com/search/minimalist-s-logo
+            - generic [ref=f31e1353]:
+              - generic [ref=f31e1354]: Browse thousands of Minimalist S Logo images for design inspiration | Dribbble
+              - generic [ref=f31e1356]: Dribbble
+        - generic [ref=f31e1363] [cursor=pointer]:
+          - button [ref=f31e1368]:
+            - img "Geometric S Logos" [ref=f31e1370]
+          - link "Geometric S Logos Branition" [ref=f31e1372]:
+            - /url: https://branition.com/search/geometric-s-logo
+            - generic [ref=f31e1373]:
+              - generic [ref=f31e1374]: Geometric S Logos
+              - generic [ref=f31e1376]: Branition
+        - generic [ref=f31e1383] [cursor=pointer]:
+          - button [ref=f31e1388]:
+            - img "Circular Geometric S Logo - Exclusive Premade | Brandforma" [ref=f31e1390]
+          - link "Circular Geometric S Logo - Exclusive Premade | Brandforma Brandforma" [ref=f31e1392]:
+            - /url: https://brandforma.com/work/circular-geometric-s-logo-for-sale
+            - generic [ref=f31e1393]:
+              - generic [ref=f31e1394]: Circular Geometric S Logo - Exclusive Premade | Brandforma
+              - generic [ref=f31e1396]: Brandforma
+        - generic [ref=f31e1403] [cursor=pointer]:
+          - button [ref=f31e1408]:
+            - img "S logo monogram simple minimalist vector design set letter s logo geometric line art fit for modern | Premium Vector" [ref=f31e1410]
+          - link "S logo monogram simple minimalist vector design set letter s logo geometric line art fit for modern | Premium Vector Magnific" [ref=f31e1412]:
+            - /url: https://www.magnific.com/premium-vector/s-logo-monogram-simple-minimalist-vector-design-set-letter-s-logo-geometric-line-art-fit-modern_83214734.htm
+            - generic [ref=f31e1413]:
+              - generic [ref=f31e1414]: S logo monogram simple minimalist vector design set letter s logo geometric line art fit for modern | Premium Vector
+              - generic [ref=f31e1416]: Magnific
+        - generic [ref=f31e1423] [cursor=pointer]:
+          - button [ref=f31e1428]:
+            - img "Geometric s Vector Images & Graphics for Commercial Use | VectorStock" [ref=f31e1430]
+          - link "Geometric s Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f31e1432]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/geometric-s-vectors
+            - generic [ref=f31e1433]:
+              - generic [ref=f31e1434]: Geometric s Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f31e1436]: VectorStock
+        - generic [ref=f31e1443] [cursor=pointer]:
+          - button [ref=f31e1448]:
+            - img "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f31e1450]
+          - link "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f31e1452]:
+            - /url: https://www.shutterstock.com/search/s-logo-minimalist
+            - generic [ref=f31e1453]:
+              - generic [ref=f31e1454]: 75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f31e1456]: Shutterstock
+        - generic [ref=f31e1463] [cursor=pointer]:
+          - button [ref=f31e1468]:
+            - img "Letter S Data Tech Geometric Logo | Scalebranding" [ref=f31e1470]
+          - link "Letter S Data Tech Geometric Logo | Scalebranding Scalebranding" [ref=f31e1472]:
+            - /url: https://scalebranding.com/product/411119
+            - generic [ref=f31e1473]:
+              - generic [ref=f31e1474]: Letter S Data Tech Geometric Logo | Scalebranding
+              - generic [ref=f31e1476]: Scalebranding
+        - generic [ref=f31e1483] [cursor=pointer]:
+          - button [ref=f31e1488]:
+            - img "S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f31e1490]
+          - link "S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f31e1492]:
+            - /url: https://www.magnific.com/vectors/s-geometric-logo
+            - generic [ref=f31e1493]:
+              - generic [ref=f31e1494]: S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f31e1496]: Magnific
+        - generic [ref=f31e1503] [cursor=pointer]:
+          - button [ref=f31e1508]:
+            - img "Browse thousands of Simple S Logo images for design inspiration | Dribbble" [ref=f31e1510]
+          - link "Browse thousands of Simple S Logo images for design inspiration | Dribbble Dribbble" [ref=f31e1512]:
+            - /url: https://dribbble.com/search/simple-s-logo
+            - generic [ref=f31e1513]:
+              - generic [ref=f31e1514]: Browse thousands of Simple S Logo images for design inspiration | Dribbble
+              - generic [ref=f31e1516]: Dribbble
+        - generic [ref=f31e1523] [cursor=pointer]:
+          - button [ref=f31e1528]:
+            - img "Minimalist s letter Vector Images & Graphics for Commercial Use | VectorStock" [ref=f31e1530]
+          - link "Minimalist s letter Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f31e1532]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/minimalist-s-letter-vectors
+            - generic [ref=f31e1533]:
+              - generic [ref=f31e1534]: Minimalist s letter Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f31e1536]: VectorStock
+        - generic [ref=f31e1543] [cursor=pointer]:
+          - generic [ref=f31e1545]:
+            - button [ref=f31e1548]:
+              - img "783,100+ Abstract Logo Shape Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f31e1550]
+            - generic: 라이선스
+          - link "783,100+ Abstract Logo Shape Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock iStock" [ref=f31e1552]:
+            - /url: https://www.istockphoto.com/illustrations/abstract-logo-shape
+            - generic [ref=f31e1553]:
+              - generic [ref=f31e1554]: 783,100+ Abstract Logo Shape Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+              - generic [ref=f31e1556]: iStock
+        - generic [ref=f31e1563] [cursor=pointer]:
+          - button [ref=f31e1568]:
+            - img "letter s simple stripe geometric logo 67737740 Vector Art at Vecteezy" [ref=f31e1570]
+          - link "letter s simple stripe geometric logo 67737740 Vector Art at Vecteezy Vecteezy" [ref=f31e1572]:
+            - /url: https://www.vecteezy.com/vector-art/67737740-letter-s-simple-stripe-geometric-logo
+            - generic [ref=f31e1573]:
+              - generic [ref=f31e1574]: letter s simple stripe geometric logo 67737740 Vector Art at Vecteezy
+              - generic [ref=f31e1576]: Vecteezy
+        - generic [ref=f31e1583] [cursor=pointer]:
+          - generic [ref=f31e1585]:
+            - button [ref=f31e1588]:
+              - img "letter s 5 simple square geometric line logo vector Stock Vector Image & Art - Alamy" [ref=f31e1590]
+            - generic: 라이선스
+          - link "letter s 5 simple square geometric line logo vector Stock Vector Image & Art - Alamy Alamy" [ref=f31e1592]:
+            - /url: https://www.alamy.com/letter-s-5-simple-square-geometric-line-logo-vector-image383374330.html
+            - generic [ref=f31e1593]:
+              - generic [ref=f31e1594]: letter s 5 simple square geometric line logo vector Stock Vector Image & Art - Alamy
+              - generic [ref=f31e1596]: Alamy
+        - generic [ref=f31e1603] [cursor=pointer]:
+          - button [ref=f31e1608]:
+            - img "S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength," [ref=f31e1610]
+          - link "S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength, Instagram" [ref=f31e1612]:
+            - /url: https://www.instagram.com/reel/DQZzNJWAD9V/
+            - generic [ref=f31e1613]:
+              - generic [ref=f31e1614]: S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength,
+              - generic [ref=f31e1616]: Instagram
+        - generic [ref=f31e1623] [cursor=pointer]:
+          - generic [ref=f31e1625]:
+            - button [ref=f31e1628]:
+              - img "S Icon\" Images – Browse 4,297 Stock Photos, Vectors, and Video | Adobe Stock" [ref=f31e1630]
+            - generic:
+              - generic: 라이선스
+              - text: ·
+              - generic: 3일 전
+          - link "S Icon\" Images – Browse 4,297 Stock Photos, Vectors, and Video | Adobe Stock Adobe Stock" [ref=f31e1632]:
+            - /url: https://stock.adobe.com/search?k=%22s+icon%22
+            - generic [ref=f31e1633]:
+              - generic [ref=f31e1634]: S Icon" Images – Browse 4,297 Stock Photos, Vectors, and Video | Adobe Stock
+              - generic [ref=f31e1636]: Adobe Stock
+        - generic [ref=f31e1643] [cursor=pointer]:
+          - button [ref=f31e1648]:
+            - img "S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f31e1650]
+          - link "S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f31e1652]:
+            - /url: https://www.magnific.com/vectors/s-geometric-logo
+            - generic [ref=f31e1653]:
+              - generic [ref=f31e1654]: S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f31e1656]: Magnific
+        - generic [ref=f31e1663] [cursor=pointer]:
+          - button [ref=f31e1668]:
+            - img "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f31e1670]
+          - link "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f31e1672]:
+            - /url: https://www.shutterstock.com/search/s-logo-minimalist
+            - generic [ref=f31e1673]:
+              - generic [ref=f31e1674]: 75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f31e1676]: Shutterstock
+        - generic [ref=f31e1683] [cursor=pointer]:
+          - button [ref=f31e1688]:
+            - img "Browse thousands of Geometric S Logo images for design inspiration | Dribbble" [ref=f31e1690]
+          - link "Browse thousands of Geometric S Logo images for design inspiration | Dribbble Dribbble" [ref=f31e1692]:
+            - /url: https://dribbble.com/search/geometric-s-logo
+            - generic [ref=f31e1693]:
+              - generic [ref=f31e1694]: Browse thousands of Geometric S Logo images for design inspiration | Dribbble
+              - generic [ref=f31e1696]: Dribbble
+        - generic [ref=f31e1703] [cursor=pointer]:
+          - button [ref=f31e1708]:
+            - img "Letter S Modern and Minimal logo | Scalebranding" [ref=f31e1710]
+          - link "Letter S Modern and Minimal logo | Scalebranding Scalebranding" [ref=f31e1712]:
+            - /url: https://scalebranding.com/product/391011
+            - generic [ref=f31e1713]:
+              - generic [ref=f31e1714]: Letter S Modern and Minimal logo | Scalebranding
+              - generic [ref=f31e1716]: Scalebranding
+        - generic [ref=f31e1723] [cursor=pointer]:
+          - generic [ref=f31e1725]:
+            - button [ref=f31e1728]:
+              - img "Letter s curve two lines geometric symbol simple – Royalty-Free Vector | VectorStock" [ref=f31e1730]
+            - generic: 라이선스
+          - link "Letter s curve two lines geometric symbol simple – Royalty-Free Vector | VectorStock VectorStock" [ref=f31e1732]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/letter-s-curve-two-lines-geometric-symbol-simple-vector-47764335
+            - generic [ref=f31e1733]:
+              - generic [ref=f31e1734]: Letter s curve two lines geometric symbol simple – Royalty-Free Vector | VectorStock
+              - generic [ref=f31e1736]: VectorStock
+        - generic [ref=f31e1743] [cursor=pointer]:
+          - button [ref=f31e1748]:
+            - img "Circular Geometric S Logo - Exclusive Premade | Brandforma" [ref=f31e1750]
+          - link "Circular Geometric S Logo - Exclusive Premade | Brandforma Brandforma" [ref=f31e1752]:
+            - /url: https://brandforma.com/work/circular-geometric-s-logo-for-sale
+            - generic [ref=f31e1753]:
+              - generic [ref=f31e1754]: Circular Geometric S Logo - Exclusive Premade | Brandforma
+              - generic [ref=f31e1756]: Brandforma
+        - generic [ref=f31e1763] [cursor=pointer]:
+          - generic [ref=f31e1765]:
+            - button [ref=f31e1768]:
+              - img "S Letter Logo Monogram with Black and White Lines and Minimalist Design Vector 9951960 Vector Art at Vecteezy" [ref=f31e1770]
+            - generic: 라이선스
+          - link "S Letter Logo Monogram with Black and White Lines and Minimalist Design Vector 9951960 Vector Art at Vecteezy Vecteezy" [ref=f31e1772]:
+            - /url: https://www.vecteezy.com/vector-art/9951960-s-letter-logo-monogram-with-black-and-white-lines-and-minimalist-design-vector
+            - generic [ref=f31e1773]:
+              - generic [ref=f31e1774]: S Letter Logo Monogram with Black and White Lines and Minimalist Design Vector 9951960 Vector Art at Vecteezy
+              - generic [ref=f31e1776]: Vecteezy
+        - generic [ref=f31e1783] [cursor=pointer]:
+          - generic [ref=f31e1785]:
+            - button [ref=f31e1788]:
+              - img "S Letter Symbol Stock Illustrations – 67,128 S Letter Symbol Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f31e1790]
+            - generic: 라이선스
+          - link "S Letter Symbol Stock Illustrations – 67,128 S Letter Symbol Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f31e1792]:
+            - /url: https://www.dreamstime.com/illustration/s-letter-symbol.html
+            - generic [ref=f31e1793]:
+              - generic [ref=f31e1794]: S Letter Symbol Stock Illustrations – 67,128 S Letter Symbol Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f31e1796]: Dreamstime.com
+        - generic [ref=f31e1803] [cursor=pointer]:
+          - button [ref=f31e1808]:
+            - img "S logo svg Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f31e1810]
+          - link "S logo svg Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f31e1812]:
+            - /url: https://www.magnific.com/vectors/s-logo-svg
+            - generic [ref=f31e1813]:
+              - generic [ref=f31e1814]: S logo svg Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f31e1816]: Magnific
+        - generic [ref=f31e1823] [cursor=pointer]:
+          - button [ref=f31e1828]:
+            - img "S Geometric Logos" [ref=f31e1830]
+          - link "S Geometric Logos Branition" [ref=f31e1832]:
+            - /url: https://branition.com/search/s-geometric
+            - generic [ref=f31e1833]:
+              - generic [ref=f31e1834]: S Geometric Logos
+              - generic [ref=f31e1836]: Branition
+        - generic [ref=f31e1843] [cursor=pointer]:
+          - button [ref=f31e1848]:
+            - img "Minimalist s letter Vector Images & Graphics for Commercial Use | VectorStock" [ref=f31e1850]
+          - link "Minimalist s letter Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f31e1852]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/minimalist-s-letter-vectors
+            - generic [ref=f31e1853]:
+              - generic [ref=f31e1854]: Minimalist s letter Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f31e1856]: VectorStock
+        - generic [ref=f31e1863] [cursor=pointer]:
+          - button [ref=f31e1868]:
+            - img "S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength," [ref=f31e1870]
+          - link "S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength, Instagram" [ref=f31e1872]:
+            - /url: https://www.instagram.com/reel/DQZzNJWAD9V/
+            - generic [ref=f31e1873]:
+              - generic [ref=f31e1874]: S Letter Logo Design | Abstract & Minimalistic Style ⚡️ A bold and futuristic monogram built around the letter S, shaped with sharp geometric cuts and perfect symmetry. The design reflects strength,
+              - generic [ref=f31e1876]: Instagram
+        - generic [ref=f31e1883] [cursor=pointer]:
+          - button [ref=f31e1888]:
+            - img "S Letter Logo Design Template Black Stock Vector (Royalty Free) 2631289625 | Shutterstock" [ref=f31e1890]
+          - link "S Letter Logo Design Template Black Stock Vector (Royalty Free) 2631289625 | Shutterstock Shutterstock" [ref=f31e1892]:
+            - /url: https://www.shutterstock.com/image-vector/s-letter-logo-design-template-black-2631289625
+            - generic [ref=f31e1893]:
+              - generic [ref=f31e1894]: S Letter Logo Design Template Black Stock Vector (Royalty Free) 2631289625 | Shutterstock
+              - generic [ref=f31e1896]: Shutterstock
+        - generic [ref=f31e1903] [cursor=pointer]:
+          - generic [ref=f31e1905]:
+            - button [ref=f31e1908]:
+              - img "Minimal Logo Designs | Free Vector Graphics, Icons, PNG & PSD Logos - rawpixel" [ref=f31e1910]
+            - generic: 라이선스
+          - link "Minimal Logo Designs | Free Vector Graphics, Icons, PNG & PSD Logos - rawpixel Rawpixel" [ref=f31e1912]:
+            - /url: https://www.rawpixel.com/search/minimal%20logo
+            - generic [ref=f31e1913]:
+              - generic [ref=f31e1914]: Minimal Logo Designs | Free Vector Graphics, Icons, PNG & PSD Logos - rawpixel
+              - generic [ref=f31e1916]: Rawpixel
+        - generic [ref=f31e1923] [cursor=pointer]:
+          - button [ref=f31e1928]:
+            - img "S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f31e1930]
+          - link "S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f31e1932]:
+            - /url: https://www.magnific.com/vectors/s-geometric-logo
+            - generic [ref=f31e1933]:
+              - generic [ref=f31e1934]: S geometric logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f31e1936]: Magnific
+        - generic [ref=f31e1943] [cursor=pointer]:
+          - button [ref=f31e1948]:
+            - img "Browse thousands of Simple S Logo images for design inspiration | Dribbble" [ref=f31e1950]
+          - link "Browse thousands of Simple S Logo images for design inspiration | Dribbble Dribbble" [ref=f31e1952]:
+            - /url: https://dribbble.com/search/simple-s-logo
+            - generic [ref=f31e1953]:
+              - generic [ref=f31e1954]: Browse thousands of Simple S Logo images for design inspiration | Dribbble
+              - generic [ref=f31e1956]: Dribbble
+        - generic [ref=f31e1963] [cursor=pointer]:
+          - generic [ref=f31e1965]:
+            - button [ref=f31e1968]:
+              - img "minimalist Letter S and connect logo concept 67797443 Vector Art at Vecteezy" [ref=f31e1970]
+            - generic: 라이선스
+          - link "minimalist Letter S and connect logo concept 67797443 Vector Art at Vecteezy Vecteezy" [ref=f31e1972]:
+            - /url: https://www.vecteezy.com/vector-art/67797443-minimalist-letter-s-and-connect-logo-concept
+            - generic [ref=f31e1973]:
+              - generic [ref=f31e1974]: minimalist Letter S and connect logo concept 67797443 Vector Art at Vecteezy
+              - generic [ref=f31e1976]: Vecteezy
+        - generic [ref=f31e1983] [cursor=pointer]:
+          - generic [ref=f31e1985]:
+            - button [ref=f31e1988]:
+              - img "S Letter Symbol Stock Illustrations – 67,128 S Letter Symbol Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f31e1990]
+            - generic: 라이선스
+          - link "S Letter Symbol Stock Illustrations – 67,128 S Letter Symbol Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f31e1992]:
+            - /url: https://www.dreamstime.com/illustration/s-letter-symbol.html
+            - generic [ref=f31e1993]:
+              - generic [ref=f31e1994]: S Letter Symbol Stock Illustrations – 67,128 S Letter Symbol Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f31e1996]: Dreamstime.com
+        - generic [ref=f31e2003] [cursor=pointer]:
+          - button [ref=f31e2008]:
+            - img "Rounded Letter S Logo - Exclusive Premade | Brandforma" [ref=f31e2010]
+          - link "Rounded Letter S Logo - Exclusive Premade | Brandforma Brandforma" [ref=f31e2012]:
+            - /url: https://brandforma.com/work/rounded-s-logo-for-sale
+            - generic [ref=f31e2013]:
+              - generic [ref=f31e2014]: Rounded Letter S Logo - Exclusive Premade | Brandforma
+              - generic [ref=f31e2016]: Brandforma
+        - generic [ref=f31e2023] [cursor=pointer]:
+          - button [ref=f31e2028]:
+            - img "Minimal Logo Images – Browse 3,229,531 Stock Photos, Vectors, and Video | Adobe Stock" [ref=f31e2030]
+          - link "Minimal Logo Images – Browse 3,229,531 Stock Photos, Vectors, and Video | Adobe Stock Adobe Stock" [ref=f31e2032]:
+            - /url: https://stock.adobe.com/search?k=minimal+logo
+            - generic [ref=f31e2033]:
+              - generic [ref=f31e2034]: Minimal Logo Images – Browse 3,229,531 Stock Photos, Vectors, and Video | Adobe Stock
+              - generic [ref=f31e2036]: Adobe Stock
+        - generic [ref=f31e2043] [cursor=pointer]:
+          - button [ref=f31e2048]:
+            - img "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f31e2050]
+          - link "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f31e2052]:
+            - /url: https://www.shutterstock.com/search/s-logo-minimalist
+            - generic [ref=f31e2053]:
+              - generic [ref=f31e2054]: 75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f31e2056]: Shutterstock
+        - generic [ref=f31e2063] [cursor=pointer]:
+          - generic [ref=f31e2065]:
+            - button [ref=f31e2068]:
+              - img "Letter Y Logo Icon Design. Letter Y Wave Sign Modern, Flat And Minimalist Business Logo Template Stock Vector Image & Art - Alamy" [ref=f31e2070]
+            - generic: 라이선스
+          - link "Letter Y Logo Icon Design. Letter Y Wave Sign Modern, Flat And Minimalist Business Logo Template Stock Vector Image & Art - Alamy Alamy" [ref=f31e2072]:
+            - /url: https://www.alamy.com/letter-y-logo-icon-design-letter-y-wave-sign-modern-flat-and-minimalist-business-logo-template-image463679969.html
+            - generic [ref=f31e2073]:
+              - generic [ref=f31e2074]: Letter Y Logo Icon Design. Letter Y Wave Sign Modern, Flat And Minimalist Business Logo Template Stock Vector Image & Art - Alamy
+              - generic [ref=f31e2076]: Alamy
+        - generic [ref=f31e2083] [cursor=pointer]:
+          - generic [ref=f31e2085]:
+            - button [ref=f31e2088]:
+              - img "Abstract letter S logo design, minimalist style letter logo, text S icon vector design 7683359 Vector Art at Vecteezy" [ref=f31e2090]
+            - generic: 라이선스
+          - link "Abstract letter S logo design, minimalist style letter logo, text S icon vector design 7683359 Vector Art at Vecteezy Vecteezy" [ref=f31e2092]:
+            - /url: https://www.vecteezy.com/vector-art/7683359-abstract-letter-s-logo-design-minimalist-style-letter-logo-text-s-icon-vector-design
+            - generic [ref=f31e2093]:
+              - generic [ref=f31e2094]: Abstract letter S logo design, minimalist style letter logo, text S icon vector design 7683359 Vector Art at Vecteezy
+              - generic [ref=f31e2096]: Vecteezy
+        - generic [ref=f31e2103] [cursor=pointer]:
+          - button [ref=f31e2108]:
+            - img "S minimal logo Images - Free Download on Magnific (formerly Freepik)" [ref=f31e2110]
+          - link "S minimal logo Images - Free Download on Magnific (formerly Freepik) Magnific" [ref=f31e2112]:
+            - /url: https://www.magnific.com/free-photos-vectors/s-minimal-logo
+            - generic [ref=f31e2113]:
+              - generic [ref=f31e2114]: S minimal logo Images - Free Download on Magnific (formerly Freepik)
+              - generic [ref=f31e2116]: Magnific
+        - generic [ref=f31e2123] [cursor=pointer]:
+          - generic [ref=f31e2125]:
+            - button [ref=f31e2128]:
+              - img "Letter's Symbol Stock Illustrations – 67,128 Letter's Symbol Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f31e2130]
+            - generic: 라이선스
+          - link "Letter's Symbol Stock Illustrations – 67,128 Letter's Symbol Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f31e2132]:
+            - /url: https://www.dreamstime.com/illustration/letter-s-symbol.html
+            - generic [ref=f31e2133]:
+              - generic [ref=f31e2134]: Letter's Symbol Stock Illustrations – 67,128 Letter's Symbol Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f31e2136]: Dreamstime.com
+      - generic [ref=f31e2143]:
+        - heading "Page Navigation" [level=1] [ref=f31e2144]
+        - button "결과 더보기" [ref=f31e2145] [cursor=pointer]:
+          - generic [ref=f31e2146]:
+            - separator [ref=f31e2147]
+            - generic [ref=f31e2148]: 결과 더보기
+      - navigation

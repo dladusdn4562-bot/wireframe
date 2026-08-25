@@ -1,0 +1,711 @@
+- generic [active] [ref=f36e1]:
+  - generic:
+    - generic:
+      - link "주요 콘텐츠로 이동" [ref=f36e2] [cursor=pointer]
+      - link "연속 스크롤 사용 중지" [ref=f36e3] [cursor=pointer]:
+        - /url: "#"
+      - link "접근성 도움말" [ref=f36e4] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ko
+  - generic [ref=f36e9]:
+    - search [ref=f36e10]:
+      - generic [ref=f36e12]:
+        - link "Google 홈페이지로 이동" [ref=f36e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwiY_pO4ubuWAxXYmuEIHayfHf8QPAgJ
+        - generic [ref=f36e22]:
+          - generic [ref=f36e23]:
+            - combobox "검색" [ref=f36e26]: minimalist soft organic fluid s curve logo symbol vector black white minimalist soft organic fluid s curve logo symbol vector black white
+            - generic [ref=f36e27]:
+              - button "지우기" [ref=f36e29] [cursor=pointer]
+              - generic [ref=f36e34]:
+                - button "입력 도구" [ref=f36e35] [cursor=pointer]
+                - button "음성 검색" [ref=f36e39] [cursor=pointer]
+                - button "이미지로 검색" [ref=f36e42] [cursor=pointer]
+          - button "검색" [ref=f36e45] [cursor=pointer]
+    - generic [ref=f36e51]:
+      - button "Google 앱" [ref=f36e53] [cursor=pointer]
+      - 'button "Google 계정: 임연우 (dladusdn4562@gmail.com)" [ref=f36e58] [cursor=pointer]'
+  - generic [ref=f36e67]:
+    - generic [ref=f36e70]:
+      - navigation [ref=f36e73]:
+        - generic [ref=f36e74]:
+          - list [ref=f36e75]:
+            - listitem [ref=f36e76]:
+              - link "AI 모드" [ref=f36e79] [cursor=pointer]:
+                - /url: /search?q=minimalist+soft+organic+fluid+s+curve+logo+symbol+vector+black+white&sca_esv=1b85b69310503e88&sxsrf=APpeQnsD9jfD3uma-ljQoHpzxKyePyPnfw:1787649526669&udm=50&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwiY_pO4ubuWAxXYmuEIHayfHf8Q2J8OegQIChAD
+            - listitem [ref=f36e83]:
+              - link "전체" [ref=f36e84] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnsD9jfD3uma-ljQoHpzxKyePyPnfw:1787649526669&q=minimalist+soft+organic+fluid+s+curve+logo+symbol+vector+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&sa=X&ved=2ahUKEwiY_pO4ubuWAxXYmuEIHayfHf8Q0pQJegQICxAB
+            - listitem [ref=f36e87]:
+              - link "이미지" [disabled] [ref=f36e88]
+            - listitem [ref=f36e91]:
+              - link "쇼핑" [ref=f36e92] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnsD9jfD3uma-ljQoHpzxKyePyPnfw:1787649526669&udm=28&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=minimalist+soft+organic+fluid+s+curve+logo+symbol+vector+black+white&ved=1t:220175&ictx=111
+            - listitem [ref=f36e95]:
+              - link "짧은 동영상" [ref=f36e96] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnsD9jfD3uma-ljQoHpzxKyePyPnfw:1787649526669&udm=39&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=minimalist+soft+organic+fluid+s+curve+logo+symbol+vector+black+white&sa=X&ved=2ahUKEwiY_pO4ubuWAxXYmuEIHayfHf8Qs6gLegQIDxAB
+            - listitem [ref=f36e99]:
+              - link "웹" [ref=f36e100] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnsD9jfD3uma-ljQoHpzxKyePyPnfw:1787649526669&udm=web&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=minimalist+soft+organic+fluid+s+curve+logo+symbol+vector+black+white&sa=X&ved=2ahUKEwiY_pO4ubuWAxXYmuEIHayfHf8Qs6gLegQIDBAB
+            - listitem [ref=f36e103]:
+              - link "금융" [ref=f36e104] [cursor=pointer]:
+                - /url: /finance?sca_esv=1b85b69310503e88&output=search&q=minimalist+soft+organic+fluid+s+curve+logo+symbol+vector+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&sa=X&ved=2ahUKEwiY_pO4ubuWAxXYmuEIHayfHf8Q0pQJegQIDhAB
+            - listitem [ref=f36e107]:
+              - button [ref=f36e108] [cursor=pointer]:
+                - generic "필터 더보기" [ref=f36e109]: 더보기
+          - button "도구" [ref=f36e116] [cursor=pointer]
+      - link [ref=f36e124] [cursor=pointer]:
+        - /url: /save?sa=X&ved=2ahUKEwiY_pO4ubuWAxXYmuEIHayfHf8Q7XV6BAgFEAA
+    - heading "검색결과" [level=1] [ref=f36e128]
+    - main [ref=f36e130]:
+      - generic [ref=f36e139]:
+        - generic [ref=f36e143] [cursor=pointer]:
+          - generic [ref=f36e145]:
+            - button [ref=f36e148]:
+              - img "S Curve Stock Illustrations – 8,517 S Curve Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f36e150]
+            - generic: 라이선스
+          - link "S Curve Stock Illustrations – 8,517 S Curve Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f36e152]:
+            - /url: https://www.dreamstime.com/illustration/s-curve.html
+            - generic [ref=f36e153]:
+              - generic [ref=f36e154]: S Curve Stock Illustrations – 8,517 S Curve Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f36e156]: Dreamstime.com
+        - generic [ref=f36e163] [cursor=pointer]:
+          - generic [ref=f36e165]:
+            - button [ref=f36e168]:
+              - img "7,200+ S Curves Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f36e170]
+            - generic: 라이선스
+          - link "7,200+ S Curves Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock iStock" [ref=f36e172]:
+            - /url: https://www.istockphoto.com/illustrations/s-curves
+            - generic [ref=f36e173]:
+              - generic [ref=f36e174]: 7,200+ S Curves Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+              - generic [ref=f36e176]: iStock
+        - generic [ref=f36e183] [cursor=pointer]:
+          - button [ref=f36e188]:
+            - img "144,941 S Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e190]
+          - link "144,941 S Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e192]:
+            - /url: https://www.shutterstock.com/search/s-curve
+            - generic [ref=f36e193]:
+              - generic [ref=f36e194]: 144,941 S Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e196]: Shutterstock
+        - generic [ref=f36e203] [cursor=pointer]:
+          - button [ref=f36e208]:
+            - img "144,546 S Curves Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e210]
+          - link "144,546 S Curves Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e212]:
+            - /url: https://www.shutterstock.com/search/s-curves
+            - generic [ref=f36e213]:
+              - generic [ref=f36e214]: 144,546 S Curves Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e216]: Shutterstock
+        - generic [ref=f36e223] [cursor=pointer]:
+          - generic [ref=f36e225]:
+            - button [ref=f36e228]:
+              - img "Letter s curve two lines geometric symbol simple – Royalty-Free Vector | VectorStock" [ref=f36e230]
+            - generic: 라이선스
+          - link "Letter s curve two lines geometric symbol simple – Royalty-Free Vector | VectorStock VectorStock" [ref=f36e232]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/letter-s-curve-two-lines-geometric-symbol-simple-vector-47764335
+            - generic [ref=f36e233]:
+              - generic [ref=f36e234]: Letter s curve two lines geometric symbol simple – Royalty-Free Vector | VectorStock
+              - generic [ref=f36e236]: VectorStock
+        - generic [ref=f36e243] [cursor=pointer]:
+          - button [ref=f36e248]:
+            - img "49,691 S Shaped Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e250]
+          - link "49,691 S Shaped Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e252]:
+            - /url: https://www.shutterstock.com/search/s-shaped-curve
+            - generic [ref=f36e253]:
+              - generic [ref=f36e254]: 49,691 S Shaped Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e256]: Shutterstock
+        - generic [ref=f36e263] [cursor=pointer]:
+          - button [ref=f36e268]:
+            - img "Nature Leaves Monoline S Letter Logo | Scalebranding" [ref=f36e270]
+          - link "Nature Leaves Monoline S Letter Logo | Scalebranding Scalebranding" [ref=f36e272]:
+            - /url: https://scalebranding.com/product/416888
+            - generic [ref=f36e273]:
+              - generic [ref=f36e274]: Nature Leaves Monoline S Letter Logo | Scalebranding
+              - generic [ref=f36e276]: Scalebranding
+        - generic [ref=f36e283] [cursor=pointer]:
+          - generic [ref=f36e285]:
+            - button [ref=f36e288]:
+              - 'img "Abstract Black S-Curve Shape Stock Vector - Illustration of creative, abstract: 417389986" [ref=f36e290]'
+            - generic: 라이선스
+          - 'link "Abstract Black S-Curve Shape Stock Vector - Illustration of creative, abstract: 417389986 Dreamstime.com" [ref=f36e292]':
+            - /url: https://www.dreamstime.com/elegant-black-letter-s-logo-design-sleek-modern-perfect-branding-projects-image417389986
+            - generic [ref=f36e293]:
+              - generic [ref=f36e294]: "Abstract Black S-Curve Shape Stock Vector - Illustration of creative, abstract: 417389986"
+              - generic [ref=f36e296]: Dreamstime.com
+        - generic [ref=f36e303] [cursor=pointer]:
+          - generic [ref=f36e305]:
+            - button [ref=f36e308]:
+              - 'img "Abstract Black S-Curve Swirl on White Background Stock Vector - Illustration of clean, motion: 417389981" [ref=f36e310]'
+            - generic: 라이선스
+          - 'link "Abstract Black S-Curve Swirl on White Background Stock Vector - Illustration of clean, motion: 417389981 Dreamstime.com" [ref=f36e312]':
+            - /url: https://www.dreamstime.com/elegant-black-flowing-s-shape-graphic-element-clean-white-background-representing-motion-style-minimalist-shaped-curve-image417389981
+            - generic [ref=f36e313]:
+              - generic [ref=f36e314]: "Abstract Black S-Curve Swirl on White Background Stock Vector - Illustration of clean, motion: 417389981"
+              - generic [ref=f36e316]: Dreamstime.com
+        - generic [ref=f36e323] [cursor=pointer]:
+          - generic [ref=f36e325]:
+            - button [ref=f36e328]:
+              - img "letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy" [ref=f36e330]
+            - generic: 라이선스
+          - link "letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy Vecteezy" [ref=f36e332]:
+            - /url: https://www.vecteezy.com/vector-art/30335555-letter-s-curves-motion-ribbon-logo-vector
+            - generic [ref=f36e333]:
+              - generic [ref=f36e334]: letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy
+              - generic [ref=f36e336]: Vecteezy
+        - generic [ref=f36e343] [cursor=pointer]:
+          - button [ref=f36e348]:
+            - img "406,329 Organic Shape Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e350]
+          - link "406,329 Organic Shape Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e352]:
+            - /url: https://www.shutterstock.com/search/organic-shape-logo
+            - generic [ref=f36e353]:
+              - generic [ref=f36e354]: 406,329 Organic Shape Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e356]: Shutterstock
+        - generic [ref=f36e363] [cursor=pointer]:
+          - button [ref=f36e368]:
+            - img "Page 2 | S Curve Line Vector Art, Icons, and Graphics for Free Download" [ref=f36e370]
+          - link "Page 2 | S Curve Line Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f36e372]:
+            - /url: https://www.vecteezy.com/free-vector/s-curve-line?page=2
+            - generic [ref=f36e373]:
+              - generic [ref=f36e374]: Page 2 | S Curve Line Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f36e376]: Vecteezy
+        - generic [ref=f36e383] [cursor=pointer]:
+          - button [ref=f36e388]:
+            - img "Nature Leaves Monoline S Letter Logo | Scalebranding" [ref=f36e390]
+          - link "Nature Leaves Monoline S Letter Logo | Scalebranding Scalebranding" [ref=f36e392]:
+            - /url: https://scalebranding.com/product/416888
+            - generic [ref=f36e393]:
+              - generic [ref=f36e394]: Nature Leaves Monoline S Letter Logo | Scalebranding
+              - generic [ref=f36e396]: Scalebranding
+        - generic [ref=f36e403] [cursor=pointer]:
+          - generic [ref=f36e405]:
+            - button [ref=f36e408]:
+              - img "Solid black abstract wave or swoosh shape logo. Modern geometric icon of a dynamic water movement. Minimalist curve symbol with layered fluid motion. 71513241 Vector Art at Vecteezy" [ref=f36e410]
+            - generic: 라이선스
+          - link "Solid black abstract wave or swoosh shape logo. Modern geometric icon of a dynamic water movement. Minimalist curve symbol with layered fluid motion. 71513241 Vector Art at Vecteezy Vecteezy" [ref=f36e412]:
+            - /url: https://www.vecteezy.com/vector-art/71513241-solid-black-abstract-wave-or-swoosh-shape-logo-modern-geometric-icon-of-a-dynamic-water-movement-minimalist-curve-symbol-with-layered-fluid-motion
+            - generic [ref=f36e413]:
+              - generic [ref=f36e414]: Solid black abstract wave or swoosh shape logo. Modern geometric icon of a dynamic water movement. Minimalist curve symbol with layered fluid motion. 71513241 Vector Art at Vecteezy
+              - generic [ref=f36e416]: Vecteezy
+        - generic [ref=f36e423] [cursor=pointer]:
+          - generic [ref=f36e425]:
+            - button [ref=f36e428]:
+              - img "S-Curve Line Art Icon – Royalty-Free Vector | VectorStock" [ref=f36e430]
+            - generic: 라이선스
+          - link "S-Curve Line Art Icon – Royalty-Free Vector | VectorStock VectorStock" [ref=f36e432]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/s-curve-line-art-icon-vector-62448607
+            - generic [ref=f36e433]:
+              - generic [ref=f36e434]: S-Curve Line Art Icon – Royalty-Free Vector | VectorStock
+              - generic [ref=f36e436]: VectorStock
+        - generic [ref=f36e443] [cursor=pointer]:
+          - button [ref=f36e448]:
+            - img "12,351 2 Curves Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e450]
+          - link "12,351 2 Curves Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e452]:
+            - /url: https://www.shutterstock.com/search/2-curves-logo
+            - generic [ref=f36e453]:
+              - generic [ref=f36e454]: 12,351 2 Curves Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e456]: Shutterstock
+        - generic [ref=f36e463] [cursor=pointer]:
+          - generic [ref=f36e465]:
+            - button [ref=f36e468]:
+              - img "Abstract S Curves Shape – Royalty-Free Vector | VectorStock" [ref=f36e470]
+            - generic: 라이선스
+          - link "Abstract S Curves Shape – Royalty-Free Vector | VectorStock VectorStock" [ref=f36e472]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/abstract-s-curves-shape-vector-36501032
+            - generic [ref=f36e473]:
+              - generic [ref=f36e474]: Abstract S Curves Shape – Royalty-Free Vector | VectorStock
+              - generic [ref=f36e476]: VectorStock
+        - generic [ref=f36e483] [cursor=pointer]:
+          - button [ref=f36e488]:
+            - img "Circular S Wave Logo - Exclusive Premade | Brandforma" [ref=f36e490]
+          - link "Circular S Wave Logo - Exclusive Premade | Brandforma Brandforma" [ref=f36e492]:
+            - /url: https://brandforma.com/work/modern-circular-s-wave-logo-for-sale
+            - generic [ref=f36e493]:
+              - generic [ref=f36e494]: Circular S Wave Logo - Exclusive Premade | Brandforma
+              - generic [ref=f36e496]: Brandforma
+        - generic [ref=f36e503] [cursor=pointer]:
+          - generic [ref=f36e505]:
+            - button [ref=f36e508]:
+              - img "7,200+ S Curves Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f36e510]
+            - generic: 라이선스
+          - link "7,200+ S Curves Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock iStock" [ref=f36e512]:
+            - /url: https://www.istockphoto.com/illustrations/s-curves
+            - generic [ref=f36e513]:
+              - generic [ref=f36e514]: 7,200+ S Curves Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+              - generic [ref=f36e516]: iStock
+        - generic [ref=f36e523] [cursor=pointer]:
+          - generic [ref=f36e525]:
+            - button [ref=f36e528]:
+              - img "Letter S Organic Logo Design with Curved Line Shape Symbol Fresh Growth, Natural Flow, and Eco Branding for Organic Product Business, Wellness, and Sustainable Lifestyle Company 75561036 Vector Art at Vecteezy" [ref=f36e530]
+            - generic: 라이선스
+          - link "Letter S Organic Logo Design with Curved Line Shape Symbol Fresh Growth, Natural Flow, and Eco Branding for Organic Product Business, Wellness, and Sustainable Lifestyle Company 75561036 Vector Art at Vecteezy Vecteezy" [ref=f36e532]:
+            - /url: https://www.vecteezy.com/vector-art/75561036-letter-s-organic-logo-design-with-curved-line-shape-symbol-fresh-growth-natural-flow-and-eco-branding-for-organic-product-business-wellness-and-sustainable-lifestyle-company
+            - generic [ref=f36e533]:
+              - generic [ref=f36e534]: Letter S Organic Logo Design with Curved Line Shape Symbol Fresh Growth, Natural Flow, and Eco Branding for Organic Product Business, Wellness, and Sustainable Lifestyle Company 75561036 Vector Art at Vecteezy
+              - generic [ref=f36e536]: Vecteezy
+        - generic [ref=f36e543] [cursor=pointer]:
+          - generic [ref=f36e545]:
+            - button [ref=f36e548]:
+              - img "Solid black abstract wave or swoosh shape logo. Modern geometric icon of a dynamic water movement. Minimalist curve symbol with layered fluid motion. 71513241 Vector Art at Vecteezy" [ref=f36e550]
+            - generic: 라이선스
+          - link "Solid black abstract wave or swoosh shape logo. Modern geometric icon of a dynamic water movement. Minimalist curve symbol with layered fluid motion. 71513241 Vector Art at Vecteezy Vecteezy" [ref=f36e552]:
+            - /url: https://www.vecteezy.com/vector-art/71513241-solid-black-abstract-wave-or-swoosh-shape-logo-modern-geometric-icon-of-a-dynamic-water-movement-minimalist-curve-symbol-with-layered-fluid-motion
+            - generic [ref=f36e553]:
+              - generic [ref=f36e554]: Solid black abstract wave or swoosh shape logo. Modern geometric icon of a dynamic water movement. Minimalist curve symbol with layered fluid motion. 71513241 Vector Art at Vecteezy
+              - generic [ref=f36e556]: Vecteezy
+        - generic [ref=f36e563] [cursor=pointer]:
+          - button [ref=f36e568]:
+            - img "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f36e570]
+          - link "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f36e572]:
+            - /url: https://www.magnific.com/vectors/s-curve
+            - generic [ref=f36e573]:
+              - generic [ref=f36e574]: S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f36e576]: Magnific
+        - generic [ref=f36e583] [cursor=pointer]:
+          - button [ref=f36e588]:
+            - img "245,424 Soft Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e590]
+          - link "245,424 Soft Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e592]:
+            - /url: https://www.shutterstock.com/search/soft-logo
+            - generic [ref=f36e593]:
+              - generic [ref=f36e594]: 245,424 Soft Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e596]: Shutterstock
+        - generic [ref=f36e603] [cursor=pointer]:
+          - button [ref=f36e608]:
+            - img "S organic logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f36e610]
+          - link "S organic logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f36e612]:
+            - /url: https://www.magnific.com/vectors/s-organic-logo
+            - generic [ref=f36e613]:
+              - generic [ref=f36e614]: S organic logo Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f36e616]: Magnific
+        - generic [ref=f36e623] [cursor=pointer]:
+          - generic [ref=f36e625]:
+            - button [ref=f36e628]:
+              - img "S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f36e630]
+            - generic: 라이선스
+          - link "S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f36e632]:
+            - /url: https://www.dreamstime.com/illustration/s-curve-icon.html
+            - generic [ref=f36e633]:
+              - generic [ref=f36e634]: S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f36e636]: Dreamstime.com
+        - generic [ref=f36e643] [cursor=pointer]:
+          - button [ref=f36e648]:
+            - img "S curve Vector Images & Graphics for Commercial Use | VectorStock" [ref=f36e650]
+          - link "S curve Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f36e652]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/s-curve-vectors
+            - generic [ref=f36e653]:
+              - generic [ref=f36e654]: S curve Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f36e656]: VectorStock
+        - generic [ref=f36e663] [cursor=pointer]:
+          - button [ref=f36e668]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e670]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e672]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e673]:
+              - generic [ref=f36e674]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e676]: Shutterstock
+        - generic [ref=f36e683] [cursor=pointer]:
+          - generic [ref=f36e685]:
+            - button [ref=f36e688]:
+              - img "Letter s simple curves arrow logo – Royalty-Free Vector | VectorStock" [ref=f36e690]
+            - generic: 라이선스
+          - link "Letter s simple curves arrow logo – Royalty-Free Vector | VectorStock VectorStock" [ref=f36e692]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/letter-s-simple-curves-arrow-logo-vector-37066364
+            - generic [ref=f36e693]:
+              - generic [ref=f36e694]: Letter s simple curves arrow logo – Royalty-Free Vector | VectorStock
+              - generic [ref=f36e696]: VectorStock
+        - generic [ref=f36e703] [cursor=pointer]:
+          - button [ref=f36e708]:
+            - img "Browse thousands of Fluid Logo images for design inspiration | Dribbble" [ref=f36e710]
+          - link "Browse thousands of Fluid Logo images for design inspiration | Dribbble Dribbble" [ref=f36e712]:
+            - /url: https://dribbble.com/search/fluid-logo
+            - generic [ref=f36e713]:
+              - generic [ref=f36e714]: Browse thousands of Fluid Logo images for design inspiration | Dribbble
+              - generic [ref=f36e716]: Dribbble
+        - generic [ref=f36e723] [cursor=pointer]:
+          - generic [ref=f36e725]:
+            - button [ref=f36e728]:
+              - img "S Curve Icon Vector Isolated On White Background Logo Concept Of S Curve Sign On Transparent Background Black Filled Symbol Stock Illustration - Download Image Now - iStock" [ref=f36e730]
+            - generic: 라이선스
+          - link "S Curve Icon Vector Isolated On White Background Logo Concept Of S Curve Sign On Transparent Background Black Filled Symbol Stock Illustration - Download Image Now - iStock iStock" [ref=f36e732]:
+            - /url: https://www.istockphoto.com/vector/s-curve-icon-vector-isolated-on-white-background-logo-concept-of-s-curve-sign-on-gm1034697212-277011490
+            - generic [ref=f36e733]:
+              - generic [ref=f36e734]: S Curve Icon Vector Isolated On White Background Logo Concept Of S Curve Sign On Transparent Background Black Filled Symbol Stock Illustration - Download Image Now - iStock
+              - generic [ref=f36e736]: iStock
+        - generic [ref=f36e743] [cursor=pointer]:
+          - button [ref=f36e748]:
+            - img "74,614 S Natural Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e750]
+          - link "74,614 S Natural Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e752]:
+            - /url: https://www.shutterstock.com/search/s-natural-logo
+            - generic [ref=f36e753]:
+              - generic [ref=f36e754]: 74,614 S Natural Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e756]: Shutterstock
+        - generic [ref=f36e763] [cursor=pointer]:
+          - button [ref=f36e768]:
+            - img "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f36e770]
+          - link "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f36e772]:
+            - /url: https://www.magnific.com/vectors/s-curve
+            - generic [ref=f36e773]:
+              - generic [ref=f36e774]: S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f36e776]: Magnific
+        - generic [ref=f36e783] [cursor=pointer]:
+          - button [ref=f36e788]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e790]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e792]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e793]:
+              - generic [ref=f36e794]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e796]: Shutterstock
+        - generic [ref=f36e803] [cursor=pointer]:
+          - button [ref=f36e808]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e810]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e812]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e813]:
+              - generic [ref=f36e814]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e816]: Shutterstock
+        - generic [ref=f36e823] [cursor=pointer]:
+          - button [ref=f36e828]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e830]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e832]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e833]:
+              - generic [ref=f36e834]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e836]: Shutterstock
+        - generic [ref=f36e843] [cursor=pointer]:
+          - generic [ref=f36e845]:
+            - button [ref=f36e848]:
+              - img "abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy" [ref=f36e850]
+            - generic: 라이선스
+          - link "abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy Alamy" [ref=f36e852]:
+            - /url: https://www.alamy.com/abstract-letter-s-simple-curves-geometric-logo-image241749379.html
+            - generic [ref=f36e853]:
+              - generic [ref=f36e854]: abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy
+              - generic [ref=f36e856]: Alamy
+        - generic [ref=f36e863] [cursor=pointer]:
+          - button [ref=f36e868]:
+            - img "Logo PNG Image – Free Download | CleanPNG - CleanPNG" [ref=f36e870]
+          - link "Logo PNG Image – Free Download | CleanPNG - CleanPNG CleanPNG" [ref=f36e872]:
+            - /url: https://www.cleanpng.com/png-symfony-doctrine-php-software-developer-applicatio-wazjhn/
+            - generic [ref=f36e873]:
+              - generic [ref=f36e874]: Logo PNG Image – Free Download | CleanPNG - CleanPNG
+              - generic [ref=f36e876]: CleanPNG
+        - generic [ref=f36e883] [cursor=pointer]:
+          - button [ref=f36e888]:
+            - img "Abstract S Circle Logo - Exclusive Premade | Brandforma" [ref=f36e890]
+          - link "Abstract S Circle Logo - Exclusive Premade | Brandforma Brandforma" [ref=f36e892]:
+            - /url: https://brandforma.com/work/abstract-s-circle-logo-for-sale
+            - generic [ref=f36e893]:
+              - generic [ref=f36e894]: Abstract S Circle Logo - Exclusive Premade | Brandforma
+              - generic [ref=f36e896]: Brandforma
+        - generic [ref=f36e903] [cursor=pointer]:
+          - button [ref=f36e908]:
+            - img "Minimalist Letter S With Power Logo | Scalebranding" [ref=f36e910]
+          - link "Minimalist Letter S With Power Logo | Scalebranding Scalebranding" [ref=f36e912]:
+            - /url: https://scalebranding.com/product/385040
+            - generic [ref=f36e913]:
+              - generic [ref=f36e914]: Minimalist Letter S With Power Logo | Scalebranding
+              - generic [ref=f36e916]: Scalebranding
+        - generic [ref=f36e923] [cursor=pointer]:
+          - generic [ref=f36e925]:
+            - button [ref=f36e928]:
+              - img "S Curve Vector Art, Icons, and Graphics for Free Download" [ref=f36e930]
+            - generic: 라이선스
+          - link "S Curve Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f36e932]:
+            - /url: https://www.vecteezy.com/free-vector/s-curve
+            - generic [ref=f36e933]:
+              - generic [ref=f36e934]: S Curve Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f36e936]: Vecteezy
+        - generic [ref=f36e943] [cursor=pointer]:
+          - generic [ref=f36e945]:
+            - button [ref=f36e948]:
+              - img "Abstract S Logo | Scalebranding" [ref=f36e950]
+            - generic: 라이선스
+          - link "Abstract S Logo | Scalebranding Scalebranding" [ref=f36e952]:
+            - /url: https://scalebranding.com/product/37334
+            - generic [ref=f36e953]:
+              - generic [ref=f36e954]: Abstract S Logo | Scalebranding
+              - generic [ref=f36e956]: Scalebranding
+        - generic [ref=f36e963] [cursor=pointer]:
+          - generic [ref=f36e965]:
+            - button [ref=f36e968]:
+              - img "Curve Logo Stock Illustrations – 178,789 Curve Logo Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f36e970]
+            - generic: 라이선스
+          - link "Curve Logo Stock Illustrations – 178,789 Curve Logo Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f36e972]:
+            - /url: https://www.dreamstime.com/illustration/curve-logo.html
+            - generic [ref=f36e973]:
+              - generic [ref=f36e974]: Curve Logo Stock Illustrations – 178,789 Curve Logo Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f36e976]: Dreamstime.com
+        - generic [ref=f36e983] [cursor=pointer]:
+          - button [ref=f36e988]:
+            - img "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e990]
+          - link "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e992]:
+            - /url: https://www.shutterstock.com/search/s-logo-minimalist
+            - generic [ref=f36e993]:
+              - generic [ref=f36e994]: 75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e996]: Shutterstock
+        - generic [ref=f36e1003] [cursor=pointer]:
+          - button [ref=f36e1008]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e1010]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e1012]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e1013]:
+              - generic [ref=f36e1014]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e1016]: Shutterstock
+        - generic [ref=f36e1023] [cursor=pointer]:
+          - button [ref=f36e1028]:
+            - img "Spiral Flow S Logo - Exclusive Premade | Brandforma" [ref=f36e1030]
+          - link "Spiral Flow S Logo - Exclusive Premade | Brandforma Brandforma" [ref=f36e1032]:
+            - /url: https://brandforma.com/work/spiral-flow-s-logo-for-sale
+            - generic [ref=f36e1033]:
+              - generic [ref=f36e1034]: Spiral Flow S Logo - Exclusive Premade | Brandforma
+              - generic [ref=f36e1036]: Brandforma
+        - generic [ref=f36e1043] [cursor=pointer]:
+          - button [ref=f36e1048]:
+            - img "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e1050]
+          - link "75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e1052]:
+            - /url: https://www.shutterstock.com/search/s-logo-minimalist
+            - generic [ref=f36e1053]:
+              - generic [ref=f36e1054]: 75,421 S Logo Minimalist Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e1056]: Shutterstock
+        - generic [ref=f36e1063] [cursor=pointer]:
+          - button [ref=f36e1068]:
+            - img "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f36e1070]
+          - link "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f36e1072]:
+            - /url: https://www.magnific.com/vectors/s-curve
+            - generic [ref=f36e1073]:
+              - generic [ref=f36e1074]: S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f36e1076]: Magnific
+        - generic [ref=f36e1083] [cursor=pointer]:
+          - button [ref=f36e1088]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e1090]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e1092]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e1093]:
+              - generic [ref=f36e1094]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e1096]: Shutterstock
+        - generic [ref=f36e1103] [cursor=pointer]:
+          - generic [ref=f36e1105]:
+            - button [ref=f36e1108]:
+              - img "Curves Logo Vector Stock Illustrations – 11,352 Curves Logo Vector Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f36e1110]
+            - generic: 라이선스
+          - link "Curves Logo Vector Stock Illustrations – 11,352 Curves Logo Vector Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f36e1112]:
+            - /url: https://www.dreamstime.com/illustration/curves-logo-vector.html
+            - generic [ref=f36e1113]:
+              - generic [ref=f36e1114]: Curves Logo Vector Stock Illustrations – 11,352 Curves Logo Vector Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f36e1116]: Dreamstime.com
+        - generic [ref=f36e1123] [cursor=pointer]:
+          - button [ref=f36e1128]:
+            - img "Minimalist logo design png Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f36e1130]
+          - link "Minimalist logo design png Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f36e1132]:
+            - /url: https://www.magnific.com/vectors/minimalist-logo-design-png
+            - generic [ref=f36e1133]:
+              - generic [ref=f36e1134]: Minimalist logo design png Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f36e1136]: Magnific
+        - generic [ref=f36e1143] [cursor=pointer]:
+          - button [ref=f36e1148]:
+            - img "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f36e1150]
+          - link "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f36e1152]:
+            - /url: https://www.magnific.com/vectors/s-curve
+            - generic [ref=f36e1153]:
+              - generic [ref=f36e1154]: S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f36e1156]: Magnific
+        - generic [ref=f36e1163] [cursor=pointer]:
+          - generic [ref=f36e1165]:
+            - button [ref=f36e1168]:
+              - img "7,200+ S Curves Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f36e1170]
+            - generic: 라이선스
+          - link "7,200+ S Curves Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock iStock" [ref=f36e1172]:
+            - /url: https://www.istockphoto.com/illustrations/s-curves
+            - generic [ref=f36e1173]:
+              - generic [ref=f36e1174]: 7,200+ S Curves Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+              - generic [ref=f36e1176]: iStock
+        - generic [ref=f36e1183] [cursor=pointer]:
+          - button [ref=f36e1188]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e1190]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e1192]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e1193]:
+              - generic [ref=f36e1194]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e1196]: Shutterstock
+        - generic [ref=f36e1203] [cursor=pointer]:
+          - button [ref=f36e1208]:
+            - img "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f36e1210]
+          - link "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f36e1212]:
+            - /url: https://www.magnific.com/vectors/s-curve
+            - generic [ref=f36e1213]:
+              - generic [ref=f36e1214]: S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f36e1216]: Magnific
+        - generic [ref=f36e1223] [cursor=pointer]:
+          - button [ref=f36e1228]:
+            - img "A black, abstract letter s on a white background - Free Vector Illustration on Unsplash" [ref=f36e1230]
+          - link "A black, abstract letter s on a white background - Free Vector Illustration on Unsplash Unsplash" [ref=f36e1232]:
+            - /url: https://unsplash.com/illustrations/a-black-abstract-letter-s-on-a-white-background-CZOoy5gSIJo
+            - generic [ref=f36e1233]:
+              - generic [ref=f36e1234]: A black, abstract letter s on a white background - Free Vector Illustration on Unsplash
+              - generic [ref=f36e1236]: Unsplash
+        - generic [ref=f36e1243] [cursor=pointer]:
+          - button [ref=f36e1248]:
+            - img "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f36e1250]
+          - link "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f36e1252]:
+            - /url: https://www.magnific.com/vectors/s-curve
+            - generic [ref=f36e1253]:
+              - generic [ref=f36e1254]: S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f36e1256]: Magnific
+        - generic [ref=f36e1263] [cursor=pointer]:
+          - button [ref=f36e1268]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e1270]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e1272]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e1273]:
+              - generic [ref=f36e1274]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e1276]: Shutterstock
+        - generic [ref=f36e1283] [cursor=pointer]:
+          - generic [ref=f36e1285]:
+            - button [ref=f36e1288]:
+              - img "2,315 Soft Icons High Res Illustrations - Getty Images" [ref=f36e1290]
+            - generic: 라이선스
+          - link "2,315 Soft Icons High Res Illustrations - Getty Images Getty Images" [ref=f36e1292]:
+            - /url: https://www.gettyimages.com/illustrations/soft-icons
+            - generic [ref=f36e1293]:
+              - generic [ref=f36e1294]: 2,315 Soft Icons High Res Illustrations - Getty Images
+              - generic [ref=f36e1296]: Getty Images
+        - generic [ref=f36e1303] [cursor=pointer]:
+          - button [ref=f36e1308]:
+            - img "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f36e1310]
+          - link "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f36e1312]:
+            - /url: https://www.magnific.com/vectors/s-curve
+            - generic [ref=f36e1313]:
+              - generic [ref=f36e1314]: S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f36e1316]: Magnific
+        - generic [ref=f36e1323] [cursor=pointer]:
+          - generic [ref=f36e1325]:
+            - button [ref=f36e1328]:
+              - img "Flow Logo Images – Browse 379,079 Stock Photos, Vectors, and Video | Adobe Stock" [ref=f36e1330]
+            - generic: 라이선스
+          - link "Flow Logo Images – Browse 379,079 Stock Photos, Vectors, and Video | Adobe Stock Adobe Stock" [ref=f36e1332]:
+            - /url: https://stock.adobe.com/search?k=flow+logo
+            - generic [ref=f36e1333]:
+              - generic [ref=f36e1334]: Flow Logo Images – Browse 379,079 Stock Photos, Vectors, and Video | Adobe Stock
+              - generic [ref=f36e1336]: Adobe Stock
+        - generic [ref=f36e1343] [cursor=pointer]:
+          - button [ref=f36e1348]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e1350]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e1352]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e1353]:
+              - generic [ref=f36e1354]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e1356]: Shutterstock
+        - generic [ref=f36e1363] [cursor=pointer]:
+          - button [ref=f36e1368]:
+            - img "Browse thousands of Elegant S Logo images for design inspiration | Dribbble" [ref=f36e1370]
+          - link "Browse thousands of Elegant S Logo images for design inspiration | Dribbble Dribbble" [ref=f36e1372]:
+            - /url: https://dribbble.com/search/elegant-s-logo
+            - generic [ref=f36e1373]:
+              - generic [ref=f36e1374]: Browse thousands of Elegant S Logo images for design inspiration | Dribbble
+              - generic [ref=f36e1376]: Dribbble
+        - generic [ref=f36e1383] [cursor=pointer]:
+          - button [ref=f36e1388]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e1390]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e1392]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e1393]:
+              - generic [ref=f36e1394]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e1396]: Shutterstock
+        - generic [ref=f36e1403] [cursor=pointer]:
+          - button [ref=f36e1408]:
+            - img "Abstract Overlapping S Logo - Exclusive Premade | Brandforma" [ref=f36e1410]
+          - link "Abstract Overlapping S Logo - Exclusive Premade | Brandforma Brandforma" [ref=f36e1412]:
+            - /url: https://brandforma.com/work/abstract-overlapping-s-logo-for-sale
+            - generic [ref=f36e1413]:
+              - generic [ref=f36e1414]: Abstract Overlapping S Logo - Exclusive Premade | Brandforma
+              - generic [ref=f36e1416]: Brandforma
+        - generic [ref=f36e1423] [cursor=pointer]:
+          - generic [ref=f36e1425]:
+            - button [ref=f36e1428]:
+              - img "Minimalist Letter S With Power Logo | Scalebranding" [ref=f36e1430]
+            - generic: 라이선스
+          - link "Minimalist Letter S With Power Logo | Scalebranding Scalebranding" [ref=f36e1432]:
+            - /url: https://scalebranding.com/product/385040
+            - generic [ref=f36e1433]:
+              - generic [ref=f36e1434]: Minimalist Letter S With Power Logo | Scalebranding
+              - generic [ref=f36e1436]: Scalebranding
+        - generic [ref=f36e1443] [cursor=pointer]:
+          - generic [ref=f36e1445]:
+            - button [ref=f36e1448]:
+              - img "Abstract Organic Shapes Images – Browse 2,958,163 Stock Photos, Vectors, and Video | Adobe Stock" [ref=f36e1450]
+            - generic: 라이선스
+          - link "Abstract Organic Shapes Images – Browse 2,958,163 Stock Photos, Vectors, and Video | Adobe Stock Adobe Stock" [ref=f36e1452]:
+            - /url: https://stock.adobe.com/search?k=abstract+organic+shapes
+            - generic [ref=f36e1453]:
+              - generic [ref=f36e1454]: Abstract Organic Shapes Images – Browse 2,958,163 Stock Photos, Vectors, and Video | Adobe Stock
+              - generic [ref=f36e1456]: Adobe Stock
+        - generic [ref=f36e1463] [cursor=pointer]:
+          - button [ref=f36e1468]:
+            - img "Black White Letter S Abstract Minimalist Logo Example Swansea City AFC" [ref=f36e1470]
+          - link "Black White Letter S Abstract Minimalist Logo Example Swansea City AFC LogoFav" [ref=f36e1472]:
+            - /url: https://www.logofav.com/logo/black-white-letter-s-abstract-minimalist-logo-example-swansea-city-afc
+            - generic [ref=f36e1473]:
+              - generic [ref=f36e1474]: Black White Letter S Abstract Minimalist Logo Example Swansea City AFC
+              - generic [ref=f36e1476]: LogoFav
+        - generic [ref=f36e1483] [cursor=pointer]:
+          - button [ref=f36e1488]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f36e1490]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f36e1492]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f36e1493]:
+              - generic [ref=f36e1494]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f36e1496]: Shutterstock
+        - generic [ref=f36e1503] [cursor=pointer]:
+          - button [ref=f36e1508]:
+            - img "Browse thousands of Fluid Logo images for design inspiration | Dribbble" [ref=f36e1510]
+          - link "Browse thousands of Fluid Logo images for design inspiration | Dribbble Dribbble" [ref=f36e1512]:
+            - /url: https://dribbble.com/search/fluid-logo
+            - generic [ref=f36e1513]:
+              - generic [ref=f36e1514]: Browse thousands of Fluid Logo images for design inspiration | Dribbble
+              - generic [ref=f36e1516]: Dribbble
+        - generic [ref=f36e1523] [cursor=pointer]:
+          - button [ref=f36e1528]:
+            - img "Simple Minimalist Letter S Curve Line Logo Design" [ref=f36e1530]
+          - link "Simple Minimalist Letter S Curve Line Logo Design Pinterest" [ref=f36e1532]:
+            - /url: https://in.pinterest.com/pin/simple-minimalist-letter-s-curve-line-stock-vector-royalty-free-1494373298--342766221640822611/
+            - generic [ref=f36e1533]:
+              - generic [ref=f36e1534]: Simple Minimalist Letter S Curve Line Logo Design
+              - generic [ref=f36e1536]: Pinterest
+        - generic [ref=f36e1543] [cursor=pointer]:
+          - generic [ref=f36e1545]:
+            - button [ref=f36e1548]:
+              - img "S Minimal Logo Vector Art, Icons, and Graphics for Free Download" [ref=f36e1550]
+            - generic: 라이선스
+          - link "S Minimal Logo Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f36e1552]:
+            - /url: https://www.vecteezy.com/free-vector/s-minimal-logo
+            - generic [ref=f36e1553]:
+              - generic [ref=f36e1554]: S Minimal Logo Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f36e1556]: Vecteezy
+        - generic [ref=f36e1563] [cursor=pointer]:
+          - button [ref=f36e1568]:
+            - img "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f36e1570]
+          - link "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f36e1572]:
+            - /url: https://www.magnific.com/vectors/s-curve
+            - generic [ref=f36e1573]:
+              - generic [ref=f36e1574]: S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f36e1576]: Magnific
+        - generic [ref=f36e1583] [cursor=pointer]:
+          - button [ref=f36e1588]:
+            - img "abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy" [ref=f36e1590]
+          - link "abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy Alamy" [ref=f36e1592]:
+            - /url: https://www.alamy.com/abstract-letter-s-simple-curves-geometric-logo-image241749379.html
+            - generic [ref=f36e1593]:
+              - generic [ref=f36e1594]: abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy
+              - generic [ref=f36e1596]: Alamy
+        - generic [ref=f36e1603] [cursor=pointer]:
+          - button [ref=f36e1608]:
+            - img "Browse thousands of Fluid Logo images for design inspiration | Dribbble" [ref=f36e1610]
+          - link "Browse thousands of Fluid Logo images for design inspiration | Dribbble Dribbble" [ref=f36e1612]:
+            - /url: https://dribbble.com/search/fluid-logo
+            - generic [ref=f36e1613]:
+              - generic [ref=f36e1614]: Browse thousands of Fluid Logo images for design inspiration | Dribbble
+              - generic [ref=f36e1616]: Dribbble
+      - generic [ref=f36e1623]:
+        - heading "Page Navigation" [level=1] [ref=f36e1624]
+        - generic [ref=f36e1625]:
+          - text: 나머지 검색 결과가 찾고 있는 항목이 아닐 수도 있습니다.
+          - link "검색 결과 더보기" [ref=f36e1626] [cursor=pointer]:
+            - /url: "#"
+      - navigation

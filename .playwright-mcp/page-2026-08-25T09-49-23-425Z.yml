@@ -1,0 +1,78 @@
+- generic [ref=f182e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f182e15]:
+      - generic [ref=f182e18]:
+        - generic:
+          - img "검색 아이콘"
+        - combobox "검색" [ref=f182e20]
+        - generic "이미지 업로드" [ref=f182e23]:
+          - button "Pinterest 렌즈" [ref=f182e24] [cursor=pointer]
+      - link "내 프로필" [ref=f182e33] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f182e40]:
+          - generic [ref=f182e41]: 임
+      - button "계정" [ref=f182e45] [cursor=pointer]
+  - navigation [ref=f182e50]:
+    - generic [ref=f182e52]:
+      - generic [ref=f182e53]:
+        - generic "홈" [ref=f182e57]:
+          - link "홈" [ref=f182e58] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f182e65]:
+          - link "홈" [ref=f182e66] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f182e73]:
+          - link "내 보드" [ref=f182e74] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f182e81]:
+          - button "만들기" [ref=f182e82] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f182e97]:
+        - button "설정 및 지원" [ref=f182e98] [cursor=pointer]
+  - main [ref=f182e103]:
+    - generic [ref=f182e112]:
+      - button "뒤로" [ref=f182e114] [cursor=pointer]
+      - generic [ref=f182e124]:
+        - generic:
+          - generic:
+            - list:
+              - listitem [ref=f182e125]:
+                - group "Closeup content container" [ref=f182e131]:
+                  - generic [ref=f182e136]:
+                    - region "핀 이미지 및 탐색할 항목" [ref=f182e139]
+                    - generic [ref=f182e150]:
+                      - generic [ref=f182e153]:
+                        - list [ref=f182e154]:
+                          - generic [ref=f182e155]:
+                            - listitem [ref=f182e157]:
+                              - generic "반응" [ref=f182e160]:
+                                - button "반응" [ref=f182e161] [cursor=pointer]
+                              - generic [ref=f182e166]: "3"
+                            - listitem [ref=f182e168]:
+                              - generic "댓글" [ref=f182e171]:
+                                - button "댓글" [ref=f182e172] [cursor=pointer]
+                            - listitem [ref=f182e178]:
+                              - generic "공유" [ref=f182e182]:
+                                - button "이 핀 공유" [ref=f182e185] [cursor=pointer]
+                            - listitem [ref=f182e191]:
+                              - generic "추가 작업" [ref=f182e196]:
+                                - button "추가 작업" [ref=f182e199] [cursor=pointer]
+                        - generic [ref=f182e209]:
+                          - 'button "저장할 보드 선택: ..." [ref=f182e212] [cursor=pointer]':
+                            - generic "..." [ref=f182e215]
+                          - button "저장" [ref=f182e221] [cursor=pointer]
+                      - generic [ref=f182e229]:
+                        - generic [ref=f182e238]:
+                          - link [ref=f182e240] [cursor=pointer]:
+                            - /url: /Logodesigner31/
+                            - img "Sabuj Ali / Logo And Brand Identity Designer 아바타 링크" [ref=f182e247]
+                          - link [ref=f182e251] [cursor=pointer]:
+                            - /url: /Logodesigner31/
+                            - heading "Sabuj Ali / Logo And Brand Identity Designer" [level=2] [ref=f182e252]
+                        - generic [ref=f182e257]:
+                          - link [ref=f182e263] [cursor=pointer]:
+                            - /url: https://dribbble.com/shots/15875404-Letter-S-Monogram-Logo?utm_source=Pinterest&utm_campaign=sabuj_ali&utm_content=Letter%20S%20Monogram%20Logo&utm_medium=organic
+                            - heading "Letter S Monogram Logo" [level=1] [ref=f182e264]
+                          - link "사이트 방문" [ref=f182e272] [cursor=pointer]:
+                            - /url: https://dribbble.com/shots/15875404-Letter-S-Monogram-Logo?utm_source=Pinterest&utm_campaign=sabuj_ali&utm_content=Letter%20S%20Monogram%20Logo&utm_medium=organic

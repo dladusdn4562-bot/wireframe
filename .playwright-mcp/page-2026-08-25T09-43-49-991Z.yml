@@ -1,0 +1,134 @@
+- generic [ref=f63e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f63e15]:
+      - generic [ref=f63e18]:
+        - generic:
+          - img "검색 아이콘"
+        - combobox "검색" [ref=f63e20]
+        - generic "이미지 업로드" [ref=f63e23]:
+          - button "Pinterest 렌즈" [ref=f63e24] [cursor=pointer]
+      - link "내 프로필" [ref=f63e33] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f63e40]:
+          - generic [ref=f63e41]: 임
+      - button "계정" [ref=f63e45] [cursor=pointer]
+  - navigation [ref=f63e50]:
+    - generic [ref=f63e52]:
+      - generic [ref=f63e53]:
+        - generic "홈" [ref=f63e57]:
+          - link "홈" [ref=f63e58] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f63e65]:
+          - link "홈" [ref=f63e66] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f63e73]:
+          - link "내 보드" [ref=f63e74] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f63e81]:
+          - button "만들기" [ref=f63e82] [cursor=pointer]
+        - generic "업데이트" [ref=f63e91]:
+          - button "업데이트" [ref=f63e92] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f63e104]:
+        - button "설정 및 지원" [ref=f63e105] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=f63e110]:
+    - generic [ref=f63e119]:
+      - button "뒤로" [ref=f63e121] [cursor=pointer]
+      - list [ref=f63e135]:
+        - listitem [ref=f63e136]:
+          - group "Closeup content container" [ref=f63e143]:
+            - generic [ref=f63e148]:
+              - region "핀 이미지 및 탐색할 항목" [ref=f63e151]:
+                - generic [ref=f63e156]:
+                  - 'img "포함된 내용: S Logo Minimal, S Square Logo, Logo Shapes Design, S Lettermark, S Logotype, S S Logo, S Logo Design Icons, Letter S Logo Fonts, One Letter Logo" [ref=f63e161]'
+                  - generic [ref=f63e162]:
+                    - button "더 크게 보기" [ref=f63e164] [cursor=pointer]:
+                      - generic [ref=f63e166]:
+                        - generic: 더 크게 보기
+                        - img "더 크게 보기" [ref=f63e168]
+                    - link "사이트 방문" [ref=f63e173] [cursor=pointer]:
+                      - /url: https://sites.google.com/view/fashion-logo-inspirations/blog/?schweigert-logo-germany-s-logo-design-single-letter-logo-s-letter-logo&utm_source=Pinterest&utm_medium=organic
+              - generic [ref=f63e178]:
+                - generic [ref=f63e181]:
+                  - list [ref=f63e182]:
+                    - generic [ref=f63e183]:
+                      - listitem [ref=f63e185]:
+                        - generic "반응" [ref=f63e188]:
+                          - button "반응" [ref=f63e189] [cursor=pointer]
+                        - generic [ref=f63e194]: "1"
+                      - listitem [ref=f63e196]:
+                        - generic "댓글" [ref=f63e199]:
+                          - button "댓글" [ref=f63e200] [cursor=pointer]
+                      - listitem [ref=f63e206]:
+                        - generic "공유" [ref=f63e210]:
+                          - button "이 핀 공유" [ref=f63e213] [cursor=pointer]
+                      - listitem [ref=f63e219]:
+                        - generic "추가 작업" [ref=f63e224]:
+                          - button "추가 작업" [ref=f63e227] [cursor=pointer]
+                  - generic [ref=f63e237]:
+                    - 'button "저장할 보드 선택: 프로필" [ref=f63e240] [cursor=pointer]':
+                      - generic "프로필" [ref=f63e243]
+                    - button "저장" [ref=f63e249] [cursor=pointer]
+                - generic [ref=f63e257]:
+                  - generic [ref=f63e266]:
+                    - link [ref=f63e268] [cursor=pointer]:
+                      - /url: /stylish_shop_creations/
+                      - img "Stylish Shop Creations 아바타 링크" [ref=f63e275]
+                    - link [ref=f63e279] [cursor=pointer]:
+                      - /url: /stylish_shop_creations/
+                      - heading "Stylish Shop Creations" [level=2] [ref=f63e280]
+                  - generic [ref=f63e283]:
+                    - generic [ref=f63e285]:
+                      - link [ref=f63e291] [cursor=pointer]:
+                        - /url: https://sites.google.com/view/fashion-logo-inspirations/blog/?schweigert-logo-germany-s-logo-design-single-letter-logo-s-letter-logo&utm_source=Pinterest&utm_medium=organic
+                        - heading "👉 Schweigert logo - Germany | S logo design, Single letter logo, S letter logo" [level=1] [ref=f63e292]
+                      - link "사이트 방문" [ref=f63e300] [cursor=pointer]:
+                        - /url: https://sites.google.com/view/fashion-logo-inspirations/blog/?schweigert-logo-germany-s-logo-design-single-letter-logo-s-letter-logo&utm_source=Pinterest&utm_medium=organic
+                    - generic [ref=f63e304]:
+                      - heading "설명" [level=4] [ref=f63e305]
+                      - generic [ref=f63e309]:
+                        - text: Monogram, Initial Minimal letter logo for brand.
+                        - link "#letterlogo" [ref=f63e311] [cursor=pointer]:
+                          - /url: /search/pins/?q=letterlogo
+                        - link "#logo" [ref=f63e313] [cursor=pointer]:
+                          - /url: /search/pins/?q=logo
+                        - link "#logodesigner" [ref=f63e315] [cursor=pointer]:
+                          - /url: /search/pins/?q=logodesigner
+                        - link "#branding" [ref=f63e317] [cursor=pointer]:
+                          - /url: /search/pins/?q=branding
+                        - link "#logos" [ref=f63e319] [cursor=pointer]:
+                          - /url: /search/pins/?q=logos
+                        - link "#logodesigns" [ref=f63e321] [cursor=pointer]:
+                          - /url: /search/pins/?q=logodesigns
+                        - link "#graphicdesign" [ref=f63e323] [cursor=pointer]:
+                          - /url: /search/pins/?q=graphicdesign
+                        - link "#logomark" [ref=f63e325] [cursor=pointer]:
+                          - /url: /search/pins/?q=logomark
+                        - link "#logodesign" [ref=f63e327] [cursor=pointer]:
+                          - /url: /search/pins/?q=logodesign
+                        - link "#logotype" [ref=f63e329] [cursor=pointer]:
+                          - /url: /search/pins/?q=logotype
+                        - link "#logomaker" [ref=f63e331] [cursor=pointer]:
+                          - /url: /search/pins/?q=logomaker
+                        - link "#logoinspirations" [ref=f63e333] [cursor=pointer]:
+                          - /url: /search/pins/?q=logoinspirations
+                        - link "#brandidentity" [ref=f63e335] [cursor=pointer]:
+                          - /url: /search/pins/?q=brandidentity
+                        - link "#modernlogo" [ref=f63e337] [cursor=pointer]:
+                          - /url: /search/pins/?q=modernlogo
+                        - link "#logoinspiration" [ref=f63e339] [cursor=pointer]:
+                          - /url: /search/pins/?q=logoinspiration
+                        - link "#logoideas" [ref=f63e341] [cursor=pointer]:
+                          - /url: /search/pins/?q=logoideas
+                        - link "#design" [ref=f63e343] [cursor=pointer]:
+                          - /url: /search/pins/?q=design
+                        - link "#lettering" [ref=f63e345] [cursor=pointer]:
+                          - /url: /search/pins/?q=lettering
+                        - text: ☝️ S Logo Minimal, S Square Logo, Logo Shapes Design, S Lettermark, S Logotype, S S Logo, S Logo Design Icons, Letter S Logo Fonts, One Letter Logo095
+                      - button "더 보기" [ref=f63e347] [cursor=pointer]
+                - img "편집기를 불러오는 중" [ref=f63e360]
+  - generic:
+    - contentinfo "꼬리말"

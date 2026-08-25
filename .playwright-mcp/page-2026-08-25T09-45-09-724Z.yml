@@ -1,0 +1,115 @@
+- generic [ref=f75e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f75e15]:
+      - generic [ref=f75e18]:
+        - generic:
+          - img "검색 아이콘"
+        - combobox "검색" [ref=f75e20]
+        - generic "이미지 업로드" [ref=f75e23]:
+          - button "Pinterest 렌즈" [ref=f75e24] [cursor=pointer]
+      - link "내 프로필" [ref=f75e33] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f75e40]:
+          - generic [ref=f75e41]: 임
+      - button "계정" [ref=f75e45] [cursor=pointer]
+  - navigation [ref=f75e50]:
+    - generic [ref=f75e52]:
+      - generic [ref=f75e53]:
+        - generic "홈" [ref=f75e57]:
+          - link "홈" [ref=f75e58] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f75e65]:
+          - link "홈" [ref=f75e66] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f75e73]:
+          - link "내 보드" [ref=f75e74] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f75e81]:
+          - button "만들기" [ref=f75e82] [cursor=pointer]
+        - generic "업데이트" [ref=f75e91]:
+          - button "업데이트" [ref=f75e92] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f75e104]:
+        - button "설정 및 지원" [ref=f75e105] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=f75e110]:
+    - generic [ref=f75e119]:
+      - button "뒤로" [ref=f75e121] [cursor=pointer]
+      - generic [ref=f75e130]:
+        - generic [ref=f75e131]: 관련 상품 결과를 불러오는 중
+        - list [ref=f75e136]:
+          - listitem [ref=f75e137]:
+            - group "Closeup content container" [ref=f75e144]:
+              - generic [ref=f75e149]:
+                - region "핀 이미지 및 탐색할 항목" [ref=f75e152]:
+                  - generic [ref=f75e162]:
+                    - button "더 크게 보기" [ref=f75e164] [cursor=pointer]:
+                      - generic [ref=f75e166]:
+                        - generic: 더 크게 보기
+                        - img "더 크게 보기" [ref=f75e168]
+                    - button "이미지 검색" [ref=f75e173] [cursor=pointer]:
+                      - generic [ref=f75e175]:
+                        - generic: 이미지 검색
+                        - img "이미지 검색" [ref=f75e177]
+                    - link "사이트 방문" [ref=f75e182] [cursor=pointer]:
+                      - /url: https://de.logoku.com/negative-space-logo-letter-s-dbha?utm_source=Pinterest&utm_medium=organic
+                - generic [ref=f75e187]:
+                  - generic [ref=f75e190]:
+                    - list [ref=f75e191]:
+                      - generic [ref=f75e192]:
+                        - listitem [ref=f75e194]:
+                          - generic "반응" [ref=f75e197]:
+                            - button "반응" [ref=f75e198] [cursor=pointer]
+                          - generic [ref=f75e203]: "0"
+                        - listitem [ref=f75e205]:
+                          - generic "댓글" [ref=f75e208]:
+                            - button "댓글" [ref=f75e209] [cursor=pointer]
+                        - listitem [ref=f75e215]:
+                          - generic "공유" [ref=f75e219]:
+                            - button "이 핀 공유" [ref=f75e222] [cursor=pointer]
+                        - listitem [ref=f75e228]:
+                          - generic "추가 작업" [ref=f75e233]:
+                            - button "추가 작업" [ref=f75e236] [cursor=pointer]
+                    - generic [ref=f75e246]:
+                      - 'button "저장할 보드 선택: 프로필" [ref=f75e249] [cursor=pointer]':
+                        - generic "프로필" [ref=f75e252]
+                      - button "저장" [ref=f75e258] [cursor=pointer]
+                  - generic [ref=f75e266]:
+                    - generic [ref=f75e275]:
+                      - link [ref=f75e277] [cursor=pointer]:
+                        - /url: /logokucom/
+                        - img "LOGOKU 아바타 링크" [ref=f75e284]
+                      - link [ref=f75e288] [cursor=pointer]:
+                        - /url: /logokucom/
+                        - heading "LOGOKU" [level=2] [ref=f75e289]
+                    - generic [ref=f75e292]:
+                      - generic [ref=f75e294]:
+                        - link [ref=f75e300] [cursor=pointer]:
+                          - /url: https://de.logoku.com/negative-space-logo-letter-s-dbha?utm_source=Pinterest&utm_medium=organic
+                          - heading "Negativer Raum-Logo-Buchstabe S" [level=1] [ref=f75e301]
+                        - link "사이트 방문" [ref=f75e309] [cursor=pointer]:
+                          - /url: https://de.logoku.com/negative-space-logo-letter-s-dbha?utm_source=Pinterest&utm_medium=organic
+                      - generic [ref=f75e313]:
+                        - heading "설명" [level=4] [ref=f75e314]
+                        - generic [ref=f75e315]: The logo is a blank space by forming the initials of the letter S in it. The logo can be used for the needs of beauty companies, clothing, restaurants, legal lawyers, or companies that want to use the initials of this logo.
+                        - button "더 보기" [ref=f75e320] [cursor=pointer]
+          - listitem [ref=f75e323]
+          - listitem [ref=f75e327]
+          - listitem [ref=f75e331]
+          - listitem [ref=f75e335]
+          - listitem [ref=f75e339]
+          - listitem [ref=f75e343]
+          - listitem [ref=f75e347]
+          - listitem [ref=f75e351]
+          - listitem [ref=f75e355]
+          - listitem [ref=f75e359]
+          - listitem [ref=f75e363]
+          - listitem [ref=f75e367]
+          - listitem [ref=f75e371]
+          - listitem [ref=f75e375]
+          - listitem [ref=f75e379]
+          - listitem [ref=f75e383]
+          - listitem [ref=f75e387]
+          - listitem [ref=f75e391]

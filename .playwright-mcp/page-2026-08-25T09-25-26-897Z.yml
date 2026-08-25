@@ -1,0 +1,281 @@
+- generic [active] [ref=f46e1]:
+  - generic:
+    - generic:
+      - link "주요 콘텐츠로 이동" [ref=f46e2] [cursor=pointer]
+      - link "연속 스크롤 사용 중지" [ref=f46e3] [cursor=pointer]:
+        - /url: "#"
+      - link "접근성 도움말" [ref=f46e4] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ko
+  - generic [ref=f46e9]:
+    - search [ref=f46e10]:
+      - generic [ref=f46e12]:
+        - link "Google 홈페이지로 이동" [ref=f46e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwirwvPzuruWAxWeleEIHfVaEVgQPAgJ
+        - generic [ref=f46e22]:
+          - generic [ref=f46e23]:
+            - combobox "검색" [ref=f46e26]: minimalist soft continuous fluid ribbon s logo symbol black white minimalist soft continuous fluid ribbon s logo symbol black white
+            - generic [ref=f46e27]:
+              - button "지우기" [ref=f46e29] [cursor=pointer]
+              - generic [ref=f46e34]:
+                - button "입력 도구" [ref=f46e35] [cursor=pointer]
+                - button "음성 검색" [ref=f46e39] [cursor=pointer]
+                - button "이미지로 검색" [ref=f46e42] [cursor=pointer]
+          - button "검색" [ref=f46e45] [cursor=pointer]
+    - generic [ref=f46e51]:
+      - button "Google 앱" [ref=f46e53] [cursor=pointer]
+      - 'button "Google 계정: 임연우 (dladusdn4562@gmail.com)" [ref=f46e58] [cursor=pointer]'
+  - generic [ref=f46e67]:
+    - generic [ref=f46e70]:
+      - navigation [ref=f46e73]:
+        - generic [ref=f46e74]:
+          - list [ref=f46e75]:
+            - listitem [ref=f46e76]:
+              - link "AI 모드" [ref=f46e79] [cursor=pointer]:
+                - /url: /search?q=minimalist+soft+continuous+fluid+ribbon+s+logo+symbol+black+white&sca_esv=1b85b69310503e88&sxsrf=APpeQnuSDOTB3D_WKHEECtY7O9qJQAAkpQ:1787649920402&udm=50&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwirwvPzuruWAxWeleEIHfVaEVgQ2J8OegQIChAD
+            - listitem [ref=f46e83]:
+              - link "전체" [ref=f46e84] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnuSDOTB3D_WKHEECtY7O9qJQAAkpQ:1787649920402&q=minimalist+soft+continuous+fluid+ribbon+s+logo+symbol+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&sa=X&ved=2ahUKEwirwvPzuruWAxWeleEIHfVaEVgQ0pQJegQICxAB
+            - listitem [ref=f46e87]:
+              - link "이미지" [disabled] [ref=f46e88]
+            - listitem [ref=f46e91]:
+              - link "쇼핑" [ref=f46e92] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnuSDOTB3D_WKHEECtY7O9qJQAAkpQ:1787649920402&udm=28&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=minimalist+soft+continuous+fluid+ribbon+s+logo+symbol+black+white&ved=1t:220175&ictx=111
+            - listitem [ref=f46e95]:
+              - link "짧은 동영상" [ref=f46e96] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnuSDOTB3D_WKHEECtY7O9qJQAAkpQ:1787649920402&udm=39&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=minimalist+soft+continuous+fluid+ribbon+s+logo+symbol+black+white&sa=X&ved=2ahUKEwirwvPzuruWAxWeleEIHfVaEVgQs6gLegQIDhAB
+            - listitem [ref=f46e99]:
+              - link "웹" [ref=f46e100] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnuSDOTB3D_WKHEECtY7O9qJQAAkpQ:1787649920402&udm=web&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=minimalist+soft+continuous+fluid+ribbon+s+logo+symbol+black+white&sa=X&ved=2ahUKEwirwvPzuruWAxWeleEIHfVaEVgQs6gLegQIDRAB
+            - listitem [ref=f46e103]:
+              - link "금융" [ref=f46e104] [cursor=pointer]:
+                - /url: /finance?sca_esv=1b85b69310503e88&output=search&q=minimalist+soft+continuous+fluid+ribbon+s+logo+symbol+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&sa=X&ved=2ahUKEwirwvPzuruWAxWeleEIHfVaEVgQ0pQJegQIDBAB
+            - listitem [ref=f46e107]:
+              - button [ref=f46e108] [cursor=pointer]:
+                - generic "필터 더보기" [ref=f46e109]: 더보기
+          - button "도구" [ref=f46e116] [cursor=pointer]
+      - link [ref=f46e124] [cursor=pointer]:
+        - /url: /save?sa=X&ved=2ahUKEwirwvPzuruWAxWeleEIHfVaEVgQ7XV6BAgFEAA
+    - heading "검색결과" [level=1] [ref=f46e128]
+    - main [ref=f46e130]:
+      - generic [ref=f46e139]:
+        - generic [ref=f46e143] [cursor=pointer]:
+          - button [ref=f46e148]:
+            - img "Letter S Arrow Ribbon Logo | Scalebranding" [ref=f46e150]
+          - link "Letter S Arrow Ribbon Logo | Scalebranding Scalebranding" [ref=f46e152]:
+            - /url: https://scalebranding.com/product/419584
+            - generic [ref=f46e153]:
+              - generic [ref=f46e154]: Letter S Arrow Ribbon Logo | Scalebranding
+              - generic [ref=f46e156]: Scalebranding
+        - generic [ref=f46e163] [cursor=pointer]:
+          - generic [ref=f46e165]:
+            - button [ref=f46e168]:
+              - img "letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy" [ref=f46e170]
+            - generic: 라이선스
+          - link "letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy Vecteezy" [ref=f46e172]:
+            - /url: https://www.vecteezy.com/vector-art/30335555-letter-s-curves-motion-ribbon-logo-vector
+            - generic [ref=f46e173]:
+              - generic [ref=f46e174]: letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy
+              - generic [ref=f46e176]: Vecteezy
+        - generic [ref=f46e183] [cursor=pointer]:
+          - button [ref=f46e188]:
+            - img "54,821 Letter S Ribbon Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f46e190]
+          - link "54,821 Letter S Ribbon Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f46e192]:
+            - /url: https://www.shutterstock.com/search/letter-s-ribbon
+            - generic [ref=f46e193]:
+              - generic [ref=f46e194]: 54,821 Letter S Ribbon Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f46e196]: Shutterstock
+        - generic [ref=f46e203] [cursor=pointer]:
+          - generic [ref=f46e205]:
+            - button [ref=f46e208]:
+              - img "Letter's Logo Ribbon Style Stock Illustrations – 1,066 Letter's Logo Ribbon Style Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f46e210]
+            - generic: 라이선스
+          - link "Letter's Logo Ribbon Style Stock Illustrations – 1,066 Letter's Logo Ribbon Style Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f46e212]:
+            - /url: https://www.dreamstime.com/illustration/letter-s-logo-ribbon-style.html
+            - generic [ref=f46e213]:
+              - generic [ref=f46e214]: Letter's Logo Ribbon Style Stock Illustrations – 1,066 Letter's Logo Ribbon Style Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f46e216]: Dreamstime.com
+        - generic [ref=f46e223] [cursor=pointer]:
+          - button [ref=f46e228]:
+            - img "Letter S Arrow Ribbon Logo | Scalebranding" [ref=f46e230]
+          - link "Letter S Arrow Ribbon Logo | Scalebranding Scalebranding" [ref=f46e232]:
+            - /url: https://scalebranding.com/product/419584
+            - generic [ref=f46e233]:
+              - generic [ref=f46e234]: Letter S Arrow Ribbon Logo | Scalebranding
+              - generic [ref=f46e236]: Scalebranding
+        - generic [ref=f46e243] [cursor=pointer]:
+          - generic [ref=f46e245]:
+            - button [ref=f46e248]:
+              - img "Outline S letter logo forming a continuous loop. Modern minimalist line icon of a double S shape. Abstract geometric symbol with a rounded line. 71513257 Vector Art at Vecteezy" [ref=f46e250]
+            - generic: 라이선스
+          - link "Outline S letter logo forming a continuous loop. Modern minimalist line icon of a double S shape. Abstract geometric symbol with a rounded line. 71513257 Vector Art at Vecteezy Vecteezy" [ref=f46e252]:
+            - /url: https://www.vecteezy.com/vector-art/71513257-outline-s-letter-logo-forming-a-continuous-loop-modern-minimalist-line-icon-of-a-double-s-shape-abstract-geometric-symbol-with-a-rounded-line
+            - generic [ref=f46e253]:
+              - generic [ref=f46e254]: Outline S letter logo forming a continuous loop. Modern minimalist line icon of a double S shape. Abstract geometric symbol with a rounded line. 71513257 Vector Art at Vecteezy
+              - generic [ref=f46e256]: Vecteezy
+        - generic [ref=f46e263] [cursor=pointer]:
+          - generic [ref=f46e265]:
+            - button [ref=f46e268]:
+              - img "Abstract letter s infinity ribbon logo – Royalty-Free Vector | VectorStock" [ref=f46e270]
+            - generic: 라이선스
+          - link "Abstract letter s infinity ribbon logo – Royalty-Free Vector | VectorStock VectorStock" [ref=f46e272]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/abstract-letter-s-infinity-ribbon-logo-vector-31275673
+            - generic [ref=f46e273]:
+              - generic [ref=f46e274]: Abstract letter s infinity ribbon logo – Royalty-Free Vector | VectorStock
+              - generic [ref=f46e276]: VectorStock
+        - generic [ref=f46e283] [cursor=pointer]:
+          - generic [ref=f46e285]:
+            - button [ref=f46e288]:
+              - img "letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy" [ref=f46e290]
+            - generic: 라이선스
+          - link "letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy Vecteezy" [ref=f46e292]:
+            - /url: https://www.vecteezy.com/vector-art/30335555-letter-s-curves-motion-ribbon-logo-vector
+            - generic [ref=f46e293]:
+              - generic [ref=f46e294]: letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy
+              - generic [ref=f46e296]: Vecteezy
+        - generic [ref=f46e303] [cursor=pointer]:
+          - button [ref=f46e308]:
+            - img "Initial LS SL Ribbon Logo | Scalebranding" [ref=f46e310]
+          - link "Initial LS SL Ribbon Logo | Scalebranding Scalebranding" [ref=f46e312]:
+            - /url: https://scalebranding.com/product/54865
+            - generic [ref=f46e313]:
+              - generic [ref=f46e314]: Initial LS SL Ribbon Logo | Scalebranding
+              - generic [ref=f46e316]: Scalebranding
+        - generic [ref=f46e323] [cursor=pointer]:
+          - generic [ref=f46e325]:
+            - button [ref=f46e328]:
+              - img "Interlocking ribbon symbol representing continuous growth and innovation a stylized emblem in a flowing dynamic for business strategy concepts 75373033 Vector Art at Vecteezy" [ref=f46e330]
+            - generic: 라이선스
+          - link "Interlocking ribbon symbol representing continuous growth and innovation a stylized emblem in a flowing dynamic for business strategy concepts 75373033 Vector Art at Vecteezy Vecteezy" [ref=f46e332]:
+            - /url: https://www.vecteezy.com/vector-art/75373033-interlocking-ribbon-symbol-representing-continuous-growth-and-innovation-a-stylized-emblem-in-a-flowing-dynamic-for-business-strategy-concepts
+            - generic [ref=f46e333]:
+              - generic [ref=f46e334]: Interlocking ribbon symbol representing continuous growth and innovation a stylized emblem in a flowing dynamic for business strategy concepts 75373033 Vector Art at Vecteezy
+              - generic [ref=f46e336]: Vecteezy
+        - generic [ref=f46e343] [cursor=pointer]:
+          - button [ref=f46e348]:
+            - img "Spiral Flow S Logo - Exclusive Premade | Brandforma" [ref=f46e350]
+          - link "Spiral Flow S Logo - Exclusive Premade | Brandforma Brandforma" [ref=f46e352]:
+            - /url: https://brandforma.com/work/spiral-flow-s-logo-for-sale
+            - generic [ref=f46e353]:
+              - generic [ref=f46e354]: Spiral Flow S Logo - Exclusive Premade | Brandforma
+              - generic [ref=f46e356]: Brandforma
+        - generic [ref=f46e363] [cursor=pointer]:
+          - button [ref=f46e368]:
+            - img "Letter s ribbon Vector Images & Graphics for Commercial Use | VectorStock" [ref=f46e370]
+          - link "Letter s ribbon Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f46e372]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/letter-s-ribbon-vectors
+            - generic [ref=f46e373]:
+              - generic [ref=f46e374]: Letter s ribbon Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f46e376]: VectorStock
+        - generic [ref=f46e383] [cursor=pointer]:
+          - generic [ref=f46e385]:
+            - button [ref=f46e388]:
+              - img "letter s infinity waves ribbon curves geometric design logo vector 8861152 Vector Art at Vecteezy" [ref=f46e390]
+            - generic: 라이선스
+          - link "letter s infinity waves ribbon curves geometric design logo vector 8861152 Vector Art at Vecteezy Vecteezy" [ref=f46e392]:
+            - /url: https://www.vecteezy.com/vector-art/8861152-letter-s-infinity-waves-ribbon-curves-geometric-design-logo-vector
+            - generic [ref=f46e393]:
+              - generic [ref=f46e394]: letter s infinity waves ribbon curves geometric design logo vector 8861152 Vector Art at Vecteezy
+              - generic [ref=f46e396]: Vecteezy
+        - generic [ref=f46e403] [cursor=pointer]:
+          - button [ref=f46e408]:
+            - img "Abstract Sync S Logo - Exclusive Premade | Brandforma" [ref=f46e410]
+          - link "Abstract Sync S Logo - Exclusive Premade | Brandforma Brandforma" [ref=f46e412]:
+            - /url: https://brandforma.com/work/abstract-sync-s-logo-for-sale
+            - generic [ref=f46e413]:
+              - generic [ref=f46e414]: Abstract Sync S Logo - Exclusive Premade | Brandforma
+              - generic [ref=f46e416]: Brandforma
+        - generic [ref=f46e423] [cursor=pointer]:
+          - button [ref=f46e428]:
+            - img "Connection S Logo | Scalebranding" [ref=f46e430]
+          - link "Connection S Logo | Scalebranding Scalebranding" [ref=f46e432]:
+            - /url: https://scalebranding.com/product/248959
+            - generic [ref=f46e433]:
+              - generic [ref=f46e434]: Connection S Logo | Scalebranding
+              - generic [ref=f46e436]: Scalebranding
+        - generic [ref=f46e443] [cursor=pointer]:
+          - generic [ref=f46e445]:
+            - button [ref=f46e448]:
+              - img "Modern minimalist letter S logo with smooth abstract curves inside a circular frame. Clean monogram design ideal for corporate branding, technology companies, consulting firms, digital platforms 77839011 Vector Art at Vecteezy" [ref=f46e450]
+            - generic: 라이선스
+          - link "Modern minimalist letter S logo with smooth abstract curves inside a circular frame. Clean monogram design ideal for corporate branding, technology companies, consulting firms, digital platforms 77839011 Vector Art at Vecteezy Vecteezy" [ref=f46e452]:
+            - /url: https://www.vecteezy.com/vector-art/77839011-modern-minimalist-letter-s-logo-with-smooth-abstract-curves-inside-a-circular-frame-clean-monogram-design-ideal-for-corporate-branding-technology-companies-consulting-firms-digital-platforms
+            - generic [ref=f46e453]:
+              - generic [ref=f46e454]: Modern minimalist letter S logo with smooth abstract curves inside a circular frame. Clean monogram design ideal for corporate branding, technology companies, consulting firms, digital platforms 77839011 Vector Art at Vecteezy
+              - generic [ref=f46e456]: Vecteezy
+        - generic [ref=f46e463] [cursor=pointer]:
+          - button [ref=f46e468]:
+            - img "Black White Abstract Ribbon Logo Ideal Stock Vector (Royalty Free) 2632748085 | Shutterstock" [ref=f46e470]
+          - link "Black White Abstract Ribbon Logo Ideal Stock Vector (Royalty Free) 2632748085 | Shutterstock Shutterstock" [ref=f46e472]:
+            - /url: https://www.shutterstock.com/image-vector/black-white-abstract-ribbon-logo-ideal-2632748085
+            - generic [ref=f46e473]:
+              - generic [ref=f46e474]: Black White Abstract Ribbon Logo Ideal Stock Vector (Royalty Free) 2632748085 | Shutterstock
+              - generic [ref=f46e476]: Shutterstock
+        - generic [ref=f46e483] [cursor=pointer]:
+          - button [ref=f46e488]:
+            - img "Abstract Sync S Logo - Exclusive Premade | Brandforma" [ref=f46e490]
+          - link "Abstract Sync S Logo - Exclusive Premade | Brandforma Brandforma" [ref=f46e492]:
+            - /url: https://brandforma.com/work/abstract-sync-s-logo-for-sale
+            - generic [ref=f46e493]:
+              - generic [ref=f46e494]: Abstract Sync S Logo - Exclusive Premade | Brandforma
+              - generic [ref=f46e496]: Brandforma
+        - generic [ref=f46e503] [cursor=pointer]:
+          - generic [ref=f46e505]:
+            - button [ref=f46e508]:
+              - img "Set Ribbon Ends Stock Illustrations – 154 Set Ribbon Ends Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f46e510]
+            - generic:
+              - generic: 라이선스
+              - text: ·
+              - generic: 5일 전
+          - link "Set Ribbon Ends Stock Illustrations – 154 Set Ribbon Ends Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f46e512]:
+            - /url: https://www.dreamstime.com/illustration/set-ribbon-ends.html
+            - generic [ref=f46e513]:
+              - generic [ref=f46e514]: Set Ribbon Ends Stock Illustrations – 154 Set Ribbon Ends Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f46e516]: Dreamstime.com
+        - generic [ref=f46e523] [cursor=pointer]:
+          - generic [ref=f46e525]:
+            - button [ref=f46e528]:
+              - img "Set Ribbon Ends Stock Illustrations – 154 Set Ribbon Ends Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f46e530]
+            - generic:
+              - generic: 라이선스
+              - text: ·
+              - generic: 5일 전
+          - link "Set Ribbon Ends Stock Illustrations – 154 Set Ribbon Ends Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f46e532]:
+            - /url: https://www.dreamstime.com/illustration/set-ribbon-ends.html
+            - generic [ref=f46e533]:
+              - generic [ref=f46e534]: Set Ribbon Ends Stock Illustrations – 154 Set Ribbon Ends Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f46e536]: Dreamstime.com
+        - generic [ref=f46e543] [cursor=pointer]:
+          - button [ref=f46e548]:
+            - img "54,821 Letter S Ribbon Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f46e550]
+          - link "54,821 Letter S Ribbon Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f46e552]:
+            - /url: https://www.shutterstock.com/search/letter-s-ribbon
+            - generic [ref=f46e553]:
+              - generic [ref=f46e554]: 54,821 Letter S Ribbon Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f46e556]: Shutterstock
+        - generic [ref=f46e563] [cursor=pointer]:
+          - generic [ref=f46e565]:
+            - button [ref=f46e568]:
+              - img "Interlocking ribbon symbol representing continuous growth and innovation a stylized emblem in a flowing dynamic for business strategy concepts 75373033 Vector Art at Vecteezy" [ref=f46e570]
+            - generic: 라이선스
+          - link "Interlocking ribbon symbol representing continuous growth and innovation a stylized emblem in a flowing dynamic for business strategy concepts 75373033 Vector Art at Vecteezy Vecteezy" [ref=f46e572]:
+            - /url: https://www.vecteezy.com/vector-art/75373033-interlocking-ribbon-symbol-representing-continuous-growth-and-innovation-a-stylized-emblem-in-a-flowing-dynamic-for-business-strategy-concepts
+            - generic [ref=f46e573]:
+              - generic [ref=f46e574]: Interlocking ribbon symbol representing continuous growth and innovation a stylized emblem in a flowing dynamic for business strategy concepts 75373033 Vector Art at Vecteezy
+              - generic [ref=f46e576]: Vecteezy
+        - generic [ref=f46e583] [cursor=pointer]:
+          - generic [ref=f46e585]:
+            - button [ref=f46e588]:
+              - img "Letter S Flash monoline Logo | Scalebranding" [ref=f46e590]
+            - generic: 라이선스
+          - link "Letter S Flash monoline Logo | Scalebranding Scalebranding" [ref=f46e592]:
+            - /url: https://scalebranding.com/product/411837
+            - generic [ref=f46e593]:
+              - generic [ref=f46e594]: Letter S Flash monoline Logo | Scalebranding
+              - generic [ref=f46e596]: Scalebranding
+      - generic [ref=f46e603]:
+        - heading "Page Navigation" [level=1] [ref=f46e604]
+        - generic [ref=f46e605]:
+          - text: 나머지 검색 결과가 찾고 있는 항목이 아닐 수도 있습니다.
+          - link "검색 결과 더보기" [ref=f46e606] [cursor=pointer]:
+            - /url: "#"
+      - navigation

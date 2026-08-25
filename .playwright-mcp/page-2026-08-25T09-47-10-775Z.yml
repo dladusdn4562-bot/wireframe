@@ -1,0 +1,914 @@
+- generic [active] [ref=f164e1]:
+  - generic:
+    - generic:
+      - link "주요 콘텐츠로 이동" [ref=f164e2] [cursor=pointer]
+      - link "연속 스크롤 사용 중지" [ref=f164e3] [cursor=pointer]:
+        - /url: "#"
+      - link "접근성 도움말" [ref=f164e4] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ko
+  - generic [ref=f164e9]:
+    - search [ref=f164e10]:
+      - generic [ref=f164e12]:
+        - link "Google 홈페이지로 이동" [ref=f164e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQPAgJ
+        - generic [ref=f164e22]:
+          - generic [ref=f164e23]:
+            - combobox "검색" [ref=f164e26]: site:pinterest.com/pin/ "minimalist" "s curve" OR "yin yang" logo symbol black white site:pinterest.com/pin/ "minimalist" "s curve" OR "yin yang" logo symbol black white
+            - generic [ref=f164e27]:
+              - button "지우기" [ref=f164e29] [cursor=pointer]
+              - generic [ref=f164e34]:
+                - button "입력 도구" [ref=f164e35] [cursor=pointer]
+                - button "음성 검색" [ref=f164e39] [cursor=pointer]
+                - button "이미지로 검색" [ref=f164e42] [cursor=pointer]
+          - button "검색" [ref=f164e45] [cursor=pointer]
+    - generic [ref=f164e51]:
+      - button "Google 앱" [ref=f164e53] [cursor=pointer]
+      - 'button "Google 계정: 임연우 (dladusdn4562@gmail.com)" [ref=f164e58] [cursor=pointer]'
+  - generic [ref=f164e67]:
+    - generic [ref=f164e70]:
+      - navigation [ref=f164e73]:
+        - generic [ref=f164e74]:
+          - list [ref=f164e75]:
+            - listitem [ref=f164e76]:
+              - link "AI 모드" [ref=f164e79] [cursor=pointer]:
+                - /url: /search?q=site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+OR+%22yin+yang%22+logo+symbol+black+white&sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&udm=50&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqiZxexOoD8ygpmmFRJ46JJmdRxmv62IoT6pTT11gxwNeUMVmmcmMPeN9RlXm4k7Oq1GKJBXXMwhdWdeC4ilRun45NAdMQ&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQ2J8OegQIChAD
+            - listitem [ref=f164e83]:
+              - link "전체" [ref=f164e84] [cursor=pointer]:
+                - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+OR+%22yin+yang%22+logo+symbol+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqiZxexOoD8ygpmmFRJ46JJmdRxmv62IoT6pTT11gxwNeUMVmmcmMPeN9RlXm4k7Oq1GKJBXXMwhdWdeC4ilRun45NAdMQ&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQ0pQJegQIDhAB
+            - listitem [ref=f164e87]:
+              - link "이미지" [disabled] [ref=f164e88]
+            - listitem [ref=f164e91]:
+              - link "쇼핑" [ref=f164e92] [cursor=pointer]:
+                - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&udm=28&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqiZxexOoD8ygpmmFRJ46JJmdRxmv62IoT6pTT11gxwNeUMVmmcmMPeN9RlXm4k7Oq1GKJBXXMwhdWdeC4ilRun45NAdMQ&q=site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+OR+%22yin+yang%22+logo+symbol+black+white&ved=1t:220175&ictx=111
+            - listitem [ref=f164e95]:
+              - link "짧은 동영상" [ref=f164e96] [cursor=pointer]:
+                - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&udm=39&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqiZxexOoD8ygpmmFRJ46JJmdRxmv62IoT6pTT11gxwNeUMVmmcmMPeN9RlXm4k7Oq1GKJBXXMwhdWdeC4ilRun45NAdMQ&q=site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+OR+%22yin+yang%22+logo+symbol+black+white&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQs6gLegQIDRAB
+            - listitem [ref=f164e99]:
+              - link "웹" [ref=f164e100] [cursor=pointer]:
+                - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&udm=web&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqiZxexOoD8ygpmmFRJ46JJmdRxmv62IoT6pTT11gxwNeUMVmmcmMPeN9RlXm4k7Oq1GKJBXXMwhdWdeC4ilRun45NAdMQ&q=site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+OR+%22yin+yang%22+logo+symbol+black+white&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQs6gLegQIEBAB
+            - listitem [ref=f164e103]:
+              - link "금융" [ref=f164e104] [cursor=pointer]:
+                - /url: /finance?sca_esv=4e934c2bfe585944&output=search&q=site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+OR+%22yin+yang%22+logo+symbol+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqiZxexOoD8ygpmmFRJ46JJmdRxmv62IoT6pTT11gxwNeUMVmmcmMPeN9RlXm4k7Oq1GKJBXXMwhdWdeC4ilRun45NAdMQ&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQ0pQJegQIDxAB
+            - listitem [ref=f164e107]:
+              - button [ref=f164e108] [cursor=pointer]:
+                - generic "필터 더보기" [ref=f164e109]: 더보기
+          - button "도구" [ref=f164e116] [cursor=pointer]
+      - link [ref=f164e124] [cursor=pointer]:
+        - /url: /save?sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQ7XV6BAgFEAA
+    - navigation [ref=f164e129]:
+      - navigation [ref=f164e132]:
+        - list [ref=f164e140]:
+          - listitem [ref=f164e141]:
+            - link "Wallpaper 추가" [ref=f164e142] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=wallpaper+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rZR2_JUpxs9vVub1S66SYUwFoAUK_xZ_VpSEpXX6Ar8jzXeQ0lvTEPR-CRX7RHpxmwMiE9of52G4bnXwTyE2Udud5nCKPBQ3po-2v0S4Wtb1_-sKmF7VWyMtj__vkxxTdPRe6BhVLeKADLyyU0oDxS9JDlu4HkYpmY-1zZt2o656g7NY8ewspmEb3kXPA7hDi08USnHpInQUjoA2Yd9GOp_Mfu10sNJrbfaiTctHHBQi0ydHw&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAB6BAgREAE&ictx=0
+              - generic [ref=f164e143]: Wallpaper
+          - listitem [ref=f164e149]:
+            - link "Circle 추가" [ref=f164e150] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=circle+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rwX6sI78Uc9oS5YtwhCGaV0a6itbacWmU1lDhvXefi8EtSA1u8f7QW0MGVPGyO6IAhQwE4gE-ZBOSkoYMAeEFS1AlP3QhpUsDnmawhoXImvHDLdAuIXPrBW9gdOOg0yxYlboPvz7wjR5dzEg-XnyOWKdAsc4Q_pREY46eXdCYj2zekNR1dYxqplrbDgwbGoyjFSSGDeJHDwmfHgN5-W2y-ThBzw4yGXqbjgN4vhn65J_vQPSF&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAF6BAgVEAE&ictx=0
+              - generic [ref=f164e151]: Circle
+          - listitem [ref=f164e157]:
+            - link "Chinese 추가" [ref=f164e158] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=chinese+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rTMCySMvvCCn985X2uYPy5nospRfPocElJAbrEF9djLXrJ1C7JemEmPxPsiAHllwpLRfs99G_0OMIPJOAWo7TWxEFhAgExB5MUoOmem5yM47Jp7LY3eCxRT88JHz56D64pPQoHeeNAHcbKnjKMPM4bd6b6Oej9ynYsKcGnXjAHKAxlR80FHl6Y6CTdL4zW5P-vfRGnCiAJ66iOfRlgotoBIo2Ah9GNsg6INYRRjxbIx1v-L5u&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAJ6BAgUEAE&ictx=0
+              - generic [ref=f164e159]: Chinese
+          - listitem [ref=f164e165]:
+            - link "Moon 추가" [ref=f164e166] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=moon+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rWtAcOwHgKF6Y4K7LGDF0-7_vIqVRsSArGFv4IgHgC36itTiP3H6K5PjeHLXlxWceKm8cG6nxSZ7OVTgyn8VtvZbvN293zmWZp_gs-Nlh5hcdWLF7DmMu8MWLA15MvxKeLLzrzNbEpOcNObvaR4ftu7qQOFq3MSp_jaICS77bONOwqDP4ZFRPXKcAPbTxXBr3iHonQZyTQ0DvBDYsOjsiHQGpT2mxH1ALYy7rb02SNcv4APMH&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAN6BAgSEAE&ictx=0
+              - generic [ref=f164e167]: Moon
+          - listitem [ref=f164e173]:
+            - link "And yang wallpaper 추가" [ref=f164e174] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=and+yang+wallpaper+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rGAbej07lL0ahoJ2b5_h3opC7cOw2pgZ1WesLgUEeTZ4tkteiUF05EL2oj0pdcVuiEJE2hR6VmWIjv14qWWOEe9EIFv0041BxHcW9hiewWAZ_7esHkDlOE0CSeRSk69eAaYenHB9r27MdCWypYlTcpwgcgVLHxkyTwrmEgumjS6NXLOI3QtxhF8TLXsCkta4f9DV8k-i46A3lmjym1J3XMh1ifNk2iu9gCvuMVELp_Nq5-jyFd4OTqddIAYc98LIknkNbuQ&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAR6BAgTEAE&ictx=0
+              - generic [ref=f164e175]: And yang wallpaper
+          - listitem [ref=f164e181]:
+            - link "Tattoo designs 추가" [ref=f164e182] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=tattoo+designs+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rM1pU4Q0f3M8zNZlcP8h9Y8UT_KBcekxkLvaOK8EXKfUfAilJC9FEoMIjrFDXuN7r8reSSeUo2_MdMv3NhT2pOq0PGcziYKGdOMTjTdYaLdCs4osr4cwXYaoygr94DINAGiLaO_fTbaUcxlhlvNQwhC3ha9Jj7J6XR0-Xg4L3N21tQh-J4XIHmyVnNZlIpGpZVhJq1-FNflQkzZhpZw_3mpuxtziD4JWcrxIJ50xefzkV92wl&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAV6BQjnBRAB&ictx=0
+              - generic [ref=f164e183]: Tattoo designs
+          - listitem [ref=f164e189]:
+            - link "Aesthetic wallpaper yin 추가" [ref=f164e190] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=aesthetic+wallpaper+yin+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rU5uGgT5aKshsZxwKi7ejkSPlYWl4-FTZOjbTptRKCgE7lrBRecO1hcOYjd8ptzDTB1qRIsvaKLOWixAfREz9XZijVKVVnskm5AqKmqwJdKeI8wpyKaVDDT_1sNuB_nCwd7hCvZB18kxeR0iGdF8dU8Kc7aVdJTdjqwNJMLAo7bejZhcEhx6MnvC2zkQ66EBhodpKdmmmLxO8TDzTHrF-DkXJg2klUMb7KY6pSkz_o7OTuMlovoPV548SGhCZ65zLDvp_gg&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAZ6BQjkBRAB&ictx=0
+              - generic [ref=f164e191]: Aesthetic wallpaper yin
+          - listitem [ref=f164e197]:
+            - link "Hd wallpaper 추가" [ref=f164e198] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=hd+wallpaper+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rBPRy1rIte57qM8In1Vrg5LgegEbXVRZZwRbQV8qIUhCW-wx-FpAbEU_onjos-znPvF-dmMjWzDhe8BpwtDLrS4NYPqnzYVvC6R04JAF2QN4GJ_kerQa_7_z3yH4R4pzcDUNi3jhVbGdto6Z97MxV7UQH5S4nmq5Zaik0txLAMWpit35ezmZ3bP-L_3C4FrVG0FrYwaJyaehpHkF_VJs09AMDrV3l-b88oslXgvGBqHRxwSlv&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAd6BQjpBRAB&ictx=0
+              - generic [ref=f164e199]: Hd wallpaper
+          - listitem [ref=f164e201]:
+            - link "Ying yang 추가" [ref=f164e202] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=ying+yang+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rZR2_JUpxs9vVub1S66SYUwFoAUK_xZ_VpSEpXX6Ar8jzXeQ0lvTEPR-CRX7RHpxmwMiE9of52G4bnXwTyE2Udud5nCKPBQ3po-2v0S4Wtb1_-sKmF7VWyMtj__vkxxTdPW-U7WOM6X95ou1rUuQnkylyvNLBZ4nNsuZRXJ_Rx4vXHgLYWejXfcawgWWr1R0fdxo_tMRBC4D3VxWV-L1mvEyHa7suZGHRzL8cO75LqWwmfOg-&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAh6BQjlBRAB&ictx=0
+              - generic [ref=f164e203]: Ying yang
+          - listitem [ref=f164e209]:
+            - link "Yang tattoos 추가" [ref=f164e210] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=yang+tattoos+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rBPRy1rIte57qM8In1Vrg5LgegEbXVRZZwRbQV8qIUhCW-wx-FpAbEU_onjos-znPvF-dmMjWzDhe8BpwtDLrS4NYPqnzYVvC6R04JAF2QN4GJ_kerQa_7_z3yH4R4pzc_3aq5Z6hYui6Rl2Q644_6LqL6gN72il-FaSs0miN1QvWSOdG2K2JfH3IMdZfRpgpmMPD5T4XMEVJBZLl8h-vktW-aOLDYBx84HVJOM169DCkj_-C&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAl6BQjoBRAB&ictx=0
+              - generic [ref=f164e211]: Yang tattoos
+          - listitem [ref=f164e217]:
+            - link "Art 추가" [ref=f164e218] [cursor=pointer]:
+              - /url: /search?sca_esv=4e934c2bfe585944&sxsrf=APpeQnvQyuZmKObaZMcCy-tssXf-LWkpmw:1787651224235&q=art+site:pinterest.com/pin/+%22minimalist%22+%22s+curve%22+%22yin+yang%22+logo+symbol+black+white&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rCfQJQL8zD1fp3Ti5PQe3T2aHXse2HTF3WWCXipyMbzZpUvUii9d37r1neuJk7PJmc4n2cHIu5caOgCW5aAAdXaQJA3cMRfY0TYAGCyvASJ1bfFvpd14ykb0fKscN5zrLUTzzkCIFCPg5sCh-Ont4JN2ln3xHM6jWx263czEcl-1SmtILv20kBPb0Xjc2pDrp_y2opLqIQa95ZRd4sSAhURwSf6mcgDGhSESxNE_CWauareL2&udm=2&sa=X&ved=2ahUKEwjoms_hv7uWAxVkjeEIHTvEC5EQxKsJKAp6BQjmBRAB&ictx=0
+              - generic [ref=f164e219]: Art
+    - heading "검색결과" [level=1] [ref=f164e225]
+    - main [ref=f164e227]:
+      - generic [ref=f164e236]:
+        - generic [ref=f164e240] [cursor=pointer]:
+          - button [ref=f164e245]:
+            - img "Yin Yang Logo Design | Geometric Body Art | Black and white nature art, Minimalist yin" [ref=f164e247]
+          - link "Yin Yang Logo Design | Geometric Body Art | Black and white nature art, Minimalist yin kr.pinterest.com" [ref=f164e249]:
+            - /url: https://kr.pinterest.com/pin/675540012901102674/
+            - generic [ref=f164e250]:
+              - generic [ref=f164e251]: Yin Yang Logo Design | Geometric Body Art | Black and white nature art, Minimalist yin
+              - generic [ref=f164e253]: kr.pinterest.com
+        - generic [ref=f164e260] [cursor=pointer]:
+          - button [ref=f164e265]:
+            - img "Yin Yang Illustration with Letter S | Yin yang tattoos, Chinese tattoo, Yin yang logo" [ref=f164e267]
+          - link "Yin Yang Illustration with Letter S | Yin yang tattoos, Chinese tattoo, Yin yang logo Pinterest" [ref=f164e269]:
+            - /url: https://www.pinterest.com/pin/yin-yang-illustration-with-letter-s--5488830790919527/
+            - generic [ref=f164e270]:
+              - generic [ref=f164e271]: Yin Yang Illustration with Letter S | Yin yang tattoos, Chinese tattoo, Yin yang logo
+              - generic [ref=f164e273]: Pinterest
+        - generic [ref=f164e280] [cursor=pointer]:
+          - button [ref=f164e285]:
+            - img "Tech Yin Yang logo" [ref=f164e287]
+          - link "Tech Yin Yang logo Pinterest" [ref=f164e289]:
+            - /url: https://www.pinterest.com/pin/tech-yin-yang-logo--9148005494870378/
+            - generic [ref=f164e290]:
+              - generic [ref=f164e291]: Tech Yin Yang logo
+              - generic [ref=f164e293]: Pinterest
+        - generic [ref=f164e300] [cursor=pointer]:
+          - button [ref=f164e305]:
+            - img "Abstract Ying Yang Wallpaper | Black and white yin yang art, Meditation room decor ideas, Minimalist" [ref=f164e307]
+          - link "Abstract Ying Yang Wallpaper | Black and white yin yang art, Meditation room decor ideas, Minimalist Pinterest" [ref=f164e309]:
+            - /url: https://www.pinterest.com/pin/abstract-ying-yang-wallpaper--267542034105400930/
+            - generic [ref=f164e310]:
+              - generic [ref=f164e311]: Abstract Ying Yang Wallpaper | Black and white yin yang art, Meditation room decor ideas, Minimalist
+              - generic [ref=f164e313]: Pinterest
+        - generic [ref=f164e320] [cursor=pointer]:
+          - button [ref=f164e325]:
+            - img "S Or Square Yin Yang Logo" [ref=f164e327]
+          - link "S Or Square Yin Yang Logo Pinterest" [ref=f164e329]:
+            - /url: https://in.pinterest.com/pin/s-or-square-yin-yang-logo--844143523939506230/
+            - generic [ref=f164e330]:
+              - generic [ref=f164e331]: S Or Square Yin Yang Logo
+              - generic [ref=f164e333]: Pinterest
+        - generic [ref=f164e340] [cursor=pointer]:
+          - button [ref=f164e345]:
+            - img "Black and white yin yang art | Minimalist yin yang symbol, Tattoo design inspiration, Tattoo art" [ref=f164e347]
+          - link "Black and white yin yang art | Minimalist yin yang symbol, Tattoo design inspiration, Tattoo art kr.pinterest.com" [ref=f164e349]:
+            - /url: https://kr.pinterest.com/pin/586242076607669075/
+            - generic [ref=f164e350]:
+              - generic [ref=f164e351]: Black and white yin yang art | Minimalist yin yang symbol, Tattoo design inspiration, Tattoo art
+              - generic [ref=f164e353]: kr.pinterest.com
+        - generic [ref=f164e360] [cursor=pointer]:
+          - button [ref=f164e365]:
+            - 'img "HD wallpaper: black and white, yin yang, circle, logo, symbol, graphics, copy space" [ref=f164e367]'
+          - 'link "HD wallpaper: black and white, yin yang, circle, logo, symbol, graphics, copy space Pinterest" [ref=f164e369]':
+            - /url: https://www.pinterest.com/pin/hd-wallpaper-black-and-white-yin-yang-symbol--611293349426576122/
+            - generic [ref=f164e370]:
+              - generic [ref=f164e371]: "HD wallpaper: black and white, yin yang, circle, logo, symbol, graphics, copy space"
+              - generic [ref=f164e373]: Pinterest
+        - generic [ref=f164e380] [cursor=pointer]:
+          - button [ref=f164e385]:
+            - img "Yin yang logo design | Yin yang logo png, Logo grid, Circle brand" [ref=f164e387]
+          - link "Yin yang logo design | Yin yang logo png, Logo grid, Circle brand kr.pinterest.com" [ref=f164e389]:
+            - /url: https://kr.pinterest.com/pin/392587292535240649/
+            - generic [ref=f164e390]:
+              - generic [ref=f164e391]: Yin yang logo design | Yin yang logo png, Logo grid, Circle brand
+              - generic [ref=f164e393]: kr.pinterest.com
+        - generic [ref=f164e400] [cursor=pointer]:
+          - button [ref=f164e405]:
+            - img "Random Images From The Interweb | Yin yang logo design ideas, Yin yang logo inspiration, Minimalist yin yang logo" [ref=f164e407]
+          - link "Random Images From The Interweb | Yin yang logo design ideas, Yin yang logo inspiration, Minimalist yin yang logo Pinterest" [ref=f164e409]:
+            - /url: https://mx.pinterest.com/pin/327918416619582182/
+            - generic [ref=f164e410]:
+              - generic [ref=f164e411]: Random Images From The Interweb | Yin yang logo design ideas, Yin yang logo inspiration, Minimalist yin yang logo
+              - generic [ref=f164e413]: Pinterest
+        - generic [ref=f164e420] [cursor=pointer]:
+          - button [ref=f164e425]:
+            - img "Black and White Yin Yang Symbol | Tony country png, Yin yang wallpaper iphone, Yin yang" [ref=f164e427]
+          - link "Black and White Yin Yang Symbol | Tony country png, Yin yang wallpaper iphone, Yin yang Pinterest" [ref=f164e429]:
+            - /url: https://www.pinterest.com/pin/black-and-white-yin-yang-symbol--57350595238880614/
+            - generic [ref=f164e430]:
+              - generic [ref=f164e431]: Black and White Yin Yang Symbol | Tony country png, Yin yang wallpaper iphone, Yin yang
+              - generic [ref=f164e433]: Pinterest
+        - generic [ref=f164e440] [cursor=pointer]:
+          - button [ref=f164e445]:
+            - img "Design Similar to Yin Yang Symbol" [ref=f164e447]
+          - link "Design Similar to Yin Yang Symbol Pinterest" [ref=f164e449]:
+            - /url: https://www.pinterest.com/pin/595178907004964494/
+            - generic [ref=f164e450]:
+              - generic [ref=f164e451]: Design Similar to Yin Yang Symbol
+              - generic [ref=f164e453]: Pinterest
+        - generic [ref=f164e460] [cursor=pointer]:
+          - button [ref=f164e465]:
+            - img "Yin yang black and white" [ref=f164e467]
+          - link "Yin yang black and white Pinterest" [ref=f164e469]:
+            - /url: https://www.pinterest.com/pin/27232772736628536/
+            - generic [ref=f164e470]:
+              - generic [ref=f164e471]: Yin yang black and white
+              - generic [ref=f164e473]: Pinterest
+        - generic [ref=f164e480] [cursor=pointer]:
+          - button [ref=f164e485]:
+            - img "yin-yang star commission by KatieConfusion.deviantart.com on @deviantART" [ref=f164e487]
+          - link "yin-yang star commission by KatieConfusion.deviantart.com on @deviantART Pinterest" [ref=f164e489]:
+            - /url: https://www.pinterest.com/pin/335940453426055574/
+            - generic [ref=f164e490]:
+              - generic [ref=f164e491]: yin-yang star commission by KatieConfusion.deviantart.com on @deviantART
+              - generic [ref=f164e493]: Pinterest
+        - generic [ref=f164e500] [cursor=pointer]:
+          - button [ref=f164e505]:
+            - img "Symbol Yin And Yang PNG" [ref=f164e507]
+          - link "Symbol Yin And Yang PNG Pinterest" [ref=f164e509]:
+            - /url: https://in.pinterest.com/pin/yin-and-yang-symbol-png--18225573484724225/
+            - generic [ref=f164e510]:
+              - generic [ref=f164e511]: Symbol Yin And Yang PNG
+              - generic [ref=f164e513]: Pinterest
+        - generic [ref=f164e520] [cursor=pointer]:
+          - button [ref=f164e525]:
+            - img "Black and white yin yang | Minimalist yin yang design, Tattoo inspiration yin yang, Tattoo designs" [ref=f164e527]
+          - link "Black and white yin yang | Minimalist yin yang design, Tattoo inspiration yin yang, Tattoo designs kr.pinterest.com" [ref=f164e529]:
+            - /url: https://kr.pinterest.com/pin/782500504051911217/
+            - generic [ref=f164e530]:
+              - generic [ref=f164e531]: Black and white yin yang | Minimalist yin yang design, Tattoo inspiration yin yang, Tattoo designs
+              - generic [ref=f164e533]: kr.pinterest.com
+        - generic [ref=f164e540] [cursor=pointer]:
+          - button [ref=f164e545]:
+            - img "Earth - Spiritual" [ref=f164e547]
+          - link "Earth - Spiritual Pinterest" [ref=f164e549]:
+            - /url: https://www.pinterest.com/pin/577586720985624062/
+            - generic [ref=f164e550]:
+              - generic [ref=f164e551]: Earth - Spiritual
+              - generic [ref=f164e553]: Pinterest
+        - generic [ref=f164e560] [cursor=pointer]:
+          - button [ref=f164e565]:
+            - img "Ying Yang Wallpaper - Black and White | Black and white yin yang, Minimalist yin yang symbol," [ref=f164e567]
+          - link "Ying Yang Wallpaper - Black and White | Black and white yin yang, Minimalist yin yang symbol, Pinterest" [ref=f164e569]:
+            - /url: https://es.pinterest.com/pin/775463629565097189/
+            - generic [ref=f164e570]:
+              - generic [ref=f164e571]: Ying Yang Wallpaper - Black and White | Black and white yin yang, Minimalist yin yang symbol,
+              - generic [ref=f164e573]: Pinterest
+        - generic [ref=f164e580] [cursor=pointer]:
+          - button [ref=f164e585]:
+            - img "Yin and Yang" [ref=f164e587]
+          - link "Yin and Yang Pinterest" [ref=f164e589]:
+            - /url: https://nz.pinterest.com/pin/376121006395062118/
+            - generic [ref=f164e590]:
+              - generic [ref=f164e591]: Yin and Yang
+              - generic [ref=f164e593]: Pinterest
+        - generic [ref=f164e600] [cursor=pointer]:
+          - button [ref=f164e605]:
+            - img "Yin Yang Surfing Logo" [ref=f164e607]
+          - link "Yin Yang Surfing Logo Pinterest" [ref=f164e609]:
+            - /url: https://www.pinterest.com/pin/yin-yang-surfing-logo--844143523908283495/
+            - generic [ref=f164e610]:
+              - generic [ref=f164e611]: Yin Yang Surfing Logo
+              - generic [ref=f164e613]: Pinterest
+        - generic [ref=f164e620] [cursor=pointer]:
+          - button [ref=f164e625]:
+            - img "Yin Yang Music Logo" [ref=f164e627]
+          - link "Yin Yang Music Logo Pinterest" [ref=f164e629]:
+            - /url: https://www.pinterest.com/pin/844143523901915379/
+            - generic [ref=f164e630]:
+              - generic [ref=f164e631]: Yin Yang Music Logo
+              - generic [ref=f164e633]: Pinterest
+        - generic [ref=f164e640] [cursor=pointer]:
+          - button [ref=f164e645]:
+            - img "Yin Yang Sun Moon Symbol Art | Moon and sun ying yang, Yin yang with celestial" [ref=f164e647]
+          - link "Yin Yang Sun Moon Symbol Art | Moon and sun ying yang, Yin yang with celestial Pinterest" [ref=f164e649]:
+            - /url: https://ca.pinterest.com/pin/yin-yang-sun-moon-symbol-art--82261130687973432/
+            - generic [ref=f164e650]:
+              - generic [ref=f164e651]: Yin Yang Sun Moon Symbol Art | Moon and sun ying yang, Yin yang with celestial
+              - generic [ref=f164e653]: Pinterest
+        - generic [ref=f164e660] [cursor=pointer]:
+          - button [ref=f164e665]:
+            - img "Mac miller yin yang | Yin yang symbol, Minimalist yin yang design, Yin yang tattoo" [ref=f164e667]
+          - link "Mac miller yin yang | Yin yang symbol, Minimalist yin yang design, Yin yang tattoo Pinterest" [ref=f164e669]:
+            - /url: https://cz.pinterest.com/pin/491033165644670555/
+            - generic [ref=f164e670]:
+              - generic [ref=f164e671]: Mac miller yin yang | Yin yang symbol, Minimalist yin yang design, Yin yang tattoo
+              - generic [ref=f164e673]: Pinterest
+        - generic [ref=f164e680] [cursor=pointer]:
+          - button [ref=f164e685]:
+            - img "Polarity" [ref=f164e687]
+          - link "Polarity Pinterest" [ref=f164e689]:
+            - /url: https://www.pinterest.com/pin/polarity--73957618876091346/
+            - generic [ref=f164e690]:
+              - generic [ref=f164e691]: Polarity
+              - generic [ref=f164e693]: Pinterest
+        - generic [ref=f164e700] [cursor=pointer]:
+          - button [ref=f164e705]:
+            - img "Yin-yang Mice Logo | Mice icon, Minimalist rat logo ideas, Black and white rat logo" [ref=f164e707]
+          - link "Yin-yang Mice Logo | Mice icon, Minimalist rat logo ideas, Black and white rat logo Pinterest" [ref=f164e709]:
+            - /url: https://www.pinterest.com/pin/yinyang-mice-logo--914862419489931/
+            - generic [ref=f164e710]:
+              - generic [ref=f164e711]: Yin-yang Mice Logo | Mice icon, Minimalist rat logo ideas, Black and white rat logo
+              - generic [ref=f164e713]: Pinterest
+        - generic [ref=f164e720] [cursor=pointer]:
+          - button [ref=f164e725]:
+            - img "Black and White Twin Flame Art | Yin yang design inspiration, Yin and yang hands, Symbols" [ref=f164e727]
+          - link "Black and White Twin Flame Art | Yin yang design inspiration, Yin and yang hands, Symbols Pinterest" [ref=f164e729]:
+            - /url: https://www.pinterest.com/pin/97953360633688820/
+            - generic [ref=f164e730]:
+              - generic [ref=f164e731]: Black and White Twin Flame Art | Yin yang design inspiration, Yin and yang hands, Symbols
+              - generic [ref=f164e733]: Pinterest
+        - generic [ref=f164e740] [cursor=pointer]:
+          - button [ref=f164e745]:
+            - img "Yin Yang Art Print by Ross Jones - X-Small" [ref=f164e747]
+          - link "Yin Yang Art Print by Ross Jones - X-Small Pinterest" [ref=f164e749]:
+            - /url: https://www.pinterest.com/pin/105905028729552162/
+            - generic [ref=f164e750]:
+              - generic [ref=f164e751]: Yin Yang Art Print by Ross Jones - X-Small
+              - generic [ref=f164e753]: Pinterest
+        - generic [ref=f164e760] [cursor=pointer]:
+          - button [ref=f164e765]:
+            - img "Black and white yin yang design | Minimalist yin yang art, Spiritual wall art ideas, Tatuajes" [ref=f164e767]
+          - link "Black and white yin yang design | Minimalist yin yang art, Spiritual wall art ideas, Tatuajes Pinterest" [ref=f164e769]:
+            - /url: https://es.pinterest.com/pin/929571179326820563/
+            - generic [ref=f164e770]:
+              - generic [ref=f164e771]: Black and white yin yang design | Minimalist yin yang art, Spiritual wall art ideas, Tatuajes
+              - generic [ref=f164e773]: Pinterest
+        - generic [ref=f164e780] [cursor=pointer]:
+          - button [ref=f164e785]:
+            - img "Yin Yang Feather Tattoo Design | Black and white owl art, Minimalist yin yang design, Modern wall art ideas" [ref=f164e787]
+          - link "Yin Yang Feather Tattoo Design | Black and white owl art, Minimalist yin yang design, Modern wall art ideas Pinterest" [ref=f164e789]:
+            - /url: https://www.pinterest.com/pin/yin-yang-feather-tattoo-design--70439181667763193/
+            - generic [ref=f164e790]:
+              - generic [ref=f164e791]: Yin Yang Feather Tattoo Design | Black and white owl art, Minimalist yin yang design, Modern wall art ideas
+              - generic [ref=f164e793]: Pinterest
+        - generic [ref=f164e800] [cursor=pointer]:
+          - button [ref=f164e805]:
+            - img "Letter AS or VS Yin Yang Logo" [ref=f164e807]
+          - link "Letter AS or VS Yin Yang Logo Pinterest" [ref=f164e809]:
+            - /url: https://in.pinterest.com/pin/letter-as-or-vs-yin-yang-logo--348043877458257138/
+            - generic [ref=f164e810]:
+              - generic [ref=f164e811]: Letter AS or VS Yin Yang Logo
+              - generic [ref=f164e813]: Pinterest
+        - generic [ref=f164e820] [cursor=pointer]:
+          - button [ref=f164e825]:
+            - img "Celestial Mystic Yin Yang Meaning Love" [ref=f164e827]
+          - link "Celestial Mystic Yin Yang Meaning Love Pinterest" [ref=f164e829]:
+            - /url: https://www.pinterest.com/pin/celestial-mystic-yin-yang-meaning-love--190910471696615628/
+            - generic [ref=f164e830]:
+              - generic [ref=f164e831]: Celestial Mystic Yin Yang Meaning Love
+              - generic [ref=f164e833]: Pinterest
+        - generic [ref=f164e840] [cursor=pointer]:
+          - button [ref=f164e845]:
+            - img "Black and White Yin Yang Symbols | Swimming in circles mac miller tattoo, Mac miller yin" [ref=f164e847]
+          - link "Black and White Yin Yang Symbols | Swimming in circles mac miller tattoo, Mac miller yin Pinterest" [ref=f164e849]:
+            - /url: https://cl.pinterest.com/pin/362117626309287594/
+            - generic [ref=f164e850]:
+              - generic [ref=f164e851]: Black and White Yin Yang Symbols | Swimming in circles mac miller tattoo, Mac miller yin
+              - generic [ref=f164e853]: Pinterest
+        - generic [ref=f164e860] [cursor=pointer]:
+          - button [ref=f164e865]:
+            - img "Yin Yang Wallpaper for Your Phone | Decoracion con llantas, Imagenes de condolencias, Imagenes de ofertas" [ref=f164e867]
+          - link "Yin Yang Wallpaper for Your Phone | Decoracion con llantas, Imagenes de condolencias, Imagenes de ofertas Pinterest" [ref=f164e869]:
+            - /url: https://in.pinterest.com/pin/913104893177673117/
+            - generic [ref=f164e870]:
+              - generic [ref=f164e871]: Yin Yang Wallpaper for Your Phone | Decoracion con llantas, Imagenes de condolencias, Imagenes de ofertas
+              - generic [ref=f164e873]: Pinterest
+        - generic [ref=f164e880] [cursor=pointer]:
+          - button [ref=f164e885]:
+            - img "Ying Yang free icons designed by Magnific" [ref=f164e887]
+          - link "Ying Yang free icons designed by Magnific Pinterest" [ref=f164e889]:
+            - /url: https://www.pinterest.com/pin/ying-yang-icon-in-svg-psd-png-eps-free-download--596727019408088706/
+            - generic [ref=f164e890]:
+              - generic [ref=f164e891]: Ying Yang free icons designed by Magnific
+              - generic [ref=f164e893]: Pinterest
+        - generic [ref=f164e900] [cursor=pointer]:
+          - button [ref=f164e905]:
+            - img "Black and white tattoo art | Minimalist yin yang design, Tattoo inspiration for balance, Tattoo design drawings" [ref=f164e907]
+          - link "Black and white tattoo art | Minimalist yin yang design, Tattoo inspiration for balance, Tattoo design drawings Pinterest" [ref=f164e909]:
+            - /url: https://id.pinterest.com/pin/756464068677173954/
+            - generic [ref=f164e910]:
+              - generic [ref=f164e911]: Black and white tattoo art | Minimalist yin yang design, Tattoo inspiration for balance, Tattoo design drawings
+              - generic [ref=f164e913]: Pinterest
+        - generic [ref=f164e920] [cursor=pointer]:
+          - button [ref=f164e925]:
+            - img "Minimalist ying yang tattoo | Spine tattoos for women ying yang, Symbol, Tattoo design" [ref=f164e927]
+          - link "Minimalist ying yang tattoo | Spine tattoos for women ying yang, Symbol, Tattoo design Pinterest" [ref=f164e929]:
+            - /url: https://in.pinterest.com/pin/451485931427455592/
+            - generic [ref=f164e930]:
+              - generic [ref=f164e931]: Minimalist ying yang tattoo | Spine tattoos for women ying yang, Symbol, Tattoo design
+              - generic [ref=f164e933]: Pinterest
+        - generic [ref=f164e940] [cursor=pointer]:
+          - button [ref=f164e945]:
+            - img "Ying Yang\" logo Sample" [ref=f164e947]
+          - link "Ying Yang\" logo Sample Pinterest" [ref=f164e949]:
+            - /url: https://www.pinterest.com/pin/yin-yang-logo-sample--409475791101137579/
+            - generic [ref=f164e950]:
+              - generic [ref=f164e951]: Ying Yang" logo Sample
+              - generic [ref=f164e953]: Pinterest
+        - generic [ref=f164e960] [cursor=pointer]:
+          - button [ref=f164e965]:
+            - 'img "The Meanings Explained: Yin Yang Tattoos" [ref=f164e967]'
+          - 'link "The Meanings Explained: Yin Yang Tattoos Pinterest" [ref=f164e969]':
+            - /url: https://www.pinterest.com/pin/the-meanings-explained-yin-yang-tattoos--406801778862318739/
+            - generic [ref=f164e970]:
+              - generic [ref=f164e971]: "The Meanings Explained: Yin Yang Tattoos"
+              - generic [ref=f164e973]: Pinterest
+        - generic [ref=f164e980] [cursor=pointer]:
+          - button [ref=f164e985]:
+            - 'img "Notan: Compositional Studies with the Notanizer App | Black and white yin yang, Meditation room decor inspiration, Minimalist yin yang design" [ref=f164e987]'
+          - 'link "Notan: Compositional Studies with the Notanizer App | Black and white yin yang, Meditation room decor inspiration, Minimalist yin yang design Pinterest" [ref=f164e989]':
+            - /url: https://www.pinterest.com/pin/583216220484843794/
+            - generic [ref=f164e990]:
+              - generic [ref=f164e991]: "Notan: Compositional Studies with the Notanizer App | Black and white yin yang, Meditation room decor inspiration, Minimalist yin yang design"
+              - generic [ref=f164e993]: Pinterest
+        - generic [ref=f164e1000] [cursor=pointer]:
+          - button [ref=f164e1005]:
+            - img "Yin Yang Vision Logo" [ref=f164e1007]
+          - link "Yin Yang Vision Logo Pinterest" [ref=f164e1009]:
+            - /url: https://in.pinterest.com/pin/yin-yang-vision-logo--844143523939659152/
+            - generic [ref=f164e1010]:
+              - generic [ref=f164e1011]: Yin Yang Vision Logo
+              - generic [ref=f164e1013]: Pinterest
+        - generic [ref=f164e1020] [cursor=pointer]:
+          - button [ref=f164e1025]:
+            - img "Yin Yang Symbol Icon Outline Style, Style Icons, Symbol Icons, Outline Icons PNG and Vector with Transparent Background for Free Download" [ref=f164e1027]
+          - link "Yin Yang Symbol Icon Outline Style, Style Icons, Symbol Icons, Outline Icons PNG and Vector with Transparent Background for Free Download Pinterest" [ref=f164e1029]:
+            - /url: https://in.pinterest.com/pin/yin-yang-symbol-icon-in-outline-style--624311567095378644/
+            - generic [ref=f164e1030]:
+              - generic [ref=f164e1031]: Yin Yang Symbol Icon Outline Style, Style Icons, Symbol Icons, Outline Icons PNG and Vector with Transparent Background for Free Download
+              - generic [ref=f164e1033]: Pinterest
+        - generic [ref=f164e1040] [cursor=pointer]:
+          - button [ref=f164e1045]:
+            - img "Yin and Yang Tattoo Design | Minimalist Linework Art | Perfect for Custom Body Ink | Unique Balance Symbol Tattoo | Modern and Elegant." [ref=f164e1047]
+          - link "Yin and Yang Tattoo Design | Minimalist Linework Art | Perfect for Custom Body Ink | Unique Balance Symbol Tattoo | Modern and Elegant. Pinterest" [ref=f164e1049]:
+            - /url: https://cl.pinterest.com/pin/362117626309353223/
+            - generic [ref=f164e1050]:
+              - generic [ref=f164e1051]: Yin and Yang Tattoo Design | Minimalist Linework Art | Perfect for Custom Body Ink | Unique Balance Symbol Tattoo | Modern and Elegant.
+              - generic [ref=f164e1053]: Pinterest
+        - generic [ref=f164e1060] [cursor=pointer]:
+          - button [ref=f164e1065]:
+            - img "Studiominimalista | Two circles design, Minimalist eclipse logo, Minimalist yin yang logo" [ref=f164e1067]
+          - link "Studiominimalista | Two circles design, Minimalist eclipse logo, Minimalist yin yang logo kr.pinterest.com" [ref=f164e1069]:
+            - /url: https://kr.pinterest.com/pin/191262315426774812/
+            - generic [ref=f164e1070]:
+              - generic [ref=f164e1071]: Studiominimalista | Two circles design, Minimalist eclipse logo, Minimalist yin yang logo
+              - generic [ref=f164e1073]: kr.pinterest.com
+        - generic [ref=f164e1080] [cursor=pointer]:
+          - button [ref=f164e1085]:
+            - img "Yin-yang" [ref=f164e1087]
+          - link "Yin-yang Pinterest" [ref=f164e1089]:
+            - /url: https://www.pinterest.com/pin/536561743118917189/
+            - generic [ref=f164e1090]:
+              - generic [ref=f164e1091]: Yin-yang
+              - generic [ref=f164e1093]: Pinterest
+        - generic [ref=f164e1100] [cursor=pointer]:
+          - button [ref=f164e1105]:
+            - img "Yin Yang Surfing Logo" [ref=f164e1107]
+          - link "Yin Yang Surfing Logo Pinterest" [ref=f164e1109]:
+            - /url: https://www.pinterest.com/pin/yin-yang-surfing-logo--844143523939543029/
+            - generic [ref=f164e1110]:
+              - generic [ref=f164e1111]: Yin Yang Surfing Logo
+              - generic [ref=f164e1113]: Pinterest
+        - generic [ref=f164e1120] [cursor=pointer]:
+          - button [ref=f164e1125]:
+            - img "Yin and yang" [ref=f164e1127]
+          - link "Yin and yang Pinterest" [ref=f164e1129]:
+            - /url: https://in.pinterest.com/pin/yin-and-yang--583216220488671413/
+            - generic [ref=f164e1130]:
+              - generic [ref=f164e1131]: Yin and yang
+              - generic [ref=f164e1133]: Pinterest
+        - generic [ref=f164e1140] [cursor=pointer]:
+          - button [ref=f164e1145]:
+            - img "Yin Yang Temporary Tattoo - Set of 3" [ref=f164e1147]
+          - link "Yin Yang Temporary Tattoo - Set of 3 Pinterest" [ref=f164e1149]:
+            - /url: https://www.pinterest.com/pin/yin-yang-temporary-tattoo-set-of-3--55943220362344184/
+            - generic [ref=f164e1150]:
+              - generic [ref=f164e1151]: Yin Yang Temporary Tattoo - Set of 3
+              - generic [ref=f164e1153]: Pinterest
+        - generic [ref=f164e1160] [cursor=pointer]:
+          - button [ref=f164e1165]:
+            - img "Simple and Elegant Yin Yang Tattoo Design | Black and white yin yang art, Meditation room decor ideas, Minimalist yin yang design" [ref=f164e1167]
+          - link "Simple and Elegant Yin Yang Tattoo Design | Black and white yin yang art, Meditation room decor ideas, Minimalist yin yang design Pinterest" [ref=f164e1169]:
+            - /url: https://www.pinterest.com/pin/simple-and-elegant-yin-yang-tattoo-design--12525705207325721/
+            - generic [ref=f164e1170]:
+              - generic [ref=f164e1171]: Simple and Elegant Yin Yang Tattoo Design | Black and white yin yang art, Meditation room decor ideas, Minimalist yin yang design
+              - generic [ref=f164e1173]: Pinterest
+        - generic [ref=f164e1180] [cursor=pointer]:
+          - button [ref=f164e1185]:
+            - img "Minimalist black and white symbols | Sun moon yin yang symbols, Symbolic tattoo meanings, Sol e lua tattoo" [ref=f164e1187]
+          - link "Minimalist black and white symbols | Sun moon yin yang symbols, Symbolic tattoo meanings, Sol e lua tattoo kr.pinterest.com" [ref=f164e1189]:
+            - /url: https://kr.pinterest.com/pin/439241769931859668/
+            - generic [ref=f164e1190]:
+              - generic [ref=f164e1191]: Minimalist black and white symbols | Sun moon yin yang symbols, Symbolic tattoo meanings, Sol e lua tattoo
+              - generic [ref=f164e1193]: kr.pinterest.com
+        - generic [ref=f164e1200] [cursor=pointer]:
+          - button [ref=f164e1205]:
+            - img "Yin-Yang-Quallen-Logo" [ref=f164e1207]
+          - link "Yin-Yang-Quallen-Logo Pinterest" [ref=f164e1209]:
+            - /url: https://in.pinterest.com/pin/162622236539602616/
+            - generic [ref=f164e1210]:
+              - generic [ref=f164e1211]: Yin-Yang-Quallen-Logo
+              - generic [ref=f164e1213]: Pinterest
+        - generic [ref=f164e1220] [cursor=pointer]:
+          - button [ref=f164e1225]:
+            - img "Zen" [ref=f164e1227]
+          - link "Zen Pinterest" [ref=f164e1229]:
+            - /url: https://www.pinterest.com/pin/yin-yang-symbol-in-black-sand--94575660909916921/
+            - generic [ref=f164e1230]:
+              - generic [ref=f164e1231]: Zen
+              - generic [ref=f164e1233]: Pinterest
+        - generic [ref=f164e1240] [cursor=pointer]:
+          - button [ref=f164e1245]:
+            - img "Black and white dolphin design | Minimalist yin yang art, Tattoo inspiration ideas, Art design tattoo" [ref=f164e1247]
+          - link "Black and white dolphin design | Minimalist yin yang art, Tattoo inspiration ideas, Art design tattoo Pinterest" [ref=f164e1249]:
+            - /url: https://es.pinterest.com/pin/yin-yang--7951736835729818/
+            - generic [ref=f164e1250]:
+              - generic [ref=f164e1251]: Black and white dolphin design | Minimalist yin yang art, Tattoo inspiration ideas, Art design tattoo
+              - generic [ref=f164e1253]: Pinterest
+        - generic [ref=f164e1260] [cursor=pointer]:
+          - button [ref=f164e1265]:
+            - img "Yin tang tattoo | Black and white yin yang tattoo, Yin yang art, Feng shui" [ref=f164e1267]
+          - link "Yin tang tattoo | Black and white yin yang tattoo, Yin yang art, Feng shui Pinterest" [ref=f164e1269]:
+            - /url: https://www.pinterest.com/pin/tatoo--139822763420295708/
+            - generic [ref=f164e1270]:
+              - generic [ref=f164e1271]: Yin tang tattoo | Black and white yin yang tattoo, Yin yang art, Feng shui
+              - generic [ref=f164e1273]: Pinterest
+        - generic [ref=f164e1280] [cursor=pointer]:
+          - button [ref=f164e1285]:
+            - img "Abstract symbol art | Black and white abstract symbol, Minimalist black and white design, Japanese design" [ref=f164e1287]
+          - link "Abstract symbol art | Black and white abstract symbol, Minimalist black and white design, Japanese design Pinterest" [ref=f164e1289]:
+            - /url: https://se.pinterest.com/pin/713257659769787099/
+            - generic [ref=f164e1290]:
+              - generic [ref=f164e1291]: Abstract symbol art | Black and white abstract symbol, Minimalist black and white design, Japanese design
+              - generic [ref=f164e1293]: Pinterest
+        - generic [ref=f164e1300] [cursor=pointer]:
+          - button [ref=f164e1305]:
+            - img "Cute Mini Drawings for Tattoo Inspiration | Black and white tattoo art, Minimalist tattoo ideas, Minimalist yin yang tattoo design" [ref=f164e1307]
+          - link "Cute Mini Drawings for Tattoo Inspiration | Black and white tattoo art, Minimalist tattoo ideas, Minimalist yin yang tattoo design Pinterest" [ref=f164e1309]:
+            - /url: https://br.pinterest.com/pin/901212575407363099/
+            - generic [ref=f164e1310]:
+              - generic [ref=f164e1311]: Cute Mini Drawings for Tattoo Inspiration | Black and white tattoo art, Minimalist tattoo ideas, Minimalist yin yang tattoo design
+              - generic [ref=f164e1313]: Pinterest
+        - generic [ref=f164e1320] [cursor=pointer]:
+          - button [ref=f164e1325]:
+            - 'img "Viral 3D and Circle Drawing: Unleash Your Creative Expression! | Black and white nature art, Home" [ref=f164e1327]'
+          - 'link "Viral 3D and Circle Drawing: Unleash Your Creative Expression! | Black and white nature art, Home Pinterest" [ref=f164e1329]':
+            - /url: https://www.pinterest.com/pin/46373071151517401/
+            - generic [ref=f164e1330]:
+              - generic [ref=f164e1331]: "Viral 3D and Circle Drawing: Unleash Your Creative Expression! | Black and white nature art, Home"
+              - generic [ref=f164e1333]: Pinterest
+        - generic [ref=f164e1340] [cursor=pointer]:
+          - button [ref=f164e1345]:
+            - img "Yin Yang Bundle Graphic by Euphoria Design · Creative Fabrica" [ref=f164e1347]
+          - link "Yin Yang Bundle Graphic by Euphoria Design · Creative Fabrica Pinterest" [ref=f164e1349]:
+            - /url: https://www.pinterest.com/pin/yin-yang-bundle-graphic-by-euphoria-design-creative-fabrica--729512839631821474/
+            - generic [ref=f164e1350]:
+              - generic [ref=f164e1351]: Yin Yang Bundle Graphic by Euphoria Design · Creative Fabrica
+              - generic [ref=f164e1353]: Pinterest
+        - generic [ref=f164e1360] [cursor=pointer]:
+          - button [ref=f164e1365]:
+            - img "Yin Yang Symbol - Harmony & Balance – Royalty-Free Vector | VectorStock" [ref=f164e1367]
+          - link "Yin Yang Symbol - Harmony & Balance – Royalty-Free Vector | VectorStock Pinterest" [ref=f164e1369]:
+            - /url: https://in.pinterest.com/pin/yin-yang-symbol-harmony-balance-royaltyfree-vector--41658365294687108/
+            - generic [ref=f164e1370]:
+              - generic [ref=f164e1371]: Yin Yang Symbol - Harmony & Balance – Royalty-Free Vector | VectorStock
+              - generic [ref=f164e1373]: Pinterest
+        - generic [ref=f164e1380] [cursor=pointer]:
+          - button [ref=f164e1385]:
+            - img "Yin Yang and Taurus Tattoos - Symbolic Body Art | Black and white tattoo art, Geometric tattoo" [ref=f164e1387]
+          - link "Yin Yang and Taurus Tattoos - Symbolic Body Art | Black and white tattoo art, Geometric tattoo Pinterest" [ref=f164e1389]:
+            - /url: https://www.pinterest.com/pin/yin-yang-and-taurus-tattoos-symbolic-body-art--4925880829090594/
+            - generic [ref=f164e1390]:
+              - generic [ref=f164e1391]: Yin Yang and Taurus Tattoos - Symbolic Body Art | Black and white tattoo art, Geometric tattoo
+              - generic [ref=f164e1393]: Pinterest
+        - generic [ref=f164e1400] [cursor=pointer]:
+          - button [ref=f164e1405]:
+            - img "Zen Avatar | Inspiration für tattoo-designs, Minimalistisches yin-yang- symbol, Moderne wandkunst-ideen" [ref=f164e1407]
+          - link "Zen Avatar | Inspiration für tattoo-designs, Minimalistisches yin-yang- symbol, Moderne wandkunst-ideen Pinterest" [ref=f164e1409]:
+            - /url: https://www.pinterest.com/pin/zen-avatar--563935184560488497/
+            - generic [ref=f164e1410]:
+              - generic [ref=f164e1411]: Zen Avatar | Inspiration für tattoo-designs, Minimalistisches yin-yang- symbol, Moderne wandkunst-ideen
+              - generic [ref=f164e1413]: Pinterest
+        - generic [ref=f164e1420] [cursor=pointer]:
+          - button [ref=f164e1425]:
+            - img "Yin Yang Tattoo with Ink Splatters | Black and white yin yang, Minimalist yin yang design," [ref=f164e1427]
+          - link "Yin Yang Tattoo with Ink Splatters | Black and white yin yang, Minimalist yin yang design, Pinterest" [ref=f164e1429]:
+            - /url: https://www.pinterest.com/pin/yin-yang-tattoo-with-ink-splatters--28077197670452145/
+            - generic [ref=f164e1430]:
+              - generic [ref=f164e1431]: Yin Yang Tattoo with Ink Splatters | Black and white yin yang, Minimalist yin yang design,
+              - generic [ref=f164e1433]: Pinterest
+        - generic [ref=f164e1440] [cursor=pointer]:
+          - button [ref=f164e1445]:
+            - img "Black and white yin yang | Minimalist yin yang design, Tattoo inspiration yin yang, Tattoo designs" [ref=f164e1447]
+          - link "Black and white yin yang | Minimalist yin yang design, Tattoo inspiration yin yang, Tattoo designs kr.pinterest.com" [ref=f164e1449]:
+            - /url: https://kr.pinterest.com/pin/782500504051911217/
+            - generic [ref=f164e1450]:
+              - generic [ref=f164e1451]: Black and white yin yang | Minimalist yin yang design, Tattoo inspiration yin yang, Tattoo designs
+              - generic [ref=f164e1453]: kr.pinterest.com
+        - generic [ref=f164e1460] [cursor=pointer]:
+          - button [ref=f164e1465]:
+            - img "❤️ Horse yin yang ❤️" [ref=f164e1467]
+          - link "❤️ Horse yin yang ❤️ Pinterest" [ref=f164e1469]:
+            - /url: https://www.pinterest.com/pin/arabian-horse-logo-design--8092474325899200/
+            - generic [ref=f164e1470]:
+              - generic [ref=f164e1471]: ❤️ Horse yin yang ❤️
+              - generic [ref=f164e1473]: Pinterest
+        - generic [ref=f164e1480] [cursor=pointer]:
+          - button [ref=f164e1485]:
+            - 'img "Yin Yang: Art and Technology Wall Art Print" [ref=f164e1487]'
+          - 'link "Yin Yang: Art and Technology Wall Art Print Pinterest" [ref=f164e1489]':
+            - /url: https://www.pinterest.com/pin/533465518354983001/
+            - generic [ref=f164e1490]:
+              - generic [ref=f164e1491]: "Yin Yang: Art and Technology Wall Art Print"
+              - generic [ref=f164e1493]: Pinterest
+        - generic [ref=f164e1500] [cursor=pointer]:
+          - button [ref=f164e1505]:
+            - img "Small Yin Yang Temporary Tattoo (Set of 3)" [ref=f164e1507]
+          - link "Small Yin Yang Temporary Tattoo (Set of 3) Pinterest" [ref=f164e1509]:
+            - /url: https://www.pinterest.com/pin/328129522873821329/
+            - generic [ref=f164e1510]:
+              - generic [ref=f164e1511]: Small Yin Yang Temporary Tattoo (Set of 3)
+              - generic [ref=f164e1513]: Pinterest
+        - generic [ref=f164e1520] [cursor=pointer]:
+          - button [ref=f164e1525]:
+            - img "69 Yin Yang" [ref=f164e1527]
+          - link "69 Yin Yang Pinterest" [ref=f164e1529]:
+            - /url: https://www.pinterest.com/pin/372250725422389836/
+            - generic [ref=f164e1530]:
+              - generic [ref=f164e1531]: 69 Yin Yang
+              - generic [ref=f164e1533]: Pinterest
+        - generic [ref=f164e1540] [cursor=pointer]:
+          - button [ref=f164e1545]:
+            - img "The yin and yang logo" [ref=f164e1547]
+          - link "The yin and yang logo Pinterest" [ref=f164e1549]:
+            - /url: https://in.pinterest.com/pin/608337862199966651/
+            - generic [ref=f164e1550]:
+              - generic [ref=f164e1551]: The yin and yang logo
+              - generic [ref=f164e1553]: Pinterest
+        - generic [ref=f164e1560] [cursor=pointer]:
+          - button [ref=f164e1565]:
+            - img "78 Minimalist Tattoos That Will Inspire You To Get Inked" [ref=f164e1567]
+          - link "78 Minimalist Tattoos That Will Inspire You To Get Inked Pinterest" [ref=f164e1569]:
+            - /url: https://www.pinterest.com/pin/293085888278882893/
+            - generic [ref=f164e1570]:
+              - generic [ref=f164e1571]: 78 Minimalist Tattoos That Will Inspire You To Get Inked
+              - generic [ref=f164e1573]: Pinterest
+        - generic [ref=f164e1580] [cursor=pointer]:
+          - button [ref=f164e1585]:
+            - img "Triple Yin Yang - Metal & Glossy Black Classic Round Sticker | Zazzle" [ref=f164e1587]
+          - link "Triple Yin Yang - Metal & Glossy Black Classic Round Sticker | Zazzle Pinterest" [ref=f164e1589]:
+            - /url: https://www.pinterest.com/pin/triple-yin-yang-metal-glossy-black-classic-round-sticker--568438784221767466/
+            - generic [ref=f164e1590]:
+              - generic [ref=f164e1591]: Triple Yin Yang - Metal & Glossy Black Classic Round Sticker | Zazzle
+              - generic [ref=f164e1593]: Pinterest
+        - generic [ref=f164e1600] [cursor=pointer]:
+          - button [ref=f164e1605]:
+            - img "20 Meaningful Yin Yang Tattoos You'll Love In 2024" [ref=f164e1607]
+          - link "20 Meaningful Yin Yang Tattoos You'll Love In 2024 Pinterest" [ref=f164e1609]:
+            - /url: https://uk.pinterest.com/pin/18577417207353826/
+            - generic [ref=f164e1610]:
+              - generic [ref=f164e1611]: 20 Meaningful Yin Yang Tattoos You'll Love In 2024
+              - generic [ref=f164e1613]: Pinterest
+        - generic [ref=f164e1620] [cursor=pointer]:
+          - button [ref=f164e1625]:
+            - 'img "Balance in Motion 2025: A Yin Yang with Modern Flair" [ref=f164e1627]'
+          - 'link "Balance in Motion 2025: A Yin Yang with Modern Flair Pinterest" [ref=f164e1629]':
+            - /url: https://www.pinterest.com/pin/35114072091072673/
+            - generic [ref=f164e1630]:
+              - generic [ref=f164e1631]: "Balance in Motion 2025: A Yin Yang with Modern Flair"
+              - generic [ref=f164e1633]: Pinterest
+        - generic [ref=f164e1640] [cursor=pointer]:
+          - button [ref=f164e1645]:
+            - img "Yin Yang Poster, Polygonal Geometric Figure | Yin yang origami, Ying yang geometric tattoo, Yin yang" [ref=f164e1647]
+          - link "Yin Yang Poster, Polygonal Geometric Figure | Yin yang origami, Ying yang geometric tattoo, Yin yang Pinterest" [ref=f164e1649]:
+            - /url: https://www.pinterest.com/pin/yin-yang-poster-polygonal-geometric-figure--281543714236247/
+            - generic [ref=f164e1650]:
+              - generic [ref=f164e1651]: Yin Yang Poster, Polygonal Geometric Figure | Yin yang origami, Ying yang geometric tattoo, Yin yang
+              - generic [ref=f164e1653]: Pinterest
+        - generic [ref=f164e1660] [cursor=pointer]:
+          - button [ref=f164e1665]:
+            - 'img "Mobile App : Web Design & Development : SEO Company in India : USA" [ref=f164e1667]'
+          - 'link "Mobile App : Web Design & Development : SEO Company in India : USA Pinterest" [ref=f164e1669]':
+            - /url: https://in.pinterest.com/pin/704813410422653243/
+            - generic [ref=f164e1670]:
+              - generic [ref=f164e1671]: "Mobile App : Web Design & Development : SEO Company in India : USA"
+              - generic [ref=f164e1673]: Pinterest
+        - generic [ref=f164e1680] [cursor=pointer]:
+          - button [ref=f164e1685]:
+            - img "Yin Yang Switcher Concept by Oleksandr Pronskyi | Yin yang keyboard, Yin yang concepts, Minimalist toggle" [ref=f164e1687]
+          - link "Yin Yang Switcher Concept by Oleksandr Pronskyi | Yin yang keyboard, Yin yang concepts, Minimalist toggle Pinterest" [ref=f164e1689]:
+            - /url: https://in.pinterest.com/pin/yin-yang-switcher-concept-by-oleksandr-pronskyi--190206784256073338/
+            - generic [ref=f164e1690]:
+              - generic [ref=f164e1691]: Yin Yang Switcher Concept by Oleksandr Pronskyi | Yin yang keyboard, Yin yang concepts, Minimalist toggle
+              - generic [ref=f164e1693]: Pinterest
+        - generic [ref=f164e1700] [cursor=pointer]:
+          - button [ref=f164e1705]:
+            - img "Black and White Cat and Dog Logo Design | Yin yang dog symbol, Yin yang cat" [ref=f164e1707]
+          - link "Black and White Cat and Dog Logo Design | Yin yang dog symbol, Yin yang cat Pinterest" [ref=f164e1709]:
+            - /url: https://ca.pinterest.com/pin/black-and-white-cat-and-dog-logo-design--8725793023414655/
+            - generic [ref=f164e1710]:
+              - generic [ref=f164e1711]: Black and White Cat and Dog Logo Design | Yin yang dog symbol, Yin yang cat
+              - generic [ref=f164e1713]: Pinterest
+        - generic [ref=f164e1720] [cursor=pointer]:
+          - button [ref=f164e1725]:
+            - img "Yin Yang with Leaf Line Art Logo Template" [ref=f164e1727]
+          - link "Yin Yang with Leaf Line Art Logo Template Pinterest" [ref=f164e1729]:
+            - /url: https://www.pinterest.com/pin/yin-yang-logo-with-leaf-line-art--85990674129195751/
+            - generic [ref=f164e1730]:
+              - generic [ref=f164e1731]: Yin Yang with Leaf Line Art Logo Template
+              - generic [ref=f164e1733]: Pinterest
+        - generic [ref=f164e1740] [cursor=pointer]:
+          - button [ref=f164e1745]:
+            - img "Yin Symbol Tattoo Design | Yin pfp, Ying yang tattoo stencil, Yin-yang" [ref=f164e1747]
+          - link "Yin Symbol Tattoo Design | Yin pfp, Ying yang tattoo stencil, Yin-yang Pinterest" [ref=f164e1749]:
+            - /url: https://www.pinterest.com/pin/1072490098925505905/
+            - generic [ref=f164e1750]:
+              - generic [ref=f164e1751]: Yin Symbol Tattoo Design | Yin pfp, Ying yang tattoo stencil, Yin-yang
+              - generic [ref=f164e1753]: Pinterest
+        - generic [ref=f164e1760] [cursor=pointer]:
+          - button [ref=f164e1765]:
+            - img "I love yin and yang..l I want a yin and yang tattoo but just small and simple" [ref=f164e1767]
+          - link "I love yin and yang..l I want a yin and yang tattoo but just small and simple Pinterest" [ref=f164e1769]:
+            - /url: https://www.pinterest.com/pin/574842339915114285/
+            - generic [ref=f164e1770]:
+              - generic [ref=f164e1771]: I love yin and yang..l I want a yin and yang tattoo but just small and simple
+              - generic [ref=f164e1773]: Pinterest
+        - generic [ref=f164e1780] [cursor=pointer]:
+          - button [ref=f164e1785]:
+            - img "twitter header" [ref=f164e1787]
+          - link "twitter header Pinterest" [ref=f164e1789]:
+            - /url: https://www.pinterest.com/pin/twitter-header--97038566949524597/
+            - generic [ref=f164e1790]:
+              - generic [ref=f164e1791]: twitter header
+              - generic [ref=f164e1793]: Pinterest
+        - generic [ref=f164e1800] [cursor=pointer]:
+          - button [ref=f164e1805]:
+            - img "S Letter Whatsapp DP Images | Black and white yin yang art, Meditation room decor ideas," [ref=f164e1807]
+          - link "S Letter Whatsapp DP Images | Black and white yin yang art, Meditation room decor ideas, Pinterest" [ref=f164e1809]:
+            - /url: https://br.pinterest.com/pin/s-letter-whatsapp-dp-images--9640586694740439/
+            - generic [ref=f164e1810]:
+              - generic [ref=f164e1811]: S Letter Whatsapp DP Images | Black and white yin yang art, Meditation room decor ideas,
+              - generic [ref=f164e1813]: Pinterest
+        - generic [ref=f164e1820] [cursor=pointer]:
+          - button [ref=f164e1825]:
+            - img "Opposite Black and White Hands Reaching in Yin and Yeng Design Poster" [ref=f164e1827]
+          - link "Opposite Black and White Hands Reaching in Yin and Yeng Design Poster Pinterest" [ref=f164e1829]:
+            - /url: https://www.pinterest.com/pin/1045468500985267745/
+            - generic [ref=f164e1830]:
+              - generic [ref=f164e1831]: Opposite Black and White Hands Reaching in Yin and Yeng Design Poster
+              - generic [ref=f164e1833]: Pinterest
+        - generic [ref=f164e1840] [cursor=pointer]:
+          - button [ref=f164e1845]:
+            - img "Meaningful Symbols – A Guide to Sacred Imagery - Yin Yang - Balance is beautiful" [ref=f164e1847]
+          - link "Meaningful Symbols – A Guide to Sacred Imagery - Yin Yang - Balance is beautiful Pinterest" [ref=f164e1849]:
+            - /url: https://www.pinterest.com/pin/260505159682296776/
+            - generic [ref=f164e1850]:
+              - generic [ref=f164e1851]: Meaningful Symbols – A Guide to Sacred Imagery - Yin Yang - Balance is beautiful
+              - generic [ref=f164e1853]: Pinterest
+        - generic [ref=f164e1860] [cursor=pointer]:
+          - button [ref=f164e1865]:
+            - img "Yin Yang Shark Tattoo Design | Black and white fish tattoo, Minimalist yin yang tattoo, Tattoo" [ref=f164e1867]
+          - link "Yin Yang Shark Tattoo Design | Black and white fish tattoo, Minimalist yin yang tattoo, Tattoo Pinterest" [ref=f164e1869]:
+            - /url: https://es.pinterest.com/pin/988892030650589279/
+            - generic [ref=f164e1870]:
+              - generic [ref=f164e1871]: Yin Yang Shark Tattoo Design | Black and white fish tattoo, Minimalist yin yang tattoo, Tattoo
+              - generic [ref=f164e1873]: Pinterest
+        - generic [ref=f164e1880] [cursor=pointer]:
+          - button [ref=f164e1885]:
+            - img "Ying Yang Black and White Wood Coaster Set, Home Decor, Housewarming Gifts, Bohemian Decor, Minimalist" [ref=f164e1887]
+          - link "Ying Yang Black and White Wood Coaster Set, Home Decor, Housewarming Gifts, Bohemian Decor, Minimalist kr.pinterest.com" [ref=f164e1889]:
+            - /url: https://kr.pinterest.com/pin/28288303907644133/
+            - generic [ref=f164e1890]:
+              - generic [ref=f164e1891]: Ying Yang Black and White Wood Coaster Set, Home Decor, Housewarming Gifts, Bohemian Decor, Minimalist
+              - generic [ref=f164e1893]: kr.pinterest.com
+        - generic [ref=f164e1900] [cursor=pointer]:
+          - button [ref=f164e1905]:
+            - img "Ying Yang Water Tattoo Desing." [ref=f164e1907]
+          - link "Ying Yang Water Tattoo Desing. Pinterest" [ref=f164e1909]:
+            - /url: https://in.pinterest.com/pin/320951910965527604/
+            - generic [ref=f164e1910]:
+              - generic [ref=f164e1911]: Ying Yang Water Tattoo Desing.
+              - generic [ref=f164e1913]: Pinterest
+        - generic [ref=f164e1920] [cursor=pointer]:
+          - button [ref=f164e1925]:
+            - img "Black and White Wallpaper with Fish and Leaves | Plano de fundo preto e branco, Preto e branco wallpaper, Preto e branco aesthetic" [ref=f164e1927]
+          - link "Black and White Wallpaper with Fish and Leaves | Plano de fundo preto e branco, Preto e branco wallpaper, Preto e branco aesthetic Pinterest" [ref=f164e1929]:
+            - /url: https://www.pinterest.com/pin/921619511242055159/
+            - generic [ref=f164e1930]:
+              - generic [ref=f164e1931]: Black and White Wallpaper with Fish and Leaves | Plano de fundo preto e branco, Preto e branco wallpaper, Preto e branco aesthetic
+              - generic [ref=f164e1933]: Pinterest
+        - generic [ref=f164e1940] [cursor=pointer]:
+          - button [ref=f164e1945]:
+            - img "Yin-Yang Panda Logo Design | Panda ying yang tattoo, Minimalist panda, Baby panda drawing" [ref=f164e1947]
+          - link "Yin-Yang Panda Logo Design | Panda ying yang tattoo, Minimalist panda, Baby panda drawing Pinterest" [ref=f164e1949]:
+            - /url: https://es.pinterest.com/pin/595390013230407795/
+            - generic [ref=f164e1950]:
+              - generic [ref=f164e1951]: Yin-Yang Panda Logo Design | Panda ying yang tattoo, Minimalist panda, Baby panda drawing
+              - generic [ref=f164e1953]: Pinterest
+        - generic [ref=f164e1960] [cursor=pointer]:
+          - button [ref=f164e1965]:
+            - img "Minimalist iPhone Wallpaper" [ref=f164e1967]
+          - link "Minimalist iPhone Wallpaper Pinterest" [ref=f164e1969]:
+            - /url: https://cl.pinterest.com/pin/878061258580235934/
+            - generic [ref=f164e1970]:
+              - generic [ref=f164e1971]: Minimalist iPhone Wallpaper
+              - generic [ref=f164e1973]: Pinterest
+        - generic [ref=f164e1980] [cursor=pointer]:
+          - button [ref=f164e1985]:
+            - img "Minimal opposite Concept." [ref=f164e1987]
+          - link "Minimal opposite Concept. Pinterest" [ref=f164e1989]:
+            - /url: https://tr.pinterest.com/pin/207306389085512238/
+            - generic [ref=f164e1990]:
+              - generic [ref=f164e1991]: Minimal opposite Concept.
+              - generic [ref=f164e1993]: Pinterest
+        - generic [ref=f164e2000] [cursor=pointer]:
+          - button [ref=f164e2005]:
+            - img "Yin yang symbol sign, an Illustration by Valenty" [ref=f164e2007]
+          - link "Yin yang symbol sign, an Illustration by Valenty Pinterest" [ref=f164e2009]:
+            - /url: https://in.pinterest.com/pin/521432463121870234/
+            - generic [ref=f164e2010]:
+              - generic [ref=f164e2011]: Yin yang symbol sign, an Illustration by Valenty
+              - generic [ref=f164e2013]: Pinterest
+        - generic [ref=f164e2020] [cursor=pointer]:
+          - button [ref=f164e2025]:
+            - img "Black and White Fish Drawing | Black and white koi art, Minimalist yin yang design, Tattoo inspiration ideas" [ref=f164e2027]
+          - link "Black and White Fish Drawing | Black and white koi art, Minimalist yin yang design, Tattoo inspiration ideas Pinterest" [ref=f164e2029]:
+            - /url: https://no.pinterest.com/pin/420453315234224334/
+            - generic [ref=f164e2030]:
+              - generic [ref=f164e2031]: Black and White Fish Drawing | Black and white koi art, Minimalist yin yang design, Tattoo inspiration ideas
+              - generic [ref=f164e2033]: Pinterest
+        - generic [ref=f164e2040] [cursor=pointer]:
+          - button [ref=f164e2045]:
+            - img "Yin & Yang Sun Logo" [ref=f164e2047]
+          - link "Yin & Yang Sun Logo Pinterest" [ref=f164e2049]:
+            - /url: https://www.pinterest.com/pin/yin-yang-sun-logo--726557352365323517/
+            - generic [ref=f164e2050]:
+              - generic [ref=f164e2051]: Yin & Yang Sun Logo
+              - generic [ref=f164e2053]: Pinterest
+        - generic [ref=f164e2060] [cursor=pointer]:
+          - button [ref=f164e2065]:
+            - img "Tattoo design drawings line art | Yin yang abstract tattoo, Ceramic tattoo ideas, Modern minimalist logo" [ref=f164e2067]
+          - link "Tattoo design drawings line art | Yin yang abstract tattoo, Ceramic tattoo ideas, Modern minimalist logo Pinterest" [ref=f164e2069]:
+            - /url: https://ar.pinterest.com/pin/684617580892777268/
+            - generic [ref=f164e2070]:
+              - generic [ref=f164e2071]: Tattoo design drawings line art | Yin yang abstract tattoo, Ceramic tattoo ideas, Modern minimalist logo
+              - generic [ref=f164e2073]: Pinterest
+        - generic [ref=f164e2080] [cursor=pointer]:
+          - button [ref=f164e2085]:
+            - img "Yin Yang symbol with Harmony and Balance typography \" Samsung Galaxy Phone Case for Sale by kallyfactory" [ref=f164e2087]
+          - link "Yin Yang symbol with Harmony and Balance typography \" Samsung Galaxy Phone Case for Sale by kallyfactory Pinterest" [ref=f164e2089]:
+            - /url: https://www.pinterest.com/pin/370421138107350701/
+            - generic [ref=f164e2090]:
+              - generic [ref=f164e2091]: Yin Yang symbol with Harmony and Balance typography " Samsung Galaxy Phone Case for Sale by kallyfactory
+              - generic [ref=f164e2093]: Pinterest
+        - generic [ref=f164e2100] [cursor=pointer]:
+          - button [ref=f164e2105]:
+            - img "Yin Yang Rocket Logo" [ref=f164e2107]
+          - link "Yin Yang Rocket Logo Pinterest" [ref=f164e2109]:
+            - /url: https://in.pinterest.com/pin/yin-yang-rocket-logo--843369467723831336/
+            - generic [ref=f164e2110]:
+              - generic [ref=f164e2111]: Yin Yang Rocket Logo
+              - generic [ref=f164e2113]: Pinterest
+        - generic [ref=f164e2120] [cursor=pointer]:
+          - button [ref=f164e2125]:
+            - img "Ting yang tattoo" [ref=f164e2127]
+          - link "Ting yang tattoo Pinterest" [ref=f164e2129]:
+            - /url: https://www.pinterest.com/pin/ting-yang-tattoo--33565959716567307/
+            - generic [ref=f164e2130]:
+              - generic [ref=f164e2131]: Ting yang tattoo
+              - generic [ref=f164e2133]: Pinterest
+        - generic [ref=f164e2140] [cursor=pointer]:
+          - button [ref=f164e2145]:
+            - img "Yin Yang Token Logo" [ref=f164e2147]
+          - link "Yin Yang Token Logo Pinterest" [ref=f164e2149]:
+            - /url: https://in.pinterest.com/pin/yin-yang-token-logo--844143523922808053/
+            - generic [ref=f164e2150]:
+              - generic [ref=f164e2151]: Yin Yang Token Logo
+              - generic [ref=f164e2153]: Pinterest
+        - generic [ref=f164e2160] [cursor=pointer]:
+          - button [ref=f164e2165]:
+            - img "Ying and yang wallpaper aesthetic | Minimalist tattoos, Yang tattoo, Sun and moon" [ref=f164e2167]
+          - link "Ying and yang wallpaper aesthetic | Minimalist tattoos, Yang tattoo, Sun and moon Pinterest" [ref=f164e2169]:
+            - /url: https://se.pinterest.com/pin/922112092443234470/
+            - generic [ref=f164e2170]:
+              - generic [ref=f164e2171]: Ying and yang wallpaper aesthetic | Minimalist tattoos, Yang tattoo, Sun and moon
+              - generic [ref=f164e2173]: Pinterest
+        - generic [ref=f164e2180] [cursor=pointer]:
+          - button [ref=f164e2185]:
+            - img "DRAKE-078" [ref=f164e2187]
+          - link "DRAKE-078 Pinterest" [ref=f164e2189]:
+            - /url: https://www.pinterest.com/pin/drake078-dragon-yingyang--1970393581835259/
+            - generic [ref=f164e2190]:
+              - generic [ref=f164e2191]: DRAKE-078
+              - generic [ref=f164e2193]: Pinterest
+        - generic [ref=f164e2200] [cursor=pointer]:
+          - button [ref=f164e2205]:
+            - img "Minimalist Tattoos | Tattoofilter" [ref=f164e2207]
+          - link "Minimalist Tattoos | Tattoofilter Pinterest" [ref=f164e2209]:
+            - /url: https://www.pinterest.com/pin/485333297368851301/
+            - generic [ref=f164e2210]:
+              - generic [ref=f164e2211]: Minimalist Tattoos | Tattoofilter
+              - generic [ref=f164e2213]: Pinterest
+        - generic [ref=f164e2220] [cursor=pointer]:
+          - button [ref=f164e2225]:
+            - img "Yin Yang Ping Pong Logo" [ref=f164e2227]
+          - link "Yin Yang Ping Pong Logo Pinterest" [ref=f164e2229]:
+            - /url: https://www.pinterest.com/pin/844143523901895802/
+            - generic [ref=f164e2230]:
+              - generic [ref=f164e2231]: Yin Yang Ping Pong Logo
+              - generic [ref=f164e2233]: Pinterest
+      - generic [ref=f164e2240]:
+        - heading "Page Navigation" [level=1] [ref=f164e2241]
+        - button "결과 더보기" [ref=f164e2242] [cursor=pointer]:
+          - generic [ref=f164e2243]:
+            - separator [ref=f164e2244]
+            - generic [ref=f164e2245]: 결과 더보기
+      - navigation

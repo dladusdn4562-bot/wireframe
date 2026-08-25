@@ -1,0 +1,951 @@
+- generic [active] [ref=f26e1]:
+  - generic:
+    - generic:
+      - link "주요 콘텐츠로 이동" [ref=f26e2] [cursor=pointer]
+      - link "연속 스크롤 사용 중지" [ref=f26e3] [cursor=pointer]:
+        - /url: "#"
+      - link "접근성 도움말" [ref=f26e4] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=ko
+  - generic [ref=f26e9]:
+    - search [ref=f26e10]:
+      - generic [ref=f26e12]:
+        - link "Google 홈페이지로 이동" [ref=f26e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwijgMrXsLuWAxUDjeEIHW2eLeEQPAgJ
+        - generic [ref=f26e22]:
+          - generic [ref=f26e23]:
+            - combobox "검색" [ref=f26e26]: minimalist s curve wave logo symbol monochrome flat vector black white minimalist s curve wave logo symbol monochrome flat vector black white
+            - generic [ref=f26e27]:
+              - button "지우기" [ref=f26e29] [cursor=pointer]
+              - generic [ref=f26e34]:
+                - button "입력 도구" [ref=f26e35] [cursor=pointer]
+                - button "음성 검색" [ref=f26e39] [cursor=pointer]
+                - button "이미지로 검색" [ref=f26e42] [cursor=pointer]
+          - button "검색" [ref=f26e45] [cursor=pointer]
+    - generic [ref=f26e51]:
+      - button "Google 앱" [ref=f26e53] [cursor=pointer]
+      - 'button "Google 계정: 임연우 (dladusdn4562@gmail.com)" [ref=f26e58] [cursor=pointer]'
+  - generic [ref=f26e67]:
+    - generic [ref=f26e70]:
+      - navigation [ref=f26e73]:
+        - generic [ref=f26e74]:
+          - list [ref=f26e75]:
+            - listitem [ref=f26e76]:
+              - link "AI 모드" [ref=f26e79] [cursor=pointer]:
+                - /url: /search?q=minimalist+s+curve+wave+logo+symbol+monochrome+flat+vector+black+white&sca_esv=1b85b69310503e88&sxsrf=APpeQnvo1_uJpgIKgbJMdydeCc_l5Qc6-w:1787647176647&udm=50&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwijgMrXsLuWAxUDjeEIHW2eLeEQ2J8OegQIChAD
+            - listitem [ref=f26e83]:
+              - link "전체" [ref=f26e84] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnvo1_uJpgIKgbJMdydeCc_l5Qc6-w:1787647176647&q=minimalist+s+curve+wave+logo+symbol+monochrome+flat+vector+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&sa=X&ved=2ahUKEwijgMrXsLuWAxUDjeEIHW2eLeEQ0pQJegQICxAB
+            - listitem [ref=f26e87]:
+              - link "이미지" [disabled] [ref=f26e88]
+            - listitem [ref=f26e91]:
+              - link "쇼핑" [ref=f26e92] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnvo1_uJpgIKgbJMdydeCc_l5Qc6-w:1787647176647&udm=28&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=minimalist+s+curve+wave+logo+symbol+monochrome+flat+vector+black+white&ved=1t:220175&ictx=111
+            - listitem [ref=f26e95]:
+              - link "짧은 동영상" [ref=f26e96] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnvo1_uJpgIKgbJMdydeCc_l5Qc6-w:1787647176647&udm=39&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=minimalist+s+curve+wave+logo+symbol+monochrome+flat+vector+black+white&sa=X&ved=2ahUKEwijgMrXsLuWAxUDjeEIHW2eLeEQs6gLegQIDRAB
+            - listitem [ref=f26e99]:
+              - link "웹" [ref=f26e100] [cursor=pointer]:
+                - /url: /search?sca_esv=1b85b69310503e88&sxsrf=APpeQnvo1_uJpgIKgbJMdydeCc_l5Qc6-w:1787647176647&udm=web&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&q=minimalist+s+curve+wave+logo+symbol+monochrome+flat+vector+black+white&sa=X&ved=2ahUKEwijgMrXsLuWAxUDjeEIHW2eLeEQs6gLegQIDhAB
+            - listitem [ref=f26e103]:
+              - link "금융" [ref=f26e104] [cursor=pointer]:
+                - /url: /finance?sca_esv=1b85b69310503e88&output=search&q=minimalist+s+curve+wave+logo+symbol+monochrome+flat+vector+black+white&source=lnms&fbs=ABfTbFUgt-aXEFkBhPo84x72c1XoLHFs6TcISYM3FayWAWWA70DBExgkDFCpIGAUraPZqPrF7gx5lk2It4g6nB4ghos-MZ1Jro9NlvV4vwmZzPiJm0RYNtps5yMWI76Vd3NBBqhhWSpHLQKD0DOCl77DmM-PdPxtG9YiykU87RHLgYHVBddgHWVR8Ps9FKrsTw7f_ur50jSlUuZVIv9xYGDaNB6duGFh8A&sa=X&ved=2ahUKEwijgMrXsLuWAxUDjeEIHW2eLeEQ0pQJegQIDBAB
+            - listitem [ref=f26e107]:
+              - button [ref=f26e108] [cursor=pointer]:
+                - generic "필터 더보기" [ref=f26e109]: 더보기
+          - button "도구" [ref=f26e116] [cursor=pointer]
+      - link [ref=f26e124] [cursor=pointer]:
+        - /url: /save?sa=X&ved=2ahUKEwijgMrXsLuWAxUDjeEIHW2eLeEQ7XV6BAgFEAA
+    - heading "검색결과" [level=1] [ref=f26e128]
+    - main [ref=f26e130]:
+      - generic [ref=f26e139]:
+        - generic [ref=f26e143] [cursor=pointer]:
+          - button [ref=f26e148]:
+            - img "15,736 S Waves Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e150]
+          - link "15,736 S Waves Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e152]:
+            - /url: https://www.shutterstock.com/search/s-waves-logo
+            - generic [ref=f26e153]:
+              - generic [ref=f26e154]: 15,736 S Waves Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e156]: Shutterstock
+        - generic [ref=f26e163] [cursor=pointer]:
+          - generic [ref=f26e165]:
+            - button [ref=f26e168]:
+              - img "S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f26e170]
+            - generic: 라이선스
+          - link "S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f26e172]:
+            - /url: https://www.dreamstime.com/illustration/s-curve-icon.html
+            - generic [ref=f26e173]:
+              - generic [ref=f26e174]: S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f26e176]: Dreamstime.com
+        - generic [ref=f26e183] [cursor=pointer]:
+          - generic [ref=f26e185]:
+            - button [ref=f26e188]:
+              - img "Black Curved Lines White Stock Illustrations – 27,104 Black Curved Lines White Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f26e190]
+            - generic: 라이선스
+          - link "Black Curved Lines White Stock Illustrations – 27,104 Black Curved Lines White Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f26e192]:
+            - /url: https://www.dreamstime.com/illustration/black-curved-lines-white.html
+            - generic [ref=f26e193]:
+              - generic [ref=f26e194]: Black Curved Lines White Stock Illustrations – 27,104 Black Curved Lines White Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f26e196]: Dreamstime.com
+        - generic [ref=f26e203] [cursor=pointer]:
+          - button [ref=f26e208]:
+            - img "S wave Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f26e210]
+          - link "S wave Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f26e212]:
+            - /url: https://www.magnific.com/vectors/s-wave
+            - generic [ref=f26e213]:
+              - generic [ref=f26e214]: S wave Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f26e216]: Magnific
+        - generic [ref=f26e223] [cursor=pointer]:
+          - button [ref=f26e228]:
+            - img "6,189 3 Line Wave Icon Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e230]
+          - link "6,189 3 Line Wave Icon Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e232]:
+            - /url: https://www.shutterstock.com/search/3-line-wave-icon
+            - generic [ref=f26e233]:
+              - generic [ref=f26e234]: 6,189 3 Line Wave Icon Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e236]: Shutterstock
+        - generic [ref=f26e243] [cursor=pointer]:
+          - button [ref=f26e248]:
+            - img "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f26e250]
+          - link "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f26e252]:
+            - /url: https://www.magnific.com/vectors/s-curve
+            - generic [ref=f26e253]:
+              - generic [ref=f26e254]: S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f26e256]: Magnific
+        - generic [ref=f26e263] [cursor=pointer]:
+          - button [ref=f26e268]:
+            - img "Circular S Wave Logo - Exclusive Premade | Brandforma" [ref=f26e270]
+          - link "Circular S Wave Logo - Exclusive Premade | Brandforma Brandforma" [ref=f26e272]:
+            - /url: https://brandforma.com/work/modern-circular-s-wave-logo-for-sale
+            - generic [ref=f26e273]:
+              - generic [ref=f26e274]: Circular S Wave Logo - Exclusive Premade | Brandforma
+              - generic [ref=f26e276]: Brandforma
+        - generic [ref=f26e283] [cursor=pointer]:
+          - button [ref=f26e288]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e290]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e292]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f26e293]:
+              - generic [ref=f26e294]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e296]: Shutterstock
+        - generic [ref=f26e303] [cursor=pointer]:
+          - generic [ref=f26e305]:
+            - button [ref=f26e308]:
+              - img "3,500+ S Curves Sign Stock Photos, Pictures & Royalty-Free Images - iStock" [ref=f26e310]
+            - generic: 라이선스
+          - link "3,500+ S Curves Sign Stock Photos, Pictures & Royalty-Free Images - iStock iStock" [ref=f26e312]:
+            - /url: https://www.istockphoto.com/photos/s-curves-sign
+            - generic [ref=f26e313]:
+              - generic [ref=f26e314]: 3,500+ S Curves Sign Stock Photos, Pictures & Royalty-Free Images - iStock
+              - generic [ref=f26e316]: iStock
+        - generic [ref=f26e323] [cursor=pointer]:
+          - generic [ref=f26e325]:
+            - button [ref=f26e328]:
+              - img "22,319 Wave Icon High Res Illustrations - Getty Images" [ref=f26e330]
+            - generic: 라이선스
+          - link "22,319 Wave Icon High Res Illustrations - Getty Images Getty Images" [ref=f26e332]:
+            - /url: https://www.gettyimages.com/illustrations/wave-icon
+            - generic [ref=f26e333]:
+              - generic [ref=f26e334]: 22,319 Wave Icon High Res Illustrations - Getty Images
+              - generic [ref=f26e336]: Getty Images
+        - generic [ref=f26e343] [cursor=pointer]:
+          - generic [ref=f26e345]:
+            - button [ref=f26e348]:
+              - img "S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f26e350]
+            - generic: 라이선스
+          - link "S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f26e352]:
+            - /url: https://www.dreamstime.com/illustration/s-curve-icon.html
+            - generic [ref=f26e353]:
+              - generic [ref=f26e354]: S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f26e356]: Dreamstime.com
+        - generic [ref=f26e363] [cursor=pointer]:
+          - button [ref=f26e368]:
+            - img "Page 2 | S Curve Line Vector Art, Icons, and Graphics for Free Download" [ref=f26e370]
+          - link "Page 2 | S Curve Line Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e372]:
+            - /url: https://www.vecteezy.com/free-vector/s-curve-line?page=2
+            - generic [ref=f26e373]:
+              - generic [ref=f26e374]: Page 2 | S Curve Line Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e376]: Vecteezy
+        - generic [ref=f26e383] [cursor=pointer]:
+          - generic [ref=f26e385]:
+            - button [ref=f26e388]:
+              - img "S Wave Vector Art, Icons, and Graphics for Free Download" [ref=f26e390]
+            - generic: 라이선스
+          - link "S Wave Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e392]:
+            - /url: https://www.vecteezy.com/free-vector/s-wave
+            - generic [ref=f26e393]:
+              - generic [ref=f26e394]: S Wave Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e396]: Vecteezy
+        - generic [ref=f26e403] [cursor=pointer]:
+          - button [ref=f26e408]:
+            - img "Letter S Sea Wave Logo | Scalebranding" [ref=f26e410]
+          - link "Letter S Sea Wave Logo | Scalebranding Scalebranding" [ref=f26e412]:
+            - /url: https://scalebranding.com/product/404355
+            - generic [ref=f26e413]:
+              - generic [ref=f26e414]: Letter S Sea Wave Logo | Scalebranding
+              - generic [ref=f26e416]: Scalebranding
+        - generic [ref=f26e423] [cursor=pointer]:
+          - generic [ref=f26e425]:
+            - button [ref=f26e428]:
+              - img "Simple curves wavy shape symbol logo – Royalty-Free Vector | VectorStock" [ref=f26e430]
+            - generic: 라이선스
+          - link "Simple curves wavy shape symbol logo – Royalty-Free Vector | VectorStock VectorStock" [ref=f26e432]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/simple-curves-wavy-shape-symbol-logo-vector-30212039
+            - generic [ref=f26e433]:
+              - generic [ref=f26e434]: Simple curves wavy shape symbol logo – Royalty-Free Vector | VectorStock
+              - generic [ref=f26e436]: VectorStock
+        - generic [ref=f26e443] [cursor=pointer]:
+          - button [ref=f26e448]:
+            - img "Letter S Sea Wave Logo | Scalebranding" [ref=f26e450]
+          - link "Letter S Sea Wave Logo | Scalebranding Scalebranding" [ref=f26e452]:
+            - /url: https://scalebranding.com/product/404355
+            - generic [ref=f26e453]:
+              - generic [ref=f26e454]: Letter S Sea Wave Logo | Scalebranding
+              - generic [ref=f26e456]: Scalebranding
+        - generic [ref=f26e463] [cursor=pointer]:
+          - button [ref=f26e468]:
+            - img "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f26e470]
+          - link "S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f26e472]:
+            - /url: https://www.magnific.com/vectors/s-curve
+            - generic [ref=f26e473]:
+              - generic [ref=f26e474]: S curve Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f26e476]: Magnific
+        - generic [ref=f26e483] [cursor=pointer]:
+          - generic [ref=f26e485]:
+            - button [ref=f26e488]:
+              - img "29,700+ Wave Line Logo Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f26e490]
+            - generic: 라이선스
+          - link "29,700+ Wave Line Logo Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock iStock" [ref=f26e492]:
+            - /url: https://www.istockphoto.com/illustrations/wave-line-logo
+            - generic [ref=f26e493]:
+              - generic [ref=f26e494]: 29,700+ Wave Line Logo Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+              - generic [ref=f26e496]: iStock
+        - generic [ref=f26e503] [cursor=pointer]:
+          - button [ref=f26e508]:
+            - img "1,763,786 Wave Icon Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e510]
+          - link "1,763,786 Wave Icon Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e512]:
+            - /url: https://www.shutterstock.com/search/wave-icon
+            - generic [ref=f26e513]:
+              - generic [ref=f26e514]: 1,763,786 Wave Icon Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e516]: Shutterstock
+        - generic [ref=f26e523] [cursor=pointer]:
+          - generic [ref=f26e525]:
+            - button [ref=f26e528]:
+              - img "letter s infinity waves ribbon curves geometric design logo vector 8861152 Vector Art at Vecteezy" [ref=f26e530]
+            - generic: 라이선스
+          - link "letter s infinity waves ribbon curves geometric design logo vector 8861152 Vector Art at Vecteezy Vecteezy" [ref=f26e532]:
+            - /url: https://www.vecteezy.com/vector-art/8861152-letter-s-infinity-waves-ribbon-curves-geometric-design-logo-vector
+            - generic [ref=f26e533]:
+              - generic [ref=f26e534]: letter s infinity waves ribbon curves geometric design logo vector 8861152 Vector Art at Vecteezy
+              - generic [ref=f26e536]: Vecteezy
+        - generic [ref=f26e543] [cursor=pointer]:
+          - generic [ref=f26e545]:
+            - button [ref=f26e548]:
+              - img "Letter s curve two lines geometric symbol simple – Royalty-Free Vector | VectorStock" [ref=f26e550]
+            - generic: 라이선스
+          - link "Letter s curve two lines geometric symbol simple – Royalty-Free Vector | VectorStock VectorStock" [ref=f26e552]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/letter-s-curve-two-lines-geometric-symbol-simple-vector-47764335
+            - generic [ref=f26e553]:
+              - generic [ref=f26e554]: Letter s curve two lines geometric symbol simple – Royalty-Free Vector | VectorStock
+              - generic [ref=f26e556]: VectorStock
+        - generic [ref=f26e563] [cursor=pointer]:
+          - generic [ref=f26e565]:
+            - button [ref=f26e568]:
+              - img "letter s simple curves flow logo vector Stock Vector Image & Art - Alamy" [ref=f26e570]
+            - generic: 라이선스
+          - link "letter s simple curves flow logo vector Stock Vector Image & Art - Alamy Alamy" [ref=f26e572]:
+            - /url: https://www.alamy.com/letter-s-simple-curves-flow-logo-vector-image242423770.html
+            - generic [ref=f26e573]:
+              - generic [ref=f26e574]: letter s simple curves flow logo vector Stock Vector Image & Art - Alamy
+              - generic [ref=f26e576]: Alamy
+        - generic [ref=f26e583] [cursor=pointer]:
+          - button [ref=f26e588]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e590]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e592]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f26e593]:
+              - generic [ref=f26e594]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e596]: Shutterstock
+        - generic [ref=f26e603] [cursor=pointer]:
+          - generic [ref=f26e605]:
+            - button [ref=f26e608]:
+              - 'img "Abstract Black S-Curve Swirl on White Background Stock Vector - Illustration of clean, motion: 417389981" [ref=f26e610]'
+            - generic: 라이선스
+          - 'link "Abstract Black S-Curve Swirl on White Background Stock Vector - Illustration of clean, motion: 417389981 Dreamstime.com" [ref=f26e612]':
+            - /url: https://www.dreamstime.com/elegant-black-flowing-s-shape-graphic-element-clean-white-background-representing-motion-style-minimalist-shaped-curve-image417389981
+            - generic [ref=f26e613]:
+              - generic [ref=f26e614]: "Abstract Black S-Curve Swirl on White Background Stock Vector - Illustration of clean, motion: 417389981"
+              - generic [ref=f26e616]: Dreamstime.com
+        - generic [ref=f26e623] [cursor=pointer]:
+          - generic [ref=f26e625]:
+            - button [ref=f26e628]:
+              - img "Simple wave icon, sea or ocean, abstract business logo. Black linear icon with editable stroke on white background Stock Vector | Adobe Stock" [ref=f26e630]
+            - generic: 라이선스
+          - link "Simple wave icon, sea or ocean, abstract business logo. Black linear icon with editable stroke on white background Stock Vector | Adobe Stock Adobe Stock" [ref=f26e632]:
+            - /url: https://stock.adobe.com/images/simple-wave-icon-sea-or-ocean-abstract-business-logo-black-linear-icon-with-editable-stroke-on-white-background/431473858
+            - generic [ref=f26e633]:
+              - generic [ref=f26e634]: Simple wave icon, sea or ocean, abstract business logo. Black linear icon with editable stroke on white background Stock Vector | Adobe Stock
+              - generic [ref=f26e636]: Adobe Stock
+        - generic [ref=f26e643] [cursor=pointer]:
+          - button [ref=f26e648]:
+            - img "Letter S Sea Waves Logo | Scalebranding" [ref=f26e650]
+          - link "Letter S Sea Waves Logo | Scalebranding Scalebranding" [ref=f26e652]:
+            - /url: https://scalebranding.com/product/409354
+            - generic [ref=f26e653]:
+              - generic [ref=f26e654]: Letter S Sea Waves Logo | Scalebranding
+              - generic [ref=f26e656]: Scalebranding
+        - generic [ref=f26e663] [cursor=pointer]:
+          - button [ref=f26e668]:
+            - img "S Wave Vector Art, Icons, and Graphics for Free Download" [ref=f26e670]
+          - link "S Wave Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e672]:
+            - /url: https://www.vecteezy.com/free-vector/s-wave
+            - generic [ref=f26e673]:
+              - generic [ref=f26e674]: S Wave Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e676]: Vecteezy
+        - generic [ref=f26e683] [cursor=pointer]:
+          - generic [ref=f26e685]:
+            - button [ref=f26e688]:
+              - img "97,100+ Water Wave Icon Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f26e690]
+            - generic: 라이선스
+          - link "97,100+ Water Wave Icon Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock iStock" [ref=f26e692]:
+            - /url: https://www.istockphoto.com/illustrations/water-wave-icon
+            - generic [ref=f26e693]:
+              - generic [ref=f26e694]: 97,100+ Water Wave Icon Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+              - generic [ref=f26e696]: iStock
+        - generic [ref=f26e703] [cursor=pointer]:
+          - generic [ref=f26e705]:
+            - button [ref=f26e708]:
+              - 'img "Abstract Black S-Curve Shape Stock Vector - Illustration of creative, abstract: 417389986" [ref=f26e710]'
+            - generic: 라이선스
+          - 'link "Abstract Black S-Curve Shape Stock Vector - Illustration of creative, abstract: 417389986 Dreamstime.com" [ref=f26e712]':
+            - /url: https://www.dreamstime.com/elegant-black-letter-s-logo-design-sleek-modern-perfect-branding-projects-image417389986
+            - generic [ref=f26e713]:
+              - generic [ref=f26e714]: "Abstract Black S-Curve Shape Stock Vector - Illustration of creative, abstract: 417389986"
+              - generic [ref=f26e716]: Dreamstime.com
+        - generic [ref=f26e723] [cursor=pointer]:
+          - button [ref=f26e728]:
+            - img "274,441 Flow Logos Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e730]
+          - link "274,441 Flow Logos Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e732]:
+            - /url: https://www.shutterstock.com/search/flow-logos
+            - generic [ref=f26e733]:
+              - generic [ref=f26e734]: 274,441 Flow Logos Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e736]: Shutterstock
+        - generic [ref=f26e743] [cursor=pointer]:
+          - button [ref=f26e748]:
+            - img "S Wave Logo Vector Art, Icons, and Graphics for Free Download" [ref=f26e750]
+          - link "S Wave Logo Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e752]:
+            - /url: https://www.vecteezy.com/free-vector/s-wave-logo
+            - generic [ref=f26e753]:
+              - generic [ref=f26e754]: S Wave Logo Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e756]: Vecteezy
+        - generic [ref=f26e763] [cursor=pointer]:
+          - button [ref=f26e768]:
+            - img "Letter S Sea Waves Logo | Scalebranding" [ref=f26e770]
+          - link "Letter S Sea Waves Logo | Scalebranding Scalebranding" [ref=f26e772]:
+            - /url: https://scalebranding.com/product/409354
+            - generic [ref=f26e773]:
+              - generic [ref=f26e774]: Letter S Sea Waves Logo | Scalebranding
+              - generic [ref=f26e776]: Scalebranding
+        - generic [ref=f26e783] [cursor=pointer]:
+          - button [ref=f26e788]:
+            - img "s & flow*" [ref=f26e790]
+          - link "s & flow* kr.pinterest.com" [ref=f26e792]:
+            - /url: https://kr.pinterest.com/pin/431641945541320634/
+            - generic [ref=f26e793]:
+              - generic [ref=f26e794]: s & flow*
+              - generic [ref=f26e796]: kr.pinterest.com
+        - generic [ref=f26e803] [cursor=pointer]:
+          - button [ref=f26e808]:
+            - img "Page 3 | S Curve Vector Art, Icons, and Graphics for Free Download" [ref=f26e810]
+          - link "Page 3 | S Curve Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e812]:
+            - /url: https://www.vecteezy.com/free-vector/s-curve?page=3
+            - generic [ref=f26e813]:
+              - generic [ref=f26e814]: Page 3 | S Curve Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e816]: Vecteezy
+        - generic [ref=f26e823] [cursor=pointer]:
+          - button [ref=f26e828]:
+            - img "807,436 Wave Silhouette Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e830]
+          - link "807,436 Wave Silhouette Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e832]:
+            - /url: https://www.shutterstock.com/search/wave-silhouette
+            - generic [ref=f26e833]:
+              - generic [ref=f26e834]: 807,436 Wave Silhouette Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e836]: Shutterstock
+        - generic [ref=f26e843] [cursor=pointer]:
+          - button [ref=f26e848]:
+            - img "Free Svg - Wavy Line Symbol Icon | FreePixel.com" [ref=f26e850]
+          - link "Free Svg - Wavy Line Symbol Icon | FreePixel.com FreePixel.com" [ref=f26e852]:
+            - /url: https://www.freepixel.com/graphics/minimalist-wave/free-svg-minimalist-wavy-line-icon-representing-a-tilde-wav-629-tilde-thin-c-os-331147
+            - generic [ref=f26e853]:
+              - generic [ref=f26e854]: Free Svg - Wavy Line Symbol Icon | FreePixel.com
+              - generic [ref=f26e856]: FreePixel.com
+        - generic [ref=f26e863] [cursor=pointer]:
+          - generic [ref=f26e865]:
+            - button [ref=f26e868]:
+              - img "Free Svg - Water Wave Letter S | FreePixel.com" [ref=f26e870]
+            - generic: 라이선스
+          - link "Free Svg - Water Wave Letter S | FreePixel.com FreePixel.com" [ref=f26e872]:
+            - /url: https://www.freepixel.com/graphics/letter-s/free-svg-a-stylized-letter-s-integrated-into-a-wave-design-11278-seabank-c-os-142992
+            - generic [ref=f26e873]:
+              - generic [ref=f26e874]: Free Svg - Water Wave Letter S | FreePixel.com
+              - generic [ref=f26e876]: FreePixel.com
+        - generic [ref=f26e883] [cursor=pointer]:
+          - generic [ref=f26e885]:
+            - button [ref=f26e888]:
+              - img "S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f26e890]
+            - generic: 라이선스
+          - link "S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f26e892]:
+            - /url: https://www.dreamstime.com/illustration/s-curve-icon.html
+            - generic [ref=f26e893]:
+              - generic [ref=f26e894]: S Curve Icon Stock Illustrations – 2,958 S Curve Icon Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f26e896]: Dreamstime.com
+        - generic [ref=f26e903] [cursor=pointer]:
+          - generic [ref=f26e905]:
+            - button [ref=f26e908]:
+              - img "S Wave Vector Art, Icons, and Graphics for Free Download" [ref=f26e910]
+            - generic: 라이선스
+          - link "S Wave Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e912]:
+            - /url: https://www.vecteezy.com/free-vector/s-wave
+            - generic [ref=f26e913]:
+              - generic [ref=f26e914]: S Wave Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e916]: Vecteezy
+        - generic [ref=f26e923] [cursor=pointer]:
+          - button [ref=f26e928]:
+            - img "15,791 S Wave Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e930]
+          - link "15,791 S Wave Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e932]:
+            - /url: https://www.shutterstock.com/search/s-wave-logo
+            - generic [ref=f26e933]:
+              - generic [ref=f26e934]: 15,791 S Wave Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e936]: Shutterstock
+        - generic [ref=f26e943] [cursor=pointer]:
+          - button [ref=f26e948]:
+            - img "S wave logo Vector Images & Graphics for Commercial Use | VectorStock" [ref=f26e950]
+          - link "S wave logo Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f26e952]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/s-wave-logo-vectors
+            - generic [ref=f26e953]:
+              - generic [ref=f26e954]: S wave logo Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f26e956]: VectorStock
+        - generic [ref=f26e963] [cursor=pointer]:
+          - button [ref=f26e968]:
+            - img "S Wave Vector Art, Icons, and Graphics for Free Download" [ref=f26e970]
+          - link "S Wave Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e972]:
+            - /url: https://www.vecteezy.com/free-vector/s-wave
+            - generic [ref=f26e973]:
+              - generic [ref=f26e974]: S Wave Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e976]: Vecteezy
+        - generic [ref=f26e983] [cursor=pointer]:
+          - generic [ref=f26e985]:
+            - button [ref=f26e988]:
+              - img "S Curve Sign Stock Illustrations – 2,788 S Curve Sign Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f26e990]
+            - generic: 라이선스
+          - link "S Curve Sign Stock Illustrations – 2,788 S Curve Sign Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f26e992]:
+            - /url: https://www.dreamstime.com/illustration/s-curve-sign.html
+            - generic [ref=f26e993]:
+              - generic [ref=f26e994]: S Curve Sign Stock Illustrations – 2,788 S Curve Sign Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f26e996]: Dreamstime.com
+        - generic [ref=f26e1003] [cursor=pointer]:
+          - button [ref=f26e1008]:
+            - img "568,742 S Logo Design Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e1010]
+          - link "568,742 S Logo Design Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e1012]:
+            - /url: https://www.shutterstock.com/search/s-logo-design
+            - generic [ref=f26e1013]:
+              - generic [ref=f26e1014]: 568,742 S Logo Design Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e1016]: Shutterstock
+        - generic [ref=f26e1023] [cursor=pointer]:
+          - button [ref=f26e1028]:
+            - img "Circular S Wave Logo - Exclusive Premade | Brandforma" [ref=f26e1030]
+          - link "Circular S Wave Logo - Exclusive Premade | Brandforma Brandforma" [ref=f26e1032]:
+            - /url: https://brandforma.com/work/modern-circular-s-wave-logo-for-sale
+            - generic [ref=f26e1033]:
+              - generic [ref=f26e1034]: Circular S Wave Logo - Exclusive Premade | Brandforma
+              - generic [ref=f26e1036]: Brandforma
+        - generic [ref=f26e1043] [cursor=pointer]:
+          - button [ref=f26e1048]:
+            - img "S Wave Vector Art, Icons, and Graphics for Free Download" [ref=f26e1050]
+          - link "S Wave Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e1052]:
+            - /url: https://www.vecteezy.com/free-vector/s-wave
+            - generic [ref=f26e1053]:
+              - generic [ref=f26e1054]: S Wave Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e1056]: Vecteezy
+        - generic [ref=f26e1063] [cursor=pointer]:
+          - button [ref=f26e1068]:
+            - img "Free Svg - Wavy Line Symbol Icon | FreePixel.com" [ref=f26e1070]
+          - link "Free Svg - Wavy Line Symbol Icon | FreePixel.com FreePixel.com" [ref=f26e1072]:
+            - /url: https://www.freepixel.com/graphics/minimalist-wave/free-svg-minimalist-wavy-line-icon-representing-a-tilde-wav-629-tilde-thin-c-os-331147
+            - generic [ref=f26e1073]:
+              - generic [ref=f26e1074]: Free Svg - Wavy Line Symbol Icon | FreePixel.com
+              - generic [ref=f26e1076]: FreePixel.com
+        - generic [ref=f26e1083] [cursor=pointer]:
+          - button [ref=f26e1088]:
+            - img "S wave Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f26e1090]
+          - link "S wave Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f26e1092]:
+            - /url: https://www.magnific.com/vectors/s-wave
+            - generic [ref=f26e1093]:
+              - generic [ref=f26e1094]: S wave Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f26e1096]: Magnific
+        - generic [ref=f26e1103] [cursor=pointer]:
+          - button [ref=f26e1108]:
+            - img "Letter S Sea Wave Logo | Scalebranding" [ref=f26e1110]
+          - link "Letter S Sea Wave Logo | Scalebranding Scalebranding" [ref=f26e1112]:
+            - /url: https://scalebranding.com/product/404355
+            - generic [ref=f26e1113]:
+              - generic [ref=f26e1114]: Letter S Sea Wave Logo | Scalebranding
+              - generic [ref=f26e1116]: Scalebranding
+        - generic [ref=f26e1123] [cursor=pointer]:
+          - button [ref=f26e1128]:
+            - img "573,693 Minimalist Wave Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e1130]
+          - link "573,693 Minimalist Wave Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e1132]:
+            - /url: https://www.shutterstock.com/search/minimalist-wave
+            - generic [ref=f26e1133]:
+              - generic [ref=f26e1134]: 573,693 Minimalist Wave Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e1136]: Shutterstock
+        - generic [ref=f26e1143] [cursor=pointer]:
+          - generic [ref=f26e1145]:
+            - button [ref=f26e1148]:
+              - img "Waves icon, modern minimal flat design style. Wave thin line symbol, Stock vector illustration isolated on white background Stock Vector Image & Art - Alamy" [ref=f26e1150]
+            - generic: 라이선스
+          - link "Waves icon, modern minimal flat design style. Wave thin line symbol, Stock vector illustration isolated on white background Stock Vector Image & Art - Alamy Alamy" [ref=f26e1152]:
+            - /url: https://www.alamy.com/waves-icon-modern-minimal-flat-design-style-wave-thin-line-symbol-stock-vector-illustration-isolated-on-white-background-image382418666.html
+            - generic [ref=f26e1153]:
+              - generic [ref=f26e1154]: Waves icon, modern minimal flat design style. Wave thin line symbol, Stock vector illustration isolated on white background Stock Vector Image & Art - Alamy
+              - generic [ref=f26e1156]: Alamy
+        - generic [ref=f26e1163] [cursor=pointer]:
+          - button [ref=f26e1168]:
+            - img "S curve Vector Images & Graphics for Commercial Use | VectorStock" [ref=f26e1170]
+          - link "S curve Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f26e1172]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/s-curve-vectors
+            - generic [ref=f26e1173]:
+              - generic [ref=f26e1174]: S curve Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f26e1176]: VectorStock
+        - generic [ref=f26e1183] [cursor=pointer]:
+          - button [ref=f26e1188]:
+            - img "S Curve Element Vector Art, Icons, and Graphics for Free Download" [ref=f26e1190]
+          - link "S Curve Element Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e1192]:
+            - /url: https://www.vecteezy.com/free-vector/s-curve-element
+            - generic [ref=f26e1193]:
+              - generic [ref=f26e1194]: S Curve Element Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e1196]: Vecteezy
+        - generic [ref=f26e1203] [cursor=pointer]:
+          - button [ref=f26e1208]:
+            - img "S curve Vector Images & Graphics for Commercial Use | VectorStock" [ref=f26e1210]
+          - link "S curve Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f26e1212]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/s-curve-vectors
+            - generic [ref=f26e1213]:
+              - generic [ref=f26e1214]: S curve Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f26e1216]: VectorStock
+        - generic [ref=f26e1223] [cursor=pointer]:
+          - generic [ref=f26e1225]:
+            - button [ref=f26e1228]:
+              - 'img "Minimalist Wave Logo Design Featuring a Single Wavy Line Enclosed within Stock Illustration - Illustration of organization, sketch: 427172061" [ref=f26e1230]'
+            - generic: 라이선스
+          - 'link "Minimalist Wave Logo Design Featuring a Single Wavy Line Enclosed within Stock Illustration - Illustration of organization, sketch: 427172061 Dreamstime.com" [ref=f26e1232]':
+            - /url: https://www.dreamstime.com/minimalist-wave-logo-design-featuring-single-wavy-line-enclosed-circle-mimics-shape-cresting-offering-fluid-image427172061
+            - generic [ref=f26e1233]:
+              - generic [ref=f26e1234]: "Minimalist Wave Logo Design Featuring a Single Wavy Line Enclosed within Stock Illustration - Illustration of organization, sketch: 427172061"
+              - generic [ref=f26e1236]: Dreamstime.com
+        - generic [ref=f26e1243] [cursor=pointer]:
+          - button [ref=f26e1248]:
+            - img "S Wave Vector Art, Icons, and Graphics for Free Download" [ref=f26e1250]
+          - link "S Wave Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e1252]:
+            - /url: https://www.vecteezy.com/free-vector/s-wave
+            - generic [ref=f26e1253]:
+              - generic [ref=f26e1254]: S Wave Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e1256]: Vecteezy
+        - generic [ref=f26e1263] [cursor=pointer]:
+          - button [ref=f26e1268]:
+            - img "S logo png Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)" [ref=f26e1270]
+          - link "S logo png Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik) Magnific" [ref=f26e1272]:
+            - /url: https://www.magnific.com/vectors/s-logo-png
+            - generic [ref=f26e1273]:
+              - generic [ref=f26e1274]: S logo png Vectors - Download Free High-Quality Vectors | Magnific (formerly Freepik)
+              - generic [ref=f26e1276]: Magnific
+        - generic [ref=f26e1283] [cursor=pointer]:
+          - button [ref=f26e1288]:
+            - img "Free Svg - Wavy Line Symbol Icon | FreePixel.com" [ref=f26e1290]
+          - link "Free Svg - Wavy Line Symbol Icon | FreePixel.com FreePixel.com" [ref=f26e1292]:
+            - /url: https://www.freepixel.com/graphics/minimalist-wave/free-svg-minimalist-wavy-line-icon-representing-a-tilde-wav-629-tilde-thin-c-os-331147
+            - generic [ref=f26e1293]:
+              - generic [ref=f26e1294]: Free Svg - Wavy Line Symbol Icon | FreePixel.com
+              - generic [ref=f26e1296]: FreePixel.com
+        - generic [ref=f26e1303] [cursor=pointer]:
+          - button [ref=f26e1308]:
+            - img "144,941 S Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e1310]
+          - link "144,941 S Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e1312]:
+            - /url: https://www.shutterstock.com/search/s-curve
+            - generic [ref=f26e1313]:
+              - generic [ref=f26e1314]: 144,941 S Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e1316]: Shutterstock
+        - generic [ref=f26e1323] [cursor=pointer]:
+          - button [ref=f26e1328]:
+            - img "simply aesthetic" [ref=f26e1330]
+          - link "simply aesthetic Pinterest" [ref=f26e1332]:
+            - /url: https://co.pinterest.com/pin/699817229622515655/
+            - generic [ref=f26e1333]:
+              - generic [ref=f26e1334]: simply aesthetic
+              - generic [ref=f26e1336]: Pinterest
+        - generic [ref=f26e1343] [cursor=pointer]:
+          - generic [ref=f26e1345]:
+            - button [ref=f26e1348]:
+              - img "S-Curve Line Art Icon – Royalty-Free Vector | VectorStock" [ref=f26e1350]
+            - generic: 라이선스
+          - link "S-Curve Line Art Icon – Royalty-Free Vector | VectorStock VectorStock" [ref=f26e1352]:
+            - /url: https://www.vectorstock.com/royalty-free-vector/s-curve-line-art-icon-vector-62448607
+            - generic [ref=f26e1353]:
+              - generic [ref=f26e1354]: S-Curve Line Art Icon – Royalty-Free Vector | VectorStock
+              - generic [ref=f26e1356]: VectorStock
+        - generic [ref=f26e1363] [cursor=pointer]:
+          - generic [ref=f26e1365]:
+            - button [ref=f26e1368]:
+              - img "Wave Minimalist Logo Stock Illustrations – 21,161 Wave Minimalist Logo Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f26e1370]
+            - generic: 라이선스
+          - link "Wave Minimalist Logo Stock Illustrations – 21,161 Wave Minimalist Logo Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f26e1372]:
+            - /url: https://www.dreamstime.com/illustration/wave-minimalist-logo.html
+            - generic [ref=f26e1373]:
+              - generic [ref=f26e1374]: Wave Minimalist Logo Stock Illustrations – 21,161 Wave Minimalist Logo Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f26e1376]: Dreamstime.com
+        - generic [ref=f26e1383] [cursor=pointer]:
+          - button [ref=f26e1388]:
+            - img "Waves icon, modern minimal flat design style. Wave thin line symbol, Stock vector illustration isolated on white background Stock Vector Image & Art - Alamy" [ref=f26e1390]
+          - link "Waves icon, modern minimal flat design style. Wave thin line symbol, Stock vector illustration isolated on white background Stock Vector Image & Art - Alamy Alamy" [ref=f26e1392]:
+            - /url: https://www.alamy.com/waves-icon-modern-minimal-flat-design-style-wave-thin-line-symbol-stock-vector-illustration-isolated-on-white-background-image382418666.html
+            - generic [ref=f26e1393]:
+              - generic [ref=f26e1394]: Waves icon, modern minimal flat design style. Wave thin line symbol, Stock vector illustration isolated on white background Stock Vector Image & Art - Alamy
+              - generic [ref=f26e1396]: Alamy
+        - generic [ref=f26e1403] [cursor=pointer]:
+          - generic [ref=f26e1405]:
+            - button [ref=f26e1408]:
+              - img "letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy" [ref=f26e1410]
+            - generic: 라이선스
+          - link "letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy Vecteezy" [ref=f26e1412]:
+            - /url: https://www.vecteezy.com/vector-art/30335555-letter-s-curves-motion-ribbon-logo-vector
+            - generic [ref=f26e1413]:
+              - generic [ref=f26e1414]: letter s curves motion ribbon logo vector 30335555 Vector Art at Vecteezy
+              - generic [ref=f26e1416]: Vecteezy
+        - generic [ref=f26e1423] [cursor=pointer]:
+          - generic [ref=f26e1425]:
+            - button [ref=f26e1428]:
+              - img "13,800+ Wave Line Icon Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f26e1430]
+            - generic: 라이선스
+          - link "13,800+ Wave Line Icon Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock iStock" [ref=f26e1432]:
+            - /url: https://www.istockphoto.com/illustrations/wave-line-icon
+            - generic [ref=f26e1433]:
+              - generic [ref=f26e1434]: 13,800+ Wave Line Icon Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+              - generic [ref=f26e1436]: iStock
+        - generic [ref=f26e1443] [cursor=pointer]:
+          - button [ref=f26e1448]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e1450]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e1452]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f26e1453]:
+              - generic [ref=f26e1454]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e1456]: Shutterstock
+        - generic [ref=f26e1463] [cursor=pointer]:
+          - generic [ref=f26e1465]:
+            - button [ref=f26e1468]:
+              - 'img "Abstract Black S-Curve Shape Stock Vector - Illustration of creative, abstract: 417389986" [ref=f26e1470]'
+            - generic: 라이선스
+          - 'link "Abstract Black S-Curve Shape Stock Vector - Illustration of creative, abstract: 417389986 Dreamstime.com" [ref=f26e1472]':
+            - /url: https://www.dreamstime.com/elegant-black-letter-s-logo-design-sleek-modern-perfect-branding-projects-image417389986
+            - generic [ref=f26e1473]:
+              - generic [ref=f26e1474]: "Abstract Black S-Curve Shape Stock Vector - Illustration of creative, abstract: 417389986"
+              - generic [ref=f26e1476]: Dreamstime.com
+        - generic [ref=f26e1483] [cursor=pointer]:
+          - button [ref=f26e1488]:
+            - img "abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy" [ref=f26e1490]
+          - link "abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy Alamy" [ref=f26e1492]:
+            - /url: https://www.alamy.com/abstract-letter-s-simple-curves-geometric-logo-image241749379.html
+            - generic [ref=f26e1493]:
+              - generic [ref=f26e1494]: abstract letter s simple curves geometric logo Stock Vector Image & Art - Alamy
+              - generic [ref=f26e1496]: Alamy
+        - generic [ref=f26e1503] [cursor=pointer]:
+          - generic [ref=f26e1505]:
+            - button [ref=f26e1508]:
+              - img "22,319 Wave Icon High Res Illustrations - Getty Images" [ref=f26e1510]
+            - generic: 라이선스
+          - link "22,319 Wave Icon High Res Illustrations - Getty Images Getty Images" [ref=f26e1512]:
+            - /url: https://www.gettyimages.com/illustrations/wave-icon
+            - generic [ref=f26e1513]:
+              - generic [ref=f26e1514]: 22,319 Wave Icon High Res Illustrations - Getty Images
+              - generic [ref=f26e1516]: Getty Images
+        - generic [ref=f26e1523] [cursor=pointer]:
+          - button [ref=f26e1528]:
+            - img "S curve Vector Images & Graphics for Commercial Use | VectorStock" [ref=f26e1530]
+          - link "S curve Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f26e1532]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/s-curve-vectors
+            - generic [ref=f26e1533]:
+              - generic [ref=f26e1534]: S curve Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f26e1536]: VectorStock
+        - generic [ref=f26e1543] [cursor=pointer]:
+          - button [ref=f26e1548]:
+            - img "638 Sine Wave Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e1550]
+          - link "638 Sine Wave Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e1552]:
+            - /url: https://www.shutterstock.com/search/sine-wave-logo
+            - generic [ref=f26e1553]:
+              - generic [ref=f26e1554]: 638 Sine Wave Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e1556]: Shutterstock
+        - generic [ref=f26e1563] [cursor=pointer]:
+          - button [ref=f26e1568]:
+            - img "Black white wave logo Images - Free Download on Magnific (formerly Freepik)" [ref=f26e1570]
+          - link "Black white wave logo Images - Free Download on Magnific (formerly Freepik) Magnific" [ref=f26e1572]:
+            - /url: https://www.magnific.com/free-photos-vectors/black-white-wave-logo
+            - generic [ref=f26e1573]:
+              - generic [ref=f26e1574]: Black white wave logo Images - Free Download on Magnific (formerly Freepik)
+              - generic [ref=f26e1576]: Magnific
+        - generic [ref=f26e1583] [cursor=pointer]:
+          - generic [ref=f26e1585]:
+            - button [ref=f26e1588]:
+              - img "S Curve Icon Vector Isolated On White Background Logo Concept Of S Curve Sign On Transparent Background Black Filled Symbol Stock Illustration - Download Image Now - iStock" [ref=f26e1590]
+            - generic: 라이선스
+          - link "S Curve Icon Vector Isolated On White Background Logo Concept Of S Curve Sign On Transparent Background Black Filled Symbol Stock Illustration - Download Image Now - iStock iStock" [ref=f26e1592]:
+            - /url: https://www.istockphoto.com/vector/s-curve-icon-vector-isolated-on-white-background-logo-concept-of-s-curve-sign-on-gm1034697212-277011490
+            - generic [ref=f26e1593]:
+              - generic [ref=f26e1594]: S Curve Icon Vector Isolated On White Background Logo Concept Of S Curve Sign On Transparent Background Black Filled Symbol Stock Illustration - Download Image Now - iStock
+              - generic [ref=f26e1596]: iStock
+        - generic [ref=f26e1603] [cursor=pointer]:
+          - button [ref=f26e1608]:
+            - img "Minimalist Wave Logo Simple Circular Line Stock Vector (Royalty Free) 2660136519 | Shutterstock" [ref=f26e1610]
+          - link "Minimalist Wave Logo Simple Circular Line Stock Vector (Royalty Free) 2660136519 | Shutterstock Shutterstock" [ref=f26e1612]:
+            - /url: https://www.shutterstock.com/image-vector/minimalist-wave-logo-simple-circular-line-2660136519
+            - generic [ref=f26e1613]:
+              - generic [ref=f26e1614]: Minimalist Wave Logo Simple Circular Line Stock Vector (Royalty Free) 2660136519 | Shutterstock
+              - generic [ref=f26e1616]: Shutterstock
+        - generic [ref=f26e1623] [cursor=pointer]:
+          - button [ref=f26e1628]:
+            - img "Striped black line S Logo | Scalebranding" [ref=f26e1630]
+          - link "Striped black line S Logo | Scalebranding Scalebranding" [ref=f26e1632]:
+            - /url: https://scalebranding.com/product/391755
+            - generic [ref=f26e1633]:
+              - generic [ref=f26e1634]: Striped black line S Logo | Scalebranding
+              - generic [ref=f26e1636]: Scalebranding
+        - generic [ref=f26e1643] [cursor=pointer]:
+          - button [ref=f26e1648]:
+            - img "Circular S Wave Logo - Exclusive Premade | Brandforma" [ref=f26e1650]
+          - link "Circular S Wave Logo - Exclusive Premade | Brandforma Brandforma" [ref=f26e1652]:
+            - /url: https://brandforma.com/work/modern-circular-s-wave-logo-for-sale
+            - generic [ref=f26e1653]:
+              - generic [ref=f26e1654]: Circular S Wave Logo - Exclusive Premade | Brandforma
+              - generic [ref=f26e1656]: Brandforma
+        - generic [ref=f26e1663] [cursor=pointer]:
+          - generic [ref=f26e1665]:
+            - button [ref=f26e1668]:
+              - img "Wave Logo\" Images – Browse 8,481 Stock Photos, Vectors, and Video | Adobe Stock" [ref=f26e1670]
+            - generic: 라이선스
+          - link "Wave Logo\" Images – Browse 8,481 Stock Photos, Vectors, and Video | Adobe Stock Adobe Stock" [ref=f26e1672]:
+            - /url: https://stock.adobe.com/search?k=%22wave+logo%22
+            - generic [ref=f26e1673]:
+              - generic [ref=f26e1674]: Wave Logo" Images – Browse 8,481 Stock Photos, Vectors, and Video | Adobe Stock
+              - generic [ref=f26e1676]: Adobe Stock
+        - generic [ref=f26e1683] [cursor=pointer]:
+          - generic [ref=f26e1685]:
+            - button [ref=f26e1688]:
+              - img "7,200+ S Curve Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f26e1690]
+            - generic: 라이선스
+          - link "7,200+ S Curve Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock iStock" [ref=f26e1692]:
+            - /url: https://www.istockphoto.com/illustrations/s-curve
+            - generic [ref=f26e1693]:
+              - generic [ref=f26e1694]: 7,200+ S Curve Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+              - generic [ref=f26e1696]: iStock
+        - generic [ref=f26e1703] [cursor=pointer]:
+          - button [ref=f26e1708]:
+            - img "Black white wave logo Images - Free Download on Magnific (formerly Freepik)" [ref=f26e1710]
+          - link "Black white wave logo Images - Free Download on Magnific (formerly Freepik) Magnific" [ref=f26e1712]:
+            - /url: https://www.magnific.com/free-photos-vectors/black-white-wave-logo
+            - generic [ref=f26e1713]:
+              - generic [ref=f26e1714]: Black white wave logo Images - Free Download on Magnific (formerly Freepik)
+              - generic [ref=f26e1716]: Magnific
+        - generic [ref=f26e1723] [cursor=pointer]:
+          - generic [ref=f26e1725]:
+            - button [ref=f26e1728]:
+              - img "S Wave Logo Vector Art, Icons, and Graphics for Free Download" [ref=f26e1730]
+            - generic: 라이선스
+          - link "S Wave Logo Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e1732]:
+            - /url: https://www.vecteezy.com/free-vector/s-wave-logo
+            - generic [ref=f26e1733]:
+              - generic [ref=f26e1734]: S Wave Logo Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e1736]: Vecteezy
+        - generic [ref=f26e1743] [cursor=pointer]:
+          - generic [ref=f26e1745]:
+            - button [ref=f26e1748]:
+              - img "S Curve Stock Illustrations – 8,517 S Curve Stock Illustrations, Vectors & Clipart - Dreamstime" [ref=f26e1750]
+            - generic: 라이선스
+          - link "S Curve Stock Illustrations – 8,517 S Curve Stock Illustrations, Vectors & Clipart - Dreamstime Dreamstime.com" [ref=f26e1752]:
+            - /url: https://www.dreamstime.com/illustration/s-curve.html
+            - generic [ref=f26e1753]:
+              - generic [ref=f26e1754]: S Curve Stock Illustrations – 8,517 S Curve Stock Illustrations, Vectors & Clipart - Dreamstime
+              - generic [ref=f26e1756]: Dreamstime.com
+        - generic [ref=f26e1763] [cursor=pointer]:
+          - button [ref=f26e1768]:
+            - img "Striped black line S Logo | Scalebranding" [ref=f26e1770]
+          - link "Striped black line S Logo | Scalebranding Scalebranding" [ref=f26e1772]:
+            - /url: https://scalebranding.com/product/391755
+            - generic [ref=f26e1773]:
+              - generic [ref=f26e1774]: Striped black line S Logo | Scalebranding
+              - generic [ref=f26e1776]: Scalebranding
+        - generic [ref=f26e1783] [cursor=pointer]:
+          - button [ref=f26e1788]:
+            - img "S Wave Vector Art, Icons, and Graphics for Free Download" [ref=f26e1790]
+          - link "S Wave Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e1792]:
+            - /url: https://www.vecteezy.com/free-vector/s-wave
+            - generic [ref=f26e1793]:
+              - generic [ref=f26e1794]: S Wave Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e1796]: Vecteezy
+        - generic [ref=f26e1803] [cursor=pointer]:
+          - generic [ref=f26e1805]:
+            - button [ref=f26e1808]:
+              - img "Wave line set. Wavy thin stripes collection. Black horizontal water curve lines. Simple monochrome black and white background. Editable stroke. Vector Stock Vector Image & Art - Alamy" [ref=f26e1810]
+            - generic: 라이선스
+          - link "Wave line set. Wavy thin stripes collection. Black horizontal water curve lines. Simple monochrome black and white background. Editable stroke. Vector Stock Vector Image & Art - Alamy Alamy" [ref=f26e1812]:
+            - /url: https://www.alamy.com/wave-line-set-wavy-thin-stripes-collection-black-horizontal-water-curve-lines-simple-monochrome-black-and-white-background-editable-stroke-vector-image560184847.html
+            - generic [ref=f26e1813]:
+              - generic [ref=f26e1814]: Wave line set. Wavy thin stripes collection. Black horizontal water curve lines. Simple monochrome black and white background. Editable stroke. Vector Stock Vector Image & Art - Alamy
+              - generic [ref=f26e1816]: Alamy
+        - generic [ref=f26e1823] [cursor=pointer]:
+          - generic [ref=f26e1825]:
+            - button [ref=f26e1828]:
+              - img "144,941 S Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e1830]
+            - generic: 라이선스
+          - link "144,941 S Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e1832]:
+            - /url: https://www.shutterstock.com/search/s-curve
+            - generic [ref=f26e1833]:
+              - generic [ref=f26e1834]: 144,941 S Curve Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e1836]: Shutterstock
+        - generic [ref=f26e1843] [cursor=pointer]:
+          - generic [ref=f26e1845]:
+            - button [ref=f26e1848]:
+              - 'img "S Curve Icon in Trendy Design Style. S Curve Icon Isolated on White Background Stock Vector - Illustration of corporate, design: 135733091" [ref=f26e1850]'
+            - generic: 라이선스
+          - 'link "S Curve Icon in Trendy Design Style. S Curve Icon Isolated on White Background Stock Vector - Illustration of corporate, design: 135733091 Dreamstime.com" [ref=f26e1852]':
+            - /url: https://www.dreamstime.com/s-curve-icon-trendy-design-style-isolated-white-background-vector-simple-modern-flat-symbol-web-site-mobile-logo-app-image135733091
+            - generic [ref=f26e1853]:
+              - generic [ref=f26e1854]: "S Curve Icon in Trendy Design Style. S Curve Icon Isolated on White Background Stock Vector - Illustration of corporate, design: 135733091"
+              - generic [ref=f26e1856]: Dreamstime.com
+        - generic [ref=f26e1863] [cursor=pointer]:
+          - generic [ref=f26e1865]:
+            - button [ref=f26e1868]:
+              - img "Wave Logo\" Images – Browse 8,481 Stock Photos, Vectors, and Video | Adobe Stock" [ref=f26e1870]
+            - generic: 라이선스
+          - link "Wave Logo\" Images – Browse 8,481 Stock Photos, Vectors, and Video | Adobe Stock Adobe Stock" [ref=f26e1872]:
+            - /url: https://stock.adobe.com/search?k=%22wave+logo%22
+            - generic [ref=f26e1873]:
+              - generic [ref=f26e1874]: Wave Logo" Images – Browse 8,481 Stock Photos, Vectors, and Video | Adobe Stock
+              - generic [ref=f26e1876]: Adobe Stock
+        - generic [ref=f26e1883] [cursor=pointer]:
+          - generic [ref=f26e1885]:
+            - button [ref=f26e1888]:
+              - img "1,300+ Black White Ocean Wave Clip Art Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock" [ref=f26e1890]
+            - generic: 라이선스
+          - link "1,300+ Black White Ocean Wave Clip Art Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock iStock" [ref=f26e1892]:
+            - /url: https://www.istockphoto.com/illustrations/black-white-ocean-wave-clip-art
+            - generic [ref=f26e1893]:
+              - generic [ref=f26e1894]: 1,300+ Black White Ocean Wave Clip Art Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock
+              - generic [ref=f26e1896]: iStock
+        - generic [ref=f26e1903] [cursor=pointer]:
+          - button [ref=f26e1908]:
+            - img "Wave minimalist Vector Images & Graphics for Commercial Use | VectorStock" [ref=f26e1910]
+          - link "Wave minimalist Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f26e1912]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/wave-minimalist-vectors
+            - generic [ref=f26e1913]:
+              - generic [ref=f26e1914]: Wave minimalist Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f26e1916]: VectorStock
+        - generic [ref=f26e1923] [cursor=pointer]:
+          - button [ref=f26e1928]:
+            - img "Monochrome Vector Icon Of Three Squiggly Lines Representing Water Waves Royalty Free SVG, Cliparts, Vectors, and Stock Illustration. Image 63113277." [ref=f26e1930]
+          - link "Monochrome Vector Icon Of Three Squiggly Lines Representing Water Waves Royalty Free SVG, Cliparts, Vectors, and Stock Illustration. Image 63113277. 123RF" [ref=f26e1932]:
+            - /url: https://www.123rf.com/photo_63113277_monochrome-vector-icon-of-three-squiggly-lines-representing-water-waves.html
+            - generic [ref=f26e1933]:
+              - generic [ref=f26e1934]: Monochrome Vector Icon Of Three Squiggly Lines Representing Water Waves Royalty Free SVG, Cliparts, Vectors, and Stock Illustration. Image 63113277.
+              - generic [ref=f26e1936]: 123RF
+        - generic [ref=f26e1943] [cursor=pointer]:
+          - button [ref=f26e1948]:
+            - img "Black white wave logo Images - Free Download on Magnific (formerly Freepik)" [ref=f26e1950]
+          - link "Black white wave logo Images - Free Download on Magnific (formerly Freepik) Magnific" [ref=f26e1952]:
+            - /url: https://www.magnific.com/free-photos-vectors/black-white-wave-logo
+            - generic [ref=f26e1953]:
+              - generic [ref=f26e1954]: Black white wave logo Images - Free Download on Magnific (formerly Freepik)
+              - generic [ref=f26e1956]: Magnific
+        - generic [ref=f26e1963] [cursor=pointer]:
+          - generic [ref=f26e1965]:
+            - button [ref=f26e1968]:
+              - img "Spiral linear icon. Curved line. Black swirl. Waved stroke. Simple geometric figure. Abstract shape. Thin line illustration. Contour symbol. Vector is Stock Vector Image & Art - Alamy" [ref=f26e1970]
+            - generic: 라이선스
+          - link "Spiral linear icon. Curved line. Black swirl. Waved stroke. Simple geometric figure. Abstract shape. Thin line illustration. Contour symbol. Vector is Stock Vector Image & Art - Alamy Alamy" [ref=f26e1972]:
+            - /url: https://www.alamy.com/spiral-linear-icon-curved-line-black-swirl-waved-stroke-simple-geometric-figure-abstract-shape-thin-line-illustration-contour-symbol-vector-is-image341487795.html
+            - generic [ref=f26e1973]:
+              - generic [ref=f26e1974]: Spiral linear icon. Curved line. Black swirl. Waved stroke. Simple geometric figure. Abstract shape. Thin line illustration. Contour symbol. Vector is Stock Vector Image & Art - Alamy
+              - generic [ref=f26e1976]: Alamy
+        - generic [ref=f26e1983] [cursor=pointer]:
+          - generic [ref=f26e1985]:
+            - button [ref=f26e1988]:
+              - img "22,319 Wave Icon High Res Illustrations - Getty Images" [ref=f26e1990]
+            - generic: 라이선스
+          - link "22,319 Wave Icon High Res Illustrations - Getty Images Getty Images" [ref=f26e1992]:
+            - /url: https://www.gettyimages.com/illustrations/wave-icon
+            - generic [ref=f26e1993]:
+              - generic [ref=f26e1994]: 22,319 Wave Icon High Res Illustrations - Getty Images
+              - generic [ref=f26e1996]: Getty Images
+        - generic [ref=f26e2003] [cursor=pointer]:
+          - button [ref=f26e2008]:
+            - img "Free Svg - Wavy Line Symbol Icon | FreePixel.com" [ref=f26e2010]
+          - link "Free Svg - Wavy Line Symbol Icon | FreePixel.com FreePixel.com" [ref=f26e2012]:
+            - /url: https://www.freepixel.com/graphics/minimalist-wave/free-svg-minimalist-wavy-line-icon-representing-a-tilde-wav-629-tilde-thin-c-os-331147
+            - generic [ref=f26e2013]:
+              - generic [ref=f26e2014]: Free Svg - Wavy Line Symbol Icon | FreePixel.com
+              - generic [ref=f26e2016]: FreePixel.com
+        - generic [ref=f26e2023] [cursor=pointer]:
+          - generic [ref=f26e2025]:
+            - button [ref=f26e2028]:
+              - img "Wave Symbol Vector Art, Icons, and Graphics for Free Download" [ref=f26e2030]
+            - generic: 라이선스
+          - link "Wave Symbol Vector Art, Icons, and Graphics for Free Download Vecteezy" [ref=f26e2032]:
+            - /url: https://www.vecteezy.com/free-vector/wave-symbol
+            - generic [ref=f26e2033]:
+              - generic [ref=f26e2034]: Wave Symbol Vector Art, Icons, and Graphics for Free Download
+              - generic [ref=f26e2036]: Vecteezy
+        - generic [ref=f26e2043] [cursor=pointer]:
+          - button [ref=f26e2048]:
+            - img "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock" [ref=f26e2050]
+          - link "14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock Shutterstock" [ref=f26e2052]:
+            - /url: https://www.shutterstock.com/search/curve-s-logo
+            - generic [ref=f26e2053]:
+              - generic [ref=f26e2054]: 14,204 Curve S Logo Royalty-Free Images, Stock Photos & Pictures | Shutterstock
+              - generic [ref=f26e2056]: Shutterstock
+        - generic [ref=f26e2063] [cursor=pointer]:
+          - generic [ref=f26e2065]:
+            - button [ref=f26e2068]:
+              - img "22,319 Wave Icon High Res Illustrations - Getty Images" [ref=f26e2070]
+            - generic: 라이선스
+          - link "22,319 Wave Icon High Res Illustrations - Getty Images Getty Images" [ref=f26e2072]:
+            - /url: https://www.gettyimages.com/illustrations/wave-icon
+            - generic [ref=f26e2073]:
+              - generic [ref=f26e2074]: 22,319 Wave Icon High Res Illustrations - Getty Images
+              - generic [ref=f26e2076]: Getty Images
+        - generic [ref=f26e2083] [cursor=pointer]:
+          - generic [ref=f26e2085]:
+            - button [ref=f26e2088]:
+              - img "Silhouette Wave Images – Browse 1,630,914 Stock Photos, Vectors, and Video | Adobe Stock" [ref=f26e2090]
+            - generic: 라이선스
+          - link "Silhouette Wave Images – Browse 1,630,914 Stock Photos, Vectors, and Video | Adobe Stock Adobe Stock" [ref=f26e2092]:
+            - /url: https://stock.adobe.com/search?k=silhouette+wave
+            - generic [ref=f26e2093]:
+              - generic [ref=f26e2094]: Silhouette Wave Images – Browse 1,630,914 Stock Photos, Vectors, and Video | Adobe Stock
+              - generic [ref=f26e2096]: Adobe Stock
+        - generic [ref=f26e2103] [cursor=pointer]:
+          - button [ref=f26e2108]:
+            - img "Simple wave Vector Images & Graphics for Commercial Use | VectorStock" [ref=f26e2110]
+          - link "Simple wave Vector Images & Graphics for Commercial Use | VectorStock VectorStock" [ref=f26e2112]:
+            - /url: https://www.vectorstock.com/royalty-free-vectors/simple-wave-vectors
+            - generic [ref=f26e2113]:
+              - generic [ref=f26e2114]: Simple wave Vector Images & Graphics for Commercial Use | VectorStock
+              - generic [ref=f26e2116]: VectorStock
+        - generic [ref=f26e2123] [cursor=pointer]:
+          - button [ref=f26e2128]:
+            - img "S curve Images - Free Download on Magnific (formerly Freepik)" [ref=f26e2130]
+          - link "S curve Images - Free Download on Magnific (formerly Freepik) Magnific" [ref=f26e2132]:
+            - /url: https://www.magnific.com/free-photos-vectors/s-curve
+            - generic [ref=f26e2133]:
+              - generic [ref=f26e2134]: S curve Images - Free Download on Magnific (formerly Freepik)
+              - generic [ref=f26e2136]: Magnific
+      - generic [ref=f26e2143]:
+        - heading "Page Navigation" [level=1] [ref=f26e2144]
+        - button "결과 더보기" [ref=f26e2145] [cursor=pointer]:
+          - generic [ref=f26e2146]:
+            - separator [ref=f26e2147]
+            - generic [ref=f26e2148]: 결과 더보기
+      - navigation
