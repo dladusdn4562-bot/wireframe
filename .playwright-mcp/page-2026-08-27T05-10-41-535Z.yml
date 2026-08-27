@@ -1,0 +1,253 @@
+- generic [ref=f23e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f23e15]:
+      - generic [ref=f23e17]:
+        - generic [ref=f23e18]:
+          - combobox "검색" [ref=f23e20]: minimalist s curve wave spine logo symbol flat vector black white
+          - generic [ref=f23e21]:
+            - button "검색 입력 삭제" [ref=f23e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f23e30]:
+              - button "Pinterest 렌즈" [ref=f23e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f23e38] [cursor=pointer]:
+          - generic [ref=f23e40]:
+            - generic [ref=f23e41]: 모든 핀
+            - img "드롭다운" [ref=f23e43]
+      - link "내 프로필" [ref=f23e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f23e56]:
+          - generic [ref=f23e57]: 임
+      - button "계정" [ref=f23e61] [cursor=pointer]
+  - navigation [ref=f23e66]:
+    - generic [ref=f23e68]:
+      - generic [ref=f23e69]:
+        - generic "홈" [ref=f23e73]:
+          - link "홈" [ref=f23e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f23e81]:
+          - link "홈" [ref=f23e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f23e89]:
+          - link "내 보드" [ref=f23e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f23e97]:
+          - button "만들기" [ref=f23e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f23e113]:
+        - button "설정 및 지원" [ref=f23e114] [cursor=pointer]
+  - main [ref=f23e119]:
+    - generic [ref=f23e121]:
+      - heading "검색 결과 페이지" [level=1] [ref=f23e123]
+      - region "필터 및 세분화 검색" [ref=f23e127]:
+        - button "필터 표시" [ref=f23e136] [cursor=pointer]
+      - generic [ref=f23e147]:
+        - generic [ref=f23e148]: minimalist s curve wave spine logo symbol flat vector black white 검색 결과를 추가로 불러오는 중
+        - list [ref=f23e153]:
+          - listitem [ref=f23e154]:
+            - button [ref=f23e156] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e159]:
+                - generic [ref=f23e161]:
+                  - link "제목 없음 핀 페이지" [ref=f23e163]:
+                    - /url: /pin/1829656095256292/
+                    - img "포함된 이미지:" [ref=f23e173]
+                  - generic "추가 작업" [ref=f23e182]:
+                    - button "추가 작업" [ref=f23e183]
+          - listitem [ref=f23e188]:
+            - button [ref=f23e190] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e193]:
+                - generic [ref=f23e195]:
+                  - link "LOGO DESIGN ( S ) 핀 페이지" [ref=f23e197]:
+                    - /url: /pin/328551735339247755/
+                    - 'img "포함된 이미지: LOGO DESIGN ( S )" [ref=f23e207]'
+                  - generic [ref=f23e212]:
+                    - heading [level=2] [ref=f23e218]:
+                      - link "LOGO DESIGN ( S ) 핀 페이지" [ref=f23e220]:
+                        - /url: /pin/328551735339247755/
+                        - text: LOGO DESIGN ( S )
+                    - generic "추가 작업" [ref=f23e223]:
+                      - button "추가 작업" [ref=f23e224]
+          - listitem [ref=f23e229]:
+            - button [ref=f23e231] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e234]:
+                - generic [ref=f23e236]:
+                  - link "제목 없음 핀 페이지" [ref=f23e238]:
+                    - /url: /pin/4785143351009288/
+                    - img "포함된 이미지:" [ref=f23e248]
+                  - generic "추가 작업" [ref=f23e257]:
+                    - button "추가 작업" [ref=f23e258]
+          - listitem [ref=f23e263]:
+            - button [ref=f23e265] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e268]:
+                - generic [ref=f23e270]:
+                  - link "Sovereign Logo 핀 페이지" [ref=f23e272]:
+                    - /url: /pin/3025924746129770/
+                    - 'img "포함된 이미지: Sovereign Logo" [ref=f23e282]'
+                  - generic [ref=f23e287]:
+                    - heading [level=2] [ref=f23e293]:
+                      - link "Sovereign Logo 핀 페이지" [ref=f23e295]:
+                        - /url: /pin/3025924746129770/
+                        - text: Sovereign Logo
+                    - generic "추가 작업" [ref=f23e298]:
+                      - button "추가 작업" [ref=f23e299]
+          - listitem [ref=f23e304]:
+            - button [ref=f23e306] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e310]:
+                - generic [ref=f23e312]:
+                  - 'link "Daily design exercise: Letter B. I wanted to carry over the organic vibes from my previous &#39;a&#39; logo into this one. Decided to keep it simple and static this time around. Would love to hear your thoughts on these curves! #visualidentity #branding #newtrends #graphicdesign #brandstrategy #designsystem #compliance #techbranding #logodesign #brandidentity #visualcommunication #satriyoatmojo 핀 페이지" [ref=f23e314]':
+                    - /url: /pin/3729612269620300/
+                    - generic [ref=f23e321]:
+                      - 'img "Daily design exercise: Letter B. I wanted to carry over the organic vibes from my previous ''a'' logo into this one. Decided to keep it simple and static this time around. Would love to hear your thoughts on these curves! #visualidentity #branding #newtrends #graphicdesign #brandstrategy #designsystem #compliance #techbranding #logodesign #brandidentity #visualcommunication #satriyoatmojo" [ref=f23e325]'
+                      - 'img "Daily design exercise: Letter B. I wanted to carry over the organic vibes from my previous ''a'' logo into this one. Decided to keep it simple and static this time around. Would love to hear your thoughts on these curves! #visualidentity #branding #newtrends #graphicdesign #brandstrategy #designsystem #compliance #techbranding #logodesign #brandidentity #visualcommunication #satriyoatmojo" [ref=f23e329]'
+                  - generic [ref=f23e332]:
+                    - generic [ref=f23e335]:
+                      - button "2개 슬라이드 중 1번으로 이동" [ref=f23e337]
+                      - button "2개 슬라이드 중 2번으로 이동" [ref=f23e340]
+                    - generic "추가 작업" [ref=f23e347]:
+                      - button "추가 작업" [ref=f23e348]
+          - listitem [ref=f23e353]:
+            - button [ref=f23e355] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e358]:
+                - generic [ref=f23e360]:
+                  - link "제목 없음 핀 페이지" [ref=f23e362]:
+                    - /url: /pin/23995810511310167/
+                    - img "포함된 이미지:" [ref=f23e372]
+                  - generic "추가 작업" [ref=f23e381]:
+                    - button "추가 작업" [ref=f23e382]
+          - listitem [ref=f23e387]:
+            - button [ref=f23e389] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e392]:
+                - generic [ref=f23e394]:
+                  - link "제목 없음 핀 페이지" [ref=f23e396]:
+                    - /url: /pin/5418462047080517/
+                    - img "포함된 이미지:" [ref=f23e406]
+                  - generic "추가 작업" [ref=f23e415]:
+                    - button "추가 작업" [ref=f23e416]
+          - listitem [ref=f23e421]:
+            - button [ref=f23e423] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e426]:
+                - generic [ref=f23e428]:
+                  - link "A modern and flowing S shape, formed from two interlocking teardrop shapes in a circular composition. 핀 페이지" [ref=f23e430]:
+                    - /url: /pin/28429041394554805/
+                    - img "포함된 이미지:" [ref=f23e440]
+                  - generic "추가 작업" [ref=f23e449]:
+                    - button "추가 작업" [ref=f23e450]
+          - listitem [ref=f23e455]:
+            - button [ref=f23e457] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e460]:
+                - generic [ref=f23e462]:
+                  - link "제목 없음 핀 페이지" [ref=f23e464]:
+                    - /url: /pin/14636767536777778/
+                    - img "포함된 이미지:" [ref=f23e474]
+                  - generic "추가 작업" [ref=f23e483]:
+                    - button "추가 작업" [ref=f23e484]
+          - listitem [ref=f23e489]:
+            - button [ref=f23e491] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e494]:
+                - generic [ref=f23e496]:
+                  - link "제목 없음 핀 페이지" [ref=f23e498]:
+                    - /url: /pin/31666003625561530/
+                    - img "포함된 이미지:" [ref=f23e508]
+                  - generic "추가 작업" [ref=f23e517]:
+                    - button "추가 작업" [ref=f23e518]
+          - listitem [ref=f23e523]:
+            - button [ref=f23e525] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e528]:
+                - generic [ref=f23e530]:
+                  - link "제목 없음 핀 페이지" [ref=f23e532]:
+                    - /url: /pin/10203536652478526/
+                    - img "포함된 이미지:" [ref=f23e542]
+                  - generic "추가 작업" [ref=f23e551]:
+                    - button "추가 작업" [ref=f23e552]
+          - listitem [ref=f23e557]:
+            - button [ref=f23e559] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e562]:
+                - generic [ref=f23e564]:
+                  - 'link "10 Years of Logos. Realised it’s been about 10 years since I started doing logo designs, so I thought I’d give a digital handshake to the vintage logo book layouts that got me into logos in the first place. 2nd slide is a collection of 145 logos done between 2015 and 2025, followed by some personal favorites. See the www for the full collection. #graphicdesign 핀 페이지" [ref=f23e566]':
+                    - /url: /pin/633387444488652/
+                    - img "포함된 이미지:" [ref=f23e576]
+                  - generic [ref=f23e581]:
+                    - link "Sylvan Hillebrand Design" [ref=f23e585]:
+                      - /url: /sylvanhillebrand/
+                      - generic "Sylvan Hillebrand Design" [ref=f23e592]
+                    - generic "추가 작업" [ref=f23e595]:
+                      - button "추가 작업" [ref=f23e596]
+          - listitem [ref=f23e601]:
+            - button [ref=f23e603] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e606]:
+                - generic [ref=f23e608]:
+                  - link "0 핀 페이지" [ref=f23e610]:
+                    - /url: /pin/20266267069690182/
+                    - 'img "포함된 이미지: 0" [ref=f23e620]'
+                  - generic [ref=f23e625]:
+                    - heading [level=2] [ref=f23e631]:
+                      - link "0 핀 페이지" [ref=f23e633]:
+                        - /url: /pin/20266267069690182/
+                        - text: "0"
+                    - generic "추가 작업" [ref=f23e636]:
+                      - button "추가 작업" [ref=f23e637]
+          - listitem [ref=f23e642]:
+            - button [ref=f23e644] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e647]:
+                - generic [ref=f23e649]:
+                  - link "stillz-1 핀 페이지" [ref=f23e651]:
+                    - /url: /pin/5488830792995090/
+                    - 'img "포함된 이미지: stillz-1" [ref=f23e661]'
+                  - generic [ref=f23e666]:
+                    - heading [level=2] [ref=f23e672]:
+                      - link "stillz-1 핀 페이지" [ref=f23e674]:
+                        - /url: /pin/5488830792995090/
+                        - text: stillz-1
+                    - generic "추가 작업" [ref=f23e677]:
+                      - button "추가 작업" [ref=f23e678]
+          - listitem [ref=f23e683]:
+            - button [ref=f23e685] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e688]:
+                - generic [ref=f23e690]:
+                  - link "제목 없음 핀 페이지" [ref=f23e692]:
+                    - /url: /pin/341640321755621003/
+                    - img "포함된 이미지:" [ref=f23e702]
+                  - generic "추가 작업" [ref=f23e711]:
+                    - button "추가 작업" [ref=f23e712]
+          - listitem [ref=f23e717]:
+            - button [ref=f23e719] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e722]:
+                - generic [ref=f23e724]:
+                  - link "letter s movement ribbon curves logo vector Stock Vector | Adobe Stock 핀 페이지" [ref=f23e726]:
+                    - /url: /pin/375839531424532094/
+                    - 'img "포함된 이미지: letter s movement ribbon curves logo vector Stock Vector | Adobe Stock" [ref=f23e736]'
+                  - generic [ref=f23e741]:
+                    - heading [level=2] [ref=f23e747]:
+                      - link "letter s movement ribbon curves logo vector Stock Vector | Adobe Stock 핀 페이지" [ref=f23e749]:
+                        - /url: /pin/375839531424532094/
+                        - text: letter s movement ribbon curves logo vector Stock Vector | Adobe Stock
+                    - generic "추가 작업" [ref=f23e752]:
+                      - button "추가 작업" [ref=f23e753]
+          - listitem [ref=f23e758]:
+            - button [ref=f23e760] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e763]:
+                - generic [ref=f23e765]:
+                  - link "letter S initial logo 핀 페이지" [ref=f23e767]:
+                    - /url: /pin/328551735339247714/
+                    - 'img "포함된 이미지: letter S initial logo" [ref=f23e777]'
+                  - generic [ref=f23e782]:
+                    - heading [level=2] [ref=f23e788]:
+                      - link "letter S initial logo 핀 페이지" [ref=f23e790]:
+                        - /url: /pin/328551735339247714/
+                        - text: letter S initial logo
+                    - generic "추가 작업" [ref=f23e793]:
+                      - button "추가 작업" [ref=f23e794]
+          - listitem [ref=f23e799]:
+            - button [ref=f23e801] [cursor=pointer]:
+              - group "핀 카드" [ref=f23e804]:
+                - generic [ref=f23e806]:
+                  - link "제목 없음 핀 페이지" [ref=f23e808]:
+                    - /url: /pin/166844361191792164/
+                    - img "포함된 이미지:" [ref=f23e818]
+                  - generic "추가 작업" [ref=f23e827]:
+                    - button "추가 작업" [ref=f23e828]
+          - listitem [ref=f23e833]
+          - listitem [ref=f23e837]
+          - listitem [ref=f23e841]
+          - listitem [ref=f23e845]
+          - listitem [ref=f23e849]
+          - listitem [ref=f23e853]

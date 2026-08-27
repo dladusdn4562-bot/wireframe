@@ -1,0 +1,277 @@
+- generic [ref=e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=e15]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - combobox "검색" [ref=e20]: minimalist geometric pinwheel swirl logo black white vector
+          - generic [ref=e21]:
+            - button "검색 입력 삭제" [ref=e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=e30]:
+              - button "Pinterest 렌즈" [ref=e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=e38] [cursor=pointer]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: 모든 핀
+            - img "드롭다운" [ref=e43]
+      - link "내 프로필" [ref=e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=e56]:
+          - generic [ref=e57]: 임
+      - button "계정" [ref=e61] [cursor=pointer]
+  - navigation [ref=e66]:
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - generic "홈" [ref=e73]:
+          - link "홈" [ref=e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=e81]:
+          - link "홈" [ref=e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=e89]:
+          - link "내 보드" [ref=e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=e97]:
+          - button "만들기" [ref=e98] [cursor=pointer]
+        - generic "업데이트" [ref=e107]:
+          - 'button "업데이트: 158개 알림" [ref=e108] [cursor=pointer]'
+        - generic "메시지" [ref=e117]:
+          - button "메시지" [ref=e118] [cursor=pointer]
+      - generic "설정 및 지원" [ref=e126]:
+        - button "설정 및 지원" [ref=e127] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=e132]:
+    - generic [ref=e134]:
+      - heading "검색 결과 페이지" [level=1] [ref=e136]
+      - region "필터 및 세분화 검색" [ref=e140]:
+        - button "필터 표시" [ref=e149] [cursor=pointer]
+      - generic [ref=e160]:
+        - generic [ref=e161]: minimalist geometric pinwheel swirl logo black white vector 검색 결과를 추가로 불러오는 중
+        - list [ref=e166]:
+          - listitem [ref=e167]:
+            - button [ref=e169] [cursor=pointer]:
+              - group "핀 카드" [ref=e172]:
+                - generic [ref=e174]:
+                  - link "Abstract Futuristic Symbol Mark 핀 페이지" [ref=e176]:
+                    - /url: /pin/46865652369589106/
+                    - 'img "포함된 이미지: Abstract Futuristic Symbol Mark" [ref=e186]'
+                  - generic [ref=e191]:
+                    - heading [level=2] [ref=e197]:
+                      - link "Abstract Futuristic Symbol Mark 핀 페이지" [ref=e199]:
+                        - /url: /pin/46865652369589106/
+                        - text: Abstract Futuristic Symbol Mark
+                    - generic "추가 작업" [ref=e202]:
+                      - button "추가 작업" [ref=e203]
+          - listitem [ref=e208]:
+            - button [ref=e210] [cursor=pointer]:
+              - group "핀 카드" [ref=e213]:
+                - generic [ref=e215]:
+                  - link "제목 없음 핀 페이지" [ref=e217]:
+                    - /url: /pin/306737424643862452/
+                    - img "포함된 이미지:" [ref=e227]
+                  - generic "추가 작업" [ref=e236]:
+                    - button "추가 작업" [ref=e237]
+          - listitem [ref=e242]:
+            - button [ref=e244] [cursor=pointer]:
+              - group "핀 카드" [ref=e247]:
+                - generic [ref=e249]:
+                  - link "제목 없음 핀 페이지" [ref=e251]:
+                    - /url: /pin/349451252360645395/
+                    - img "포함된 이미지:" [ref=e261]
+                  - generic "추가 작업" [ref=e270]:
+                    - button "추가 작업" [ref=e271]
+          - listitem [ref=e276]:
+            - button [ref=e278] [cursor=pointer]:
+              - group "핀 카드" [ref=e281]:
+                - generic [ref=e283]:
+                  - link "Symmetrical pinwheel S using modular quadrants to represent collaboration, unity, and systems. 핀 페이지" [ref=e285]:
+                    - /url: /pin/307370743341461612/
+                    - 'img "포함된 이미지: Symmetrical pinwheel S using modular quadrants to represent collaboration, unity, and systems." [ref=e295]'
+                  - generic [ref=e300]:
+                    - heading [level=2] [ref=e306]:
+                      - link "Symmetrical pinwheel S using modular quadrants to represent collaboration, unity, and systems. 핀 페이지" [ref=e308]:
+                        - /url: /pin/307370743341461612/
+                        - text: Symmetrical pinwheel S using modular quadrants to represent collaboration, unity, and systems.
+                    - generic "추가 작업" [ref=e311]:
+                      - button "추가 작업" [ref=e312]
+          - listitem [ref=e317]:
+            - button [ref=e319] [cursor=pointer]:
+              - group "핀 카드" [ref=e322]:
+                - generic [ref=e324]:
+                  - link "제목 없음 핀 페이지" [ref=e326]:
+                    - /url: /pin/138837601010098825/
+                    - img "포함된 이미지:" [ref=e336]
+                  - generic "추가 작업" [ref=e345]:
+                    - button "추가 작업" [ref=e346]
+          - listitem [ref=e351]:
+            - button [ref=e353] [cursor=pointer]:
+              - group "핀 카드" [ref=e356]:
+                - generic [ref=e358]:
+                  - link "제목 없음 핀 페이지" [ref=e360]:
+                    - /url: /pin/9007268003171786/
+                    - img "포함된 이미지:" [ref=e370]
+                  - generic "추가 작업" [ref=e379]:
+                    - button "추가 작업" [ref=e380]
+          - listitem [ref=e385]:
+            - button [ref=e387] [cursor=pointer]:
+              - group "핀 카드" [ref=e390]:
+                - generic [ref=e392]:
+                  - link "제목 없음 핀 페이지" [ref=e394]:
+                    - /url: /pin/24699498003239311/
+                    - img "포함된 이미지:" [ref=e404]
+                  - generic "추가 작업" [ref=e413]:
+                    - button "추가 작업" [ref=e414]
+          - listitem [ref=e419]:
+            - button [ref=e421] [cursor=pointer]:
+              - group "핀 카드" [ref=e425]:
+                - generic [ref=e427]:
+                  - 'link "Spinova® / Logotype Create a sense of swirling motion in letter S way. Imply energy form to the design✍️ Let me know your thoughts! Available for new project: bento.me/abdultive #abdultivedesign #professionallogo #creativelogo #companylogo #logofolio #designwork #designgraphic #branding #visualidentity 핀 페이지" [ref=e429]':
+                    - /url: /pin/459156124531680022/
+                    - generic [ref=e436]:
+                      - 'img "Spinova® / Logotype Create a sense of swirling motion in letter S way. Imply energy form to the design✍️ Let me know your thoughts! Available for new project: bento.me/abdultive #abdultivedesign #professionallogo #creativelogo #companylogo #logofolio #designwork #designgraphic #branding #visualidentity" [ref=e440]'
+                      - 'img "Spinova® / Logotype Create a sense of swirling motion in letter S way. Imply energy form to the design✍️ Let me know your thoughts! Available for new project: bento.me/abdultive #abdultivedesign #professionallogo #creativelogo #companylogo #logofolio #designwork #designgraphic #branding #visualidentity" [ref=e444]'
+                      - 'img "Spinova® / Logotype Create a sense of swirling motion in letter S way. Imply energy form to the design✍️ Let me know your thoughts! Available for new project: bento.me/abdultive #abdultivedesign #professionallogo #creativelogo #companylogo #logofolio #designwork #designgraphic #branding #visualidentity" [ref=e448]'
+                      - 'img "Spinova® / Logotype Create a sense of swirling motion in letter S way. Imply energy form to the design✍️ Let me know your thoughts! Available for new project: bento.me/abdultive #abdultivedesign #professionallogo #creativelogo #companylogo #logofolio #designwork #designgraphic #branding #visualidentity" [ref=e452]'
+                  - generic [ref=e455]:
+                    - generic [ref=e458]:
+                      - button "4개 슬라이드 중 1번으로 이동" [ref=e460]
+                      - button "4개 슬라이드 중 2번으로 이동" [ref=e463]
+                      - button "4개 슬라이드 중 3번으로 이동" [ref=e466]
+                      - button "4개 슬라이드 중 4번으로 이동" [ref=e469]
+                    - generic "추가 작업" [ref=e476]:
+                      - button "추가 작업" [ref=e477]
+          - listitem [ref=e482]:
+            - button [ref=e484] [cursor=pointer]:
+              - group "핀 카드" [ref=e487]:
+                - generic [ref=e489]:
+                  - link "❤️ Love it? 🔁 Save it for later &amp; ➕ Follow for more! ✨ 핀 페이지" [ref=e491]:
+                    - /url: /pin/1050886894320338100/
+                    - 'img "포함된 내용: Simple & Clean Logo Design for Professional Identity" [ref=e501]'
+                  - generic [ref=e506]:
+                    - heading [level=2] [ref=e512]:
+                      - link "❤️ Love it? 🔁 Save it for later &amp; ➕ Follow for more! ✨ 핀 페이지" [ref=e514]:
+                        - /url: /pin/1050886894320338100/
+                        - text: ❤️ Love it? 🔁 Save it for later & ➕ Follow for more! ✨
+                    - generic "추가 작업" [ref=e517]:
+                      - button "추가 작업" [ref=e518]
+          - listitem [ref=e523]:
+            - button [ref=e525] [cursor=pointer]:
+              - group "핀 카드" [ref=e528]:
+                - generic [ref=e530]:
+                  - link "x 핀 페이지" [ref=e532]:
+                    - /url: /pin/135530270034786835/
+                    - 'img "포함된 이미지: x" [ref=e542]'
+                  - generic [ref=e547]:
+                    - heading [level=2] [ref=e553]:
+                      - link "x 핀 페이지" [ref=e555]:
+                        - /url: /pin/135530270034786835/
+                        - text: x
+                    - generic "추가 작업" [ref=e558]:
+                      - button "추가 작업" [ref=e559]
+          - listitem [ref=e564]:
+            - button [ref=e566] [cursor=pointer]:
+              - group "핀 카드" [ref=e569]:
+                - generic [ref=e571]:
+                  - link "❤️ Love it or 🔁 Save it? 핀 페이지" [ref=e573]:
+                    - /url: /pin/150518812540952535/
+                    - 'img "포함된 이미지: ❤️ Love it or 🔁 Save it?" [ref=e583]'
+                  - generic [ref=e588]:
+                    - heading [level=2] [ref=e594]:
+                      - link "❤️ Love it or 🔁 Save it? 핀 페이지" [ref=e596]:
+                        - /url: /pin/150518812540952535/
+                        - text: ❤️ Love it or 🔁 Save it?
+                    - generic "추가 작업" [ref=e599]:
+                      - button "추가 작업" [ref=e600]
+          - listitem [ref=e605]:
+            - button [ref=e607] [cursor=pointer]:
+              - group "핀 카드" [ref=e610]:
+                - generic [ref=e612]:
+                  - generic [ref=e613]:
+                    - link "제목 없음 핀 페이지" [ref=e614]:
+                      - /url: /pin/317363105017894793/
+                      - img "포함된 이미지:" [ref=e624]
+                    - button "보내기" [ref=e635]
+                  - generic "추가 작업" [ref=e648]:
+                    - button "추가 작업" [ref=e649]
+          - listitem [ref=e654]:
+            - button [ref=e656] [cursor=pointer]:
+              - group "핀 카드" [ref=e659]:
+                - generic [ref=e661]:
+                  - link "Strengthen your digital presence with a modern custom logo 핀 페이지" [ref=e663]:
+                    - /url: /pin/262123640807451002/
+                    - 'img "포함된 내용: Strengthen your digital presence with a modern custom logo" [ref=e673]'
+                  - generic [ref=e678]:
+                    - heading [level=2] [ref=e684]:
+                      - link "Strengthen your digital presence with a modern custom logo 핀 페이지" [ref=e686]:
+                        - /url: /pin/262123640807451002/
+                        - text: Strengthen your digital presence with a modern custom logo
+                    - generic "추가 작업" [ref=e689]:
+                      - button "추가 작업" [ref=e690]
+          - listitem [ref=e695]:
+            - button [ref=e697] [cursor=pointer]:
+              - group "핀 카드" [ref=e700]:
+                - generic [ref=e702]:
+                  - link "제목 없음 핀 페이지" [ref=e704]:
+                    - /url: /pin/15903404930601056/
+                    - img "포함된 이미지:" [ref=e714]
+                  - generic "추가 작업" [ref=e723]:
+                    - button "추가 작업" [ref=e724]
+          - listitem [ref=e729]:
+            - button [ref=e731] [cursor=pointer]:
+              - group "핀 카드" [ref=e734]:
+                - generic [ref=e736]:
+                  - link "제목 없음 핀 페이지" [ref=e738]:
+                    - /url: /pin/281543725279439/
+                    - img "포함된 이미지:" [ref=e748]
+                  - generic "추가 작업" [ref=e757]:
+                    - button "추가 작업" [ref=e758]
+          - listitem [ref=e763]:
+            - button [ref=e765] [cursor=pointer]:
+              - group "핀 카드" [ref=e768]:
+                - generic [ref=e770]:
+                  - link "제목 없음 핀 페이지" [ref=e772]:
+                    - /url: /pin/372321094216816447/
+                    - img "포함된 이미지:" [ref=e782]
+                  - generic "추가 작업" [ref=e791]:
+                    - button "추가 작업" [ref=e792]
+          - listitem [ref=e797]:
+            - button [ref=e799] [cursor=pointer]:
+              - group "핀 카드" [ref=e802]:
+                - generic [ref=e804]:
+                  - link "❤️ Love it or 🔁 Save it? 핀 페이지" [ref=e806]:
+                    - /url: /pin/120400990034418465/
+                    - 'img "포함된 이미지: ❤️ Love it or 🔁 Save it?" [ref=e816]'
+                  - generic [ref=e821]:
+                    - heading [level=2] [ref=e827]:
+                      - link "❤️ Love it or 🔁 Save it? 핀 페이지" [ref=e829]:
+                        - /url: /pin/120400990034418465/
+                        - text: ❤️ Love it or 🔁 Save it?
+                    - generic "추가 작업" [ref=e832]:
+                      - button "추가 작업" [ref=e833]
+          - listitem [ref=e838]:
+            - button [ref=e840] [cursor=pointer]:
+              - group "핀 카드" [ref=e843]:
+                - generic [ref=e845]:
+                  - link "Solar spiral logo 핀 페이지" [ref=e847]:
+                    - /url: /pin/1109785533252974328/
+                    - img "포함된 이미지:" [ref=e857]
+                  - generic [ref=e862]:
+                    - heading [level=2] [ref=e868]:
+                      - link "Solar spiral logo 핀 페이지" [ref=e870]:
+                        - /url: /pin/1109785533252974328/
+                        - text: Solar spiral logo
+                    - generic "추가 작업" [ref=e873]:
+                      - button "추가 작업" [ref=e874]
+          - listitem [ref=e879]
+          - listitem [ref=e883]
+          - listitem [ref=e887]
+          - listitem [ref=e891]
+          - listitem [ref=e895]
+          - listitem [ref=e899]
+          - listitem [ref=e903]
+          - listitem [ref=e907]
+          - listitem [ref=e911]
+          - listitem [ref=e915]
+  - generic:
+    - contentinfo "꼬리말"

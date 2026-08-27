@@ -1,0 +1,263 @@
+- generic [ref=f36e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f36e15]:
+      - generic [ref=f36e17]:
+        - generic [ref=f36e18]:
+          - combobox "검색" [ref=f36e20]: uplifting curved wing crest logo minimal black white vector
+          - generic [ref=f36e21]:
+            - button "검색 입력 삭제" [ref=f36e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f36e30]:
+              - button "Pinterest 렌즈" [ref=f36e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f36e38] [cursor=pointer]:
+          - generic [ref=f36e40]:
+            - generic [ref=f36e41]: 모든 핀
+            - img "드롭다운" [ref=f36e43]
+      - link "내 프로필" [ref=f36e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f36e56]:
+          - generic [ref=f36e57]: 임
+      - button "계정" [ref=f36e61] [cursor=pointer]
+  - navigation [ref=f36e66]:
+    - generic [ref=f36e68]:
+      - generic [ref=f36e69]:
+        - generic "홈" [ref=f36e73]:
+          - link "홈" [ref=f36e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f36e81]:
+          - link "홈" [ref=f36e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f36e89]:
+          - link "내 보드" [ref=f36e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f36e97]:
+          - button "만들기" [ref=f36e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f36e113]:
+        - button "설정 및 지원" [ref=f36e114] [cursor=pointer]
+  - main [ref=f36e119]:
+    - generic [ref=f36e121]:
+      - heading "검색 결과 페이지" [level=1] [ref=f36e123]
+      - region "필터 및 세분화 검색" [ref=f36e127]:
+        - button "필터 표시" [ref=f36e136] [cursor=pointer]
+      - generic [ref=f36e147]:
+        - generic [ref=f36e148]: uplifting curved wing crest logo minimal black white vector 검색 결과를 추가로 표시
+        - list [ref=f36e153]:
+          - listitem [ref=f36e154]:
+            - button [ref=f36e156] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e159]:
+                - generic [ref=f36e161]:
+                  - link "Wings Yoga Logo 핀 페이지" [ref=f36e163]:
+                    - /url: /pin/4595290189610419584/
+                    - 'img "포함된 이미지: Wings Yoga Logo" [ref=f36e173]'
+                  - generic [ref=f36e178]:
+                    - generic [ref=f36e179]:
+                      - heading [level=2] [ref=f36e184]:
+                        - link "Wings Yoga Logo 핀 페이지" [ref=f36e186]:
+                          - /url: /pin/4595290189610419584/
+                          - text: Wings Yoga Logo
+                      - link "Scalebranding" [ref=f36e189]:
+                        - /url: /scalebrandingstore/
+                        - generic "Scalebranding" [ref=f36e196]
+                    - generic "추가 작업" [ref=f36e199]:
+                      - button "추가 작업" [ref=f36e200]
+          - listitem [ref=f36e205]:
+            - button [ref=f36e207] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e210]:
+                - generic [ref=f36e212]:
+                  - link "제목 없음 핀 페이지" [ref=f36e214]:
+                    - /url: /pin/1266706138647909/
+                    - img "포함된 이미지:" [ref=f36e224]
+                  - generic "추가 작업" [ref=f36e233]:
+                    - button "추가 작업" [ref=f36e234]
+          - listitem [ref=f36e239]:
+            - button [ref=f36e241] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e244]:
+                - generic [ref=f36e246]:
+                  - link "wing logo 핀 페이지" [ref=f36e248]:
+                    - /url: /pin/311874342966981855/
+                    - 'img "포함된 이미지: wing logo" [ref=f36e258]'
+                  - generic [ref=f36e263]:
+                    - heading [level=2] [ref=f36e269]:
+                      - link "wing logo 핀 페이지" [ref=f36e271]:
+                        - /url: /pin/311874342966981855/
+                        - text: wing logo
+                    - generic "추가 작업" [ref=f36e274]:
+                      - button "추가 작업" [ref=f36e275]
+          - listitem [ref=f36e280]:
+            - button [ref=f36e282] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e285]:
+                - generic [ref=f36e287]:
+                  - link "제목 없음 핀 페이지" [ref=f36e289]:
+                    - /url: /pin/286893438761062571/
+                    - img "포함된 이미지:" [ref=f36e299]
+                  - generic "추가 작업" [ref=f36e308]:
+                    - button "추가 작업" [ref=f36e309]
+          - listitem [ref=f36e314]:
+            - button [ref=f36e316] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e319]:
+                - generic [ref=f36e321]:
+                  - link "Are You Looking For Creative &amp; Beautiful Brand Logo For Your Website/business/brand Or Any Use? Look No More! I Assure You Are In The Right Place. I Will Create A Perfect Logo For You That Will Perfectly Identify And Represent Your Company Or Business. 핀 페이지" [ref=f36e323]:
+                    - /url: /pin/39336196741364320/
+                    - img "포함된 이미지:" [ref=f36e333]
+                  - generic "추가 작업" [ref=f36e342]:
+                    - button "추가 작업" [ref=f36e343]
+          - listitem [ref=f36e348]:
+            - button [ref=f36e350] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e353]:
+                - generic [ref=f36e355]:
+                  - link "temu.com" [ref=f36e359]:
+                    - /url: https://www.temu.com/ul/kuiper/un3.html?subj=dpa-un&_bg_fs=1&_p_jump_id=1082&_x_vst_scene=adg&goods_id=601102289189937&adg_ctx=a-5af5a689~c-bbb2ca85&_p_rfs=1&_x_ads_channel=pinterest&_x_ads_creative_id=4260608657129&_x_ads_id=2680082645523&_x_ads_set=626753445840&_x_ads_sub_channel=shopping&_x_ns_catalog_id=1531572374380&_x_ns_creative=4260608657129&_x_ns_gid=601102289189937&_x_ns_product_id=17603967359432&_x_ns_prz_type=101&locale_override=185~~KRW&utm_campaign=626753445840&utm_medium=PaidSocial&utm_source=Pinterest&utm_content=2680082645523&pp=0
+                    - 'img "포함된 이미지: Temu | 맞춤형 결혼식 초대장 엠보서 -" [ref=f36e369]'
+                  - generic [ref=f36e373]:
+                    - generic [ref=f36e374]:
+                      - heading [level=2] [ref=f36e379]:
+                        - link "Temu | 맞춤형 결혼식 초대장 엠보서 - 개인화된 모노그램 스탬프 - 신랑과 신부 선물 - 결혼식 인장 (temu.com)" [ref=f36e383]:
+                          - /url: https://www.temu.com/ul/kuiper/un3.html?subj=dpa-un&_bg_fs=1&_p_jump_id=1082&_x_vst_scene=adg&goods_id=601102289189937&adg_ctx=a-5af5a689~c-bbb2ca85&_p_rfs=1&_x_ads_channel=pinterest&_x_ads_creative_id=4260608657129&_x_ads_id=2680082645523&_x_ads_set=626753445840&_x_ads_sub_channel=shopping&_x_ns_catalog_id=1531572374380&_x_ns_creative=4260608657129&_x_ns_gid=601102289189937&_x_ns_product_id=17603967359432&_x_ns_prz_type=101&locale_override=185~~KRW&utm_campaign=626753445840&utm_medium=PaidSocial&utm_source=Pinterest&utm_content=2680082645523&pp=0
+                          - text: Temu | 맞춤형 결혼식 초대장 엠보서 - 개인화된 모노그램 스탬프 - 신랑과 신부 선물 - 결혼식 인장
+                      - link "후원 핀" [ref=f36e386]:
+                        - /url: /ads_fb40/
+                        - generic [ref=f36e388]:
+                          - generic [ref=f36e389]: Temu_Korea
+                          - generic "후원 핀" [ref=f36e395]
+                    - generic "추가 작업" [ref=f36e398]:
+                      - button "추가 작업" [ref=f36e399]
+          - listitem [ref=f36e404]:
+            - button [ref=f36e406] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e409]:
+                - generic [ref=f36e411]:
+                  - link "제목 없음 핀 페이지" [ref=f36e413]:
+                    - /url: /pin/1829656095264041/
+                    - img "포함된 이미지:" [ref=f36e423]
+                  - generic "추가 작업" [ref=f36e432]:
+                    - button "추가 작업" [ref=f36e433]
+          - listitem [ref=f36e438]:
+            - button [ref=f36e440] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e443]:
+                - generic [ref=f36e445]:
+                  - link "Vittagreen | Isologo Base en Monocromía 핀 페이지" [ref=f36e447]:
+                    - /url: /pin/1548181186873375/
+                    - 'img "포함된 이미지: Vittagreen | Isologo Base en Monocromía" [ref=f36e457]'
+                  - generic [ref=f36e462]:
+                    - heading [level=2] [ref=f36e468]:
+                      - link "Vittagreen | Isologo Base en Monocromía 핀 페이지" [ref=f36e470]:
+                        - /url: /pin/1548181186873375/
+                        - text: Vittagreen | Isologo Base en Monocromía
+                    - generic "추가 작업" [ref=f36e473]:
+                      - button "추가 작업" [ref=f36e474]
+          - listitem [ref=f36e479]:
+            - button [ref=f36e481] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e484]:
+                - generic [ref=f36e486]:
+                  - link "temu.com" [ref=f36e490]:
+                    - /url: https://www.temu.com/ul/kuiper/un3.html?subj=dpa-un&_bg_fs=1&_p_jump_id=1082&_x_vst_scene=adg&goods_id=601100008793312&adg_ctx=a-973e4b6a~c-6194b05e&_p_rfs=1&_x_ads_channel=pinterest&_x_ads_creative_id=4260608657129&_x_ads_id=2680082645523&_x_ads_set=626753445840&_x_ads_sub_channel=shopping&_x_ns_catalog_id=1531572374380&_x_ns_creative=4260608657129&_x_ns_gid=601100008793312&_x_ns_product_id=17594307119225&_x_ns_prz_type=101&locale_override=185~~KRW&utm_campaign=626753445840&utm_medium=PaidSocial&utm_source=Pinterest&utm_content=2680082645523&pp=0
+                    - 'img "포함된 이미지: Temu | 맞춤형 스탬핑 씰, 스테인리스" [ref=f36e500]'
+                  - generic [ref=f36e504]:
+                    - generic [ref=f36e505]:
+                      - heading [level=2] [ref=f36e510]:
+                        - link "Temu | 맞춤형 스탬핑 씰, 스테인리스 스틸 은색 휴대용 인쇄, 개인 맞춤 로고 및 텍스트 포함, 웨딩 초대장, 상업 도서관 회사 로고에 적합 (temu.com)" [ref=f36e514]:
+                          - /url: https://www.temu.com/ul/kuiper/un3.html?subj=dpa-un&_bg_fs=1&_p_jump_id=1082&_x_vst_scene=adg&goods_id=601100008793312&adg_ctx=a-973e4b6a~c-6194b05e&_p_rfs=1&_x_ads_channel=pinterest&_x_ads_creative_id=4260608657129&_x_ads_id=2680082645523&_x_ads_set=626753445840&_x_ads_sub_channel=shopping&_x_ns_catalog_id=1531572374380&_x_ns_creative=4260608657129&_x_ns_gid=601100008793312&_x_ns_product_id=17594307119225&_x_ns_prz_type=101&locale_override=185~~KRW&utm_campaign=626753445840&utm_medium=PaidSocial&utm_source=Pinterest&utm_content=2680082645523&pp=0
+                          - text: Temu | 맞춤형 스탬핑 씰, 스테인리스 스틸 은색 휴대용 인쇄, 개인 맞춤 로고 및 텍스트 포함, 웨딩 초대장, 상업 도서관 회사 로고에 적합
+                      - link "후원 핀" [ref=f36e517]:
+                        - /url: /ads_fb40/
+                        - generic [ref=f36e519]:
+                          - generic [ref=f36e520]: Temu_Korea
+                          - generic "후원 핀" [ref=f36e526]
+                    - generic "추가 작업" [ref=f36e529]:
+                      - button "추가 작업" [ref=f36e530]
+          - listitem [ref=f36e535]:
+            - button [ref=f36e537] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e540]:
+                - generic [ref=f36e542]:
+                  - link "제목 없음 핀 페이지" [ref=f36e544]:
+                    - /url: /pin/33143747256304328/
+                    - img "포함된 이미지:" [ref=f36e554]
+                  - generic "추가 작업" [ref=f36e563]:
+                    - button "추가 작업" [ref=f36e564]
+          - listitem [ref=f36e569]:
+            - button [ref=f36e571] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e574]:
+                - generic [ref=f36e576]:
+                  - link "제목 없음 핀 페이지" [ref=f36e578]:
+                    - /url: /pin/363665738687423950/
+                    - img "포함된 이미지:" [ref=f36e588]
+                  - generic "추가 작업" [ref=f36e597]:
+                    - button "추가 작업" [ref=f36e598]
+          - listitem [ref=f36e603]:
+            - button [ref=f36e605] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e608]:
+                - generic [ref=f36e610]:
+                  - link "제목 없음 핀 페이지" [ref=f36e612]:
+                    - /url: /pin/121526889939964761/
+                    - img "포함된 이미지:" [ref=f36e622]
+                  - generic "추가 작업" [ref=f36e631]:
+                    - button "추가 작업" [ref=f36e632]
+          - listitem [ref=f36e637]:
+            - button [ref=f36e639] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e642]:
+                - generic [ref=f36e644]:
+                  - link "WING LOGO 핀 페이지" [ref=f36e646]:
+                    - /url: /pin/12807180188600039/
+                    - 'img "포함된 이미지: WING LOGO" [ref=f36e656]'
+                  - generic [ref=f36e661]:
+                    - heading [level=2] [ref=f36e667]:
+                      - link "WING LOGO 핀 페이지" [ref=f36e669]:
+                        - /url: /pin/12807180188600039/
+                        - text: WING LOGO
+                    - generic "추가 작업" [ref=f36e672]:
+                      - button "추가 작업" [ref=f36e673]
+          - listitem [ref=f36e678]:
+            - button [ref=f36e680] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e683]:
+                - generic [ref=f36e685]:
+                  - link "Logo for art history club based on sculpture of The Winged Victory of Samothrace by Grzegorz Kozak 핀 페이지" [ref=f36e687]:
+                    - /url: /pin/147070744061712593/
+                    - img "포함된 이미지:" [ref=f36e697]
+                  - generic "추가 작업" [ref=f36e706]:
+                    - button "추가 작업" [ref=f36e707]
+          - listitem [ref=f36e712]:
+            - button [ref=f36e714] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e717]:
+                - generic [ref=f36e719]:
+                  - link "Download Wings icon in simple style outline for free 핀 페이지" [ref=f36e721]:
+                    - /url: /pin/348466089942559817/
+                    - 'img "포함된 이미지: Download Wings icon in simple style outline for free" [ref=f36e731]'
+                  - generic [ref=f36e736]:
+                    - heading [level=2] [ref=f36e742]:
+                      - link "Download Wings icon in simple style outline for free 핀 페이지" [ref=f36e744]:
+                        - /url: /pin/348466089942559817/
+                        - text: Download Wings icon in simple style outline for free
+                    - generic "추가 작업" [ref=f36e747]:
+                      - button "추가 작업" [ref=f36e748]
+          - listitem [ref=f36e753]:
+            - button [ref=f36e755] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e758]:
+                - generic [ref=f36e760]:
+                  - link "Luxury wing logo black color design template の Stock ベクター | Adobe Stock 핀 페이지" [ref=f36e762]:
+                    - /url: /pin/588564245098509607/
+                    - 'img "포함된 이미지: Luxury wing logo black color design template の Stock ベクター | Adobe Stock" [ref=f36e772]'
+                  - generic [ref=f36e777]:
+                    - heading [level=2] [ref=f36e783]:
+                      - link "Luxury wing logo black color design template の Stock ベクター | Adobe Stock 핀 페이지" [ref=f36e785]:
+                        - /url: /pin/588564245098509607/
+                        - text: Luxury wing logo black color design template の Stock ベクター | Adobe Stock
+                    - generic "추가 작업" [ref=f36e788]:
+                      - button "추가 작업" [ref=f36e789]
+          - listitem [ref=f36e794]:
+            - button [ref=f36e796] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e799]:
+                - generic [ref=f36e801]:
+                  - link "제목 없음 핀 페이지" [ref=f36e803]:
+                    - /url: /pin/208361920255913651/
+                    - img "포함된 이미지:" [ref=f36e813]
+                  - generic "추가 작업" [ref=f36e822]:
+                    - button "추가 작업" [ref=f36e823]
+          - listitem [ref=f36e828]:
+            - button [ref=f36e830] [cursor=pointer]:
+              - group "핀 카드" [ref=f36e833]:
+                - generic [ref=f36e835]:
+                  - link "제목 없음 핀 페이지" [ref=f36e837]:
+                    - /url: /pin/697565429827015646/
+                    - img "포함된 이미지:" [ref=f36e847]
+                  - generic "추가 작업" [ref=f36e856]:
+                    - button "추가 작업" [ref=f36e857]

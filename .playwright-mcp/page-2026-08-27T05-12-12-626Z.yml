@@ -1,0 +1,232 @@
+- generic [ref=f62e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f62e15]:
+      - generic [ref=f62e17]:
+        - generic [ref=f62e18]:
+          - combobox "검색" [ref=f62e20]: minimalist three leaf geometric triad logo symbol black white vector
+          - generic [ref=f62e21]:
+            - button "검색 입력 삭제" [ref=f62e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f62e30]:
+              - button "Pinterest 렌즈" [ref=f62e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f62e38] [cursor=pointer]:
+          - generic [ref=f62e40]:
+            - generic [ref=f62e41]: 모든 핀
+            - img "드롭다운" [ref=f62e43]
+      - link "내 프로필" [ref=f62e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f62e56]:
+          - generic [ref=f62e57]: 임
+      - button "계정" [ref=f62e61] [cursor=pointer]
+  - navigation [ref=f62e66]:
+    - generic [ref=f62e68]:
+      - generic [ref=f62e69]:
+        - generic "홈" [ref=f62e73]:
+          - link "홈" [ref=f62e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f62e81]:
+          - link "홈" [ref=f62e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f62e89]:
+          - link "내 보드" [ref=f62e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f62e97]:
+          - button "만들기" [ref=f62e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f62e113]:
+        - button "설정 및 지원" [ref=f62e114] [cursor=pointer]
+  - main [ref=f62e119]:
+    - generic [ref=f62e121]:
+      - heading "검색 결과 페이지" [level=1] [ref=f62e123]
+      - region "필터 및 세분화 검색" [ref=f62e127]:
+        - button "필터 표시" [ref=f62e136] [cursor=pointer]
+      - generic [ref=f62e147]:
+        - generic [ref=f62e148]: minimalist three leaf geometric triad logo symbol black white vector 검색 결과를 추가로 불러오는 중
+        - list [ref=f62e153]:
+          - listitem [ref=f62e154]:
+            - button [ref=f62e156] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e159]:
+                - generic [ref=f62e161]:
+                  - link "제목 없음 핀 페이지" [ref=f62e163]:
+                    - /url: /pin/11188699075575571/
+                    - img "포함된 이미지:" [ref=f62e173]
+                  - generic "추가 작업" [ref=f62e182]:
+                    - button "추가 작업" [ref=f62e183]
+          - listitem [ref=f62e188]:
+            - button [ref=f62e190] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e193]:
+                - generic [ref=f62e195]:
+                  - link "sharex.fastcampus.co.kr" [ref=f62e199]:
+                    - /url: https://sharex.fastcampus.co.kr/dgn_online_atelier/?utm_source=pinterest&utm_medium=social&utm_campaign=prd%5E260305%5E235527&utm_content=4_1_3%5E235527&pp=0
+                    - img "세계, 현대백화점 등 리테일부터, KT사옥, HD현대 사옥과 같은 오피스, 아크로서울포레스트, 시지 코오롱 하늘채 등 주거 공간과 포스텍 C5등 교육시설에 이르기까지 공간과 사용자의 특성을 고려한 사이니지 디자인으로 업계를 리딩하는 사이니지 디자인 전문 기업 아뜰리에동가에서 디자이너에게 꼭 필요한 사이니지 디자인과 웨이파인딩 전략을 쉐어엑스를 통해 최.초. 공개합니다. ■ 14년간 50여건의 사이니지 프로젝트 수행 ■ iF 디자인 어워드 사이니지 분야 국내 최다 수상 ■ 국내 최초! 디자인 개발부터 도면 설계, 제작 감리 등 사이니지 디자인 프로세스 전격 공개 ■ 아뜰리에동가에서 진행한 7가지 실제 프로젝트를 통해 배우는 사이니지 디자인 전략 우리 삶에 공기처럼 존재하는 필수 디자인 '사이니지 디자인'의 모든 것, SHARE X를 통해 직접 경험해보세요." [ref=f62e215]
+                  - generic [ref=f62e219]:
+                    - generic [ref=f62e220]:
+                      - heading [level=2] [ref=f62e225]:
+                        - link "티가 나지 않아야 잘 된 디자인이 있다? (sharex.fastcampus.co.kr)" [ref=f62e229]:
+                          - /url: https://sharex.fastcampus.co.kr/dgn_online_atelier/?utm_source=pinterest&utm_medium=social&utm_campaign=prd%5E260305%5E235527&utm_content=4_1_3%5E235527&pp=0
+                          - text: 티가 나지 않아야 잘 된 디자인이 있다?
+                      - link "후원 핀" [ref=f62e232]:
+                        - /url: /sharex_official/
+                        - generic [ref=f62e234]:
+                          - generic [ref=f62e235]: ShareX
+                          - generic "후원 핀" [ref=f62e241]
+                    - generic "추가 작업" [ref=f62e244]:
+                      - button "추가 작업" [ref=f62e245]
+          - listitem [ref=f62e250]:
+            - button [ref=f62e252] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e255]:
+                - generic [ref=f62e257]:
+                  - link "제목 없음 핀 페이지" [ref=f62e259]:
+                    - /url: /pin/211174978041239/
+                    - img "포함된 이미지:" [ref=f62e269]
+                  - generic "추가 작업" [ref=f62e278]:
+                    - button "추가 작업" [ref=f62e279]
+          - listitem [ref=f62e284]:
+            - button [ref=f62e286] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e289]:
+                - generic [ref=f62e291]:
+                  - link "제목 없음 핀 페이지" [ref=f62e293]:
+                    - /url: /pin/2322237302788376/
+                    - img "포함된 이미지:" [ref=f62e303]
+                  - generic "추가 작업" [ref=f62e312]:
+                    - button "추가 작업" [ref=f62e313]
+          - listitem [ref=f62e318]:
+            - button [ref=f62e320] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e323]:
+                - generic [ref=f62e325]:
+                  - link "Province of Ontario / The Trillium (1964) 핀 페이지" [ref=f62e327]:
+                    - /url: /pin/7529524351977615/
+                    - img "포함된 이미지:" [ref=f62e337]
+                  - generic "추가 작업" [ref=f62e346]:
+                    - button "추가 작업" [ref=f62e347]
+          - listitem [ref=f62e352]:
+            - button [ref=f62e354] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e357]:
+                - generic [ref=f62e359]:
+                  - link "제목 없음 핀 페이지" [ref=f62e361]:
+                    - /url: /pin/150378075054407744/
+                    - img "포함된 이미지:" [ref=f62e371]
+                  - generic "추가 작업" [ref=f62e380]:
+                    - button "추가 작업" [ref=f62e381]
+          - listitem [ref=f62e386]:
+            - button [ref=f62e388] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e391]:
+                - generic [ref=f62e393]:
+                  - link "제목 없음 핀 페이지" [ref=f62e395]:
+                    - /url: /pin/633387444728374/
+                    - img "포함된 이미지:" [ref=f62e405]
+                  - generic "추가 작업" [ref=f62e414]:
+                    - button "추가 작업" [ref=f62e415]
+          - listitem [ref=f62e420]:
+            - button [ref=f62e422] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e425]:
+                - generic [ref=f62e427]:
+                  - link "제목 없음 핀 페이지" [ref=f62e429]:
+                    - /url: /pin/10414642883348113/
+                    - img "포함된 이미지:" [ref=f62e439]
+                  - generic "추가 작업" [ref=f62e448]:
+                    - button "추가 작업" [ref=f62e449]
+          - listitem [ref=f62e454]:
+            - button [ref=f62e456] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e459]:
+                - generic [ref=f62e461]:
+                  - link "제목 없음 핀 페이지" [ref=f62e463]:
+                    - /url: /pin/774124928701475/
+                    - img "포함된 이미지:" [ref=f62e473]
+                  - generic "추가 작업" [ref=f62e482]:
+                    - button "추가 작업" [ref=f62e483]
+          - listitem [ref=f62e488]:
+            - button [ref=f62e490] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e493]:
+                - generic [ref=f62e495]:
+                  - link "제목 없음 핀 페이지" [ref=f62e497]:
+                    - /url: /pin/633387444235849/
+                    - img "포함된 이미지:" [ref=f62e507]
+                  - generic "추가 작업" [ref=f62e516]:
+                    - button "추가 작업" [ref=f62e517]
+          - listitem [ref=f62e522]:
+            - button [ref=f62e524] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e527]:
+                - generic [ref=f62e529]:
+                  - link "제목 없음 핀 페이지" [ref=f62e531]:
+                    - /url: /pin/633387444234935/
+                    - img "포함된 이미지:" [ref=f62e541]
+                  - generic "추가 작업" [ref=f62e550]:
+                    - button "추가 작업" [ref=f62e551]
+          - listitem [ref=f62e556]:
+            - button [ref=f62e558] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e561]:
+                - generic [ref=f62e563]:
+                  - link "제목 없음 핀 페이지" [ref=f62e565]:
+                    - /url: /pin/10625749120560056/
+                    - img "포함된 이미지:" [ref=f62e575]
+                  - generic "추가 작업" [ref=f62e584]:
+                    - button "추가 작업" [ref=f62e585]
+          - listitem [ref=f62e590]:
+            - button [ref=f62e592] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e595]:
+                - generic [ref=f62e597]:
+                  - link "제목 없음 핀 페이지" [ref=f62e599]:
+                    - /url: /pin/138837601008990768/
+                    - img "포함된 이미지:" [ref=f62e609]
+                  - generic "추가 작업" [ref=f62e618]:
+                    - button "추가 작업" [ref=f62e619]
+          - listitem [ref=f62e624]:
+            - button [ref=f62e626] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e629]:
+                - generic [ref=f62e631]:
+                  - link "CLT-011 핀 페이지" [ref=f62e633]:
+                    - /url: /pin/319051954861402166/
+                    - 'img "포함된 이미지: CLT-011" [ref=f62e643]'
+                  - generic [ref=f62e648]:
+                    - heading [level=2] [ref=f62e654]:
+                      - link "CLT-011 핀 페이지" [ref=f62e656]:
+                        - /url: /pin/319051954861402166/
+                        - text: CLT-011
+                    - generic "추가 작업" [ref=f62e659]:
+                      - button "추가 작업" [ref=f62e660]
+          - listitem [ref=f62e665]:
+            - button [ref=f62e667] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e670]:
+                - generic [ref=f62e672]:
+                  - link "Illuminati 핀 페이지" [ref=f62e674]:
+                    - /url: /pin/8796161757606173/
+                    - img "포함된 이미지:" [ref=f62e684]
+                  - generic "추가 작업" [ref=f62e693]:
+                    - button "추가 작업" [ref=f62e694]
+          - listitem [ref=f62e699]:
+            - button [ref=f62e701] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e704]:
+                - generic [ref=f62e706]:
+                  - link "❤️ Love it or 🔁 Save it? 핀 페이지" [ref=f62e708]:
+                    - /url: /pin/24840235441032836/
+                    - 'img "포함된 이미지: ❤️ Love it or 🔁 Save it?" [ref=f62e718]'
+                  - generic [ref=f62e723]:
+                    - heading [level=2] [ref=f62e729]:
+                      - link "❤️ Love it or 🔁 Save it? 핀 페이지" [ref=f62e731]:
+                        - /url: /pin/24840235441032836/
+                        - text: ❤️ Love it or 🔁 Save it?
+                    - generic "추가 작업" [ref=f62e734]:
+                      - button "추가 작업" [ref=f62e735]
+          - listitem [ref=f62e740]:
+            - button [ref=f62e742] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e745]:
+                - generic [ref=f62e747]:
+                  - link "제목 없음 핀 페이지" [ref=f62e749]:
+                    - /url: /pin/24277285506921152/
+                    - img "포함된 이미지:" [ref=f62e759]
+                  - generic "추가 작업" [ref=f62e768]:
+                    - button "추가 작업" [ref=f62e769]
+          - listitem [ref=f62e774]:
+            - button [ref=f62e776] [cursor=pointer]:
+              - group "핀 카드" [ref=f62e779]:
+                - generic [ref=f62e781]:
+                  - link "제목 없음 핀 페이지" [ref=f62e783]:
+                    - /url: /pin/7740630593819617/
+                    - img "포함된 이미지:" [ref=f62e793]
+                  - generic "추가 작업" [ref=f62e802]:
+                    - button "추가 작업" [ref=f62e803]
+          - listitem [ref=f62e808]
+          - listitem [ref=f62e812]
+          - listitem [ref=f62e816]
+          - listitem [ref=f62e820]

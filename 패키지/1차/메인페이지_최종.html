@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEUMIM (스밈) - 수정2 와이어프레임 (Nordic Tech-Wellness Master Wireframe)</title>
+  <title>SEUMIM (스밈) - 수정 와이어프레임 (Refined Master Wireframe)</title>
   <!-- Google Fonts: 한국어 Gowun Batang & Pretendard CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,36 +27,36 @@
     }
 
     /* ==========================================================================
-       [CSS Design Tokens & Theme: Soft Pastel Comfort Wellness Edition]
+       [CSS Design Tokens & Theme]
        ========================================================================== */
     :root {
-      --bg-base: #FAFAFC;
+      --bg-base: #fbf9f5;
       --bg-surface: #ffffff;
-      --bg-card: #F6F5FA;
-      --bg-card-hover: #EFEFF6;
-      --bg-accent-light: #F6F5FA;
+      --bg-card: #f5f1e8;
+      --bg-card-hover: #ede7d8;
+      --bg-accent-light: #fef8f0;
       
-      --color-text-primary: #3E3A4C;
-      --color-text-secondary: #78738A;
-      --color-text-muted: #A8A3BA;
+      --color-text-primary: #1c2420;
+      --color-text-secondary: #4a5750;
+      --color-text-muted: #7c8a82;
       --color-text-inverse: #ffffff;
       
-      --color-forest: #3E3A4C;
-      --color-forest-dark: #2F2B3A;
-      --color-terracotta: #9D96C4;
-      --color-terracotta-hover: #8780B0;
-      --color-sage: #ABA5D0;
-      --color-border: #EAE8F4;
-      --color-border-focus: #9D96C4;
+      --color-forest: #243028;
+      --color-forest-dark: #151d18;
+      --color-terracotta: #d26e2e;
+      --color-terracotta-hover: #ba5c20;
+      --color-sage: #2a7a52;
+      --color-border: #e2dbca;
+      --color-border-focus: #243028;
       
       --font-serif: 'Gowun Batang', -apple-system, serif;
       --font-maruburi: 'MaruBuri', 'Gowun Batang', serif;
       --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       
-      --shadow-sm: 0 2px 8px rgba(27, 36, 42, 0.04);
-      --shadow-md: 0 8px 24px rgba(27, 36, 42, 0.06);
-      --shadow-lg: 0 16px 40px rgba(27, 36, 42, 0.09);
-      --shadow-sticky: 0 -4px 20px rgba(27, 36, 42, 0.08);
+      --shadow-sm: 0 2px 8px rgba(28, 36, 32, 0.04);
+      --shadow-md: 0 8px 24px rgba(28, 36, 32, 0.06);
+      --shadow-lg: 0 16px 40px rgba(28, 36, 32, 0.09);
+      --shadow-sticky: 0 -4px 20px rgba(28, 36, 32, 0.08);
       
       --radius-sm: 6px;
       --radius-md: 12px;
@@ -139,7 +139,7 @@
        [SEC-01: GNB & Header - 와이어프레임_90 표준 규격]
        ========================================================================== */
     .header-gnb {
-      background: rgba(248, 249, 250, 0.96);
+      background: rgba(251, 249, 245, 0.96);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--color-border);
@@ -286,7 +286,7 @@
       bottom: 1px;
       width: calc(100% + 12px);
       height: 20px;
-      background: radial-gradient(ellipse at center, rgba(157, 150, 196, 0.18) 0%, rgba(157, 150, 196, 0.05) 55%, transparent 75%);
+      background: radial-gradient(ellipse at center, rgba(255, 182, 132, 0.85) 0%, rgba(255, 198, 158, 0.45) 55%, transparent 75%);
       filter: blur(3.5px);
       border-radius: 9999px;
       z-index: -1;
@@ -351,7 +351,7 @@
     }
     .visual-image-frame {
       height: 220px;
-      background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+      background: linear-gradient(135deg, #ded5c2 0%, #cfc4ac 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -362,7 +362,7 @@
     }
     .visual-badge-overlay {
       position: absolute; top: 12px; left: 12px;
-      background: rgba(15, 23, 42, 0.85); color: #fff;
+      background: rgba(36, 48, 40, 0.85); color: #fff;
       font-size: 10.5px; font-weight: 700; padding: 3px 8px; border-radius: var(--radius-full);
     }
     .visual-caption-box {
@@ -424,8 +424,8 @@
     .visual-3d-box {
       width: 100%;
       height: 280px;
-      background: #eef2f6;
-      border: 2px dashed #cbd5e1;
+      background: #e9e3d5;
+      border: 2px dashed #cfc5af;
       border-radius: var(--radius-md);
       display: flex;
       flex-direction: column;
@@ -435,7 +435,7 @@
       cursor: crosshair;
       transition: var(--transition);
     }
-    .visual-3d-box:hover { background: #e2e8f0; }
+    .visual-3d-box:hover { background: #e2dbca; }
     .visual-3d-icon { font-size: 44px; margin-bottom: 8px; }
     .magnifier-hint {
       position: absolute; bottom: 12px; right: 12px;
@@ -632,7 +632,7 @@
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      background: conic-gradient(var(--color-sage) 0% 88%, #d8dee4 88% 100%);
+      background: conic-gradient(var(--color-sage) 0% 88%, #e2ded5 88% 100%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -931,7 +931,7 @@
       background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(157, 150, 196, 0.2);
+      border: 1px solid rgba(210, 110, 46, 0.35);
       padding: 0 16px 0 14px;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
       transform: translateX(-4px);
@@ -1013,13 +1013,13 @@
     .story-visual-canvas {
       width: 100%;
       height: 250px;
-      background: #F6F5FA;
+      background: #1a231e;
       border-radius: var(--radius-md);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: #9D96C4;
+      color: #a0c2b2;
       position: relative;
       overflow: hidden;
       cursor: crosshair;
@@ -1082,14 +1082,14 @@
       align-items: center;
     }
     .story-interactive-stage {
-      background: #F6F5FA;
+      background: #18261e;
       border-radius: var(--radius-md);
       height: 240px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: #3E3A4C;
+      color: #e2f0e8;
       position: relative;
       padding: 20px;
     }
@@ -1196,7 +1196,7 @@
     }
     .story92-hero-sub {
       font-size: 19px;
-      color: #78738A;
+      color: #e2dbca;
       line-height: 1.85;
       max-width: 740px;
       margin-bottom: 34px;
@@ -1249,8 +1249,8 @@
     }
     .story92-bento-card.wide { grid-column: span 2; }
     .story92-bento-card.alert-bg {
-      background: #F8F7FC;
-      border-color: #EAE8F4;
+      background: #fdf5f2;
+      border-color: #f6d4c4;
     }
 
     /* Review Grid (Dense & No Empty Space) */
@@ -1262,7 +1262,7 @@
     }
     .story92-review-item {
       background: #FFFFFF;
-      border: 1px solid #EAE8F4;
+      border: 1px solid #f6d4c4;
       border-radius: var(--radius-md);
       padding: 16px;
       display: flex;
@@ -1334,28 +1334,28 @@
       margin-top: 40px;
     }
     .story92-blueprint-card {
-      background: #3E3A4C;
+      background: #1c2420;
       color: #FFFFFF;
-      border: 1px solid #43554E;
+      border: 1px solid #33433a;
       border-radius: var(--radius-lg);
       overflow: hidden;
       transform-style: preserve-3d;
       transition: transform 0.1s ease-out, box-shadow 0.2s ease-out;
     }
     .story92-blueprint-card:hover {
-      box-shadow: 0 20px 40px rgba(157, 150, 196, 0.2);
+      box-shadow: 0 20px 40px rgba(42, 122, 82, 0.25);
     }
     .story92-blueprint-ph {
       height: 190px;
-      background: #2F2B3A;
-      border-bottom: 1px dashed #78738A;
+      background: #131b16;
+      border-bottom: 1px dashed #4a5d52;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 16px;
       text-align: center;
-      color: #E2DFEE;
+      color: #a8d5be;
     }
 
     /* Before/After Drag Slider */
@@ -1379,7 +1379,7 @@
       text-align: center;
     }
     .story92-ba-layer.before {
-      background: #F6F5FA;
+      background: #fde8e4;
       color: #c53030;
       width: 100%;
     }
@@ -1473,8 +1473,8 @@
     .story92-problem-card:nth-child(4) { z-index: 40; top: 145px; }
     
     .story92-problem-card.alert-card {
-      background: #F8F7FC;
-      border-color: #EAE8F4;
+      background: #fdf8f6;
+      border-color: #f6d4c4;
     }
     .story92-problem-badge {
       display: inline-flex;
@@ -1483,7 +1483,7 @@
       font-size: 12px;
       font-weight: 800;
       color: var(--color-terracotta);
-      background: #F6F5FA;
+      background: #fde8e4;
       padding: 5px 12px;
       border-radius: var(--radius-full);
       margin-bottom: 12px;
@@ -1553,7 +1553,7 @@
       top: 68px;
       left: 0;
       right: 0;
-      background: rgba(62, 58, 76, 0.98);
+      background: rgba(17, 24, 19, 0.98);
       backdrop-filter: blur(20px);
       border-bottom: 2px solid var(--color-terracotta);
       padding: 20px 18px;
@@ -1584,14 +1584,14 @@
       transition: all 0.2s ease;
     }
     .mobile-menu-item:hover, .mobile-menu-item:active {
-      background: rgba(157, 150, 196, 0.2);
+      background: rgba(42, 122, 82, 0.35);
       border-color: var(--color-forest-light);
     }
     .mobile-menu-icon {
       font-size: 18px;
       width: 32px;
       height: 32px;
-      background: rgba(157, 150, 196, 0.2);
+      background: rgba(210,110,46,0.22);
       color: var(--color-terracotta-light);
       border-radius: var(--radius-sm);
       display: flex;
@@ -1607,7 +1607,7 @@
     }
     .mobile-menu-desc {
       font-size: 11px;
-      color: #78738A;
+      color: #a5b5ac;
       margin-top: 2px;
     }
 
@@ -2045,84 +2045,84 @@
 
   
     /* ==========================================================================
-       [SEUMIM 노르딕 테크-웰니스 (1+2 하이브리드) 마스터 디자인 시스템]
-       1. Base Background: 쿨 스톤 화이트 (#FAFAFC)
-       2. Typography: 딥 슬레이트 차콜 (#3E3A4C) & 쿨 차콜 (#78738A)
-       3. Primary (메인 CTA / 강조): 노르딕 딥 틸 (#9D96C4)
-       4. Secondary (상태 알림 / 보조): 바이오 세이지 틸 (#ABA5D0)
-       5. 정밀 인체공학 라운딩 시스템 (6px, 12px, 18px, 9999px)
+       [SEUMIM 확정 2030 웜 뉴트럴 & 유기적 조약돌 마스터 디자인 시스템]
+       1. Base Background: 단일 크림 오트밀 (#FDFBF7)
+       2. Typography: 웜 브라운 차콜 (#4A433E)
+       3. Primary (메인 CTA / 강조): 소프트 피치 코랄 (#E5A99B)
+       4. Secondary (상태 알림 / 보조): 뮤티드 세이지 (#B4C4B1)
+       5. 1번 유기적 조약돌 둥글기 시스템 (16px ~ 36px, 9999px)
        ========================================================================== */
 
     :root {
-      --bg-base: #FAFAFC;
-      --bg-surface: #FFFFFF;
-      --bg-surface-elevated: #F6F5FA;
+      --bg-base: #FDFBF7;
+      --bg-surface: #F7F3EB;
+      --bg-surface-elevated: #EFE8DC;
       --bg-card: #FFFFFF;
-      --bg-card-hover: #F8FAFC;
-      --bg-card-alt: #F6F5FA;
-      --bg-accent-light: #F6F5FA;
+      --bg-card-hover: #FAF6EE;
+      --bg-card-alt: #FDFBF7;
+      --bg-accent-light: #FDF5F3;
 
-      --color-text-primary: #3E3A4C;
-      --color-text-secondary: #78738A;
-      --color-text-muted: #7E8C99;
+      --color-text-primary: #4A433E;
+      --color-text-secondary: #7A7067;
+      --color-text-muted: #9E9388;
       --color-text-inverse: #FFFFFF;
 
-      --color-primary: #9D96C4;
-      --color-primary-hover: #8780B0;
-      --color-primary-light: #F6F5FA;
-      --color-secondary: #ABA5D0;
-      --color-secondary-hover: #217268;
-      --color-secondary-light: #E2ECE9;
-      --color-secondary-text: #8780B0;
+      --color-primary: #E5A99B;
+      --color-primary-hover: #D49586;
+      --color-primary-light: #FDF5F3;
+      --color-secondary: #B4C4B1;
+      --color-secondary-hover: #9FB39B;
+      --color-secondary-light: #EFF4EE;
+      --color-secondary-text: #4C6649;
 
-      --color-terracotta: #9D96C4;
-      --color-forest: #3E3A4C;
-      --color-sage: #ABA5D0;
-      --color-wood: #78738A;
+      --color-terracotta: #E5A99B;
+      --color-forest: #4A433E;
+      --color-sage: #B4C4B1;
+      --color-wood: #7A7067;
 
-      --color-border: #EAE8F4;
-      --color-border-light: #E9EEF3;
-      --color-border-soft: rgba(27, 36, 42, 0.08);
+      --color-border: #E8E1D3;
+      --color-border-light: #F2ECE1;
+      --color-border-soft: rgba(74, 67, 62, 0.08);
 
-      --font-gowun: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      --font-serif: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      --font-maruburi: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-gowun: 'Gowun Batang', 'Noto Serif KR', serif;
+      --font-serif: 'Gowun Batang', 'Noto Serif KR', serif;
+      --font-maruburi: 'Gowun Batang', 'Noto Serif KR', serif;
       --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-      --radius-sm: 6px;
-      --radius-md: 12px;
-      --radius-lg: 18px;
-      --radius-xl: 24px;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 26px;
+      --radius-xl: 36px;
       --radius-full: 9999px;
 
-      --shadow-sm: 0 2px 8px rgba(27, 36, 42, 0.04);
-      --shadow-md: 0 6px 20px rgba(27, 36, 42, 0.06);
-      --shadow-lg: 0 14px 36px rgba(27, 36, 42, 0.09);
+      --shadow-sm: 0 2px 8px rgba(74, 67, 62, 0.04);
+      --shadow-md: 0 6px 20px rgba(74, 67, 62, 0.05);
+      --shadow-lg: 0 14px 36px rgba(74, 67, 62, 0.07);
 
       --container-max: 1240px;
       --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     body, #page-main, #page-shop, #page-story {
-      background-color: #FAFAFC !important;
-      color: #3E3A4C !important;
+      background-color: #FDFBF7 !important;
+      color: #4A433E !important;
       font-family: var(--font-sans);
     }
 
-    /* 상단 고정 헤더 슬림화 */
+    /* 상단 고정 헤더 슬림화 (121px 정상화) */
     .site-header-fixed {
       position: fixed;
       top: 0; left: 0; right: 0; width: 100%; z-index: 1100;
       background: transparent;
-      box-shadow: 0 4px 20px rgba(27, 36, 42, 0.06);
+      box-shadow: 0 4px 20px rgba(74, 67, 62, 0.06);
     }
     .page-switch-bar {
-      background: #3E3A4C !important; color: #FFFFFF !important; padding: 10px 24px !important;
+      background: #4A433E !important; color: #FFFFFF !important; padding: 10px 24px !important;
       display: flex !important; justify-content: space-between !important; align-items: center !important; font-size: 13px !important;
       border-bottom: 1px solid rgba(255,255,255,0.12) !important;
     }
     .header-gnb {
-      background: rgba(255, 255, 255, 0.96) !important;
+      background: rgba(253, 251, 247, 0.98) !important;
       backdrop-filter: blur(12px) !important;
       border-bottom: 1px solid var(--color-border) !important;
     }
@@ -2134,90 +2134,87 @@
     }
     .mobile-menu-drawer.open { display: block !important; }
 
-    /* 샤프하고 정밀한 테크-웰니스 뱃지 태그 */
+    /* 1px 미세선 이솝 스타일 */
     .section-tag, .hero-eyebrow, .catalog-tag, .journey-tag {
-      display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 8px !important;
-      color: #9D96C4 !important; font-family: var(--font-sans) !important; font-size: 12.5px !important;
-      font-weight: 800 !important; background: #F6F5FA !important; border: 1px solid #E7E5F2 !important; padding: 4px 14px !important;
-      border-radius: 9999px !important; letter-spacing: 0.04em !important;
+      display: flex !important; align-items: center !important; justify-content: center !important; gap: 14px !important;
+      color: #E5A99B !important; font-family: var(--font-gowun), serif !important; font-size: 13.5px !important;
+      font-weight: 700 !important; background: transparent !important; border: none !important; padding: 0 !important;
     }
     .section-tag::before, .section-tag::after,
     .hero-eyebrow::before, .hero-eyebrow::after,
     .catalog-tag::before, .catalog-tag::after,
     .journey-tag::before, .journey-tag::after {
-      display: none !important;
+      content: '' !important; display: inline-block !important; width: 28px !important; height: 1px !important;
+      background: #E5A99B !important; opacity: 0.85 !important;
     }
 
-    /* 노르딕 딥 틸 텍스트 하이라이트 */
-    .highlight-peach, .highlight-wave-sage {
-      background: linear-gradient(180deg, transparent 60%, rgba(157, 150, 196, 0.14) 60%) !important;
-      color: #9D96C4 !important; display: inline !important; padding: 0 4px !important; font-weight: 800 !important;
-    }
-    .highlight-wave-sage::after, .highlight-peach::after {
-      display: none !important;
+    /* 4번: 피치 코랄 틴트 띠 */
+    .highlight-peach {
+      background: linear-gradient(180deg, transparent 60%, rgba(229, 169, 155, 0.34) 60%) !important;
+      display: inline !important; padding: 0 4px !important;
     }
 
-    /* 노르딕 딥 틸 듀얼 CTA */
+    /* 조약돌 둥근 듀얼 CTA */
     .btn-primary, .btn-accent, .floating-bottom-bar .btn-accent {
-      background: #9D96C4 !important; color: #FFFFFF !important;
-      border: 1.5px solid #9D96C4 !important; border-radius: 9999px !important;
-      box-shadow: 0 4px 14px rgba(157, 150, 196, 0.2) !important; font-weight: 800 !important;
+      background: #E5A99B !important; color: #FFFFFF !important;
+      border: 1.5px solid #E5A99B !important; border-radius: 9999px !important;
+      box-shadow: 0 4px 14px rgba(229, 169, 155, 0.35) !important; font-weight: 700 !important;
       padding: 12px 26px !important; font-size: 14px !important; display: inline-flex !important;
       align-items: center !important; justify-content: center !important; gap: 6px !important; transition: var(--transition) !important;
     }
-    .btn-primary:hover, .btn-accent:hover { background: #8780B0 !important; border-color: #8780B0 !important; transform: translateY(-1px) !important; }
+    .btn-primary:hover, .btn-accent:hover { background: #D49586 !important; border-color: #D49586 !important; transform: translateY(-1px) !important; }
     .btn-secondary {
-      background: #FFFFFF !important; color: #3E3A4C !important;
-      border: 1.5px solid #EAE8F4 !important; border-radius: 9999px !important;
-      font-weight: 800 !important; padding: 12px 26px !important; font-size: 14px !important;
+      background: #FFFFFF !important; color: #4A433E !important;
+      border: 1.5px solid #E5A99B !important; border-radius: 9999px !important;
+      font-weight: 700 !important; padding: 12px 26px !important; font-size: 14px !important;
       display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; transition: var(--transition) !important;
     }
-    .btn-secondary:hover { background: #F6F5FA !important; color: #9D96C4 !important; border-color: #9D96C4 !important; }
+    .btn-secondary:hover { background: #FDF5F3 !important; color: #D49586 !important; border-color: #D49586 !important; }
 
-    /* 정밀 인체공학 카드 시스템 */
-    .pride-metrics-bar { border-radius: 16px !important; background: #FFFFFF !important; border: 1.5px solid #EAE8F4 !important; box-shadow: var(--shadow-sm) !important; }
-    .featured-card { border-radius: 16px !important; border: 1.5px solid #EAE8F4 !important; background: #FFFFFF !important; box-shadow: var(--shadow-sm) !important; }
-    .explore-catalog-banner, .fit-finder-banner { border-radius: 20px !important; border: 1.5px solid #EAE8F4 !important; }
-    .one-view-card { border-radius: 14px !important; border: 1.5px solid #EAE8F4 !important; background: #FFFFFF !important; }
-    .hud-card, .center-card, .proof-stat-card, .review-card, .faq-item { border-radius: 16px !important; border: 1.5px solid #EAE8F4 !important; background: #FFFFFF !important; }
+    /* 1번 유기적 조약돌 둥글기 시스템 */
+    .pride-metrics-bar { border-radius: 36px !important; background: #FFFFFF !important; border: 1.5px solid #E8E1D3 !important; }
+    .featured-card { border-radius: 26px !important; border: 1.5px solid #E8E1D3 !important; background: #FFFFFF !important; }
+    .explore-catalog-banner, .fit-finder-banner { border-radius: 32px !important; border: 1.5px solid #E8E1D3 !important; }
+    .one-view-card { border-radius: 16px !important; border: 1.5px solid #E8E1D3 !important; background: #FFFFFF !important; }
+    .hud-card, .center-card, .proof-stat-card, .review-card, .faq-item { border-radius: 20px !important; border: 1.5px solid #E8E1D3 !important; background: #FFFFFF !important; }
 
     /* 히어로 2열 스플릿 앵커 레이아웃 */
     .hero-section { padding: 60px 0 40px !important; background: var(--bg-base) !important; }
     .hero-split-grid { display: grid !important; grid-template-columns: 1.15fr 0.85fr !important; gap: 44px !important; align-items: center !important; margin-bottom: 48px !important; }
     .hero-content-left { text-align: left !important; }
     .hero-content-left .hero-eyebrow { justify-content: flex-start !important; margin-bottom: 14px !important; }
-    .hero-manifesto-title { font-family: var(--font-sans) !important; font-size: 40px !important; font-weight: 900 !important; line-height: 1.35 !important; color: #3E3A4C !important; letter-spacing: -0.02em !important; margin-bottom: 18px !important; }
-    .hero-subcopy { font-size: 16px !important; color: #78738A !important; line-height: 1.75 !important; margin-bottom: 28px !important; max-width: 520px !important; }
+    .hero-manifesto-title { font-family: var(--font-gowun), serif !important; font-size: 40px !important; font-weight: 800 !important; line-height: 1.35 !important; color: #4A433E !important; letter-spacing: -0.02em !important; margin-bottom: 18px !important; }
+    .hero-subcopy { font-size: 16px !important; color: #7A7067 !important; line-height: 1.75 !important; margin-bottom: 28px !important; max-width: 520px !important; }
     .hero-cta-group { display: flex !important; gap: 14px !important; align-items: center !important; flex-wrap: wrap !important; }
 
     .hero-visual-anchor {
-      background: #F6F5FA !important; border: 1.5px solid #EAE8F4 !important; border-radius: 20px !important;
+      background: #F7F3EB !important; border: 1.5px solid #E8E1D3 !important; border-radius: 32px !important;
       padding: 24px !important; box-shadow: var(--shadow-md) !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; height: 380px !important;
     }
     .hero-visual-inner {
-      background: #FFFFFF !important; border: 1px dashed #CBD5E1 !important; border-radius: 14px !important; height: 240px !important;
+      background: #FFFFFF !important; border: 1px dashed #E8E1D3 !important; border-radius: 22px !important; height: 240px !important;
       display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; text-align: center !important; padding: 20px !important; position: relative !important;
     }
-    .hero-visual-badge-top { position: absolute !important; top: 14px !important; left: 14px !important; background: #F6F5FA !important; color: #8780B0 !important; border: 1px solid #E7E5F2 !important; padding: 4px 10px !important; border-radius: 9999px !important; font-size: 11px !important; font-weight: 800 !important; }
+    .hero-visual-badge-top { position: absolute !important; top: 14px !important; left: 14px !important; background: #EFF4EE !important; color: #4C6649 !important; border: 1px solid #B4C4B1 !important; padding: 4px 10px !important; border-radius: 9999px !important; font-size: 11px !important; font-weight: 800 !important; }
     .hero-visual-caption { margin-top: 14px !important; display: flex !important; justify-content: space-between !important; align-items: center !important; }
-    .hero-caption-title { font-family: var(--font-sans) !important; font-size: 15px !important; font-weight: 800 !important; color: #3E3A4C !important; }
-    .hero-caption-desc { font-size: 12.5px !important; color: #7E8C99 !important; }
+    .hero-caption-title { font-family: var(--font-gowun), serif !important; font-size: 15px !important; font-weight: 800 !important; color: #4A433E !important; }
+    .hero-caption-desc { font-size: 12.5px !important; color: #7A7067 !important; }
 
     /* 탈박스화 브랜드 스토리 섹션 */
     .journey-section { padding: 80px 0 !important; background: var(--bg-base) !important; }
     .journey-grid { display: flex !important; flex-direction: column !important; gap: 64px !important; max-width: 1080px !important; margin: 0 auto !important; }
     .journey-chapter-row { display: grid !important; grid-template-columns: 1fr 1.2fr !important; gap: 48px !important; align-items: center !important; padding-bottom: 56px !important; border-bottom: 1px solid var(--color-border) !important; }
     .journey-chapter-row:last-child { border-bottom: none !important; padding-bottom: 0 !important; }
-    .journey-visual-open { background: #F6F5FA !important; border: 1px solid var(--color-border) !important; border-radius: 16px !important; padding: 32px 24px !important; text-align: center !important; box-shadow: var(--shadow-sm) !important; }
+    .journey-visual-open { background: var(--bg-surface) !important; border: 1px solid var(--color-border) !important; border-radius: 22px !important; padding: 32px 24px !important; text-align: center !important; box-shadow: var(--shadow-sm) !important; }
     .journey-text-open .journey-tag { justify-content: flex-start !important; margin-bottom: 10px !important; }
-    .journey-text-open h3 { font-family: var(--font-sans) !important; font-size: 25px !important; font-weight: 800 !important; color: #3E3A4C !important; line-height: 1.45 !important; margin-bottom: 16px !important; }
-    .journey-text-open p { font-size: 15px !important; color: #78738A !important; line-height: 1.8 !important; margin-bottom: 14px !important; }
-    .journey-quote-box { background: #F6F5FA !important; border-left: 3px solid #9D96C4 !important; border-radius: 0 12px 12px 0 !important; padding: 14px 18px !important; margin-top: 16px !important; }
-    .journey-quote-box p { margin: 0 !important; font-size: 14px !important; color: #3E3A4C !important; font-weight: 700 !important; }
+    .journey-text-open h3 { font-family: var(--font-gowun), serif !important; font-size: 25px !important; font-weight: 800 !important; color: #4A433E !important; line-height: 1.45 !important; margin-bottom: 16px !important; }
+    .journey-text-open p { font-size: 15px !important; color: #7A7067 !important; line-height: 1.8 !important; margin-bottom: 14px !important; }
+    .journey-quote-box { background: var(--bg-surface) !important; border-left: 3px solid #E5A99B !important; border-radius: 0 12px 12px 0 !important; padding: 14px 18px !important; margin-top: 16px !important; }
+    .journey-quote-box p { margin: 0 !important; font-size: 14px !important; color: #4A433E !important; font-weight: 600 !important; }
 
-    /* 자가진단 위젯 */
+    /* [7번 자가진단 위젯: 4개 버튼 감성 지그재그] */
     .balance-checker-container {
-      background: var(--bg-surface) !important; border: 1.5px solid var(--color-border) !important; border-radius: var(--radius-lg) !important;
+      background: var(--bg-surface) !important; border: 1.5px solid var(--color-border) !important; border-radius: var(--radius-xl) !important;
       padding: 36px 32px !important; margin: 48px auto !important; max-width: 980px !important; box-shadow: var(--shadow-sm) !important; text-align: center !important;
     }
     .checker-chip-grid {
@@ -2225,29 +2222,37 @@
       gap: 18px 32px !important; max-width: 780px !important; margin: 28px auto 42px !important; padding: 10px 16px 20px !important;
     }
     .checker-chip {
-      width: 100% !important; text-align: center !important; padding: 13px 22px !important; font-size: 14px !important; font-weight: 800 !important;
-      background: #FFFFFF !important; border: 1.5px solid var(--color-border) !important; border-radius: 9999px !important; color: #3E3A4C !important;
-      cursor: pointer !important; transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important; font-family: var(--font-sans) !important;
-      box-shadow: 0 2px 8px rgba(27, 36, 42, 0.03) !important;
+      width: 100% !important; text-align: center !important; padding: 13px 22px !important; font-size: 14px !important; font-weight: 700 !important;
+      background: #FFFFFF !important; border: 1.5px solid var(--color-border) !important; border-radius: 9999px !important; color: #4A433E !important;
+      cursor: pointer !important; transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important; font-family: var(--font-gowun), serif !important;
+      box-shadow: 0 2px 8px rgba(74, 67, 62, 0.03) !important;
     }
-    .checker-chip:hover { border-color: #9D96C4 !important; background: #F6F5FA !important; box-shadow: 0 6px 16px rgba(157, 150, 196, 0.12) !important; }
-    .checker-chip.active { background: #9D96C4 !important; color: #FFFFFF !important; border-color: #9D96C4 !important; box-shadow: 0 6px 18px rgba(157, 150, 196, 0.2) !important; }
+    .checker-chip:nth-child(1) { transform: translateY(0px) !important; }
+    .checker-chip:nth-child(2) { transform: translateY(16px) !important; }
+    .checker-chip:nth-child(3) { transform: translateY(4px) !important; }
+    .checker-chip:nth-child(4) { transform: translateY(20px) !important; }
+    .checker-chip:hover { border-color: #E5A99B !important; background: #FDFBF7 !important; box-shadow: 0 6px 16px rgba(229, 169, 155, 0.25) !important; }
+    .checker-chip:nth-child(1):hover { transform: translateY(-3px) scale(1.02) !important; }
+    .checker-chip:nth-child(2):hover { transform: translateY(13px) scale(1.02) !important; }
+    .checker-chip:nth-child(3):hover { transform: translateY(1px) scale(1.02) !important; }
+    .checker-chip:nth-child(4):hover { transform: translateY(17px) scale(1.02) !important; }
+    .checker-chip.active { background: #E5A99B !important; color: #FFFFFF !important; border-color: #E5A99B !important; box-shadow: 0 6px 18px rgba(229, 169, 155, 0.4) !important; }
 
     .checker-result-card {
       background: #FFFFFF !important; border: 1.5px solid var(--color-secondary) !important; border-radius: var(--radius-md) !important;
       padding: 18px 22px !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 16px !important; text-align: left !important;
     }
 
-    /* 300인 전문가 임상 갤러리 */
+    /* 9번: 300인 전문가 임상 갤러리 */
     .clinical-proof-grid { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 20px !important; margin: 28px 0 !important; }
     .clinical-card { background: #FFFFFF !important; border: 1.5px solid var(--color-border) !important; border-radius: var(--radius-md) !important; padding: 24px !important; text-align: left !important; box-shadow: var(--shadow-sm) !important; }
     .clinical-rating { color: var(--color-primary) !important; font-size: 14px !important; font-weight: 800 !important; margin-bottom: 8px !important; }
 
     /* 플로팅 바 */
     .floating-bottom-bar {
-      position: fixed !important; bottom: 0 !important; left: 0 !important; right: 0 !important; background: #3E3A4C !important; color: #FFFFFF !important;
+      position: fixed !important; bottom: 0 !important; left: 0 !important; right: 0 !important; background: #4A433E !important; color: #FDFBF7 !important;
       padding: 12px 24px !important; display: flex !important; justify-content: space-between !important; align-items: center !important; z-index: 1000 !important;
-      border-top: 1px solid rgba(255,255,255,0.12) !important; box-shadow: 0 -4px 20px rgba(27, 36, 42, 0.15) !important;
+      border-top: 1px solid rgba(255,255,255,0.12) !important; box-shadow: 0 -4px 20px rgba(74, 67, 62, 0.12) !important;
     }
     .floating-bottom-bar .badge-price { background: var(--color-primary) !important; color: #FFFFFF !important; font-size: 11px !important; font-weight: 800 !important; padding: 3px 8px !important; border-radius: var(--radius-full) !important; margin-right: 8px !important; }
 
@@ -2263,7 +2268,8 @@
       .journey-chapter-row { grid-template-columns: 1fr !important; }
     }
 
-    /* 히어로 텍스트 수직 정렬 */
+  
+    /* [히어로 텍스트 수직 시작선 완벽 일치 정렬 (Left-align Axis)] */
     .hero-content-left {
       text-align: left !important;
       display: flex !important;
@@ -2273,7 +2279,7 @@
     .hero-content-left .hero-eyebrow {
       justify-content: flex-start !important;
       margin: 0 0 16px 0 !important;
-      padding: 4px 14px !important;
+      padding: 0 !important;
       text-align: left !important;
     }
     .hero-manifesto-title {
@@ -2297,6 +2303,33 @@
     }
     .hero-cta-group .btn-primary {
       margin-left: 0 !important;
+    }
+
+  
+    /* ==========================================================================
+       [타입 2번 + 컬러 1번: 부드러운 소프트 세이지 그린 손그림 물결 밑줄]
+       ========================================================================== */
+    .highlight-wave-sage, .highlight-peach {
+      position: relative !important;
+      display: inline-block !important;
+      color: #4A433E !important;
+      font-weight: 800 !important;
+      background: none !important;
+      padding: 0 4px !important;
+      z-index: 2 !important;
+    }
+    .highlight-wave-sage::after, .highlight-peach::after {
+      content: '' !important;
+      position: absolute !important;
+      left: -2px !important;
+      right: -2px !important;
+      bottom: -6px !important;
+      height: 11px !important;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 18' preserveAspectRatio='none'%3E%3Cpath d='M2,9 C22,3 42,15 62,9 C82,3 102,15 118,9' fill='none' stroke='%23B4C4B1' stroke-width='5' stroke-linecap='round' opacity='0.75'/%3E%3C/svg%3E") !important;
+      background-repeat: no-repeat !important;
+      background-size: 100% 100% !important;
+      z-index: -1 !important;
+      pointer-events: none !important;
     }
 
   </style>
@@ -2458,10 +2491,10 @@
             <div class="hero-visual-inner">
               <span class="hero-visual-badge-top">🌿 99.8% 출근복 속 완벽 은폐</span>
               <div style="font-size:42px; margin-bottom:8px;">☕ 👕</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#3E3A4C; margin-bottom:4px;">
+              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#4A433E; margin-bottom:4px;">
                 [일상 실착 앰비언트 무드컷]
               </div>
-              <div style="font-size:12.5px; color:#78738A; line-height:1.5;">
+              <div style="font-size:12.5px; color:#7A7067; line-height:1.5;">
                 셔츠 속에 0.1mm 초슬림 넥&숄더 밴드를 착용하고<br>편안하게 데스크 업무를 보는 자연스러운 일상 실루엣
               </div>
             </div>
@@ -2470,7 +2503,7 @@
                 <div class="hero-caption-title">0.1mm 초박형 센서 섬유 직조</div>
                 <div class="hero-caption-desc">38g 깃털 같은 무게로 피로도 제로</div>
               </div>
-              <div style="font-size:11.5px; font-weight:800; color:#9D96C4; background:#F6F5FA; padding:4px 10px; border-radius:9999px;">
+              <div style="font-size:11.5px; font-weight:800; color:#E5A99B; background:#FDF5F3; padding:4px 10px; border-radius:9999px;">
                 실사 화보 슬롯
               </div>
             </div>
@@ -2506,10 +2539,10 @@
       <div class="container">
         <div style="text-align:center; margin-bottom:56px;">
           <div class="journey-tag">스밈의 철학 · 우리가 걸어온 길</div>
-          <h2 style="font-family:var(--font-gowun), serif; font-size:32px; font-weight:800; color:#3E3A4C; margin-top:12px; letter-spacing:-0.02em;">
+          <h2 style="font-family:var(--font-gowun), serif; font-size:32px; font-weight:800; color:#4A433E; margin-top:12px; letter-spacing:-0.02em;">
             억지로 조이지 않고, 일상 속에 바른 균형이 스며들도록
           </h2>
-          <p style="font-size:16px; color:#78738A; max-width:640px; margin:12px auto 0; line-height:1.7;">
+          <p style="font-size:16px; color:#7A7067; max-width:640px; margin:12px auto 0; line-height:1.7;">
             스밈(SEUMIM)이 탄생한 이유와 3년간의 인체공학 연구 및 300인 전문가 실착 검증 여정을 들려드립니다.
           </p>
         </div>
@@ -2517,11 +2550,11 @@
           <div class="journey-chapter-row">
             <div class="journey-visual-open">
               <div style="font-size:36px; margin-bottom:12px;">🧵</div>
-              <div style="font-size:16px; font-weight:800; color:#3E3A4C; margin-bottom:8px;">[3년 450번의 원사 배합 실험]</div>
-              <p style="font-size:14px; color:#78738A; line-height:1.6; margin:0;">
+              <div style="font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">[3년 450번의 원사 배합 실험]</div>
+              <p style="font-size:14px; color:#7A7067; line-height:1.6; margin:0;">
                 머리카락보다 얇은 나노 탄성 섬유를 무봉제로 직조하여 이물감 제로와 100회 물세탁 내구성을 완성했습니다.
               </p>
-              <div style="margin-top:14px; display:inline-block; padding:4px 12px; background:#FFFFFF; border-radius:9999px; border:1px solid #E2E8F0; font-size:12px; color:#9D96C4; font-weight:700;">
+              <div style="margin-top:14px; display:inline-block; padding:4px 12px; background:#FFFFFF; border-radius:9999px; border:1px solid #E8E1D3; font-size:12px; color:#E5A99B; font-weight:700;">
                 실사 화보 01 · 일상의 편안함
               </div>
             </div>
@@ -2549,15 +2582,15 @@
             </div>
             <div class="journey-visual-open">
               <div style="font-size:36px; margin-bottom:12px;">⚖️</div>
-              <div style="font-size:16px; font-weight:800; color:#3E3A4C; margin-bottom:8px;">[기존 강제 교정기 vs 스밈 0.1mm 코어웨어]</div>
+              <div style="font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">[기존 강제 교정기 vs 스밈 0.1mm 코어웨어]</div>
               <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px; text-align:left;">
-                <div style="background:#FFFFFF; padding:10px 12px; border-radius:12px; border:1px solid #E2E8F0; font-size:12.5px;">
-                  <span style="color:#EF4444; font-weight:800;">기존 교정기 ✕</span><br>
+                <div style="background:#FFFFFF; padding:10px 12px; border-radius:12px; border:1px solid #E8E1D3; font-size:12.5px;">
+                  <span style="color:#C25442; font-weight:800;">기존 교정기 ✕</span><br>
                   • 250g 무거운 쇠 와이어<br>
                   • 숨 막히는 강제 늑골 압박
                 </div>
-                <div style="background:#FFFFFF; padding:10px 12px; border-radius:12px; border:1px solid #9D96C4; font-size:12.5px;">
-                  <span style="color:#8780B0; font-weight:800;">스밈 0.1mm ◯</span><br>
+                <div style="background:#FFFFFF; padding:10px 12px; border-radius:12px; border:1px solid #B4C4B1; font-size:12.5px;">
+                  <span style="color:#4C6649; font-weight:800;">스밈 0.1mm ◯</span><br>
                   • 38g 깃털 같은 초경량<br>
                   • 99.8% 옷 속 완벽 은폐
                 </div>
@@ -2567,11 +2600,11 @@
           <div class="journey-chapter-row">
             <div class="journey-visual-open">
               <div style="font-size:36px; margin-bottom:12px;">🩺</div>
-              <div style="font-size:16px; font-weight:800; color:#3E3A4C; margin-bottom:8px;">[300+ 현업 전문가 실착 임상 검증]</div>
-              <p style="font-size:14px; color:#78738A; line-height:1.6; margin:0;">
+              <div style="font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">[300+ 현업 전문가 실착 임상 검증]</div>
+              <p style="font-size:14px; color:#7A7067; line-height:1.6; margin:0;">
                 정형외과 의사, 물리치료사, IT 개발자들이 3주간 일상에서 착용하고 통증 87% 감소 효과를 직접 검증했습니다.
               </p>
-              <div style="margin-top:14px; display:inline-block; padding:4px 12px; background:#F6F5FA; border-radius:9999px; border:1px solid #9D96C4; font-size:12px; color:#8780B0; font-weight:700;">
+              <div style="margin-top:14px; display:inline-block; padding:4px 12px; background:#EFF4EE; border-radius:9999px; border:1px solid #B4C4B1; font-size:12px; color:#4C6649; font-weight:700;">
                 실착 임상 만족도 99.4%
               </div>
             </div>
@@ -2731,10 +2764,10 @@
     <!-- [7번: 3초 체형 밸런스 파인더 자가진단 위젯 (지그재그 버튼)] -->
     <div class="balance-checker-container" id="self-checker-sec">
       <div class="section-tag">3초 맞춤 처방 · 체형 밸런스 파인더</div>
-      <h3 style="font-family:var(--font-gowun), serif; font-size:24px; font-weight:800; color:#3E3A4C; margin:10px 0 6px;">
+      <h3 style="font-family:var(--font-gowun), serif; font-size:24px; font-weight:800; color:#4A433E; margin:10px 0 6px;">
         "당신의 하루 중 가장 치열한 작업 환경은 어디인가요?"
       </h3>
-      <p style="font-size:14.5px; color:#78738A; margin:0;">
+      <p style="font-size:14.5px; color:#7A7067; margin:0;">
         작업 환경을 선택하시면, 신체 부하를 분산시키는 <span class="highlight-peach">0.1mm 맞춤 코어웨어 조합</span>을 즉시 처방해 드립니다.
       </p>
       <div class="checker-chip-grid">
@@ -2745,15 +2778,15 @@
       </div>
       <div class="checker-result-card" id="checker-result-box">
         <div style="display:flex; align-items:center; gap:16px;">
-          <div style="font-size:32px; background:#F6F5FA; width:54px; height:54px; border-radius:9999px; display:flex; align-items:center; justify-content:center;">
+          <div style="font-size:32px; background:#EFF4EE; width:54px; height:54px; border-radius:9999px; display:flex; align-items:center; justify-content:center;">
             🌿
           </div>
           <div>
-            <div style="font-size:12.5px; color:#8780B0; font-weight:800;">[모니터 근무 직장인 최적 처방]</div>
-            <div style="font-family:var(--font-gowun), serif; font-size:17px; font-weight:800; color:#3E3A4C; margin:3px 0;">
+            <div style="font-size:12.5px; color:#4C6649; font-weight:800;">[모니터 근무 직장인 최적 처방]</div>
+            <div style="font-family:var(--font-gowun), serif; font-size:17px; font-weight:800; color:#4A433E; margin:3px 0;">
               0.1mm 심리스 넥&숄더 밴드 + 척추 정렬 조끼
             </div>
-            <div style="font-size:13px; color:#78738A;">
+            <div style="font-size:13px; color:#7A7067;">
               키보드 타건 시 발생하는 전방 두부 쏠림 4.2kg 하중을 승모근 뒤쪽으로 0.1초 분산
             </div>
           </div>
@@ -2796,28 +2829,28 @@
           <div class="clinical-proof-grid">
             <div class="clinical-card">
               <div class="clinical-rating">★ 4.9 · 정형외과 전문의 김진우</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#3E3A4C; margin-bottom:8px;">
+              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">
                 "강제 압박 없이 경추 C커브를 살려주는 혁신"
               </div>
-              <p style="font-size:13.5px; color:#78738A; line-height:1.7;">
+              <p style="font-size:13.5px; color:#7A7067; line-height:1.7;">
                 기존 교정기는 늑골을 억누르는데, 스밈 0.1mm는 근육의 고유수용성 감각을 깨워 스스로 척추 정렬을 유지하게 돕습니다.
               </p>
             </div>
             <div class="clinical-card">
               <div class="clinical-rating">★ 5.0 · 물리치료사 이소영</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#3E3A4C; margin-bottom:8px;">
+              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">
                 "99.8% 은폐율 덕분에 출근복에 매일 입습니다"
               </div>
-              <p style="font-size:13.5px; color:#78738A; line-height:1.7;">
+              <p style="font-size:13.5px; color:#7A7067; line-height:1.7;">
                 셔츠 속에 입어도 겉으로 전혀 드러나지 않고, 하루 종일 서서 환자를 볼 때 허리와 골반의 피로도가 80% 이상 줄었습니다.
               </p>
             </div>
             <div class="clinical-card">
               <div class="clinical-rating">★ 4.9 · 풀스택 개발자 박현성</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#3E3A4C; margin-bottom:8px;">
+              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">
                 "14시간 코딩해도 어깨 뭉침이 사라졌습니다"
               </div>
-              <p style="font-size:13.5px; color:#78738A; line-height:1.7;">
+              <p style="font-size:13.5px; color:#7A7067; line-height:1.7;">
                 모니터 앞으로 목이 빨려 들어갈 때마다 지레 탄성 프레임이 부드럽게 받쳐주어 야근 후에도 목덜미가 깃털처럼 가볍습니다.
               </p>
             </div>
@@ -3075,7 +3108,7 @@
         <div style="max-width:820px; text-align:left; margin-left:0; margin-right:auto;">
           
           <!-- 상단 태그 뱃지 -->
-          <span class="section-tag" style="background:rgba(255,255,255,0.15); color:#9D96C4; border:1px solid rgba(255,255,255,0.25); backdrop-filter:blur(8px); padding:6px 16px; font-size:13px; font-weight:800; border-radius:var(--radius-full); display:inline-block; margin-bottom:18px;">
+          <span class="section-tag" style="background:rgba(255,255,255,0.15); color:#a8d5be; border:1px solid rgba(255,255,255,0.25); backdrop-filter:blur(8px); padding:6px 16px; font-size:13px; font-weight:800; border-radius:var(--radius-full); display:inline-block; margin-bottom:18px;">
             ✦ 0.1mm Seamless · 스며드는 다정한 균형
           </span>
 
@@ -3086,7 +3119,7 @@
           </h1>
 
           <!-- 서브 카피 -->
-          <p class="story92-hero-sub" style="font-size:19px; color:#78738A; line-height:1.8; margin-bottom:38px; word-break:keep-all; text-shadow:0 2px 10px rgba(0,0,0,0.5); font-weight:500;">
+          <p class="story92-hero-sub" style="font-size:19px; color:#e2dbca; line-height:1.8; margin-bottom:38px; word-break:keep-all; text-shadow:0 2px 10px rgba(0,0,0,0.5); font-weight:500;">
             하루 9시간 책상 앞, 쇠 와이어와 강제 조임의 고통을 덜어내고 시작된 0.1mm 심리스 혁신 이야기
           </p>
 
@@ -3095,7 +3128,7 @@
             <button class="btn-primary btn-accent" style="padding:16px 36px; font-size:15.5px; font-weight:800; box-shadow:0 10px 28px rgba(210,110,46,0.45); border-radius:var(--radius-full);" onclick="scrollToStorySec('sec-st92-name-origin')">
               스밈의 시작 알아보기 ↓
             </button>
-            <button class="btn-sm-ghost" style="padding:16px 28px; font-size:15.5px; font-weight:700; border:1px solid rgba(255,255,255,0.4); color:#3E3A4C; border-radius:var(--radius-full); backdrop-filter:blur(8px); background:rgba(255,255,255,0.1);" onclick="scrollToStorySec('sec-st92-pillars')">
+            <button class="btn-sm-ghost" style="padding:16px 28px; font-size:15.5px; font-weight:700; border:1px solid rgba(255,255,255,0.4); color:#fff; border-radius:var(--radius-full); backdrop-filter:blur(8px); background:rgba(255,255,255,0.1);" onclick="scrollToStorySec('sec-st92-pillars')">
               3대 다정한 균형 철학 ➔
             </button>
           </div>
@@ -3104,17 +3137,17 @@
           <div style="display:inline-grid; grid-template-columns:repeat(3, auto); gap:32px; padding:16px 28px; background:rgba(21, 29, 24, 0.65); border:1px solid rgba(255,255,255,0.18); border-radius:var(--radius-lg); backdrop-filter:blur(16px); box-shadow:0 16px 32px rgba(0,0,0,0.3);">
             <div style="display:flex; align-items:center; gap:12px;">
               <div style="font-size:22px; font-weight:900; color:#ffffff; font-family:var(--font-maruburi);">0.1mm</div>
-              <div style="font-size:12px; color:#9D96C4; line-height:1.3;">초슬림 무봉제<br><span style="color:#cbd5d0; font-size:11px;">피부 완벽 밀착</span></div>
+              <div style="font-size:12px; color:#a8d5be; line-height:1.3;">초슬림 무봉제<br><span style="color:#cbd5d0; font-size:11px;">피부 완벽 밀착</span></div>
             </div>
             <div style="width:1px; height:32px; background:rgba(255,255,255,0.15);"></div>
             <div style="display:flex; align-items:center; gap:12px;">
-              <div style="font-size:22px; font-weight:900; color:#EAE8F4; font-family:var(--font-maruburi);">38g</div>
-              <div style="font-size:12px; color:#EAE8F4; line-height:1.3;">초경량 에어로<br><span style="color:#cbd5d0; font-size:11px;">어깨 압박 제로</span></div>
+              <div style="font-size:22px; font-weight:900; color:#f5ad7e; font-family:var(--font-maruburi);">38g</div>
+              <div style="font-size:12px; color:#f5ad7e; line-height:1.3;">초경량 에어로<br><span style="color:#cbd5d0; font-size:11px;">어깨 압박 제로</span></div>
             </div>
             <div style="width:1px; height:32px; background:rgba(255,255,255,0.15);"></div>
             <div style="display:flex; align-items:center; gap:12px;">
-              <div style="font-size:22px; font-weight:900; color:#9D96C4; font-family:var(--font-maruburi);">99.8%</div>
-              <div style="font-size:12px; color:#9D96C4; line-height:1.3;">출근복 은폐율<br><span style="color:#cbd5d0; font-size:11px;">얇은 셔츠 완벽 시크릿</span></div>
+              <div style="font-size:22px; font-weight:900; color:#a8d5be; font-family:var(--font-maruburi);">99.8%</div>
+              <div style="font-size:12px; color:#a8d5be; line-height:1.3;">출근복 은폐율<br><span style="color:#cbd5d0; font-size:11px;">얇은 셔츠 완벽 시크릿</span></div>
             </div>
           </div>
 
@@ -3128,7 +3161,7 @@
     <!-- ★ SEC-01-B [대형 전용 섹션]: 브랜드명 '스밈(SEUMIM)'의 어원과 탄생 비하인드 스토리 -->
     <section id="sec-st92-name-origin" style="padding: 70px 0 80px; border-bottom: 1px solid var(--color-border); scroll-margin-top: 100px;">
       <div style="text-align:center; max-width:860px; margin:0 auto 50px;">
-        <span class="section-tag" style="background:#F6F5FA; color:var(--color-terracotta); font-size:12.5px; padding:5px 14px; border-radius:var(--radius-full);">
+        <span class="section-tag" style="background:#fde8e4; color:var(--color-terracotta); font-size:12.5px; padding:5px 14px; border-radius:var(--radius-full);">
           WHY SEUMIM &amp; BRAND ORIGIN
         </span>
         <h2 class="story-section-title st92-origin-title-main" style="font-family:var(--font-maruburi); font-size:36px; margin:14px 0 16px; line-height:1.35; word-break:keep-all;">
@@ -3178,21 +3211,21 @@
           <div style="margin-top:24px; border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--color-border); background:#ffffff; box-shadow:var(--shadow-sm); padding:16px;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
               <span style="font-size:12px; font-weight:800; color:var(--color-forest);">0.1mm 초극세 심리스 무봉제 융착 단면</span>
-              <span style="font-size:10.5px; font-weight:800; background:var(--color-terracotta); color:#3E3A4C; padding:2px 8px; border-radius:var(--radius-full);">봉제선 0mm</span>
+              <span style="font-size:10.5px; font-weight:800; background:var(--color-terracotta); color:#fff; padding:2px 8px; border-radius:var(--radius-full);">봉제선 0mm</span>
             </div>
             <svg viewBox="0 0 340 75" style="width:100%; height:75px;" fill="none" xmlns="http://www.w3.org/2000/svg">
               <!-- 피부 표면 -->
-              <rect x="0" y="48" width="340" height="24" fill="#F8F7FC" stroke="#F6F5FA"/>
-              <text x="12" y="64" fill="#78738A" font-size="10" font-weight="bold">Skin Layer (피부 밀착)</text>
+              <rect x="0" y="48" width="340" height="24" fill="#fcf6f0" stroke="#f0e2d3"/>
+              <text x="12" y="64" fill="#a88975" font-size="10" font-weight="bold">Skin Layer (피부 밀착)</text>
               <!-- 0.1mm 심리스 원단 -->
-              <rect x="0" y="26" width="340" height="18" fill="#F6F5FA" rx="2"/>
-              <text x="12" y="39" fill="#9D96C4" font-size="10" font-weight="bold">0.1mm Seamless Core (초극세 나노 직조)</text>
+              <rect x="0" y="26" width="340" height="18" fill="#243028" rx="2"/>
+              <text x="12" y="39" fill="#a8d5be" font-size="10" font-weight="bold">0.1mm Seamless Core (초극세 나노 직조)</text>
               <!-- 셔츠 외피 -->
               <line x1="0" y1="12" x2="340" y2="12" stroke="#cbd5d0" stroke-width="2"/>
-              <text x="12" y="9" fill="#A8A3BA" font-size="9.5">Outer Shirt (얇은 셔츠 밖 도드라짐 0%)</text>
+              <text x="12" y="9" fill="#7c8a82" font-size="9.5">Outer Shirt (얇은 셔츠 밖 도드라짐 0%)</text>
               <!-- 고주파 융착 포인트 -->
-              <circle cx="280" cy="35" r="4" fill="#9D96C4"/>
-              <text x="270" y="38" text-anchor="end" fill="#9D96C4" font-size="9.5" font-weight="bold">초음파 무봉제 결합</text>
+              <circle cx="280" cy="35" r="4" fill="#d26e2e"/>
+              <text x="270" y="38" text-anchor="end" fill="#d26e2e" font-size="9.5" font-weight="bold">초음파 무봉제 결합</text>
             </svg>
             <div style="font-size:11.5px; color:var(--color-text-muted); line-height:1.5; margin-top:6px;">
               피부 굴곡을 따라 봉제선 없이 매끄럽게 밀착되어 셔츠 위 도드라짐을 99.8% 차단합니다.
@@ -3209,7 +3242,7 @@
 
             <!-- Step 1 -->
             <div style="display:flex; gap:18px; margin-bottom:24px;">
-              <div style="width:34px; height:34px; border-radius:50%; background:var(--color-forest); color:#3E3A4C; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0;">1</div>
+              <div style="width:34px; height:34px; border-radius:50%; background:var(--color-forest); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0;">1</div>
               <div>
                 <h3 style="font-family:var(--font-maruburi); font-size:17px; font-weight:800; color:var(--color-forest); margin-bottom:6px;">
                   의문의 시작 : "왜 자세를 펴는 일은 늘 아프고 참아야 할까?"
@@ -3222,7 +3255,7 @@
 
             <!-- Step 2 -->
             <div style="display:flex; gap:18px; margin-bottom:24px;">
-              <div style="width:34px; height:34px; border-radius:50%; background:var(--color-terracotta); color:#3E3A4C; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0;">2</div>
+              <div style="width:34px; height:34px; border-radius:50%; background:var(--color-terracotta); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0;">2</div>
               <div>
                 <h3 style="font-family:var(--font-maruburi); font-size:17px; font-weight:800; color:var(--color-forest); margin-bottom:6px;">
                   '스며들다' 철학의 발견 : 강제 압박 대신 옷처럼 스며드는 지지
@@ -3235,7 +3268,7 @@
 
             <!-- Step 3 -->
             <div style="display:flex; gap:18px;">
-              <div style="width:34px; height:34px; border-radius:50%; background:var(--color-sage); color:#3E3A4C; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0;">3</div>
+              <div style="width:34px; height:34px; border-radius:50%; background:var(--color-sage); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0;">3</div>
               <div>
                 <h3 style="font-family:var(--font-maruburi); font-size:17px; font-weight:800; color:var(--color-forest); margin-bottom:6px;">
                   3년 R&amp;D의 결실 : 0.1mm 심리스 무봉제 융착 기술의 탄생
@@ -3270,7 +3303,7 @@
     <!-- SEC-02: The Origin & Evidence (3대 핵심 공감 문제 실사 쇼케이스) -->
     <section id="sec-st92-origin" style="padding:60px 0;">
       <div style="text-align:center; max-width:820px; margin:0 auto 50px;">
-        <span class="section-tag" style="background:#F6F5FA; color:var(--color-terracotta);">THE ORIGIN &amp; EVIDENCE</span>
+        <span class="section-tag" style="background:#fde8e4; color:var(--color-terracotta);">THE ORIGIN &amp; EVIDENCE</span>
         <h2 class="story-section-title" style="font-family:var(--font-maruburi); font-size:34px; margin-bottom:14px;">하루 9시간 책상 앞,<br>왜 우리는 매일 무너질까요?</h2>
         <p style="font-size:16px; color:var(--color-text-secondary); line-height:1.8;">
           스크롤을 내려 우리가 바쁜 일상 속에서 당연하게 참아왔던 <strong>3가지 자세 무너짐의 실태와 한계</strong>를 실제 직장인 일상 사진으로 확인해 보세요.
@@ -3285,12 +3318,12 @@
             <div style="height:270px; position:relative; overflow:hidden;">
               <img src="assets/img/problem_neck_pain_1787187142805.jpg" alt="모니터 앞 목과 어깨 통증을 느끼는 실제 직장인 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;">
               <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(21,29,24,0.85) 0%, transparent 60%);"></div>
-              <div style="position:absolute; top:14px; left:14px; background:rgba(21,29,24,0.85); color:#9D96C4; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.2);">
+              <div style="position:absolute; top:14px; left:14px; background:rgba(21,29,24,0.85); color:#a8d5be; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.2);">
                 REAL SCENE 01 · 작업 몰입 중 경추 과부하
               </div>
-              <div style="position:absolute; bottom:12px; left:16px; right:16px; color:#3E3A4C;">
-                <div style="font-size:13px; font-weight:800; color:#EAE8F4;">업무 몰입 시 무의식적 자세 붕괴</div>
-                <div style="font-size:11.5px; color:#78738A; margin-top:2px;">모니터를 향해 15° 기울어질 때마다 경추가 받는 하중은 12kg~22kg으로 폭증합니다.</div>
+              <div style="position:absolute; bottom:12px; left:16px; right:16px; color:#fff;">
+                <div style="font-size:13px; font-weight:800; color:#f5ad7e;">업무 몰입 시 무의식적 자세 붕괴</div>
+                <div style="font-size:11.5px; color:#e2dbca; margin-top:2px;">모니터를 향해 15° 기울어질 때마다 경추가 받는 하중은 12kg~22kg으로 폭증합니다.</div>
               </div>
             </div>
             <div style="padding:14px 18px; background:#fff; flex:1; display:flex; justify-content:space-between; align-items:center;">
@@ -3321,12 +3354,12 @@
             <div style="height:270px; position:relative; overflow:hidden;">
               <img src="assets/img/problem_night_tired_1787187162164.jpg" alt="야근과 늦은 밤 퇴근길 지친 실제 직장인의 일상 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 30%;">
               <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(21,29,24,0.85) 0%, transparent 60%);"></div>
-              <div style="position:absolute; top:14px; left:14px; background:rgba(21,29,24,0.85); color:#9D96C4; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.2);">
+              <div style="position:absolute; top:14px; left:14px; background:rgba(21,29,24,0.85); color:#a8d5be; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.2);">
                 REAL SCENE 02 · 바쁜 일과와 시간 부족
               </div>
-              <div style="position:absolute; bottom:12px; left:16px; right:16px; color:#3E3A4C;">
-                <div style="font-size:13px; font-weight:800; color:#EAE8F4;">퇴근 후 매일 운동하기 힘든 현실</div>
-                <div style="font-size:11.5px; color:#78738A; margin-top:2px;">지친 몸으로 퇴근 후 별도 관리를 이어가는 직장인은 18%에 불과합니다.</div>
+              <div style="position:absolute; bottom:12px; left:16px; right:16px; color:#fff;">
+                <div style="font-size:13px; font-weight:800; color:#f5ad7e;">퇴근 후 매일 운동하기 힘든 현실</div>
+                <div style="font-size:11.5px; color:#e2dbca; margin-top:2px;">지친 몸으로 퇴근 후 별도 관리를 이어가는 직장인은 18%에 불과합니다.</div>
               </div>
             </div>
             <div style="padding:14px 18px; background:#fff; flex:1; display:flex; justify-content:space-between; align-items:center;">
@@ -3353,16 +3386,16 @@
 
         <!-- Problem Card 03 -->
         <div class="story92-problem-card alert-card">
-          <div style="background:#FAFAFC; border:1px solid #EAE8F4; border-radius:var(--radius-md); overflow:hidden; height:380px; display:flex; flex-direction:column; position:relative; box-shadow:var(--shadow-sm);">
+          <div style="background:#fffaf8; border:1px solid #f6d4c4; border-radius:var(--radius-md); overflow:hidden; height:380px; display:flex; flex-direction:column; position:relative; box-shadow:var(--shadow-sm);">
             <div style="height:270px; position:relative; overflow:hidden;">
               <img src="assets/img/problem_brace_uncomfortable_1787187539159.jpg" alt="두꺼운 교정장치를 착용한 뒤 갈비뼈 압박과 옥죄임으로 불편해하는 실제 직장인 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;">
               <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(21,29,24,0.85) 0%, transparent 60%);"></div>
-              <div style="position:absolute; top:14px; left:14px; background:var(--color-terracotta); color:#3E3A4C; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full);">
+              <div style="position:absolute; top:14px; left:14px; background:var(--color-terracotta); color:#fff; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full);">
                 REAL SCENE 03 · 기존 교정장치의 압박 고통
               </div>
-              <div style="position:absolute; bottom:12px; left:16px; right:16px; color:#3E3A4C;">
-                <div style="font-size:13px; font-weight:800; color:#3E3A4C;">몸을 억지로 옥죄는 강제 조임의 한계</div>
-                <div style="font-size:11.5px; color:#78738A; margin-top:2px;">두꺼운 쇠 와이어와 벨크로의 답답한 압박감으로 30분 이상 착용 불가</div>
+              <div style="position:absolute; bottom:12px; left:16px; right:16px; color:#fff;">
+                <div style="font-size:13px; font-weight:800; color:#fff;">몸을 억지로 옥죄는 강제 조임의 한계</div>
+                <div style="font-size:11.5px; color:#e2dbca; margin-top:2px;">두꺼운 쇠 와이어와 벨크로의 답답한 압박감으로 30분 이상 착용 불가</div>
               </div>
             </div>
             <div style="padding:14px 18px; background:#fff; flex:1; display:flex; justify-content:space-between; align-items:center;">
@@ -3371,12 +3404,12 @@
             </div>
           </div>
           <div>
-            <div class="story92-problem-badge" style="background:#F6F5FA; color:var(--color-terracotta);">PROBLEM 03 / 03</div>
+            <div class="story92-problem-badge" style="background:#fde8e4; color:var(--color-terracotta);">PROBLEM 03 / 03</div>
             <h3 class="story92-problem-title">몸을 억지로 옥죄는<br>답답한 강제 조임의 한계</h3>
             <p class="story92-problem-desc">
               자세를 억지로 펴기 위해 착용했던 두꺼운 보조 기구들은 답답한 압박감과 옷 밖으로 튀어나오는 불편함 때문에 일상에서 오래 지속하기 어려웠습니다.
             </p>
-            <div class="story92-problem-statbox" style="background:#ffffff; border-color:#EAE8F4;">
+            <div class="story92-problem-statbox" style="background:#ffffff; border-color:#f6d4c4;">
               <div style="font-size:13px; color:var(--color-terracotta); font-weight:800; line-height:1.7;">
                 • 인위적인 강제 조임 대신 신체 곡선에 맞춘 부드러운 지지력 필요<br>
                 • 셔츠 안에 입어도 전혀 티 나지 않는 0.1mm 초슬림 무봉제 핏 추구
@@ -3388,15 +3421,15 @@
       </div>
 
       <!-- Narrative Bridge (스밈의 어원 & 제작 여정 선언) -->
-      <div style="background:var(--color-forest); color:#3E3A4C; padding:36px 40px; border-radius:var(--radius-lg); text-align:center; box-shadow:var(--shadow-md); margin-top:30px;">
+      <div style="background:var(--color-forest); color:#fff; padding:36px 40px; border-radius:var(--radius-lg); text-align:center; box-shadow:var(--shadow-md); margin-top:30px;">
         <div style="font-family:var(--font-maruburi); font-size:21px; font-weight:700; margin-bottom:8px;">
           ✦ 스밈(SEUMIM), 이름에 담긴 약속
         </div>
-        <p style="font-size:14.5px; color:#78738A; line-height:1.8; max-width:760px; margin:0 auto 12px;">
+        <p style="font-size:14.5px; color:#e2dbca; line-height:1.8; max-width:760px; margin:0 auto 12px;">
           '억지로 조이지 않고, 일상 속에 바른 균형이 자연스럽게 스며들게 한다'는 생각에서 시작되었습니다.<br>
           수백 번의 원단 테스트와 0.1mm 심리스 무봉제 융착 본딩 공정으로 옷 속에 머무는 다정한 균형을 만듭니다.
         </p>
-        <div style="font-size:12.5px; color:#9D96C4; font-weight:700;">피부와 호흡을 존중하는 스밈의 3대 다정한 균형 철학</div>
+        <div style="font-size:12.5px; color:#a8d5be; font-weight:700;">피부와 호흡을 존중하는 스밈의 3대 다정한 균형 철학</div>
       </div>
     </section>
 
@@ -3416,12 +3449,12 @@
           <div style="background:var(--bg-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); overflow:hidden; height:320px; box-shadow:var(--shadow-sm); position:relative;">
             <img src="assets/img/pillar_morning_habit_1787187195687.jpg" alt="아침 자연 채광 속 편안하게 일상을 준비하는 실제 사람 라이프스타일 사진" style="width:100%; height:100%; object-fit:cover;">
             <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(21,29,24,0.85) 0%, transparent 60%);"></div>
-            <div style="position:absolute; top:16px; left:16px; background:rgba(21,29,24,0.85); color:#9D96C4; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.2);">
+            <div style="position:absolute; top:16px; left:16px; background:rgba(21,29,24,0.85); color:#a8d5be; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.2);">
               PILLAR 01 · NATURAL HABIT
             </div>
-            <div style="position:absolute; bottom:16px; left:20px; right:20px; color:#3E3A4C;">
+            <div style="position:absolute; bottom:16px; left:20px; right:20px; color:#fff;">
               <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700;">아침에 옷을 입듯, 자연스럽게 스며드는 습관</div>
-              <div style="font-size:12px; color:#78738A; margin-top:3px;">억지 조임 없이 부드러운 천연 텐셀 나노 직조 스킨핏</div>
+              <div style="font-size:12px; color:#e2dbca; margin-top:3px;">억지 조임 없이 부드러운 천연 텐셀 나노 직조 스킨핏</div>
             </div>
           </div>
           <div class="story92-zigzag-content">
@@ -3441,12 +3474,12 @@
           <div style="background:var(--bg-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); overflow:hidden; height:320px; box-shadow:var(--shadow-sm); position:relative;">
             <img src="assets/img/pillar_seamless_office_1787187211459.jpg" alt="화이트 셔츠를 입고 당당하게 걸어가는 세련된 직장인 오피스룩 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center top;">
             <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(21,29,24,0.85) 0%, transparent 60%);"></div>
-            <div style="position:absolute; top:16px; left:16px; background:var(--color-sage); color:#3E3A4C; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full);">
+            <div style="position:absolute; top:16px; left:16px; background:var(--color-sage); color:#fff; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full);">
               PILLAR 02 · 99.8% INVISIBLE
             </div>
-            <div style="position:absolute; bottom:16px; left:20px; right:20px; color:#3E3A4C;">
+            <div style="position:absolute; bottom:16px; left:20px; right:20px; color:#fff;">
               <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700;">얇은 화이트 셔츠 안에서도 완벽한 시크릿 핏</div>
-              <div style="font-size:12px; color:#78738A; margin-top:3px;">봉제선 0mm 무봉제 본딩으로 겉옷 위 윤곽 노출 제로</div>
+              <div style="font-size:12px; color:#e2dbca; margin-top:3px;">봉제선 0mm 무봉제 본딩으로 겉옷 위 윤곽 노출 제로</div>
             </div>
           </div>
           <div class="story92-zigzag-content">
@@ -3466,12 +3499,12 @@
           <div style="background:var(--bg-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); overflow:hidden; height:320px; box-shadow:var(--shadow-sm); position:relative;">
             <img src="assets/img/pillar_desk_wellness_1787187229043.jpg" alt="오피스 체어에서 편안하고 바른 자세로 집중하는 실제 직장인 데스크 씬 실사 사진" style="width:100%; height:100%; object-fit:cover;">
             <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(21,29,24,0.85) 0%, transparent 60%);"></div>
-            <div style="position:absolute; top:16px; left:16px; background:rgba(21,29,24,0.85); color:#EAE8F4; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.2);">
+            <div style="position:absolute; top:16px; left:16px; background:rgba(21,29,24,0.85); color:#f5ad7e; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.2);">
               PILLAR 03 · KIND BALANCE
             </div>
-            <div style="position:absolute; bottom:16px; left:20px; right:20px; color:#3E3A4C;">
+            <div style="position:absolute; bottom:16px; left:20px; right:20px; color:#fff;">
               <div style="font-family:var(--font-maruburi); font-size:16px; font-weight:700;">앉은 자리에서 스스로 상체를 세워주는 지렛대 탄성</div>
-              <div style="font-size:12px; color:#78738A; margin-top:3px;">퇴근 후 힘든 운동 강요 없는 편안한 오피스 웰니스</div>
+              <div style="font-size:12px; color:#e2dbca; margin-top:3px;">퇴근 후 힘든 운동 강요 없는 편안한 오피스 웰니스</div>
             </div>
           </div>
           <div class="story92-zigzag-content">
@@ -3490,47 +3523,47 @@
 
     <!-- SEC-04: Full-bleed Macro -->
     <section id="sec-st92-macro" class="story92-macro-visual">
-      <div style="font-size:12px; letter-spacing:2.5px; text-transform:uppercase; color:#9D96C4; margin-bottom:12px; font-weight:800;">
+      <div style="font-size:12px; letter-spacing:2.5px; text-transform:uppercase; color:#a8d5be; margin-bottom:12px; font-weight:800;">
         ✦ 100% Full-bleed Macro Innovation
       </div>
       <h2 style="font-family:var(--font-maruburi); font-size:32px; font-weight:700; margin-bottom:14px; word-break:keep-all;">
         0.1mm Seamless Nano-Bonding Texture
       </h2>
-      <p style="font-size:16px; color:#78738A; max-width:720px; margin:0 auto 28px; word-break:keep-all;">
+      <p style="font-size:16px; color:#e2dbca; max-width:720px; margin:0 auto 28px; word-break:keep-all;">
         피부와 하나 되는 완벽한 밀착, 닿는 순간 숨 쉬는 편안함을 시각적으로 증명하는 마이크로 매크로 뷰
       </p>
 
       <!-- 정밀 나노 매크로 텍스처 그래픽 SVG -->
-      <div style="max-width:800px; margin:0 auto; background:#F6F5FA; border:1px solid #E7E5F2; border-radius:var(--radius-md); padding:24px; box-shadow:0 16px 36px rgba(0,0,0,0.4);">
+      <div style="max-width:800px; margin:0 auto; background:#121a15; border:1px solid #2d3e33; border-radius:var(--radius-md); padding:24px; box-shadow:0 16px 36px rgba(0,0,0,0.4);">
         <svg viewBox="0 0 720 160" style="width:100%; height:100%;" fill="none" xmlns="http://www.w3.org/2000/svg">
           <!-- 마이크로 그리드 눈금 -->
-          <line x1="20" y1="80" x2="700" y2="80" stroke="#EAE8F4" stroke-width="1.5"/>
-          <line x1="360" y1="20" x2="360" y2="140" stroke="#EAE8F4" stroke-width="1.5"/>
+          <line x1="20" y1="80" x2="700" y2="80" stroke="#25352b" stroke-width="1.5"/>
+          <line x1="360" y1="20" x2="360" y2="140" stroke="#25352b" stroke-width="1.5"/>
           
           <!-- 나노 섬유 클로즈업 패턴 -->
           <g opacity="0.6">
-            <path d="M 40 40 Q 90 20 140 40 T 240 40 T 340 40 T 440 40 T 540 40 T 640 40" stroke="#E7E5F2" stroke-width="2" fill="none"/>
-            <path d="M 40 60 Q 90 40 140 60 T 240 60 T 340 60 T 440 60 T 540 60 T 640 60" stroke="#9D96C4" stroke-width="1.5" fill="none"/>
-            <path d="M 40 80 Q 90 100 140 80 T 240 80 T 340 80 T 440 80 T 540 80 T 640 80" stroke="#9D96C4" stroke-width="2" fill="none"/>
-            <path d="M 40 100 Q 90 80 140 100 T 240 100 T 340 100 T 440 100 T 540 100 T 640 100" stroke="#E7E5F2" stroke-width="2" fill="none"/>
-            <path d="M 40 120 Q 90 140 140 120 T 240 120 T 340 120 T 440 120 T 540 120 T 640 120" stroke="#9D96C4" stroke-width="1.5" fill="none"/>
+            <path d="M 40 40 Q 90 20 140 40 T 240 40 T 340 40 T 440 40 T 540 40 T 640 40" stroke="#3d5747" stroke-width="2" fill="none"/>
+            <path d="M 40 60 Q 90 40 140 60 T 240 60 T 340 60 T 440 60 T 540 60 T 640 60" stroke="#a8d5be" stroke-width="1.5" fill="none"/>
+            <path d="M 40 80 Q 90 100 140 80 T 240 80 T 340 80 T 440 80 T 540 80 T 640 80" stroke="#d26e2e" stroke-width="2" fill="none"/>
+            <path d="M 40 100 Q 90 80 140 100 T 240 100 T 340 100 T 440 100 T 540 100 T 640 100" stroke="#3d5747" stroke-width="2" fill="none"/>
+            <path d="M 40 120 Q 90 140 140 120 T 240 120 T 340 120 T 440 120 T 540 120 T 640 120" stroke="#a8d5be" stroke-width="1.5" fill="none"/>
           </g>
 
           <!-- 계측 캘리퍼 오버레이 -->
-          <rect x="280" y="45" width="160" height="70" rx="6" fill="#F6F5FA" stroke="#9D96C4" stroke-width="1.5"/>
-          <text x="360" y="70" text-anchor="middle" fill="#9D96C4" font-size="11" font-weight="bold">SCALE 계측값</text>
-          <text x="360" y="94" text-anchor="middle" fill="#3E3A4C" font-size="18" font-weight="900">0.100 mm</text>
-          <text x="360" y="108" text-anchor="middle" fill="#9D96C4" font-size="9">초정밀 무봉제 융착 공차 ±0.005mm</text>
+          <rect x="280" y="45" width="160" height="70" rx="6" fill="#18231c" stroke="#d26e2e" stroke-width="1.5"/>
+          <text x="360" y="70" text-anchor="middle" fill="#d26e2e" font-size="11" font-weight="bold">SCALE 계측값</text>
+          <text x="360" y="94" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="900">0.100 mm</text>
+          <text x="360" y="108" text-anchor="middle" fill="#a8d5be" font-size="9">초정밀 무봉제 융착 공차 ±0.005mm</text>
         </svg>
       </div>
     </section>
 
     <!-- SEC-05: Technical Blueprint -->
-    <section id="sec-st92-blueprint" style="background:#F6F5FA; color:#3E3A4C; padding:60px 40px; border-radius:var(--radius-lg); margin-bottom:60px;">
+    <section id="sec-st92-blueprint" style="background:#151d18; color:#fff; padding:60px 40px; border-radius:var(--radius-lg); margin-bottom:60px;">
       <div style="text-align:center; max-width:760px; margin:0 auto 40px;">
-        <span class="section-tag" style="background:rgba(255,255,255,0.1); color:#9D96C4;">3D TECHNICAL BLUEPRINT</span>
-        <h2 style="font-family:var(--font-maruburi); font-size:32px; font-weight:700; color:#3E3A4C; margin:10px 0; word-break:keep-all;">몸에 닿는 순간 느껴지는 착용감의 과학</h2>
-        <p style="font-size:14px; color:#78738A; word-break:keep-all;">카드 위에 마우스를 올려 3D 엔지니어링 도면 인터랙션을 확인하세요.</p>
+        <span class="section-tag" style="background:rgba(255,255,255,0.1); color:#a8d5be;">3D TECHNICAL BLUEPRINT</span>
+        <h2 style="font-family:var(--font-maruburi); font-size:32px; font-weight:700; color:#fff; margin:10px 0; word-break:keep-all;">몸에 닿는 순간 느껴지는 착용감의 과학</h2>
+        <p style="font-size:14px; color:#a5b5ac; word-break:keep-all;">카드 위에 마우스를 올려 3D 엔지니어링 도면 인터랙션을 확인하세요.</p>
       </div>
 
       <div class="story92-blueprint-grid">
@@ -3538,26 +3571,26 @@
         <div class="story92-blueprint-card story92-tilt">
           <div class="story92-blueprint-ph" style="height:210px; padding:16px;">
             <div style="display:flex; justify-content:space-between; width:100%; margin-bottom:8px;">
-              <span style="font-size:11px; font-weight:800; color:#9D96C4; letter-spacing:0.05em;">BLUEPRINT 01</span>
-              <span style="font-size:10px; color:#A8A3BA; border:1px solid #E7E5F2; padding:1px 6px; border-radius:3px;">ISO 9001 Spec</span>
+              <span style="font-size:11px; font-weight:800; color:#a8d5be; letter-spacing:0.05em;">BLUEPRINT 01</span>
+              <span style="font-size:10px; color:#7c8a82; border:1px solid #33433a; padding:1px 6px; border-radius:3px;">ISO 9001 Spec</span>
             </div>
             
             <!-- 도면 1 SVG: 나노 압착 단면 -->
             <svg viewBox="0 0 240 120" style="width:100%; height:120px;" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="240" height="120" rx="4" fill="#3E3A4C" stroke="#EAE8F4"/>
-              <line x1="20" y1="40" x2="220" y2="40" stroke="#9D96C4" stroke-width="2"/>
-              <line x1="20" y1="80" x2="220" y2="80" stroke="#9D96C4" stroke-width="2"/>
-              <line x1="60" y1="40" x2="60" y2="80" stroke="#9D96C4" stroke-width="1.5" stroke-dasharray="2 2"/>
-              <line x1="180" y1="40" x2="180" y2="80" stroke="#9D96C4" stroke-width="1.5" stroke-dasharray="2 2"/>
-              <rect x="80" y="50" width="80" height="20" rx="3" fill="#F6F5FA" stroke="#9D96C4"/>
-              <text x="120" y="64" text-anchor="middle" fill="#3E3A4C" font-size="9" font-weight="bold">0.1mm Seamless Joint</text>
-              <text x="120" y="105" text-anchor="middle" fill="#A8A3BA" font-size="8.5">고주파 초음파 융착 좌표계측도</text>
+              <rect width="240" height="120" rx="4" fill="#0d1410" stroke="#25352b"/>
+              <line x1="20" y1="40" x2="220" y2="40" stroke="#a8d5be" stroke-width="2"/>
+              <line x1="20" y1="80" x2="220" y2="80" stroke="#a8d5be" stroke-width="2"/>
+              <line x1="60" y1="40" x2="60" y2="80" stroke="#d26e2e" stroke-width="1.5" stroke-dasharray="2 2"/>
+              <line x1="180" y1="40" x2="180" y2="80" stroke="#d26e2e" stroke-width="1.5" stroke-dasharray="2 2"/>
+              <rect x="80" y="50" width="80" height="20" rx="3" fill="#243028" stroke="#d26e2e"/>
+              <text x="120" y="64" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="bold">0.1mm Seamless Joint</text>
+              <text x="120" y="105" text-anchor="middle" fill="#7c8a82" font-size="8.5">고주파 초음파 융착 좌표계측도</text>
             </svg>
           </div>
           <div style="padding:24px;">
             <div style="font-size:11px; font-weight:800; color:var(--color-terracotta); letter-spacing:1px; margin-bottom:6px;">NAKED SEAMLESS</div>
             <div style="font-family:var(--font-maruburi); font-size:18px; font-weight:700; margin-bottom:8px;">01. 0.1mm 심리스 본딩</div>
-            <div style="font-size:13px; color:#78738A; line-height:1.7;">봉제선을 100% 제거하여 셔츠 속 99.8% 은폐율을 자랑하며 살 눌림 자국이 전혀 남지 않습니다.</div>
+            <div style="font-size:13px; color:#a5b5ac; line-height:1.7;">봉제선을 100% 제거하여 셔츠 속 99.8% 은폐율을 자랑하며 살 눌림 자국이 전혀 남지 않습니다.</div>
           </div>
         </div>
 
@@ -3565,25 +3598,25 @@
         <div class="story92-blueprint-card story92-tilt">
           <div class="story92-blueprint-ph" style="height:210px; padding:16px;">
             <div style="display:flex; justify-content:space-between; width:100%; margin-bottom:8px;">
-              <span style="font-size:11px; font-weight:800; color:#9D96C4; letter-spacing:0.05em;">BLUEPRINT 02</span>
-              <span style="font-size:10px; color:#A8A3BA; border:1px solid #E7E5F2; padding:1px 6px; border-radius:3px;">Airflow Dyn</span>
+              <span style="font-size:11px; font-weight:800; color:#a8d5be; letter-spacing:0.05em;">BLUEPRINT 02</span>
+              <span style="font-size:10px; color:#7c8a82; border:1px solid #33433a; padding:1px 6px; border-radius:3px;">Airflow Dyn</span>
             </div>
 
             <!-- 도면 2 SVG: 에어로 메쉬 통기 기류도 -->
             <svg viewBox="0 0 240 120" style="width:100%; height:120px;" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="240" height="120" rx="4" fill="#3E3A4C" stroke="#EAE8F4"/>
+              <rect width="240" height="120" rx="4" fill="#0d1410" stroke="#25352b"/>
               <!-- 기류 화살표 벡터 -->
-              <path d="M 30 90 Q 70 30 120 60 T 210 30" stroke="#ABA5D0" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
-              <path d="M 30 105 Q 80 45 130 75 T 210 45" stroke="#ABA5D0" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
-              <circle cx="120" cy="60" r="18" fill="#F6F5FA" stroke="#ABA5D0"/>
-              <text x="120" y="63" text-anchor="middle" fill="#ABA5D0" font-size="9" font-weight="bold">38g Airy</text>
-              <text x="120" y="105" text-anchor="middle" fill="#A8A3BA" font-size="8.5">초미세 쿨링 에어플로우 시뮬레이션</text>
+              <path d="M 30 90 Q 70 30 120 60 T 210 30" stroke="#38b2ac" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
+              <path d="M 30 105 Q 80 45 130 75 T 210 45" stroke="#4fd1c5" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
+              <circle cx="120" cy="60" r="18" fill="#13241b" stroke="#38b2ac"/>
+              <text x="120" y="63" text-anchor="middle" fill="#4fd1c5" font-size="9" font-weight="bold">38g Airy</text>
+              <text x="120" y="105" text-anchor="middle" fill="#7c8a82" font-size="8.5">초미세 쿨링 에어플로우 시뮬레이션</text>
             </svg>
           </div>
           <div style="padding:24px;">
             <div style="font-size:11px; font-weight:800; color:var(--color-terracotta); letter-spacing:1px; margin-bottom:6px;">AIRY WEIGHTLESS</div>
             <div style="font-family:var(--font-maruburi); font-size:18px; font-weight:700; margin-bottom:8px;">02. 38g 에어로 메쉬</div>
-            <div style="font-size:13px; color:#78738A; line-height:1.7;">달걀 하나보다 가벼운 초경량으로 하루 종일 착용해도 땀이 차지 않는 초미세 통기 구조를 갖췄습니다.</div>
+            <div style="font-size:13px; color:#a5b5ac; line-height:1.7;">달걀 하나보다 가벼운 초경량으로 하루 종일 착용해도 땀이 차지 않는 초미세 통기 구조를 갖췄습니다.</div>
           </div>
         </div>
 
@@ -3591,24 +3624,24 @@
         <div class="story92-blueprint-card story92-tilt">
           <div class="story92-blueprint-ph" style="height:210px; padding:16px;">
             <div style="display:flex; justify-content:space-between; width:100%; margin-bottom:8px;">
-              <span style="font-size:11px; font-weight:800; color:#9D96C4; letter-spacing:0.05em;">BLUEPRINT 03</span>
-              <span style="font-size:10px; color:#A8A3BA; border:1px solid #E7E5F2; padding:1px 6px; border-radius:3px;">Kinetic Frame</span>
+              <span style="font-size:11px; font-weight:800; color:#a8d5be; letter-spacing:0.05em;">BLUEPRINT 03</span>
+              <span style="font-size:10px; color:#7c8a82; border:1px solid #33433a; padding:1px 6px; border-radius:3px;">Kinetic Frame</span>
             </div>
 
             <!-- 도면 3 SVG: 4중 동적 텐션도 -->
             <svg viewBox="0 0 240 120" style="width:100%; height:120px;" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="240" height="120" rx="4" fill="#3E3A4C" stroke="#EAE8F4"/>
-              <path d="M 60 20 L 180 20 L 140 90 L 100 90 Z" fill="#F6F5FA" stroke="#9D96C4" stroke-width="1.5"/>
-              <line x1="120" y1="20" x2="120" y2="90" stroke="#9D96C4" stroke-width="2"/>
-              <circle cx="120" cy="55" r="4" fill="#9D96C4"/>
-              <text x="120" y="58" text-anchor="middle" fill="#3E3A4C" font-size="8"></text>
-              <text x="120" y="105" text-anchor="middle" fill="#A8A3BA" font-size="8.5">척추 기립근 4중 탄성 복원 벡터도</text>
+              <rect width="240" height="120" rx="4" fill="#0d1410" stroke="#25352b"/>
+              <path d="M 60 20 L 180 20 L 140 90 L 100 90 Z" fill="#15231a" stroke="#d26e2e" stroke-width="1.5"/>
+              <line x1="120" y1="20" x2="120" y2="90" stroke="#a8d5be" stroke-width="2"/>
+              <circle cx="120" cy="55" r="4" fill="#d26e2e"/>
+              <text x="120" y="58" text-anchor="middle" fill="#ffffff" font-size="8"></text>
+              <text x="120" y="105" text-anchor="middle" fill="#7c8a82" font-size="8.5">척추 기립근 4중 탄성 복원 벡터도</text>
             </svg>
           </div>
           <div style="padding:24px;">
             <div style="font-size:11px; font-weight:800; color:var(--color-terracotta); letter-spacing:1px; margin-bottom:6px;">DYNAMIC RESTORING</div>
             <div style="font-family:var(--font-maruburi); font-size:18px; font-weight:700; margin-bottom:8px;">03. 동적 텐션 프레임</div>
-            <div style="font-size:13px; color:#78738A; line-height:1.7;">몸을 옥죄지 않고 지렛대 원리에 따라 유연하게 척추를 밀어 올려 바른 정렬을 복원합니다.</div>
+            <div style="font-size:13px; color:#a5b5ac; line-height:1.7;">몸을 옥죄지 않고 지렛대 원리에 따라 유연하게 척추를 밀어 올려 바른 정렬을 복원합니다.</div>
           </div>
         </div>
       </div>
@@ -3648,12 +3681,12 @@
               <div class="story92-ba-layer before" style="position:absolute; inset:0; padding:0; display:block; width:100%; height:100%; overflow:hidden;">
                 <img src="assets/img/problem_neck_pain_1787187142805.jpg" alt="스밈 착용 전 데스크 앞 굽은 등과 거북목 뻐근한 자세 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;">
                 <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(197,48,48,0.8) 0%, transparent 45%);"></div>
-                <div style="position:absolute; top:12px; right:14px; background:#c53030; color:#3E3A4C; font-size:11px; font-weight:900; padding:4px 10px; border-radius:var(--radius-full); box-shadow:0 2px 6px rgba(0,0,0,0.3);">
+                <div style="position:absolute; top:12px; right:14px; background:#c53030; color:#fff; font-size:11px; font-weight:900; padding:4px 10px; border-radius:var(--radius-full); box-shadow:0 2px 6px rgba(0,0,0,0.3);">
                   BEFORE : 미착용 (15° 거북목 · 굽은 등)
                 </div>
-                <div style="position:absolute; bottom:14px; left:16px; color:#3E3A4C;">
+                <div style="position:absolute; bottom:14px; left:16px; color:#fff;">
                   <div style="font-size:13px; font-weight:800; color:#ffc9c9;">모니터 앞 무너진 척추 &amp; 승모근 과부하</div>
-                  <div style="font-size:11px; color:#F6F5FA; margin-top:2px;">목 15° 전방 쏠림으로 경추에 22kg 하중 누적</div>
+                  <div style="font-size:11px; color:#fde8e4; margin-top:2px;">목 15° 전방 쏠림으로 경추에 22kg 하중 누적</div>
                 </div>
               </div>
 
@@ -3662,18 +3695,18 @@
                 <div style="position:absolute; top:0; left:0; width:100%; min-width:100%; height:100%;">
                   <img src="assets/img/usecase_1400_desk_1787189730062.jpg" alt="스밈 착용 후 데스크 앞 허리와 등이 곧게 펴진 바른 자세 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;">
                   <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(42,122,82,0.8) 0%, transparent 45%);"></div>
-                  <div style="position:absolute; top:12px; left:14px; background:#2a7a52; color:#3E3A4C; font-size:11px; font-weight:900; padding:4px 10px; border-radius:var(--radius-full); box-shadow:0 2px 6px rgba(0,0,0,0.3);">
+                  <div style="position:absolute; top:12px; left:14px; background:#2a7a52; color:#fff; font-size:11px; font-weight:900; padding:4px 10px; border-radius:var(--radius-full); box-shadow:0 2px 6px rgba(0,0,0,0.3);">
                     AFTER : 스밈 착용 (0.0° 수직 척추 정렬)
                   </div>
-                  <div style="position:absolute; bottom:14px; left:16px; color:#3E3A4C;">
-                    <div style="font-size:13px; font-weight:800; color:#9D96C4;">곧게 펴진 척추 &amp; 편안한 호흡 회복</div>
+                  <div style="position:absolute; bottom:14px; left:16px; color:#fff;">
+                    <div style="font-size:13px; font-weight:800; color:#c2dfd1;">곧게 펴진 척추 &amp; 편안한 호흡 회복</div>
                     <div style="font-size:11px; color:#e6f4ea; margin-top:2px;">0.1mm 심리스 코어웨어가 억지 조임 없이 부드럽게 지탱</div>
                   </div>
                 </div>
               </div>
               
               <!-- 드래그 핸들 -->
-              <div class="story92-ba-handle" id="st92-ba-handle" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:38px; height:38px; background:var(--color-forest); color:#3E3A4C; border:2px solid #fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:900; box-shadow:0 4px 12px rgba(0,0,0,0.4); z-index:10; pointer-events:none;">
+              <div class="story92-ba-handle" id="st92-ba-handle" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:38px; height:38px; background:var(--color-forest); color:#fff; border:2px solid #fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:900; box-shadow:0 4px 12px rgba(0,0,0,0.4); z-index:10; pointer-events:none;">
                 ⬌
               </div>
             </div>
@@ -3691,7 +3724,7 @@
           <div style="background:var(--bg-card); border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--color-border); display:flex; flex-direction:column; box-shadow:var(--shadow-sm);">
             <div style="height:140px; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_0830_commute_1787189711503.jpg" alt="08:30 출근길 화이트 셔츠 슬림핏 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 15%;">
-              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#EAE8F4; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">
+              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#f5ad7e; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">
                 08:30 출근길
               </div>
             </div>
@@ -3705,7 +3738,7 @@
           <div style="background:var(--bg-card); border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--color-border); display:flex; flex-direction:column; box-shadow:var(--shadow-sm);">
             <div style="height:140px; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_1400_desk_1787189730062.jpg" alt="14:00 데스크 집중 업무 바른 자세 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;">
-              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#9D96C4; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">
+              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#a8d5be; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">
                 14:00 집중 업무
               </div>
             </div>
@@ -3719,7 +3752,7 @@
           <div style="background:var(--bg-card); border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--color-border); display:flex; flex-direction:column; box-shadow:var(--shadow-sm);">
             <div style="height:140px; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_1700_meeting_1787189750314.jpg" alt="17:00 외근 미팅 당당한 숄더 라인 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 10%;">
-              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#EAE8F4; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">
+              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#f5ad7e; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">
                 17:00 외근 미팅
               </div>
             </div>
@@ -3733,7 +3766,7 @@
           <div style="background:var(--bg-card); border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--color-border); display:flex; flex-direction:column; box-shadow:var(--shadow-sm);">
             <div style="height:140px; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_1930_leaving_1787189770122.jpg" alt="19:30 퇴근길 가벼운 어깨 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 15%;">
-              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#9D96C4; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">
+              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#a8d5be; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">
                 19:30 가벼운 퇴근
               </div>
             </div>
@@ -3753,22 +3786,22 @@
         <h2 class="story-section-title" style="font-family:var(--font-maruburi); font-size:32px; margin-bottom:12px;">수치로 증명하는 스밈 15종 전 라인업</h2>
       </div>
 
-      <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:20px; background:var(--color-forest); color:#3E3A4C; border-radius:var(--radius-lg); padding:36px 24px; margin-bottom:40px; text-align:center;">
+      <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:20px; background:var(--color-forest); color:#fff; border-radius:var(--radius-lg); padding:36px 24px; margin-bottom:40px; text-align:center;">
         <div>
           <div style="font-size:34px; font-weight:900; color:var(--color-terracotta);">38g</div>
-          <div style="font-size:13px; color:#78738A; margin-top:4px;">깃털 초경량 설계</div>
+          <div style="font-size:13px; color:#e2dbca; margin-top:4px;">깃털 초경량 설계</div>
         </div>
         <div>
-          <div style="font-size:34px; font-weight:900; color:#3E3A4C;">99.8%</div>
-          <div style="font-size:13px; color:#78738A; margin-top:4px;">무봉제 의류 은폐율</div>
+          <div style="font-size:34px; font-weight:900; color:#fff;">99.8%</div>
+          <div style="font-size:13px; color:#e2dbca; margin-top:4px;">무봉제 의류 은폐율</div>
         </div>
         <div>
-          <div style="font-size:34px; font-weight:900; color:#3E3A4C;">300+</div>
-          <div style="font-size:13px; color:#78738A; margin-top:4px;">실사용자 필드 테스트</div>
+          <div style="font-size:34px; font-weight:900; color:#fff;">300+</div>
+          <div style="font-size:13px; color:#e2dbca; margin-top:4px;">실사용자 필드 테스트</div>
         </div>
         <div>
           <div style="font-size:34px; font-weight:900; color:var(--color-sage);">100%</div>
-          <div style="font-size:13px; color:#78738A; margin-top:4px;">30일 0원 안심 무료 시착</div>
+          <div style="font-size:13px; color:#e2dbca; margin-top:4px;">30일 0원 안심 무료 시착</div>
         </div>
       </div>
 
@@ -3782,13 +3815,13 @@
       <div class="story92-product-grid" id="st92-product-container">
         <!-- 01 -->
         <div class="story92-prod-card">
-          <div class="story92-prod-ph" style="background:#F6F5FA; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px;">
+          <div class="story92-prod-ph" style="background:#151d18; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px;">
             <svg viewBox="0 0 160 100" style="width:140px; height:80px;" fill="none" xmlns="http://www.w3.org/2000/svg">
               <!-- 넥&숄더 밴드 0.1mm 심리스 실루엣 -->
-              <path d="M 40 30 Q 80 55 120 30 L 115 50 Q 80 72 45 50 Z" fill="#F6F5FA" stroke="#9D96C4" stroke-width="1.5"/>
-              <path d="M 50 38 Q 80 60 110 38" stroke="#9D96C4" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="80" cy="55" r="4" fill="#9D96C4"/>
-              <text x="80" y="85" text-anchor="middle" fill="#9D96C4" font-size="9" font-weight="bold">0.1mm Seamless Neck &amp; Shoulder</text>
+              <path d="M 40 30 Q 80 55 120 30 L 115 50 Q 80 72 45 50 Z" fill="#243028" stroke="#a8d5be" stroke-width="1.5"/>
+              <path d="M 50 38 Q 80 60 110 38" stroke="#d26e2e" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="80" cy="55" r="4" fill="#d26e2e"/>
+              <text x="80" y="85" text-anchor="middle" fill="#a8d5be" font-size="9" font-weight="bold">0.1mm Seamless Neck &amp; Shoulder</text>
             </svg>
           </div>
           <div style="padding:20px;">
@@ -3804,13 +3837,13 @@
 
         <!-- 02 -->
         <div class="story92-prod-card">
-          <div class="story92-prod-ph" style="background:#F6F5FA; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px;">
+          <div class="story92-prod-ph" style="background:#151d18; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px;">
             <svg viewBox="0 0 160 100" style="width:140px; height:80px;" fill="none" xmlns="http://www.w3.org/2000/svg">
               <!-- 에어로 메쉬 조끼 실루엣 -->
-              <path d="M 45 25 L 115 25 L 125 75 L 35 75 Z" fill="#F6F5FA" stroke="#ABA5D0" stroke-width="1.5"/>
-              <line x1="80" y1="25" x2="80" y2="75" stroke="#9D96C4" stroke-width="2"/>
-              <path d="M 55 40 Q 80 50 105 40" stroke="#9D96C4" stroke-width="1.5" stroke-dasharray="2 2"/>
-              <text x="80" y="90" text-anchor="middle" fill="#ABA5D0" font-size="9" font-weight="bold">3D Aero Mesh Spine Vest</text>
+              <path d="M 45 25 L 115 25 L 125 75 L 35 75 Z" fill="#1c2b21" stroke="#38b2ac" stroke-width="1.5"/>
+              <line x1="80" y1="25" x2="80" y2="75" stroke="#d26e2e" stroke-width="2"/>
+              <path d="M 55 40 Q 80 50 105 40" stroke="#a8d5be" stroke-width="1.5" stroke-dasharray="2 2"/>
+              <text x="80" y="90" text-anchor="middle" fill="#38b2ac" font-size="9" font-weight="bold">3D Aero Mesh Spine Vest</text>
             </svg>
           </div>
           <div style="padding:20px;">
@@ -3826,14 +3859,14 @@
 
         <!-- 03 -->
         <div class="story92-prod-card">
-          <div class="story92-prod-ph" style="background:#F6F5FA; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px;">
+          <div class="story92-prod-ph" style="background:#151d18; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px;">
             <svg viewBox="0 0 160 100" style="width:140px; height:80px;" fill="none" xmlns="http://www.w3.org/2000/svg">
               <!-- 에어셀 벨트 실루엣 -->
-              <rect x="30" y="38" width="100" height="24" rx="4" fill="#F6F5FA" stroke="#9D96C4" stroke-width="1.5"/>
-              <circle cx="60" cy="50" r="5" fill="#EAE8F4"/>
-              <circle cx="80" cy="50" r="5" fill="#EAE8F4"/>
-              <circle cx="100" cy="50" r="5" fill="#EAE8F4"/>
-              <text x="80" y="80" text-anchor="middle" fill="#EAE8F4" font-size="9" font-weight="bold">Pelvis Air-Cell Leveling Belt</text>
+              <rect x="30" y="38" width="100" height="24" rx="4" fill="#243028" stroke="#d26e2e" stroke-width="1.5"/>
+              <circle cx="60" cy="50" r="5" fill="#f5ad7e"/>
+              <circle cx="80" cy="50" r="5" fill="#f5ad7e"/>
+              <circle cx="100" cy="50" r="5" fill="#f5ad7e"/>
+              <text x="80" y="80" text-anchor="middle" fill="#f5ad7e" font-size="9" font-weight="bold">Pelvis Air-Cell Leveling Belt</text>
             </svg>
           </div>
           <div style="padding:20px;">
@@ -3849,12 +3882,12 @@
 
         <!-- 04 -->
         <div class="story92-prod-card">
-          <div class="story92-prod-ph" style="background:#F6F5FA; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px;">
+          <div class="story92-prod-ph" style="background:#151d18; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px;">
             <svg viewBox="0 0 160 100" style="width:140px; height:80px;" fill="none" xmlns="http://www.w3.org/2000/svg">
               <!-- 언더웨어 실루엣 -->
-              <path d="M 40 30 L 120 30 L 110 75 L 85 75 L 80 50 L 75 75 L 50 75 Z" fill="#F6F5FA" stroke="#9D96C4" stroke-width="1.5"/>
-              <line x1="50" y1="40" x2="110" y2="40" stroke="#9D96C4" stroke-width="2"/>
-              <text x="80" y="90" text-anchor="middle" fill="#9D96C4" font-size="9" font-weight="bold">0.1mm Lumbar Core Underwear</text>
+              <path d="M 40 30 L 120 30 L 110 75 L 85 75 L 80 50 L 75 75 L 50 75 Z" fill="#243028" stroke="#a8d5be" stroke-width="1.5"/>
+              <line x1="50" y1="40" x2="110" y2="40" stroke="#d26e2e" stroke-width="2"/>
+              <text x="80" y="90" text-anchor="middle" fill="#a8d5be" font-size="9" font-weight="bold">0.1mm Lumbar Core Underwear</text>
             </svg>
           </div>
           <div style="padding:20px;">
@@ -3871,8 +3904,8 @@
     </section>
 
     <!-- Story Footer Final Single Conversion CTA (결말부 30일 무료 시착 1회 집중 강조) -->
-    <section class="story-final-cta" style="background:var(--color-forest-dark); color:#3E3A4C; padding:70px 40px; border-radius:var(--radius-lg); text-align:center; margin-top:50px; box-shadow:var(--shadow-lg);">
-      <span class="section-tag" style="background:rgba(255,255,255,0.1); color:#78738A; border:1px solid rgba(255,255,255,0.2); font-size:12px; padding:4px 14px; border-radius:var(--radius-full); margin-bottom:16px; display:inline-block;">
+    <section class="story-final-cta" style="background:var(--color-forest-dark); color:#fff; padding:70px 40px; border-radius:var(--radius-lg); text-align:center; margin-top:50px; box-shadow:var(--shadow-lg);">
+      <span class="section-tag" style="background:rgba(255,255,255,0.1); color:#e2dbca; border:1px solid rgba(255,255,255,0.2); font-size:12px; padding:4px 14px; border-radius:var(--radius-full); margin-bottom:16px; display:inline-block;">
         ✦ EFFORT-FREE WELLNESS TRIAL
       </span>
       <h2 style="font-family:var(--font-maruburi); font-size:36px; font-weight:800; margin-bottom:14px; line-height:1.35; word-break:keep-all;">
@@ -3887,12 +3920,12 @@
         <button class="btn-primary btn-accent" style="padding:16px 36px; font-size:16px; font-weight:800; box-shadow:0 10px 25px rgba(210,110,46,0.35);" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
           30일 무료 시착 신청하기 (0원)
         </button>
-        <button class="btn-sm-ghost" style="padding:16px 28px; font-size:15px; border:1px solid rgba(255,255,255,0.35); color:#3E3A4C; border-radius:var(--radius-full);" onclick="switchPage('page-shop')">
+        <button class="btn-sm-ghost" style="padding:16px 28px; font-size:15px; border:1px solid rgba(255,255,255,0.35); color:#fff; border-radius:var(--radius-full);" onclick="switchPage('page-shop')">
           15종 전 상품 카탈로그 둘러보기 ➔
         </button>
       </div>
 
-      <div style="font-size:12.5px; color:#78738A;">
+      <div style="font-size:12.5px; color:#a5b5ac;">
         왕복 배송비 전액 무료 · 30일 이내 100% 무상 반품 및 사이즈 맞교환 보장
       </div>
     </section>
@@ -3905,26 +3938,26 @@
   <!-- ==========================================================================
        [SEC-11: Global Footer]
        ========================================================================== -->
-  <footer class="global-footer" style="background:var(--color-forest-dark); padding:60px 0 100px; color:#3E3A4C; font-size:13px; border-top:1px solid rgba(255,255,255,0.1);">
+  <footer class="global-footer" style="background:var(--color-forest-dark); padding:60px 0 100px; color:#fff; font-size:13px; border-top:1px solid rgba(255,255,255,0.1);">
     <div class="container">
       <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1.5fr; gap:40px; margin-bottom:40px;">
         <div>
-          <div class="logo" style="color:#3E3A4C; margin-bottom:12px;">SEUMIM <span class="logo-badge">0.1mm</span></div>
-          <p style="color:#78738A; line-height:1.7; font-size:12.5px;">
+          <div class="logo" style="color:#fff; margin-bottom:12px;">SEUMIM <span class="logo-badge">0.1mm</span></div>
+          <p style="color:#a5b5ac; line-height:1.7; font-size:12.5px;">
             스밈(SEUMIM)은 0.1mm 무봉제 전도성 센서 섬유 기술을 바탕으로 일상 속에 바른 균형을 설계하는 하이엔드 테크 웰니스 플랫폼입니다.
           </p>
         </div>
         <div>
-          <div style="font-size:14px; font-weight:800; color:#3E3A4C; margin-bottom:14px;">제품 라인업 (15)</div>
-          <ul style="display:flex; flex-direction:column; gap:8px; color:#78738A; font-size:12.5px;">
+          <div style="font-size:14px; font-weight:800; color:#fff; margin-bottom:14px;">제품 라인업 (15)</div>
+          <ul style="display:flex; flex-direction:column; gap:8px; color:#a5b5ac; font-size:12.5px;">
             <li><a href="javascript:void(0)" onclick="switchPage('page-shop'); filterShopPage('cat_neck', document.querySelectorAll('#page-shop .showcase-tabs .tab-btn')[1]);">어깨 · 경추 케어 라인 (5)</a></li>
             <li><a href="javascript:void(0)" onclick="switchPage('page-shop'); filterShopPage('cat_spine', document.querySelectorAll('#page-shop .showcase-tabs .tab-btn')[2]);">척추 · 허리 케어 라인 (5)</a></li>
             <li><a href="javascript:void(0)" onclick="switchPage('page-shop'); filterShopPage('cat_pelvis', document.querySelectorAll('#page-shop .showcase-tabs .tab-btn')[3]);">골반 · 하체 케어 라인 (5)</a></li>
           </ul>
         </div>
         <div>
-          <div style="font-size:14px; font-weight:800; color:#3E3A4C; margin-bottom:14px;">고객 신뢰 센터</div>
-          <ul style="display:flex; flex-direction:column; gap:8px; color:#78738A; font-size:12.5px;">
+          <div style="font-size:14px; font-weight:800; color:#fff; margin-bottom:14px;">고객 신뢰 센터</div>
+          <ul style="display:flex; flex-direction:column; gap:8px; color:#a5b5ac; font-size:12.5px;">
             <li><a href="javascript:void(0)" onclick="openCheckoutModal('0.1mm 넥&숄더 밴드', 'M')">30일 무료 시착 정책</a></li>
             <li><a href="javascript:void(0)" onclick="openFitModal()">1초 스마트 사이즈 가이드</a></li>
             <li><a href="javascript:void(0)" onclick="openCenterModal()">전국 12개 웰니스 센터</a></li>
@@ -3932,16 +3965,16 @@
           </ul>
         </div>
         <div>
-          <div style="font-size:14px; font-weight:800; color:#3E3A4C; margin-bottom:14px;">CS 고객센터</div>
-          <p style="color:#3E3A4C; font-size:18px; font-weight:800; margin-bottom:6px;">1588-9240</p>
-          <p style="color:#78738A; font-size:12px; line-height:1.6;">
+          <div style="font-size:14px; font-weight:800; color:#fff; margin-bottom:14px;">CS 고객센터</div>
+          <p style="color:#fff; font-size:18px; font-weight:800; margin-bottom:6px;">1588-9240</p>
+          <p style="color:#a5b5ac; font-size:12px; line-height:1.6;">
             평일 09:30 ~ 18:30 (점심 12:30 ~ 13:30)<br>
             주말 및 공휴일 1:1 카카오톡 상담 운영
           </p>
         </div>
       </div>
 
-      <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(255,255,255,0.1); padding-top:24px; color:#A8A3BA; font-size:12px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(255,255,255,0.1); padding-top:24px; color:#7c8a82; font-size:12px;">
         <div>© 2026 SEUMIM Inc. All rights reserved. 30일 안심 무료 맞교환/반품 100% 보장.</div>
         <div style="display:flex; gap:16px;">
           <a href="#">이용약관</a>
@@ -4578,7 +4611,7 @@
           <div style="background:var(--bg-card); border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--color-border); display:flex; flex-direction:column; box-shadow:var(--shadow-sm);">
             <div style="height:140px; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_0830_commute_1787189711503.jpg" alt="08:30 출근길 화이트 셔츠 슬림핏 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 15%;">
-              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#EAE8F4; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">08:30 출근길</div>
+              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#f5ad7e; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">08:30 출근길</div>
             </div>
             <div style="padding:14px;">
               <div style="font-family:var(--font-maruburi); font-size:15px; font-weight:700; color:var(--color-forest); margin-bottom:4px;">슬림한 오피스룩</div>
@@ -4588,7 +4621,7 @@
           <div style="background:var(--bg-card); border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--color-border); display:flex; flex-direction:column; box-shadow:var(--shadow-sm);">
             <div style="height:140px; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_1400_desk_1787189730062.jpg" alt="14:00 데스크 집중 업무 바른 자세 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;">
-              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#9D96C4; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">14:00 집중 업무</div>
+              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#a8d5be; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">14:00 집중 업무</div>
             </div>
             <div style="padding:14px;">
               <div style="font-family:var(--font-maruburi); font-size:15px; font-weight:700; color:var(--color-forest); margin-bottom:4px;">무의식 거북목 지탱</div>
@@ -4598,7 +4631,7 @@
           <div style="background:var(--bg-card); border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--color-border); display:flex; flex-direction:column; box-shadow:var(--shadow-sm);">
             <div style="height:140px; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_1700_meeting_1787189750314.jpg" alt="17:00 외근 미팅 당당한 숄더 라인 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 10%;">
-              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#EAE8F4; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">17:00 외근 미팅</div>
+              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#f5ad7e; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">17:00 외근 미팅</div>
             </div>
             <div style="padding:14px;">
               <div style="font-family:var(--font-maruburi); font-size:15px; font-weight:700; color:var(--color-forest); margin-bottom:4px;">당당한 프로 핏</div>
@@ -4608,7 +4641,7 @@
           <div style="background:var(--bg-card); border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--color-border); display:flex; flex-direction:column; box-shadow:var(--shadow-sm);">
             <div style="height:140px; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_1930_leaving_1787189770122.jpg" alt="19:30 퇴근길 가벼운 어깨 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 15%;">
-              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#9D96C4; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">19:30 가벼운 퇴근</div>
+              <div style="position:absolute; top:8px; left:8px; background:rgba(21,29,24,0.85); color:#a8d5be; font-size:10px; font-weight:800; padding:2px 8px; border-radius:var(--radius-full);">19:30 가벼운 퇴근</div>
             </div>
             <div style="padding:14px;">
               <div style="font-family:var(--font-maruburi); font-size:15px; font-weight:700; color:var(--color-forest); margin-bottom:4px;">가벼운 승모근</div>
@@ -4623,10 +4656,10 @@
             <div style="height:70%; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_1400_desk_1787189730062.jpg" alt="14:00 데스크 집중 업무 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;">
               <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(21,29,24,0.6) 0%, transparent 40%);"></div>
-              <div style="position:absolute; top:12px; left:12px; background:rgba(21,29,24,0.85); color:#9D96C4; font-size:11px; font-weight:800; padding:4px 12px; border-radius:var(--radius-full); backdrop-filter:blur(4px);">
+              <div style="position:absolute; top:12px; left:12px; background:rgba(21,29,24,0.85); color:#a8d5be; font-size:11px; font-weight:800; padding:4px 12px; border-radius:var(--radius-full); backdrop-filter:blur(4px);">
                 14:00 데스크 집중 업무 모드
               </div>
-              <div style="position:absolute; bottom:12px; left:16px; color:#3E3A4C; font-size:12px; font-weight:700;">
+              <div style="position:absolute; bottom:12px; left:16px; color:#fff; font-size:12px; font-weight:700;">
                 0.0° 경추 수직 정렬 축 유지
               </div>
             </div>
@@ -4648,10 +4681,10 @@
             <div style="height:70%; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_0830_commute_1787189711503.jpg" alt="08:30 & 19:30 출퇴근 이동 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 15%;">
               <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(21,29,24,0.6) 0%, transparent 40%);"></div>
-              <div style="position:absolute; top:12px; left:12px; background:rgba(21,29,24,0.85); color:#EAE8F4; font-size:11px; font-weight:800; padding:4px 12px; border-radius:var(--radius-full); backdrop-filter:blur(4px);">
+              <div style="position:absolute; top:12px; left:12px; background:rgba(21,29,24,0.85); color:#f5ad7e; font-size:11px; font-weight:800; padding:4px 12px; border-radius:var(--radius-full); backdrop-filter:blur(4px);">
                 08:30 &amp; 19:30 출퇴근 이동
               </div>
-              <div style="position:absolute; bottom:12px; left:16px; color:#3E3A4C; font-size:12px; font-weight:700;">
+              <div style="position:absolute; bottom:12px; left:16px; color:#fff; font-size:12px; font-weight:700;">
                 셔츠 속 99.8% 완벽 은폐 &amp; 가벼운 발걸음
               </div>
             </div>
@@ -4673,10 +4706,10 @@
             <div style="height:70%; position:relative; overflow:hidden;">
               <img src="assets/img/usecase_1700_meeting_1787189750314.jpg" alt="17:00 VIP 외근 및 미팅 실사 사진" style="width:100%; height:100%; object-fit:cover; object-position:center 10%;">
               <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(21,29,24,0.6) 0%, transparent 40%);"></div>
-              <div style="position:absolute; top:12px; left:12px; background:rgba(21,29,24,0.85); color:#EAE8F4; font-size:11px; font-weight:800; padding:4px 12px; border-radius:var(--radius-full); backdrop-filter:blur(4px);">
+              <div style="position:absolute; top:12px; left:12px; background:rgba(21,29,24,0.85); color:#f5ad7e; font-size:11px; font-weight:800; padding:4px 12px; border-radius:var(--radius-full); backdrop-filter:blur(4px);">
                 17:00 VIP 외근 &amp; 미팅
               </div>
-              <div style="position:absolute; bottom:12px; left:16px; color:#3E3A4C; font-size:12px; font-weight:700;">
+              <div style="position:absolute; bottom:12px; left:16px; color:#fff; font-size:12px; font-weight:700;">
                 당당하고 곧은 어깨선으로 신뢰감 형성
               </div>
             </div>
@@ -4763,15 +4796,15 @@
       if (box) {
         box.innerHTML = `
           <div style="display:flex; align-items:center; gap:16px;">
-            <div style="font-size:32px; background:#F6F5FA; width:54px; height:54px; border-radius:9999px; display:flex; align-items:center; justify-content:center;">
+            <div style="font-size:32px; background:#EFF4EE; width:54px; height:54px; border-radius:9999px; display:flex; align-items:center; justify-content:center;">
               ${p.icon}
             </div>
             <div>
-              <div style="font-size:12.5px; color:#8780B0; font-weight:800;">[${p.tag}]</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:17px; font-weight:800; color:#3E3A4C; margin:3px 0;">
+              <div style="font-size:12.5px; color:#4C6649; font-weight:800;">[${p.tag}]</div>
+              <div style="font-family:var(--font-gowun), serif; font-size:17px; font-weight:800; color:#4A433E; margin:3px 0;">
                 ${p.title}
               </div>
-              <div style="font-size:13px; color:#78738A;">
+              <div style="font-size:13px; color:#7A7067;">
                 ${p.desc}
               </div>
             </div>

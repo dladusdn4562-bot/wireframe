@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SEUMIM (스밈) - 수정 와이어프레임 (Refined Master Wireframe)</title>
-  <!-- Google Fonts: 한국어 Gowun Batang & Pretendard CDN -->
+  <!-- Web Fonts: Pretendard 공식 CDN (300~900 풀 웨이트) & Gowun Batang, Noto Serif KR -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Serif+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <style>
     /* ==========================================================================
@@ -30,24 +31,24 @@
        [CSS Design Tokens & Theme]
        ========================================================================== */
     :root {
-      --bg-base: #fbf9f5;
-      --bg-surface: #ffffff;
-      --bg-card: #f5f1e8;
-      --bg-card-hover: #ede7d8;
-      --bg-accent-light: #fef8f0;
+      --bg-base: #F4F4F2;          /* 전체 기본 배경: 따뜻한 웜 그레이 */
+      --bg-surface: #FFFFFF;       /* 카드 및 모달 서피스: 화이트 */
+      --bg-card: #EAEAE6;          /* 보조 카드 및 배너: 부드러운 웜 그레이 */
+      --bg-card-hover: #E1E1DC;    /* 카드 호버 배경 */
+      --bg-accent-light: #EBF0EC;  /* 강조 연한 배경: 채도 낮은 세이지 틴트 */
       
-      --color-text-primary: #1c2420;
-      --color-text-secondary: #4a5750;
-      --color-text-muted: #7c8a82;
-      --color-text-inverse: #ffffff;
+      --color-text-primary: #5B5B5B;   /* 기본/강조 텍스트: #5B5B5B */
+      --color-text-secondary: #B0B0B0; /* 서브 텍스트: #B0B0B0 */
+      --color-text-muted: #B0B0B0;     /* 캡션 및 플레이스홀더: #B0B0B0 */
+      --color-text-inverse: #FFFFFF;
       
-      --color-forest: #243028;
-      --color-forest-dark: #151d18;
-      --color-terracotta: #d26e2e;
-      --color-terracotta-hover: #ba5c20;
-      --color-sage: #2a7a52;
-      --color-border: #e2dbca;
-      --color-border-focus: #243028;
+      --color-forest: #5B5B5B;         /* 로고 및 헤드라인: #5B5B5B */
+      --color-forest-dark: #5B5B5B;    /* 최상단 스위처바: #5B5B5B */
+      --color-terracotta: #6F9670;     /* 메인 강조 및 버튼: 모스 세이지 그린 (#6F9670) */
+      --color-terracotta-hover: #5C825D; /* 강조 호버 */
+      --color-sage: #6F9670;           /* 세이지 그린 */
+      --color-border: #D6D6D0;         /* 테두리 및 구분선: 정갈한 웜 그레이 */
+      --color-border-focus: #6F9670;   /* 포커스 테두리 */
       
       --font-serif: 'Gowun Batang', -apple-system, serif;
       --font-maruburi: 'MaruBuri', 'Gowun Batang', serif;
@@ -267,31 +268,7 @@
       margin: 0 auto 20px;
       letter-spacing: -0.03em;
     }
-    .hero-manifesto-title span {
-      font-family: var(--font-maruburi);
-      font-weight: 900;
-      color: var(--color-terracotta);
-      letter-spacing: -0.01em;
-      display: inline-block;
-      position: relative;
-      padding: 0 6px;
-      margin: 0 2px;
-      z-index: 1;
-      -webkit-text-stroke: 0.8px currentColor;
-    }
-    .hero-manifesto-title span::after {
-      content: '';
-      position: absolute;
-      left: -6px;
-      bottom: 1px;
-      width: calc(100% + 12px);
-      height: 20px;
-      background: radial-gradient(ellipse at center, rgba(255, 182, 132, 0.85) 0%, rgba(255, 198, 158, 0.45) 55%, transparent 75%);
-      filter: blur(3.5px);
-      border-radius: 9999px;
-      z-index: -1;
-      pointer-events: none;
-    }
+
     .hero-manifesto-desc {
       font-size: 17px;
       color: var(--color-text-secondary);
@@ -462,8 +439,8 @@
       transition: var(--transition);
     }
     .btn-card-wish:hover { transform: scale(1.1); border-color: var(--color-terracotta); color: var(--color-terracotta); }
-    .btn-card-wish.active { color: #ef4444; border-color: #ef4444; background: #fff5f5; }
-    .btn-card-wish.active svg { fill: #ef4444; stroke: #ef4444; }
+    .btn-card-wish.active { color: #6F9670; border-color: #6F9670; background: #EFF4EE; }
+    .btn-card-wish.active svg { fill: #6F9670; stroke: #6F9670; }
 
     .featured-content {
       padding: 48px;
@@ -538,7 +515,7 @@
       flex-direction: column;
       justify-content: space-between;
     }
-    .review-stars { color: #f59e0b; font-size: 14px; margin-bottom: 10px; }
+    .review-stars { color: #6F9670; font-size: 14px; margin-bottom: 10px; }
     .review-text { font-size: 13.5px; color: var(--color-text-primary); line-height: 1.65; margin-bottom: 16px; font-weight: 500; }
     .review-author { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--color-text-muted); border-top: 1px solid var(--bg-card); padding-top: 12px; }
     .review-badge { background: var(--bg-card); padding: 2px 8px; border-radius: var(--radius-full); font-weight: 700; color: var(--color-forest); }
@@ -1698,7 +1675,12 @@
 
       /* 2. Hero & Manifesto 섹션 모바일 완벽 최적화 */
       .hero-section {
-        padding: 45px 0 35px !important;
+        min-height: calc(100vh - 68px) !important;
+        min-height: calc(100dvh - 68px) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        padding: 24px 0 35px !important;
       }
       .hero-eyebrow {
         font-size: 11px !important;
@@ -2045,44 +2027,45 @@
 
   
     /* ==========================================================================
-       [SEUMIM 확정 2030 웜 뉴트럴 & 유기적 조약돌 마스터 디자인 시스템]
-       1. Base Background: 단일 크림 오트밀 (#FDFBF7)
-       2. Typography: 웜 브라운 차콜 (#4A433E)
-       3. Primary (메인 CTA / 강조): 소프트 피치 코랄 (#E5A99B)
-       4. Secondary (상태 알림 / 보조): 뮤티드 세이지 (#B4C4B1)
+       [SEUMIM 확정 2030 웜 그레이 & 세이지 그린 마스터 디자인 시스템]
+       1. Base Background: 따뜻한 웜 그레이 (#F4F4F2)
+       2. Typography: 짙은 챠콜 그레이 (#2B2D2B, #585B57)
+       3. Primary (메인 CTA / 강조): 채도 낮은 세이지 그린 (#5A7363, #465B4E)
+       4. Secondary (상태 알림 / 보조): 소프트 세이지 (#8EA494, #EBF0EC)
        5. 1번 유기적 조약돌 둥글기 시스템 (16px ~ 36px, 9999px)
        ========================================================================== */
 
     :root {
-      --bg-base: #FDFBF7;
-      --bg-surface: #F7F3EB;
-      --bg-surface-elevated: #EFE8DC;
+      --bg-base: #F4F4F2;
+      --bg-surface: #FFFFFF;
+      --bg-surface-elevated: #EAEAE6;
       --bg-card: #FFFFFF;
-      --bg-card-hover: #FAF6EE;
-      --bg-card-alt: #FDFBF7;
-      --bg-accent-light: #FDF5F3;
+      --bg-card-hover: #EAEAE6;
+      --bg-card-alt: #F4F4F2;
+      --bg-accent-light: #EBF0EC;
 
-      --color-text-primary: #4A433E;
-      --color-text-secondary: #7A7067;
-      --color-text-muted: #9E9388;
+      --color-text-primary: #2B2D2B;
+      --color-text-secondary: #585B57;
+      --color-text-muted: #888B86;
       --color-text-inverse: #FFFFFF;
 
-      --color-primary: #E5A99B;
-      --color-primary-hover: #D49586;
-      --color-primary-light: #FDF5F3;
-      --color-secondary: #B4C4B1;
-      --color-secondary-hover: #9FB39B;
-      --color-secondary-light: #EFF4EE;
-      --color-secondary-text: #4C6649;
+      --color-primary: #6F9670;
+      --color-primary-hover: #5C825D;
+      --color-primary-light: #EEF4EE;
+      --color-secondary: #6F9670;
+      --color-secondary-hover: #5C825D;
+      --color-secondary-light: #EEF4EE;
+      --color-secondary-text: #3D533E;
 
-      --color-terracotta: #E5A99B;
-      --color-forest: #4A433E;
-      --color-sage: #B4C4B1;
-      --color-wood: #7A7067;
+      --color-terracotta: #6F9670;
+      --color-forest: #5B5B5B;
+      --color-forest-dark: #5B5B5B;
+      --color-sage: #6F9670;
+      --color-wood: #B0B0B0;
 
-      --color-border: #E8E1D3;
-      --color-border-light: #F2ECE1;
-      --color-border-soft: rgba(74, 67, 62, 0.08);
+      --color-border: #D6D6D0;
+      --color-border-light: #E2E2DC;
+      --color-border-soft: rgba(43, 45, 43, 0.08);
 
       --font-gowun: 'Gowun Batang', 'Noto Serif KR', serif;
       --font-serif: 'Gowun Batang', 'Noto Serif KR', serif;
@@ -2095,49 +2078,65 @@
       --radius-xl: 36px;
       --radius-full: 9999px;
 
-      --shadow-sm: 0 2px 8px rgba(74, 67, 62, 0.04);
-      --shadow-md: 0 6px 20px rgba(74, 67, 62, 0.05);
-      --shadow-lg: 0 14px 36px rgba(74, 67, 62, 0.07);
+      --shadow-sm: 0 2px 8px rgba(43, 45, 43, 0.04);
+      --shadow-md: 0 6px 20px rgba(43, 45, 43, 0.06);
+      --shadow-lg: 0 14px 36px rgba(43, 45, 43, 0.08);
 
       --container-max: 1240px;
       --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     body, #page-main, #page-shop, #page-story {
-      background-color: #FDFBF7 !important;
-      color: #4A433E !important;
+      background-color: #F4F4F2 !important;
+      color: #5B5B5B !important;
       font-family: var(--font-sans);
+      font-weight: 600 !important;
     }
 
-    /* 상단 고정 헤더 슬림화 (121px 정상화) */
+    /* [Hero 영역 제외 모든 텍스트 폰트 두께 600 일괄 적용] */
+    body *:not(.hero-section):not(.hero-section *) {
+      font-weight: 600 !important;
+    }
+
+    /* [Hero 영역 폰트 두께 700 유지 보장] */
+    .hero-section .hero-manifesto-title,
+    .hero-section .hero-manifesto-title *,
+    .hero-section .hero-highlight-word,
+    .hero-section .hero-eyebrow,
+    .hero-section .hero-cta-group .btn-primary,
+    .hero-section .hero-right-visual-area span {
+      font-weight: 700 !important;
+    }
+
+    /* 상단 고정 헤더 슬림화 */
     .site-header-fixed {
       position: fixed;
       top: 0; left: 0; right: 0; width: 100%; z-index: 1100;
       background: transparent;
-      box-shadow: 0 4px 20px rgba(74, 67, 62, 0.06);
+      box-shadow: 0 4px 20px rgba(43, 45, 43, 0.06);
     }
     .page-switch-bar {
-      background: #4A433E !important; color: #FFFFFF !important; padding: 10px 24px !important;
+      background: #1E201E !important; color: #FFFFFF !important; padding: 10px 24px !important;
       display: flex !important; justify-content: space-between !important; align-items: center !important; font-size: 13px !important;
-      border-bottom: 1px solid rgba(255,255,255,0.12) !important;
+      border-bottom: 1px solid rgba(255,255,255,0.1) !important;
     }
     .header-gnb {
-      background: rgba(253, 251, 247, 0.98) !important;
+      background: rgba(244, 244, 242, 0.98) !important;
       backdrop-filter: blur(12px) !important;
       border-bottom: 1px solid var(--color-border) !important;
     }
     .mobile-menu-drawer {
       display: none !important;
-      background: var(--bg-surface) !important;
+      background: #FFFFFF !important;
       border-top: 1px solid var(--color-border) !important;
       padding: 18px 24px !important;
     }
     .mobile-menu-drawer.open { display: block !important; }
 
-    /* 1px 미세선 이솝 스타일 */
+    /* 1px 미세선 스타일 (강조 그린 #6F9670 적용) */
     .section-tag, .hero-eyebrow, .catalog-tag, .journey-tag {
       display: flex !important; align-items: center !important; justify-content: center !important; gap: 14px !important;
-      color: #E5A99B !important; font-family: var(--font-gowun), serif !important; font-size: 13.5px !important;
+      color: #6F9670 !important; font-family: var(--font-gowun), serif !important; font-size: 13.5px !important;
       font-weight: 700 !important; background: transparent !important; border: none !important; padding: 0 !important;
     }
     .section-tag::before, .section-tag::after,
@@ -2145,72 +2144,369 @@
     .catalog-tag::before, .catalog-tag::after,
     .journey-tag::before, .journey-tag::after {
       content: '' !important; display: inline-block !important; width: 28px !important; height: 1px !important;
-      background: #E5A99B !important; opacity: 0.85 !important;
+      background: #6F9670 !important; opacity: 0.85 !important;
     }
 
-    /* 4번: 피치 코랄 틴트 띠 */
-    .highlight-peach {
-      background: linear-gradient(180deg, transparent 60%, rgba(229, 169, 155, 0.34) 60%) !important;
+    /* 하이라이트 틴트 띠 */
+    .highlight-peach, .highlight-wave-sage {
+      background: linear-gradient(180deg, transparent 60%, rgba(111, 150, 112, 0.32) 60%) !important;
       display: inline !important; padding: 0 4px !important;
     }
 
-    /* 조약돌 둥근 듀얼 CTA */
+    /* 조약돌 둥근 듀얼 CTA (강조 그린 #6F9670 적용) */
     .btn-primary, .btn-accent, .floating-bottom-bar .btn-accent {
-      background: #E5A99B !important; color: #FFFFFF !important;
-      border: 1.5px solid #E5A99B !important; border-radius: 9999px !important;
-      box-shadow: 0 4px 14px rgba(229, 169, 155, 0.35) !important; font-weight: 700 !important;
+      background: #6F9670 !important; color: #FFFFFF !important;
+      border: 1.5px solid #6F9670 !important; border-radius: 9999px !important;
+      box-shadow: 0 4px 14px rgba(111, 150, 112, 0.35) !important; font-weight: 700 !important;
       padding: 12px 26px !important; font-size: 14px !important; display: inline-flex !important;
       align-items: center !important; justify-content: center !important; gap: 6px !important; transition: var(--transition) !important;
     }
-    .btn-primary:hover, .btn-accent:hover { background: #D49586 !important; border-color: #D49586 !important; transform: translateY(-1px) !important; }
+    .btn-primary:hover, .btn-accent:hover { background: #5C825D !important; border-color: #5C825D !important; transform: translateY(-1px) !important; }
     .btn-secondary {
-      background: #FFFFFF !important; color: #4A433E !important;
-      border: 1.5px solid #E5A99B !important; border-radius: 9999px !important;
+      background: #FFFFFF !important; color: #2B2D2B !important;
+      border: 1.5px solid #6F9670 !important; border-radius: 9999px !important;
       font-weight: 700 !important; padding: 12px 26px !important; font-size: 14px !important;
       display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; transition: var(--transition) !important;
     }
-    .btn-secondary:hover { background: #FDF5F3 !important; color: #D49586 !important; border-color: #D49586 !important; }
+    .btn-secondary:hover { background: #EEF4EE !important; color: #5C825D !important; border-color: #5C825D !important; }
 
-    /* 1번 유기적 조약돌 둥글기 시스템 */
-    .pride-metrics-bar { border-radius: 36px !important; background: #FFFFFF !important; border: 1.5px solid #E8E1D3 !important; }
-    .featured-card { border-radius: 26px !important; border: 1.5px solid #E8E1D3 !important; background: #FFFFFF !important; }
-    .explore-catalog-banner, .fit-finder-banner { border-radius: 32px !important; border: 1.5px solid #E8E1D3 !important; }
-    .one-view-card { border-radius: 16px !important; border: 1.5px solid #E8E1D3 !important; background: #FFFFFF !important; }
-    .hud-card, .center-card, .proof-stat-card, .review-card, .faq-item { border-radius: 20px !important; border: 1.5px solid #E8E1D3 !important; background: #FFFFFF !important; }
+    /* 1번 유기적 조약돌 둥글기 시스템 (따뜻한 웜 그레이 보더 적용) */
+    .pride-metrics-bar { border-radius: 36px !important; background: #FFFFFF !important; border: 1.5px solid #D6D6D0 !important; }
+    .featured-card { border-radius: 26px !important; border: 1.5px solid #D6D6D0 !important; background: #FFFFFF !important; }
+    .explore-catalog-banner, .fit-finder-banner { border-radius: 32px !important; border: 1.5px solid #D6D6D0 !important; }
+    .one-view-card { border-radius: 16px !important; border: 1.5px solid #D6D6D0 !important; background: #FFFFFF !important; }
+    .hud-card, .center-card, .proof-stat-card, .review-card, .faq-item { border-radius: 20px !important; border: 1.5px solid #D6D6D0 !important; background: #FFFFFF !important; }
 
-    /* 히어로 2열 스플릿 앵커 레이아웃 */
-    .hero-section { padding: 60px 0 40px !important; background: var(--bg-base) !important; }
-    .hero-split-grid { display: grid !important; grid-template-columns: 1.15fr 0.85fr !important; gap: 44px !important; align-items: center !important; margin-bottom: 48px !important; }
-    .hero-content-left { text-align: left !important; }
-    .hero-content-left .hero-eyebrow { justify-content: flex-start !important; margin-bottom: 14px !important; }
-    .hero-manifesto-title { font-family: var(--font-gowun), serif !important; font-size: 40px !important; font-weight: 800 !important; line-height: 1.35 !important; color: #4A433E !important; letter-spacing: -0.02em !important; margin-bottom: 18px !important; }
-    .hero-subcopy { font-size: 16px !important; color: #7A7067 !important; line-height: 1.75 !important; margin-bottom: 28px !important; max-width: 520px !important; }
-    .hero-cta-group { display: flex !important; gap: 14px !important; align-items: center !important; flex-wrap: wrap !important; }
-
-    .hero-visual-anchor {
-      background: #F7F3EB !important; border: 1.5px solid #E8E1D3 !important; border-radius: 32px !important;
-      padding: 24px !important; box-shadow: var(--shadow-md) !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; height: 380px !important;
+    /* 히어로 풀 블리드 2열 스플릿 레이아웃 (텍스트 좌측 밀착 & 넉넉한 중앙 여백) */
+    .hero-section {
+      min-height: calc(100vh - 187px) !important;
+      min-height: calc(100dvh - 187px) !important;
+      display: grid !important;
+      grid-template-columns: 1.35fr 0.65fr !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      background: var(--bg-base) !important;
+      box-sizing: border-box !important;
+      position: relative !important;
     }
-    .hero-visual-inner {
-      background: #FFFFFF !important; border: 1px dashed #E8E1D3 !important; border-radius: 22px !important; height: 240px !important;
-      display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; text-align: center !important; padding: 20px !important; position: relative !important;
+    .hero-left-col {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      padding-top: 150px !important;
+      padding-bottom: 0px !important;
+      padding-left: clamp(36px, 6.5vw, 120px) !important;
+      padding-right: clamp(40px, 4vw, 80px) !important;
+      max-width: 860px !important;
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: auto !important;
+      box-sizing: border-box !important;
+      text-align: left !important;
     }
-    .hero-visual-badge-top { position: absolute !important; top: 14px !important; left: 14px !important; background: #EFF4EE !important; color: #4C6649 !important; border: 1px solid #B4C4B1 !important; padding: 4px 10px !important; border-radius: 9999px !important; font-size: 11px !important; font-weight: 800 !important; }
-    .hero-visual-caption { margin-top: 14px !important; display: flex !important; justify-content: space-between !important; align-items: center !important; }
-    .hero-caption-title { font-family: var(--font-gowun), serif !important; font-size: 15px !important; font-weight: 800 !important; color: #4A433E !important; }
-    .hero-caption-desc { font-size: 12.5px !important; color: #7A7067 !important; }
+    .hero-left-col .hero-eyebrow {
+      justify-content: flex-start !important;
+      margin-bottom: 20px !important;
+      color: #6F9670 !important;
+      font-weight: 700 !important;
+      font-size: 15px !important;
+      letter-spacing: 0.04em !important;
+    }
+    .hero-left-col .hero-manifesto-title,
+    .hero-left-col .hero-manifesto-title * {
+      font-family: var(--font-gowun), 'Gowun Batang', serif !important;
+    }
+    .hero-left-col .hero-manifesto-title {
+      font-size: clamp(46px, 4.1vw, 58px) !important;
+      font-weight: 700 !important;
+      line-height: 1.3 !important;
+      color: #5B5B5B !important;
+      letter-spacing: -0.025em !important;
+      margin-bottom: 24px !important;
+      word-break: keep-all !important;
+    }
+    .hero-highlight-word {
+      font-family: var(--font-gowun), 'Gowun Batang', serif !important;
+      color: inherit !important;
+      position: relative !important;
+      display: inline-block !important;
+      font-weight: 700 !important;
+      z-index: 1 !important;
+    }
+    .hero-highlight-word::after {
+      content: '' !important;
+      position: absolute !important;
+      left: -4px !important;
+      right: -4px !important;
+      bottom: -5px !important;
+      height: 15px !important;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 18' preserveAspectRatio='none'%3E%3Cpath d='M2,9 C22,3 42,15 62,9 C82,3 102,15 118,9' fill='none' stroke='%236F9670' stroke-width='6.5' stroke-linecap='round' opacity='0.75'/%3E%3C/svg%3E") !important;
+      background-repeat: no-repeat !important;
+      background-size: 100% 100% !important;
+      filter: blur(2.8px) !important;
+      opacity: 0.82 !important;
+      z-index: -1 !important;
+      pointer-events: none !important;
+    }
+    .hero-left-col .hero-subcopy {
+      font-size: clamp(16px, 1.25vw, 18px) !important;
+      color: #B0B0B0 !important;
+      line-height: 1.8 !important;
+      margin-bottom: 34px !important;
+      max-width: 620px !important;
+    }
+    .hero-left-col .hero-cta-group {
+      display: flex !important;
+      gap: 16px !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+    }
+    .hero-left-col .hero-cta-group .btn-primary {
+      padding: 14px 32px !important;
+      font-size: 15.5px !important;
+    }
 
-    /* 탈박스화 브랜드 스토리 섹션 */
-    .journey-section { padding: 80px 0 !important; background: var(--bg-base) !important; }
-    .journey-grid { display: flex !important; flex-direction: column !important; gap: 64px !important; max-width: 1080px !important; margin: 0 auto !important; }
-    .journey-chapter-row { display: grid !important; grid-template-columns: 1fr 1.2fr !important; gap: 48px !important; align-items: center !important; padding-bottom: 56px !important; border-bottom: 1px solid var(--color-border) !important; }
-    .journey-chapter-row:last-child { border-bottom: none !important; padding-bottom: 0 !important; }
-    .journey-visual-open { background: var(--bg-surface) !important; border: 1px solid var(--color-border) !important; border-radius: 22px !important; padding: 32px 24px !important; text-align: center !important; box-shadow: var(--shadow-sm) !important; }
-    .journey-text-open .journey-tag { justify-content: flex-start !important; margin-bottom: 10px !important; }
-    .journey-text-open h3 { font-family: var(--font-gowun), serif !important; font-size: 25px !important; font-weight: 800 !important; color: #4A433E !important; line-height: 1.45 !important; margin-bottom: 16px !important; }
-    .journey-text-open p { font-size: 15px !important; color: #7A7067 !important; line-height: 1.8 !important; margin-bottom: 14px !important; }
-    .journey-quote-box { background: var(--bg-surface) !important; border-left: 3px solid #E5A99B !important; border-radius: 0 12px 12px 0 !important; padding: 14px 18px !important; margin-top: 16px !important; }
-    .journey-quote-box p { margin: 0 !important; font-size: 14px !important; color: #4A433E !important; font-weight: 600 !important; }
+    /* 우측 이미지 영역 (배경색과 자연스럽게 스며드는 소프트 그라데이션 블렌드) */
+    .hero-right-visual-area {
+      width: 100% !important;
+      height: 660px !important;
+      min-height: auto !important;
+      background: linear-gradient(135deg, #E6E6E1 0%, #D8D8D2 45%, #CFCFC8 100%) !important;
+      align-self: flex-start !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      position: relative !important;
+      overflow: hidden !important;
+    }
+    /* 좌측 경계 페이드: 좌측 배경색(#F4F4F2)에서 이미지로 스르륵 녹아드는 그라데이션 */
+    .hero-right-visual-area::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0; left: 0; bottom: 0;
+      width: 50% !important;
+      background: linear-gradient(to right, #F4F4F2 0%, rgba(244, 244, 242, 0.85) 25%, rgba(244, 244, 242, 0.4) 60%, rgba(244, 244, 242, 0) 100%) !important;
+      pointer-events: none !important;
+      z-index: 2 !important;
+    }
+    /* 하단 경계 페이드: 하단 배경색(#F4F4F2)으로 부드럽게 이어지는 그라데이션 */
+    .hero-right-visual-area::after {
+      content: '' !important;
+      position: absolute !important;
+      bottom: 0; left: 0; right: 0;
+      height: 140px !important;
+      background: linear-gradient(to top, #F4F4F2 0%, rgba(244, 244, 242, 0.75) 35%, rgba(244, 244, 242, 0) 100%) !important;
+      pointer-events: none !important;
+      z-index: 2 !important;
+    }
+
+    /* [SEC-02: 문제 제기 에디토리얼 섹션 - 문제제기 참고 레퍼런스.png 규격] */
+    .problem-editorial-section {
+      padding: 100px 0 70px !important;
+      background: var(--bg-base) !important;
+      border-bottom: none !important;
+    }
+    .problem-editorial-grid {
+      display: grid !important;
+      grid-template-columns: auto auto !important;
+      justify-content: space-between !important;
+      gap: 170px !important;
+      align-items: center !important;
+      max-width: 1320px !important;
+      margin: 0 auto !important;
+      padding: 0 32px !important;
+    }
+    .problem-editorial-left {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      text-align: left !important;
+      flex-shrink: 0 !important;
+    }
+    .problem-editorial-label {
+      font-family: var(--font-sans) !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.12em !important;
+      color: #5B5B5B !important;
+      margin-bottom: 24px !important;
+      text-transform: uppercase !important;
+      white-space: nowrap !important;
+    }
+    .problem-editorial-title,
+    .problem-editorial-title * {
+      font-family: var(--font-gowun), 'Gowun Batang', serif !important;
+      font-weight: 600 !important;
+      white-space: nowrap !important;
+    }
+    .problem-editorial-title {
+      font-size: clamp(32px, 3vw, 42px) !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      color: #5B5B5B !important;
+      letter-spacing: -0.025em !important;
+      margin: 0 0 24px 0 !important;
+      white-space: nowrap !important;
+    }
+    .problem-editorial-desc {
+      font-family: var(--font-sans) !important;
+      font-size: 13.5px !important;
+      font-weight: 600 !important;
+      color: #B0B0B0 !important;
+      line-height: 1.85 !important;
+      margin: 0 !important;
+      letter-spacing: -0.01em !important;
+      white-space: nowrap !important;
+    }
+    .problem-editorial-right {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      border-top: 1px solid #D6D6D0 !important;
+      border-bottom: 1px solid #D6D6D0 !important;
+      padding: 48px 0 !important;
+      text-align: left !important;
+      flex-shrink: 0 !important;
+    }
+    .problem-editorial-quote,
+    .problem-editorial-quote * {
+      font-family: var(--font-gowun), 'Gowun Batang', serif !important;
+      font-weight: 600 !important;
+      white-space: nowrap !important;
+    }
+    .problem-editorial-quote {
+      font-size: clamp(18px, 1.55vw, 22px) !important;
+      font-weight: 600 !important;
+      line-height: 1.6 !important;
+      color: #5B5B5B !important;
+      letter-spacing: -0.02em !important;
+      margin: 0 !important;
+      white-space: nowrap !important;
+    }
+    @media (max-width: 900px) {
+      .problem-editorial-grid { grid-template-columns: 1fr !important; gap: 40px !important; padding: 0 20px !important; }
+      .problem-editorial-section { padding: 70px 0 40px !important; }
+      .problem-editorial-right { padding: 36px 0 !important; }
+    }
+
+    /* [SEC-02-B: 해결방안 & 브랜드 테크놀로지 - 좌측 이미지 + 우측 텍스트] */
+    .solution-clean-section {
+      padding: 100px 0 110px !important;
+      background: var(--bg-base) !important;
+      border-top: none !important;
+      border-bottom: 1px solid var(--color-border) !important;
+    }
+    .solution-editorial-grid {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: clamp(40px, 6vw, 90px) !important;
+      align-items: center !important;
+      max-width: 1320px !important;
+      margin: 0 auto !important;
+      padding: 0 32px !important;
+    }
+    .solution-visual-area {
+      width: 100% !important;
+      min-height: 460px !important;
+      height: 100% !important;
+      background: linear-gradient(135deg, #E6E6E1 0%, #DCDCD6 50%, #D2D2CC 100%) !important;
+      border: 1.5px dashed #B8B8B0 !important;
+      border-radius: 20px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 24px !important;
+      text-align: center !important;
+      box-sizing: border-box !important;
+      position: relative !important;
+      overflow: hidden !important;
+    }
+    .solution-visual-badge {
+      font-family: var(--font-gowun), serif !important;
+      font-size: 16.5px !important;
+      font-weight: 600 !important;
+      color: #5B5B5B !important;
+      background: rgba(255, 255, 255, 0.8) !important;
+      backdrop-filter: blur(8px) !important;
+      padding: 10px 24px !important;
+      border-radius: 9999px !important;
+      border: 1px solid rgba(0,0,0,0.06) !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04) !important;
+      letter-spacing: -0.01em !important;
+    }
+    .solution-text-box {
+      width: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-end !important;
+      text-align: right !important;
+    }
+    .solution-clean-label {
+      font-family: var(--font-sans) !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.12em !important;
+      color: #5B5B5B !important;
+      margin-bottom: 24px !important;
+      text-transform: uppercase !important;
+      white-space: nowrap !important;
+      text-align: right !important;
+    }
+    .solution-clean-title {
+      font-family: var(--font-gowun), 'Gowun Batang', serif !important;
+      font-size: clamp(32px, 3vw, 42px) !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      color: #5B5B5B !important;
+      letter-spacing: -0.025em !important;
+      margin: 0 0 24px 0 !important;
+      text-align: right !important;
+      word-break: keep-all !important;
+    }
+    .solution-clean-desc {
+      font-family: var(--font-sans) !important;
+      font-size: 14.5px !important;
+      font-weight: 600 !important;
+      color: #B0B0B0 !important;
+      line-height: 1.85 !important;
+      margin: 0 0 32px 0 !important;
+      letter-spacing: -0.01em !important;
+      text-align: right !important;
+    }
+    .solution-clean-link {
+      display: inline-flex !important;
+      align-items: center !important;
+      align-self: flex-end !important;
+      gap: 6px !important;
+      font-family: var(--font-sans) !important;
+      font-size: 14.5px !important;
+      font-weight: 600 !important;
+      color: #5B5B5B !important;
+      background: transparent !important;
+      border: none !important;
+      border-bottom: 1.5px solid #5B5B5B !important;
+      padding: 0 0 5px 0 !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease !important;
+      cursor: pointer !important;
+    }
+    .solution-clean-link:hover {
+      color: #6F9670 !important;
+      border-bottom-color: #6F9670 !important;
+      gap: 10px !important;
+    }
+    @media (max-width: 900px) {
+      .solution-editorial-grid { grid-template-columns: 1fr !important; gap: 40px !important; padding: 0 20px !important; }
+      .solution-visual-area { min-height: 320px !important; }
+      .solution-text-box { align-items: flex-start !important; text-align: left !important; }
+      .solution-clean-label, .solution-clean-title, .solution-clean-desc { text-align: left !important; }
+      .solution-clean-link { align-self: flex-start !important; }
+    }
 
     /* [7번 자가진단 위젯: 4개 버튼 감성 지그재그] */
     .balance-checker-container {
@@ -2223,45 +2519,46 @@
     }
     .checker-chip {
       width: 100% !important; text-align: center !important; padding: 13px 22px !important; font-size: 14px !important; font-weight: 700 !important;
-      background: #FFFFFF !important; border: 1.5px solid var(--color-border) !important; border-radius: 9999px !important; color: #4A433E !important;
+      background: #FFFFFF !important; border: 1.5px solid var(--color-border) !important; border-radius: 9999px !important; color: #2B2D2B !important;
       cursor: pointer !important; transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important; font-family: var(--font-gowun), serif !important;
-      box-shadow: 0 2px 8px rgba(74, 67, 62, 0.03) !important;
+      box-shadow: 0 2px 8px rgba(43, 45, 43, 0.04) !important;
     }
     .checker-chip:nth-child(1) { transform: translateY(0px) !important; }
     .checker-chip:nth-child(2) { transform: translateY(16px) !important; }
     .checker-chip:nth-child(3) { transform: translateY(4px) !important; }
     .checker-chip:nth-child(4) { transform: translateY(20px) !important; }
-    .checker-chip:hover { border-color: #E5A99B !important; background: #FDFBF7 !important; box-shadow: 0 6px 16px rgba(229, 169, 155, 0.25) !important; }
+    .checker-chip:hover { border-color: #6F9670 !important; background: #EEF4EE !important; box-shadow: 0 6px 16px rgba(111, 150, 112, 0.25) !important; }
     .checker-chip:nth-child(1):hover { transform: translateY(-3px) scale(1.02) !important; }
     .checker-chip:nth-child(2):hover { transform: translateY(13px) scale(1.02) !important; }
     .checker-chip:nth-child(3):hover { transform: translateY(1px) scale(1.02) !important; }
     .checker-chip:nth-child(4):hover { transform: translateY(17px) scale(1.02) !important; }
-    .checker-chip.active { background: #E5A99B !important; color: #FFFFFF !important; border-color: #E5A99B !important; box-shadow: 0 6px 18px rgba(229, 169, 155, 0.4) !important; }
+    .checker-chip.active { background: #6F9670 !important; color: #FFFFFF !important; border-color: #6F9670 !important; box-shadow: 0 6px 18px rgba(111, 150, 112, 0.4) !important; }
 
     .checker-result-card {
-      background: #FFFFFF !important; border: 1.5px solid var(--color-secondary) !important; border-radius: var(--radius-md) !important;
+      background: #FFFFFF !important; border: 1.5px solid #6F9670 !important; border-radius: var(--radius-md) !important;
       padding: 18px 22px !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 16px !important; text-align: left !important;
     }
 
     /* 9번: 300인 전문가 임상 갤러리 */
     .clinical-proof-grid { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 20px !important; margin: 28px 0 !important; }
     .clinical-card { background: #FFFFFF !important; border: 1.5px solid var(--color-border) !important; border-radius: var(--radius-md) !important; padding: 24px !important; text-align: left !important; box-shadow: var(--shadow-sm) !important; }
-    .clinical-rating { color: var(--color-primary) !important; font-size: 14px !important; font-weight: 800 !important; margin-bottom: 8px !important; }
+    .clinical-rating { color: #6F9670 !important; font-size: 14px !important; font-weight: 800 !important; margin-bottom: 8px !important; }
 
     /* 플로팅 바 */
     .floating-bottom-bar {
-      position: fixed !important; bottom: 0 !important; left: 0 !important; right: 0 !important; background: #4A433E !important; color: #FDFBF7 !important;
+      position: fixed !important; bottom: 0 !important; left: 0 !important; right: 0 !important; background: #2B2D2B !important; color: #F4F4F2 !important;
       padding: 12px 24px !important; display: flex !important; justify-content: space-between !important; align-items: center !important; z-index: 1000 !important;
-      border-top: 1px solid rgba(255,255,255,0.12) !important; box-shadow: 0 -4px 20px rgba(74, 67, 62, 0.12) !important;
+      border-top: 1px solid rgba(255,255,255,0.12) !important; box-shadow: 0 -4px 20px rgba(43, 45, 43, 0.15) !important;
     }
-    .floating-bottom-bar .badge-price { background: var(--color-primary) !important; color: #FFFFFF !important; font-size: 11px !important; font-weight: 800 !important; padding: 3px 8px !important; border-radius: var(--radius-full) !important; margin-right: 8px !important; }
+    .floating-bottom-bar .badge-price { background: #6F9670 !important; color: #FFFFFF !important; font-size: 11px !important; font-weight: 800 !important; padding: 3px 8px !important; border-radius: var(--radius-full) !important; margin-right: 8px !important; }
 
     /* 반응형 */
     @media (max-width: 992px) {
-      .hero-split-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
-      .hero-content-left { text-align: center !important; }
-      .hero-content-left .hero-eyebrow { justify-content: center !important; }
-      .hero-cta-group { justify-content: center !important; }
+      .hero-section { grid-template-columns: 1fr !important; min-height: auto !important; }
+      .hero-left-col { padding: 50px 20px 40px !important; text-align: center !important; align-items: center !important; margin: 0 auto !important; }
+      .hero-left-col .hero-eyebrow { justify-content: center !important; }
+      .hero-left-col .hero-cta-group { justify-content: center !important; }
+      .hero-right-visual-area { min-height: 320px !important; height: 360px !important; }
       .pride-metrics-bar { grid-template-columns: repeat(2, 1fr) !important; }
       .featured-card { grid-template-columns: 1fr !important; }
       .clinical-proof-grid { grid-template-columns: 1fr !important; }
@@ -2310,26 +2607,11 @@
        [타입 2번 + 컬러 1번: 부드러운 소프트 세이지 그린 손그림 물결 밑줄]
        ========================================================================== */
     .highlight-wave-sage, .highlight-peach {
-      position: relative !important;
-      display: inline-block !important;
-      color: #4A433E !important;
-      font-weight: 800 !important;
+      color: #6F9670 !important;
+      font-weight: 700 !important;
+      display: inline !important;
       background: none !important;
-      padding: 0 4px !important;
-      z-index: 2 !important;
-    }
-    .highlight-wave-sage::after, .highlight-peach::after {
-      content: '' !important;
-      position: absolute !important;
-      left: -2px !important;
-      right: -2px !important;
-      bottom: -6px !important;
-      height: 11px !important;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 18' preserveAspectRatio='none'%3E%3Cpath d='M2,9 C22,3 42,15 62,9 C82,3 102,15 118,9' fill='none' stroke='%23B4C4B1' stroke-width='5' stroke-linecap='round' opacity='0.75'/%3E%3C/svg%3E") !important;
-      background-repeat: no-repeat !important;
-      background-size: 100% 100% !important;
-      z-index: -1 !important;
-      pointer-events: none !important;
+      padding: 0 !important;
     }
 
   </style>
@@ -2454,7 +2736,7 @@
 
         <!-- 모바일 드로어 하단 CTA -->
         <div style="padding-top:10px; border-top:1px solid rgba(255,255,255,0.12);">
-          <button class="btn-primary btn-accent" style="width:100%; padding:14px; font-size:15px; font-weight:800; border-radius:var(--radius-md); box-shadow:0 6px 18px rgba(210,110,46,0.4);" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)'); closeMobileMenu();">
+          <button class="btn-primary btn-accent" style="width:100%; padding:14px; font-size:15px; font-weight:800; border-radius:var(--radius-md); box-shadow:0 6px 18px rgba(111,150,112,0.35);" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)'); closeMobileMenu();">
             30일 무료 시착 시작하기 (0원)
           </button>
         </div>
@@ -2468,158 +2750,93 @@
        ========================================================================== -->
   <main id="page-main" class="page-view active">
     
-    <!-- SEC-02: Hero & Manifesto (와이어프레임_90 원본과 100% 동일) -->
+    <!-- SEC-02: Hero & Manifesto (이미지 부분 수정.png 완벽 일치 풀블리드 레이아웃) -->
     <section class="hero-section" id="sec-manifesto">
-      <div class="container">
-        <div class="hero-split-grid">
-          <div class="hero-content-left">
-            <div class="hero-eyebrow">일상에 자연스럽게 스며드는 0.1MM 바른 균형</div>
-            <h1 class="hero-manifesto-title">
-              바쁜 하루 속에서도,<br>
-              나를 먼저 아끼는 <span class="highlight-wave-sage">다정한 균형</span>
-            </h1>
-            <p class="hero-subcopy">
-              억지스러운 압박 대신 기분 좋은 편안함으로,<br>
-              당신의 일상에 건강한 쉼을 채워드릴게요.
-            </p>
-            <div class="hero-cta-group">
-              <a href="#sec-philosophy" class="btn-primary">스밈의 시작 알아보기 ➔</a>
-              <a href="#sec-featured" class="btn-secondary">스밈 3대 대표작 알아보기 ➔</a>
-            </div>
-          </div>
-          <div class="hero-visual-anchor">
-            <div class="hero-visual-inner">
-              <span class="hero-visual-badge-top">🌿 99.8% 출근복 속 완벽 은폐</span>
-              <div style="font-size:42px; margin-bottom:8px;">☕ 👕</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#4A433E; margin-bottom:4px;">
-                [일상 실착 앰비언트 무드컷]
-              </div>
-              <div style="font-size:12.5px; color:#7A7067; line-height:1.5;">
-                셔츠 속에 0.1mm 초슬림 넥&숄더 밴드를 착용하고<br>편안하게 데스크 업무를 보는 자연스러운 일상 실루엣
-              </div>
-            </div>
-            <div class="hero-visual-caption">
-              <div>
-                <div class="hero-caption-title">0.1mm 초박형 센서 섬유 직조</div>
-                <div class="hero-caption-desc">38g 깃털 같은 무게로 피로도 제로</div>
-              </div>
-              <div style="font-size:11.5px; font-weight:800; color:#E5A99B; background:#FDF5F3; padding:4px 10px; border-radius:9999px;">
-                실사 화보 슬롯
-              </div>
-            </div>
-          </div>
+      <div class="hero-left-col">
+        <div class="hero-eyebrow">일상에 자연스럽게 스며드는 0.1MM 바른 균형</div>
+        <h1 class="hero-manifesto-title">
+          바쁜 하루 속에서도,<br>
+          <span style="display:inline-block; white-space:nowrap; color:#5B5B5B;">나를 먼저 아끼는 <span class="hero-highlight-word">다정한 균형</span></span>
+        </h1>
+        <p class="hero-subcopy">
+          억지스러운 압박 대신 기분 좋은 편안함으로,<br>
+          당신의 일상에 건강한 쉼을 채워드릴게요.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#sec-philosophy" class="btn-primary">스밈의 시작 알아보기 ➔</a>
         </div>
-        <div class="pride-metrics-bar">
-          <div class="metric-item">
-            <div class="metric-num">38g</div>
-            <div class="metric-label">깃털 같은 초경량</div>
-            <div class="metric-sub">0.1mm 초박형 센서 섬유</div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-num">99.8%</div>
-            <div class="metric-label">무봉제 은폐율</div>
-            <div class="metric-sub">출근복 속에 쏙 숨는 핏</div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-num">300+</div>
-            <div class="metric-label"><span class="highlight-peach">전문가 실착 검증</span></div>
-            <div class="metric-sub">정형외과 의사·개발자 추천</div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-num">100%</div>
-            <div class="metric-label"><span class="highlight-peach">30일 안심 무료 반품</span></div>
-            <div class="metric-sub">결제금액 0원 무료 맞교환</div>
-          </div>
-        </div>
+      </div>
+      <div class="hero-right-visual-area">
+        <span style="position:relative; z-index:3; font-family: var(--font-gowun), serif; font-size: 19px; font-weight: 700; color: #5B5B5B; letter-spacing: -0.01em; background: rgba(255,255,255,0.75); backdrop-filter: blur(8px); padding: 9px 24px; border-radius: 9999px; border: 1.5px dashed #A69E96; box-shadow: 0 4px 14px rgba(0,0,0,0.06);">
+          착용샷 이미지
+        </span>
       </div>
     </section>
 
-    <!-- 우리가 걸어온 길, 그리고 스밈이 존재하는 이유 -->
-    <section class="journey-section" id="sec-philosophy">
+    <!-- ==========================================================================
+         [SEC-02: 문제 제기 & 브랜드 매니페스토 (문제제기 참고 레퍼런스.png 완벽 반영)]
+         ========================================================================== -->
+    <section class="problem-editorial-section" id="sec-philosophy">
       <div class="container">
-        <div style="text-align:center; margin-bottom:56px;">
-          <div class="journey-tag">스밈의 철학 · 우리가 걸어온 길</div>
-          <h2 style="font-family:var(--font-gowun), serif; font-size:32px; font-weight:800; color:#4A433E; margin-top:12px; letter-spacing:-0.02em;">
-            억지로 조이지 않고, 일상 속에 바른 균형이 스며들도록
+        <div class="problem-editorial-grid">
+          
+          <!-- 좌측 컬럼: 01 · OUR BEGINNING + 메인 화두 타이틀 + 본문 설명 -->
+          <div class="problem-editorial-left">
+            <div class="problem-editorial-label">01 · OUR BEGINNING</div>
+            <h2 class="problem-editorial-title">
+              건강해지려고 시작한 체형 교정,<br>
+              왜 고통과 인내가 필요할까요
+            </h2>
+            <div class="problem-editorial-desc">
+              스밈은 압박과 피부 자극 대신, 당신의 하루에 건강한 쉼이 스며들길 바랍니다.<br>
+              정밀한 탄성 메커니즘으로 몸의 본래 자리를 부드럽게 유도하여,<br>
+              억지로 조이지 않아도 자연스레 펴지는 자유로움을 선물합니다.
+            </div>
+          </div>
+
+          <!-- 우측 컬럼: 상/하단 1px 라인 프레임 + 핵심 인용구 -->
+          <div class="problem-editorial-right">
+            <blockquote class="problem-editorial-quote">
+              “숨 막히는 조임 대신,<br>
+              하루를 온전히 편안하게 보내는 바른 균형”
+            </blockquote>
+          </div>
+
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ==========================================================================
+         [SEC-02-B: 해결방안 & 브랜드 테크놀로지 (좌측 이미지 + 우측 텍스트)]
+         ========================================================================== -->
+    <section class="solution-clean-section" id="sec-solution">
+      <div class="solution-editorial-grid">
+        
+        <!-- 좌측: 유연한 센서 섬유 이미지 영역 -->
+        <div class="solution-visual-area">
+          <span class="solution-visual-badge">
+            유연한 센서 섬유 이미지
+          </span>
+        </div>
+
+        <!-- 우측: 우측 정렬 텍스트 & 밑줄 링크 -->
+        <div class="solution-text-box">
+          <div class="solution-clean-label">02 · 0.1MM ELASTIC COREWEAR</div>
+          <h2 class="solution-clean-title">
+            억지로 묶어두지 않고,<br>
+            몸이 스스로 균형을 찾게 하는 기술
           </h2>
-          <p style="font-size:16px; color:#7A7067; max-width:640px; margin:12px auto 0; line-height:1.7;">
-            스밈(SEUMIM)이 탄생한 이유와 3년간의 인체공학 연구 및 300인 전문가 실착 검증 여정을 들려드립니다.
+          <p class="solution-clean-desc">
+            갈비뼈를 짓누르던 강제 압박 대신 유연한 센서 섬유와 지렛대 복원 공학을 담았습니다.<br>
+            출근길 셔츠 속에서도 피부처럼 가볍게 스며들어, 일상 어디서나 자유롭고 바른 정렬을 완성합니다.
           </p>
-        </div>
-        <div class="journey-grid">
-          <div class="journey-chapter-row">
-            <div class="journey-visual-open">
-              <div style="font-size:36px; margin-bottom:12px;">🧵</div>
-              <div style="font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">[3년 450번의 원사 배합 실험]</div>
-              <p style="font-size:14px; color:#7A7067; line-height:1.6; margin:0;">
-                머리카락보다 얇은 나노 탄성 섬유를 무봉제로 직조하여 이물감 제로와 100회 물세탁 내구성을 완성했습니다.
-              </p>
-              <div style="margin-top:14px; display:inline-block; padding:4px 12px; background:#FFFFFF; border-radius:9999px; border:1px solid #E8E1D3; font-size:12px; color:#E5A99B; font-weight:700;">
-                실사 화보 01 · 일상의 편안함
-              </div>
-            </div>
-            <div class="journey-text-open">
-              <span class="journey-tag">── 첫 번째 이야기 · 탄생의 배경 ──</span>
-              <h3>"왜 체형 교정은 늘 아프고 불편해야만 할까요?"</h3>
-              <p>
-                우리는 본래 첨단 스마트 섬유 부품을 개발하던 엔지니어 팀이었습니다. 하루 14시간씩 모니터를 보며 일하던 개발자들은 하나같이 심각한 거북목과 허리 통증을 겪고 있었습니다. 시중의 딱딱한 강제 압박 밴드는 옷 밖으로 튀어나왔고 강한 조임은 숨을 턱턱 막히게 했습니다.
-              </p>
-              <div class="journey-quote-box">
-                <p>"몸을 억지로 조이지 않으면서도, 마치 아무것도 입지 않은 것처럼 가볍게 바른 자세를 유도할 수는 없을까?" 이 질문 하나에서 스밈의 여정이 시작되었습니다.</p>
-              </div>
-            </div>
-          </div>
-          <div class="journey-chapter-row">
-            <div class="journey-text-open">
-              <span class="journey-tag">── 두 번째 이야기 · 기존 시장의 한계 극복 ──</span>
-              <h3>고통스러운 강제 조임과 시끄러운 오알람의 종말</h3>
-              <p>
-                기존의 고무줄 강제 압박기는 착용할수록 주변 근육을 퇴화시키고 소화불량을 유발합니다. 또한 기존의 부착형 센서는 물을 마시는 일상 동작조차 '불량 자세'로 오진하여 시도 때도 없이 진동을 울려 극심한 스트레스를 주었습니다.
-              </p>
-              <p>
-                스밈은 <strong>0.01초 자연 신체 필터링 알고리즘</strong>으로 일시적 움직임과 고착된 나쁜 자세를 완벽히 구분하고, <strong>0.1mm 초슬림 텐션 밴딩</strong>을 통해 스스로 바른 척추 정렬을 유지하도록 돕습니다.
-              </p>
-            </div>
-            <div class="journey-visual-open">
-              <div style="font-size:36px; margin-bottom:12px;">⚖️</div>
-              <div style="font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">[기존 강제 교정기 vs 스밈 0.1mm 코어웨어]</div>
-              <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px; text-align:left;">
-                <div style="background:#FFFFFF; padding:10px 12px; border-radius:12px; border:1px solid #E8E1D3; font-size:12.5px;">
-                  <span style="color:#C25442; font-weight:800;">기존 교정기 ✕</span><br>
-                  • 250g 무거운 쇠 와이어<br>
-                  • 숨 막히는 강제 늑골 압박
-                </div>
-                <div style="background:#FFFFFF; padding:10px 12px; border-radius:12px; border:1px solid #B4C4B1; font-size:12.5px;">
-                  <span style="color:#4C6649; font-weight:800;">스밈 0.1mm ◯</span><br>
-                  • 38g 깃털 같은 초경량<br>
-                  • 99.8% 옷 속 완벽 은폐
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="journey-chapter-row">
-            <div class="journey-visual-open">
-              <div style="font-size:36px; margin-bottom:12px;">🩺</div>
-              <div style="font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">[300+ 현업 전문가 실착 임상 검증]</div>
-              <p style="font-size:14px; color:#7A7067; line-height:1.6; margin:0;">
-                정형외과 의사, 물리치료사, IT 개발자들이 3주간 일상에서 착용하고 통증 87% 감소 효과를 직접 검증했습니다.
-              </p>
-              <div style="margin-top:14px; display:inline-block; padding:4px 12px; background:#EFF4EE; border-radius:9999px; border:1px solid #B4C4B1; font-size:12px; color:#4C6649; font-weight:700;">
-                실착 임상 만족도 99.4%
-              </div>
-            </div>
-            <div class="journey-text-open">
-              <span class="journey-tag">── 세 번째 이야기 · 스밈의 철학과 약속 ──</span>
-              <h3>"일상에 바른 균형이 자연스럽게 스며들도록"</h3>
-              <p>
-                스밈(SEUMIM)은 '스며들다'에서 비롯된 이름입니다. 퇴근 후 지친 몸을 이끌고 억지로 운동을 강요하지 않습니다. 모니터 앞, 조타실, 수술실, 분장실 등 여러분이 치열하게 일하는 그 자리에서 바른 습관이 옷처럼 편안하게 스며듭니다.
-              </p>
-              <div class="journey-quote-box">
-                <p>하드웨어 28종 + AI 10초 미니멀 케어 구독 + 전국 웰니스 센터의 3중 선순환 플랫폼으로 지속 가능한 건강한 변화를 약속합니다.</p>
-              </div>
-            </div>
+          <div>
+            <a href="javascript:void(0)" onclick="switchPage('story')" class="solution-clean-link">
+              브랜드 이야기 더보기 ➔
+            </a>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -2636,7 +2853,7 @@
         <!-- [Top 1] 0.1mm 심리스 넥&숄더 밴드 -->
         <div class="featured-card">
           <button class="btn-card-wish active" onclick="toggleWish(1, this)" title="찜하기">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#ef4444" stroke="#ef4444" stroke-width="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#6F9670" stroke="#6F9670" stroke-width="2">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
             </svg>
           </button>
@@ -2716,7 +2933,7 @@
         <!-- [Top 3] 골반 수평 유지 에어셀 벨트 -->
         <div class="featured-card">
           <button class="btn-card-wish active" onclick="toggleWish(3, this)" title="찜하기">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#ef4444" stroke="#ef4444" stroke-width="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#6F9670" stroke="#6F9670" stroke-width="2">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
             </svg>
           </button>
@@ -2764,10 +2981,10 @@
     <!-- [7번: 3초 체형 밸런스 파인더 자가진단 위젯 (지그재그 버튼)] -->
     <div class="balance-checker-container" id="self-checker-sec">
       <div class="section-tag">3초 맞춤 처방 · 체형 밸런스 파인더</div>
-      <h3 style="font-family:var(--font-gowun), serif; font-size:24px; font-weight:800; color:#4A433E; margin:10px 0 6px;">
+      <h3 style="font-family:var(--font-gowun), serif; font-size:24px; font-weight:800; color:#5B5B5B; margin:10px 0 6px;">
         "당신의 하루 중 가장 치열한 작업 환경은 어디인가요?"
       </h3>
-      <p style="font-size:14.5px; color:#7A7067; margin:0;">
+      <p style="font-size:14.5px; color:#B0B0B0; margin:0;">
         작업 환경을 선택하시면, 신체 부하를 분산시키는 <span class="highlight-peach">0.1mm 맞춤 코어웨어 조합</span>을 즉시 처방해 드립니다.
       </p>
       <div class="checker-chip-grid">
@@ -2782,11 +2999,11 @@
             🌿
           </div>
           <div>
-            <div style="font-size:12.5px; color:#4C6649; font-weight:800;">[모니터 근무 직장인 최적 처방]</div>
-            <div style="font-family:var(--font-gowun), serif; font-size:17px; font-weight:800; color:#4A433E; margin:3px 0;">
+            <div style="font-size:12.5px; color:#6F9670; font-weight:800;">[모니터 근무 직장인 최적 처방]</div>
+            <div style="font-family:var(--font-gowun), serif; font-size:17px; font-weight:800; color:#5B5B5B; margin:3px 0;">
               0.1mm 심리스 넥&숄더 밴드 + 척추 정렬 조끼
             </div>
-            <div style="font-size:13px; color:#7A7067;">
+            <div style="font-size:13px; color:#B0B0B0;">
               키보드 타건 시 발생하는 전방 두부 쏠림 4.2kg 하중을 승모근 뒤쪽으로 0.1초 분산
             </div>
           </div>
@@ -2829,28 +3046,28 @@
           <div class="clinical-proof-grid">
             <div class="clinical-card">
               <div class="clinical-rating">★ 4.9 · 정형외과 전문의 김진우</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">
+              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#5B5B5B; margin-bottom:8px;">
                 "강제 압박 없이 경추 C커브를 살려주는 혁신"
               </div>
-              <p style="font-size:13.5px; color:#7A7067; line-height:1.7;">
+              <p style="font-size:13.5px; color:#B0B0B0; line-height:1.7;">
                 기존 교정기는 늑골을 억누르는데, 스밈 0.1mm는 근육의 고유수용성 감각을 깨워 스스로 척추 정렬을 유지하게 돕습니다.
               </p>
             </div>
             <div class="clinical-card">
               <div class="clinical-rating">★ 5.0 · 물리치료사 이소영</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">
+              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#5B5B5B; margin-bottom:8px;">
                 "99.8% 은폐율 덕분에 출근복에 매일 입습니다"
               </div>
-              <p style="font-size:13.5px; color:#7A7067; line-height:1.7;">
+              <p style="font-size:13.5px; color:#B0B0B0; line-height:1.7;">
                 셔츠 속에 입어도 겉으로 전혀 드러나지 않고, 하루 종일 서서 환자를 볼 때 허리와 골반의 피로도가 80% 이상 줄었습니다.
               </p>
             </div>
             <div class="clinical-card">
               <div class="clinical-rating">★ 4.9 · 풀스택 개발자 박현성</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#4A433E; margin-bottom:8px;">
+              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#5B5B5B; margin-bottom:8px;">
                 "14시간 코딩해도 어깨 뭉침이 사라졌습니다"
               </div>
-              <p style="font-size:13.5px; color:#7A7067; line-height:1.7;">
+              <p style="font-size:13.5px; color:#B0B0B0; line-height:1.7;">
                 모니터 앞으로 목이 빨려 들어갈 때마다 지레 탄성 프레임이 부드럽게 받쳐주어 야근 후에도 목덜미가 깃털처럼 가볍습니다.
               </p>
             </div>
@@ -3499,7 +3716,7 @@
           <div style="background:var(--bg-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); overflow:hidden; height:320px; box-shadow:var(--shadow-sm); position:relative;">
             <img src="assets/img/pillar_desk_wellness_1787187229043.jpg" alt="오피스 체어에서 편안하고 바른 자세로 집중하는 실제 직장인 데스크 씬 실사 사진" style="width:100%; height:100%; object-fit:cover;">
             <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(21,29,24,0.85) 0%, transparent 60%);"></div>
-            <div style="position:absolute; top:16px; left:16px; background:rgba(21,29,24,0.85); color:#f5ad7e; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.2);">
+            <div style="position:absolute; top:16px; left:16px; background:rgba(21,29,24,0.85); color:#a8d5be; font-size:11px; font-weight:800; padding:4px 10px; border-radius:var(--radius-full); border:1px solid rgba(255,255,255,0.2);">
               PILLAR 03 · KIND BALANCE
             </div>
             <div style="position:absolute; bottom:16px; left:20px; right:20px; color:#fff;">
@@ -3544,14 +3761,14 @@
           <g opacity="0.6">
             <path d="M 40 40 Q 90 20 140 40 T 240 40 T 340 40 T 440 40 T 540 40 T 640 40" stroke="#3d5747" stroke-width="2" fill="none"/>
             <path d="M 40 60 Q 90 40 140 60 T 240 60 T 340 60 T 440 60 T 540 60 T 640 60" stroke="#a8d5be" stroke-width="1.5" fill="none"/>
-            <path d="M 40 80 Q 90 100 140 80 T 240 80 T 340 80 T 440 80 T 540 80 T 640 80" stroke="#d26e2e" stroke-width="2" fill="none"/>
+            <path d="M 40 80 Q 90 100 140 80 T 240 80 T 340 80 T 440 80 T 540 80 T 640 80" stroke="#6F9670" stroke-width="2" fill="none"/>
             <path d="M 40 100 Q 90 80 140 100 T 240 100 T 340 100 T 440 100 T 540 100 T 640 100" stroke="#3d5747" stroke-width="2" fill="none"/>
             <path d="M 40 120 Q 90 140 140 120 T 240 120 T 340 120 T 440 120 T 540 120 T 640 120" stroke="#a8d5be" stroke-width="1.5" fill="none"/>
           </g>
 
           <!-- 계측 캘리퍼 오버레이 -->
-          <rect x="280" y="45" width="160" height="70" rx="6" fill="#18231c" stroke="#d26e2e" stroke-width="1.5"/>
-          <text x="360" y="70" text-anchor="middle" fill="#d26e2e" font-size="11" font-weight="bold">SCALE 계측값</text>
+          <rect x="280" y="45" width="160" height="70" rx="6" fill="#18231c" stroke="#6F9670" stroke-width="1.5"/>
+          <text x="360" y="70" text-anchor="middle" fill="#6F9670" font-size="11" font-weight="bold">SCALE 계측값</text>
           <text x="360" y="94" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="900">0.100 mm</text>
           <text x="360" y="108" text-anchor="middle" fill="#a8d5be" font-size="9">초정밀 무봉제 융착 공차 ±0.005mm</text>
         </svg>

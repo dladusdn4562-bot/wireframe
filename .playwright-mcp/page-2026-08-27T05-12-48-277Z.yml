@@ -1,0 +1,124 @@
+- generic [ref=f75e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f75e15]:
+      - generic [ref=f75e17]:
+        - generic [ref=f75e18]:
+          - combobox "검색" [ref=f75e20]: minimalist kinetic balance poise bowl sphere logo symbol diagonal black white vector
+          - generic [ref=f75e21]:
+            - button "검색 입력 삭제" [ref=f75e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f75e30]:
+              - button "Pinterest 렌즈" [ref=f75e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f75e38] [cursor=pointer]:
+          - generic [ref=f75e40]:
+            - generic [ref=f75e41]: 모든 핀
+            - img "드롭다운" [ref=f75e43]
+      - link "내 프로필" [ref=f75e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f75e56]:
+          - generic [ref=f75e57]: 임
+      - button "계정" [ref=f75e61] [cursor=pointer]
+  - navigation [ref=f75e66]:
+    - generic [ref=f75e68]:
+      - generic [ref=f75e69]:
+        - generic "홈" [ref=f75e73]:
+          - link "홈" [ref=f75e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f75e81]:
+          - link "홈" [ref=f75e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f75e89]:
+          - link "내 보드" [ref=f75e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f75e97]:
+          - button "만들기" [ref=f75e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f75e113]:
+        - button "설정 및 지원" [ref=f75e114] [cursor=pointer]
+  - main [ref=f75e119]:
+    - generic [ref=f75e121]:
+      - heading "검색 결과 페이지" [level=1] [ref=f75e123]
+      - region "필터 및 세분화 검색" [ref=f75e127]:
+        - button "필터 표시" [ref=f75e136] [cursor=pointer]
+      - generic [ref=f75e148]:
+        - generic:
+          - generic:
+            - list:
+              - listitem [ref=f75e149]:
+                - button [ref=f75e150] [cursor=pointer]:
+                  - group "핀 카드" [ref=f75e153]:
+                    - generic [ref=f75e155]:
+                      - link "Found on Cosmos 핀 페이지" [ref=f75e157]:
+                        - /url: /pin/5136987070784689/
+                        - 'img "포함된 이미지: Found on Cosmos" [ref=f75e167]'
+                      - generic [ref=f75e172]:
+                        - heading [level=2] [ref=f75e178]:
+                          - link "Found on Cosmos 핀 페이지" [ref=f75e180]:
+                            - /url: /pin/5136987070784689/
+                            - text: Found on Cosmos
+                        - generic "추가 작업" [ref=f75e183]:
+                          - button "추가 작업" [ref=f75e184]
+              - listitem [ref=f75e189]:
+                - button [ref=f75e190] [cursor=pointer]:
+                  - group "핀 카드" [ref=f75e193]:
+                    - generic [ref=f75e195]:
+                      - link "제목 없음 핀 페이지" [ref=f75e197]:
+                        - /url: /pin/217509856998788656/
+                        - img "포함된 이미지:" [ref=f75e207]
+                      - generic "추가 작업" [ref=f75e216]:
+                        - button "추가 작업" [ref=f75e217]
+              - listitem [ref=f75e222]:
+                - button [ref=f75e223] [cursor=pointer]:
+                  - group "핀 카드" [ref=f75e226]:
+                    - generic [ref=f75e228]:
+                      - link "🙃 핀 페이지" [ref=f75e230]:
+                        - /url: /pin/25543922886568787/
+                        - 'img "포함된 이미지: 🙃" [ref=f75e240]'
+                      - generic [ref=f75e245]:
+                        - heading [level=2] [ref=f75e251]:
+                          - link "🙃 핀 페이지" [ref=f75e253]:
+                            - /url: /pin/25543922886568787/
+                            - text: 🙃
+                        - generic "추가 작업" [ref=f75e256]:
+                          - button "추가 작업" [ref=f75e257]
+              - listitem [ref=f75e262]:
+                - button [ref=f75e263] [cursor=pointer]:
+                  - group "핀 카드" [ref=f75e266]:
+                    - generic [ref=f75e268]:
+                      - link "제목 없음 핀 페이지" [ref=f75e270]:
+                        - /url: /pin/546765211036390653/
+                        - img "포함된 이미지:" [ref=f75e280]
+                      - generic "추가 작업" [ref=f75e289]:
+                        - button "추가 작업" [ref=f75e290]
+              - listitem [ref=f75e295]:
+                - button [ref=f75e296] [cursor=pointer]:
+                  - group "핀 카드" [ref=f75e299]:
+                    - generic [ref=f75e301]:
+                      - link "image.png | Are.na 핀 페이지" [ref=f75e303]:
+                        - /url: /pin/343188434114408420/
+                        - 'img "포함된 이미지: image.png | Are.na" [ref=f75e313]'
+                      - generic [ref=f75e318]:
+                        - heading [level=2] [ref=f75e324]:
+                          - link "image.png | Are.na 핀 페이지" [ref=f75e326]:
+                            - /url: /pin/343188434114408420/
+                            - text: image.png | Are.na
+                        - generic "추가 작업" [ref=f75e329]:
+                          - button "추가 작업" [ref=f75e330]
+              - listitem [ref=f75e335]:
+                - button [ref=f75e336] [cursor=pointer]:
+                  - group "핀 카드" [ref=f75e339]:
+                    - generic [ref=f75e341]:
+                      - link "Innovate logo http://spin.co.uk/ 핀 페이지" [ref=f75e343]:
+                        - /url: /pin/13299761394644238/
+                        - img "포함된 이미지:" [ref=f75e353]
+                      - generic "추가 작업" [ref=f75e362]:
+                        - button "추가 작업" [ref=f75e363]
+              - listitem [ref=f75e368]:
+                - button [ref=f75e369] [cursor=pointer]:
+                  - group "핀 카드" [ref=f75e372]:
+                    - generic [ref=f75e374]:
+                      - link "제목 없음 핀 페이지" [ref=f75e376]:
+                        - /url: /pin/1196337403630768/
+                        - img "포함된 이미지:" [ref=f75e386]
+                      - generic "추가 작업" [ref=f75e395]:
+                        - button "추가 작업" [ref=f75e396]

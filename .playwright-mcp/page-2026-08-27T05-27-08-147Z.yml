@@ -1,0 +1,228 @@
+- generic [ref=e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=e15]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - combobox "검색" [ref=e20]: minimalist geometric kinetic balance seesaw logo black white vector
+          - generic [ref=e21]:
+            - button "검색 입력 삭제" [ref=e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=e30]:
+              - button "Pinterest 렌즈" [ref=e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=e38] [cursor=pointer]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: 모든 핀
+            - img "드롭다운" [ref=e43]
+      - link "내 프로필" [ref=e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=e56]:
+          - generic [ref=e57]: 임
+      - button "계정" [ref=e61] [cursor=pointer]
+  - navigation [ref=e66]:
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - generic "홈" [ref=e73]:
+          - link "홈" [ref=e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=e81]:
+          - link "홈" [ref=e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=e89]:
+          - link "내 보드" [ref=e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=e97]:
+          - button "만들기" [ref=e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=e113]:
+        - button "설정 및 지원" [ref=e114] [cursor=pointer]
+  - main [ref=e119]:
+    - generic [ref=e121]:
+      - heading "검색 결과 페이지" [level=1] [ref=e123]
+      - region "필터 및 세분화 검색" [ref=e127]:
+        - button "필터 표시" [ref=e136] [cursor=pointer]
+      - generic [ref=e147]:
+        - generic [ref=e148]: minimalist geometric kinetic balance seesaw logo black white vector 검색 결과를 추가로 표시
+        - list [ref=e153]:
+          - listitem [ref=e154]:
+            - button [ref=e156] [cursor=pointer]:
+              - group "핀 카드" [ref=e159]:
+                - generic [ref=e161]:
+                  - link "🙃 핀 페이지" [ref=e163]:
+                    - /url: /pin/25543922886568787/
+                    - 'img "포함된 이미지: 🙃" [ref=e173]'
+                  - generic [ref=e178]:
+                    - heading [level=2] [ref=e184]:
+                      - link "🙃 핀 페이지" [ref=e186]:
+                        - /url: /pin/25543922886568787/
+                        - text: 🙃
+                    - generic "추가 작업" [ref=e189]:
+                      - button "추가 작업" [ref=e190]
+          - listitem [ref=e195]:
+            - button [ref=e197] [cursor=pointer]:
+              - group "핀 카드" [ref=e200]:
+                - generic [ref=e202]:
+                  - link "제목 없음 핀 페이지" [ref=e204]:
+                    - /url: /pin/43839796371056421/
+                    - img "포함된 이미지:" [ref=e214]
+                  - generic "추가 작업" [ref=e223]:
+                    - button "추가 작업" [ref=e224]
+          - listitem [ref=e229]:
+            - button [ref=e231] [cursor=pointer]:
+              - group "핀 카드" [ref=e234]:
+                - generic [ref=e236]:
+                  - link "MELANIE LINKENS_SAM1_INSTABILITE3 핀 페이지" [ref=e238]:
+                    - /url: /pin/386605949242895290/
+                    - img "포함된 이미지:" [ref=e248]
+                  - generic "추가 작업" [ref=e257]:
+                    - button "추가 작업" [ref=e258]
+          - listitem [ref=e263]:
+            - button [ref=e265] [cursor=pointer]:
+              - group "핀 카드" [ref=e268]:
+                - generic [ref=e270]:
+                  - link "제목 없음 핀 페이지" [ref=e272]:
+                    - /url: /pin/80853755806876478/
+                    - img "포함된 이미지:" [ref=e282]
+                  - generic "추가 작업" [ref=e291]:
+                    - button "추가 작업" [ref=e292]
+          - listitem [ref=e297]:
+            - button [ref=e299] [cursor=pointer]:
+              - group "핀 카드" [ref=e302]:
+                - generic [ref=e304]:
+                  - link "제목 없음 핀 페이지" [ref=e306]:
+                    - /url: /pin/349451252360645395/
+                    - img "포함된 이미지:" [ref=e316]
+                  - generic "추가 작업" [ref=e325]:
+                    - button "추가 작업" [ref=e326]
+          - listitem [ref=e331]:
+            - button [ref=e333] [cursor=pointer]:
+              - group "핀 카드" [ref=e336]:
+                - generic [ref=e338]:
+                  - link "Found on Cosmos 핀 페이지" [ref=e340]:
+                    - /url: /pin/5136987070784689/
+                    - 'img "포함된 이미지: Found on Cosmos" [ref=e350]'
+                  - generic [ref=e355]:
+                    - heading [level=2] [ref=e361]:
+                      - link "Found on Cosmos 핀 페이지" [ref=e363]:
+                        - /url: /pin/5136987070784689/
+                        - text: Found on Cosmos
+                    - generic "추가 작업" [ref=e366]:
+                      - button "추가 작업" [ref=e367]
+          - listitem [ref=e372]:
+            - button [ref=e374] [cursor=pointer]:
+              - group "핀 카드" [ref=e377]:
+                - generic [ref=e379]:
+                  - link "제목 없음 핀 페이지" [ref=e381]:
+                    - /url: /pin/40321359162682676/
+                    - img "포함된 이미지:" [ref=e391]
+                  - generic "추가 작업" [ref=e400]:
+                    - button "추가 작업" [ref=e401]
+          - listitem [ref=e406]:
+            - button [ref=e408] [cursor=pointer]:
+              - group "핀 카드" [ref=e411]:
+                - generic [ref=e413]:
+                  - link "Wandbild &#39;Balance von Kunga von The Artcircle&#39; - Premium Poster - A4 (21 x 30 cm) | Photocircle.net 핀 페이지" [ref=e415]:
+                    - /url: /pin/1142858842971505913/
+                    - 'img "포함된 이미지: Wandbild ''Balance von Kunga von The Artcircle'' - Premium Poster - A4 (21 x 30 cm) | Photocircle.net" [ref=e425]'
+                  - generic [ref=e430]:
+                    - heading [level=2] [ref=e436]:
+                      - link "Wandbild &#39;Balance von Kunga von The Artcircle&#39; - Premium Poster - A4 (21 x 30 cm) | Photocircle.net 핀 페이지" [ref=e438]:
+                        - /url: /pin/1142858842971505913/
+                        - text: The Artcircle Poster - 'Balance von Kunga' | Photocircle
+                    - generic "추가 작업" [ref=e441]:
+                      - button "추가 작업" [ref=e442]
+          - listitem [ref=e447]:
+            - button [ref=e449] [cursor=pointer]:
+              - group "핀 카드" [ref=e452]:
+                - generic [ref=e454]:
+                  - link "제목 없음 핀 페이지" [ref=e456]:
+                    - /url: /pin/505880970664722578/
+                    - img "포함된 이미지:" [ref=e466]
+                  - generic "추가 작업" [ref=e475]:
+                    - button "추가 작업" [ref=e476]
+          - listitem [ref=e481]:
+            - button [ref=e483] [cursor=pointer]:
+              - group "핀 카드" [ref=e486]:
+                - generic [ref=e488]:
+                  - link "제목 없음 핀 페이지" [ref=e490]:
+                    - /url: /pin/341781059243330146/
+                    - img "포함된 이미지:" [ref=e500]
+                  - generic "추가 작업" [ref=e509]:
+                    - button "추가 작업" [ref=e510]
+          - listitem [ref=e515]:
+            - button [ref=e517] [cursor=pointer]:
+              - group "핀 카드" [ref=e520]:
+                - generic [ref=e522]:
+                  - link "Balance bla 핀 페이지" [ref=e524]:
+                    - /url: /pin/228205906096419057/
+                    - img "포함된 이미지:" [ref=e534]
+                  - generic "추가 작업" [ref=e543]:
+                    - button "추가 작업" [ref=e544]
+          - listitem [ref=e549]:
+            - button [ref=e551] [cursor=pointer]:
+              - group "핀 카드" [ref=e554]:
+                - generic [ref=e556]:
+                  - link "제목 없음 핀 페이지" [ref=e558]:
+                    - /url: /pin/142567144448835037/
+                    - img "포함된 이미지:" [ref=e568]
+                  - generic "추가 작업" [ref=e577]:
+                    - button "추가 작업" [ref=e578]
+          - listitem [ref=e583]:
+            - button [ref=e585] [cursor=pointer]:
+              - group "핀 카드" [ref=e588]:
+                - generic [ref=e590]:
+                  - link "Balancer Logo 핀 페이지" [ref=e592]:
+                    - /url: /pin/89720217572702260/
+                    - 'img "포함된 이미지: Balancer Logo" [ref=e602]'
+                  - generic [ref=e607]:
+                    - heading [level=2] [ref=e613]:
+                      - link "Balancer Logo 핀 페이지" [ref=e615]:
+                        - /url: /pin/89720217572702260/
+                        - text: Balancer Logo
+                    - generic "추가 작업" [ref=e618]:
+                      - button "추가 작업" [ref=e619]
+          - listitem [ref=e624]:
+            - button [ref=e626] [cursor=pointer]:
+              - group "핀 카드" [ref=e629]:
+                - generic [ref=e631]:
+                  - link "Simple Seesaw Square Icon PNG &amp; SVG Design For T-Shirts 핀 페이지" [ref=e633]:
+                    - /url: /pin/577516352205022451/
+                    - 'img "포함된 이미지: Simple Seesaw Square Icon PNG & SVG Design For T-Shirts" [ref=e643]'
+                  - generic [ref=e648]:
+                    - heading [level=2] [ref=e654]:
+                      - link "Simple Seesaw Square Icon PNG &amp; SVG Design For T-Shirts 핀 페이지" [ref=e656]:
+                        - /url: /pin/577516352205022451/
+                        - text: Simple Seesaw Square Icon PNG & SVG Design For T-Shirts
+                    - generic "추가 작업" [ref=e659]:
+                      - button "추가 작업" [ref=e660]
+          - listitem [ref=e665]:
+            - button [ref=e667] [cursor=pointer]:
+              - group "핀 카드" [ref=e670]:
+                - generic [ref=e672]:
+                  - link "icono de balancín sobre fondo blanco. estilo plano icono de balancín para el diseño de su sitio web, logotipo, aplicación, ui. sube y baja para señal de niño. 핀 페이지" [ref=e674]:
+                    - /url: /pin/666392076151624902/
+                    - 'img "포함된 이미지: icono de balancín sobre fondo blanco. estilo plano icono de balancín para el diseño de su sitio web, logotipo, aplicación, ui. sube y baja para señal de niño." [ref=e684]'
+                  - generic [ref=e689]:
+                    - heading [level=2] [ref=e695]:
+                      - link "icono de balancín sobre fondo blanco. estilo plano icono de balancín para el diseño de su sitio web, logotipo, aplicación, ui. sube y baja para señal de niño. 핀 페이지" [ref=e697]:
+                        - /url: /pin/666392076151624902/
+                        - text: icono de balancín sobre fondo blanco. estilo plano icono de balancín para el diseño de su sitio web, logotipo, aplicación, ui. sube y baja para señal de niño.
+                    - generic "추가 작업" [ref=e700]:
+                      - button "추가 작업" [ref=e701]
+          - listitem [ref=e706]:
+            - button [ref=e708] [cursor=pointer]:
+              - group "핀 카드" [ref=e711]:
+                - generic [ref=e713]:
+                  - link "제목 없음 핀 페이지" [ref=e715]:
+                    - /url: /pin/199002877280252401/
+                    - img "포함된 이미지:" [ref=e725]
+                  - generic "추가 작업" [ref=e734]:
+                    - button "추가 작업" [ref=e735]
+          - listitem [ref=e740]:
+            - button [ref=e742] [cursor=pointer]:
+              - group "핀 카드" [ref=e745]:
+                - generic [ref=e747]:
+                  - link "제목 없음 핀 페이지" [ref=e749]:
+                    - /url: /pin/843721311472694274/
+                    - img "포함된 이미지:" [ref=e759]
+                  - generic "추가 작업" [ref=e768]:
+                    - button "추가 작업" [ref=e769]

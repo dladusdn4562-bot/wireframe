@@ -1,0 +1,256 @@
+- generic [ref=f88e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f88e15]:
+      - generic [ref=f88e17]:
+        - generic [ref=f88e18]:
+          - combobox "검색" [ref=f88e20]: minimalist geometric figure 8 circle line axis logo symbol black white vector
+          - generic [ref=f88e21]:
+            - button "검색 입력 삭제" [ref=f88e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f88e30]:
+              - button "Pinterest 렌즈" [ref=f88e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f88e38] [cursor=pointer]:
+          - generic [ref=f88e40]:
+            - generic [ref=f88e41]: 모든 핀
+            - img "드롭다운" [ref=f88e43]
+      - link "내 프로필" [ref=f88e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f88e56]:
+          - generic [ref=f88e57]: 임
+      - button "계정" [ref=f88e61] [cursor=pointer]
+  - navigation [ref=f88e66]:
+    - generic [ref=f88e68]:
+      - generic [ref=f88e69]:
+        - generic "홈" [ref=f88e73]:
+          - link "홈" [ref=f88e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f88e81]:
+          - link "홈" [ref=f88e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f88e89]:
+          - link "내 보드" [ref=f88e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f88e97]:
+          - button "만들기" [ref=f88e98] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f88e113]:
+        - button "설정 및 지원" [ref=f88e114] [cursor=pointer]
+  - main [ref=f88e119]:
+    - generic [ref=f88e121]:
+      - heading "검색 결과 페이지" [level=1] [ref=f88e123]
+      - region "필터 및 세분화 검색" [ref=f88e127]:
+        - button "필터 표시" [ref=f88e136] [cursor=pointer]
+      - generic [ref=f88e147]:
+        - generic [ref=f88e148]: minimalist geometric figure 8 circle line axis logo symbol black white vector 검색 결과를 추가로 불러오는 중
+        - list [ref=f88e153]:
+          - listitem [ref=f88e154]:
+            - button [ref=f88e156] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e159]:
+                - generic [ref=f88e161]:
+                  - link "제목 없음 핀 페이지" [ref=f88e163]:
+                    - /url: /pin/985231163351286/
+                    - img "포함된 이미지:" [ref=f88e173]
+                  - generic "추가 작업" [ref=f88e182]:
+                    - button "추가 작업" [ref=f88e183]
+          - listitem [ref=f88e188]:
+            - button [ref=f88e190] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e193]:
+                - generic [ref=f88e195]:
+                  - link "제목 없음 핀 페이지" [ref=f88e197]:
+                    - /url: /pin/4292562141224114/
+                    - img "포함된 이미지:" [ref=f88e207]
+                  - generic "추가 작업" [ref=f88e216]:
+                    - button "추가 작업" [ref=f88e217]
+          - listitem [ref=f88e222]:
+            - button [ref=f88e224] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e227]:
+                - generic [ref=f88e229]:
+                  - link "제목 없음 핀 페이지" [ref=f88e231]:
+                    - /url: /pin/16747829859929117/
+                    - img "포함된 이미지:" [ref=f88e241]
+                  - generic "추가 작업" [ref=f88e250]:
+                    - button "추가 작업" [ref=f88e251]
+          - listitem [ref=f88e256]:
+            - button [ref=f88e258] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e261]:
+                - generic [ref=f88e263]:
+                  - link "제목 없음 핀 페이지" [ref=f88e265]:
+                    - /url: /pin/2674081026184562/
+                    - img "포함된 이미지:" [ref=f88e275]
+                  - generic "추가 작업" [ref=f88e284]:
+                    - button "추가 작업" [ref=f88e285]
+          - listitem [ref=f88e290]:
+            - button [ref=f88e292] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e295]:
+                - generic [ref=f88e297]:
+                  - link "Figure 8s 핀 페이지" [ref=f88e299]:
+                    - /url: /pin/384072674492826454/
+                    - 'img "포함된 내용: Typographic logo design" [ref=f88e309]'
+                  - generic [ref=f88e314]:
+                    - heading [level=2] [ref=f88e320]:
+                      - link "Figure 8s 핀 페이지" [ref=f88e322]:
+                        - /url: /pin/384072674492826454/
+                        - text: Figure 8s
+                    - generic "추가 작업" [ref=f88e325]:
+                      - button "추가 작업" [ref=f88e326]
+          - listitem [ref=f88e331]:
+            - button [ref=f88e333] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e336]:
+                - generic [ref=f88e338]:
+                  - link "Carris 핀 페이지" [ref=f88e340]:
+                    - /url: /pin/406027722681477977/
+                    - 'img "포함된 이미지: Carris" [ref=f88e350]'
+                  - generic [ref=f88e355]:
+                    - heading [level=2] [ref=f88e361]:
+                      - link "Carris 핀 페이지" [ref=f88e363]:
+                        - /url: /pin/406027722681477977/
+                        - text: Carris
+                    - generic "추가 작업" [ref=f88e366]:
+                      - button "추가 작업" [ref=f88e367]
+          - listitem [ref=f88e372]:
+            - button [ref=f88e374] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e377]:
+                - generic [ref=f88e379]:
+                  - link "❄️ polygon 핀 페이지" [ref=f88e381]:
+                    - /url: /pin/2392606046393632/
+                    - 'img "포함된 이미지: ❄️ polygon" [ref=f88e391]'
+                  - generic [ref=f88e396]:
+                    - heading [level=2] [ref=f88e402]:
+                      - link "❄️ polygon 핀 페이지" [ref=f88e404]:
+                        - /url: /pin/2392606046393632/
+                        - text: ❄️ polygon
+                    - generic "추가 작업" [ref=f88e407]:
+                      - button "추가 작업" [ref=f88e408]
+          - listitem [ref=f88e413]:
+            - button [ref=f88e415] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e418]:
+                - generic [ref=f88e420]:
+                  - link "Type on Behance 핀 페이지" [ref=f88e422]:
+                    - /url: /pin/7599893117392709/
+                    - img "포함된 이미지:" [ref=f88e432]
+                  - generic [ref=f88e437]:
+                    - link "Behance" [ref=f88e441]:
+                      - /url: /behance/
+                      - generic "Behance" [ref=f88e448]
+                    - generic "추가 작업" [ref=f88e451]:
+                      - button "추가 작업" [ref=f88e452]
+          - listitem [ref=f88e457]:
+            - button [ref=f88e459] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e462]:
+                - generic [ref=f88e464]:
+                  - link "제목 없음 핀 페이지" [ref=f88e466]:
+                    - /url: /pin/281543726797123/
+                    - img "포함된 이미지:" [ref=f88e476]
+                  - generic "추가 작업" [ref=f88e485]:
+                    - button "추가 작업" [ref=f88e486]
+          - listitem [ref=f88e491]:
+            - button [ref=f88e493] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e496]:
+                - generic [ref=f88e498]:
+                  - link "제목 없음 핀 페이지" [ref=f88e500]:
+                    - /url: /pin/4362930884852337/
+                    - img "포함된 이미지:" [ref=f88e510]
+                  - generic "추가 작업" [ref=f88e519]:
+                    - button "추가 작업" [ref=f88e520]
+          - listitem [ref=f88e525]:
+            - button [ref=f88e527] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e530]:
+                - generic [ref=f88e532]:
+                  - link "Google 検索 핀 페이지" [ref=f88e534]:
+                    - /url: /pin/19773685859660354/
+                    - img "포함된 이미지:" [ref=f88e544]
+                  - generic "추가 작업" [ref=f88e553]:
+                    - button "추가 작업" [ref=f88e554]
+          - listitem [ref=f88e559]:
+            - button [ref=f88e561] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e564]:
+                - generic [ref=f88e566]:
+                  - link "minimallyly 핀 페이지" [ref=f88e568]:
+                    - /url: /pin/358810295338301754/
+                    - 'img "포함된 이미지: minimallyly" [ref=f88e578]'
+                  - generic [ref=f88e583]:
+                    - heading [level=2] [ref=f88e589]:
+                      - link "minimallyly 핀 페이지" [ref=f88e591]:
+                        - /url: /pin/358810295338301754/
+                        - text: minimallyly
+                    - generic "추가 작업" [ref=f88e594]:
+                      - button "추가 작업" [ref=f88e595]
+          - listitem [ref=f88e600]:
+            - button [ref=f88e602] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e605]:
+                - generic [ref=f88e607]:
+                  - link "Geometric Circle Font Logo Ideas – Create Unique Venn Diagrams Today 핀 페이지" [ref=f88e609]:
+                    - /url: /pin/26951297767349990/
+                    - 'img "포함된 이미지: Geometric Circle Font Logo Ideas – Create Unique Venn Diagrams Today" [ref=f88e619]'
+                  - generic [ref=f88e624]:
+                    - heading [level=2] [ref=f88e630]:
+                      - link "Geometric Circle Font Logo Ideas – Create Unique Venn Diagrams Today 핀 페이지" [ref=f88e632]:
+                        - /url: /pin/26951297767349990/
+                        - text: Geometric Circle Font Logo Ideas – Create Unique Venn Diagrams Today
+                    - generic "추가 작업" [ref=f88e635]:
+                      - button "추가 작업" [ref=f88e636]
+          - listitem [ref=f88e641]:
+            - button [ref=f88e643] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e646]:
+                - generic [ref=f88e648]:
+                  - link "🍁 polygon 핀 페이지" [ref=f88e650]:
+                    - /url: /pin/245868460903064753/
+                    - 'img "포함된 이미지: 🍁 polygon" [ref=f88e660]'
+                  - generic [ref=f88e665]:
+                    - heading [level=2] [ref=f88e671]:
+                      - link "🍁 polygon 핀 페이지" [ref=f88e673]:
+                        - /url: /pin/245868460903064753/
+                        - text: 🍁 polygon
+                    - generic "추가 작업" [ref=f88e676]:
+                      - button "추가 작업" [ref=f88e677]
+          - listitem [ref=f88e682]:
+            - button [ref=f88e684] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e687]:
+                - generic [ref=f88e689]:
+                  - 'link "8 #36daysoftype 핀 페이지" [ref=f88e691]':
+                    - /url: /pin/16958936092723419/
+                    - img "포함된 이미지:" [ref=f88e701]
+                  - generic "추가 작업" [ref=f88e710]:
+                    - button "추가 작업" [ref=f88e711]
+          - listitem [ref=f88e716]:
+            - button [ref=f88e718] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e721]:
+                - generic [ref=f88e723]:
+                  - link "漂亮的LOGO，配得上这家米其林大厨的餐厅 - 小红书 핀 페이지" [ref=f88e725]:
+                    - /url: /pin/86412886595994972/
+                    - img "포함된 이미지:" [ref=f88e735]
+                  - generic "추가 작업" [ref=f88e744]:
+                    - button "추가 작업" [ref=f88e745]
+          - listitem [ref=f88e750]:
+            - button [ref=f88e752] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e755]:
+                - generic [ref=f88e757]:
+                  - link "제목 없음 핀 페이지" [ref=f88e759]:
+                    - /url: /pin/4925880836211153/
+                    - img "포함된 이미지:" [ref=f88e769]
+                  - generic "추가 작업" [ref=f88e778]:
+                    - button "추가 작업" [ref=f88e779]
+          - listitem [ref=f88e784]:
+            - button [ref=f88e786] [cursor=pointer]:
+              - group "핀 카드" [ref=f88e789]:
+                - generic [ref=f88e791]:
+                  - link "indeep 핀 페이지" [ref=f88e793]:
+                    - /url: /pin/87327680269297189/
+                    - 'img "포함된 이미지: indeep" [ref=f88e803]'
+                  - generic [ref=f88e808]:
+                    - heading [level=2] [ref=f88e814]:
+                      - link "indeep 핀 페이지" [ref=f88e816]:
+                        - /url: /pin/87327680269297189/
+                        - text: indeep
+                    - generic "추가 작업" [ref=f88e819]:
+                      - button "추가 작업" [ref=f88e820]
+          - listitem [ref=f88e825]
+          - listitem [ref=f88e829]
+          - listitem [ref=f88e833]
+          - listitem [ref=f88e837]
+          - listitem [ref=f88e841]
+          - listitem [ref=f88e845]
+          - listitem [ref=f88e849]
+          - listitem [ref=f88e853]
+          - listitem [ref=f88e857]
+          - listitem [ref=f88e861]

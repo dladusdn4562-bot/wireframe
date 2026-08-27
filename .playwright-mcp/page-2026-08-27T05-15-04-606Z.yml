@@ -1,0 +1,334 @@
+- generic [ref=f100e4]:
+  - banner:
+    - link "콘텐츠로 건너뛰기":
+      - /url: "#"
+    - generic [ref=f100e15]:
+      - generic [ref=f100e17]:
+        - generic [ref=f100e18]:
+          - combobox "검색" [ref=f100e20]: minimalist geometric half circle semicircles vertical axis letter s logo black white vector
+          - generic [ref=f100e21]:
+            - button "검색 입력 삭제" [ref=f100e24] [cursor=pointer]
+            - generic "이미지 업로드" [ref=f100e30]:
+              - button "Pinterest 렌즈" [ref=f100e31] [cursor=pointer]
+        - button "모든 핀 드롭다운" [ref=f100e38] [cursor=pointer]:
+          - generic [ref=f100e40]:
+            - generic [ref=f100e41]: 모든 핀
+            - img "드롭다운" [ref=f100e43]
+      - link "내 프로필" [ref=f100e49] [cursor=pointer]:
+        - /url: /dladusdn4562/
+        - img [ref=f100e56]:
+          - generic [ref=f100e57]: 임
+      - button "계정" [ref=f100e61] [cursor=pointer]
+  - navigation [ref=f100e66]:
+    - generic [ref=f100e68]:
+      - generic [ref=f100e69]:
+        - generic "홈" [ref=f100e73]:
+          - link "홈" [ref=f100e74] [cursor=pointer]:
+            - /url: /
+        - generic "홈" [ref=f100e81]:
+          - link "홈" [ref=f100e82] [cursor=pointer]:
+            - /url: /
+        - generic "내 보드" [ref=f100e89]:
+          - link "내 보드" [ref=f100e90] [cursor=pointer]:
+            - /url: /dladusdn4562/
+        - generic "만들기" [ref=f100e97]:
+          - button "만들기" [ref=f100e98] [cursor=pointer]
+        - generic "업데이트" [ref=f100e107]:
+          - button "업데이트" [ref=f100e108] [cursor=pointer]
+      - generic "설정 및 지원" [ref=f100e120]:
+        - button "설정 및 지원" [ref=f100e121] [cursor=pointer]
+  - generic:
+    - complementary "꼬리말 부동 버튼"
+  - main [ref=f100e126]:
+    - generic [ref=f100e128]:
+      - heading "검색 결과 페이지" [level=1] [ref=f100e130]
+      - region "필터 및 세분화 검색" [ref=f100e134]:
+        - button "필터 표시" [ref=f100e143] [cursor=pointer]
+      - generic [ref=f100e154]:
+        - generic [ref=f100e155]: minimalist geometric half circle semicircles vertical axis letter s logo black white vector 검색 결과를 추가로 표시
+        - list [ref=f100e160]:
+          - listitem [ref=f100e161]:
+            - button [ref=f100e163] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e166]:
+                - generic [ref=f100e168]:
+                  - link "제목 없음 핀 페이지" [ref=f100e170]:
+                    - /url: /pin/8655424281664587/
+                    - img "포함된 이미지:" [ref=f100e180]
+                  - generic "추가 작업" [ref=f100e189]:
+                    - button "추가 작업" [ref=f100e190]
+          - listitem [ref=f100e195]:
+            - button [ref=f100e197] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e200]:
+                - generic [ref=f100e202]:
+                  - link "제목 없음 핀 페이지" [ref=f100e204]:
+                    - /url: /pin/628181847998435979/
+                    - img "포함된 이미지:" [ref=f100e214]
+                  - generic "추가 작업" [ref=f100e223]:
+                    - button "추가 작업" [ref=f100e224]
+          - listitem [ref=f100e229]:
+            - button [ref=f100e231] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e234]:
+                - generic [ref=f100e236]:
+                  - link "제목 없음 핀 페이지" [ref=f100e238]:
+                    - /url: /pin/3237030978969160/
+                    - img "포함된 이미지:" [ref=f100e248]
+                  - generic "추가 작업" [ref=f100e257]:
+                    - button "추가 작업" [ref=f100e258]
+          - listitem [ref=f100e263]:
+            - button [ref=f100e265] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e268]:
+                - generic [ref=f100e270]:
+                  - link "Instagram 핀 페이지" [ref=f100e272]:
+                    - /url: /pin/15129348745761283/
+                    - img "포함된 이미지:" [ref=f100e282]
+                  - generic "추가 작업" [ref=f100e291]:
+                    - button "추가 작업" [ref=f100e292]
+          - listitem [ref=f100e297]:
+            - button [ref=f100e299] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e302]:
+                - generic [ref=f100e304]:
+                  - link "Interlocking &#39;S&#39; characters forming a fluid, symmetrical spiral within a precise circular frame.Interlocking &#39;S&#39; characters forming a fluid, symmetrical spiral within a precise circular frame. 핀 페이지" [ref=f100e306]:
+                    - /url: /pin/19492210989778833/
+                    - 'img "포함된 이미지: Interlocking ''S'' characters forming a fluid, symmetrical spiral within a precise circular frame.Interlocking ''S'' characters forming a fluid, symmetrical spiral within a precise circular frame." [ref=f100e316]'
+                  - generic [ref=f100e321]:
+                    - heading [level=2] [ref=f100e327]:
+                      - link "Interlocking &#39;S&#39; characters forming a fluid, symmetrical spiral within a precise circular frame.Interlocking &#39;S&#39; characters forming a fluid, symmetrical spiral within a precise circular frame. 핀 페이지" [ref=f100e329]:
+                        - /url: /pin/19492210989778833/
+                        - text: Interlocking 'S' characters forming a fluid, symmetrical spiral within a precise circular frame.Interlocking 'S' characters forming a fluid, symmetrical spiral within a precise circular frame.
+                    - generic "추가 작업" [ref=f100e332]:
+                      - button "추가 작업" [ref=f100e333]
+          - listitem [ref=f100e338]:
+            - button [ref=f100e340] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e343]:
+                - generic [ref=f100e345]:
+                  - link "WIELKIE S 핀 페이지" [ref=f100e347]:
+                    - /url: /pin/633670610101240354/
+                    - 'img "포함된 이미지: WIELKIE S" [ref=f100e357]'
+                  - generic [ref=f100e362]:
+                    - heading [level=2] [ref=f100e368]:
+                      - link "WIELKIE S 핀 페이지" [ref=f100e370]:
+                        - /url: /pin/633670610101240354/
+                        - text: WIELKIE S
+                    - generic "추가 작업" [ref=f100e373]:
+                      - button "추가 작업" [ref=f100e374]
+          - listitem [ref=f100e379]:
+            - button [ref=f100e381] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e384]:
+                - generic [ref=f100e386]:
+                  - 'link "#ZLogoDesign #MinimalistLogo #GeometricLogo #ModernLogo #ZLettermark #LogoExploration #CreativeLogo #UniqueLogoIdeas #BrandingLogo #TypographyLogo #AbstractLogo #VersatileLogo #BoldLogoDesign #ZBrandingIcon #LogoVariations #LetterZIcon #InnovativeLogo #BlackAndWhiteLogo #GridLogo #professionallogodesign 핀 페이지" [ref=f100e388]':
+                    - /url: /pin/206461964164032351/
+                    - img "포함된 이미지:" [ref=f100e398]
+                  - generic "추가 작업" [ref=f100e407]:
+                    - button "추가 작업" [ref=f100e408]
+          - listitem [ref=f100e413]:
+            - button [ref=f100e415] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e418]:
+                - generic [ref=f100e420]:
+                  - link "Logos for Sale with adobe illustrator, EPS, PDF Files with your brand color| Contact detail in bio 핀 페이지" [ref=f100e422]:
+                    - /url: /pin/13792342604912850/
+                    - 'img "포함된 이미지: Logos for Sale with adobe illustrator, EPS, PDF Files with your brand color| Contact detail in bio" [ref=f100e432]'
+                  - generic [ref=f100e437]:
+                    - heading [level=2] [ref=f100e443]:
+                      - link "Logos for Sale with adobe illustrator, EPS, PDF Files with your brand color| Contact detail in bio 핀 페이지" [ref=f100e445]:
+                        - /url: /pin/13792342604912850/
+                        - text: Logos for Sale with adobe illustrator, EPS, PDF Files with your brand color| Contact detail in bio
+                    - generic "추가 작업" [ref=f100e448]:
+                      - button "추가 작업" [ref=f100e449]
+          - listitem [ref=f100e454]:
+            - button [ref=f100e456] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e459]:
+                - generic [ref=f100e461]:
+                  - link "제목 없음 핀 페이지" [ref=f100e463]:
+                    - /url: /pin/11118330333930265/
+                    - img "포함된 이미지:" [ref=f100e473]
+                  - generic "추가 작업" [ref=f100e482]:
+                    - button "추가 작업" [ref=f100e483]
+          - listitem [ref=f100e488]:
+            - button [ref=f100e490] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e493]:
+                - generic [ref=f100e495]:
+                  - link "A modern and flowing S shape, formed from two interlocking teardrop shapes in a circular composition. 핀 페이지" [ref=f100e497]:
+                    - /url: /pin/28429041394554805/
+                    - img "포함된 이미지:" [ref=f100e507]
+                  - generic "추가 작업" [ref=f100e516]:
+                    - button "추가 작업" [ref=f100e517]
+          - listitem [ref=f100e522]:
+            - button [ref=f100e524] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e527]:
+                - generic [ref=f100e529]:
+                  - link "제목 없음 핀 페이지" [ref=f100e531]:
+                    - /url: /pin/351912466435660/
+                    - img "포함된 이미지:" [ref=f100e541]
+                  - generic "추가 작업" [ref=f100e550]:
+                    - button "추가 작업" [ref=f100e551]
+          - listitem [ref=f100e556]:
+            - button [ref=f100e558] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e561]:
+                - generic [ref=f100e563]:
+                  - link "Letter S Negative Space Logo employs clean curves for an S monogram. Its sleek, futuristic style is a great choice for software, cloud computing, or creative agencies needing a professional image. 핀 페이지" [ref=f100e565]:
+                    - /url: /pin/303289356179081177/
+                    - 'img "포함된 이미지: Letter S Negative Space Logo employs clean curves for an S monogram. Its sleek, futuristic style is a great choice for software, cloud computing, or creative agencies needing a professional image." [ref=f100e575]'
+                  - generic [ref=f100e580]:
+                    - heading [level=2] [ref=f100e586]:
+                      - link "Letter S Negative Space Logo employs clean curves for an S monogram. Its sleek, futuristic style is a great choice for software, cloud computing, or creative agencies needing a professional image. 핀 페이지" [ref=f100e588]:
+                        - /url: /pin/303289356179081177/
+                        - text: Letter S Negative Space Logo employs clean curves for an S monogram. Its sleek, futuristic style is a great choice for software, cloud computing, or creative agencies needing a professional image.
+                    - generic "추가 작업" [ref=f100e591]:
+                      - button "추가 작업" [ref=f100e592]
+          - listitem [ref=f100e597]:
+            - button [ref=f100e599] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e602]:
+                - generic [ref=f100e604]:
+                  - link "제목 없음 핀 페이지" [ref=f100e606]:
+                    - /url: /pin/9851692929103997/
+                    - img "포함된 이미지:" [ref=f100e616]
+                  - generic "추가 작업" [ref=f100e625]:
+                    - button "추가 작업" [ref=f100e626]
+          - listitem [ref=f100e631]:
+            - button [ref=f100e633] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e636]:
+                - generic [ref=f100e638]:
+                  - link "제목 없음 핀 페이지" [ref=f100e640]:
+                    - /url: /pin/155655730861375206/
+                    - img "포함된 이미지:" [ref=f100e650]
+                  - generic "추가 작업" [ref=f100e659]:
+                    - button "추가 작업" [ref=f100e660]
+          - listitem [ref=f100e665]:
+            - button [ref=f100e667] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e670]:
+                - generic [ref=f100e672]:
+                  - link "S Lettermark 핀 페이지" [ref=f100e674]:
+                    - /url: /pin/118641771431904933/
+                    - 'img "포함된 이미지: S Lettermark" [ref=f100e684]'
+                  - generic [ref=f100e689]:
+                    - heading [level=2] [ref=f100e695]:
+                      - link "S Lettermark 핀 페이지" [ref=f100e697]:
+                        - /url: /pin/118641771431904933/
+                        - text: S Lettermark
+                    - generic "추가 작업" [ref=f100e700]:
+                      - button "추가 작업" [ref=f100e701]
+          - listitem [ref=f100e706]:
+            - button [ref=f100e708] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e711]:
+                - generic [ref=f100e713]:
+                  - link "Letter s half circle logo | Premium Vector 핀 페이지" [ref=f100e715]:
+                    - /url: /pin/351351208438590267/
+                    - 'img "포함된 이미지: Letter s half circle logo | Premium Vector" [ref=f100e725]'
+                  - generic [ref=f100e730]:
+                    - heading [level=2] [ref=f100e736]:
+                      - link "Letter s half circle logo | Premium Vector 핀 페이지" [ref=f100e738]:
+                        - /url: /pin/351351208438590267/
+                        - text: Letter s half circle logo | Premium Vector
+                    - generic "추가 작업" [ref=f100e741]:
+                      - button "추가 작업" [ref=f100e742]
+          - listitem [ref=f100e747]:
+            - button [ref=f100e749] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e752]:
+                - generic [ref=f100e754]:
+                  - link "A futuristic S featuring two dynamic, mirrored wave forms that create a sense of motion. 핀 페이지" [ref=f100e756]:
+                    - /url: /pin/193936327701062715/
+                    - 'img "포함된 이미지: A futuristic S featuring two dynamic, mirrored wave forms that create a sense of motion." [ref=f100e766]'
+                  - generic [ref=f100e771]:
+                    - heading [level=2] [ref=f100e777]:
+                      - link "A futuristic S featuring two dynamic, mirrored wave forms that create a sense of motion. 핀 페이지" [ref=f100e779]:
+                        - /url: /pin/193936327701062715/
+                        - text: A futuristic S featuring two dynamic, mirrored wave forms that create a sense of motion.
+                    - generic "추가 작업" [ref=f100e782]:
+                      - button "추가 작업" [ref=f100e783]
+          - listitem [ref=f100e788]:
+            - button [ref=f100e790] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e793]:
+                - generic [ref=f100e795]:
+                  - link "Circle Letter SS Logo 핀 페이지" [ref=f100e797]:
+                    - /url: /pin/4593601337324861824/
+                    - 'img "포함된 이미지: Circle Letter SS Logo" [ref=f100e807]'
+                  - generic [ref=f100e812]:
+                    - generic [ref=f100e814]:
+                      - generic [ref=f100e816]:
+                        - img "쇼핑 가능한 핀 표시기" [ref=f100e818]
+                        - heading [level=2] [ref=f100e821]:
+                          - link "Circle Letter SS Logo 핀 페이지" [ref=f100e823]:
+                            - /url: /pin/4593601337324861824/
+                            - text: Circle Letter SS Logo
+                      - link "Circle Letter SS Logo 핀 페이지" [ref=f100e825]:
+                        - /url: /pin/4593601337324861824/
+                        - generic "Scalebranding" [ref=f100e829]
+                    - generic "추가 작업" [ref=f100e832]:
+                      - button "추가 작업" [ref=f100e833]
+          - listitem [ref=f100e838]:
+            - button [ref=f100e840] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e843]:
+                - generic [ref=f100e845]:
+                  - 'link "“Letter S” built from balance and bold geometry. Need a custom mark that speaks your brand’s structure? Let’s design one together #minimaldesign #geometricart #logotypedesigner #brandidentitydesign #modernlogo #creativelettermark #typographydesign #designcollector #visualbalance #mustfstd 핀 페이지" [ref=f100e847]':
+                    - /url: /pin/118641771431904916/
+                    - img "포함된 이미지:" [ref=f100e857]
+                  - generic "추가 작업" [ref=f100e866]:
+                    - button "추가 작업" [ref=f100e867]
+          - listitem [ref=f100e872]:
+            - button [ref=f100e874] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e877]:
+                - generic [ref=f100e879]:
+                  - link "S, letter, stencil 핀 페이지" [ref=f100e881]:
+                    - /url: /pin/28640147624957653/
+                    - 'img "포함된 이미지: S, letter, stencil" [ref=f100e891]'
+                  - generic [ref=f100e896]:
+                    - heading [level=2] [ref=f100e902]:
+                      - link "S, letter, stencil 핀 페이지" [ref=f100e904]:
+                        - /url: /pin/28640147624957653/
+                        - text: S, letter, stencil
+                    - generic "추가 작업" [ref=f100e907]:
+                      - button "추가 작업" [ref=f100e908]
+          - listitem [ref=f100e913]:
+            - button [ref=f100e915] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e918]:
+                - generic [ref=f100e920]:
+                  - link "Letter S Initial Logo 핀 페이지" [ref=f100e922]:
+                    - /url: /pin/545428204894108867/
+                    - 'img "포함된 이미지: Letter S Initial Logo" [ref=f100e932]'
+                  - generic [ref=f100e937]:
+                    - heading [level=2] [ref=f100e943]:
+                      - link "Letter S Initial Logo 핀 페이지" [ref=f100e945]:
+                        - /url: /pin/545428204894108867/
+                        - text: Letter S Initial Logo
+                    - generic "추가 작업" [ref=f100e948]:
+                      - button "추가 작업" [ref=f100e949]
+          - listitem [ref=f100e954]:
+            - button [ref=f100e956] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e959]:
+                - generic [ref=f100e961]:
+                  - link "A sleek, minimalist S crafted from two symmetrical, curving bold strokes with sharp terminals. 핀 페이지" [ref=f100e963]:
+                    - /url: /pin/102879172733743823/
+                    - img "포함된 이미지:" [ref=f100e973]
+                  - generic "추가 작업" [ref=f100e982]:
+                    - button "추가 작업" [ref=f100e983]
+          - listitem [ref=f100e988]:
+            - button [ref=f100e990] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e993]:
+                - generic [ref=f100e995]:
+                  - link "modern letters S H or H S logo 핀 페이지" [ref=f100e997]:
+                    - /url: /pin/4591771782112136576/
+                    - 'img "포함된 이미지: modern letters S H or H S logo" [ref=f100e1007]'
+                  - generic [ref=f100e1012]:
+                    - generic [ref=f100e1014]:
+                      - generic [ref=f100e1016]:
+                        - img "쇼핑 가능한 핀 표시기" [ref=f100e1018]
+                        - heading [level=2] [ref=f100e1021]:
+                          - link "modern letters S H or H S logo 핀 페이지" [ref=f100e1023]:
+                            - /url: /pin/4591771782112136576/
+                            - text: modern letters S H or H S logo
+                      - link "modern letters S H or H S logo 핀 페이지" [ref=f100e1025]:
+                        - /url: /pin/4591771782112136576/
+                        - generic "Scalebranding" [ref=f100e1029]
+                    - generic "추가 작업" [ref=f100e1032]:
+                      - button "추가 작업" [ref=f100e1033]
+          - listitem [ref=f100e1038]:
+            - button [ref=f100e1040] [cursor=pointer]:
+              - group "핀 카드" [ref=f100e1043]:
+                - generic [ref=f100e1045]:
+                  - link "s logo / Unused by Anik Khandaker® | Logo Designer 핀 페이지" [ref=f100e1047]:
+                    - /url: /pin/317222367526483457/
+                    - img "포함된 이미지:" [ref=f100e1057]
+                  - generic "추가 작업" [ref=f100e1066]:
+                    - button "추가 작업" [ref=f100e1067]
+  - generic:
+    - contentinfo "꼬리말"
