@@ -372,35 +372,61 @@
     .section-title { font-family: var(--font-serif); font-size: 36px; font-weight: 800; color: var(--color-forest); margin-bottom: 12px; letter-spacing: -0.03em; }
     .section-desc { font-size: 15.5px; color: var(--color-text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.7; }
 
-    .featured-grid { display: flex; flex-direction: column; gap: 60px; }
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: stretch;
+    }
     .featured-card {
       background: var(--bg-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
+      border: 1.5px solid var(--color-border);
+      border-radius: 24px;
       overflow: hidden;
-      display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
       position: relative;
+      transition: var(--transition);
+      height: 100%;
     }
-    .featured-card.reverse { grid-template-columns: 1fr 1.1fr; }
-    .featured-card.reverse .featured-visual { order: 2; border-right: none; border-left: 1px solid var(--color-border); }
-    .featured-card.reverse .featured-content { order: 1; }
+    .featured-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #6F9670;
+    }
+    .featured-card.reverse {
+      display: flex;
+      flex-direction: column;
+    }
+    .featured-card.reverse .featured-visual {
+      order: unset;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .featured-card.reverse .featured-content {
+      order: unset;
+    }
 
     .featured-visual {
       background: var(--bg-card);
-      padding: 40px;
+      padding: 24px 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       position: relative;
-      border-right: 1px solid var(--color-border);
+      border-right: none;
+      border-bottom: 1px solid var(--color-border);
+      width: 100%;
+      box-sizing: border-box;
     }
     
     .visual-3d-box {
       width: 100%;
-      height: 280px;
+      height: 200px;
       background: #e9e3d5;
       border: 2px dashed #cfc5af;
       border-radius: var(--radius-md);
@@ -411,22 +437,24 @@
       position: relative;
       cursor: crosshair;
       transition: var(--transition);
+      box-sizing: border-box;
     }
     .visual-3d-box:hover { background: #e2dbca; }
-    .visual-3d-icon { font-size: 44px; margin-bottom: 8px; }
+    .visual-3d-icon { font-size: 40px; margin-bottom: 6px; }
     .magnifier-hint {
-      position: absolute; bottom: 12px; right: 12px;
-      font-size: 11px; font-weight: 800; color: var(--color-forest);
-      background: rgba(255,255,255,0.9); padding: 4px 10px; border-radius: var(--radius-full);
+      position: absolute; bottom: 10px; right: 10px;
+      font-size: 11px; font-weight: 500; color: var(--color-forest);
+      background: rgba(255,255,255,0.92); padding: 3px 8px; border-radius: var(--radius-full);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
     }
 
     /* 카드 우상단 찜 버튼 */
     .btn-card-wish {
       position: absolute;
-      top: 16px;
-      right: 16px;
-      width: 36px;
-      height: 36px;
+      top: 14px;
+      right: 14px;
+      width: 34px;
+      height: 34px;
       border-radius: 50%;
       background: #fff;
       border: 1px solid var(--color-border);
@@ -443,36 +471,91 @@
     .btn-card-wish.active svg { fill: #6F9670; stroke: #6F9670; }
 
     .featured-content {
-      padding: 48px;
+      padding: 24px 20px 20px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
+      flex: 1;
+      text-align: left;
+      box-sizing: border-box;
     }
     .featured-badge {
       display: inline-block;
-      padding: 4px 12px;
+      padding: 3px 10px;
       background: var(--bg-accent-light);
       border: 1px solid var(--color-terracotta);
       color: var(--color-terracotta);
       font-size: 11.5px;
-      font-weight: 800;
+      font-weight: 500;
       border-radius: var(--radius-full);
       width: fit-content;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
-    .featured-name { font-family: var(--font-serif); font-size: 26px; font-weight: 800; color: var(--color-forest); margin-bottom: 12px; line-height: 1.35; }
-    .featured-copy { font-size: 15px; color: var(--color-text-secondary); margin-bottom: 20px; line-height: 1.75; }
+    .featured-name { font-family: var(--font-gowun), 'Gowun Batang', serif; font-size: 20px; font-weight: 600; color: var(--color-forest); margin-bottom: 10px; line-height: 1.35; }
+    .featured-copy { font-size: 13.5px; color: var(--color-text-secondary); margin-bottom: 14px; line-height: 1.65; }
     
-    .feature-points { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
-    .point-item { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: var(--color-text-primary); font-weight: 600; }
-    .point-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--color-terracotta); }
+    .feature-compare-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 18px;
+      padding: 14px 0;
+      border-top: 1px solid #EAEAE6;
+      border-bottom: 1px solid #EAEAE6;
+    }
+    .compare-item {
+      display: grid;
+      grid-template-columns: 66px 1fr;
+      gap: 8px;
+      font-size: 12px;
+      line-height: 1.55;
+      align-items: baseline;
+    }
+    .compare-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: #6F9670;
+      background: #EFF4EE;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .compare-val {
+      font-size: 12px;
+      color: #5B5B5B;
+      font-weight: 500;
+      word-break: keep-all;
+    }
+    .spec-tag-goal {
+      display: inline-block;
+      font-size: 10px;
+      color: #8C7B6E;
+      background: #F4EFEB;
+      padding: 1px 5px;
+      border-radius: 3px;
+      margin-left: 2px;
+      font-weight: 600;
+    }
+    .spec-tag-example {
+      display: inline-block;
+      font-size: 10px;
+      color: #5C7A63;
+      background: #EAF1EC;
+      padding: 1px 5px;
+      border-radius: 3px;
+      margin-left: 2px;
+      font-weight: 600;
+    }
 
-    .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 24px; }
-    .price-original { font-size: 15px; color: var(--color-text-muted); text-decoration: line-through; }
-    .price-sale { font-size: 24px; font-weight: 900; color: var(--color-forest); }
-    .price-discount { font-size: 18px; font-weight: 800; color: var(--color-terracotta); }
+    .price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 16px; }
+    .price-original { font-size: 13px; color: var(--color-text-muted); text-decoration: line-through; }
+    .price-sale { font-size: 20px; font-weight: 700; color: var(--color-forest); }
+    .price-discount { font-size: 16px; font-weight: 600; color: var(--color-terracotta); }
 
-    .featured-actions { display: flex; gap: 12px; }
+    .featured-actions { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+    .featured-actions .btn-primary { width: 100%; justify-content: center; padding: 10px 16px; font-size: 13.5px; }
+    .featured-actions .btn-secondary { width: 100%; justify-content: center; padding: 9px 16px; font-size: 13px; }
 
     /* ==========================================================================
        [Social Proof]
@@ -2090,22 +2173,44 @@
       background-color: #F4F4F2 !important;
       color: #5B5B5B !important;
       font-family: var(--font-sans);
-      font-weight: 600 !important;
+      font-weight: 500 !important;
     }
 
-    /* [Hero 영역 제외 모든 텍스트 폰트 두께 600 일괄 적용] */
-    body *:not(.hero-section):not(.hero-section *) {
-      font-weight: 600 !important;
+    /* [기본 전 영역 텍스트 폰트 두께 500 일괄 적용] */
+    body, body * {
+      font-weight: 500 !important;
     }
 
-    /* [Hero 영역 폰트 두께 700 유지 보장] */
+    /* [HERO 영역 메인 타이틀만 font-weight: 700 (Bold) 적용] */
     .hero-section .hero-manifesto-title,
     .hero-section .hero-manifesto-title *,
-    .hero-section .hero-highlight-word,
-    .hero-section .hero-eyebrow,
-    .hero-section .hero-cta-group .btn-primary,
-    .hero-section .hero-right-visual-area span {
+    .hero-section .hero-highlight-word {
       font-weight: 700 !important;
+    }
+
+    /* [HERO 제외 나머지 모든 섹션 대형 타이틀/헤딩은 font-weight: 600 (SemiBold) 적용] */
+    h1:not(.hero-manifesto-title),
+    h2,
+    .problem-editorial-title,
+    .problem-editorial-title *,
+    .problem-editorial-quote,
+    .problem-editorial-quote *,
+    .solution-clean-title,
+    .solution-clean-title *,
+    .section-title,
+    .section-title *,
+    .featured-name,
+    .featured-name *,
+    .journey-heading,
+    .catalog-banner-title,
+    .fit-finder-title,
+    .story92-hero-title,
+    .story92-hero-title *,
+    .story-title,
+    .story-title *,
+    .story-section-title,
+    .story-section-title * {
+      font-weight: 600 !important;
     }
 
     /* 상단 고정 헤더 슬림화 */
@@ -2137,7 +2242,7 @@
     .section-tag, .hero-eyebrow, .catalog-tag, .journey-tag {
       display: flex !important; align-items: center !important; justify-content: center !important; gap: 14px !important;
       color: #6F9670 !important; font-family: var(--font-gowun), serif !important; font-size: 13.5px !important;
-      font-weight: 700 !important; background: transparent !important; border: none !important; padding: 0 !important;
+      font-weight: 500 !important; background: transparent !important; border: none !important; padding: 0 !important;
     }
     .section-tag::before, .section-tag::after,
     .hero-eyebrow::before, .hero-eyebrow::after,
@@ -2157,7 +2262,7 @@
     .btn-primary, .btn-accent, .floating-bottom-bar .btn-accent {
       background: #6F9670 !important; color: #FFFFFF !important;
       border: 1.5px solid #6F9670 !important; border-radius: 9999px !important;
-      box-shadow: 0 4px 14px rgba(111, 150, 112, 0.35) !important; font-weight: 700 !important;
+      box-shadow: 0 4px 14px rgba(111, 150, 112, 0.35) !important; font-weight: 500 !important;
       padding: 12px 26px !important; font-size: 14px !important; display: inline-flex !important;
       align-items: center !important; justify-content: center !important; gap: 6px !important; transition: var(--transition) !important;
     }
@@ -2165,7 +2270,7 @@
     .btn-secondary {
       background: #FFFFFF !important; color: #2B2D2B !important;
       border: 1.5px solid #6F9670 !important; border-radius: 9999px !important;
-      font-weight: 700 !important; padding: 12px 26px !important; font-size: 14px !important;
+      font-weight: 500 !important; padding: 12px 26px !important; font-size: 14px !important;
       display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; transition: var(--transition) !important;
     }
     .btn-secondary:hover { background: #EEF4EE !important; color: #5C825D !important; border-color: #5C825D !important; }
@@ -2211,7 +2316,7 @@
       justify-content: flex-start !important;
       margin-bottom: 20px !important;
       color: #6F9670 !important;
-      font-weight: 700 !important;
+      font-weight: 500 !important;
       font-size: 15px !important;
       letter-spacing: 0.04em !important;
     }
@@ -2330,7 +2435,7 @@
     .problem-editorial-label {
       font-family: var(--font-sans) !important;
       font-size: 13px !important;
-      font-weight: 600 !important;
+      font-weight: 500 !important;
       letter-spacing: 0.12em !important;
       color: #5B5B5B !important;
       margin-bottom: 24px !important;
@@ -2355,7 +2460,7 @@
     .problem-editorial-desc {
       font-family: var(--font-sans) !important;
       font-size: 13.5px !important;
-      font-weight: 600 !important;
+      font-weight: 500 !important;
       color: #B0B0B0 !important;
       line-height: 1.85 !important;
       margin: 0 !important;
@@ -2429,7 +2534,7 @@
     .solution-visual-badge {
       font-family: var(--font-gowun), serif !important;
       font-size: 16.5px !important;
-      font-weight: 600 !important;
+      font-weight: 500 !important;
       color: #5B5B5B !important;
       background: rgba(255, 255, 255, 0.8) !important;
       backdrop-filter: blur(8px) !important;
@@ -2449,7 +2554,7 @@
     .solution-clean-label {
       font-family: var(--font-sans) !important;
       font-size: 13px !important;
-      font-weight: 600 !important;
+      font-weight: 500 !important;
       letter-spacing: 0.12em !important;
       color: #5B5B5B !important;
       margin-bottom: 24px !important;
@@ -2471,7 +2576,7 @@
     .solution-clean-desc {
       font-family: var(--font-sans) !important;
       font-size: 14.5px !important;
-      font-weight: 600 !important;
+      font-weight: 500 !important;
       color: #B0B0B0 !important;
       line-height: 1.85 !important;
       margin: 0 0 32px 0 !important;
@@ -2485,7 +2590,7 @@
       gap: 6px !important;
       font-family: var(--font-sans) !important;
       font-size: 14.5px !important;
-      font-weight: 600 !important;
+      font-weight: 500 !important;
       color: #5B5B5B !important;
       background: transparent !important;
       border: none !important;
@@ -2506,6 +2611,93 @@
       .solution-text-box { align-items: flex-start !important; text-align: left !important; }
       .solution-clean-label, .solution-clean-title, .solution-clean-desc { text-align: left !important; }
       .solution-clean-link { align-self: flex-start !important; }
+    }
+
+    /* [SEC-02-C: 스밈의 3대 기준/원칙 에디토리얼 섹션 - 3대 챕터 레퍼런스.png 규격] */
+    .principles-editorial-section {
+      padding: 100px 0 110px !important;
+      background: var(--bg-base) !important;
+      border-bottom: 1px solid var(--color-border) !important;
+    }
+    .principles-header-wrap {
+      text-align: center !important;
+      max-width: 900px !important;
+      margin: 0 auto 64px !important;
+    }
+    .principles-label {
+      font-family: var(--font-sans) !important;
+      font-size: 13px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0.12em !important;
+      color: #5B5B5B !important;
+      margin-bottom: 20px !important;
+      text-transform: uppercase !important;
+      display: inline-block !important;
+    }
+    .principles-title {
+      font-family: var(--font-gowun), 'Gowun Batang', serif !important;
+      font-size: clamp(30px, 2.8vw, 40px) !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      color: #5B5B5B !important;
+      letter-spacing: -0.025em !important;
+      margin: 0 auto !important;
+      word-break: keep-all !important;
+    }
+    .principles-table-list {
+      max-width: 1200px !important;
+      margin: 0 auto !important;
+      border-top: 1px solid #D6D6D0 !important;
+      padding: 0 24px !important;
+      box-sizing: border-box !important;
+    }
+    .principles-row {
+      display: grid !important;
+      grid-template-columns: 80px 340px 1fr !important;
+      gap: 36px !important;
+      align-items: baseline !important;
+      padding: 44px 0 !important;
+      border-bottom: 1px solid #D6D6D0 !important;
+      box-sizing: border-box !important;
+    }
+    .principles-num {
+      font-family: var(--font-sans) !important;
+      font-size: 15px !important;
+      font-weight: 500 !important;
+      color: #5B5B5B !important;
+      letter-spacing: 0.05em !important;
+    }
+    .principles-heading {
+      font-family: var(--font-sans) !important;
+      font-size: 20px !important;
+      font-weight: 600 !important;
+      color: #5B5B5B !important;
+      letter-spacing: -0.02em !important;
+      word-break: keep-all !important;
+      margin: 0 !important;
+    }
+    .principles-desc {
+      font-family: var(--font-sans) !important;
+      font-size: 14.5px !important;
+      font-weight: 500 !important;
+      color: #787878 !important;
+      line-height: 1.8 !important;
+      letter-spacing: -0.01em !important;
+      word-break: keep-all !important;
+      margin: 0 !important;
+    }
+    @media (max-width: 900px) {
+      .principles-row {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+        padding: 32px 0 !important;
+      }
+      .principles-table-list {
+        padding: 0 16px !important;
+      }
+      .principles-editorial-section {
+        padding: 70px 0 80px !important;
+      }
     }
 
     /* [7번 자가진단 위젯: 4개 버튼 감성 지그재그] */
@@ -2560,7 +2752,7 @@
       .hero-left-col .hero-cta-group { justify-content: center !important; }
       .hero-right-visual-area { min-height: 320px !important; height: 360px !important; }
       .pride-metrics-bar { grid-template-columns: repeat(2, 1fr) !important; }
-      .featured-card { grid-template-columns: 1fr !important; }
+      .featured-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
       .clinical-proof-grid { grid-template-columns: 1fr !important; }
       .journey-chapter-row { grid-template-columns: 1fr !important; }
     }
@@ -2840,6 +3032,53 @@
       </div>
     </section>
 
+    <!-- ==========================================================================
+         [SEC-02-C: 우리가 걸어온 길 & 스밈이 존재하는 이유 (스밈 고유 브랜드 서사)]
+         ========================================================================== -->
+    <section class="principles-editorial-section" id="sec-journey-principles">
+      <div class="container">
+        
+        <div class="principles-header-wrap">
+          <div class="principles-label">03 · OUR JOURNEY &amp; PURPOSE</div>
+          <h2 class="principles-title">
+            우리가 걸어온 길, 그리고 스밈이 존재하는 이유
+          </h2>
+        </div>
+
+        <div class="principles-table-list">
+          
+          <!-- 01 여정: 탄생 배경 -->
+          <div class="principles-row">
+            <div class="principles-num">01</div>
+            <h3 class="principles-heading">억지 조임이 아닌 자연스러운 지지</h3>
+            <p class="principles-desc">
+              몸을 묶어두지 않고 가볍게 밀착되어, 일상의 자연스러운 호흡과 움직임을 온전히 지킵니다.
+            </p>
+          </div>
+
+          <!-- 02 여정: 기존 한계 극복 -->
+          <div class="principles-row">
+            <div class="principles-num">02</div>
+            <h3 class="principles-heading">스스로 균형을 찾는 정밀한 탄성</h3>
+            <p class="principles-desc">
+              짓누르는 압박 대신 인체 곡선을 받쳐주어, 몸 스스로가 편안하고 바른 자리를 기억하게 돕습니다.
+            </p>
+          </div>
+
+          <!-- 03 여정: 스밈의 약속 -->
+          <div class="principles-row">
+            <div class="principles-num">03</div>
+            <h3 class="principles-heading">치열한 일상 속에 스며드는 바른 쉼</h3>
+            <p class="principles-desc">
+              퇴근 후 무언가를 강요하지 않고, 당신이 일하는 그 자리에서 자연스러운 균형과 쉼을 완성합니다.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     <!-- SEC-03~05: Top 3 Featured Masterpieces (지그재그 집중 조명) -->
     <section id="sec-featured" class="container" style="padding: 80px 24px;">
       <div class="section-title-wrap">
@@ -2860,38 +3099,51 @@
           <div class="featured-visual">
             <div class="visual-3d-box" onclick="openQuickView(1)">
               <div class="visual-3d-icon">🎽</div>
-              <div style="font-weight:800; font-size:14px; color:var(--color-forest);">[Top 1] 0.1mm 넥&amp;숄더 밴드 3D 단면도</div>
-              <div style="font-size:12px; color:var(--color-text-secondary); margin-top:4px;">전면 자석 버클 &amp; 15도 견인 메커니즘</div>
-              <span class="magnifier-hint">🔍 클릭 시 3D 단면 분해 뷰어</span>
+              <div style="font-weight:600; font-size:13.5px; color:var(--color-forest);">[Top 1] 0.1mm 넥&amp;숄더 밴드 3D 단면도</div>
+              <div style="font-size:11.5px; color:var(--color-text-secondary); margin-top:4px;">전면 자석 버클 &amp; 15도 견인 메커니즘</div>
+              <span class="magnifier-hint">🔍 3D 단면 분해 뷰어</span>
             </div>
           </div>
           <div class="featured-content">
-            <span class="featured-badge">거북목 &amp; 말린 어깨 집중 케어</span>
-            <h3 class="featured-name">0.1mm 심리스 넥&amp;숄더 밴드</h3>
-            <p class="featured-copy">
-              모니터 앞 10시간, 앞으로 쏟아지는 목과 말린 어깨를 전면 자석 버클로 1초 만에 체결하여 15도 자동 견인합니다. 38g 깃털 무게로 셔츠 안에 입어도 전혀 티가 나지 않습니다.
-            </p>
-            <div class="feature-points">
-              <div class="point-item"><span class="point-dot"></span> 0.1mm 무봉제 전도성 센서 섬유로 피부 밀착</div>
-              <div class="point-item"><span class="point-dot"></span> 뒤틀림 방지 X-크로스 텐션 백 프레임 탑재</div>
-              <div class="point-item"><span class="point-dot"></span> 300+ 개발자 실착 후기 평점 4.9점 달성</div>
+            <div>
+              <span class="featured-badge">거북목 &amp; 말린 어깨 집중 케어</span>
+              <h3 class="featured-name">0.1mm 심리스 넥&amp;숄더 밴드</h3>
+              <p class="featured-copy">
+                모니터 앞 10시간, 앞으로 쏟아지는 목과 말린 어깨를 전면 자석 버클로 1초 만에 체결하여 15도 자동 견인합니다.
+              </p>
+              <div class="feature-compare-list">
+                <div class="compare-item">
+                  <span class="compare-label">케어 부위</span>
+                  <span class="compare-val">경추 &amp; 어깨 (거북목 · 전방 쏠림 완화)</span>
+                </div>
+                <div class="compare-item">
+                  <span class="compare-label">착용 스펙</span>
+                  <span class="compare-val">0.1mm 무봉제 · 38g 초경량<span class="spec-tag-goal">설계 목표</span> · 셔츠 은폐</span>
+                </div>
+                <div class="compare-item">
+                  <span class="compare-label">추천 환경</span>
+                  <span class="compare-val">모니터 앞 8시간 코딩/사무직<span class="spec-tag-example">사용 예시</span></span>
+                </div>
+              </div>
             </div>
-            <div class="price-row">
-              <span class="price-discount">34% OFF</span>
-              <span class="price-sale">59,000원</span>
-              <span class="price-original">89,000원</span>
-            </div>
-            <div class="featured-actions">
-              <button class="btn-primary" onclick="openQuickView(1)">3D 단면 분해도 보기</button>
-              <button class="btn-primary btn-accent" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
-                30일 0원 무료 시착
-              </button>
+            <div>
+              <div class="price-row">
+                <span class="price-discount">34% OFF</span>
+                <span class="price-sale">59,000원</span>
+                <span class="price-original">89,000원</span>
+              </div>
+              <div class="featured-actions">
+                <button class="btn-secondary" onclick="openQuickView(1)">3D 단면 분해도 보기</button>
+                <button class="btn-primary btn-accent" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
+                  30일 0원 무료 시착
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- [Top 2] 3D 에어로 메쉬 척추 정렬 조끼 (Reverse) -->
-        <div class="featured-card reverse">
+        <!-- [Top 2] 3D 에어로 메쉬 척추 정렬 조끼 -->
+        <div class="featured-card">
           <button class="btn-card-wish" onclick="toggleWish(2, this)" title="찜하기">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
@@ -2900,32 +3152,45 @@
           <div class="featured-visual">
             <div class="visual-3d-box" onclick="openQuickView(2)">
               <div class="visual-3d-icon">🦺</div>
-              <div style="font-weight:800; font-size:14px; color:var(--color-forest);">[Top 2] 척추 정렬 조끼 3D 단면도</div>
-              <div style="font-size:12px; color:var(--color-text-secondary); margin-top:4px;">출근복 속 숨은 지퍼 &amp; 탄성 프레임</div>
-              <span class="magnifier-hint">🔍 클릭 시 3D 단면 분해 뷰어</span>
+              <div style="font-weight:600; font-size:13.5px; color:var(--color-forest);">[Top 2] 척추 정렬 조끼 3D 단면도</div>
+              <div style="font-size:11.5px; color:var(--color-text-secondary); margin-top:4px;">출근복 속 숨은 지퍼 &amp; 탄성 프레임</div>
+              <span class="magnifier-hint">🔍 3D 단면 분해 뷰어</span>
             </div>
           </div>
           <div class="featured-content">
-            <span class="featured-badge">굽은 등 &amp; 척추 틀어짐 방지</span>
-            <h3 class="featured-name">3D 에어로 메쉬 척추 정렬 조끼</h3>
-            <p class="featured-copy">
-              출근 룩에 완벽히 은폐되는 시크릿 지퍼 구조. 12시간 동안 착용해도 땀이 차지 않는 3중 에어로 메쉬와 척추 곡선을 지지하는 탄성 복원 프레임 단면을 확인하세요.
-            </p>
-            <div class="feature-points">
-              <div class="point-item"><span class="point-dot"></span> 99.8% 은폐율 숨은 지퍼 테일러링 공법</div>
-              <div class="point-item"><span class="point-dot"></span> 12시간 쿨링 에어로 메쉬 통기성 극대화</div>
-              <div class="point-item"><span class="point-dot"></span> 장시간 좌식 근무 시 척추 측면 틀어짐 차단</div>
+            <div>
+              <span class="featured-badge">굽은 등 &amp; 척추 틀어짐 방지</span>
+              <h3 class="featured-name">3D 에어로 메쉬 척추 정렬 조끼</h3>
+              <p class="featured-copy">
+                출근 룩에 완벽히 은폐되는 시크릿 지퍼 구조. 12시간 땀이 차지 않는 에어로 메쉬와 척추 지지 프레임 단면을 확인하세요.
+              </p>
+              <div class="feature-compare-list">
+                <div class="compare-item">
+                  <span class="compare-label">케어 부위</span>
+                  <span class="compare-val">흉추 &amp; 허리 (굽은 등 · 척추 비틀림 완화)</span>
+                </div>
+                <div class="compare-item">
+                  <span class="compare-label">착용 스펙</span>
+                  <span class="compare-val">3중 에어로 메쉬 · 99.8% 은폐<span class="spec-tag-goal">설계 목표</span> · 지레 프레임</span>
+                </div>
+                <div class="compare-item">
+                  <span class="compare-label">추천 환경</span>
+                  <span class="compare-val">장시간 착석 근무 및 잦은 이동 직군<span class="spec-tag-example">사용 예시</span></span>
+                </div>
+              </div>
             </div>
-            <div class="price-row">
-              <span class="price-discount">31% OFF</span>
-              <span class="price-sale">89,000원</span>
-              <span class="price-original">129,000원</span>
-            </div>
-            <div class="featured-actions">
-              <button class="btn-primary" onclick="openQuickView(2)">3D 단면 분해도 보기</button>
-              <button class="btn-primary btn-accent" onclick="openCheckoutModal('3D 에어로 메쉬 척추 정렬 조끼', 'L (100~105)')">
-                30일 0원 무료 시착
-              </button>
+            <div>
+              <div class="price-row">
+                <span class="price-discount">31% OFF</span>
+                <span class="price-sale">89,000원</span>
+                <span class="price-original">129,000원</span>
+              </div>
+              <div class="featured-actions">
+                <button class="btn-secondary" onclick="openQuickView(2)">3D 단면 분해도 보기</button>
+                <button class="btn-primary btn-accent" onclick="openCheckoutModal('3D 에어로 메쉬 척추 정렬 조끼', 'L (100~105)')">
+                  30일 0원 무료 시착
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -2940,32 +3205,45 @@
           <div class="featured-visual">
             <div class="visual-3d-box" onclick="openQuickView(3)">
               <div class="visual-3d-icon">🥋</div>
-              <div style="font-weight:800; font-size:14px; color:var(--color-forest);">[Top 3] 골반 에어셀 벨트 3D 단면도</div>
-              <div style="font-size:12px; color:var(--color-text-secondary); margin-top:4px;">공기 팽창 밸런스 패드 메커니즘</div>
-              <span class="magnifier-hint">🔍 클릭 시 3D 단면 분해 뷰어</span>
+              <div style="font-weight:600; font-size:13.5px; color:var(--color-forest);">[Top 3] 골반 에어셀 벨트 3D 단면도</div>
+              <div style="font-size:11.5px; color:var(--color-text-secondary); margin-top:4px;">공기 팽창 밸런스 패드 메커니즘</div>
+              <span class="magnifier-hint">🔍 3D 단면 분해 뷰어</span>
             </div>
           </div>
           <div class="featured-content">
-            <span class="featured-badge">다리 꼬기 &amp; 골반 틀어짐 차단</span>
-            <h3 class="featured-name">골반 수평 유지 에어셀 벨트</h3>
-            <p class="featured-copy">
-              앉았을 때 무의식적으로 다리를 꼬면, 골반 에어셀 패드가 공기를 팽창시켜 골반을 물리적으로 수평 복원합니다. 짝다리 짚는 습관까지 원천 교정합니다.
-            </p>
-            <div class="feature-points">
-              <div class="point-item"><span class="point-dot"></span> 착석 시 다리 꼬기 물리적 차단 에어셀 내장</div>
-              <div class="point-item"><span class="point-dot"></span> 좌우 체압 불균형 0.1초 실시간 감지 분산</div>
-              <div class="point-item"><span class="point-dot"></span> 슬랙스나 바지 안쪽에 얇게 밀착되는 초박형 핏</div>
+            <div>
+              <span class="featured-badge">다리 꼬기 &amp; 골반 틀어짐 차단</span>
+              <h3 class="featured-name">골반 수평 유지 에어셀 벨트</h3>
+              <p class="featured-copy">
+                앉았을 때 무의식적으로 다리를 꼬면, 골반 에어셀 패드가 공기를 팽창시켜 골반을 물리적으로 수평 복원합니다.
+              </p>
+              <div class="feature-compare-list">
+                <div class="compare-item">
+                  <span class="compare-label">케어 부위</span>
+                  <span class="compare-val">골반 &amp; 하체 (다리 꼬기 · 좌우 비대칭 완화)</span>
+                </div>
+                <div class="compare-item">
+                  <span class="compare-label">착용 스펙</span>
+                  <span class="compare-val">능동 팽창 에어셀 · 초박형 핏<span class="spec-tag-goal">설계 목표</span> · 체압 분산</span>
+                </div>
+                <div class="compare-item">
+                  <span class="compare-label">추천 환경</span>
+                  <span class="compare-val">습관적 다리 꼬기 직장인/운전 직군<span class="spec-tag-example">사용 예시</span></span>
+                </div>
+              </div>
             </div>
-            <div class="price-row">
-              <span class="price-discount">30% OFF</span>
-              <span class="price-sale">69,000원</span>
-              <span class="price-original">99,000원</span>
-            </div>
-            <div class="featured-actions">
-              <button class="btn-primary" onclick="openQuickView(3)">3D 단면 분해도 보기</button>
-              <button class="btn-primary btn-accent" onclick="openCheckoutModal('골반 수평 유지 에어셀 벨트', 'M (30~33인치)')">
-                30일 0원 무료 시착
-              </button>
+            <div>
+              <div class="price-row">
+                <span class="price-discount">30% OFF</span>
+                <span class="price-sale">69,000원</span>
+                <span class="price-original">99,000원</span>
+              </div>
+              <div class="featured-actions">
+                <button class="btn-secondary" onclick="openQuickView(3)">3D 단면 분해도 보기</button>
+                <button class="btn-primary btn-accent" onclick="openCheckoutModal('골반 수평 유지 에어셀 벨트', 'M (30~33인치)')">
+                  30일 0원 무료 시착
+                </button>
+              </div>
             </div>
           </div>
         </div>
