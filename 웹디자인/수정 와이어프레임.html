@@ -2411,17 +2411,19 @@
 
     /* [SEC-02: 문제 제기 에디토리얼 섹션 - 문제제기 참고 레퍼런스.png 규격] */
     .problem-editorial-section {
-      padding: 100px 0 70px !important;
+      padding: 100px 0 90px !important;
       background: var(--bg-base) !important;
       border-bottom: none !important;
     }
+    .problem-editorial-section .container {
+      max-width: 1440px !important;
+    }
     .problem-editorial-grid {
       display: grid !important;
-      grid-template-columns: auto auto !important;
-      justify-content: space-between !important;
-      gap: 170px !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 20vw !important;
       align-items: center !important;
-      max-width: 1320px !important;
+      max-width: 1440px !important;
       margin: 0 auto !important;
       padding: 0 32px !important;
     }
@@ -2500,7 +2502,8 @@
 
     /* [SEC-02-B: 해결방안 & 브랜드 테크놀로지 - 좌측 이미지 + 우측 텍스트] */
     .solution-clean-section {
-      padding: 100px 0 110px !important;
+      margin-top: 80px !important;
+      padding: 140px 0 110px !important;
       background: var(--bg-base) !important;
       border-top: none !important;
       border-bottom: 1px solid var(--color-border) !important;
@@ -2508,9 +2511,9 @@
     .solution-editorial-grid {
       display: grid !important;
       grid-template-columns: 1fr 1fr !important;
-      gap: clamp(40px, 6vw, 90px) !important;
+      gap: 20vw !important;
       align-items: center !important;
-      max-width: 1320px !important;
+      max-width: 1440px !important;
       margin: 0 auto !important;
       padding: 0 32px !important;
     }
@@ -2606,6 +2609,7 @@
       gap: 10px !important;
     }
     @media (max-width: 900px) {
+      .solution-clean-section { margin-top: 30px !important; padding: 60px 0 60px !important; }
       .solution-editorial-grid { grid-template-columns: 1fr !important; gap: 40px !important; padding: 0 20px !important; }
       .solution-visual-area { min-height: 320px !important; }
       .solution-text-box { align-items: flex-start !important; text-align: left !important; }
@@ -2731,10 +2735,149 @@
       padding: 18px 22px !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 16px !important; text-align: left !important;
     }
 
-    /* 9번: 300인 전문가 임상 갤러리 */
-    .clinical-proof-grid { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 20px !important; margin: 28px 0 !important; }
-    .clinical-card { background: #FFFFFF !important; border: 1.5px solid var(--color-border) !important; border-radius: var(--radius-md) !important; padding: 24px !important; text-align: left !important; box-shadow: var(--shadow-sm) !important; }
-    .clinical-rating { color: #6F9670 !important; font-size: 14px !important; font-weight: 800 !important; margin-bottom: 8px !important; }
+    /* [SEC-07: 사용자 검증 구성안 & 일상 착용 시나리오 (04 · DAILY RELIEF)] */
+    .proof-section {
+      padding: 100px 0 110px !important;
+      background: var(--bg-base) !important;
+      border-top: 1px solid var(--color-border) !important;
+      border-bottom: 1px solid var(--color-border) !important;
+      margin: 80px 0 !important;
+    }
+    .scenarios-header-wrap {
+      text-align: center !important;
+      max-width: 960px !important;
+      margin: 0 auto 56px !important;
+    }
+    .scenarios-label {
+      font-family: var(--font-sans) !important;
+      font-size: 13px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0.12em !important;
+      color: #5B5B5B !important;
+      margin-bottom: 18px !important;
+      text-transform: uppercase !important;
+      display: inline-block !important;
+    }
+    .scenarios-title {
+      font-family: var(--font-gowun), 'Gowun Batang', serif !important;
+      font-size: clamp(28px, 2.7vw, 38px) !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      color: #5B5B5B !important;
+      letter-spacing: -0.025em !important;
+      margin-bottom: 20px !important;
+      word-break: keep-all !important;
+    }
+    .scenarios-subtitle {
+      font-family: var(--font-sans) !important;
+      font-size: 14.5px !important;
+      font-weight: 500 !important;
+      color: #B0B0B0 !important;
+      line-height: 1.85 !important;
+      letter-spacing: -0.01em !important;
+      margin: 0 auto !important;
+      word-break: keep-all !important;
+    }
+    .scenarios-editorial-grid {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+      gap: 32px !important;
+      max-width: 1320px !important;
+      margin: 0 auto 36px !important;
+    }
+    .scenario-col {
+      background: #FFFFFF !important;
+      border: 1px solid #D6D6D0 !important;
+      border-radius: 20px !important;
+      padding: 32px 26px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      text-align: left !important;
+      box-shadow: var(--shadow-sm) !important;
+      transition: var(--transition) !important;
+    }
+    .scenario-col:hover {
+      box-shadow: var(--shadow-md) !important;
+      border-color: #6F9670 !important;
+      transform: translateY(-3px) !important;
+    }
+    .scenario-top {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      margin-bottom: 16px !important;
+    }
+    .scenario-step-badge {
+      font-size: 11.5px !important;
+      font-weight: 600 !important;
+      color: #6F9670 !important;
+      letter-spacing: 0.08em !important;
+    }
+    .scenario-tag-goal {
+      background: #EBF0EC !important;
+      color: #6F9670 !important;
+      font-size: 11.5px !important;
+      font-weight: 600 !important;
+      padding: 3px 9px !important;
+      border-radius: 9999px !important;
+    }
+    .scenario-name {
+      font-family: var(--font-gowun), 'Gowun Batang', serif !important;
+      font-size: 19px !important;
+      font-weight: 600 !important;
+      color: #5B5B5B !important;
+      margin-bottom: 6px !important;
+      line-height: 1.35 !important;
+    }
+    .scenario-context {
+      font-size: 12.5px !important;
+      color: #B0B0B0 !important;
+      font-weight: 500 !important;
+      margin-bottom: 18px !important;
+    }
+    .scenario-quote {
+      font-family: var(--font-gowun), 'Gowun Batang', serif !important;
+      font-size: 14px !important;
+      font-weight: 500 !important;
+      line-height: 1.75 !important;
+      color: #5B5B5B !important;
+      margin-bottom: 22px !important;
+      padding-left: 12px !important;
+      border-left: 2px solid #6F9670 !important;
+      flex-grow: 1 !important;
+    }
+    .scenario-spec-row {
+      border-top: 1px solid #ECECE8 !important;
+      padding-top: 14px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 4px !important;
+    }
+    .scenario-spec-row .spec-label {
+      font-size: 11.5px !important;
+      color: #B0B0B0 !important;
+      font-weight: 500 !important;
+    }
+    .scenario-spec-row .spec-val {
+      font-size: 12.5px !important;
+      color: #5B5B5B !important;
+      font-weight: 600 !important;
+    }
+    .scenarios-notice-box {
+      text-align: center !important;
+      max-width: 900px !important;
+      margin: 0 auto !important;
+      padding-top: 12px !important;
+    }
+    .scenarios-notice-text {
+      font-size: 12px !important;
+      color: #B0B0B0 !important;
+      line-height: 1.6 !important;
+    }
+    @media (max-width: 992px) {
+      .scenarios-editorial-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+    }
 
     /* 플로팅 바 */
     .floating-bottom-bar {
@@ -3251,13 +3394,98 @@
       </div>
     </section>
 
-    <!-- SEC-06: Social Proof & Clinical Data -->
-        <!-- ==========================================================================
-       [SEC-06: 4대 임상 및 기술 증명 (Social Proof)]
-       ========================================================================== -->
-    
-    <!-- [7번: 3초 체형 밸런스 파인더 자가진단 위젯 (지그재그 버튼)] -->
-    <div class="balance-checker-container" id="self-checker-sec">
+    <!-- ==========================================================================
+         [SEC-07: 사용자 검증 구성안 & 일상 착용 시나리오 (04 · DAILY RELIEF)]
+         모두의매트 호흡(문제→기준→결과) + 가까이한의원(따뜻한 공감) 융합 에디토리얼
+         ========================================================================== -->
+    <section class="proof-section" id="sec-user-scenarios">
+      <div class="container" style="max-width: 1440px;">
+        
+        <!-- 섹션 헤더: 감성 공감 타이틀 & 목적 정의 -->
+        <div class="scenarios-header-wrap">
+          <div class="scenarios-label">04 · DAILY RELIEF · 사용자 검증 구성안</div>
+          <h2 class="scenarios-title">
+            하루 종일 일하는 당신의 몸이,<br>
+            스스로 쉴 수 있는 자리를 기억하도록
+          </h2>
+          <p class="scenarios-subtitle">
+            스밈은 억지스러운 조임 대신 일상의 자연스러운 호흡과 움직임을 지키는 0.1mm 설계를 바탕으로,<br>
+            실제 직장인의 치열한 작업 환경에서 피로를 부드럽게 덜어내는 3대 일상 검증 시나리오를 세웠습니다.
+          </p>
+        </div>
+
+        <!-- 3대 일상 착용 시나리오 (카드 남발을 덜어낸 정갈한 에디토리얼 컬럼) -->
+        <div class="scenarios-editorial-grid">
+          
+          <!-- 장면 01: 모니터 앞의 긴장 -->
+          <div class="scenario-col">
+            <div class="scenario-top">
+              <span class="scenario-step-badge">SCENARIO 01</span>
+              <span class="scenario-tag-goal">[설계 목표]</span>
+            </div>
+            <h3 class="scenario-name">모니터 앞의 긴장</h3>
+            <div class="scenario-context">키보드 타건 및 장시간 모니터 몰입 환경</div>
+            <p class="scenario-quote">
+              “모니터 앞으로 목이 빨려 들어갈 때마다,<br>
+              억지로 잡아당기지 않고 승모근 뒤쪽에서 가볍게 받쳐주어 하루 끝 목덜미의 묵직함이 덜어집니다.”
+            </p>
+            <div class="scenario-spec-row">
+              <span class="spec-label">설계 원리</span>
+              <span class="spec-val">0.1mm 지렛대 탄성 프레임의 전방 하중 분산</span>
+            </div>
+          </div>
+
+          <!-- 장면 02: 출근길 셔츠 속 -->
+          <div class="scenario-col">
+            <div class="scenario-top">
+              <span class="scenario-step-badge">SCENARIO 02</span>
+              <span class="scenario-tag-goal">[기획 사양]</span>
+            </div>
+            <h3 class="scenario-name">출근길 셔츠 속</h3>
+            <div class="scenario-context">출퇴근 및 온종일 일상 착용 환경</div>
+            <p class="scenario-quote">
+              “셔츠나 블라우스 속에 입어도 겉으로 봉제선이 드러나지 않아,<br>
+              출근할 때부터 퇴근할 때까지 조임 없이 단정하고 편안한 숨을 유지합니다.”
+            </p>
+            <div class="scenario-spec-row">
+              <span class="spec-label">설계 원리</span>
+              <span class="spec-val">99.8% 무봉제 은폐율 목표 설정 · 38g 초경량</span>
+            </div>
+          </div>
+
+          <!-- 장면 03: 오랜 좌식과 골반 -->
+          <div class="scenario-col">
+            <div class="scenario-top">
+              <span class="scenario-step-badge">SCENARIO 03</span>
+              <span class="scenario-tag-goal">[설계 목표]</span>
+            </div>
+            <h3 class="scenario-name">오랜 좌식과 골반</h3>
+            <div class="scenario-context">장시간 착석 업무 및 집중 환경</div>
+            <p class="scenario-quote">
+              “의자에 앉을 때 무의식적으로 다리를 꼬던 습관을<br>
+              강제로 결박하지 않고 부드러운 에어셀 팽창으로 자연스럽게 바른 정렬로 유도합니다.”
+            </p>
+            <div class="scenario-spec-row">
+              <span class="spec-label">설계 원리</span>
+              <span class="spec-val">착석 시 다리 꼬기 물리적 차단 에어셀 패드</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 하단 기획 상태 안내 캡션 (포트폴리오 투명성 확보) -->
+        <div class="scenarios-notice-box">
+          <p class="scenarios-notice-text">
+            ※ 위 내용은 스밈의 0.1mm 코어웨어 기획 사양 및 일상 착용 시나리오를 바탕으로 구성되었으며, 
+            실제 사용자 검증 데이터와 실착 피드백은 추후 단계별로 지속 업데이트될 예정입니다.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- [자가진단 위젯: 3초 맞춤 처방 · 체형 밸런스 파인더] -->
+    <div class="balance-checker-container" id="self-checker-sec" style="margin: 60px auto 40px;">
       <div class="section-tag">3초 맞춤 처방 · 체형 밸런스 파인더</div>
       <h3 style="font-family:var(--font-gowun), serif; font-size:24px; font-weight:800; color:#5B5B5B; margin:10px 0 6px;">
         "당신의 하루 중 가장 치열한 작업 환경은 어디인가요?"
@@ -3277,7 +3505,7 @@
             🌿
           </div>
           <div>
-            <div style="font-size:12.5px; color:#6F9670; font-weight:800;">[모니터 근무 직장인 최적 처방]</div>
+            <div style="font-size:12.5px; color:#6F9670; font-weight:800;">[모니터 근무 직장인 맞춤 추천]</div>
             <div style="font-family:var(--font-gowun), serif; font-size:17px; font-weight:800; color:#5B5B5B; margin:3px 0;">
               0.1mm 심리스 넥&숄더 밴드 + 척추 정렬 조끼
             </div>
@@ -3287,99 +3515,10 @@
           </div>
         </div>
         <button class="btn-primary" onclick="filterCatalogByTag('cat_neck')" style="padding:10px 18px; font-size:13px; border-radius:9999px; white-space:nowrap;">
-          처방 상품 보러가기 ➔
+          맞춤 제품 보러가기 ➔
         </button>
       </div>
     </div>
-
-
-    <section class="proof-section">
-      <div class="container">
-        <div class="section-title-wrap">
-          <div class="section-tag">300인 전문가 임상 증명</div>
-          <h2 class="section-title">300+ 전문가 실착 데이터 및 4.9점 비포/애프터</h2>
-          <p class="section-desc">정형외과 전문의와 IT 개발자들이 3주간 실착하고 검증한 수치화된 개선 결과입니다.</p>
-        </div>
-
-        <div class="proof-stats-grid">
-          <div class="proof-stat-card">
-            <div class="proof-num">87.4%</div>
-            <div class="proof-title">목·어깨 통증 피로도 감소</div>
-            <div class="proof-desc">하루 9시간 이상 코딩 개발자 120인 검증</div>
-          </div>
-          <div class="proof-stat-card">
-            <div class="proof-num">3.2 h</div>
-            <div class="proof-title">일일 바른 자세 유지 시간 증가</div>
-            <div class="proof-desc">착용 전 1.4시간 ➔ 착용 후 4.6시간 증가</div>
-          </div>
-          <div class="proof-stat-card">
-            <div class="proof-num">98.2%</div>
-            <div class="proof-title">셔츠 속 은폐 만족도</div>
-            <div class="proof-desc">출근 시 동료가 눈치채지 못함 응답률</div>
-          </div>
-        </div>
-
-        <!-- [9번: 300인 전문가 임상 증명 감성 갤러리] -->
-        <div style="margin: 36px 0 40px;">
-          <div class="clinical-proof-grid">
-            <div class="clinical-card">
-              <div class="clinical-rating">★ 4.9 · 정형외과 전문의 김진우</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#5B5B5B; margin-bottom:8px;">
-                "강제 압박 없이 경추 C커브를 살려주는 혁신"
-              </div>
-              <p style="font-size:13.5px; color:#B0B0B0; line-height:1.7;">
-                기존 교정기는 늑골을 억누르는데, 스밈 0.1mm는 근육의 고유수용성 감각을 깨워 스스로 척추 정렬을 유지하게 돕습니다.
-              </p>
-            </div>
-            <div class="clinical-card">
-              <div class="clinical-rating">★ 5.0 · 물리치료사 이소영</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#5B5B5B; margin-bottom:8px;">
-                "99.8% 은폐율 덕분에 출근복에 매일 입습니다"
-              </div>
-              <p style="font-size:13.5px; color:#B0B0B0; line-height:1.7;">
-                셔츠 속에 입어도 겉으로 전혀 드러나지 않고, 하루 종일 서서 환자를 볼 때 허리와 골반의 피로도가 80% 이상 줄었습니다.
-              </p>
-            </div>
-            <div class="clinical-card">
-              <div class="clinical-rating">★ 4.9 · 풀스택 개발자 박현성</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:16px; font-weight:800; color:#5B5B5B; margin-bottom:8px;">
-                "14시간 코딩해도 어깨 뭉침이 사라졌습니다"
-              </div>
-              <p style="font-size:13.5px; color:#B0B0B0; line-height:1.7;">
-                모니터 앞으로 목이 빨려 들어갈 때마다 지레 탄성 프레임이 부드럽게 받쳐주어 야근 후에도 목덜미가 깃털처럼 가볍습니다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="reviews-slider">
-          <div class="review-card">
-            <div class="review-stars">★★★★★ 5.0</div>
-            <p class="review-text">"하루 12시간 모니터만 보는 백엔드 개발자입니다. 넥밴드 착용 후 퇴근할 때 목 뻐근함이 80% 이상 사라졌습니다. 셔츠 안에 입어도 아무도 몰라요."</p>
-            <div class="review-author">
-              <span>김민석 (31세, 시니어 개발자)</span>
-              <span class="review-badge">178cm / 74kg (M 착용)</span>
-            </div>
-          </div>
-          <div class="review-card">
-            <div class="review-stars">★★★★★ 4.9</div>
-            <p class="review-text">"정형외과 의사로서 수많은 교정기를 보았지만, 스밈처럼 '억지로 조이지 않고 체감 피로도를 낮추는 무봉제 기술'은 처음입니다. 환자분들께도 적극 추천합니다."</p>
-            <div class="review-author">
-              <span>이현우 원장 (정형외과 전문의)</span>
-              <span class="review-badge">전문의 자문단</span>
-            </div>
-          </div>
-          <div class="review-card">
-            <div class="review-stars">★★★★★ 5.0</div>
-            <p class="review-text">"의자에만 앉으면 다리를 꼬아서 골반이 삐뚤어졌는데, 에어셀 벨트 착용 후 다리 꼴 때마다 팽창해서 자동으로 바른 자세가 잡힙니다. 0원 시착 최고!"</p>
-            <div class="review-author">
-              <span>박지영 (29세, UX 디자이너)</span>
-              <span class="review-badge">164cm / 52kg (S 착용)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- [메인 전용 전환 배너] 15개 전 상품 카탈로그 서브페이지로 이동 안내 -->
     <section class="container">
@@ -3401,47 +3540,6 @@
         <div>
           <button class="btn-primary btn-accent" style="padding:16px 28px; font-size:15px; white-space:nowrap;" onclick="switchPage('page-shop')">
             15종 전 상품 컬렉션 보러가기 ➔
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEC-08: 스마트 체형 맞춤 사이즈 파인더 미니 모듈 -->
-    <section class="container">
-      <div class="fit-finder-banner">
-        <div class="fit-finder-header">
-          <div class="section-tag" style="color:var(--color-terracotta);">SMART FIT FINDER</div>
-          <h3 class="fit-finder-title">내 몸에 딱 맞는 0.1mm 핏! 1초 사이즈 파인더</h3>
-          <p style="font-size:14px; color:var(--color-text-secondary); margin-top:4px;">키와 몸무게를 슬라이더로 조절하면 권장 사이즈와 부위별 실측 치수를 실시간 도출합니다.</p>
-        </div>
-
-        <div class="fit-finder-inputs">
-          <div class="input-control">
-            <label>키 (Height): <span class="input-slider-val" id="val-height">178 cm</span></label>
-            <input type="range" min="150" max="195" value="178" oninput="updateFitFinder(this.value, null)">
-          </div>
-          <div class="input-control">
-            <label>몸무게 (Weight): <span class="input-slider-val" id="val-weight">72 kg</span></label>
-            <input type="range" min="40" max="120" value="72" oninput="updateFitFinder(null, this.value)">
-          </div>
-          <div class="input-control">
-            <label>체형 실루엣</label>
-            <select class="form-input" style="padding:8px 12px; font-weight:700;" onchange="calculateSize()">
-              <option>표준 체형 (Standard)</option>
-              <option>슬림 체형 (Slim)</option>
-              <option>어깨/체격 발달형 (Athletic)</option>
-            </select>
-          </div>
-          <div class="fit-result-badge">
-            <div class="fit-result-label">추천 최적 사이즈</div>
-            <div class="fit-result-size" id="fit-calc-size">M (95~100)</div>
-          </div>
-        </div>
-
-        <div style="display:flex; justify-content:center; gap:12px; margin-top:20px;">
-          <button class="btn-sm-ghost" style="padding:8px 16px; border:1px solid var(--color-border); border-radius:var(--radius-full);" onclick="openFitModal()">📏 부위별 0.1mm 정밀 실측표 확인</button>
-          <button class="btn-primary btn-accent" style="padding:8px 18px; font-size:13px;" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', document.getElementById('fit-calc-size').innerText)">
-            추천 사이즈로 30일 무료 시착 (0원)
           </button>
         </div>
       </div>
@@ -3527,14 +3625,42 @@
       <p class="section-desc" style="margin:0;">대표 상품 3종과 부위별 연계 파생 상품 5종씩, 총 15종의 라인업을 비교하고 체형 맞춤 사이즈를 확인하세요.</p>
     </div>
 
-    <!-- 스마트 사이즈 파인더 상단 마스터 바 -->
+    <!-- 스마트 체형 맞춤 사이즈 파인더 인터랙티브 모듈 -->
     <div class="fit-finder-banner" style="margin: 30px 0 40px;">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
-        <h3 style="font-family:var(--font-serif); font-size:18px; font-weight:800; color:var(--color-forest);">🔍 스마트 사이즈 파인더 연동 활성화</h3>
-        <span style="font-size:12px; color:var(--color-terracotta); font-weight:800;">● 현재 키: 178cm / 몸무게: 72kg ➔ 권장: M 사이즈</span>
+      <div class="fit-finder-header">
+        <div class="section-tag" style="color:var(--color-terracotta);">SMART FIT FINDER</div>
+        <h3 class="fit-finder-title">내 몸에 딱 맞는 0.1mm 핏! 1초 사이즈 파인더</h3>
+        <p style="font-size:14px; color:var(--color-text-secondary); margin-top:4px;">키와 몸무게를 슬라이더로 조절하면 권장 사이즈와 부위별 실측 치수를 실시간 도출합니다.</p>
       </div>
-      <div style="font-size:13px; color:var(--color-text-secondary);">
-        아래 15종 전 상품 카드에 내 체형에 최적합한 <strong>[권장 사이즈 뱃지]</strong>가 실시간으로 표시됩니다.
+
+      <div class="fit-finder-inputs">
+        <div class="input-control">
+          <label>키 (Height): <span class="input-slider-val" id="val-height">178 cm</span></label>
+          <input type="range" min="150" max="195" value="178" oninput="updateFitFinder(this.value, null)">
+        </div>
+        <div class="input-control">
+          <label>몸무게 (Weight): <span class="input-slider-val" id="val-weight">72 kg</span></label>
+          <input type="range" min="40" max="120" value="72" oninput="updateFitFinder(null, this.value)">
+        </div>
+        <div class="input-control">
+          <label>체형 실루엣</label>
+          <select class="form-input" style="padding:8px 12px; font-weight:700;" onchange="calculateSize()">
+            <option>표준 체형 (Standard)</option>
+            <option>슬림 체형 (Slim)</option>
+            <option>어깨/체격 발달형 (Athletic)</option>
+          </select>
+        </div>
+        <div class="fit-result-badge">
+          <div class="fit-result-label">추천 최적 사이즈</div>
+          <div class="fit-result-size" id="fit-calc-size">M (95~100)</div>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:center; gap:12px; margin-top:20px;">
+        <button class="btn-sm-ghost" style="padding:8px 16px; border:1px solid var(--color-border); border-radius:var(--radius-full);" onclick="openFitModal()">📏 부위별 0.1mm 정밀 실측표 확인</button>
+        <button class="btn-primary btn-accent" style="padding:8px 18px; font-size:13px;" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', document.getElementById('fit-calc-size').innerText)">
+          추천 사이즈로 30일 무료 시착 (0원)
+        </button>
       </div>
     </div>
 
