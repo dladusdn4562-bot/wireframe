@@ -78,12 +78,16 @@
       letter-spacing: -0.02em;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
-      padding-top: 117px; /* 데스크톱: 상단 전환바(45px) + GNB(72px) 완벽 고정 높이 */
+      padding-top: 0 !important; /* 히어로 영역이 최상단 헤더 뒤(top: 0)까지 확장되도록 0 적용 */
+    }
+
+    #page-shop, #page-story {
+      padding-top: 88px !important; /* 서브페이지는 상단 헤더와 겹치지 않도록 여백 유지 */
     }
 
     /* 모든 섹션 스크롤 이동 시 상단바에 가려지지 않도록 스크롤 마진 확보 */
     section, [id^="sec-"], main {
-      scroll-margin-top: 130px;
+      scroll-margin-top: 100px;
     }
 
     a { text-decoration: none; color: inherit; }
@@ -2213,23 +2217,118 @@
       font-weight: 600 !important;
     }
 
-    /* 상단 고정 헤더 슬림화 */
+    /* ==========================================================================
+       [말본골프(Malbon Golf) 레퍼런스 스타일 투명 헤더 & 호버 전환 인터랙션]
+       ========================================================================== */
     .site-header-fixed {
-      position: fixed;
-      top: 0; left: 0; right: 0; width: 100%; z-index: 1100;
-      background: transparent;
-      box-shadow: 0 4px 20px rgba(43, 45, 43, 0.06);
+      position: fixed !important;
+      top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 1100 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
     }
+    /* 프로토타입 스위처 바 제거 (GNB 상단 메뉴로 페이지 전환 완벽 대체) */
     .page-switch-bar {
-      background: #1E201E !important; color: #FFFFFF !important; padding: 10px 24px !important;
-      display: flex !important; justify-content: space-between !important; align-items: center !important; font-size: 13px !important;
-      border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+      display: none !important;
     }
+
+    /* 기본 상태: 완전 투명 헤더 (Hero 배경과 완벽 일체화) */
     .header-gnb {
-      background: rgba(244, 244, 242, 0.98) !important;
-      backdrop-filter: blur(12px) !important;
-      border-bottom: 1px solid var(--color-border) !important;
+      background: transparent !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      border-bottom: 1px solid transparent !important;
+      box-shadow: none !important;
+      transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease !important;
     }
+    /* 마우스 호버 시 OR 스크롤 다운 시: 부드럽게 화이트 배경과 은은한 라인 띄우기 (말본골프 스타일) */
+    .header-gnb:hover,
+    .site-header-fixed:hover .header-gnb,
+    .site-header-fixed.scrolled .header-gnb {
+      background: #FFFFFF !important;
+      backdrop-filter: blur(16px) !important;
+      -webkit-backdrop-filter: blur(16px) !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+    }
+
+    /* 네비게이션 링크 스타일 */
+    .gnb-nav {
+      display: flex !important;
+      gap: 32px !important;
+      align-items: center !important;
+    }
+    .gnb-link {
+      font-size: 14.5px !important;
+      font-weight: 500 !important;
+      color: #5B5B5B !important;
+      letter-spacing: -0.01em !important;
+      position: relative !important;
+      transition: color 0.25s ease !important;
+      padding: 6px 0 !important;
+    }
+    .gnb-link:hover, .gnb-link.active {
+      color: #1E201E !important;
+      font-weight: 600 !important;
+    }
+    .gnb-link.active::after {
+      content: '' !important;
+      position: absolute !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 1.5px !important;
+      background: #1E201E !important;
+    }
+
+    /* 우측 심플 액션 버튼 (말본 스타일: 검색, 로그인, 마이페이지, 장바구니) */
+    .gnb-actions {
+      display: flex !important;
+      align-items: center !important;
+      gap: 12px !important;
+    }
+    .gnb-action-icon-btn {
+      background: transparent !important;
+      border: none !important;
+      color: #5B5B5B !important;
+      width: 36px !important;
+      height: 36px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      cursor: pointer !important;
+      position: relative !important;
+      border-radius: 50% !important;
+      transition: all 0.2s ease !important;
+      padding: 0 !important;
+    }
+    .gnb-action-icon-btn:hover {
+      color: #1E201E !important;
+      background: rgba(0, 0, 0, 0.04) !important;
+      transform: translateY(-1px) !important;
+    }
+    .gnb-action-icon-btn svg {
+      width: 20px !important;
+      height: 20px !important;
+      stroke-width: 1.8 !important;
+    }
+    .gnb-cart-badge {
+      position: absolute !important;
+      top: 3px !important;
+      right: 3px !important;
+      background: #6F9670 !important;
+      color: #FFFFFF !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      width: 15px !important;
+      height: 15px !important;
+      border-radius: 50% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      line-height: 1 !important;
+    }
+
     .mobile-menu-drawer {
       display: none !important;
       background: #FFFFFF !important;
@@ -2282,12 +2381,8 @@
     .one-view-card { border-radius: 16px !important; border: 1.5px solid #D6D6D0 !important; background: #FFFFFF !important; }
     .hud-card, .center-card, .proof-stat-card, .review-card, .faq-item { border-radius: 20px !important; border: 1.5px solid #D6D6D0 !important; background: #FFFFFF !important; }
 
-    /* 히어로 풀 블리드 2열 스플릿 레이아웃 (텍스트 좌측 밀착 & 넉넉한 중앙 여백) */
+    /* 히어로 1440px 와이드 그리드 2열 레이아웃 (아래 01·OUR BEGINNING과 좌측 정렬 축 100% 일치) */
     .hero-section {
-      min-height: calc(100vh - 187px) !important;
-      min-height: calc(100dvh - 187px) !important;
-      display: grid !important;
-      grid-template-columns: 1.35fr 0.65fr !important;
       width: 100% !important;
       max-width: 100% !important;
       padding: 0 !important;
@@ -2295,20 +2390,34 @@
       background: var(--bg-base) !important;
       box-sizing: border-box !important;
       position: relative !important;
+      overflow: hidden !important;
     }
+    .hero-grid-1440 {
+      max-width: 1440px !important;
+      margin: 0 auto !important;
+      padding: 0 60px !important;
+      display: grid !important;
+      grid-template-columns: 1.15fr 0.85fr !important;
+      gap: 72px !important;
+      align-items: flex-start !important;
+      box-sizing: border-box !important;
+      position: relative !important;
+      min-height: calc(100vh - 80px) !important;
+    }
+    /* 좌측 본문 컬럼: 1440px 컨테이너 좌측 시작선에 정확히 밀착 (아래 01·OUR BEGINNING과 수직 칼정렬) */
     .hero-left-col {
       display: flex !important;
       flex-direction: column !important;
       justify-content: flex-start !important;
       align-items: flex-start !important;
-      padding-top: 150px !important;
-      padding-bottom: 0px !important;
-      padding-left: clamp(36px, 6.5vw, 120px) !important;
-      padding-right: clamp(40px, 4vw, 80px) !important;
-      max-width: 860px !important;
+      padding-top: 195px !important;
+      padding-bottom: 80px !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      max-width: 100% !important;
       width: 100% !important;
       margin-left: 0 !important;
-      margin-right: auto !important;
+      margin-right: 0 !important;
       box-sizing: border-box !important;
       text-align: left !important;
     }
@@ -2325,9 +2434,9 @@
       font-family: var(--font-gowun), 'Gowun Batang', serif !important;
     }
     .hero-left-col .hero-manifesto-title {
-      font-size: clamp(46px, 4.1vw, 58px) !important;
+      font-size: clamp(44px, 3.8vw, 56px) !important;
       font-weight: 700 !important;
-      line-height: 1.3 !important;
+      line-height: 1.32 !important;
       color: #5B5B5B !important;
       letter-spacing: -0.025em !important;
       margin-bottom: 24px !important;
@@ -2374,39 +2483,98 @@
       font-size: 15.5px !important;
     }
 
-    /* 우측 이미지 영역 (배경색과 자연스럽게 스며드는 소프트 그라데이션 블렌드) */
+    /* ==========================================================================
+       [스밈(SEUMIM) 유기적 모티프 쉐입 - 도형.png 실측 베지어 곡선 & 호버 모션 완전 배제]
+       ========================================================================== */
     .hero-right-visual-area {
       width: 100% !important;
-      height: 660px !important;
-      min-height: auto !important;
-      background: linear-gradient(135deg, #E6E6E1 0%, #D8D8D2 45%, #CFCFC8 100%) !important;
-      align-self: flex-start !important;
+      min-height: 600px !important;
+      align-self: center !important;
       display: flex !important;
-      flex-direction: column !important;
       align-items: center !important;
       justify-content: center !important;
       position: relative !important;
-      overflow: hidden !important;
+      padding: 80px 0 30px !important;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      overflow: visible !important;
     }
-    /* 좌측 경계 페이드: 좌측 배경색(#F4F4F2)에서 이미지로 스르륵 녹아드는 그라데이션 */
-    .hero-right-visual-area::before {
-      content: '' !important;
-      position: absolute !important;
-      top: 0; left: 0; bottom: 0;
-      width: 50% !important;
-      background: linear-gradient(to right, #F4F4F2 0%, rgba(244, 244, 242, 0.85) 25%, rgba(244, 244, 242, 0.4) 60%, rgba(244, 244, 242, 0) 100%) !important;
-      pointer-events: none !important;
-      z-index: 2 !important;
-    }
-    /* 하단 경계 페이드: 하단 배경색(#F4F4F2)으로 부드럽게 이어지는 그라데이션 */
+    .hero-right-visual-area::before,
     .hero-right-visual-area::after {
-      content: '' !important;
+      display: none !important;
+    }
+
+    /* 1. 스밈 잔물결 빛 번짐 오라 (Diffusion Glow) - 배경에 은은하고 부드럽게 스며드는 빛 */
+    .seumim-shape-glow {
       position: absolute !important;
-      bottom: 0; left: 0; right: 0;
-      height: 140px !important;
-      background: linear-gradient(to top, #F4F4F2 0%, rgba(244, 244, 242, 0.75) 35%, rgba(244, 244, 242, 0) 100%) !important;
+      width: 590px !important;
+      height: 520px !important;
+      background: radial-gradient(ellipse at 52% 48%, rgba(111, 150, 112, 0.18) 0%, rgba(235, 240, 236, 0.45) 45%, rgba(244, 244, 242, 0) 72%) !important;
+      filter: blur(36px) !important;
       pointer-events: none !important;
+      z-index: 1 !important;
+      transform: translate(12px, 2px) !important;
+    }
+
+    /* 2. 메인 스밈 유기적 도형 컨테이너 (도형.png 벡터 기반 곡선 - 마우스 호버 완전 배제) */
+    .seumim-organic-wrapper {
+      position: relative !important;
       z-index: 2 !important;
+      width: 580px !important;
+      max-width: 100% !important;
+      height: 503px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      /* 마우스 호버 애니메이션/트랜스폼 완전 배제 (정적이고 안정감 있는 비주얼 유지) */
+    }
+
+    .seumim-organic-svg {
+      width: 100% !important;
+      height: 100% !important;
+      display: block !important;
+      overflow: visible !important;
+    }
+
+    /* 도형 중앙 착용샷 라벨 뱃지 */
+    .seumim-shape-inner-badge {
+      position: absolute !important;
+      z-index: 3 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 12px !important;
+      pointer-events: none !important;
+      transform: translate(15px, 10px) !important;
+    }
+
+    .seumim-shape-label {
+      font-family: var(--font-gowun), serif !important;
+      font-size: 19px !important;
+      font-weight: 700 !important;
+      color: #5B5B5B !important;
+      letter-spacing: -0.01em !important;
+      background: rgba(255, 255, 255, 0.88) !important;
+      backdrop-filter: blur(10px) !important;
+      -webkit-backdrop-filter: blur(10px) !important;
+      padding: 10px 28px !important;
+      border-radius: 9999px !important;
+      border: 1.5px dashed #A69E96 !important;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    .seumim-shape-sublabel {
+      font-size: 12px !important;
+      font-weight: 600 !important;
+      color: #6F9670 !important;
+      background: rgba(255, 255, 255, 0.85) !important;
+      backdrop-filter: blur(6px) !important;
+      -webkit-backdrop-filter: blur(6px) !important;
+      padding: 4px 14px !important;
+      border-radius: 9999px !important;
+      letter-spacing: 0.04em !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
     }
 
     /* [SEC-02: 문제 제기 에디토리얼 섹션 - 문제제기 참고 레퍼런스.png 규격] */
@@ -2889,11 +3057,11 @@
 
     /* 반응형 */
     @media (max-width: 992px) {
-      .hero-section { grid-template-columns: 1fr !important; min-height: auto !important; }
-      .hero-left-col { padding: 50px 20px 40px !important; text-align: center !important; align-items: center !important; margin: 0 auto !important; }
-      .hero-left-col .hero-eyebrow { justify-content: center !important; }
-      .hero-left-col .hero-cta-group { justify-content: center !important; }
-      .hero-right-visual-area { min-height: 320px !important; height: 360px !important; }
+      .hero-grid-1440 { grid-template-columns: 1fr !important; gap: 40px !important; padding: 0 20px !important; min-height: auto !important; }
+      .hero-left-col { padding: 130px 0 30px !important; text-align: left !important; align-items: flex-start !important; }
+      .hero-right-visual-area { min-height: 380px !important; padding: 20px 0 40px !important; }
+      .seumim-organic-wrapper { width: 340px !important; height: 295px !important; }
+      .seumim-shape-glow { width: 340px !important; height: 300px !important; }
       .pride-metrics-bar { grid-template-columns: repeat(2, 1fr) !important; }
       .featured-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
       .clinical-proof-grid { grid-template-columns: 1fr !important; }
@@ -2957,59 +3125,60 @@
        [Site Header Fixed Master Wrapper] 언제 어디서나 최상단 완벽 고정
        ========================================================================== -->
   <header class="site-header-fixed" id="site-header-fixed">
-    <!-- 1. Top Switcher Bar (데스크탑 3대 독립 페이지 즉시 전환) -->
-    <div class="page-switch-bar">
-      <div><strong>SEUMIM (스밈) 마스터 통합 플랫폼 와이어프레임</strong> (Eight Sleep 융합 롤모델)</div>
-      <div class="page-switch-tabs">
-        <button class="btn-page-tab active" onclick="navigateToSection('page-main')">1. 메인 랜딩페이지 (Main)</button>
-        <button class="btn-page-tab" onclick="navigateToSection('page-shop')">2. 15개 전 상품 서브 (Shop All)</button>
-        <button class="btn-page-tab" onclick="navigateToSection('page-story')">3. 브랜드 이야기 서브 (Our Story)</button>
-      </div>
-    </div>
-
-    <!-- 2. SEC-01: GNB & Header - 와이어프레임_90 표준 규격 -->
+    <!-- SEC-01: GNB & Header - 와이어프레임_90 표준 규격 -->
     <div class="header-gnb">
       <div class="container gnb-inner">
         <a href="javascript:void(0)" class="logo" onclick="navigateToSection('page-main')">
-          SEUMIM <span class="logo-badge">스밈 0.1mm</span>
+          SEUMIM
         </a>
 
-        <!-- 중앙 내비게이션 (데스크탑 - 어느 페이지에서든 즉시 이동) -->
+        <!-- 중앙 내비게이션 (심플 & 정갈한 말본 스타일) -->
         <nav class="gnb-nav">
-          <a href="javascript:void(0)" class="gnb-link active" onclick="navigateToSection('page-main')">홈(메인)</a>
+          <a href="javascript:void(0)" class="gnb-link active" onclick="navigateToSection('page-main')">홈</a>
           <a href="javascript:void(0)" class="gnb-link" onclick="navigateToSection('page-main', 'sec-featured')">3대 대표작</a>
-          <a href="javascript:void(0)" class="gnb-link" onclick="navigateToSection('page-shop')">전체 상품 (15)</a>
-          <a href="javascript:void(0)" class="gnb-link" onclick="navigateToSection('page-main', 'sec-hud')">AI 케어 &amp; 센터</a>
+          <a href="javascript:void(0)" class="gnb-link" onclick="navigateToSection('page-shop')">전체 상품</a>
+          <a href="javascript:void(0)" class="gnb-link" onclick="navigateToSection('page-main', 'sec-hud')">케어&amp;센터</a>
           <a href="javascript:void(0)" class="gnb-link" onclick="navigateToSection('page-story')">Our Story</a>
         </nav>
 
-        <!-- 우측 액션: 라인아트 찜, 장바구니 + 30일 무료시착 + 모바일 햄버거 버튼 -->
-        <div class="gnb-actions" style="display:flex; align-items:center; gap:10px;">
-          <!-- 1. 찜 (라인아트 하트 아이콘) -->
-          <button class="gnb-icon-btn" onclick="openWishlistModal()" title="찜한 상품 목록">
-            <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+        <!-- 우측 액션: 말본골프 스타일 4대 심플 유틸리티 (검색, 로그인, 마이페이지, 장바구니) -->
+        <div class="gnb-actions">
+          <!-- 1. 검색 -->
+          <button class="gnb-action-icon-btn" onclick="alert('통합 상품 및 콘텐츠 검색창이 열립니다.')" title="검색">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <span class="icon-badge" id="gnb-wish-count">2</span>
           </button>
 
-          <!-- 2. 장바구니 (라인아트 토트백 아이콘) -->
-          <button class="gnb-icon-btn" onclick="openCartModal()" title="시착 장바구니">
-            <svg class="nav-icon-svg" viewBox="0 0 100 100">
-              <path d="M22 42 Q20 42 22 48 L28 84 Q30 90 38 90 L62 90 Q70 90 72 84 L78 48 Q80 42 78 42 Z" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-              <path d="M36 44 V30 C36 18 64 18 64 30 V44" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-              <circle cx="36" cy="46" r="6" fill="currentColor" />
-              <circle cx="64" cy="46" r="6" fill="currentColor" />
+          <!-- 2. 로그인 (말본 스타일 엔터 도어 아이콘) -->
+          <button class="gnb-action-icon-btn" onclick="alert('로그인 화면으로 이동합니다.')" title="로그인">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+              <polyline points="10 17 15 12 10 7"></polyline>
+              <line x1="15" y1="12" x2="3" y2="12"></line>
             </svg>
-            <span class="icon-badge" id="gnb-cart-count">1</span>
           </button>
 
-          <!-- 3. 데스크탑 30일 무료시착 버튼 -->
-          <button class="btn-primary btn-accent" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
-            30일 무료 시착 (0원)
+          <!-- 3. 마이페이지 (사용자 프로필) -->
+          <button class="gnb-action-icon-btn" onclick="alert('마이페이지 화면으로 이동합니다.')" title="마이페이지">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
           </button>
 
-          <!-- 4. 모바일 전용 햄버거 메뉴 토글 버튼 -->
+          <!-- 4. 장바구니 (미니멀 쇼핑백) -->
+          <button class="gnb-action-icon-btn" onclick="openCartModal()" title="시착 장바구니">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="gnb-cart-badge" id="gnb-cart-count">1</span>
+          </button>
+
+          <!-- 5. 모바일 전용 햄버거 메뉴 토글 버튼 -->
           <button class="gnb-hamburger-btn" id="gnb-hamburger-btn" onclick="toggleMobileMenu()" aria-label="메뉴 열기/닫기">
             <span></span>
             <span></span>
@@ -3085,26 +3254,55 @@
        ========================================================================== -->
   <main id="page-main" class="page-view active">
     
-    <!-- SEC-02: Hero & Manifesto (이미지 부분 수정.png 완벽 일치 풀블리드 레이아웃) -->
+    <!-- SEC-02: Hero & Manifesto (1440px 와이드 그리드 완벽 정렬 레이아웃) -->
     <section class="hero-section" id="sec-manifesto">
-      <div class="hero-left-col">
-        <div class="hero-eyebrow">일상에 자연스럽게 스며드는 0.1MM 바른 균형</div>
-        <h1 class="hero-manifesto-title">
-          바쁜 하루 속에서도,<br>
-          <span style="display:inline-block; white-space:nowrap; color:#5B5B5B;">나를 먼저 아끼는 <span class="hero-highlight-word">다정한 균형</span></span>
-        </h1>
-        <p class="hero-subcopy">
-          억지스러운 압박 대신 기분 좋은 편안함으로,<br>
-          당신의 일상에 건강한 쉼을 채워드릴게요.
-        </p>
-        <div class="hero-cta-group">
-          <a href="#sec-philosophy" class="btn-primary">스밈의 시작 알아보기 ➔</a>
+      <div class="hero-grid-1440">
+        <div class="hero-left-col">
+          <div class="hero-eyebrow">일상에 자연스럽게 스며드는 0.1MM 바른 균형</div>
+          <h1 class="hero-manifesto-title">
+            바쁜 하루 속에서도,<br>
+            <span style="display:inline-block; white-space:nowrap; color:#5B5B5B;">나를 먼저 아끼는 <span class="hero-highlight-word">다정한 균형</span></span>
+          </h1>
+          <p class="hero-subcopy">
+            억지스러운 압박 대신 기분 좋은 편안함으로,<br>
+            당신의 일상에 건강한 쉼을 채워드릴게요.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#sec-philosophy" class="btn-primary">스밈의 시작 알아보기 ➔</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-right-visual-area">
-        <span style="position:relative; z-index:3; font-family: var(--font-gowun), serif; font-size: 19px; font-weight: 700; color: #5B5B5B; letter-spacing: -0.01em; background: rgba(255,255,255,0.75); backdrop-filter: blur(8px); padding: 9px 24px; border-radius: 9999px; border: 1.5px dashed #A69E96; box-shadow: 0 4px 14px rgba(0,0,0,0.06);">
-          착용샷 이미지
-        </span>
+        <div class="hero-right-visual-area">
+          <!-- 1. 배후 은은한 세이지 틴트 빛 번짐 오라 (스며드는 잔물결) -->
+          <div class="seumim-shape-glow"></div>
+
+          <!-- 2. 메인 스밈 유기적 도형 (도형.png 실측 베지어 곡선 & 호버 모션 완전 배제) -->
+          <div class="seumim-organic-wrapper">
+            <svg class="seumim-organic-svg" viewBox="0 0 600 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="seumimGrad" x1="80" y1="40" x2="560" y2="490" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#EBEBE5" />
+                  <stop offset="50%" stop-color="#E0E0DA" />
+                  <stop offset="100%" stop-color="#D5D5CE" />
+                </linearGradient>
+                <filter id="seumimShadow" x="-10%" y="-10%" width="125%" height="125%" filterUnits="userSpaceOnUse">
+                  <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#2D342D" flood-opacity="0.07" />
+                  <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#6F9670" flood-opacity="0.08" />
+                </filter>
+              </defs>
+              <path d="M 546.6 267.3 C 544 271.7, 541.3 275.9, 538.5 280 C 535.7 284.1, 532.8 288.1, 529.9 291.9 C 527 295.7, 524.2 299.4, 521.3 303 C 518.4 306.6, 515.5 310, 512.6 313.4 C 509.7 316.8, 506.9 320, 504.1 323.2 C 501.3 326.4, 498.6 329.4, 495.9 332.4 C 493.2 335.4, 490.6 338.3, 488 341.2 C 485.4 344.1, 482.9 346.9, 480.5 349.7 C 478.1 352.5, 475.7 355.3, 473.4 358 C 471.1 360.7, 468.8 363.4, 466.6 366.1 C 464.4 368.8, 462.3 371.5, 460.1 374.2 C 458 376.9, 455.8 379.6, 453.7 382.3 C 451.6 385, 449.6 387.7, 447.5 390.4 C 445.4 393.1, 443.3 395.8, 441.2 398.5 C 439.1 401.2, 436.9 403.8, 434.7 406.5 C 432.5 409.2, 430.2 411.9, 427.9 414.5 C 425.6 417.1, 423.3 419.7, 420.9 422.2 C 418.5 424.7, 416 427.3, 413.4 429.7 C 410.8 432.1, 408.2 434.5, 405.5 436.8 C 402.8 439.1, 400 441.3, 397.1 443.4 C 394.2 445.5, 391.3 447.6, 388.3 449.5 C 385.3 451.4, 382.1 453.4, 379 455.1 C 375.9 456.9, 372.7 458.5, 369.4 460 C 366.1 461.5, 362.8 462.9, 359.4 464.2 C 356 465.5, 352.6 466.8, 349.2 467.9 C 345.8 469, 342.2 470.1, 338.7 471 C 335.2 471.9, 331.7 472.8, 328.1 473.6 C 324.5 474.4, 320.9 475, 317.3 475.7 C 313.7 476.4, 310 477, 306.4 477.6 C 302.8 478.2, 299.1 478.6, 295.4 479.1 C 291.7 479.6, 287.9 480.1, 284.2 480.5 C 280.4 480.9, 276.7 481.4, 272.9 481.8 C 269.1 482.2, 265.1 482.6, 261.2 483 C 257.3 483.4, 253.3 483.8, 249.3 484.2 C 245.3 484.6, 241.2 484.9, 237 485.3 C 232.8 485.7, 228.5 486, 224.2 486.3 C 219.9 486.6, 215.5 487, 211 487.2 C 206.5 487.4, 202 487.6, 197.3 487.7 C 192.7 487.8, 187.9 487.9, 183.1 487.8 C 178.3 487.7, 173.3 487.5, 168.4 487.2 C 163.5 486.9, 158.4 486.5, 153.4 485.9 C 148.4 485.3, 143.3 484.6, 138.2 483.6 C 133.1 482.7, 128 481.6, 123 480.2 C 118 478.8, 112.9 477.2, 108 475.4 C 103.1 473.6, 98.2 471.6, 93.4 469.3 C 88.7 467, 84 464.5, 79.5 461.7 C 75 458.9, 70.7 455.9, 66.6 452.6 C 62.5 449.3, 58.6 445.7, 55 441.9 C 51.4 438.1, 48 434.1, 45 429.9 C 42 425.7, 39.2 421.2, 36.8 416.6 C 34.4 412, 32.3 407.1, 30.6 402.2 C 28.9 397.3, 27.5 392.1, 26.6 386.9 C 25.7 381.7, 25.1 376.4, 25 371.1 C 24.9 365.8, 25.1 360.3, 25.7 354.9 C 26.3 349.5, 27.5 344, 28.9 338.7 C 30.3 333.4, 32.1 328, 34.2 322.8 C 36.4 317.6, 39 312.4, 41.8 307.4 C 44.6 302.4, 47.8 297.5, 51.2 292.9 C 54.6 288.3, 58.3 283.8, 62.2 279.5 C 66.1 275.2, 70.4 271.2, 74.7 267.3 C 79 263.4, 83.5 259.8, 88.1 256.4 C 92.7 253, 97.4 249.9, 102.1 247 C 106.8 244.1, 111.7 241.3, 116.5 238.9 C 121.3 236.5, 126.1 234.3, 130.8 232.3 C 135.5 230.3, 140.2 228.5, 144.7 226.9 C 149.2 225.3, 153.7 223.9, 158 222.6 C 162.3 221.3, 166.5 220.3, 170.4 219.3 C 174.3 218.3, 178.1 217.4, 181.7 216.6 C 185.3 215.8, 188.6 215.2, 191.8 214.5 C 195 213.8, 197.9 213.2, 200.7 212.6 C 203.4 212, 206 211.4, 208.3 210.7 C 210.6 210, 212.8 209.4, 214.7 208.6 C 216.6 207.8, 218.3 207, 219.9 206.1 C 221.5 205.2, 222.9 204.2, 224.2 203.1 C 225.5 202, 226.6 200.8, 227.6 199.5 C 228.6 198.2, 229.6 196.7, 230.4 195.1 C 231.3 193.5, 232 191.8, 232.7 189.9 C 233.4 188, 234.1 186, 234.8 183.9 C 235.5 181.8, 236.2 179.6, 236.9 177.2 C 237.6 174.8, 238.3 172.3, 239.1 169.7 C 239.9 167.1, 240.7 164.5, 241.6 161.7 C 242.5 158.9, 243.5 156, 244.6 153.1 C 245.7 150.2, 246.8 147.1, 248.1 144.1 C 249.4 141.1, 250.9 138, 252.4 134.9 C 253.9 131.8, 255.6 128.6, 257.4 125.4 C 259.2 122.2, 261.1 119.1, 263.2 115.9 C 265.3 112.8, 267.5 109.6, 269.9 106.5 C 272.3 103.4, 274.8 100.3, 277.5 97.2 C 280.2 94.1, 283 91, 286 88.1 C 289 85.1, 292.1 82.3, 295.4 79.5 C 298.7 76.7, 302.1 73.9, 305.7 71.2 C 309.3 68.5, 312.9 66, 316.8 63.5 C 320.7 61, 324.7 58.6, 328.8 56.4 C 332.9 54.1, 337.2 52, 341.6 50 C 346 48, 350.5 46.2, 355.1 44.5 C 359.7 42.8, 364.5 41.2, 369.3 39.8 C 374.1 38.4, 379.1 37.1, 384.1 36.1 C 389.1 35.1, 394.3 34.3, 399.5 33.6 C 404.7 33, 409.9 32.4, 415.2 32.2 C 420.5 32, 425.8 32, 431.1 32.2 C 436.4 32.4, 441.8 32.9, 447.1 33.6 C 452.4 34.3, 457.8 35.3, 463.1 36.5 C 468.4 37.7, 473.6 39.2, 478.7 40.9 C 483.8 42.6, 488.9 44.6, 493.8 46.9 C 498.7 49.2, 503.5 51.7, 508.2 54.5 C 512.9 57.3, 517.4 60.2, 521.7 63.5 C 526 66.8, 530.1 70.3, 534 74.1 C 537.9 77.8, 541.5 81.8, 544.9 86 C 548.3 90.2, 551.5 94.5, 554.4 99.1 C 557.3 103.6, 559.8 108.4, 562.1 113.3 C 564.4 118.2, 566.4 123.2, 568.1 128.3 C 569.8 133.4, 571.1 138.7, 572.2 144 C 573.3 149.3, 574 154.7, 574.5 160.1 C 575 165.5, 575.1 171, 575 176.4 C 574.9 181.8, 574.4 187.3, 573.7 192.7 C 573 198.1, 572 203.4, 570.8 208.7 C 569.6 214, 568.2 219.2, 566.5 224.3 C 564.8 229.4, 562.9 234.5, 560.8 239.4 C 558.7 244.3, 556.5 249, 554.1 253.7 C 551.7 258.3, 549.2 262.9, 546.6 267.3 Z"
+                    fill="url(#seumimGrad)"
+                    stroke="rgba(111, 150, 112, 0.45)"
+                    stroke-width="1.8"
+                    filter="url(#seumimShadow)" />
+            </svg>
+            
+            <!-- 착용샷 텍스트 뱃지 -->
+            <div class="seumim-shape-inner-badge">
+              <span class="seumim-shape-label">착용샷 이미지</span>
+              <div class="seumim-shape-sublabel">SEUMIM 0.1mm Organic Fit</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -5436,11 +5634,17 @@
       }
     }
 
-    function filterCatalogByTag(cat) {
-      switchPage('page-shop');
-      const btn = document.querySelector(`.showcase-tabs button[onclick*="${cat}"]`);
-      if (btn) filterShopPage(cat, btn);
-    }
+    // 말본골프 스타일 헤더 스크롤 감지 인터랙션
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('site-header-fixed');
+      if (header) {
+        if (window.scrollY > 20) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }
+    });
 
   </script>
 </body>
