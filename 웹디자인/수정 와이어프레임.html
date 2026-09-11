@@ -376,87 +376,183 @@
     .section-title { font-family: var(--font-serif); font-size: 36px; font-weight: 800; color: var(--color-forest); margin-bottom: 12px; letter-spacing: -0.03em; }
     .section-desc { font-size: 15.5px; color: var(--color-text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.7; }
 
+    /* ==========================================================================
+       [SEC-03~05: Top 3 Featured Masterpieces - 사담재 1px 극세선 & 호버 프로그레시브 뷰]
+       ========================================================================== */
     .featured-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      align-items: stretch;
-    }
-    .featured-card {
-      background: var(--bg-surface);
-      border: 1.5px solid var(--color-border);
-      border-radius: 24px;
-      overflow: hidden;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: var(--shadow-sm);
-      position: relative;
-      transition: var(--transition);
-      height: 100%;
-    }
-    .featured-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: #6F9670;
-    }
-    .featured-card.reverse {
-      display: flex;
-      flex-direction: column;
-    }
-    .featured-card.reverse .featured-visual {
-      order: unset;
-      border-right: none;
-      border-left: none;
-      border-bottom: 1px solid var(--color-border);
-    }
-    .featured-card.reverse .featured-content {
-      order: unset;
+      gap: 20px;
+      background: transparent;
+      margin-top: 32px;
+      align-items: flex-start;
     }
 
-    .featured-visual {
-      background: var(--bg-card);
-      padding: 24px 20px;
+    .featured-card {
+      flex: 1 1 0;
+      min-width: 0;
+      position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      border-right: none;
-      border-bottom: 1px solid var(--color-border);
-      width: 100%;
+      border: 1.5px solid var(--color-border);
+      border-radius: 20px;
+      padding: 28px 22px 24px;
+      background: var(--bg-surface);
+      box-shadow: var(--shadow-sm);
+      min-height: 480px;
+      transition: box-shadow 0.35s ease, border-color 0.35s ease, background-color 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: default;
+      overflow: hidden;
       box-sizing: border-box;
     }
-    
+
+    /* 이미지에 마우스를 올렸거나 세부 패널 조작 시 카드 하이라이트 & 미세 부유 */
+    .featured-card:has(.featured-visual:hover),
+    .featured-card:has(.featured-hover-panel:hover),
+    .featured-card.is-active {
+      border-color: #6F9670;
+      background-color: #FAF9F6;
+      box-shadow: 0 16px 36px rgba(28, 36, 32, 0.09);
+      transform: translateY(-4px);
+      z-index: 2;
+    }
+
+    /* 상단 헤드 정보 (상시 노출: 제품명 & 1줄 슬로건) */
+    .featured-head-info {
+      text-align: left;
+      position: relative;
+      z-index: 2;
+      pointer-events: auto;
+    }
+
+    .featured-top-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .featured-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      background: var(--bg-accent-light);
+      border: 1px solid var(--color-terracotta);
+      color: var(--color-terracotta);
+      font-size: 11.5px;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      width: fit-content;
+    }
+
+    .featured-rank-num {
+      font-family: var(--font-serif);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--color-text-secondary);
+      letter-spacing: 0.05em;
+    }
+
+    .featured-name {
+      font-family: var(--font-gowun), 'Gowun Batang', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-forest);
+      margin-bottom: 8px;
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+    }
+
+    .featured-copy {
+      font-size: 13.5px;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+      margin-bottom: 0;
+      word-break: keep-all;
+    }
+
+    /* 중앙 대형 비주얼 영역 (마우스 호버 감지 타겟) */
+    .featured-visual {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 18px 0 16px;
+      position: relative;
+      cursor: pointer;
+    }
+
     .visual-3d-box {
       width: 100%;
-      height: 200px;
-      background: #e9e3d5;
-      border: 2px dashed #cfc5af;
-      border-radius: var(--radius-md);
+      height: 280px;
+      background: #EAE6DE;
+      border: 1.5px dashed #C8BFAD;
+      border-radius: 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       position: relative;
-      cursor: crosshair;
-      transition: var(--transition);
+      cursor: pointer;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      will-change: transform;
       box-sizing: border-box;
     }
-    .visual-3d-box:hover { background: #e2dbca; }
-    .visual-3d-icon { font-size: 40px; margin-bottom: 6px; }
+
+    /* 마우스가 이미지 쪽에 올라오면 부드럽고 가볍게 떠오름 (레이아웃 흔들림 없음) */
+    .featured-visual:hover .visual-3d-box,
+    .featured-card:has(.featured-hover-panel:hover) .visual-3d-box,
+    .featured-card.is-active .visual-3d-box {
+      transform: translateY(-4px) scale(1.015);
+      background: #E2DDD3;
+      border-color: #6F9670;
+      box-shadow: 0 8px 20px rgba(28, 36, 32, 0.07);
+    }
+
+    .visual-3d-icon {
+      font-size: 64px;
+      margin-bottom: 12px;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+
+    .featured-visual:hover .visual-3d-icon,
+    .featured-card:has(.featured-hover-panel:hover) .visual-3d-icon,
+    .featured-card.is-active .visual-3d-icon {
+      transform: scale(1.08);
+    }
+
     .magnifier-hint {
-      position: absolute; bottom: 10px; right: 10px;
-      font-size: 11px; font-weight: 500; color: var(--color-forest);
-      background: rgba(255,255,255,0.92); padding: 3px 8px; border-radius: var(--radius-full);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--color-forest);
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(214, 214, 208, 0.8);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(4px);
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .visual-3d-box:hover .magnifier-hint {
+      background: #6F9670;
+      color: #fff;
+      border-color: #6F9670;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(111, 150, 112, 0.3);
     }
 
     /* 카드 우상단 찜 버튼 */
     .btn-card-wish {
       position: absolute;
-      top: 14px;
-      right: 14px;
+      top: 18px;
+      right: 18px;
       width: 34px;
       height: 34px;
       border-radius: 50%;
@@ -474,37 +570,79 @@
     .btn-card-wish.active { color: #6F9670; border-color: #6F9670; background: #EFF4EE; }
     .btn-card-wish.active svg { fill: #6F9670; stroke: #6F9670; }
 
-    .featured-content {
-      padding: 24px 20px 20px;
+    /* 기본 상태에서 하단에 은은하게 보이는 호버 안내 바 */
+    .hover-hint-bar {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex: 1;
-      text-align: left;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 14px 0 0;
+      border-top: 1px solid rgba(214, 214, 208, 0.5);
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      letter-spacing: -0.01em;
+      transition: opacity 0.25s ease, max-height 0.3s ease;
+      margin-top: auto;
+    }
+
+    .hover-hint-bar svg {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.3s ease;
+    }
+
+    /* 이미지에 마우스를 올렸을 때만 힌트가 자연스럽게 숨겨짐 */
+    .featured-card:has(.featured-visual:hover) .hover-hint-bar,
+    .featured-card:has(.featured-hover-panel:hover) .hover-hint-bar,
+    .featured-card.is-active .hover-hint-bar {
+      opacity: 0;
+      max-height: 0;
+      padding: 0;
+      overflow: hidden;
+      border-top: none;
+    }
+
+    /* 마우스 호버 시 카드가 아래로 길어지면서 스르륵 전개되는 세부 정보 패널 (이미지를 전혀 가리지 않음) */
+    .featured-hover-panel {
+      position: static;
+      width: 100%;
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(12px);
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                  opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  padding 0.35s ease,
+                  margin 0.35s ease;
+      will-change: max-height, opacity, transform;
+      pointer-events: none;
       box-sizing: border-box;
+      padding-top: 0;
+      margin-top: 0;
+      border-top: 1px solid transparent;
     }
-    .featured-badge {
-      display: inline-block;
-      padding: 3px 10px;
-      background: var(--bg-accent-light);
-      border: 1px solid var(--color-terracotta);
-      color: var(--color-terracotta);
-      font-size: 11.5px;
-      font-weight: 500;
-      border-radius: var(--radius-full);
-      width: fit-content;
-      margin-bottom: 10px;
+
+    /* 이미지에 마우스를 올리면 카드가 길어지며 텍스트 패널이 등장 */
+    .featured-card:has(.featured-visual:hover) .featured-hover-panel,
+    .featured-card:has(.featured-hover-panel:hover) .featured-hover-panel,
+    .featured-card.is-active .featured-hover-panel {
+      max-height: 260px;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      padding-top: 16px;
+      margin-top: 12px;
+      border-top-color: var(--color-border);
     }
-    .featured-name { font-family: var(--font-gowun), 'Gowun Batang', serif; font-size: 20px; font-weight: 600; color: var(--color-forest); margin-bottom: 10px; line-height: 1.35; }
-    .featured-copy { font-size: 13.5px; color: var(--color-text-secondary); margin-bottom: 14px; line-height: 1.65; }
-    
+
     .feature-compare-list {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-bottom: 18px;
-      padding: 14px 0;
-      border-top: 1px solid #EAEAE6;
+      gap: 7px;
+      margin-bottom: 12px;
+      padding: 0 0 10px;
       border-bottom: 1px solid #EAEAE6;
     }
     .compare-item {
@@ -512,11 +650,11 @@
       grid-template-columns: 66px 1fr;
       gap: 8px;
       font-size: 12px;
-      line-height: 1.55;
+      line-height: 1.5;
       align-items: baseline;
     }
     .compare-label {
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 600;
       color: #6F9670;
       background: #EFF4EE;
@@ -552,7 +690,7 @@
       font-weight: 600;
     }
 
-    .price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 16px; }
+    .price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 14px; }
     .price-original { font-size: 13px; color: var(--color-text-muted); text-decoration: line-through; }
     .price-sale { font-size: 20px; font-weight: 700; color: var(--color-forest); }
     .price-discount { font-size: 16px; font-weight: 600; color: var(--color-terracotta); }
@@ -1837,38 +1975,51 @@
         height: 180px !important;
       }
 
-      /* 5. 3대 대표작 지그재그 카드 1열 스택 & 패딩 다이어트 */
+      /* 5. 3대 대표작 사담재 1px 극세선 반응형 모바일 스택 */
       #sec-featured {
         padding: 50px 16px !important;
       }
       .featured-grid {
-        gap: 36px !important;
+        flex-direction: column !important;
+        gap: 20px !important;
       }
-      .featured-card,
-      .featured-card.reverse {
-        grid-template-columns: 1fr !important;
+      .featured-card {
+        flex: 1 1 auto !important;
+        height: auto !important;
+        min-height: 0 !important;
+        border: 1px solid var(--color-border) !important;
+        border-radius: 16px !important;
+        padding: 28px 20px !important;
       }
-      .featured-visual {
-        padding: 24px 16px !important;
-        border-right: none !important;
-        border-bottom: 1px solid var(--color-border) !important;
-      }
-      .featured-card.reverse .featured-visual {
-        border-left: none !important;
-        border-bottom: 1px solid var(--color-border) !important;
+      .featured-card:hover {
+        flex: 1 1 auto !important;
+        transform: none !important;
       }
       .visual-3d-box {
-        height: 220px !important;
-      }
-      .featured-content {
-        padding: 24px 18px !important;
+        height: 200px !important;
       }
       .featured-name {
         font-size: 20px !important;
       }
       .featured-copy {
         font-size: 13.5px !important;
-        line-height: 1.65 !important;
+        line-height: 1.6 !important;
+      }
+      /* 모바일에서는 호버 없이도 세부 정보가 상시 펼쳐져 직관적으로 볼 수 있도록 처리 */
+      .hover-hint-bar {
+        display: none !important;
+      }
+      .featured-hover-panel {
+        position: static !important;
+        max-height: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+        pointer-events: auto !important;
+        padding: 14px 0 0 !important;
+        margin-top: 10px !important;
+        border-top: 1px solid var(--color-border) !important;
+        border-radius: 0 !important;
+        background: transparent !important;
       }
       .featured-actions {
         flex-direction: column !important;
@@ -3418,48 +3569,58 @@
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
             </svg>
           </button>
+
+          <!-- 상시 노출: 정갈한 에디토리얼 타이포그래피 (사담재 감성) -->
+          <div class="featured-head-info">
+            <div class="featured-top-meta">
+              <span class="featured-badge">거북목 &amp; 말린 어깨</span>
+              <span class="featured-rank-num">01 / TOP 3</span>
+            </div>
+            <h3 class="featured-name">0.1mm 심리스 넥&amp;숄더 밴드</h3>
+            <p class="featured-copy">
+              모니터 앞 10시간, 앞으로 쏟아지는 목과 말린 어깨를 전면 자석 버클로 1초 만에 체결하여 15도 자동 견인합니다.
+            </p>
+          </div>
+
+          <!-- 중앙: 이미지 안에 3D 단면 분해 뷰어 버튼 유지 -->
           <div class="featured-visual">
             <div class="visual-3d-box" onclick="openQuickView(1)">
               <div class="visual-3d-icon">🎽</div>
-              <div style="font-weight:600; font-size:13.5px; color:var(--color-forest);">[Top 1] 0.1mm 넥&amp;숄더 밴드 3D 단면도</div>
-              <div style="font-size:11.5px; color:var(--color-text-secondary); margin-top:4px;">전면 자석 버클 &amp; 15도 견인 메커니즘</div>
-              <span class="magnifier-hint">🔍 3D 단면 분해 뷰어</span>
+              <div style="font-weight:700; font-size:15px; color:var(--color-forest); letter-spacing:-0.01em;">[Top 1] 0.1mm 넥&amp;숄더 밴드 3D 단면도</div>
+              <div style="font-size:12px; color:var(--color-text-secondary); margin-top:6px;">전면 자석 버클 &amp; 15도 견인 메커니즘</div>
+              <span class="magnifier-hint">🔍 3D 단면 분해도 보기</span>
             </div>
           </div>
-          <div class="featured-content">
-            <div>
-              <span class="featured-badge">거북목 &amp; 말린 어깨 집중 케어</span>
-              <h3 class="featured-name">0.1mm 심리스 넥&amp;숄더 밴드</h3>
-              <p class="featured-copy">
-                모니터 앞 10시간, 앞으로 쏟아지는 목과 말린 어깨를 전면 자석 버클로 1초 만에 체결하여 15도 자동 견인합니다.
-              </p>
-              <div class="feature-compare-list">
-                <div class="compare-item">
-                  <span class="compare-label">케어 부위</span>
-                  <span class="compare-val">경추 &amp; 어깨 (거북목 · 전방 쏠림 완화)</span>
-                </div>
-                <div class="compare-item">
-                  <span class="compare-label">착용 스펙</span>
-                  <span class="compare-val">0.1mm 무봉제 · 38g 초경량<span class="spec-tag-goal">설계 목표</span> · 셔츠 은폐</span>
-                </div>
-                <div class="compare-item">
-                  <span class="compare-label">추천 환경</span>
-                  <span class="compare-val">모니터 앞 8시간 코딩/사무직<span class="spec-tag-example">사용 예시</span></span>
-                </div>
+
+          <!-- 기본 상태 안내 인디케이터 (호버 시 자연스럽게 전환) -->
+          <div class="hover-hint-bar">
+            <span>케어 부위 및 추천 환경 비교</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+
+          <!-- 호버 시 부드럽게 펼쳐지는 세부 정보 패널 (착용 스펙 제거 & 단일 CTA) -->
+          <div class="featured-hover-panel">
+            <div class="feature-compare-list">
+              <div class="compare-item">
+                <span class="compare-label">케어 부위</span>
+                <span class="compare-val">경추 &amp; 어깨 (거북목 · 전방 쏠림 완화)</span>
+              </div>
+              <div class="compare-item">
+                <span class="compare-label">추천 환경</span>
+                <span class="compare-val">모니터 앞 8시간 코딩/사무직<span class="spec-tag-example">사용 예시</span></span>
               </div>
             </div>
-            <div>
-              <div class="price-row">
-                <span class="price-discount">34% OFF</span>
-                <span class="price-sale">59,000원</span>
-                <span class="price-original">89,000원</span>
-              </div>
-              <div class="featured-actions">
-                <button class="btn-secondary" onclick="openQuickView(1)">3D 단면 분해도 보기</button>
-                <button class="btn-primary btn-accent" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
-                  30일 0원 무료 시착
-                </button>
-              </div>
+            <div class="price-row">
+              <span class="price-discount">34% OFF</span>
+              <span class="price-sale">59,000원</span>
+              <span class="price-original">89,000원</span>
+            </div>
+            <div class="featured-actions">
+              <button class="btn-primary btn-accent" onclick="openCheckoutModal('0.1mm 심리스 넥&숄더 밴드', 'M (95~100)')">
+                30일 0원 무료 시착
+              </button>
             </div>
           </div>
         </div>
@@ -3471,48 +3632,58 @@
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
             </svg>
           </button>
+
+          <!-- 상시 노출: 정갈한 에디토리얼 타이포그래피 (사담재 감성) -->
+          <div class="featured-head-info">
+            <div class="featured-top-meta">
+              <span class="featured-badge">굽은 등 &amp; 척추 틀어짐 방지</span>
+              <span class="featured-rank-num">02 / TOP 3</span>
+            </div>
+            <h3 class="featured-name">3D 에어로 메쉬 척추 정렬 조끼</h3>
+            <p class="featured-copy">
+              출근 룩에 완벽히 은폐되는 시크릿 지퍼 구조. 12시간 땀이 차지 않는 에어로 메쉬와 척추 지지 프레임을 확인하세요.
+            </p>
+          </div>
+
+          <!-- 중앙: 이미지 안에 3D 단면 분해 뷰어 버튼 유지 -->
           <div class="featured-visual">
             <div class="visual-3d-box" onclick="openQuickView(2)">
               <div class="visual-3d-icon">🦺</div>
-              <div style="font-weight:600; font-size:13.5px; color:var(--color-forest);">[Top 2] 척추 정렬 조끼 3D 단면도</div>
-              <div style="font-size:11.5px; color:var(--color-text-secondary); margin-top:4px;">출근복 속 숨은 지퍼 &amp; 탄성 프레임</div>
-              <span class="magnifier-hint">🔍 3D 단면 분해 뷰어</span>
+              <div style="font-weight:700; font-size:15px; color:var(--color-forest); letter-spacing:-0.01em;">[Top 2] 척추 정렬 조끼 3D 단면도</div>
+              <div style="font-size:12px; color:var(--color-text-secondary); margin-top:6px;">출근복 속 숨은 지퍼 &amp; 탄성 프레임</div>
+              <span class="magnifier-hint">🔍 3D 단면 분해도 보기</span>
             </div>
           </div>
-          <div class="featured-content">
-            <div>
-              <span class="featured-badge">굽은 등 &amp; 척추 틀어짐 방지</span>
-              <h3 class="featured-name">3D 에어로 메쉬 척추 정렬 조끼</h3>
-              <p class="featured-copy">
-                출근 룩에 완벽히 은폐되는 시크릿 지퍼 구조. 12시간 땀이 차지 않는 에어로 메쉬와 척추 지지 프레임 단면을 확인하세요.
-              </p>
-              <div class="feature-compare-list">
-                <div class="compare-item">
-                  <span class="compare-label">케어 부위</span>
-                  <span class="compare-val">흉추 &amp; 허리 (굽은 등 · 척추 비틀림 완화)</span>
-                </div>
-                <div class="compare-item">
-                  <span class="compare-label">착용 스펙</span>
-                  <span class="compare-val">3중 에어로 메쉬 · 99.8% 은폐<span class="spec-tag-goal">설계 목표</span> · 지레 프레임</span>
-                </div>
-                <div class="compare-item">
-                  <span class="compare-label">추천 환경</span>
-                  <span class="compare-val">장시간 착석 근무 및 잦은 이동 직군<span class="spec-tag-example">사용 예시</span></span>
-                </div>
+
+          <!-- 기본 상태 안내 인디케이터 -->
+          <div class="hover-hint-bar">
+            <span>케어 부위 및 추천 환경 비교</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+
+          <!-- 호버 시 부드럽게 펼쳐지는 세부 정보 패널 (착용 스펙 제거 & 단일 CTA) -->
+          <div class="featured-hover-panel">
+            <div class="feature-compare-list">
+              <div class="compare-item">
+                <span class="compare-label">케어 부위</span>
+                <span class="compare-val">흉추 &amp; 허리 (굽은 등 · 척추 비틀림 완화)</span>
+              </div>
+              <div class="compare-item">
+                <span class="compare-label">추천 환경</span>
+                <span class="compare-val">장시간 착석 근무 및 잦은 이동 직군<span class="spec-tag-example">사용 예시</span></span>
               </div>
             </div>
-            <div>
-              <div class="price-row">
-                <span class="price-discount">31% OFF</span>
-                <span class="price-sale">89,000원</span>
-                <span class="price-original">129,000원</span>
-              </div>
-              <div class="featured-actions">
-                <button class="btn-secondary" onclick="openQuickView(2)">3D 단면 분해도 보기</button>
-                <button class="btn-primary btn-accent" onclick="openCheckoutModal('3D 에어로 메쉬 척추 정렬 조끼', 'L (100~105)')">
-                  30일 0원 무료 시착
-                </button>
-              </div>
+            <div class="price-row">
+              <span class="price-discount">31% OFF</span>
+              <span class="price-sale">89,000원</span>
+              <span class="price-original">129,000원</span>
+            </div>
+            <div class="featured-actions">
+              <button class="btn-primary btn-accent" onclick="openCheckoutModal('3D 에어로 메쉬 척추 정렬 조끼', 'L (100~105)')">
+                30일 0원 무료 시착
+              </button>
             </div>
           </div>
         </div>
@@ -3524,48 +3695,58 @@
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
             </svg>
           </button>
+
+          <!-- 상시 노출: 정갈한 에디토리얼 타이포그래피 (사담재 감성) -->
+          <div class="featured-head-info">
+            <div class="featured-top-meta">
+              <span class="featured-badge">다리 꼬기 &amp; 골반 틀어짐 차단</span>
+              <span class="featured-rank-num">03 / TOP 3</span>
+            </div>
+            <h3 class="featured-name">골반 수평 유지 에어셀 벨트</h3>
+            <p class="featured-copy">
+              앉았을 때 무의식적으로 다리를 꼬면, 골반 에어셀 패드가 공기를 팽창시켜 골반을 물리적으로 수평 복원합니다.
+            </p>
+          </div>
+
+          <!-- 중앙: 이미지 안에 3D 단면 분해 뷰어 버튼 유지 -->
           <div class="featured-visual">
             <div class="visual-3d-box" onclick="openQuickView(3)">
               <div class="visual-3d-icon">🥋</div>
-              <div style="font-weight:600; font-size:13.5px; color:var(--color-forest);">[Top 3] 골반 에어셀 벨트 3D 단면도</div>
-              <div style="font-size:11.5px; color:var(--color-text-secondary); margin-top:4px;">공기 팽창 밸런스 패드 메커니즘</div>
-              <span class="magnifier-hint">🔍 3D 단면 분해 뷰어</span>
+              <div style="font-weight:700; font-size:15px; color:var(--color-forest); letter-spacing:-0.01em;">[Top 3] 골반 에어셀 벨트 3D 단면도</div>
+              <div style="font-size:12px; color:var(--color-text-secondary); margin-top:6px;">공기 팽창 밸런스 패드 메커니즘</div>
+              <span class="magnifier-hint">🔍 3D 단면 분해도 보기</span>
             </div>
           </div>
-          <div class="featured-content">
-            <div>
-              <span class="featured-badge">다리 꼬기 &amp; 골반 틀어짐 차단</span>
-              <h3 class="featured-name">골반 수평 유지 에어셀 벨트</h3>
-              <p class="featured-copy">
-                앉았을 때 무의식적으로 다리를 꼬면, 골반 에어셀 패드가 공기를 팽창시켜 골반을 물리적으로 수평 복원합니다.
-              </p>
-              <div class="feature-compare-list">
-                <div class="compare-item">
-                  <span class="compare-label">케어 부위</span>
-                  <span class="compare-val">골반 &amp; 하체 (다리 꼬기 · 좌우 비대칭 완화)</span>
-                </div>
-                <div class="compare-item">
-                  <span class="compare-label">착용 스펙</span>
-                  <span class="compare-val">능동 팽창 에어셀 · 초박형 핏<span class="spec-tag-goal">설계 목표</span> · 체압 분산</span>
-                </div>
-                <div class="compare-item">
-                  <span class="compare-label">추천 환경</span>
-                  <span class="compare-val">습관적 다리 꼬기 직장인/운전 직군<span class="spec-tag-example">사용 예시</span></span>
-                </div>
+
+          <!-- 기본 상태 안내 인디케이터 -->
+          <div class="hover-hint-bar">
+            <span>케어 부위 및 추천 환경 비교</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+
+          <!-- 호버 시 부드럽게 펼쳐지는 세부 정보 패널 (착용 스펙 제거 & 단일 CTA) -->
+          <div class="featured-hover-panel">
+            <div class="feature-compare-list">
+              <div class="compare-item">
+                <span class="compare-label">케어 부위</span>
+                <span class="compare-val">골반 &amp; 하체 (다리 꼬기 · 좌우 비대칭 완화)</span>
+              </div>
+              <div class="compare-item">
+                <span class="compare-label">추천 환경</span>
+                <span class="compare-val">습관적 다리 꼬기 직장인/운전 직군<span class="spec-tag-example">사용 예시</span></span>
               </div>
             </div>
-            <div>
-              <div class="price-row">
-                <span class="price-discount">30% OFF</span>
-                <span class="price-sale">69,000원</span>
-                <span class="price-original">99,000원</span>
-              </div>
-              <div class="featured-actions">
-                <button class="btn-secondary" onclick="openQuickView(3)">3D 단면 분해도 보기</button>
-                <button class="btn-primary btn-accent" onclick="openCheckoutModal('골반 수평 유지 에어셀 벨트', 'M (30~33인치)')">
-                  30일 0원 무료 시착
-                </button>
-              </div>
+            <div class="price-row">
+              <span class="price-discount">30% OFF</span>
+              <span class="price-sale">69,000원</span>
+              <span class="price-original">99,000원</span>
+            </div>
+            <div class="featured-actions">
+              <button class="btn-primary btn-accent" onclick="openCheckoutModal('골반 수평 유지 에어셀 벨트', 'M (30~33인치)')">
+                30일 0원 무료 시착
+              </button>
             </div>
           </div>
         </div>
@@ -5625,6 +5806,36 @@
           header.classList.remove('scrolled');
         }
       }
+    });
+
+    // 3대 대표상품 사담재 스타일 이미지 호버 버퍼 인터랙션 (뚝뚝 끊김 방지 & 마우스 영역 이미지 한정)
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.featured-card').forEach(card => {
+        const visual = card.querySelector('.featured-visual');
+        const panel = card.querySelector('.featured-hover-panel');
+        let timer = null;
+
+        function activate() {
+          if (timer) clearTimeout(timer);
+          card.classList.add('is-active');
+        }
+
+        function deactivate() {
+          if (timer) clearTimeout(timer);
+          timer = setTimeout(() => {
+            card.classList.remove('is-active');
+          }, 100); // 100ms 쾌적한 버퍼로 이미지->버튼 이동 시 깜빡임 없이 즉각 반응
+        }
+
+        if (visual) {
+          visual.addEventListener('mouseenter', activate);
+          visual.addEventListener('mouseleave', deactivate);
+        }
+        if (panel) {
+          panel.addEventListener('mouseenter', activate);
+          panel.addEventListener('mouseleave', deactivate);
+        }
+      });
     });
 
   </script>
