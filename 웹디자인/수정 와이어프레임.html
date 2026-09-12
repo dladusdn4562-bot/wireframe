@@ -3059,7 +3059,7 @@
       padding: 18px 22px !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 16px !important; text-align: left !important;
     }
 
-    /* [SEC-07: 사용자 검증 구성안 & 일상 착용 시나리오 (04 · DAILY RELIEF)] */
+    /* [SEC-07: 포트폴리오용 가상 사용자 실착 검증 (04 · DAILY RELIEF)] */
     .proof-section {
       padding: 100px 0 110px !important;
       background: var(--bg-base) !important;
@@ -3101,6 +3101,29 @@
       letter-spacing: -0.01em !important;
       margin: 0 auto !important;
       word-break: keep-all !important;
+    }
+    .scenario-simulation-summary {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-wrap: wrap !important;
+      gap: 0 !important;
+      margin-top: 24px !important;
+      overflow: hidden !important;
+      border: 1px solid #D6D6D0 !important;
+      border-radius: 9999px !important;
+      background: #FFFFFF !important;
+    }
+    .scenario-simulation-summary span {
+      padding: 7px 13px !important;
+      color: #5F6F60 !important;
+      font-size: 11px !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.06em !important;
+      line-height: 1 !important;
+    }
+    .scenario-simulation-summary span + span {
+      border-left: 1px solid #D6D6D0 !important;
     }
     .scenarios-editorial-grid {
       display: grid !important;
@@ -3156,9 +3179,61 @@
     }
     .scenario-context {
       font-size: 12.5px !important;
-      color: #B0B0B0 !important;
+      color: #787878 !important;
       font-weight: 500 !important;
-      margin-bottom: 18px !important;
+      margin-bottom: 14px !important;
+      line-height: 1.65 !important;
+    }
+    .scenario-hypothesis {
+      min-height: 68px !important;
+      margin-bottom: 20px !important;
+      padding: 14px 15px !important;
+      border-radius: 12px !important;
+      background: #F4F4F2 !important;
+      color: #5B5B5B !important;
+      font-size: 12.5px !important;
+      font-weight: 500 !important;
+      line-height: 1.65 !important;
+    }
+    .scenario-hypothesis strong {
+      display: block !important;
+      margin-bottom: 3px !important;
+      color: #6F9670 !important;
+      font-size: 11px !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.06em !important;
+    }
+    .scenario-results-grid {
+      display: grid !important;
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      margin-bottom: 22px !important;
+      border-top: 1px solid #ECECE8 !important;
+      border-bottom: 1px solid #ECECE8 !important;
+    }
+    .scenario-result-item {
+      min-width: 0 !important;
+      padding: 15px 8px !important;
+      text-align: center !important;
+    }
+    .scenario-result-item + .scenario-result-item {
+      border-left: 1px solid #ECECE8 !important;
+    }
+    .scenario-result-value {
+      display: block !important;
+      margin-bottom: 5px !important;
+      color: #5B5B5B !important;
+      font-family: var(--font-gowun), 'Gowun Batang', serif !important;
+      font-size: 17px !important;
+      font-weight: 700 !important;
+      line-height: 1.25 !important;
+      word-break: keep-all !important;
+    }
+    .scenario-result-label {
+      display: block !important;
+      color: #787878 !important;
+      font-size: 10.5px !important;
+      font-weight: 500 !important;
+      line-height: 1.45 !important;
     }
     .scenario-quote {
       font-family: var(--font-gowun), 'Gowun Batang', serif !important;
@@ -3166,10 +3241,19 @@
       font-weight: 500 !important;
       line-height: 1.75 !important;
       color: #5B5B5B !important;
-      margin-bottom: 22px !important;
+      margin-bottom: 8px !important;
       padding-left: 12px !important;
       border-left: 2px solid #6F9670 !important;
       flex-grow: 1 !important;
+    }
+    .scenario-quote cite {
+      display: block !important;
+      margin-top: 8px !important;
+      color: #787878 !important;
+      font-family: var(--font-sans) !important;
+      font-size: 11px !important;
+      font-style: normal !important;
+      line-height: 1.5 !important;
     }
     .scenario-spec-row {
       border-top: 1px solid #ECECE8 !important;
@@ -3196,7 +3280,7 @@
     }
     .scenarios-notice-text {
       font-size: 12px !important;
-      color: #B0B0B0 !important;
+      color: #787878 !important;
       line-height: 1.6 !important;
     }
     @media (max-width: 992px) {
@@ -3755,89 +3839,148 @@
     </section>
 
     <!-- ==========================================================================
-         [SEC-07: 사용자 검증 구성안 & 일상 착용 시나리오 (04 · DAILY RELIEF)]
-         모두의매트 호흡(문제→기준→결과) + 가까이한의원(따뜻한 공감) 융합 에디토리얼
+         [SEC-07: 포트폴리오용 가상 사용자 실착 검증 (04 · DAILY RELIEF)]
+         가설→테스트 조건→정량 결과→사용자 발언으로 이어지는 검증 결과 에디토리얼
          ========================================================================== -->
     <section class="proof-section" id="sec-user-scenarios">
       <div class="container" style="max-width: 1440px;">
         
-        <!-- 섹션 헤더: 감성 공감 타이틀 & 목적 정의 -->
+        <!-- 섹션 헤더: 가상 검증 조건과 목적 정의 -->
         <div class="scenarios-header-wrap">
-          <div class="scenarios-label">04 · DAILY RELIEF · 사용자 검증 구성안</div>
+          <div class="scenarios-label">04 · DAILY RELIEF · 가상 사용자 실착 검증</div>
           <h2 class="scenarios-title">
             하루 종일 일하는 당신의 몸이,<br>
             스스로 쉴 수 있는 자리를 기억하도록
           </h2>
           <p class="scenarios-subtitle">
-            스밈은 억지스러운 조임 대신 일상의 자연스러운 호흡과 움직임을 지키는 0.1mm 설계를 바탕으로,<br>
-            실제 직장인의 치열한 작업 환경에서 피로를 부드럽게 덜어내는 3대 일상 검증 시나리오를 세웠습니다.
+            가상의 직장인 페르소나 30명을 기준으로, 0.1mm 코어웨어가 업무 환경에서 제공해야 할<br>
+            착용 편안함과 자세 인지 경험을 3가지 대표 상황으로 시뮬레이션했습니다.
           </p>
+          <div class="scenario-simulation-summary" aria-label="포트폴리오 가상 검증 조건">
+            <span>PORTFOLIO SIMULATION</span>
+            <span>N=30</span>
+            <span>14 DAYS</span>
+          </div>
         </div>
 
-        <!-- 3대 일상 착용 시나리오 (카드 남발을 덜어낸 정갈한 에디토리얼 컬럼) -->
+        <!-- 3대 가상 사용자 실착 검증 결과 -->
         <div class="scenarios-editorial-grid">
           
-          <!-- 장면 01: 모니터 앞의 긴장 -->
+          <!-- 가상 검증 01: 모니터 앞의 긴장 -->
           <div class="scenario-col">
             <div class="scenario-top">
-              <span class="scenario-step-badge">SCENARIO 01</span>
-              <span class="scenario-tag-goal">[설계 목표]</span>
+              <span class="scenario-step-badge">USER TEST 01</span>
+              <span class="scenario-tag-goal">[가상 데이터]</span>
             </div>
             <h3 class="scenario-name">모니터 앞의 긴장</h3>
-            <div class="scenario-context">키보드 타건 및 장시간 모니터 몰입 환경</div>
+            <div class="scenario-context">데스크 업무자 10명 · 14일 · 하루 평균 6.4시간 착용</div>
+            <div class="scenario-hypothesis">
+              <strong>검증 가설</strong>
+              강한 압박 없이 장시간 모니터 업무 중 목·어깨 피로 인식을 낮출 수 있는가?
+            </div>
+            <div class="scenario-results-grid">
+              <div class="scenario-result-item">
+                <span class="scenario-result-value">6.8 → 4.3</span>
+                <span class="scenario-result-label">업무 종료 후<br>피로도 / 10점</span>
+              </div>
+              <div class="scenario-result-item">
+                <span class="scenario-result-value">4.1 / 5</span>
+                <span class="scenario-result-label">자세 인지<br>평균 점수</span>
+              </div>
+              <div class="scenario-result-item">
+                <span class="scenario-result-value">8 / 10</span>
+                <span class="scenario-result-label">지속 착용<br>의향</span>
+              </div>
+            </div>
             <p class="scenario-quote">
-              “모니터 앞으로 목이 빨려 들어갈 때마다,<br>
-              억지로 잡아당기지 않고 승모근 뒤쪽에서 가볍게 받쳐주어 하루 끝 목덜미의 묵직함이 덜어집니다.”
+              “몸을 강제로 펴는 느낌보다, 자세가 무너질 때 가볍게 알려주는 느낌이었습니다.”
+              <cite>— P07 · 개발자 · 하루 8시간 모니터 업무</cite>
             </p>
             <div class="scenario-spec-row">
-              <span class="spec-label">설계 원리</span>
-              <span class="spec-val">0.1mm 지렛대 탄성 프레임의 전방 하중 분산</span>
+              <span class="spec-label">측정 방식</span>
+              <span class="spec-val">업무 종료 후 피로도 기록 · 착용 전후 자기평가</span>
             </div>
           </div>
 
-          <!-- 장면 02: 출근길 셔츠 속 -->
+          <!-- 가상 검증 02: 출근길 셔츠 속 -->
           <div class="scenario-col">
             <div class="scenario-top">
-              <span class="scenario-step-badge">SCENARIO 02</span>
-              <span class="scenario-tag-goal">[기획 사양]</span>
+              <span class="scenario-step-badge">USER TEST 02</span>
+              <span class="scenario-tag-goal">[가상 데이터]</span>
             </div>
             <h3 class="scenario-name">출근길 셔츠 속</h3>
-            <div class="scenario-context">출퇴근 및 온종일 일상 착용 환경</div>
+            <div class="scenario-context">셔츠·블라우스 착용자 10명 · 평일 5일 · 하루 평균 8.1시간 착용</div>
+            <div class="scenario-hypothesis">
+              <strong>검증 가설</strong>
+              얇은 출근복 안에서 외형 노출을 줄이고 장시간 편안함을 유지할 수 있는가?
+            </div>
+            <div class="scenario-results-grid">
+              <div class="scenario-result-item">
+                <span class="scenario-result-value">1 / 10</span>
+                <span class="scenario-result-label">동료가 제품을<br>인지한 경우</span>
+              </div>
+              <div class="scenario-result-item">
+                <span class="scenario-result-value">9 / 10</span>
+                <span class="scenario-result-label">은폐 만족<br>사용자</span>
+              </div>
+              <div class="scenario-result-item">
+                <span class="scenario-result-value">1.4 / 5</span>
+                <span class="scenario-result-label">평균 압박<br>불편도</span>
+              </div>
+            </div>
             <p class="scenario-quote">
-              “셔츠나 블라우스 속에 입어도 겉으로 봉제선이 드러나지 않아,<br>
-              출근할 때부터 퇴근할 때까지 조임 없이 단정하고 편안한 숨을 유지합니다.”
+              “흰 셔츠 안에서도 실루엣이 거의 보이지 않아 회의가 있는 날에도 부담이 적었습니다.”
+              <cite>— P14 · 브랜드 마케터 · 출근복 상시 착용</cite>
             </p>
             <div class="scenario-spec-row">
-              <span class="spec-label">설계 원리</span>
-              <span class="spec-val">99.8% 무봉제 은폐율 목표 설정 · 38g 초경량</span>
+              <span class="spec-label">측정 방식</span>
+              <span class="spec-val">외부 노출 관찰 · 압박감 및 은폐 만족도 설문</span>
             </div>
           </div>
 
-          <!-- 장면 03: 오랜 좌식과 골반 -->
+          <!-- 가상 검증 03: 오랜 좌식과 골반 -->
           <div class="scenario-col">
             <div class="scenario-top">
-              <span class="scenario-step-badge">SCENARIO 03</span>
-              <span class="scenario-tag-goal">[설계 목표]</span>
+              <span class="scenario-step-badge">USER TEST 03</span>
+              <span class="scenario-tag-goal">[가상 데이터]</span>
             </div>
             <h3 class="scenario-name">오랜 좌식과 골반</h3>
-            <div class="scenario-context">장시간 착석 업무 및 집중 환경</div>
+            <div class="scenario-context">하루 6시간 이상 착석 사용자 10명 · 10일간 업무 중 착용</div>
+            <div class="scenario-hypothesis">
+              <strong>검증 가설</strong>
+              장시간 착석 중 다리를 꼬는 습관을 자연스럽게 인지하고 줄이도록 도울 수 있는가?
+            </div>
+            <div class="scenario-results-grid">
+              <div class="scenario-result-item">
+                <span class="scenario-result-value">6.2 → 3.7회</span>
+                <span class="scenario-result-label">하루 평균<br>다리 꼬기</span>
+              </div>
+              <div class="scenario-result-item">
+                <span class="scenario-result-value">42 → 58분</span>
+                <span class="scenario-result-label">바른 착석<br>평균 유지</span>
+              </div>
+              <div class="scenario-result-item">
+                <span class="scenario-result-value">4.0 / 5</span>
+                <span class="scenario-result-label">착용 편안함<br>평균 점수</span>
+              </div>
+            </div>
             <p class="scenario-quote">
-              “의자에 앉을 때 무의식적으로 다리를 꼬던 습관을<br>
-              강제로 결박하지 않고 부드러운 에어셀 팽창으로 자연스럽게 바른 정렬로 유도합니다.”
+              “다리를 꼬려는 순간 패드가 먼저 느껴져 스스로 자세를 다시 잡게 됐습니다.”
+              <cite>— P23 · 콘텐츠 디자이너 · 하루 7시간 착석 업무</cite>
             </p>
             <div class="scenario-spec-row">
-              <span class="spec-label">설계 원리</span>
-              <span class="spec-val">착석 시 다리 꼬기 물리적 차단 에어셀 패드</span>
+              <span class="spec-label">측정 방식</span>
+              <span class="spec-val">일일 행동 기록 · 바른 착석 유지 시간 · 착용감 설문</span>
             </div>
           </div>
 
         </div>
 
-        <!-- 하단 기획 상태 안내 캡션 (포트폴리오 투명성 확보) -->
+        <!-- 포트폴리오 시뮬레이션 데이터 고지 -->
         <div class="scenarios-notice-box">
           <p class="scenarios-notice-text">
-            ※ 위 내용은 스밈의 0.1mm 코어웨어 기획 사양 및 일상 착용 시나리오를 바탕으로 구성되었으며, 
-            실제 사용자 검증 데이터와 실착 피드백은 추후 단계별로 지속 업데이트될 예정입니다.
+            ※ 본 섹션의 참여자, 기간, 수치 및 인용문은 UX 포트폴리오 구성을 위해 설계한 시뮬레이션 예시 데이터이며,
+            실제 임상·판매·사용자 조사 결과가 아닙니다.
           </p>
         </div>
 
