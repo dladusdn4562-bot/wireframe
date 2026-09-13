@@ -3357,6 +3357,600 @@
       padding: 0 !important;
     }
 
+    /* ==========================================================================
+       [SEC-07~09: Connected Personal Care Journey]
+       맞춤 처방과 파생 솔루션은 한 흐름으로, AI/센터는 후속 선택 카드로 구성
+       ========================================================================== */
+    .validation-care-continuum {
+      position: relative;
+      margin-top: 80px;
+      background:
+        radial-gradient(circle at 87% 61%, rgba(111, 150, 112, 0.12), transparent 29%),
+        linear-gradient(180deg, #F4F4F2 0%, #F4F4F2 39%, #F0F3EF 59%, #EEF2ED 72%, #F4F4F2 100%);
+      overflow: hidden;
+    }
+    .validation-care-continuum::before {
+      content: '';
+      position: absolute;
+      top: 34%;
+      right: -12vw;
+      width: 52vw;
+      height: 52vw;
+      min-width: 560px;
+      min-height: 560px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      filter: blur(2px);
+      pointer-events: none;
+    }
+    .validation-care-continuum .proof-section {
+      margin: 0 !important;
+      padding: 100px 0 88px !important;
+      background: transparent !important;
+      border-top: 0 !important;
+      border-bottom: 0 !important;
+      position: relative;
+      z-index: 1;
+    }
+    .proof-to-care-bridge {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(90px, 1fr) auto minmax(90px, 1fr);
+      align-items: center;
+      gap: 18px;
+      max-width: 1180px;
+      margin: 96px auto 0;
+      padding: 0 clamp(16px, 3.5vw, 28px);
+      color: #6F776F;
+    }
+    .proof-to-care-bridge::before,
+    .proof-to-care-bridge::after {
+      content: '';
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(111, 150, 112, 0.4));
+    }
+    .proof-to-care-bridge::after {
+      background: linear-gradient(90deg, rgba(111, 150, 112, 0.4), transparent);
+    }
+    .proof-to-care-bridge span {
+      display: inline-flex;
+      align-items: center;
+      gap: 18px;
+      color: #687168;
+      font-size: 12px;
+      font-weight: 700 !important;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .proof-to-care-bridge span::before {
+      content: '';
+      width: 9px;
+      height: 9px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: #6F9670;
+      box-shadow: 0 0 0 6px rgba(111, 150, 112, 0.12);
+    }
+    .personal-care-flow {
+      padding: 72px 0 120px;
+      background: transparent;
+      border: 0;
+      position: relative;
+      z-index: 1;
+    }
+    .personal-care-inner { max-width: 1180px; }
+    .personal-care-header {
+      max-width: 780px;
+      margin-bottom: 54px;
+    }
+    .care-flow-kicker,
+    .care-stage-number {
+      display: block;
+      color: #6F9670;
+      font-size: 12px;
+      font-weight: 700 !important;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .personal-care-header h2 {
+      margin: 16px 0 18px;
+      color: #454745;
+      font-family: var(--font-gowun), serif;
+      font-size: clamp(34px, 4vw, 52px);
+      font-weight: 600 !important;
+      line-height: 1.34;
+      letter-spacing: -0.035em;
+    }
+    .personal-care-header p {
+      max-width: 650px;
+      color: #747874;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .care-step-rail {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid rgba(91, 91, 91, 0.25);
+      margin: 0 0 68px;
+    }
+    .care-step-rail li {
+      position: relative;
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+      padding-top: 18px;
+      color: #8B8E8A;
+    }
+    .care-step-rail li::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #CDD2CC;
+      box-shadow: 0 0 0 5px #EEF2ED;
+    }
+    .care-step-rail li.active::before { background: #6F9670; }
+    .care-step-rail li span {
+      color: #6F9670;
+      font-size: 11px;
+      font-weight: 700 !important;
+      letter-spacing: 0.08em;
+    }
+    .care-step-rail li strong {
+      font-size: 13px;
+      font-weight: 600 !important;
+    }
+
+    .care-prescription-stage {
+      display: grid;
+      grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.55fr);
+      gap: clamp(42px, 7vw, 88px);
+      align-items: start;
+      padding-bottom: 74px;
+    }
+    .care-stage-copy h3,
+    .care-collection-copy h3 {
+      margin: 14px 0 14px;
+      color: #454745;
+      font-family: var(--font-gowun), serif;
+      font-size: clamp(24px, 2.4vw, 32px);
+      font-weight: 600 !important;
+      line-height: 1.45;
+      letter-spacing: -0.025em;
+    }
+    .care-stage-copy p,
+    .care-collection-copy p {
+      color: #777B77;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .personal-care-flow .checker-chip-grid {
+      max-width: none !important;
+      margin: 0 0 26px !important;
+      padding: 0 !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      gap: 10px !important;
+    }
+    .personal-care-flow .checker-chip {
+      min-height: 66px !important;
+      padding: 13px 18px !important;
+      border: 1px solid rgba(91, 91, 91, 0.2) !important;
+      border-radius: 14px !important;
+      background: rgba(255, 255, 255, 0.62) !important;
+      box-shadow: none !important;
+      color: #4B4E4B !important;
+      text-align: left !important;
+      transform: none !important;
+      font-family: var(--font-sans) !important;
+      font-size: 13.5px !important;
+      font-weight: 600 !important;
+    }
+    .personal-care-flow .checker-chip:hover {
+      transform: translateY(-2px) !important;
+      border-color: #8EAA91 !important;
+      background: rgba(255, 255, 255, 0.92) !important;
+      box-shadow: 0 7px 18px rgba(69, 88, 74, 0.08) !important;
+    }
+    .personal-care-flow .checker-chip.active {
+      transform: none !important;
+      background: #667F6B !important;
+      border-color: #667F6B !important;
+      color: #FFFFFF !important;
+      box-shadow: 0 8px 22px rgba(75, 102, 82, 0.16) !important;
+    }
+    .personal-care-flow .checker-chip span {
+      display: block;
+      margin: 4px 0 0 25px;
+      color: #8A8E89;
+      font-size: 11.5px;
+      font-weight: 500 !important;
+    }
+    .personal-care-flow .checker-chip.active span { color: rgba(255,255,255,0.72); }
+
+    .personal-care-flow .checker-result-card {
+      padding: 24px 0 22px 20px !important;
+      border: 0 !important;
+      border-left: 2px solid #6F9670 !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 24px !important;
+    }
+    .care-result-main {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 0;
+    }
+    .care-result-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(111, 150, 112, 0.14);
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      font-size: 24px;
+    }
+    .care-result-kicker {
+      color: #5E7B64;
+      font-size: 11.5px;
+      font-weight: 700 !important;
+      letter-spacing: 0.02em;
+    }
+    .care-result-main h4 {
+      margin: 4px 0 5px;
+      color: #3F423F;
+      font-family: var(--font-gowun), serif;
+      font-size: 17px;
+      font-weight: 700 !important;
+      line-height: 1.45;
+    }
+    .care-result-main p {
+      color: #858985;
+      font-size: 12.5px;
+      line-height: 1.6;
+    }
+    .care-result-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+      flex: 0 0 auto;
+    }
+    .care-result-actions > span {
+      color: #919491;
+      font-size: 10.5px;
+    }
+    .care-text-link,
+    .care-collection-link {
+      color: #414541;
+      border-bottom: 1px solid #747974;
+      padding: 4px 0 5px;
+      font-size: 13px;
+      font-weight: 600 !important;
+      transition: color .2s ease, border-color .2s ease;
+      white-space: nowrap;
+    }
+    .care-text-link:hover,
+    .care-collection-link:hover {
+      color: #5E7B64;
+      border-color: #5E7B64;
+    }
+    .care-text-link b { margin-left: 5px; font-weight: 600 !important; }
+
+    .care-collection-continuation {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: end;
+      padding: 62px 0 76px;
+      border-top: 1px solid rgba(91, 91, 91, 0.16);
+      border-bottom: 1px solid rgba(91, 91, 91, 0.16);
+    }
+    .care-continuation-marker {
+      align-self: stretch;
+      position: relative;
+    }
+    .care-continuation-marker::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 15px;
+      width: 1px;
+      background: rgba(111, 150, 112, 0.42);
+    }
+    .care-continuation-marker span {
+      position: absolute;
+      top: 4px;
+      left: 11px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #6F9670;
+      box-shadow: 0 0 0 6px rgba(111, 150, 112, 0.12);
+    }
+    .care-collection-copy { max-width: 680px; }
+    .care-collection-copy h3 { margin-bottom: 10px; }
+    .personal-care-flow .catalog-category-pills {
+      margin-top: 20px;
+      gap: 7px;
+    }
+    .personal-care-flow .cat-pill {
+      background: transparent;
+      border: 1px solid rgba(91, 91, 91, 0.22);
+      color: #686C68;
+      padding: 5px 11px;
+      font-size: 11px;
+      font-weight: 600 !important;
+    }
+    .care-collection-link { margin-bottom: 3px; }
+    .care-collection-link span { margin-left: 8px; }
+
+    .care-followup-section {
+      padding: 88px 0 0;
+      scroll-margin-top: 90px;
+    }
+    .care-followup-header {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .care-followup-header h2 {
+      margin: 14px 0 12px;
+      color: #454745;
+      font-family: var(--font-gowun), serif;
+      font-size: clamp(28px, 3vw, 38px);
+      font-weight: 600 !important;
+      line-height: 1.4;
+      letter-spacing: -0.03em;
+    }
+    .care-followup-header p {
+      color: #7C807C;
+      font-size: 14px;
+    }
+    .personal-care-flow .care-route-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      gap: 18px !important;
+      margin: 42px 0 0 !important;
+    }
+    .personal-care-flow .care-route-card {
+      min-width: 0;
+      min-height: 430px;
+      padding: 34px !important;
+      border: 1px solid rgba(91, 91, 91, 0.17) !important;
+      border-radius: 26px !important;
+      background: rgba(255, 255, 255, 0.84) !important;
+      box-shadow: none !important;
+    }
+    .care-route-topline {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .care-route-index {
+      display: grid;
+      place-items: center;
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      background: #6F9670;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700 !important;
+    }
+    .care-route-label {
+      color: #6F736F;
+      font-size: 11px;
+      font-weight: 600 !important;
+      letter-spacing: .04em;
+    }
+    .care-route-card h3 {
+      margin-bottom: 10px;
+      color: #424542;
+      font-family: var(--font-gowun), serif;
+      font-size: 22px;
+      font-weight: 700 !important;
+      line-height: 1.45;
+    }
+    .care-route-desc {
+      color: #7E827E;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .care-route-card .gauge-container {
+      justify-content: flex-start;
+      margin: 30px 0 !important;
+    }
+    .care-route-card .gauge-circle {
+      width: 116px;
+      height: 116px;
+      background: conic-gradient(#6F9670 0 95%, #E3E8E2 95% 100%);
+    }
+    .care-route-card .gauge-inner {
+      width: 88px;
+      height: 88px;
+      background: #fff;
+    }
+    .care-angle-list {
+      flex: 1;
+      min-width: 0;
+      font-size: 12.5px;
+    }
+    .care-angle-list > div {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(91,91,91,.12);
+      color: #858985;
+    }
+    .care-angle-list > div.is-good {
+      display: block;
+      padding-top: 0;
+      color: #5E7B64;
+      font-weight: 700 !important;
+    }
+    .care-angle-list strong {
+      color: #4D504D;
+      font-weight: 600 !important;
+      white-space: nowrap;
+    }
+    .care-center-preview {
+      display: grid;
+      grid-template-columns: 132px 1fr;
+      gap: 20px;
+      align-items: center;
+      min-height: 146px;
+      margin: 24px 0 30px;
+      padding: 16px;
+      border-radius: 18px;
+      background: #EEF2ED;
+    }
+    .care-center-map {
+      height: 112px;
+      border-radius: 14px;
+      background:
+        linear-gradient(32deg, transparent 47%, rgba(111,150,112,.24) 48%, rgba(111,150,112,.24) 51%, transparent 52%),
+        linear-gradient(-24deg, transparent 46%, rgba(91,91,91,.12) 47%, rgba(91,91,91,.12) 50%, transparent 51%),
+        #F9FAF8;
+      position: relative;
+      overflow: hidden;
+    }
+    .map-pulse {
+      position: absolute;
+      top: 44px;
+      left: 62px;
+      width: 12px;
+      height: 12px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      background: #6F9670;
+      box-shadow: 0 0 0 9px rgba(111,150,112,.18), 0 5px 12px rgba(50,75,58,.2);
+    }
+    .care-center-info > span {
+      color: #6F9670;
+      font-size: 10.5px;
+      font-weight: 700 !important;
+    }
+    .care-center-info strong {
+      display: block;
+      margin: 5px 0;
+      color: #454845;
+      font-size: 15px;
+      font-weight: 700 !important;
+    }
+    .care-center-info p {
+      color: #818581;
+      font-size: 11.5px;
+      line-height: 1.55;
+    }
+    .care-route-cta {
+      width: 100% !important;
+      justify-content: center !important;
+      margin-top: auto;
+    }
+
+    @media (max-width: 900px) {
+      .validation-care-continuum { margin-top: 64px; }
+      .validation-care-continuum .proof-section { padding: 88px 0 76px !important; }
+      .proof-to-care-bridge {
+        gap: 14px;
+        margin-top: 72px;
+      }
+      .personal-care-flow { padding: 64px 0 90px; }
+      .personal-care-header { margin-bottom: 44px; }
+      .care-step-rail { margin-bottom: 52px; }
+      .care-prescription-stage {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-bottom: 56px;
+      }
+      .care-stage-copy { max-width: 600px; }
+      .care-collection-continuation {
+        grid-template-columns: 36px minmax(0, 1fr);
+        padding: 54px 0 62px;
+      }
+      .care-collection-link {
+        grid-column: 2;
+        justify-self: start;
+        margin-top: 8px;
+      }
+      .personal-care-flow .care-route-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .personal-care-flow .care-route-card { min-height: 400px; }
+    }
+
+    @media (max-width: 560px) {
+      .validation-care-continuum { margin-top: 48px; }
+      .validation-care-continuum .proof-section { padding: 72px 0 64px !important; }
+      .proof-to-care-bridge {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 48px;
+      }
+      .proof-to-care-bridge::before { display: none; }
+      .proof-to-care-bridge::after {
+        background: linear-gradient(90deg, rgba(111, 150, 112, 0.4), transparent);
+      }
+      .proof-to-care-bridge span {
+        gap: 13px;
+        font-size: 10.5px;
+        line-height: 1.55;
+        text-transform: none;
+      }
+      .personal-care-flow { padding: 54px 0 76px; }
+      .personal-care-header h2 { font-size: 30px; }
+      .personal-care-header p { font-size: 13.5px; }
+      .care-step-rail li {
+        display: block;
+        padding-right: 8px;
+      }
+      .care-step-rail li span { display: block; margin-bottom: 3px; }
+      .care-step-rail li strong { font-size: 10.5px; line-height: 1.35; display: block; }
+      .personal-care-flow .checker-chip-grid { grid-template-columns: 1fr !important; }
+      .personal-care-flow .checker-chip { min-height: 60px !important; }
+      .personal-care-flow .checker-result-card {
+        align-items: flex-start !important;
+        flex-direction: column !important;
+        padding-left: 16px !important;
+      }
+      .care-result-main { align-items: flex-start; }
+      .care-result-icon { width: 42px; height: 42px; font-size: 20px; }
+      .care-result-main h4 { font-size: 15px; }
+      .care-result-actions { align-items: flex-start; padding-left: 58px; }
+      .care-collection-continuation { grid-template-columns: 1fr; gap: 16px; }
+      .care-continuation-marker { display: none; }
+      .care-collection-link { grid-column: 1; }
+      .care-followup-section { padding-top: 68px; }
+      .care-followup-header { text-align: left; }
+      .care-followup-header h2 { font-size: 27px; }
+      .personal-care-flow .care-route-card {
+        min-height: 0;
+        padding: 24px 20px !important;
+      }
+      .care-route-card .gauge-container {
+        flex-direction: column !important;
+        align-items: stretch !important;
+      }
+      .care-route-card .gauge-circle { align-self: center; }
+      .care-center-preview { grid-template-columns: 1fr; }
+      .care-center-map { height: 120px; }
+      .map-pulse { left: 48%; }
+    }
+
   </style>
 </head>
 <body>
@@ -3842,6 +4436,7 @@
          [SEC-07: 포트폴리오용 가상 사용자 실착 검증 (04 · DAILY RELIEF)]
          가설→테스트 조건→정량 결과→사용자 발언으로 이어지는 검증 결과 에디토리얼
          ========================================================================== -->
+    <div class="validation-care-continuum">
     <section class="proof-section" id="sec-user-scenarios">
       <div class="container" style="max-width: 1440px;">
         
@@ -3987,108 +4582,141 @@
       </div>
     </section>
 
-    <!-- [자가진단 위젯: 3초 맞춤 처방 · 체형 밸런스 파인더] -->
-    <div class="balance-checker-container" id="self-checker-sec" style="margin: 60px auto 40px;">
-      <div class="section-tag">3초 맞춤 처방 · 체형 밸런스 파인더</div>
-      <h3 style="font-family:var(--font-gowun), serif; font-size:24px; font-weight:800; color:#5B5B5B; margin:10px 0 6px;">
-        "당신의 하루 중 가장 치열한 작업 환경은 어디인가요?"
-      </h3>
-      <p style="font-size:14.5px; color:#B0B0B0; margin:0;">
-        작업 환경을 선택하시면, 신체 부하를 분산시키는 <span class="highlight-peach">0.1mm 맞춤 코어웨어 조합</span>을 즉시 처방해 드립니다.
-      </p>
-      <div class="checker-chip-grid">
-        <button class="checker-chip active" onclick="selectCheckerJob(0, this)">💻 모니터 앞 8시간 (거북목·말린어깨)</button>
-        <button class="checker-chip" onclick="selectCheckerJob(1, this)">🧍 하루 6시간 기립·이동 (허리·골반 틀어짐)</button>
-        <button class="checker-chip" onclick="selectCheckerJob(2, this)">🚗 장시간 운전·출장 (허리 뻐근함·다리 꼬기)</button>
-        <button class="checker-chip" onclick="selectCheckerJob(3, this)">🎨 정밀 작업·수작업 (손목·승모근 결림)</button>
-      </div>
-      <div class="checker-result-card" id="checker-result-box">
-        <div style="display:flex; align-items:center; gap:16px;">
-          <div style="font-size:32px; background:#EFF4EE; width:54px; height:54px; border-radius:9999px; display:flex; align-items:center; justify-content:center;">
-            🌿
-          </div>
-          <div>
-            <div style="font-size:12.5px; color:#6F9670; font-weight:800;">[모니터 근무 직장인 맞춤 추천]</div>
-            <div style="font-family:var(--font-gowun), serif; font-size:17px; font-weight:800; color:#5B5B5B; margin:3px 0;">
-              0.1mm 심리스 넥&숄더 밴드 + 척추 정렬 조끼
-            </div>
-            <div style="font-size:13px; color:#B0B0B0;">
-              키보드 타건 시 발생하는 전방 두부 쏠림 4.2kg 하중을 승모근 뒤쪽으로 0.1초 분산
-            </div>
-          </div>
-        </div>
-        <button class="btn-primary" onclick="filterCatalogByTag('cat_neck')" style="padding:10px 18px; font-size:13px; border-radius:9999px; white-space:nowrap;">
-          맞춤 제품 보러가기 ➔
-        </button>
-      </div>
+    <div class="proof-to-care-bridge">
+      <span>검증된 일상에서, 나에게 맞는 케어로</span>
     </div>
 
-    <!-- [메인 전용 전환 배너] 15개 전 상품 카탈로그 서브페이지로 이동 안내 -->
-    <section class="container">
-      <div class="explore-catalog-banner">
-        <div class="catalog-banner-left">
-          <div class="catalog-tag">FULL COLLECTION (15 PRODUCTS)</div>
-          <h3 class="catalog-banner-title">더 많은 부위별 파생 맞춤 솔루션이 필요하신가요?</h3>
-          <p class="catalog-banner-desc">
-            스밈은 3대 대표작 외에도 각 부위별 케어를 완성하는 
-            <strong>3대 파생 라인 총 15종의 체형 맞춤 라인업</strong>을 완비하고 있습니다. 
-            서브페이지에서 어깨·척추·골반 파생 전체 상품을 탐색하고 비교해 보세요.
-          </p>
-          <div class="catalog-category-pills">
-            <span class="cat-pill">어깨 · 경추 케어 5종</span>
-            <span class="cat-pill">척추 · 허리 케어 5종</span>
-            <span class="cat-pill">골반 · 하체 케어 5종</span>
-          </div>
-        </div>
-        <div>
-          <button class="btn-primary btn-accent" style="padding:16px 28px; font-size:15px; white-space:nowrap;" onclick="switchPage('page-shop')">
-            15종 전 상품 컬렉션 보러가기 ➔
-          </button>
-        </div>
-      </div>
-    </section>
+    <!-- SEC-07~09: 맞춤 처방에서 정밀 케어까지 이어지는 단일 여정 -->
+    <section class="personal-care-flow" id="self-checker-sec">
+      <div class="container personal-care-inner">
+        <header class="personal-care-header">
+          <div class="care-flow-kicker">PERSONAL CARE JOURNEY</div>
+          <h2>내 하루를 고르면,<br>맞는 케어가 자연스럽게 이어집니다</h2>
+          <p>간단한 작업 환경 선택부터 맞춤 제품, AI 측정과 전문가 상담까지 한 흐름 안에서 확인해 보세요.</p>
+        </header>
 
-    <!-- SEC-09: AI HUD & 오프라인 센터 (원본 복원 상태 유지) -->
-    <section id="sec-hud" class="container">
-      <div class="hud-center-grid">
-        <div class="hud-card">
-          <div class="section-tag">AI REALTIME HUD</div>
-          <h3 style="font-size:22px; font-weight:800; color:var(--color-forest); margin-bottom:10px;">AI 실시간 자세 각도 대시보드</h3>
-          <p style="font-size:13.5px; color:var(--color-text-secondary);">스마트 센서 섬유가 0.05도 단위로 척추 틀어짐을 감지하여 실시간 자세 점수를 표시합니다.</p>
-          
-          <div class="gauge-container">
-            <div class="gauge-circle">
-              <div class="gauge-inner">
-                <div class="gauge-score">95</div>
-                <div class="gauge-unit">바른 균형 점수</div>
+        <ol class="care-step-rail" aria-label="스밈 맞춤 케어 진행 단계">
+          <li class="active"><span>01</span><strong>작업 환경 선택</strong></li>
+          <li><span>02</span><strong>맞춤 솔루션 확인</strong></li>
+          <li><span>03</span><strong>정밀 케어 선택</strong></li>
+        </ol>
+
+        <div class="care-prescription-stage">
+          <div class="care-stage-copy">
+            <span class="care-stage-number">STEP 01 · 3초 맞춤 처방</span>
+            <h3>하루 중 몸이 가장 지치는 순간을 알려주세요</h3>
+            <p>반복되는 자세와 작업 습관을 기준으로 신체 부하를 분산시키는 0.1mm 코어웨어 조합을 제안합니다.</p>
+          </div>
+
+          <div class="care-stage-action">
+            <div class="checker-chip-grid">
+              <button class="checker-chip active" onclick="selectCheckerJob(0, this)">💻 모니터 앞 8시간 <span>거북목·말린 어깨</span></button>
+              <button class="checker-chip" onclick="selectCheckerJob(1, this)">🧍 하루 6시간 기립·이동 <span>허리·골반 틀어짐</span></button>
+              <button class="checker-chip" onclick="selectCheckerJob(2, this)">🚗 장시간 운전·출장 <span>허리 뻐근함·다리 꼬기</span></button>
+              <button class="checker-chip" onclick="selectCheckerJob(3, this)">🎨 정밀 작업·수작업 <span>손목·승모근 결림</span></button>
+            </div>
+
+            <div class="checker-result-card" id="checker-result-box" aria-live="polite">
+              <div class="care-result-main">
+                <div class="care-result-icon">🌿</div>
+                <div>
+                  <div class="care-result-kicker">모니터 근무 직장인 우선 처방</div>
+                  <h4>0.1mm 심리스 넥&amp;숄더 밴드 + 척추 정렬 조끼</h4>
+                  <p>키보드 타건 시 발생하는 전방 두부 쏠림 하중을 승모근 뒤쪽으로 빠르게 분산합니다.</p>
+                </div>
+              </div>
+              <div class="care-result-actions">
+                <span>추천 조합 2종</span>
+                <button class="care-text-link" onclick="filterCatalogByTag('cat_neck')">추천 제품 보기 <b>→</b></button>
               </div>
             </div>
-            <div style="font-size:13px; line-height:1.6;">
-              <div style="font-weight:700; color:var(--color-sage);">● 정상 정렬 상태 (95점)</div>
-              <div style="color:var(--color-text-muted);">• 경추 각도: 14도 (안정)</div>
-              <div style="color:var(--color-text-muted);">• 좌우 골반 수평 편차: 0.2cm</div>
+          </div>
+        </div>
+
+        <div class="care-collection-continuation">
+          <div class="care-continuation-marker" aria-hidden="true"><span></span></div>
+          <div class="care-collection-copy">
+            <div class="care-stage-number">STEP 02 · 맞춤 솔루션 확장</div>
+            <h3>추천 조합에서 내 몸에 필요한 라인으로 더 깊게</h3>
+            <p>대표 제품을 중심으로 어깨·척추·골반까지 이어지는 15종의 파생 솔루션을 비교할 수 있습니다.</p>
+            <div class="catalog-category-pills">
+              <span class="cat-pill">어깨 · 경추 케어 5종</span>
+              <span class="cat-pill">척추 · 허리 케어 5종</span>
+              <span class="cat-pill">골반 · 하체 케어 5종</span>
             </div>
           </div>
-          <button class="btn-primary" style="width:100%; justify-content:center;" onclick="alert('웹캠과 연동하여 10초 AI 자세 측정을 시작합니다.')">
-            10초 AI 자세 측정 시작하기
+          <button class="care-collection-link" onclick="switchPage('page-shop')">
+            15종 전 상품 비교하기 <span>→</span>
           </button>
         </div>
 
-        <div class="center-card">
-          <div class="section-tag" style="color:var(--color-terracotta);">O2O WELLNESS CENTER</div>
-          <h3 style="font-size:22px; font-weight:800; color:var(--color-forest); margin-bottom:10px;">전국 웰니스 센터 1:1 무료 진단</h3>
-          <p style="font-size:13.5px; color:var(--color-text-secondary);">전국 12개 직영/제휴 센터에서 전문 물리치료사의 3D 체형 측정 및 실착 진단을 무료로 받으세요.</p>
-          
-          <div style="background:var(--bg-card); padding:16px; border-radius:var(--radius-md); margin:20px 0; font-size:13px;">
-            <div style="font-weight:700; margin-bottom:4px;">📍 가까운 스밈 웰니스 센터 (강남 플래그십)</div>
-            <div style="color:var(--color-text-secondary);">서울 강남구 테헤란로 152 강남파이낸스센터 3F (예약 가능)</div>
+        <section id="sec-hud" class="care-followup-section">
+          <div class="care-followup-header">
+            <div class="care-stage-number">STEP 03 · DEEPER CARE</div>
+            <h2>추천을 더 정확하게 확인하는 두 가지 방법</h2>
+            <p>지금 바로 자세를 측정하거나, 가까운 센터에서 전문가와 함께 확인해 보세요.</p>
           </div>
-          <button class="btn-primary btn-accent" style="width:100%; justify-content:center;" onclick="openCenterModal()">
-            오프라인 1회 무료 체험 예약하기
-          </button>
-        </div>
+
+          <div class="hud-center-grid care-route-grid">
+            <article class="hud-card care-route-card">
+              <div>
+                <div class="care-route-topline">
+                  <span class="care-route-index">01</span>
+                  <span class="care-route-label">바로 확인하기</span>
+                </div>
+                <h3>AI 실시간 자세 각도 대시보드</h3>
+                <p class="care-route-desc">스마트 센서 섬유가 0.05도 단위로 척추 틀어짐을 감지해 현재의 자세 점수를 보여줍니다.</p>
+              </div>
+
+              <div class="gauge-container">
+                <div class="gauge-circle">
+                  <div class="gauge-inner">
+                    <div class="gauge-score">95</div>
+                    <div class="gauge-unit">바른 균형 점수</div>
+                  </div>
+                </div>
+                <div class="care-angle-list">
+                  <div class="is-good">● 정상 정렬 상태</div>
+                  <div><span>경추 각도</span><strong>14° 안정</strong></div>
+                  <div><span>골반 수평 편차</span><strong>0.2cm</strong></div>
+                </div>
+              </div>
+              <button class="btn-primary care-route-cta" onclick="alert('웹캠과 연동하여 10초 AI 자세 측정을 시작합니다.')">
+                10초 AI 자세 측정 시작하기
+              </button>
+            </article>
+
+            <article class="center-card care-route-card">
+              <div>
+                <div class="care-route-topline">
+                  <span class="care-route-index">02</span>
+                  <span class="care-route-label">전문가와 확인하기</span>
+                </div>
+                <h3>전국 웰니스 센터 1:1 무료 진단</h3>
+                <p class="care-route-desc">AI 측정 결과를 바탕으로 전문 물리치료사에게 3D 체형 측정과 실착 상담을 받을 수 있습니다.</p>
+              </div>
+
+              <div class="care-center-preview">
+                <div class="care-center-map" aria-hidden="true">
+                  <span class="map-pulse"></span>
+                  <span class="map-line line-one"></span>
+                  <span class="map-line line-two"></span>
+                </div>
+                <div class="care-center-info">
+                  <span>가장 가까운 센터 · 1.2km</span>
+                  <strong>강남 플래그십 센터</strong>
+                  <p>서울 강남구 테헤란로 152 · 오늘 예약 가능</p>
+                </div>
+              </div>
+              <button class="btn-primary btn-accent care-route-cta" onclick="openCenterModal()">
+                가까운 센터에서 무료 진단 예약하기
+              </button>
+            </article>
+          </div>
+        </section>
       </div>
     </section>
+    </div>
 
     <!-- SEC-10: FAQ -->
     <section class="container faq-container">
@@ -5379,8 +6007,10 @@
 
     function updateBadges() {
       const wishCount = PRODUCTS_15.filter(p => p.isWished).length;
-      document.getElementById('gnb-wish-count').innerText = wishCount;
-      document.getElementById('gnb-cart-count').innerText = cartList.length;
+      const wishBadge = document.getElementById('gnb-wish-count');
+      const cartBadge = document.getElementById('gnb-cart-count');
+      if (wishBadge) wishBadge.innerText = wishCount;
+      if (cartBadge) cartBadge.innerText = cartList.length;
     }
 
     function openWishlistModal() {
@@ -5471,9 +6101,18 @@
 
     function filterShopPage(cat, btn) {
       document.querySelectorAll('#page-shop .showcase-tabs .tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+      if (btn) btn.classList.add('active');
       const filtered = cat === 'all' ? PRODUCTS_15 : PRODUCTS_15.filter(p => p.cat === cat);
       renderProducts('shop-products-grid', filtered);
+    }
+
+    function filterCatalogByTag(cat) {
+      const categoryIndex = { cat_neck: 1, cat_spine: 2, cat_pelvis: 3 };
+      const tabs = document.querySelectorAll('#page-shop .showcase-tabs .tab-btn');
+      const targetTab = tabs[categoryIndex[cat]] || tabs[0];
+      switchPage('page-shop');
+      filterShopPage(cat, targetTab);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function updateFitFinder(height, weight) {
@@ -5918,23 +6557,18 @@
       const box = document.getElementById('checker-result-box');
       if (box) {
         box.innerHTML = `
-          <div style="display:flex; align-items:center; gap:16px;">
-            <div style="font-size:32px; background:#EFF4EE; width:54px; height:54px; border-radius:9999px; display:flex; align-items:center; justify-content:center;">
-              ${p.icon}
-            </div>
+          <div class="care-result-main">
+            <div class="care-result-icon">${p.icon}</div>
             <div>
-              <div style="font-size:12.5px; color:#4C6649; font-weight:800;">[${p.tag}]</div>
-              <div style="font-family:var(--font-gowun), serif; font-size:17px; font-weight:800; color:#4A433E; margin:3px 0;">
-                ${p.title}
-              </div>
-              <div style="font-size:13px; color:#7A7067;">
-                ${p.desc}
-              </div>
+              <div class="care-result-kicker">${p.tag}</div>
+              <h4>${p.title}</h4>
+              <p>${p.desc}</p>
             </div>
           </div>
-          <button class="btn-primary" onclick="filterCatalogByTag('${p.filter}')" style="padding:10px 18px; font-size:13px; border-radius:9999px; white-space:nowrap;">
-            처방 상품 보러가기 ➔
-          </button>
+          <div class="care-result-actions">
+            <span>추천 조합 2종</span>
+            <button class="care-text-link" onclick="filterCatalogByTag('${p.filter}')">추천 제품 보기 <b>→</b></button>
+          </div>
         `;
       }
     }
