@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1860" height="1034" viewBox="0 0 1860 1034" role="img" aria-labelledby="title description">
+  <title id="title">자세 관리 제품 경쟁사 분석</title>
+  <desc id="description">SNPE 운동, 커블체어, UPRIGHT GO 2의 기능 범위와 장점, 사용상 한계를 비교한 포트폴리오용 표</desc>
+  <defs>
+    <style><![CDATA[
+      text { font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #252a29; }
+      .eyebrow { font-size: 19px; font-weight: 800; letter-spacing: 2.3px; fill: #49675b; }
+      .headline { font-size: 38px; font-weight: 800; letter-spacing: -1.7px; }
+      .subtitle { font-size: 20px; font-weight: 500; fill: #6a706e; }
+      .head { font-size: 19px; font-weight: 700; }
+      .brand { font-size: 23px; font-weight: 800; letter-spacing: -0.6px; }
+      .type { font-size: 16px; font-weight: 600; fill: #777f7b; }
+      .body { font-size: 17px; font-weight: 600; letter-spacing: -0.45px; }
+      .note { font-size: 15px; font-weight: 500; fill: #65716b; }
+      .source { font-size: 14px; font-weight: 600; fill: #526e62; text-decoration: underline; }
+      .mark { font-size: 25px; font-weight: 800; fill: white; }
+    ]]></style>
+    <filter id="cardShadow" x="-10%" y="-30%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="11" flood-color="#5c493f" flood-opacity="0.055"/>
+    </filter>
+    <clipPath id="clip1"><rect x="140" y="420" width="1580" height="139" rx="27"/></clipPath>
+    <clipPath id="clip2"><rect x="140" y="577" width="1580" height="139" rx="27"/></clipPath>
+    <clipPath id="clip3"><rect x="140" y="734" width="1580" height="139" rx="27"/></clipPath>
+  </defs>
+
+  <rect width="1860" height="1034" fill="#fcf8f6"/>
+  <rect width="1860" height="5" fill="#edddd5"/>
+
+  <text x="930" y="151" text-anchor="middle" class="eyebrow">COMPETITIVE ANALYSIS</text>
+  <text x="930" y="219" text-anchor="middle" class="headline">기존 자세 관리 제품은 어떤 경험을 제공할까?</text>
+  <text x="930" y="264" text-anchor="middle" class="subtitle">운동형 · 거치형 · 센서형 제품의 기능과 사용상 한계를 비교했습니다.</text>
+
+  <g fill="#eeedeb">
+    <path d="M345 420 V361 Q345 337 369 337 H476 Q500 337 500 361 V420 Z"/>
+    <path d="M506 420 V361 Q506 337 530 337 H637 Q661 337 661 361 V420 Z"/>
+    <path d="M667 420 V361 Q667 337 691 337 H798 Q822 337 822 361 V420 Z"/>
+    <path d="M828 420 V361 Q828 337 852 337 H959 Q983 337 983 361 V420 Z"/>
+    <path d="M989 420 V361 Q989 337 1013 337 H1120 Q1144 337 1144 361 V420 Z"/>
+  </g>
+  <text x="423" y="382" text-anchor="middle" class="head">운동 루틴</text>
+  <text x="584" y="382" text-anchor="middle" class="head">착석 보조</text>
+  <text x="745" y="382" text-anchor="middle" class="head">자세 감지</text>
+  <text x="906" y="382" text-anchor="middle" class="head">즉시 알림</text>
+  <text x="1066" y="382" text-anchor="middle" class="head">앱 기록</text>
+
+  <path d="M1171 420 V360 Q1171 325 1206 325 H1394 Q1429 325 1429 360 V420 Z" fill="#dfe8f2"/>
+  <path d="M1443 420 V360 Q1443 325 1478 325 H1684 Q1719 325 1719 360 V420 Z" fill="#fae4e7"/>
+  <text x="1300" y="378" text-anchor="middle" class="head" fill="#3b658d">장점</text>
+  <text x="1581" y="378" text-anchor="middle" class="head" fill="#b65571">한계점</text>
+
+  <g filter="url(#cardShadow)">
+    <rect x="140" y="420" width="1580" height="139" rx="27" fill="#fff" stroke="#e8e4e0"/>
+    <rect x="140" y="577" width="1580" height="139" rx="27" fill="#fff" stroke="#e8e4e0"/>
+    <rect x="140" y="734" width="1580" height="139" rx="27" fill="#fff" stroke="#e8e4e0"/>
+  </g>
+  <g clip-path="url(#clip1)"><rect x="1171" y="420" width="258" height="139" fill="#edf2f7"/><rect x="1443" y="420" width="276" height="139" fill="#fcf0f2"/></g>
+  <g clip-path="url(#clip2)"><rect x="1171" y="577" width="258" height="139" fill="#edf2f7"/><rect x="1443" y="577" width="276" height="139" fill="#fcf0f2"/></g>
+  <g clip-path="url(#clip3)"><rect x="1171" y="734" width="258" height="139" fill="#edf2f7"/><rect x="1443" y="734" width="276" height="139" fill="#fcf0f2"/></g>
+
+  <g stroke="#d5d5d2" stroke-width="1.6" stroke-dasharray="5 6">
+    <path d="M503 420 V873"/><path d="M664 420 V873"/><path d="M825 420 V873"/><path d="M986 420 V873"/>
+  </g>
+  <rect x="345" y="468" width="798" height="44" rx="22" fill="#e7e6e3"/>
+  <rect x="349" y="472" width="151" height="36" rx="18" fill="#d79868"/>
+  <rect x="345" y="625" width="798" height="44" rx="22" fill="#e7e6e3"/>
+  <rect x="506" y="629" width="155" height="36" rx="18" fill="#a4a792"/>
+  <rect x="345" y="782" width="798" height="44" rx="22" fill="#e7e6e3"/>
+  <rect x="667" y="786" width="473" height="36" rx="18" fill="#7e89ae"/>
+
+  <rect x="158" y="463" width="54" height="54" rx="16" fill="#f4e5d9"/>
+  <text x="185" y="498" text-anchor="middle" class="mark">S</text>
+  <text x="225" y="480" class="brand">SNPE</text>
+  <text x="225" y="507" class="type">운동 프로그램</text>
+
+  <rect x="158" y="620" width="54" height="54" rx="16" fill="#e7e9df"/>
+  <text x="185" y="655" text-anchor="middle" class="mark">C</text>
+  <text x="225" y="637" class="brand">커블체어</text>
+  <text x="225" y="664" class="type">착석형 보조</text>
+
+  <rect x="158" y="777" width="54" height="54" rx="16" fill="#e7e9f3"/>
+  <text x="185" y="812" text-anchor="middle" class="mark">U</text>
+  <text x="225" y="794" class="brand" style="font-size:17px">UPRIGHT GO 2</text>
+  <text x="225" y="821" class="type">부착형 센서</text>
+
+  <g class="body">
+    <text x="1191" y="476"><tspan>• 능동적 자세 운동</tspan><tspan x="1191" dy="36">• 반복 학습 중심</tspan></text>
+    <text x="1463" y="476"><tspan>• 강습 일정에 맞춰 참여</tspan><tspan x="1463" dy="36">• 운동기구 별도 구매</tspan></text>
+    <text x="1191" y="633"><tspan>• 착석 자세 물리 지지</tspan><tspan x="1191" dy="36">• 의자 위에 바로 배치</tspan></text>
+    <text x="1463" y="633"><tspan>• 앉아 있을 때만 사용</tspan><tspan x="1463" dy="36">• 감지·기록 기능 없음</tspan></text>
+    <text x="1191" y="790"><tspan>• 자세 감지·진동 알림</tspan><tspan x="1191" dy="36">• 앱 목표·데이터 관리</tspan></text>
+    <text x="1463" y="790"><tspan>• 피부 부착·목걸이 착용</tspan><tspan x="1463" dy="36">• 물리적 지지 없음</tspan></text>
+  </g>
+
+  <text x="143" y="926" class="note">● 색 막대는 해당 제품·프로그램의 공식 안내에 나타난 기능 범위이며, 효과의 우열이나 성능 점수를 뜻하지 않습니다.</text>
+  <text x="143" y="958" class="note">출처:</text>
+  <a xlink:href="https://www.ksponco.or.kr/sports/courses/67?mid=a60101000000" target="_blank"><text x="193" y="958" class="source">올림픽공원스포츠센터 · SNPE</text></a>
+  <text x="409" y="958" class="note">/</text>
+  <a xlink:href="https://www.curble.co.kr/" target="_blank"><text x="429" y="958" class="source">커블체어 공식몰</text></a>
+  <text x="566" y="958" class="note">/</text>
+  <a xlink:href="https://store.uprightpose.com/" target="_blank"><text x="586" y="958" class="source">UPRIGHT 공식몰</text></a>
+</svg>
