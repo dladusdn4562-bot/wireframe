@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEUMIM | 두 사용자, 하나의 균형</title>
+  <style>
+    :root { --paper:#f8f6f1; --cream:#fffefa; --ink:#292d2a; --teal:#214d49; --sage:#789d91; --sand:#d9cbb6; --muted:#6d746e; --rule:#d9ddd5; }
+    * { box-sizing:border-box; }
+    html { background:#eae7df; }
+    body { margin:0; font-family:Pretendard,"Malgun Gothic",sans-serif; color:var(--ink); -webkit-font-smoothing:antialiased; }
+    .sheet { position:relative; width:1600px; min-height:1600px; margin:auto; padding:74px 94px 52px; overflow:hidden; background:var(--paper); }
+    .sheet::before { content:""; position:absolute; inset:0; pointer-events:none; opacity:.43; background-image:repeating-linear-gradient(0deg,transparent 0 76px,rgba(120,157,145,.045) 77px 78px); }
+    .topline,.hero,.persona-row,.direction,.source { position:relative; z-index:1; }
+    .topline { display:flex; justify-content:space-between; align-items:center; gap:40px; }
+    .brand { display:flex; align-items:center; gap:13px; color:var(--teal); }
+    .brand-mark { width:41px; height:41px; flex:none; }
+    .brand-name { font-size:23px; font-weight:800; letter-spacing:.15em; }
+    .brand-korean { margin-left:3px; font-size:13px; font-weight:600; letter-spacing:0; color:#687b72; }
+    .process-label { color:#718077; font-size:14px; font-weight:700; letter-spacing:.14em; }
+    .hero { display:grid; grid-template-columns:minmax(0,1fr) 250px; align-items:end; margin-top:76px; padding-bottom:58px; }
+    .hero-kicker { color:var(--sage); font-size:15px; font-weight:800; letter-spacing:.18em; margin:0 0 19px; }
+    h1 { max-width:1050px; margin:0; color:var(--teal); font-size:61px; font-weight:650; line-height:1.19; letter-spacing:-.057em; }
+    .hero-desc { margin:24px 0 0; color:#56615a; font-size:20px; line-height:1.5; letter-spacing:-.02em; }
+    .hero-side { align-self:end; padding:0 0 10px 30px; border-left:1px solid #afc2b7; color:var(--teal); }
+    .hero-side strong { display:block; font-size:48px; line-height:1; font-weight:500; letter-spacing:-.055em; }
+    .hero-side span { display:block; margin-top:9px; font-size:14px; line-height:1.45; letter-spacing:.07em; }
+    .hero-curve { position:absolute; right:-6px; top:-56px; width:310px; height:300px; opacity:.55; pointer-events:none; }
+    .persona-row { display:grid; grid-template-columns:500px minmax(0,1fr); gap:88px; border-top:1px solid var(--rule); padding:48px 0 52px; min-height:472px; }
+    .persona-row.reverse { grid-template-columns:minmax(0,1fr) 500px; }
+    .identity { position:relative; min-height:360px; padding:23px 30px 25px 36px; border-left:3px solid var(--sage); background:linear-gradient(115deg,#eaf0e9 0%,rgba(234,240,233,.55) 62%,transparent 100%); border-radius:0 90px 0 0; overflow:hidden; }
+    .identity::after { content:""; position:absolute; right:-36px; bottom:3px; width:280px; height:86px; opacity:.35; background:repeating-linear-gradient(0deg,transparent 0 17px,#a4bdb2 18px 19px); transform:rotate(-10deg); }
+    .reverse .identity { border-left-color:#b5a88f; background:linear-gradient(115deg,#eee8dd 0%,rgba(238,232,221,.55) 62%,transparent 100%); }
+    .reverse .identity::after { background:repeating-linear-gradient(0deg,transparent 0 17px,#c3b69f 18px 19px); }
+    .identity > * { position:relative; z-index:1; }
+    .identity-head { display:flex; align-items:end; gap:18px; }
+    .number { color:#86a89b; font-size:77px; font-weight:400; line-height:.88; letter-spacing:-.1em; }
+    .reverse .number { color:#b9a88e; }
+    .identity-tag { padding-bottom:7px; color:var(--teal); font-size:15px; font-weight:800; line-height:1.4; letter-spacing:.04em; }
+    .name { margin:22px 0 3px; color:var(--teal); font-size:47px; font-weight:650; letter-spacing:-.055em; }
+    .role { margin:0; font-size:17px; font-weight:600; line-height:1.5; color:#56635a; }
+    .quote { max-width:430px; margin:28px 0 0; color:#314c44; font-size:25px; font-weight:650; line-height:1.48; letter-spacing:-.045em; }
+    .quote-mark { color:#86a89b; font-size:50px; line-height:0; vertical-align:-.24em; margin-right:4px; }
+    .reverse .quote-mark { color:#b9a88e; }
+    .analysis { padding:6px 0 0; }
+    .eyebrow { margin:0; color:var(--sage); font-size:14px; letter-spacing:.15em; font-weight:800; }
+    .reverse .eyebrow { color:#a8916e; }
+    .scene { margin:14px 0 0; font-size:23px; line-height:1.55; letter-spacing:-.04em; font-weight:500; }
+    .scene strong { color:var(--teal); font-weight:700; box-shadow:inset 0 -8px 0 #dbe8dc; }
+    .reverse .scene strong { box-shadow:inset 0 -8px 0 #e9dfcf; }
+    .analysis-bottom { display:grid; grid-template-columns:1fr 1fr; gap:33px; margin-top:29px; }
+    .analysis-col { border-top:1px solid #b9cbbd; padding-top:17px; }
+    .reverse .analysis-col { border-top-color:#cbbda8; }
+    .analysis-col h3 { margin:0 0 12px; color:var(--teal); font-size:14px; letter-spacing:.12em; font-weight:800; }
+    .analysis-col ul { margin:0; padding-left:19px; font-size:17px; line-height:1.5; letter-spacing:-.025em; }
+    .analysis-col li + li { margin-top:8px; }
+    .direction { display:grid; grid-template-columns:270px minmax(0,1fr); gap:35px; align-items:center; margin-top:17px; min-height:145px; padding:27px 36px; background:var(--teal); color:#f6f3e9; border-radius:7px 68px 7px 7px; }
+    .direction-label { font-size:14px; letter-spacing:.15em; font-weight:800; color:#b6d1c4; }
+    .direction h2 { margin:0; font-size:26px; line-height:1.5; font-weight:550; letter-spacing:-.035em; }
+    .direction h2 strong { color:#dfe8d6; font-weight:800; }
+    .source { margin:18px 0 0; color:#909990; font-size:12.5px; line-height:1.5; }
+    @media screen and (max-width:1000px) { .sheet { width:100%; min-height:0; padding:45px 26px; } .hero { display:block; } .hero-side,.hero-curve { display:none; } h1 { font-size:42px; } .persona-row,.persona-row.reverse { grid-template-columns:1fr; gap:24px; min-height:0; } .reverse .identity { grid-row:1; } .analysis-bottom { gap:18px; } .direction { grid-template-columns:1fr; gap:8px; } }
+    @media print { @page { size:1600px 1600px; margin:0; } html,body,.sheet { margin:0; print-color-adjust:exact; -webkit-print-color-adjust:exact; } }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header class="topline">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="20" fill="none" stroke="#789d91" stroke-width="1.4"/><path d="M26 8c-11-2-19 8-11 15 3 3 12 2 13 7 1 5-6 7-13 4" fill="none" stroke="#214d49" stroke-width="4.2" stroke-linecap="round"/><path d="M8 23c6-10 14-12 24-7" fill="none" stroke="#a6c0af" stroke-width="1.4"/></svg>
+        <span class="brand-name">SEUMIM</span><span class="brand-korean">스밈</span>
+      </div>
+      <span class="process-label">PORTFOLIO PROCESS / USER UNDERSTANDING</span>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="hero-kicker">PERSONA STUDY · 02 PEOPLE</p>
+        <h1 id="hero-title">바른 균형은, 일상의 다른 순간에 스며듭니다.</h1>
+        <p class="hero-desc">브랜드 기획안과 가상 페르소나를 바탕으로 두 사용자의 자세 관리 경험을 정의했습니다.</p>
+      </div>
+      <div class="hero-side"><strong>02</strong><span>서로 다른 상황<br>하나의 브랜드 약속</span></div>
+      <svg class="hero-curve" viewBox="0 0 310 300" aria-hidden="true"><path d="M256 1C151 28 87 56 140 105c46 42 136 28 131 86-4 47-101 52-202 101" fill="none" stroke="#b7cbbf" stroke-width="35" stroke-linecap="round"/><path d="M238 4C140 40 120 61 175 107c52 43 137 53 60 111-28 21-77 42-135 72" fill="none" stroke="#f8f6f1" stroke-width="9" stroke-linecap="round"/></svg>
+    </section>
+
+    <section class="persona-row" aria-labelledby="persona-one">
+      <div class="identity">
+        <div class="identity-head"><span class="number">01</span><span class="identity-tag">몰입 중 자세를 놓치는 사람<br>FOCUS WITHOUT INTERRUPTION</span></div>
+        <h2 class="name" id="persona-one">박준형 <span style="font-size:21px;font-weight:500">34</span></h2>
+        <p class="role">IT 스타트업 시니어 풀스택 개발자 · 주 3일 재택</p>
+        <p class="quote"><span class="quote-mark">“</span>내 자세가 얼마나 무너졌는지 데이터로 보고 싶어요. 일할 때는 방해받고 싶지 않아요.”</p>
+      </div>
+      <div class="analysis">
+        <p class="eyebrow">SITUATION / 사용 순간</p>
+        <p class="scene">코딩에 몰입하면 <strong>말린 어깨와 굽은 허리를 알아채지 못합니다.</strong> 타이핑을 방해하는 교정기와 잦은 알림 때문에 착용을 지속하기 어렵습니다. 조용히 관리하면서 변화는 앱에서 확인하고 싶습니다.</p>
+        <div class="analysis-bottom">
+          <div class="analysis-col"><h3>NEEDS / 필요한 경험</h3><ul><li>지속해서 무너진 자세에만 반응하는 조용한 알림</li><li>유지 시간과 변화 추이를 보여 주는 앱 데이터</li></ul></div>
+          <div class="analysis-col"><h3>FRICTION / 사용 장벽</h3><ul><li>뻣뻣한 착용감이 타이핑과 팔 움직임을 방해함</li><li>오알림과 불분명한 성능 설명은 신뢰를 낮춤</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="persona-row reverse" aria-labelledby="persona-two">
+      <div class="analysis">
+        <p class="eyebrow">SITUATION / 사용 순간</p>
+        <p class="scene">서류를 검토하며 하루 종일 앉아 있으면 <strong>무심코 같은 쪽 다리를 꼬게 됩니다.</strong> 옷의 핏과 몸의 불편함이 신경 쓰이지만 퇴근 후 따로 운동할 여력은 적습니다. 사무실에서 티 나지 않게 쓸 수 있어야 합니다.</p>
+        <div class="analysis-bottom">
+          <div class="analysis-col"><h3>NEEDS / 필요한 경험</h3><ul><li>앉아 있는 동안 다리 꼬는 습관을 알아채게 하는 보조</li><li>유니폼 핏과 착용감을 확인할 수 있는 실착 정보</li></ul></div>
+          <div class="analysis-col"><h3>FRICTION / 사용 장벽</h3><ul><li>눈에 띄거나 압박감이 큰 제품은 계속 입기 어려움</li><li>광고성 후기만으로는 제품을 신뢰하기 어려움</li></ul></div>
+        </div>
+      </div>
+      <div class="identity">
+        <div class="identity-head"><span class="number">02</span><span class="identity-tag">반복되는 착석 습관을 줄이고 싶은 사람<br>BALANCE WITHOUT FORCE</span></div>
+        <h2 class="name" id="persona-two">최수진 <span style="font-size:21px;font-weight:500">32</span></h2>
+        <p class="role">시중은행 여신심사팀 대리 · 장시간 사무실 착석</p>
+        <p class="quote"><span class="quote-mark">“</span>제 의지로 자세를 잡는 건 포기했어요. 다리를 꼬고 싶어도 못 꼬게 해 줬으면 해요.”</p>
+      </div>
+    </section>
+
+    <aside class="direction" aria-label="두 페르소나에서 도출한 설계 방향"><div class="direction-label">DESIGN DIRECTION<br>스밈이 보여 줄 것</div><h2><strong>박준형에게는 알림 기준과 앱 데이터, 최수진에게는 에어셀 동작과 실착 핏.</strong><br>두 사람 모두 일상을 방해하지 않는 착용과 30일 시착 조건을 먼저 확인해야 합니다.</h2></aside>
+    <p class="source">* 실제 인터뷰가 아닌 가상 페르소나 기반 분석입니다. 인물 정보는 「가상클라이언트 생성/페르소나_.txt」, 제품·서비스 연결은 「브랜드 기획안.txt」를 기준으로 정리했습니다.</p>
+  </main>
+</body>
+</html>

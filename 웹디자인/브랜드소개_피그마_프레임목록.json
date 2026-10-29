@@ -1,0 +1,50 @@
+{
+  "source": "수정 와이어프레임.html",
+  "extracted_html": "브랜드소개_피그마_추출용.html",
+  "figma_file_key": "SFcVmfkC7RPl9Hkis3esxr",
+  "figma_target_node_id": "1232:5",
+  "page": "브랜드 소개 / Our Story",
+  "recommended_frame_width_px": 1440,
+  "frames": [
+    {
+      "order": 1,
+      "name": "01 브랜드 매니페스토",
+      "dom_id": "sec-st92-hero"
+    },
+    {
+      "order": 2,
+      "name": "02 스밈의 어원과 탄생기",
+      "dom_id": "sec-st92-name-origin"
+    },
+    {
+      "order": 3,
+      "name": "03 세 가지 일상 문제",
+      "dom_id": "sec-st92-origin"
+    },
+    {
+      "order": 4,
+      "name": "04 세 가지 다정한 균형",
+      "dom_id": "sec-st92-pillars"
+    },
+    {
+      "order": 5,
+      "name": "05 0.1mm 심리스 혁신",
+      "dom_id": "sec-st92-macro"
+    },
+    {
+      "order": 6,
+      "name": "06 3D 엔지니어링 도면",
+      "dom_id": "sec-st92-blueprint"
+    },
+    {
+      "order": 7,
+      "name": "07 일상 변화 전후 비교",
+      "dom_id": "sec-st92-usecases"
+    },
+    {
+      "order": 8,
+      "name": "08 15종 상품 라인업",
+      "dom_id": "sec-st92-collection"
+    }
+  ]
+}
