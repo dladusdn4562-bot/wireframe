@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEUMIM | 이름에 담은 균형</title>
+  <style>
+    :root { --paper:#f9f8f5; --ink:#26302a; --teal:#244e47; --sage:#7e9f8d; --muted:#737b73; --line:#d9ddd6; --highlight:#e7ede5; }
+    * { box-sizing:border-box; }
+    html { background:#e9e9e4; }
+    body { margin:0; color:var(--ink); font-family:Pretendard,"Malgun Gothic",sans-serif; -webkit-font-smoothing:antialiased; }
+    .sheet { position:relative; width:1600px; height:1200px; margin:auto; padding:72px 104px 54px; overflow:hidden; background:var(--paper) url("브랜드_네이밍_가치_배경.png") center / cover no-repeat; }
+    .sheet::before { content:""; position:absolute; inset:0; opacity:.22; pointer-events:none; background:repeating-linear-gradient(0deg,transparent 0 92px,rgba(78,90,78,.04) 93px 94px); }
+    .sheet > * { position:relative; z-index:1; }
+    .topline { display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--line); padding-bottom:20px; color:var(--teal); font-size:13px; font-weight:750; letter-spacing:.17em; }
+    .topline span:last-child { color:#8b938b; }
+    .eyebrow { margin:0; color:var(--sage); font-size:14px; font-weight:800; letter-spacing:.18em; }
+    .naming { position:relative; margin-top:68px; padding-bottom:45px; border-bottom:1px solid var(--line); }
+    .name-lockup { display:flex; align-items:flex-end; gap:32px; margin-top:24px; }
+    h1 { margin:0; color:#1b2c23; font-family:"Noto Serif KR","Batang",serif; font-size:153px; font-weight:400; line-height:1.03; letter-spacing:-.09em; }
+    .roman { padding-bottom:21px; color:#4d5950; font-size:24px; letter-spacing:.09em; }
+    .origin { margin:12px 0 0 5px; color:#858d83; font-size:20px; letter-spacing:-.035em; }
+    .meaning { max-width:1220px; margin:48px 0 0 5px; font-size:28px; font-weight:500; line-height:1.64; letter-spacing:-.047em; }
+    .meaning strong { color:var(--teal); font-weight:650; }
+    .meaning em { font-style:normal; box-shadow:inset 0 -12px 0 var(--highlight); }
+    .slogan { padding:38px 0 35px; border-bottom:1px solid var(--line); }
+    .slogan h2 { margin:18px 0 8px; color:var(--teal); font-family:"Noto Serif KR","Batang",serif; font-size:60px; font-weight:400; line-height:1.45; letter-spacing:-.07em; }
+    .slogan h2 span { box-shadow:inset 0 -15px 0 var(--highlight); }
+    .slogan p:last-child { margin:0; color:#5f685f; font-size:25px; letter-spacing:-.035em; }
+    .values { padding-top:38px; }
+    .values h2 { margin:0; color:var(--sage); font-size:14px; font-weight:800; letter-spacing:.18em; }
+    .value-story { max-width:1200px; margin:25px 0 0; color:#4b554c; font-size:23px; line-height:1.58; letter-spacing:-.035em; }
+    .value-story strong { color:var(--teal); font-weight:700; }
+    .source { position:absolute; right:104px; bottom:44px; left:104px; color:#a1a8a0; font-size:11px; line-height:1.5; }
+    .source p { margin:0; }
+    @media screen and (max-width:1000px) {
+      .sheet { width:100%; height:auto; min-height:0; padding:40px 25px 60px; }
+      .topline { font-size:10px; }
+      .naming { margin-top:80px; padding-bottom:65px; }
+      h1 { font-size:clamp(85px,16vw,145px); }
+      .roman { font-size:15px; }
+      .origin { font-size:16px; }
+      .meaning { margin-top:55px; font-size:22px; }
+      .slogan h2 { font-size:clamp(35px,7vw,55px); }
+      .slogan p:last-child { font-size:20px; }
+      .value-story { font-size:19px; }
+      .source { position:static; display:block; margin-top:55px; }
+    }
+    @media print { @page { size:1600px 1200px; margin:0; } html,body,.sheet { margin:0; print-color-adjust:exact; -webkit-print-color-adjust:exact; } }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header class="topline"><span>SEUMIM / BRAND LANGUAGE</span><span>PORTFOLIO PROCESS / BRAND IDENTITY</span></header>
+
+    <section class="naming" aria-labelledby="naming-title">
+      <p class="eyebrow">01 / BRAND NAMING</p>
+      <div class="name-lockup"><h1 id="naming-title">스밈</h1><span class="roman">[ SEUMIM ]</span></div>
+      <p class="origin">스며들다 → 스밈</p>
+      <p class="meaning">바른 자세가 필요해도, 바쁜 하루를 멈춰 관리하기는 어렵습니다.<br>우리는 몸을 억지로 조이기보다, <strong>작은 균형이 일상에 스며들기를 바랐습니다.</strong><br><em>그 바람을 담아 ‘스밈’이라 이름 지었습니다.</em></p>
+    </section>
+
+    <section class="slogan" aria-labelledby="slogan-title">
+      <p class="eyebrow">02 / BRAND SLOGAN</p>
+      <h2 id="slogan-title"><span>일상에 바른 균형이 스며들게.</span></h2>
+      <p>당신의 일상 균형, 스밈.</p>
+    </section>
+
+    <section class="values" aria-labelledby="values-title">
+      <h2 id="values-title">03 / CORE VALUES</h2>
+      <p class="value-story">일상에 오래 머무는 변화는 <strong>편안함</strong>에서 시작됩니다.<br>스밈은 편안히 입고 일하는 동안, 필요한 순간에만 조용히 알려줍니다.<br>그 변화를 앱에서 확인하며, 바른 균형을 매일의 습관으로 이어 갑니다.</p>
+    </section>
+
+    <footer class="source"><p>자료: 브랜드 기획안 · 브랜드 네이밍·슬로건·핵심 가치 분석</p></footer>
+  </main>
+</body>
+</html>
